@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>What We Do | Fresh Start Debt Support</title>
-  <style>/* Use same styles as index.html */</style>
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>What We Do | Fresh Start Debt Support</title>
+<style>/* Use same CSS styles from index.html */</style>
 </head>
 <body>
   <header>
     <div class="brand">Fresh Start Debt Support</div>
-    <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
+    <div class="header-right">
+      <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
+      <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
+    </div>
   </header>
-  <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
+
   <div class="sidebar" id="sidebar">
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
     <a href="dmp.html">About a DMP</a>
   </div>
+
   <section>
     <h1>What We Do</h1>
-    <p>We provide expert debt guidance and solutions for people across the UK. Our advisors assess your circumstances and walk you through debt options that work — no judgment, just help.</p>
+    <p>We help people facing unmanageable debt find realistic, regulated ways to regain financial control. We offer support with:</p>
     <ul>
-      <li>One-on-one debt consultations</li>
-      <li>IVA application support and management</li>
-      <li>DMP setup and creditor communication</li>
-      <li>Ongoing support to help you stay on track</li>
+      <li>Debt assessment and personalised advice</li>
+      <li>Debt Management Plans (DMPs)</li>
+      <li>Individual Voluntary Arrangements (IVAs)</li>
+      <li>Creditor communication and ongoing support</li>
     </ul>
-    <p>Everything we do is free, confidential, and designed to help you start fresh without stress.</p>
+    <p>Our goal is to reduce stress, stop interest and charges, and help you take back control of your money — legally, ethically, and with compassion.</p>
   </section>
-  <script>function toggleSidebar(){const s=document.getElementById("sidebar");s.style.left=s.style.left==="0px"?"-250px":"0px"}</script>
+
+  <script>function toggleSidebar(){const s=document.getElementById("sidebar");s.style.right=s.style.right==="0px"?"-250px":"0px"}</script>
 </body>
 </html>
