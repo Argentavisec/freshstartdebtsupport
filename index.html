@@ -5,34 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Fresh Start Debt Support</title>
   <style>
-    body { font-family: Arial; margin: 0; background: #f9f9f9; }
-    header, section, .sidebar, .menu, .enquire-button { font-size: 16px; }
-    header { background: #2e86de; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; max-width: 800px; margin: 1rem auto; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .menu { position: fixed; top: 20px; left: 20px; background: #2e86de; color: white; padding: 10px 15px; border-radius: 4px; cursor: pointer; z-index: 1000; }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    header {
+      background-color: #2e86de; color: white;
+      display: flex; justify-content: space-between;
+      align-items: center; padding: 1rem 2rem;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .brand { font-size: 1.2rem; font-weight: bold; }
+    .enquire-top {
+      background: #28a745; color: white;
+      padding: 10px 16px; border-radius: 4px;
+      text-decoration: none; font-weight: bold;
+    }
+    .menu { position: fixed; top: 80px; left: 20px; background: #2e86de; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; z-index: 1001; }
     .sidebar { position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background: #2e86de; color: white; padding-top: 60px; transition: 0.3s; z-index: 999; }
     .sidebar a { display: block; padding: 15px 20px; color: white; text-decoration: none; font-weight: bold; }
-    .sidebar a:hover { background: #145db2; }
-    .enquire-button { position: fixed; bottom: 20px; right: 20px; background: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 5px; z-index: 1000; }
+    .sidebar a:hover { background-color: #145db2; }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <div class="brand">Fresh Start Debt Support</div>
+    <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
+  </header>
+
   <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
+
   <div class="sidebar" id="sidebar">
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
     <a href="dmp.html">About a DMP</a>
   </div>
-  <header>
-    <h1>About Us</h1>
-    <p>Your first step toward a debt-free life.</p>
-  </header>
+
   <section>
-    <p>Fresh Start Debt Support helps individuals across the UK get back in control of their finances. We offer guidance on safe, ethical, and legal debt solutions like IVAs and DMPs.</p>
-    <p>Our mission is to reduce your stress and help you find a fresh start — with advice you can trust and a team that genuinely cares.</p>
+    <h1>About Us</h1>
+    <p>At Fresh Start Debt Support, we are committed to helping individuals across the UK regain control of their finances. Whether you're struggling with credit cards, loans, or overdue bills, our team offers professional, confidential advice tailored to your situation.</p>
+    <p>We specialize in legally backed debt solutions such as IVAs and Debt Management Plans, providing you with peace of mind and a clear path forward. Let us guide you to a debt-free future with support, compassion, and real expertise.</p>
   </section>
-  <button class="enquire-button" onclick="window.location.href='mailto:your@email.com'">📩 Enquire Now</button>
+
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
