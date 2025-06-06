@@ -5,28 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Fresh Start Debt Support</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
     header {
       background-color: #2e86de;
+      color: white;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-    .logo { height: 50px; }
-    .header-right { display: flex; gap: 10px; }
+    .brand { font-size: 1.3rem; font-weight: bold; }
+    .header-right {
+      display: flex;
+      gap: 10px;
+    }
     .enquire-top, .menu {
       background: #28a745;
       color: white;
       padding: 10px 16px;
+      border: none;
       border-radius: 4px;
-      text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
     }
-    .menu { background: #2c3e50; }
+    .menu {
+      background: #2c3e50;
+    }
     .sidebar {
       position: fixed;
       top: 0;
@@ -34,34 +42,35 @@
       width: 250px;
       height: 100%;
       background: #2e86de;
+      color: white;
       padding-top: 60px;
       transition: 0.3s;
       z-index: 999;
     }
     .sidebar a {
       display: block;
-      color: white;
       padding: 15px 20px;
-      font-weight: bold;
+      color: white;
       text-decoration: none;
+      font-weight: bold;
     }
     .sidebar a:hover { background-color: #145db2; }
     section {
+      padding: 2rem;
       max-width: 900px;
       margin: 2rem auto;
       background: white;
-      padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+    <div class="brand">Fresh Start Debt Support</div>
     <div class="header-right">
       <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
-      <a href="javascript:void(0);" onclick="toggleSidebar()" class="menu">☰ Menu</a>
+      <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
     </div>
   </header>
 
