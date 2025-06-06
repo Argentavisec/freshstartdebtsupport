@@ -3,102 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About a DMP | Fresh Start Debt Support</title>
+  <title>DMP | Fresh Start Debt Support</title>
+  <link rel="icon" href="fresh start debt support logo .jpg" type="image/jpg" />
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
-    header {
-      background-color: #2e86de;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .brand { font-size: 1.3rem; font-weight: bold; }
-    .header-right {
-      display: flex;
-      gap: 10px;
-    }
-    .enquire-top, .menu {
-      background: #28a745;
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .menu {
-      background: #2c3e50;
-    }
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100%;
-      background: #2e86de;
-      color: white;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 999;
-    }
-    .sidebar a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .sidebar a:hover { background-color: #145db2; }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    ul { padding-left: 1.5rem; }
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+    body {background: #f4f6f8;}
+    header {background: #1e73be; padding: 10px 20px; display: flex; align-items: center; position: relative;}
+    .logo {flex: 1; text-align: center;}
+    .logo img {height: 60px;}
+    .header-buttons {position: absolute; right: 20px; display: flex; gap: 10px;}
+    .header-buttons a {background: #2ecc71; color: #fff; text-decoration: none; font-weight: bold; padding: 10px 15px; border-radius: 4px;}
+    nav {background: #2980b9; padding: 15px; display: flex; gap: 20px; justify-content: center;}
+    nav a {color: white; text-decoration: none; font-weight: bold;}
+    .container {max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);}
   </style>
 </head>
 <body>
   <header>
-    <div class="brand">Fresh Start Debt Support</div>
-    <div class="header-right">
-      <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
-      <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
+    <div class="logo">
+      <img src="fresh start debt support logo .jpg" alt="Fresh Start Debt Support Logo" />
+    </div>
+    <div class="header-buttons">
+      <a href="step1.html">📩 Enquire Now</a>
+      <a href="#menu">☰ Menu</a>
     </div>
   </header>
 
-  <div class="sidebar" id="sidebar">
-    <a href="index.html">About Us</a>
-    <a href="what-we-do.html">What We Do</a>
-    <a href="iva.html">About an IVA</a>
-    <a href="dmp.html">About a DMP</a>
-  </div>
+  <nav id="menu">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="iva.html">IVA</a>
+    <a href="dmp.html">DMP</a>
+  </nav>
 
-  <section>
-    <h1>What is a DMP?</h1>
-    <p>A Debt Management Plan (DMP) is an informal agreement between you and your creditors to repay debts at a lower monthly rate. It’s suitable if you have income, but need more time or flexibility to pay off what you owe.</p>
+  <div class="container">
+    <h2>What is a Debt Management Plan?</h2>
+    <p>A Debt Management Plan (DMP) is an informal agreement between you and your creditors to pay off your debts at a rate you can afford.</p>
     <ul>
       <li>Lower monthly payments</li>
-      <li>Flexible and non-legally binding</li>
-      <li>No upfront setup fees</li>
-      <li>Continue making progress without court involvement</li>
+      <li>Freeze or reduce interest</li>
+      <li>Not legally binding — flexible and affordable</li>
     </ul>
-    <p>We’ll handle all the paperwork and communication with creditors, giving you the breathing room to rebuild.</p>
-  </section>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.style.right = sidebar.style.right === "0px" ? "-250px" : "0px";
-    }
-  </script>
+  </div>
 </body>
 </html>
