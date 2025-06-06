@@ -3,184 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fresh Start Debt Support</title>
+  <title>About Us | Fresh Start Debt Support</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #2e86de;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1, h2 {
-      color: #2e86de;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      margin-top: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-
-    /* Sticky Enquire Now Button */
-    .enquire-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #28a745;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    /* Sidebar Navigation */
-    .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      background-color: #2e86de;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 1100;
-    }
-
-    .sidebar a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .sidebar a:hover {
-      background-color: #145db2;
-    }
-
-    .menu-button {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background-color: #2e86de;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 1200;
-      border-radius: 4px;
-    }
+    body { font-family: Arial; margin: 0; background: #f9f9f9; }
+    header, section, .sidebar, .menu, .enquire-button { font-size: 16px; }
+    header { background: #2e86de; color: white; padding: 2rem; text-align: center; }
+    section { padding: 2rem; max-width: 800px; margin: 1rem auto; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .menu { position: fixed; top: 20px; left: 20px; background: #2e86de; color: white; padding: 10px 15px; border-radius: 4px; cursor: pointer; z-index: 1000; }
+    .sidebar { position: fixed; top: 0; left: -250px; width: 250px; height: 100%; background: #2e86de; color: white; padding-top: 60px; transition: 0.3s; z-index: 999; }
+    .sidebar a { display: block; padding: 15px 20px; color: white; text-decoration: none; font-weight: bold; }
+    .sidebar a:hover { background: #145db2; }
+    .enquire-button { position: fixed; bottom: 20px; right: 20px; background: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 5px; z-index: 1000; }
   </style>
 </head>
 <body>
-
-  <!-- Menu button -->
-  <button class="menu-button" onclick="toggleSidebar()">☰ Menu</button>
-
-  <!-- Sidebar -->
-  <div id="sidebar" class="sidebar">
-    <a href="#about">About Us</a>
-    <a href="#what-we-do">What We Do</a>
-    <a href="#iva">About an IVA</a>
-    <a href="#dmp">About a DMP</a>
-    <a href="#dro">About a DRO</a>
+  <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
+  <div class="sidebar" id="sidebar">
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
   </div>
-
-  <!-- Header -->
   <header>
-    <h1>Fresh Start Debt Support</h1>
-    <p>Your first step toward a debt-free future</p>
+    <h1>About Us</h1>
+    <p>Your first step toward a debt-free life.</p>
   </header>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      We help individuals across the UK who are struggling with unmanageable debt.
-      Whether you’ve fallen behind on bills or are overwhelmed by creditors, we’re here to help you explore trusted solutions.
-    </p>
+  <section>
+    <p>Fresh Start Debt Support helps individuals across the UK get back in control of their finances. We offer guidance on safe, ethical, and legal debt solutions like IVAs and DMPs.</p>
+    <p>Our mission is to reduce your stress and help you find a fresh start — with advice you can trust and a team that genuinely cares.</p>
   </section>
-
-  <!-- What We Do -->
-  <section id="what-we-do">
-    <h2>What We Do</h2>
-    <p>
-      Our expert team provides free advice and access to debt resolution plans tailored to your situation.
-      We’re here to help you take back control with compassion, care, and clear information.
-    </p>
-  </section>
-
-  <!-- IVA -->
-  <section id="iva">
-    <h2>About an IVA</h2>
-    <p>
-      An Individual Voluntary Arrangement (IVA) is a formal agreement with your creditors to pay back debts over time — often with a significant portion written off.
-      Ideal if you have at least £6,000 in unsecured debt.
-    </p>
-  </section>
-
-  <!-- DMP -->
-  <section id="dmp">
-    <h2>About a Debt Management Plan (DMP)</h2>
-    <p>
-      A DMP allows you to make affordable monthly payments without legal proceedings.
-      It’s informal and flexible, helping many regain financial control without going insolvent.
-    </p>
-  </section>
-
-  <!-- DRO -->
-  <section id="dro">
-    <h2>About a Debt Relief Order (DRO)</h2>
-    <p>
-      A DRO is a low-cost, legal way to write off certain debts if you owe less than £30,000, have few assets, and limited disposable income.
-      It freezes interest and protects you from creditors.
-    </p>
-  </section>
-
-  <!-- Sticky Button -->
-  <button class="enquire-button" onclick="window.location.href='mailto:your@email.com'">
-    📩 Enquire Now
-  </button>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Fresh Start Debt Support. All rights reserved.
-  </footer>
-
+  <button class="enquire-button" onclick="window.location.href='mailto:your@email.com'">📩 Enquire Now</button>
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById("sidebar");
       sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
     }
   </script>
-
 </body>
 </html>
