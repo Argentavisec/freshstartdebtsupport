@@ -3,25 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You</title>
+  <title>Thank You | Fresh Start Debt Support</title>
+  <meta name="description" content="Thank you for your enquiry. One of our advisors will contact you shortly to help you with debt support options.">
   <style>
-    body { font-family: Arial; background: #eaf6f6; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    .box {
-      background: white;
-      padding: 40px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .thankyou-box {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
       text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       max-width: 500px;
     }
-    h1 { color: #28a745; }
+    .thankyou-box h1 {
+      color: #0078d7;
+      margin-bottom: 20px;
+    }
+    .thankyou-box p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .thankyou-box .logo {
+      height: 60px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>🎉 Thank You!</h1>
-    <p>Thanks for your enquiry. A friendly expert from our team will contact you shortly to discuss your options and get you back on track.</p>
-    <p>Your fresh start is just around the corner.</p>
+
+  <div class="thankyou-box">
+    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+    <h1>Thank You!</h1>
+    <p>Your enquiry has been submitted successfully.</p>
+    <p>One of our friendly advisors will contact you shortly to discuss your debt support options.</p>
   </div>
+
+  <script>
+    // Get URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const debt = params.get('debt');
+    const employment = params.get('employment');
+    const name = params.get('name');
+    const contact = params.get('contact');
+
+    // Slack webhook URL
+    const webhookURL = "https://hooks.slack.com/services/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";
+
+    // Create Slack message
+    const slackMessage = {
+      text: `📩 *New Enquiry Submission:*\n
+*Name:* ${name || "N/A"}
+*Contact:* ${contact || "N/A"}
+*Debt Amount:* ${debt || "N/A"}
+*Employment:* ${employment || "N/A"}`
+    };
+
+    // Send to Slack
+    fetch(webhookURL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(slackMessage)
+    })
+    .then(() => console.log("✅ Slack message sent"))
+    .catch(err => console.error("❌ Slack message failed", err));
+  </script>
+
 </body>
 </html>

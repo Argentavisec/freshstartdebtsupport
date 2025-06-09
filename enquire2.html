@@ -5,25 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Step 2 - Employment Status</title>
   <style>
-    body { font-family: Arial; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    .box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 100%; }
-    .btn { display: block; margin: 10px 0; padding: 12px; background: #2e86de; color: white; text-decoration: none; border-radius: 5px; }
-  </style>
-  <script>
-    function goTo(status) {
-      const urlParams = new URLSearchParams(window.location.search);
-      const debt = urlParams.get("debt");
-      window.location.href = `enquire-step3.html?debt=${debt}&employment=${status}`;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f3f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-  </script>
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: #0078d7;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
 </head>
 <body>
   <div class="box">
-    <h2>What's your employment status?</h2>
-    <a class="btn" onclick="goTo('employed')">Employed</a>
-    <a class="btn" onclick="goTo('selfemployed')">Self Employed</a>
-    <a class="btn" onclick="goTo('unemployed')">Unemployed</a>
-    <a class="btn" onclick="goTo('benefits')">Receiving Benefits</a>
+    <h2>What is your employment status?</h2>
+    <button onclick="next('Employed')">Employed</button>
+    <button onclick="next('Self-employed')">Self-employed</button>
+    <button onclick="next('Unemployed')">Unemployed</button>
+    <button onclick="next('Receiving Benefits')">Receiving Benefits</button>
   </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const debt = urlParams.get('debt');
+
+    function next(employment) {
+      window.location.href = `enquire3.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}`;
+    }
+  </script>
 </body>
 </html>
