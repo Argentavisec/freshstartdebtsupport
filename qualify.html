@@ -1,98 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Check If You Qualify | Fresh Start Debt Support</title>
+  <meta name="description" content="Check if you qualify for a debt solution like an IVA or DMP with Fresh Start Debt Support. Free, confidential, and easy to start.">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #0078d4;
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .enquire-btn {
-      background-color: #28a745;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    h1 {
-      color: #0078d4;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .cta {
-      margin-top: 20px;
-      font-weight: bold;
-      background: #e6f7ff;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .banner {
+      background: #0078d7;
       padding: 15px;
-      border-left: 5px solid #0078d4;
-      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-    footer {
-      text-align: center;
-      margin: 40px 0 10px;
-      font-size: 14px;
-      color: #666;
+    .banner img.logo { height: 50px; }
+    .site-name {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 15px;
+      flex: 1;
     }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-enquire {
+      background: #28a745;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn-menu {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .menu-content {
+      display: none;
+      flex-direction: column;
+      background: #0078d7;
+      padding: 10px;
+    }
+    .menu-content a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+    .menu-content a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2 { color: #0078d7; }
+    ul { margin-left: 20px; }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </head>
 <body>
 
-<header>
-  <div class="logo">Fresh Start Debt Support</div>
-  <a href="enquire1.html" class="enquire-btn">Enquire Now</a>
-</header>
-
-<main>
-  <h1>Do You Qualify for Debt Help?</h1>
-  <p>If you're struggling with unsecured debts like credit cards, loans, or council tax, you may qualify for a government-approved debt solution such as an IVA or DMP.</p>
-
-  <h2>Eligibility Criteria</h2>
-  <ul>
-    <li>You have over £6,000 in unsecured debt</li>
-    <li>You live in England, Wales, or Northern Ireland</li>
-    <li>You have at least two different creditors</li>
-    <li>You can make regular monthly payments</li>
-  </ul>
-
-  <div class="cta">
-    Start your journey today by clicking the <strong>"Enquire Now"</strong> button above and completing our secure 5-step form. It only takes a few minutes.
+  <!-- Header -->
+  <div class="banner">
+    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+    <div class="site-name">Fresh Start Debt Support</div>
+    <div class="actions">
+      <button class="btn-enquire" onclick="location.href='enquire1.html'">Enquire Now</button>
+      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
+    </div>
   </div>
 
-  <p>Your details are 100% confidential and won't be shared without your permission. Our friendly team is here to help, not judge.</p>
-</main>
+  <!-- Sidebar Menu -->
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
+    <a href="faq.html">FAQs</a>
+    <a href="qualify.html">Check If You Qualify</a>
+  </div>
 
-<footer>
-  &copy; 2025 Fresh Start Debt Support. All rights reserved.
-</footer>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="section">
+      <h1>Check If You Qualify for Help</h1>
+      <p>If you’re struggling with debt, you’re not alone — and there may be a solution for you.</p>
+
+      <h2>Do You Qualify for a Debt Solution?</h2>
+      <p>You may qualify for support like an IVA or Debt Management Plan if you:</p>
+      <ul>
+        <li>Owe £6,000 or more in unsecured debts</li>
+        <li>Have 2 or more creditors (like credit cards or loans)</li>
+        <li>Live in England, Wales or Northern Ireland</li>
+        <li>Have a regular income or receive benefits</li>
+        <li>Want to stop interest and creditor contact</li>
+      </ul>
+
+      <h2>What Happens Next?</h2>
+      <p>Click below to start our quick 5-step form. It takes less than 2 minutes, and our team will follow up with tailored advice — confidential and no obligation.</p>
+
+      <p style="text-align: center;">
+        <button class="btn-enquire" onclick="location.href='enquire1.html'">Start Now</button>
+      </p>
+
+      <p><strong>Popular searches:</strong> “do I qualify for an IVA?”, “how to get debt written off UK”, “check debt eligibility 2025”</p>
+    </div>
+  </div>
 
 </body>
 </html>

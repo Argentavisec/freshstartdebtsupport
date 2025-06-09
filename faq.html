@@ -1,106 +1,151 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Debt FAQs | Fresh Start Debt Support</title>
+  <meta name="description" content="Answers to the most common questions about IVAs, Debt Management Plans, and how we help people in the UK become debt-free.">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #0078d4;
-      color: white;
-      padding: 20px;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .banner {
+      background: #0078d7;
+      padding: 15px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-    .logo {
-      font-size: 20px;
+    .banner img.logo { height: 50px; }
+    .site-name {
+      color: #fff;
+      font-size: 24px;
       font-weight: bold;
+      margin-left: 15px;
+      flex: 1;
     }
-    .enquire-btn {
-      background-color: #28a745;
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-enquire {
+      background: #28a745;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn-menu {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .menu-content {
+      display: none;
+      flex-direction: column;
+      background: #0078d7;
+      padding: 10px;
+    }
+    .menu-content a {
       color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
       text-decoration: none;
+      padding: 8px 0;
     }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
+    .menu-content a:hover {
+      text-decoration: underline;
+    }
+    .container {
       padding: 20px;
-      background: white;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #0078d4;
-    }
-    .faq {
+    h1, h2 { color: #0078d7; }
+    .faq-item {
       margin-bottom: 20px;
     }
-    .faq h3 {
-      margin: 0;
-      color: #0056b3;
-    }
-    .faq p {
-      margin: 5px 0 15px;
-    }
-    footer {
-      text-align: center;
-      margin: 40px 0 10px;
-      font-size: 14px;
-      color: #666;
+    .faq-item h3 {
+      margin-bottom: 5px;
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </head>
 <body>
 
-<header>
-  <div class="logo">Fresh Start Debt Support</div>
-  <a href="enquire1.html" class="enquire-btn">Enquire Now</a>
-</header>
-
-<main>
-  <h1>Frequently Asked Questions About Debt</h1>
-
-  <div class="faq">
-    <h3>Will entering a debt solution affect my credit score?</h3>
-    <p>Yes, entering an IVA, DMP, or bankruptcy will affect your credit rating. However, these solutions are designed to help you resolve your debt long-term.</p>
+  <!-- Header -->
+  <div class="banner">
+    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+    <div class="site-name">Fresh Start Debt Support</div>
+    <div class="actions">
+      <button class="btn-enquire" onclick="location.href='enquire1.html'">Enquire Now</button>
+      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
+    </div>
   </div>
 
-  <div class="faq">
-    <h3>How long do debt solutions last?</h3>
-    <p>IVAs usually last 5 years, DMPs are flexible and depend on how much you owe, and bankruptcy generally lasts 1 year.</p>
+  <!-- Sidebar Menu -->
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
+    <a href="faq.html">FAQs</a>
+    <a href="qualify.html">Check If You Qualify</a>
   </div>
 
-  <div class="faq">
-    <h3>Will creditors stop contacting me?</h3>
-    <p>Yes. If you enter a formal solution like an IVA, we inform your creditors and they’re legally required to stop all contact and collection efforts.</p>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="section">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-item">
+        <h3>What is an IVA?</h3>
+        <p>An IVA (Individual Voluntary Arrangement) is a legal agreement with your creditors to repay a portion of your debts over a set period, usually 5–6 years. After that, any remaining debt may be written off.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is a DMP?</h3>
+        <p>A Debt Management Plan is an informal arrangement to repay your debts in affordable monthly payments. It is flexible but not legally binding, and it may not freeze all interest and charges.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will debt solutions affect my credit score?</h3>
+        <p>Yes. Most debt solutions will show on your credit report and may lower your score during the plan. However, they can help you rebuild credit after completion by clearing problem debt.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I keep my home?</h3>
+        <p>Yes. Many debt solutions (like IVAs or DMPs) allow you to protect your home, though you may need to release some equity if applicable. Bankruptcy could impact your property in some cases.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Will creditors still contact me?</h3>
+        <p>In an IVA, creditor contact must stop by law. With a DMP, we work to negotiate with creditors, though contact may still occur early in the process.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How long does it take to set up?</h3>
+        <p>We can set up most debt solutions in as little as 24–72 hours once we receive your details. Our team handles everything to make the process stress-free.</p>
+      </div>
+
+      <p><strong>Didn’t see your question?</strong> <a href="enquire1.html">Enquire now</a> for free, confidential advice.</p>
+    </div>
   </div>
-
-  <div class="faq">
-    <h3>Can I keep my car if I enter a debt solution?</h3>
-    <p>Yes, in most cases you can keep your vehicle if it’s essential for work or family responsibilities.</p>
-  </div>
-
-  <div class="faq">
-    <h3>What debts can be included?</h3>
-    <p>Unsecured debts such as credit cards, personal loans, overdrafts, council tax arrears, payday loans, and more.</p>
-  </div>
-
-  <p><strong>Need further advice?</strong> Start our quick <a href="enquire1.html">5-step enquiry</a> to get personal guidance today.</p>
-</main>
-
-<footer>
-  &copy; 2025 Fresh Start Debt Support. All rights reserved.
-</footer>
 
 </body>
 </html>

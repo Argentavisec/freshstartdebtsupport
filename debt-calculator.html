@@ -1,132 +1,174 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Debt Calculator | Fresh Start Debt Support</title>
+  <meta name="description" content="Use our free debt calculator to estimate your monthly repayment. Discover if an IVA or DMP could help reduce your financial stress.">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #0078d4;
-      color: white;
-      padding: 20px;
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .banner {
+      background: #0078d7;
+      padding: 15px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-    .logo {
-      font-size: 20px;
+    .banner img.logo { height: 50px; }
+    .site-name {
+      color: #fff;
+      font-size: 24px;
       font-weight: bold;
+      margin-left: 15px;
+      flex: 1;
     }
-    .enquire-btn {
-      background-color: #28a745;
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-enquire {
+      background: #28a745;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn-menu {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .menu-content {
+      display: none;
+      flex-direction: column;
+      background: #0078d7;
+      padding: 10px;
+    }
+    .menu-content a {
       color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
       text-decoration: none;
+      padding: 8px 0;
     }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
+    .menu-content a:hover {
+      text-decoration: underline;
+    }
+    .container {
       padding: 20px;
-      background: white;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section {
+      background: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input[type="number"] {
+    h1, h2 { color: #0078d7; }
+    label { display: block; margin-top: 15px; }
+    input {
       width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    button {
-      background-color: #0078d4;
+    button.calculate {
+      margin-top: 20px;
+      background: #0078d7;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 20px;
       font-size: 16px;
       cursor: pointer;
       border-radius: 4px;
     }
     .result {
       margin-top: 20px;
-      background-color: #e0f7fa;
-      padding: 15px;
-      border-radius: 5px;
-      display: none;
-    }
-    footer {
-      text-align: center;
-      margin: 30px 0 10px;
-      font-size: 14px;
-      color: #666;
+      font-weight: bold;
     }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    function calculateRepayment() {
+      const debt = parseFloat(document.getElementById("debtAmount").value);
+      const income = parseFloat(document.getElementById("monthlyIncome").value);
+      const expenses = parseFloat(document.getElementById("monthlyExpenses").value);
+
+      if (isNaN(debt) || isNaN(income) || isNaN(expenses)) {
+        document.getElementById("result").innerText = "Please enter all values.";
+        return;
+      }
+
+      const surplus = income - expenses;
+      if (surplus <= 0) {
+        document.getElementById("result").innerText = "It looks like your expenses are higher than your income. Let us help — Enquire now.";
+        return;
+      }
+
+      const months = Math.ceil(debt / surplus);
+      document.getElementById("result").innerText = 
+        `Estimated monthly payment: £${surplus.toFixed(2)}. You could be debt-free in about ${months} months. ✅`;
+    }
+  </script>
 </head>
 <body>
 
-<header>
-  <div class="logo">Fresh Start Debt Support</div>
-  <a href="enquire1.html" class="enquire-btn">Enquire Now</a>
-</header>
-
-<main>
-  <h1>Debt Calculator</h1>
-  <p>Use our calculator to estimate your potential monthly payments and whether you might qualify for help.</p>
-
-  <form id="calculator">
-    <label for="debtAmount">Total Unsecured Debt (£):</label>
-    <input type="number" id="debtAmount" required>
-
-    <label for="monthlyIncome">Monthly Income (£):</label>
-    <input type="number" id="monthlyIncome" required>
-
-    <label for="monthlyExpenses">Monthly Expenses (£):</label>
-    <input type="number" id="monthlyExpenses" required>
-
-    <button type="submit">Calculate</button>
-  </form>
-
-  <div class="result" id="resultBox">
-    <p id="resultText"></p>
+  <!-- Header -->
+  <div class="banner">
+    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+    <div class="site-name">Fresh Start Debt Support</div>
+    <div class="actions">
+      <button class="btn-enquire" onclick="location.href='enquire1.html'">Enquire Now</button>
+      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
+    </div>
   </div>
-</main>
 
-<footer>
-  &copy; 2025 Fresh Start Debt Support. All rights reserved.
-</footer>
+  <!-- Sidebar Menu -->
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
+    <a href="faq.html">FAQs</a>
+    <a href="qualify.html">Check If You Qualify</a>
+  </div>
 
-<script>
-  document.getElementById("calculator").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const debt = parseFloat(document.getElementById("debtAmount").value);
-    const income = parseFloat(document.getElementById("monthlyIncome").value);
-    const expenses = parseFloat(document.getElementById("monthlyExpenses").value);
-    const disposable = income - expenses;
+  <!-- Page Content -->
+  <div class="container">
+    <div class="section">
+      <h1>Debt Calculator</h1>
+      <p>Use our quick calculator to estimate how long it could take to repay your debts based on your income and living costs.</p>
 
-    let result = "";
-    if (isNaN(debt) || isNaN(income) || isNaN(expenses)) {
-      result = "Please fill in all fields correctly.";
-    } else if (disposable <= 0) {
-      result = "Your monthly budget is negative. You may qualify for a Debt Relief Order or alternative help.";
-    } else {
-      const estimate = Math.min(disposable, debt / 60).toFixed(2);
-      result = `You could pay around £${estimate} per month. Click 'Enquire Now' to see if you qualify for an IVA, DMP, or debt write-off.`;
-    }
+      <label for="debtAmount">Total Unsecured Debt (£):</label>
+      <input type="number" id="debtAmount" placeholder="e.g. 8500" />
 
-    document.getElementById("resultText").textContent = result;
-    document.getElementById("resultBox").style.display = "block";
-  });
-</script>
+      <label for="monthlyIncome">Monthly Income (£):</label>
+      <input type="number" id="monthlyIncome" placeholder="e.g. 2000" />
+
+      <label for="monthlyExpenses">Monthly Living Expenses (£):</label>
+      <input type="number" id="monthlyExpenses" placeholder="e.g. 1500" />
+
+      <button class="calculate" onclick="calculateRepayment()">Calculate</button>
+      <div class="result" id="result"></div>
+
+      <p style="margin-top: 30px;">
+        This is a guide only. For a full, free review of your options, click the button below:
+      </p>
+      <button class="btn-enquire" onclick="location.href='enquire1.html'">Enquire Now</button>
+    </div>
+  </div>
 
 </body>
 </html>
