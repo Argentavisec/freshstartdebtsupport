@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>What is a DMP? | Fresh Start Debt Support</title>
-  <meta name="description" content="Understand how a DMP (Debt Management Plan) helps reduce monthly repayments, freeze interest, and avoid court — ideal for those with steady income.">
+  <title>Fresh Start Debt Support | Help With Debt Across the UK</title>
+  <meta name="description" content="We help people in the UK become debt-free through IVAs, DMPs, and tailored solutions. Get free advice and expert support with Fresh Start Debt Support.">
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
     .banner {
@@ -13,19 +13,21 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .banner img.logo { height: 50px; }
-    .banner .site-name {
+    .site-name {
       color: #fff;
       font-size: 24px;
       font-weight: bold;
       margin-left: 15px;
+      flex: 1;
     }
-    .banner .actions {
+    .actions {
       display: flex;
       gap: 10px;
     }
-    .banner .btn-enquire {
+    .btn-enquire {
       background: #28a745;
       color: #fff;
       padding: 10px 16px;
@@ -33,13 +35,27 @@
       cursor: pointer;
       font-size: 16px;
     }
-    .banner .btn-menu {
+    .btn-menu {
       background: #333;
       color: #fff;
       border: none;
       padding: 10px 16px;
       cursor: pointer;
       font-size: 16px;
+    }
+    .menu-content {
+      display: none;
+      flex-direction: column;
+      background: #0078d7;
+      padding: 10px;
+    }
+    .menu-content a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+    }
+    .menu-content a:hover {
+      text-decoration: underline;
     }
     .container {
       padding: 20px;
@@ -56,46 +72,60 @@
     h1 { color: #0078d7; }
     ul { margin-left: 20px; }
   </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </head>
 <body>
 
   <!-- Header -->
   <div class="banner">
-    <img src="fresh start debt support logo.jpg" alt="Fresh Start Logo" class="logo" />
+    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
     <div class="site-name">Fresh Start Debt Support</div>
     <div class="actions">
-      <button class="btn-enquire" onclick="location.href='enquire-step1.html'">Enquire Now</button>
-      <button class="btn-menu" onclick="/* Add menu logic here */">Menu</button>
+      <button class="btn-enquire" onclick="location.href='enquire1.html'">Enquire Now</button>
+      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
     </div>
   </div>
 
-  <!-- DMP Content -->
+  <!-- Sidebar Menu -->
+  <div class="menu-content" id="menuContent">
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
+    <a href="faq.html">FAQs</a>
+    <a href="qualify.html">Check If You Qualify</a>
+  </div>
+
+  <!-- Page Content -->
   <div class="container">
     <div class="section">
-      <h1>What is a Debt Management Plan (DMP)?</h1>
+      <h1>About Fresh Start Debt Support</h1>
       <p>
-        A <strong>Debt Management Plan (DMP)</strong> is an informal and flexible way to repay your unsecured debts at a pace that suits your current financial situation. It’s suitable for individuals who have steady income but are struggling with repayment terms or interest rates.
+        At <strong>Fresh Start Debt Support</strong>, our mission is simple — to help people across the UK become debt-free and regain control of their financial future. Whether you're dealing with credit cards, loans, or other unsecured debts, our expert team is here to guide you through every step.
       </p>
       <p>
-        Managed by trusted debt advisors, a DMP allows you to consolidate your monthly payments into one affordable amount. There's no court involvement, no pressure, and often no setup fees.
+        We specialise in providing clear, regulated debt advice and practical solutions like <strong>Individual Voluntary Arrangements (IVAs)</strong> and <strong>Debt Management Plans (DMPs)</strong>. Every recommendation is tailored to your personal circumstances.
       </p>
 
       <ul>
-        <li><strong>Lower monthly payments</strong> based on your actual income</li>
-        <li><strong>Freeze or reduce interest and charges</strong></li>
-        <li><strong>One monthly payment</strong> to cover all creditors</li>
-        <li>No legal obligation — it’s <strong>non-binding and voluntary</strong></li>
-        <li>No upfront fees, no surprises</li>
-        <li>Stay out of court and <strong>avoid enforcement action</strong></li>
+        <li>Free, confidential debt advice</li>
+        <li>Specialist IVA and DMP guidance</li>
+        <li>Solutions to stop interest, reduce monthly payments, and end creditor pressure</li>
+        <li>Quick enquiry process — no obligation</li>
       </ul>
 
       <p>
-        Our team will handle communication with your creditors, remove the stress of constant letters and calls, and give you the time and breathing room to get back on track.
+        We’ve helped thousands take the first step to a <strong>debt-free future</strong>. Our aim is to help as many people as possible escape debt and move forward with confidence.
       </p>
 
-      <p>
-        Popular searches: <strong>“help with credit card debt UK”, “reduce monthly debt payments”, “non-legally binding debt solution 2025”</strong>.
-      </p>
+      <p><strong>Popular searches:</strong> “debt help UK 2025”, “best way to clear debt”, “IVA support”, “DMP company near me”.</p>
     </div>
   </div>
 
