@@ -1,58 +1,67 @@
+# Re-run the file writing process after state reset
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Step 1 - How Much Debt?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 1 – How Much Debt?</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f2f3f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background-color: #f0f3f7;
     }
     .box {
       background: white;
       padding: 30px;
+      max-width: 400px;
+      margin: 80px auto;
       border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h2 {
-      margin-bottom: 20px;
+      color: #333;
     }
     button {
       display: block;
       width: 100%;
+      margin-top: 15px;
       padding: 12px;
-      margin: 10px 0;
-      background: #0078d7;
-      color: white;
       font-size: 16px;
+      background-color: #0078d7;
+      color: white;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
     }
     button:hover {
-      background: #005fa3;
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
   <div class="box">
     <h2>How much debt do you have?</h2>
-    <button onclick="next('0-5999')">£0 – £5,999</button>
-    <button onclick="next('6000-15000')">£6,000 – £15,000</button>
-    <button onclick="next('15001+')">£15,001 or more</button>
-    <button onclick="next('not-sure')">Not sure</button>
+    <button onclick="submitForm('0-5999')">£0 – £5,999</button>
+    <button onclick="submitForm('6000-15000')">£6,000 – £15,000</button>
+    <button onclick="submitForm('15001plus')">£15,001 or more</button>
+    <button onclick="submitForm('notSure')">Not sure</button>
   </div>
 
   <script>
-    function next(debt) {
-      window.location.href = `enquire2.html?debt=${encodeURIComponent(debt)}`;
+    function submitForm(debt) {
+      window.location.href = 'enquire2.html?debt=' + encodeURIComponent(debt);
     }
   </script>
 </body>
 </html>
+"""
+
+file_path = "/mnt/data/enquire1.html"
+with open(file_path, "w") as f:
+    f.write(html_content)
+
+file_path

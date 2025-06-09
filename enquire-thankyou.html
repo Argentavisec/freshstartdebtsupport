@@ -1,80 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Thank You | Fresh Start Debt Support</title>
-  <meta name="description" content="Thank you for your enquiry. One of our advisors will contact you shortly to help you with debt support options.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
+      background: #f4faff;
       font-family: Arial, sans-serif;
-      background: #f2f4f8;
+      margin: 0;
+      padding: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
     }
-    .thankyou-box {
+    .box {
       background: #fff;
-      padding: 30px 40px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 40px;
       text-align: center;
-      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 90%;
     }
-    .thankyou-box h1 {
-      color: #0078d7;
+    h1 {
+      color: #28a745;
       margin-bottom: 20px;
     }
-    .thankyou-box p {
+    p {
       font-size: 18px;
       color: #333;
-      line-height: 1.6;
-    }
-    .thankyou-box .logo {
-      height: 60px;
-      margin-bottom: 20px;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
 
-  <div class="thankyou-box">
-    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-    <h1>Thank You!</h1>
+  <div class="box">
+    <h1>✅ Thank You!</h1>
     <p>Your enquiry has been submitted successfully.</p>
-    <p>One of our friendly advisors will contact you shortly to discuss your debt support options.</p>
+    <p>One of our friendly team members will contact you shortly to help you take the next step toward becoming debt-free.</p>
   </div>
 
   <script>
-    // Get URL parameters
-    const params = new URLSearchParams(window.location.search);
-    const debt = params.get('debt');
-    const employment = params.get('employment');
-    const name = params.get('name');
-    const contact = params.get('contact');
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const debt = urlParams.get('debt') || 'Not provided';
+      const employment = urlParams.get('employment') || 'Not provided';
+      const name = urlParams.get('name') || 'Not provided';
+      const contact = urlParams.get('contact') || 'Not provided';
 
-    // Slack webhook URL
-    const webhookURL = "https://hooks.slack.com/services/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";
+      const message = {
+        text: `📩 *New Enquiry Received*:\n\n• *Name:* ${name}\n• *Contact:* ${contact}\n• *Debt Level:* ${debt}\n• *Employment Status:* ${employment}`
+      };
 
-    // Create Slack message
-    const slackMessage = {
-      text: `📩 *New Enquiry Submission:*\n
-*Name:* ${name || "N/A"}
-*Contact:* ${contact || "N/A"}
-*Debt Amount:* ${debt || "N/A"}
-*Employment:* ${employment || "N/A"}`
-    };
+      const webhookURL = "https://hooks.slack.com/services/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";
 
-    // Send to Slack
-    fetch(webhookURL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(slackMessage)
-    })
-    .then(() => console.log("✅ Slack message sent"))
-    .catch(err => console.error("❌ Slack message failed", err));
+      fetch(webhookURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(message)
+      })
+      .then(res => {
+        console.log("✅ Slack response:", res.status);
+      })
+      .catch(err => {
+        console.error("❌ Slack error:", err);
+      });
+    });
   </script>
 
 </body>
