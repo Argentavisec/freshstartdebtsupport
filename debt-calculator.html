@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debt Calculator | Fresh Start Debt Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0078d4;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .enquire-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .result {
+      margin-top: 20px;
+      background-color: #e0f7fa;
+      padding: 15px;
+      border-radius: 5px;
+      display: none;
+    }
+    footer {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Fresh Start Debt Support</div>
+  <a href="enquire1.html" class="enquire-btn">Enquire Now</a>
+</header>
+
+<main>
+  <h1>Debt Calculator</h1>
+  <p>Use our calculator to estimate your potential monthly payments and whether you might qualify for help.</p>
+
+  <form id="calculator">
+    <label for="debtAmount">Total Unsecured Debt (£):</label>
+    <input type="number" id="debtAmount" required>
+
+    <label for="monthlyIncome">Monthly Income (£):</label>
+    <input type="number" id="monthlyIncome" required>
+
+    <label for="monthlyExpenses">Monthly Expenses (£):</label>
+    <input type="number" id="monthlyExpenses" required>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div class="result" id="resultBox">
+    <p id="resultText"></p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Fresh Start Debt Support. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("calculator").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const debt = parseFloat(document.getElementById("debtAmount").value);
+    const income = parseFloat(document.getElementById("monthlyIncome").value);
+    const expenses = parseFloat(document.getElementById("monthlyExpenses").value);
+    const disposable = income - expenses;
+
+    let result = "";
+    if (isNaN(debt) || isNaN(income) || isNaN(expenses)) {
+      result = "Please fill in all fields correctly.";
+    } else if (disposable <= 0) {
+      result = "Your monthly budget is negative. You may qualify for a Debt Relief Order or alternative help.";
+    } else {
+      const estimate = Math.min(disposable, debt / 60).toFixed(2);
+      result = `You could pay around £${estimate} per month. Click 'Enquire Now' to see if you qualify for an IVA, DMP, or debt write-off.`;
+    }
+
+    document.getElementById("resultText").textContent = result;
+    document.getElementById("resultBox").style.display = "block";
+  });
+</script>
+
+</body>
+</html>

@@ -1,104 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>What We Do | Fresh Start Debt Support</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Fresh Start Debt Support</title>
+  <meta name="description" content="Fresh Start Debt Support helps UK individuals regain control with IVAs, DMPs & debt relief advice. Committed, FCA‑regulated guidance tailored to your circumstances.">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
-    header {
-      background-color: #2e86de;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .brand { font-size: 1.3rem; font-weight: bold; }
-    .header-right {
-      display: flex;
-      gap: 10px;
-    }
-    .enquire-top, .menu {
-      background: #28a745;
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .menu {
-      background: #2c3e50;
-    }
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100%;
-      background: #2e86de;
-      color: white;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 999;
-    }
-    .sidebar a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .sidebar a:hover { background-color: #145db2; }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    ul { padding-left: 1.5rem; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    .banner { background: #0078d7; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+    .banner img.logo { height: 50px; }
+    .banner .actions { display: flex; gap: 10px; }
+    .banner .btn-enquire { background: #28a745; color: #fff; padding: 10px 16px; border: none; cursor: pointer; font-size: 16px; }
+    .banner .btn-menu { background: #333; color: #fff; border: none; padding: 10px 16px; cursor: pointer; font-size: 16px; }
+    .banner .site-name { color: #fff; font-size: 24px; font-weight: bold; margin-left: 15px; }
+    .container { padding: 20px; max-width: 800px; margin: auto; }
+    .section { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    h1 { color: #0078d7; }
+    ul { margin-left: 20px; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand">Fresh Start Debt Support</div>
-    <div class="header-right">
-      <a href="mailto:your@email.com" class="enquire-top">📩 Enquire Now</a>
-      <button class="menu" onclick="toggleSidebar()">☰ Menu</button>
-    </div>
-  </header>
 
-  <div class="sidebar" id="sidebar">
-    <a href="index.html">About Us</a>
-    <a href="what-we-do.html">What We Do</a>
-    <a href="iva.html">About an IVA</a>
-    <a href="dmp.html">About a DMP</a>
+  <!-- 1. Header banner with logo -->
+  <div class="banner">
+    <img src="fresh start debt support logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+    <div class="site-name">Fresh Start Debt Support</div>
+    <div class="actions">
+      <button class="btn-enquire" onclick="location.href='enquire-step1.html'">Enquire Now</button>
+      <button class="btn-menu" onclick="/* toggle menu here or link to menu */">Menu</button>
+    </div>
   </div>
 
-  <section>
-    <h1>What We Do</h1>
-    <p>We help people facing unmanageable debt find realistic, regulated ways to regain financial control. We offer support with:</p>
-    <ul>
-      <li>Debt assessment and personalised advice</li>
-      <li>Debt Management Plans (DMPs)</li>
-      <li>Individual Voluntary Arrangements (IVAs)</li>
-      <li>Creditor communication and ongoing support</li>
-    </ul>
-    <p>Our goal is to reduce stress, stop interest and charges, and help you take back control of your money — legally, ethically, and with compassion.</p>
-  </section>
+  <!-- 2. Main content -->
+  <div class="container">
+    <div class="section">
+      <h1>About Fresh Start Debt Support</h1>
+      <p>At <strong>Fresh Start Debt Support</strong>, we’re dedicated to helping people across the UK regain financial freedom. Our experienced team provides personalised, compassionate guidance on debt solutions that align with your unique situation—focusing on IVA (Individual Voluntary Arrangement), DMP (Debt Management Plan), and other regulated debt relief methods.</p>
+    </div>
 
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById("sidebar");
-      sidebar.style.right = sidebar.style.right === "0px" ? "-250px" : "0px";
-    }
-  </script>
+    <div class="section">
+      <h1>Why Choose Us?</h1>
+      <ul>
+        <li><strong>Expert IVA advice:</strong> Learn what an IVA is, how recent 2025 IVA protocol updates make it more flexible and manageable :contentReference[oaicite:1]{index=1}.</li>
+        <li><strong>Debt Management Plans:</strong> Ideal if you have manageable monthly income, but need time to repay – no legal binding involved.</li>
+        <li><strong>Regulated & compliant:</strong> We follow FCA and ASA guidelines to ensure full transparency and fair communication :contentReference[oaicite:2]{index=2}.</li>
+        <li><strong>Tailored approach:</strong> Every plan is based on your debts, income, and goals—with no one-size-fits-all.</li>
+        <li><strong>Emphasis on support:</strong> We support you from first contact right through to your debt‑free future.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h1>Our Process</h1>
+      <ul>
+        <li>Start with a free, confidential consultation—to fully understand your situation.</li>
+        <li>Provide transparent advice on your options: IVA, DMP, DRO, bankruptcy.</li>
+        <li>Prepare and submit the plan proposal or application.</li>
+        <li>Guide and support you throughout repayments or monitoring periods.</li>
+        <li>Help you rebuild—credit-wise, financially, and emotionally.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h1>What Makes Us Different</h1>
+      <ul>
+        <li>A holistic approach—considering income, budget, family, and mental well‑being.</li>
+        <li>Ongoing communication: we keep you updated at every step.</li>
+        <li>Results-driven: Over 5,682 IVAs registered in England/Wales in early 2025 :contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}
+        :contentReference[oaicite:5]{index=5}
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
