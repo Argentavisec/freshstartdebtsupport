@@ -6,66 +6,73 @@
   <title>Step 4 - Contact Number</title>
   <style>
     body {
+      background: #f0f8f9;
       font-family: Arial, sans-serif;
-      background: #f2f3f5;
+      margin: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
     }
-    .box {
-      background: white;
+    .form-box {
+      background: #fff;
       padding: 30px;
       border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 100%;
       max-width: 400px;
     }
-    input, button {
+    h2 {
+      color: #0078d7;
+    }
+    input {
       width: 100%;
       padding: 12px;
-      margin-top: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      margin: 15px 0;
       font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
     }
     button {
-      background: #0078d7;
+      padding: 12px 20px;
+      background-color: #0078d7;
       color: white;
       border: none;
+      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
     }
     button:hover {
-      background: #005fa3;
-    }
-    h2 {
-      margin-bottom: 20px;
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>What is your contact number?</h2>
-    <input type="text" id="contactInput" placeholder="e.g. 07123 456789" />
-    <button onclick="next()">Submit</button>
-  </div>
 
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const debt = urlParams.get('debt');
-    const employment = urlParams.get('employment');
-    const name = urlParams.get('name');
+<div class="form-box">
+  <h2>What is your contact number?</h2>
+  <input type="tel" id="contact" placeholder="Enter your number" />
+  <button onclick="nextStep()">Submit</button>
+</div>
 
-    function next() {
-      const contact = document.getElementById("contactInput").value.trim();
-      if (!contact) {
-        alert("Please enter your contact number.");
-        return;
-      }
-      const url = `thankyou.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}&name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`;
-      window.location.href = url;
+<script>
+  function nextStep() {
+    const contact = document.getElementById('contact').value.trim();
+    if (!contact) {
+      alert('Please enter a valid contact number.');
+      return;
     }
-  </script>
+
+    const params = new URLSearchParams(window.location.search);
+    const debt = params.get('debt');
+    const employment = params.get('employment');
+    const name = params.get('name');
+
+    const finalUrl = `thankyou.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}&name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`;
+    window.location.href = finalUrl;
+  }
+</script>
+
 </body>
 </html>

@@ -1,67 +1,62 @@
-# Re-run the file writing process after state reset
-html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Step 1 – How Much Debt?</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f3f7;
+      background: #f0f3f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .box {
       background: white;
       padding: 30px;
-      max-width: 400px;
-      margin: 80px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
       text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
     }
-    h2 {
-      color: #333;
+    h1 {
+      margin-bottom: 25px;
     }
     button {
       display: block;
       width: 100%;
-      margin-top: 15px;
-      padding: 12px;
-      font-size: 16px;
-      background-color: #0078d7;
-      color: white;
+      padding: 15px;
+      margin: 10px 0;
       border: none;
-      border-radius: 5px;
+      background: #0078d7;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #005fa3;
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
   <div class="box">
-    <h2>How much debt do you have?</h2>
-    <button onclick="submitForm('0-5999')">£0 – £5,999</button>
-    <button onclick="submitForm('6000-15000')">£6,000 – £15,000</button>
-    <button onclick="submitForm('15001plus')">£15,001 or more</button>
-    <button onclick="submitForm('notSure')">Not sure</button>
+    <h1>How much debt do you have?</h1>
+    <button onclick="nextStep('0-5999')">£0 – £5,999</button>
+    <button onclick="nextStep('6000-15000')">£6,000 – £15,000</button>
+    <button onclick="nextStep('15001plus')">£15,001 or more</button>
+    <button onclick="nextStep('notsure')">Not sure</button>
   </div>
 
   <script>
-    function submitForm(debt) {
-      window.location.href = 'enquire2.html?debt=' + encodeURIComponent(debt);
+    function nextStep(debt) {
+      localStorage.setItem("debt", debt);
+      window.location.href = "enquire2.html";
     }
   </script>
 </body>
 </html>
-"""
-
-file_path = "/mnt/data/enquire1.html"
-with open(file_path, "w") as f:
-    f.write(html_content)
-
-file_path

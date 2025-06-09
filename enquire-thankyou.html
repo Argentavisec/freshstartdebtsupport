@@ -52,10 +52,10 @@
       const contact = urlParams.get('contact') || 'Not provided';
 
       const message = {
-        text: `📩 *New Enquiry Received*:\n\n• *Name:* ${name}\n• *Contact:* ${contact}\n• *Debt Level:* ${debt}\n• *Employment Status:* ${employment}`
+        text: `📩 *New Enquiry Received:*\n\n• *Name:* ${name}\n• *Contact:* ${contact}\n• *Debt Level:* ${debt}\n• *Employment Status:* ${employment}`
       };
 
-      const webhookURL = "https://hooks.slack.com/services/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";
+      const webhookURL = "https://hooks.slack.com/services/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";
 
       fetch(webhookURL, {
         method: "POST",
@@ -64,12 +64,8 @@
         },
         body: JSON.stringify(message)
       })
-      .then(res => {
-        console.log("✅ Slack response:", res.status);
-      })
-      .catch(err => {
-        console.error("❌ Slack error:", err);
-      });
+      .then(res => console.log("✅ Slack webhook sent:", res.status))
+      .catch(err => console.error("❌ Slack error:", err));
     });
   </script>
 
