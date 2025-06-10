@@ -43,27 +43,3 @@
     <p>Your fresh start is just around the corner.</p>
   </div>
 
-  <!-- Hidden form that auto-submits -->
-  <form id="enquiryForm" action="https://script.google.com/macros/s/AKfycbxOgHOwAG9ZnIzKLFopiAmXPsM7oRcjAnXX-FRJGyXJn6OJsk1NcOHJVMLXqUn7q6vr/exec" method="POST" style="display: none;">
-    <input type="hidden" name="debt" />
-    <input type="hidden" name="employment" />
-    <input type="hidden" name="name" />
-    <input type="hidden" name="contact" />
-  </form>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const params = new URLSearchParams(window.location.search);
-      const form = document.getElementById('enquiryForm');
-
-      form.elements['debt'].value = params.get('debt') || '';
-      form.elements['employment'].value = params.get('employment') || '';
-      form.elements['name'].value = params.get('name') || '';
-      form.elements['contact'].value = params.get('contact') || '';
-
-      form.submit(); // Auto-submit the form silently
-    });
-  </script>
-
-</body>
-</html>
