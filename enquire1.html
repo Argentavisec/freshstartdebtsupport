@@ -54,8 +54,8 @@
 
   <script>
     function nextStep(debt) {
-      localStorage.setItem("debt", debt);
-      window.location.href = "enquire2.html";
+      const nextUrl = `enquire2.html?debt=${encodeURIComponent(debt)}`;
+      window.location.href = nextUrl;
     }
   </script>
 </body>

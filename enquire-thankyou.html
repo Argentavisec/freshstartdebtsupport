@@ -46,6 +46,7 @@
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
+
       const data = {
         debt: params.get('debt') || '',
         employment: params.get('employment') || '',
@@ -63,8 +64,12 @@
         body: JSON.stringify(data)
       })
       .then(res => res.text())
-      .then(text => console.log("✅ Google Sheets Response:", text))
-      .catch(err => console.error("❌ Google Sheets Error:", err));
+      .then(text => {
+        console.log("✅ Google Sheets Response:", text);
+      })
+      .catch(err => {
+        console.error("❌ Google Sheets Error:", err);
+      });
     });
   </script>
 

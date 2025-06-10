@@ -65,11 +65,11 @@
     }
 
     const params = new URLSearchParams(window.location.search);
-    const debt = params.get('debt');
-    const employment = params.get('employment');
-    const name = params.get('name');
+    const debt = params.get('debt') || '';
+    const employment = params.get('employment') || '';
+    const name = params.get('name') || '';
 
-    const finalUrl = `thankyou.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}&name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`;
+    const finalUrl = `enquire-thankyou.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}&name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`;
     window.location.href = finalUrl;
   }
 </script>
