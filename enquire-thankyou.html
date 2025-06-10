@@ -43,28 +43,25 @@
     <p>Your fresh start is just around the corner.</p>
   </div>
 
+  <!-- Hidden form that auto-submits -->
+  <form id="enquiryForm" action="https://script.google.com/macros/s/AKfycbxOgHOwAG9ZnIzKLFopiAmXPsM7oRcjAnXX-FRJGyXJn6OJsk1NcOHJVMLXqUn7q6vr/exec" method="POST" style="display: none;">
+    <input type="hidden" name="debt" />
+    <input type="hidden" name="employment" />
+    <input type="hidden" name="name" />
+    <input type="hidden" name="contact" />
+  </form>
+
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
-      const data = {
-        debt: params.get('debt') || '',
-        employment: params.get('employment') || '',
-        name: params.get('name') || '',
-        contact: params.get('contact') || ''
-      };
+      const form = document.getElementById('enquiryForm');
 
-      console.log("📤 Sending to Google Sheets:", data);
+      form.elements['debt'].value = params.get('debt') || '';
+      form.elements['employment'].value = params.get('employment') || '';
+      form.elements['name'].value = params.get('name') || '';
+      form.elements['contact'].value = params.get('contact') || '';
 
-      fetch("https://script.google.com/macros/s/AKfycbxOgHOwAG9ZnIzKLFopiAmXPsM7oRcjAnXX-FRJGyXJn6OJsk1NcOHJVMLXqUn7q6vr/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-      .then(res => res.text())
-      .then(text => console.log("✅ Google Sheets Response:", text))
-      .catch(err => console.error("❌ Google Sheets Error:", err));
+      form.submit(); // Auto-submit the form silently
     });
   </script>
 
