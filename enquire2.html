@@ -55,11 +55,10 @@
 
 <script>
   function submitAndGo(status) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const debt = urlParams.get('debt');
+    const params = new URLSearchParams(window.location.search);
+    const debt = params.get('debt') || '';
 
     const nextUrl = `enquire3.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(status)}`;
-
     window.location.href = nextUrl;
   }
 </script>

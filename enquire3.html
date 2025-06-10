@@ -64,9 +64,9 @@
       return;
     }
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const debt = urlParams.get('debt');
-    const employment = urlParams.get('employment');
+    const params = new URLSearchParams(window.location.search);
+    const debt = params.get('debt') || '';
+    const employment = params.get('employment') || '';
 
     const nextUrl = `enquire4.html?debt=${encodeURIComponent(debt)}&employment=${encodeURIComponent(employment)}&name=${encodeURIComponent(name)}`;
     window.location.href = nextUrl;
