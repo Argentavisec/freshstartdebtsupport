@@ -14,21 +14,26 @@
     header {
       background: #007bdb;
       color: white;
-      padding: 10px 0;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
       position: relative;
     }
 
-    header img {
-      height: 50px;
+    .logo-container {
+      display: flex;
+      align-items: center;
     }
 
-    .header-buttons {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: flex;
-      gap: 10px;
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-container span {
+      font-weight: bold;
+      font-size: 18px;
     }
 
     .header-buttons a {
@@ -37,6 +42,7 @@
       border-radius: 4px;
       font-weight: bold;
       font-size: 14px;
+      margin-left: 10px;
     }
 
     .enquire {
@@ -44,21 +50,23 @@
       color: white;
     }
 
-    .menu {
+    .menu-toggle {
       background-color: #333;
       color: white;
+      cursor: pointer;
     }
 
     nav {
       background-color: #007bdb;
-      padding: 10px;
+      display: none;
+      flex-direction: column;
+      padding: 10px 20px;
     }
 
     nav a {
-      display: block;
       color: white;
       text-decoration: none;
-      margin: 6px 0;
+      padding: 8px 0;
       font-size: 16px;
     }
 
@@ -98,19 +106,36 @@
       background: #eee;
       color: #333;
     }
+
+    @media (min-width: 600px) {
+      nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px 0;
+      }
+
+      nav a {
+        margin: 0 15px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Fresh Start Debt Support Logo" />
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo">
+      <span>Fresh Start Debt Support</span>
+    </div>
     <div class="header-buttons">
       <a href="https://form.jotform.com/250596569907070" class="enquire" target="_blank">Enquire Now</a>
-      <a href="#menu" class="menu">☰ Menu</a>
+      <a class="menu-toggle" onclick="toggleMenu()">☰ Menu</a>
     </div>
   </header>
 
-  <nav id="menu">
+  <nav id="mainMenu">
     <a href="about-us.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
@@ -155,6 +180,17 @@
   <footer>
     &copy; 2025 Fresh Start Debt Support. All rights reserved.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mainMenu');
+      if (menu.style.display === 'flex' || menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
 
 </body>
 </html>
