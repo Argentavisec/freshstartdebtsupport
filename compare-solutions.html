@@ -3,203 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compare IVA, DMP & Bankruptcy | Fresh Start Debt Support</title>
-  <meta name="description" content="Confused about debt solutions? Compare IVAs, Debt Management Plans, and Bankruptcy side-by-side to choose what suits your situation best.">
+  <title>IVA vs DMP vs Bankruptcy</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
-    .banner {
-      background: #0078d7;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
     }
-    .banner img.logo { height: 50px; }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      margin-left: 15px;
-      flex: 1;
+
+    h2 {
+      color: #004080;
+      text-align: center;
     }
-    .actions {
-      display: flex;
-      gap: 10px;
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      text-align: center;
     }
-    .btn-enquire {
-      background: #28a745;
-      color: #fff;
-      padding: 10px 16px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .btn-menu {
-      background: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 16px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #0078d7;
-      padding: 10px;
-    }
-    .menu-content a {
+
+    .enquire-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background-color: #0074d9;
       color: white;
+      font-size: 16px;
       text-decoration: none;
-      padding: 8px 0;
+      border-radius: 6px;
+      transition: background-color 0.3s;
     }
-    .menu-content a:hover {
-      text-decoration: underline;
+
+    .enquire-btn:hover {
+      background-color: #005fa3;
     }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+    .table-container {
+      overflow-x: auto;
+      max-width: 100%;
     }
-    .section {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    h1, h2 { color: #0078d7; }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      min-width: 600px;
+      background-color: white;
+      margin: 0 auto;
     }
-    table th, table td {
+
+    th, td {
+      padding: 12px 10px;
       border: 1px solid #ccc;
-      padding: 10px;
       text-align: left;
     }
-    table th {
-      background: #0078d7;
-      color: white;
+
+    th {
+      background-color: #0074d9;
+      color: #fff;
     }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
     @media (max-width: 600px) {
       table, thead, tbody, th, td, tr {
         display: block;
       }
-      th, td {
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
         padding: 10px;
-        border: none;
+        background: #fff;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
       }
     }
   </style>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-  </script>
 </head>
 <body>
 
-  <!-- Header -->
-  <div class="banner">
-    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-    <div class="site-name">Fresh Start Debt Support</div>
-    <div class="actions">
-      <button class="btn-enquire" onclick="window.location.href='https://form.jotform.com/250596569907070'">Enquire Now</button>
-      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
-    </div>
-  </div>
+<h2>IVA vs DMP vs Bankruptcy</h2>
+<p>Choosing the right debt solution is important. Below we’ve laid out the key differences between the three most common routes: <strong>IVAs, Debt Management Plans (DMPs), and Bankruptcy</strong>.</p>
 
-  <!-- Sidebar Menu -->
-  <div class="menu-content" id="menuContent">
-    <a href="index.html">About Us</a>
-    <a href="what-we-do.html">What We Do</a>
-    <a href="iva.html">About an IVA</a>
-    <a href="dmp.html">About a DMP</a>
-    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-    <a href="debt-calculator.html">Debt Calculator</a>
-    <a href="faq.html">FAQs</a>
-    <a href="qualify.html">Check If You Qualify</a>
-  </div>
+<a href="https://your-jotform-url.com" class="enquire-btn" target="_blank">Enquire Now</a>
 
-  <!-- Page Content -->
-  <div class="container">
-    <div class="section">
-      <h1>Compare IVA vs DMP vs Bankruptcy</h1>
-      <p>
-        Choosing the right debt solution is important. Below we’ve laid out the key differences between the three most common routes: <strong>IVAs, Debt Management Plans (DMPs), and Bankruptcy</strong>.
-      </p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>IVA</th>
-            <th>DMP</th>
-            <th>Bankruptcy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Debt Written Off</td>
-            <td>Yes – up to 85%</td>
-            <td>No</td>
-            <td>Yes – all included debts</td>
-          </tr>
-          <tr>
-            <td>Legally Binding</td>
-            <td>Yes</td>
-            <td>No</td>
-            <td>Yes</td>
-          </tr>
-          <tr>
-            <td>Creditor Protection</td>
-            <td>Yes – creditors must stop contact</td>
-            <td>Not guaranteed</td>
-            <td>Yes – automatic on approval</td>
-          </tr>
-          <tr>
-            <td>Duration</td>
-            <td>Usually 5–6 years</td>
-            <td>Until debts are paid off</td>
-            <td>Typically 1 year (restrictions up to 6)</td>
-          </tr>
-          <tr>
-            <td>Credit Rating Impact</td>
-            <td>Negative during term</td>
-            <td>Negative while active</td>
-            <td>Severe – long-lasting</td>
-          </tr>
-          <tr>
-            <td>Home Protection</td>
-            <td>Yes, equity considered</td>
-            <td>Yes</td>
-            <td>May be affected</td>
-          </tr>
-          <tr>
-            <td>Eligibility</td>
-            <td>£6,000+ debt, regular income</td>
-            <td>Any debt, regular payment ability</td>
-            <td>No income or assets needed</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Which is Right for You?</h2>
-      <p>
-        If you want to protect your home and write off a portion of your debt without going bankrupt, an <strong>IVA</strong> may be best.  
-        If you prefer an informal route with flexible terms, a <strong>DMP</strong> may suit.  
-        If you have no income and cannot repay debts at all, <strong>bankruptcy</strong> could be a last resort.
-      </p>
-
-      <p>
-        <strong>Popular searches:</strong> “IVA vs bankruptcy 2025”, “best way to clear debt UK”, “can I avoid court with a DMP?”
-      </p>
-    </div>
-  </div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>IVA</th>
+        <th>DMP</th>
+        <th>Bankruptcy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Feature">Debt Written Off</td>
+        <td data-label="IVA">Yes – up to 85%</td>
+        <td data-label="DMP">No</td>
+        <td data-label="Bankruptcy">Yes – all included debts</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Legally Binding</td>
+        <td data-label="IVA">Yes</td>
+        <td data-label="DMP">No</td>
+        <td data-label="Bankruptcy">Yes</td>
+      </tr>
+      <tr>
+        <td data-label="Feature">Creditor Protection</td>
+        <td data-label="IVA">Yes</td>
+        <td data-label="DMP">No</td>
+        <td data-label="Bankruptcy">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 </body>
 </html>
