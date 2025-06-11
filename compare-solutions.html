@@ -3,155 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compare Debt Solutions</title>
+  <title>Compare IVA vs DMP vs Bankruptcy | Fresh Start Debt Support</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
-
-    h2, p {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .enquire-btn {
-      display: block;
-      width: max-content;
-      margin: 20px auto;
-      padding: 12px 24px;
-      background-color: #0074d9;
+    header {
+      background: #007bdb;
       color: white;
-      font-size: 16px;
-      text-decoration: none;
-      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
     }
-
-    .table-container {
-      overflow-x: auto;
+    header img {
+      height: 40px;
+      vertical-align: middle;
+    }
+    .header-buttons {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .header-buttons a {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .enquire {
+      background: #28a745;
+      color: white;
+    }
+    .menu {
+      background: #333;
+      color: white;
+    }
+    nav {
+      background: #007bdb;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .container {
+      padding: 20px;
+      background: white;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #007bdb;
+      font-size: 28px;
+    }
+    h2 {
       margin-top: 20px;
     }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: white;
-      min-width: 600px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #0074d9;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    /* Responsive view */
-    @media (max-width: 600px) {
-      table {
-        border: 0;
-      }
-
-      thead {
-        display: none;
-      }
-
-      tr {
-        display: block;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        background: #fff;
-        padding: 10px;
-      }
-
-      td {
-        display: block;
-        text-align: right;
-        position: relative;
-        padding-left: 50%;
-      }
-
-      td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        font-weight: bold;
-        text-align: left;
-      }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      background: #eee;
+      color: #333;
     }
   </style>
 </head>
 <body>
 
-<h2>IVA vs DMP vs Bankruptcy</h2>
-<p>Choosing the right debt solution is important. Below we’ve outlined the key differences between the three most common routes: <strong>IVAs</strong>, <strong>Debt Management Plans (DMPs)</strong>, and <strong>Bankruptcy</strong>.</p>
+  <header>
+    <img src="logo.png" alt="Fresh Start Debt Support" />
+    <div class="header-buttons">
+      <a href="enquire1.html" class="enquire">Enquire Now</a>
+      <a href="#" class="menu">☰ Menu</a>
+    </div>
+  </header>
 
-<a class="enquire-btn" href="https://your-jotform-url.com" target="_blank">Enquire Now</a>
+  <nav>
+    <a href="about-us.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="calculator.html">Debt Calculator</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="qualify.html">Check If You Qualify</a>
+  </nav>
 
-<div class="table-container">
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>IVA</th>
-        <th>DMP</th>
-        <th>Bankruptcy</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Feature">Debt Written Off</td>
-        <td data-label="IVA">Yes – up to 85%</td>
-        <td data-label="DMP">No</td>
-        <td data-label="Bankruptcy">Yes – all included debts</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Legally Binding</td>
-        <td data-label="IVA">Yes</td>
-        <td data-label="DMP">No</td>
-        <td data-label="Bankruptcy">Yes</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Creditor Protection</td>
-        <td data-label="IVA">Yes</td>
-        <td data-label="DMP">No</td>
-        <td data-label="Bankruptcy">Yes</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Duration</td>
-        <td data-label="IVA">Usually 5-6 years</td>
-        <td data-label="DMP">Flexible, depends on debt level</td>
-        <td data-label="Bankruptcy">12 months, with longer impacts</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Impact on Credit Score</td>
-        <td data-label="IVA">Yes – for 6 years</td>
-        <td data-label="DMP">Yes – while plan is active</td>
-        <td data-label="Bankruptcy">Yes – for 6 years</td>
-      </tr>
-      <tr>
-        <td data-label="Feature">Home Ownership Risk</td>
-        <td data-label="IVA">Low – equity may be reviewed</td>
-        <td data-label="DMP">None</td>
-        <td data-label="Bankruptcy">High – assets can be sold</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div class="container">
+    <h1>Compare IVA vs DMP vs Bankruptcy</h1>
+    <p>If you're struggling with debt, it's crucial to understand the options available. Below is a comparison of the three most common solutions: IVA, DMP, and Bankruptcy.</p>
+
+    <h2>Individual Voluntary Arrangement (IVA)</h2>
+    <ul>
+      <li>Legal agreement to pay part of your debt over 5–6 years</li>
+      <li>Remaining debt is written off after term ends</li>
+      <li>Stops interest and legal action</li>
+      <li>Impacts credit rating for 6 years</li>
+    </ul>
+
+    <h2>Debt Management Plan (DMP)</h2>
+    <ul>
+      <li>Informal agreement with creditors to pay off debt monthly</li>
+      <li>No legal protection from creditors</li>
+      <li>Flexible and easier to change</li>
+      <li>Interest may still accrue</li>
+    </ul>
+
+    <h2>Bankruptcy</h2>
+    <ul>
+      <li>Legal process to write off unmanageable debt</li>
+      <li>Assets may be sold to repay creditors</li>
+      <li>Lasts about 12 months</li>
+      <li>Strong negative impact on credit</li>
+    </ul>
+
+    <p>Each solution has pros and cons depending on your financial situation. For confidential advice, click "Enquire Now" and speak with our expert team today.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Fresh Start Debt Support. All rights reserved.
+  </footer>
 
 </body>
 </html>
