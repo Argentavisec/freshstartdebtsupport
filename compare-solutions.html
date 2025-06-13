@@ -6,92 +6,178 @@
   <title>Compare IVA vs DMP vs Bankruptcy | Fresh Start Debt Support</title>
   <meta name="description" content="Compare debt solutions including IVAs, DMPs, and Bankruptcy. Get expert guidance to choose the right path toward becoming debt-free.">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
     .banner {
-      background: #0078d7;
+      background: #4CAF50;
       padding: 15px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: center;
     }
-    .banner img.logo { height: 50px; }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
     .site-name {
       color: #fff;
       font-size: 24px;
       font-weight: bold;
-      margin-left: 15px;
-      flex: 1;
     }
-    .actions {
-      display: flex;
-      gap: 10px;
-    }
-    .btn-enquire {
-      background: #28a745;
-      color: #fff;
-      padding: 10px 16px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
+
     .btn-menu {
-      background: #333;
+      margin-top: 10px;
+      background: #4CAF50;
       color: #fff;
       border: none;
-      padding: 10px 16px;
-      cursor: pointer;
+      padding: 12px 24px;
       font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
+
+    .btn-menu:hover {
+      background: #45a045;
+    }
+
     .menu-content {
       display: none;
       flex-direction: column;
-      background: #0078d7;
+      background: #4CAF50;
       padding: 10px;
+      margin: 0 auto;
+      margin-top: 5px;
+      width: fit-content;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
+
     .menu-content a {
       color: white;
       text-decoration: none;
-      padding: 8px 0;
+      padding: 8px 12px;
+      text-align: center;
     }
+
     .menu-content a:hover {
       text-decoration: underline;
     }
+
+    .menu-cta {
+      background: #e9f5ec;
+      color: #000 !important;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 16px;
+      margin: 10px auto;
+      border-radius: 5px;
+      display: block;
+      text-decoration: none;
+      width: 90%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-cta:hover {
+      background: #d3ebd8;
+      color: #000 !important;
+      text-decoration: underline;
+    }
+
     .container {
       padding: 20px;
       max-width: 800px;
       margin: auto;
+      flex: 1;
     }
+
     .section {
-      background: #fff;
+      background: #e9f5ec;
       border-radius: 8px;
       padding: 20px;
       margin-top: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 { color: #0078d7; }
+
+    .bottom-cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    footer {
+      background: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    h1, h2 {
+      color: #4CAF50;
+    }
+
     ul { margin-left: 20px; }
+
+    @media screen and (max-width: 600px) {
+      .site-name {
+        font-size: 20px;
+      }
+
+      .btn-menu {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
   </style>
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
   </script>
 </head>
 <body>
 
   <!-- Header -->
   <div class="banner">
-    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-    <div class="site-name">Fresh Start Debt Support</div>
-    <div class="actions">
-      <button class="btn-enquire" onclick="location.href='https://form.jotform.com/250596569907070'">Enquire Now</button>
-      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
 
-  <!-- Sidebar Menu -->
+  <!-- Menu Button -->
+  <div style="text-align: center;">
+    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+
+  <!-- Dropdown Menu -->
   <div class="menu-content" id="menuContent">
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
@@ -102,6 +188,8 @@
     <a href="faq.html">FAQs</a>
     <a href="qualify.html">Check If You Qualify</a>
     <a href="privacy.html">Privacy Policy</a>
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
   </div>
 
   <!-- Page Content -->
@@ -134,9 +222,19 @@
         <li>Severe impact on credit rating</li>
       </ul>
 
-      <p>Each option suits different circumstances. For free and confidential advice, click “Enquire Now” above and speak with our specialist team.</p>
+      <p>Each option suits different circumstances. For free and confidential advice, click “Get Started for Free” below and speak with our specialist team.</p>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="bottom-cta">
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Fresh Start Debt Support. All rights reserved.
+  </footer>
 
 </body>
 </html>
