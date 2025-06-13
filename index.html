@@ -7,61 +7,69 @@
   <meta name="description" content="We help people in the UK become debt-free through IVAs, DMPs, and tailored solutions. Get free advice and expert support with Fresh Start Debt Support.">
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
     .banner {
-      background: #0078d7;
+      background: #4CAF50; /* Medium green */
       padding: 15px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
     }
-    .banner img.logo { height: 50px; }
+
+    .banner img.logo {
+      height: 50px;
+    }
+
     .site-name {
       color: #fff;
       font-size: 24px;
       font-weight: bold;
       margin-left: 15px;
-      flex: 1;
     }
-    .actions {
-      display: flex;
-      gap: 10px;
-    }
-    .btn-enquire {
-      background: #28a745;
-      color: #fff;
-      padding: 10px 16px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
+
     .btn-menu {
+      position: absolute;
+      right: 15px;
+      top: 15px;
       background: #333;
       color: #fff;
       border: none;
       padding: 10px 16px;
       cursor: pointer;
       font-size: 16px;
+      z-index: 1001;
     }
+
     .menu-content {
       display: none;
       flex-direction: column;
-      background: #0078d7;
+      background: #4CAF50;
       padding: 10px;
+      position: absolute;
+      top: 65px;
+      right: 15px;
+      z-index: 1000;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
+
     .menu-content a {
       color: white;
       text-decoration: none;
       padding: 8px 0;
     }
+
     .menu-content a:hover {
       text-decoration: underline;
     }
+
     .container {
       padding: 20px;
       max-width: 800px;
       margin: auto;
     }
+
     .section {
       background: #fff;
       border-radius: 8px;
@@ -69,15 +77,34 @@
       margin-top: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 { color: #0078d7; }
-    h2 { margin-top: 0; color: #0078d7; }
+
+    h1 { color: #4CAF50; }
+    h2 { margin-top: 0; color: #4CAF50; }
     ul { margin-left: 20px; }
+
+    @media screen and (max-width: 600px) {
+      .site-name {
+        font-size: 20px;
+      }
+      .btn-menu {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+    }
   </style>
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
   </script>
 </head>
 <body>
@@ -86,13 +113,10 @@
   <div class="banner">
     <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
     <div class="site-name">Fresh Start Debt Support</div>
-    <div class="actions">
-      <button class="btn-enquire" onclick="location.href='https://form.jotform.com/250596569907070'">Enquire Now</button>
-      <button class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
-    </div>
+    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
   </div>
 
-  <!-- Sidebar Menu -->
+  <!-- Menu -->
   <div class="menu-content" id="menuContent">
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
@@ -103,6 +127,7 @@
     <a href="faq.html">FAQs</a>
     <a href="qualify.html">Check If You Qualify</a>
     <a href="privacy.html">Privacy Policy</a>
+    <a href="https://form.jotform.com/250596569907070"><strong>Get Started for Free</strong></a>
   </div>
 
   <!-- Page Content -->
