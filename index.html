@@ -11,6 +11,9 @@
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .banner {
@@ -79,38 +82,31 @@
       text-decoration: underline;
     }
 
-.menu-cta {
-  background: #e9f5ec; /* Light green */
-  color: #000 !important; /* Black text, always */
-  text-align: center;
-  font-weight: bold;
-  padding: 10px 16px;
-  margin: 10px auto;
-  border-radius: 5px;
-  display: block;
-  text-decoration: none;
-  width: 90%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.menu-cta:hover {
-  background: #d3ebd8;
-  color: #000 !important;
-  text-decoration: underline;
-}
-
-}
-
+    .menu-cta {
+      background: #e9f5ec;
+      color: #000 !important;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 16px;
+      margin: 10px auto;
+      border-radius: 5px;
+      display: block;
+      text-decoration: none;
+      width: 90%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .menu-cta:hover {
       background: #d3ebd8;
+      color: #000 !important;
+      text-decoration: underline;
     }
 
     .container {
       padding: 20px;
       max-width: 800px;
       margin: auto;
+      flex: 1;
     }
 
     .section {
@@ -119,6 +115,19 @@
       padding: 20px;
       margin-top: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .bottom-cta {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    footer {
+      background: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
     }
 
     h1 { color: #4CAF50; }
@@ -161,13 +170,15 @@
     </div>
   </div>
 
-  <!-- Menu Button Below Banner -->
+  <!-- Menu Button -->
   <div style="text-align: center;">
     <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
   </div>
 
-  <!-- Menu -->
+  <!-- Dropdown Menu -->
   <div class="menu-content" id="menuContent">
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
@@ -177,6 +188,7 @@
     <a href="faq.html">FAQs</a>
     <a href="qualify.html">Check If You Qualify</a>
     <a href="privacy.html">Privacy Policy</a>
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
   </div>
 
@@ -221,7 +233,17 @@
         If you have any questions about your data or this policy, please contact us via our enquiry form.
       </p>
     </div>
+
+    <!-- Bottom CTA Button -->
+    <div class="bottom-cta">
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Fresh Start Debt Support. All rights reserved.
+  </footer>
 
 </body>
 </html>
