@@ -17,18 +17,15 @@
       background: #4CAF50;
       padding: 15px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
-      flex-wrap: wrap;
     }
 
     .top-bar {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-grow: 1;
       gap: 10px;
     }
 
@@ -43,16 +40,20 @@
     }
 
     .btn-menu {
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      background: #333;
+      margin-top: 10px;
+      background: #4CAF50;
       color: #fff;
       border: none;
-      padding: 10px 16px;
-      cursor: pointer;
+      padding: 12px 24px;
       font-size: 16px;
-      z-index: 1001;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-menu:hover {
+      background: #45a045;
     }
 
     .menu-content {
@@ -60,19 +61,18 @@
       flex-direction: column;
       background: #4CAF50;
       padding: 10px;
-      position: absolute;
-      top: 65px;
-      right: 15px;
-      z-index: 1000;
+      margin: 0 auto;
+      margin-top: 5px;
+      width: fit-content;
       border-radius: 6px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      min-width: 200px;
     }
 
     .menu-content a {
       color: white;
       text-decoration: none;
-      padding: 8px 0;
+      padding: 8px 12px;
+      text-align: center;
     }
 
     .menu-content a:hover {
@@ -80,8 +80,8 @@
     }
 
     .menu-cta {
-      background: #4CAF50;
-      color: #fff;
+      background: #ffffff;
+      color: #4CAF50;
       text-align: center;
       font-weight: bold;
       padding: 10px 16px;
@@ -93,7 +93,7 @@
     }
 
     .menu-cta:hover {
-      background: #45a045;
+      background: #f0f0f0;
     }
 
     .container {
@@ -118,10 +118,10 @@
       .site-name {
         font-size: 20px;
       }
+
       .btn-menu {
-        padding: 8px 12px;
+        padding: 10px 20px;
         font-size: 14px;
-        top: 10px;
       }
     }
   </style>
@@ -148,11 +148,16 @@
       <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
+  </div>
+
+  <!-- Menu Button Below Banner -->
+  <div style="text-align: center;">
     <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
   </div>
 
   <!-- Menu -->
   <div class="menu-content" id="menuContent">
+    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
