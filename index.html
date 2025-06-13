@@ -6,18 +6,33 @@
   <title>Fresh Start Debt Support | Help With Debt Across the UK</title>
   <meta name="description" content="We help people in the UK become debt-free through IVAs, DMPs, and tailored solutions. Get free advice and expert support with Fresh Start Debt Support.">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
 
     .banner {
-      background: #4CAF50; /* Medium green */
+      background: #4CAF50;
       padding: 15px;
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       position: relative;
+      flex-wrap: wrap;
     }
 
-    .banner img.logo {
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 10px;
+    }
+
+    .logo {
       height: 50px;
     }
 
@@ -25,7 +40,6 @@
       color: #fff;
       font-size: 24px;
       font-weight: bold;
-      margin-left: 15px;
     }
 
     .btn-menu {
@@ -89,7 +103,7 @@
     }
 
     .section {
-      background: #e9f5ec; /* Light green */
+      background: #e9f5ec;
       border-radius: 8px;
       padding: 20px;
       margin-top: 20px;
@@ -107,6 +121,7 @@
       .btn-menu {
         padding: 8px 12px;
         font-size: 14px;
+        top: 10px;
       }
     }
   </style>
@@ -129,14 +144,15 @@
 
   <!-- Header -->
   <div class="banner">
-    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-    <div class="site-name">Fresh Start Debt Support</div>
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
     <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
   </div>
 
   <!-- Menu -->
   <div class="menu-content" id="menuContent">
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     <a href="index.html">About Us</a>
     <a href="what-we-do.html">What We Do</a>
     <a href="iva.html">About an IVA</a>
@@ -174,7 +190,6 @@
       <p><strong>Popular searches:</strong> “debt help UK 2025”, “best way to clear debt”, “IVA support”, “DMP company near me”.</p>
     </div>
 
-    <!-- Privacy Policy Section -->
     <div class="section">
       <h2>Privacy Policy</h2>
       <p>
