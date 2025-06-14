@@ -9,7 +9,7 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f4f4f4;
       color: #333;
       display: flex;
@@ -19,28 +19,29 @@
 
     .banner {
       background: #4CAF50;
-      padding: 15px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .top-bar {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .logo {
-      height: 50px;
+      height: 55px;
     }
 
     .site-name {
       color: #fff;
-      font-size: 24px;
-      font-weight: bold;
+      font-size: 26px;
+      font-weight: 700;
     }
 
     .btn-menu {
@@ -48,16 +49,16 @@
       background: #4CAF50;
       color: #fff;
       border: none;
-      padding: 10px 20px;
+      padding: 10px 24px;
       font-size: 16px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .btn-menu:hover {
-      background: #45a045;
+      background: #3e9e45;
     }
 
     .menu-content {
@@ -69,7 +70,7 @@
       margin-top: 5px;
       width: fit-content;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     .menu-section {
@@ -95,54 +96,56 @@
     }
 
     .menu-content a:hover {
-      background: #45a045;
+      background: #3e9e45;
       text-decoration: underline;
     }
 
     .menu-cta {
-      background: #d4f2dc;
+      background: #ffeb3b;
       color: #000 !important;
       font-weight: bold;
-      padding: 8px 12px;
-      margin: 12px auto;
-      border-radius: 4px;
-      width: 180px;
-      font-size: 15px;
+      padding: 10px 16px;
+      margin: 16px auto;
+      border-radius: 6px;
+      width: 200px;
+      font-size: 16px;
       text-align: center;
       display: block;
       text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, background 0.2s ease;
     }
 
     .menu-cta:hover {
-      background: #bce8c7;
+      background: #fdd835;
+      transform: scale(1.05);
     }
 
     .container {
-      padding: 20px;
-      max-width: 800px;
+      padding: 30px 20px;
+      max-width: 900px;
       margin: auto;
       flex: 1;
     }
 
     .section {
       background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     .bottom-cta {
       text-align: center;
-      margin: 40px 0;
+      margin: 50px 0 30px;
     }
 
     footer {
       background: #4CAF50;
       color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 18px;
       font-size: 14px;
     }
 
@@ -150,16 +153,29 @@
       color: #4CAF50;
     }
 
-    ul { margin-left: 20px; }
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      line-height: 1.7;
+    }
 
     @media screen and (max-width: 600px) {
       .site-name {
         font-size: 20px;
       }
+
       .btn-menu {
-        padding: 10px 20px;
         font-size: 14px;
       }
+
       .menu-cta {
         width: 90%;
       }
