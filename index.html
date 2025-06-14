@@ -9,7 +9,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #333;
       display: flex;
@@ -19,29 +19,28 @@
 
     .banner {
       background: #4CAF50;
-      padding: 20px;
+      padding: 15px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .top-bar {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .logo {
-      height: 55px;
+      height: 50px;
     }
 
     .site-name {
       color: #fff;
-      font-size: 26px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     .btn-menu {
@@ -49,16 +48,16 @@
       background: #4CAF50;
       color: #fff;
       border: none;
-      padding: 10px 24px;
+      padding: 10px 20px;
       font-size: 16px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .btn-menu:hover {
-      background: #3e9e45;
+      background: #45a045;
     }
 
     .menu-content {
@@ -70,7 +69,7 @@
       margin-top: 5px;
       width: fit-content;
       border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .menu-section {
@@ -96,56 +95,55 @@
     }
 
     .menu-content a:hover {
-      background: #3e9e45;
+      background: #45a045;
       text-decoration: underline;
     }
 
     .menu-cta {
-      background: #ffeb3b;
-      color: #000 !important;
+      background: #3da647;
+      color: #fff !important;
       font-weight: bold;
       padding: 10px 16px;
-      margin: 16px auto;
-      border-radius: 6px;
+      margin: 12px auto;
+      border-radius: 5px;
       width: 200px;
       font-size: 16px;
       text-align: center;
       display: block;
       text-decoration: none;
-      box-shadow: 0 3px 5px rgba(0,0,0,0.3);
-      transition: transform 0.2s ease, background 0.2s ease;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
 
     .menu-cta:hover {
-      background: #fdd835;
-      transform: scale(1.05);
+      background: #2f8c3a;
     }
 
     .container {
-      padding: 30px 20px;
-      max-width: 900px;
+      padding: 20px;
+      max-width: 800px;
       margin: auto;
       flex: 1;
     }
 
     .section {
       background: #e9f5ec;
-      border-radius: 10px;
-      padding: 25px;
-      margin-top: 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .bottom-cta {
       text-align: center;
-      margin: 50px 0 30px;
+      margin: 40px 0;
     }
 
     footer {
       background: #4CAF50;
       color: #fff;
       text-align: center;
-      padding: 18px;
+      padding: 15px;
       font-size: 14px;
     }
 
@@ -153,19 +151,7 @@
       color: #4CAF50;
     }
 
-    h1 {
-      font-size: 28px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 16px;
-    }
-
-    ul {
-      margin-left: 20px;
-      line-height: 1.7;
-    }
+    ul { margin-left: 20px; }
 
     @media screen and (max-width: 600px) {
       .site-name {
@@ -173,6 +159,7 @@
       }
 
       .btn-menu {
+        padding: 10px 20px;
         font-size: 14px;
       }
 
