@@ -71,35 +71,50 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
+    .menu-section {
+      padding: 10px 0;
+      border-top: 1px solid #ffffff44;
+    }
+
+    .menu-section h4 {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 0 5px 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
     .menu-content a {
+      display: block;
       color: white;
       text-decoration: none;
-      padding: 8px 12px;
-      text-align: center;
+      padding: 6px 12px;
+      font-size: 15px;
     }
 
     .menu-content a:hover {
+      background: #45a045;
       text-decoration: underline;
     }
 
     .menu-cta {
-      background: #e9f5ec;
+      background: #d4f2dc;
       color: #000 !important;
-      text-align: center;
       font-weight: bold;
-      padding: 10px 16px;
-      margin: 10px auto;
-      border-radius: 5px;
+      padding: 8px 12px;
+      margin: 12px auto;
+      border-radius: 4px;
+      width: 180px;
+      font-size: 15px;
+      text-align: center;
       display: block;
       text-decoration: none;
-      width: 90%;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
     .menu-cta:hover {
-      background: #d3ebd8;
-      color: #000 !important;
-      text-decoration: underline;
+      background: #bce8c7;
     }
 
     .container {
@@ -125,17 +140,26 @@
       margin-left: 20px;
     }
 
-    .bottom-cta {
-      text-align: center;
-      margin: 40px 0;
-    }
-
     footer {
       background: #4CAF50;
       color: #fff;
       text-align: center;
       padding: 15px;
       font-size: 14px;
+    }
+
+    .trust-box {
+      background: #dff5e7;
+      text-align: center;
+      padding: 20px;
+      margin: 40px auto 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .trust-box h3 {
+      margin-top: 0;
+      color: #2e7d32;
     }
 
     @media screen and (max-width: 600px) {
@@ -146,6 +170,10 @@
       .btn-menu {
         padding: 10px 20px;
         font-size: 14px;
+      }
+
+      .menu-cta {
+        width: 90%;
       }
     }
   </style>
@@ -181,16 +209,58 @@
 
   <!-- Dropdown Menu -->
   <div class="menu-content" id="menuContent">
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-    <a href="index.html">About Us</a>
-    <a href="what-we-do.html">What We Do</a>
-    <a href="iva.html">About an IVA</a>
-    <a href="dmp.html">About a DMP</a>
-    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-    <a href="debt-calculator.html">Debt Calculator</a>
-    <a href="faq.html">FAQs</a>
-    <a href="qualify.html">Check If You Qualify</a>
-    <a href="privacy.html">Privacy Policy</a>
+    <div class="menu-section">
+      <h4>About Us</h4>
+      <a href="index.html">About Us</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <div class="menu-section">
+      <h4>Choose a Debt Solution</h4>
+      <a href="iva.html">About an IVA</a>
+      <a href="dmp.html">About a DMP</a>
+      <a href="dro.html">About a DRO</a>
+      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+      <a href="debt-calculator.html">Debt Calculator</a>
+    </div>
+
+    <div class="menu-section">
+      <h4>Types of Debt</h4>
+      <a href="credit-card-debt.html">Credit Card Debt</a>
+      <a href="loan-debt.html">Personal Loans</a>
+      <a href="catalogue-debt.html">Catalogue Debt</a>
+      <a href="council-tax-debt.html">Council Tax Debt</a>
+      <a href="utility-debt.html">Utility Bills</a>
+      <a href="payday-loan-debt.html">Payday Loans</a>
+      <a href="overdraft-debt.html">Bank Overdrafts</a>
+      <a href="store-card-debt.html">Store Cards</a>
+      <a href="mortgage-arrears.html">Mortgage Arrears</a>
+      <a href="business-debt.html">Business Debt</a>
+      <a href="tax-debt.html">Tax & HMRC Debt</a>
+      <a href="rent-arrears.html">Rent Arrears</a>
+      <a href="gambling-debt.html">Gambling Debts</a>
+    </div>
+
+    <div class="menu-section">
+      <h4>List of Creditors</h4>
+      <a href="#">Barclays</a>
+      <a href="#">HSBC</a>
+      <a href="#">NatWest</a>
+      <a href="#">Lloyds</a>
+      <a href="#">Capital One</a>
+    </div>
+
+    <div class="menu-section">
+      <h4>Popular Searches</h4>
+      <a href="#">Debt help UK 2025</a>
+      <a href="#">Clear debt fast</a>
+      <a href="#">IVA company</a>
+      <a href="#">DMP provider</a>
+      <a href="#">Stop debt collectors</a>
+      <a href="#">Affordable repayment plans</a>
+    </div>
+
     <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
   </div>
 
@@ -220,8 +290,12 @@
       </p>
     </div>
 
-    <!-- Bottom CTA -->
-    <div class="bottom-cta">
+    <!-- Trust Section at Bottom -->
+    <div class="trust-box">
+      <h3>✅ Trusted UK Debt Support</h3>
+      <p>✅ Trusted by thousands across the UK</p>
+      <p>✅ Secure, confidential & free advice</p>
+      <p>✅ Rated for clear, friendly guidance</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
     </div>
   </div>
