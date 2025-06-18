@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://argentavisec.github.io/freshstartdebtsupport/sitemap.xml
+Sitemap: https://www.freshstartdebtsupport.co.uk/sitemap.xml
