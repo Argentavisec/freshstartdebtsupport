@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK DMP Providers | Fresh Start Debt Support</title>
+  <meta name="description" content="Compare UK DMP providers and discover why Fresh Start offers faster, more personal debt help with fewer clients and more focus on you." />
+  <meta name="keywords" content="DMP providers UK, debt management plan providers, DMP comparison, affordable debt help, DMP advice">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .banner {
+      background: #4CAF50;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .logo {
+      height: 50px;
+    }
+    .site-name {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .btn-menu {
+      margin-top: 10px;
+      background: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .btn-menu:hover {
+      background: #45a045;
+    }
+    .menu-content {
+      display: none;
+      flex-direction: column;
+      background: #4CAF50;
+      padding: 10px;
+      margin: 0 auto;
+      margin-top: 5px;
+      width: fit-content;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .menu-section {
+      padding: 10px 0;
+      border-top: 1px solid #ffffff44;
+    }
+    .menu-section h4 {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 0 5px 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .menu-content a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      font-size: 15px;
+    }
+    .menu-content a:hover {
+      background: #45a045;
+      text-decoration: underline;
+    }
+    .menu-cta {
+      background: #a5e6b0;
+      color: #000 !important;
+      font-weight: bold;
+      padding: 10px 16px;
+      margin: 12px auto;
+      border-radius: 5px;
+      width: 200px;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+      transition: background 0.3s;
+    }
+    .menu-cta:hover {
+      background: #88d292;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      flex: 1;
+    }
+    .section {
+      background: #e9f5ec;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #4CAF50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    h1, h2 {
+      color: #4CAF50;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+  <div class="menu-content" id="menuContent">
+    <div class="menu-section">
+      <h4>About Us</h4>
+      <a href="index.html">About Us</a>
+      <a href="what-we-do.html">What We Do</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="menu-section">
+      <h4>Choose a Debt Solution</h4>
+      <a href="iva.html">About an IVA</a>
+      <a href="dmp.html">About a DMP</a>
+      <a href="dro.html">About a DRO</a>
+      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+      <a href="debt-calculator.html">Debt Calculator</a>
+    </div>
+    <div class="menu-section">
+      <h4>Types of Debt</h4>
+      <a href="credit-card-debt.html">Credit Card Debt</a>
+      <a href="loan-debt.html">Personal Loans</a>
+      <a href="catalogue-debt.html">Catalogue Debt</a>
+      <a href="council-tax-debt.html">Council Tax Debt</a>
+      <a href="utility-debt.html">Utility Bills</a>
+      <a href="payday-loan-debt.html">Payday Loans</a>
+      <a href="overdraft-debt.html">Bank Overdrafts</a>
+      <a href="store-card-debt.html">Store Cards</a>
+      <a href="mortgage-arrears.html">Mortgage Arrears</a>
+      <a href="business-debt.html">Business Debt</a>
+      <a href="tax-debt.html">Tax & HMRC Debt</a>
+      <a href="rent-arrears.html">Rent Arrears</a>
+      <a href="gambling-debt.html">Gambling Debts</a>
+    </div>
+    <div class="menu-section">
+      <h4>List of Creditors</h4>
+      <a href="barclays.html">Barclays</a>
+      <a href="hsbc.html">HSBC</a>
+      <a href="natwest.html">NatWest</a>
+      <a href="lloyds.html">Lloyds</a>
+      <a href="capital-one.html">Capital One</a>
+    </div>
+    <div class="menu-section">
+      <h4>List of Debt Collectors & Bailiffs</h4>
+      <a href="lowell.html">Lowell Financial</a>
+      <a href="cabot.html">Cabot Financial</a>
+      <a href="moriarty-law.html">Moriarty Law</a>
+      <a href="pra-group.html">PRA Group</a>
+      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
+      <a href="advantis.html">Advantis Credit</a>
+      <a href="link-financial.html">Link Financial</a>
+      <a href="capquest.html">Capquest Debt Recovery</a>
+      <a href="wescot.html">Wescot Credit Services</a>
+      <a href="resolvecall.html">Resolvecall</a>
+      <a href="hoist-finance.html">Hoist Finance</a>
+      <a href="robinson-way.html">Robinson Way</a>
+      <a href="fredrickson.html">Fredrickson International</a>
+      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
+      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
+      <a href="bristow-sutor.html">Bristow & Sutor</a>
+      <a href="rossendales.html">Rossendales</a>
+      <a href="equita.html">Equita</a>
+      <a href="cdcbailiffs.html">CDCBailiffs</a>
+      <a href="marston-holdings.html">Marston Holdings</a>
+      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
+      <a href="newlyn.html">Newlyn</a>
+      <a href="swift-credit.html">Swift Credit Services</a>
+    </div>
+    <div class="menu-section">
+      <h4>Popular Searches</h4>
+      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
+      <a href="clear-debt-fast.html">Clear Debt Fast</a>
+      <a href="iva-company.html">IVA Company</a>
+      <a href="dmp-provider.html">DMP Provider</a>
+      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
+      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <h1>Top DMP Providers in the UK (And Why Clients Prefer Us)</h1>
+      <p>Debt Management Plans (DMPs) are a trusted way to repay debt in a more affordable, stress-free way. But when it comes to choosing a provider, it’s not just about what they offer — it’s how they treat you. That’s where Fresh Start comes in.</p>
+
+      <h2>Popular DMP Providers in the UK</h2>
+      <ul>
+        <li>StepChange Debt Charity</li>
+        <li>PayPlan</li>
+        <li>National Debtline</li>
+        <li>MoneyPlus Advice</li>
+        <li>Gregory Pennington</li>
+        <li>DFH Financial Solutions</li>
+        <li>Vanguard Insolvency</li>
+        <li>Debt Advice Foundation</li>
+        <li>Churchwood Finance</li>
+        <li>OpenMoney</li>
+      </ul>
+
+      <h2>Why Fresh Start Is the Smarter Choice</h2>
+      <p>Most of the providers above handle thousands of cases. That means longer wait times, slower responses, and often very little personal attention. At Fresh Start, we’re different:</p>
+      <ul>
+        <li>✅ We take on fewer clients so we can give YOU our full attention</li>
+        <li>⚡ We act fast — no long call queues, no being passed around</li>
+        <li>📞 You’ll deal with real people, not call centre scripts</li>
+        <li>📩 We offer ongoing check-ins to adjust your plan when life changes</li>
+        <li>📝 We can provide a DMP reference number you can quote to creditors</li>
+      </ul>
+
+      <p>If you’ve tried the big companies and been left hanging… it’s time for a Fresh Start. We get people into active plans faster, with far less red tape — and we fight to get your interest frozen and payments reduced.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started With Your DMP</a>
+
+      <h2>Personal Support That Puts You First</h2>
+      <p>We know what it’s like to feel overwhelmed by debt. That’s why we make it easy, confidential, and stress-free to get help — with no pressure and no judgment. Your future is our focus.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Debt Adviser</a>
+    </div>
+
+    <div class="section trust-badges">
+      <h3>Trusted DMP Support</h3>
+      <p>✅ Rated for friendly, clear advice</p>
+      <p>✅ Fast setup with fewer clients</p>
+      <p>✅ Reference numbers for peace of mind</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Fresh Start Debt Support. All rights reserved.
+  </footer>
+</body>
+</html>
