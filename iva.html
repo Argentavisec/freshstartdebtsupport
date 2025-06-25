@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IVA Help – Write Off Debt Legally | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with debt over £6,000? Find out how an IVA can help you write off unaffordable debt, stop creditor contact and reduce monthly repayments." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What is an IVA? | Fresh Start Debt Support</title>
+  <meta name="description" content="Struggling with debt over £6,000? Find out how an IVA can help you write off unaffordable debt, stop creditor contact and reduce monthly repayments.">
   <meta name="keywords" content="IVA, write off debt, affordable debt solutions, UK debt help, freeze interest, stop bailiffs, IVA 2025">
   <style>
     body {
@@ -12,98 +12,86 @@
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
+    header {
+      background-color: #4CAF50;
+      padding: 20px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      position: relative;
     }
-    .top-bar {
+    header img {
+      height: 50px;
+      margin-bottom: 5px;
+    }
+    header h1 {
+      margin: 0;
+      color: white;
+      font-size: 22px;
+    }
+    .top-buttons {
+      position: absolute;
+      right: 10px;
+      top: 15px;
       display: flex;
-      align-items: center;
-      justify-content: center;
       gap: 10px;
     }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
+    .top-buttons a, .top-buttons button {
+      background: white;
       border: none;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 5px;
       font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
-    .btn-menu:hover {
-      background: #45a045;
+    .top-buttons button:hover, .top-buttons a:hover {
+      background: #e7e7e7;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #222;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0645AD;
+      text-decoration: underline;
     }
     .menu-content {
       display: none;
       flex-direction: column;
       background: #4CAF50;
       padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
+      margin: 10px auto;
+      width: fit-content;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     .menu-section h4 {
       color: #fff;
+      margin: 10px 12px 5px;
       font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
     .menu-content a {
       display: block;
-      color: #add8e6;
-      text-decoration: none;
       padding: 6px 12px;
-      font-size: 15px;
+      color: #dff;
+      text-decoration: none;
     }
     .menu-content a:hover {
       background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #d4f2dc;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #bce8c7;
     }
   </style>
   <script>
@@ -121,214 +109,195 @@
   </script>
 </head>
 <body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
+
+<header>
+  <img src="logo.jpg" alt="Fresh Start Logo" />
+  <h1>Fresh Start Debt Support</h1>
+  <div class="top-buttons">
+    <a href="step1.html">Check If You Qualify</a>
+    <button id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+</header>
+
+<div id="menuContent" class="menu-content">
+  <div class="menu-section">
+    <h4>About Us</h4>
+    <a href="index.html">About Us</a>
+    <a href="what-we-do.html">What We Do</a>
+    <a href="privacy.html">Privacy Policy</a>
   </div>
 
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+  <div class="menu-section">
+    <h4>Debt Solutions</h4>
+    <a href="iva.html">About an IVA</a>
+    <a href="dmp.html">About a DMP</a>
+    <a href="dro.html">About a DRO</a>
+    <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
   </div>
 
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest</a>
-      <a href="wescot.html">Wescot</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson</a>
-      <a href="drydensfairfax.html">Drydensfairfax</a>
-      <a href="jacobs-enforcement.html">Jacobs</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-  </div>
-  <div class="container">
-    <div class="section">
-      <h1>What is an IVA?</h1>
-      <p>An <strong><a href="iva.html" style="color: #0000EE;">Individual Voluntary Arrangement (IVA)</a></strong> is a formal debt solution that lets you reduce your monthly payments and write off a significant portion of your debt. It’s legally binding and protects you from creditor contact, interest, charges, and legal action.</p>
-
-      <h2>Who Qualifies for an IVA?</h2>
-      <p>You may be eligible for an IVA if you:</p>
-      <ul>
-        <li>Owe over £6,000 in <a href="credit-card-debt.html" style="color: #0000EE;">unsecured debt</a></li>
-        <li>Have debts with two or more creditors</li>
-        <li>Live in England, Wales or Northern Ireland</li>
-        <li>Have a regular source of income from employment, self-employment, or benefits</li>
-      </ul>
-
-      <p>Not sure if you qualify? Our <a href="https://form.jotform.com/250596569907070" style="color: #0000EE;">debt specialists</a> can give you free, no-pressure guidance based on your circumstances.</p>
-
-      <h2>What Debts Can Be Included in an IVA?</h2>
-      <p>You can include a wide range of unsecured debts in an IVA, including:</p>
-      <ul>
-        <li><a href="credit-card-debt.html" style="color: #0000EE;">Credit card debt</a></li>
-        <li><a href="loan-debt.html" style="color: #0000EE;">Personal loans</a></li>
-        <li><a href="overdraft-debt.html" style="color: #0000EE;">Overdrafts</a></li>
-        <li><a href="catalogue-debt.html" style="color: #0000EE;">Catalogue accounts</a></li>
-        <li><a href="payday-loan-debt.html" style="color: #0000EE;">Payday loans</a></li>
-        <li><a href="council-tax-debt.html" style="color: #0000EE;">Council tax arrears</a></li>
-        <li><a href="utility-debt.html" style="color: #0000EE;">Gas, electric, and water bills</a></li>
-        <li><a href="store-card-debt.html" style="color: #0000EE;">Store cards</a></li>
-        <li><a href="tax-debt.html" style="color: #0000EE;">HMRC debts</a></li>
-      </ul>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If You Qualify</a>
-
-      <h2>Benefits of an IVA</h2>
-      <ul>
-        <li>✅ Stop <a href="stop-debt-collectors.html" style="color: #0000EE;">debt collectors</a> and bailiff action</li>
-        <li>✅ Freeze interest and late charges</li>
-        <li>✅ Protect your home and essential assets</li>
-        <li>✅ Write off unaffordable debt legally</li>
-        <li>✅ One simple affordable monthly payment</li>
-        <li>✅ Get peace of mind and a clear end date</li>
-      </ul>
-
-      <p>Our <strong>debt specialists</strong> are here to explain your options clearly and make sure an IVA is the right fit for you.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Talk to a Debt Specialist</a>
-    </div>
-    <div class="section">
-      <h2>Example of How an IVA Works</h2>
-      <p>Here’s a typical case showing how an IVA can reduce monthly payments and write off unaffordable debt:</p>
-
-      <table style="width:100%; background:#fff; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <tr style="background:#d4f2dc; font-weight:bold;">
-          <td style="padding: 10px;">Type of Debt</td>
-          <td style="padding: 10px;">Amount</td>
-        </tr>
-        <tr><td style="padding: 10px;">Loan(s)</td><td style="padding: 10px;">£5,000</td></tr>
-        <tr style="background:#f0f0f0;"><td style="padding: 10px;">Overdraft</td><td style="padding: 10px;">£3,000</td></tr>
-        <tr><td style="padding: 10px;">Credit Card(s)</td><td style="padding: 10px;">£13,500</td></tr>
-        <tr style="background:#f0f0f0;"><td style="padding: 10px;">Store Card(s)</td><td style="padding: 10px;">£4,500</td></tr>
-        <tr><td style="padding: 10px;">Utility Bill(s)</td><td style="padding: 10px;">£1,500</td></tr>
-        <tr style="background:#d4f2dc; font-weight:bold;"><td style="padding: 10px;">Total Owed</td><td style="padding: 10px;">£27,500</td></tr>
-      </table>
-
-      <p><strong>Before IVA:</strong> Monthly payments: <del>£717</del><br>
-         <strong>After IVA:</strong> Monthly payments: <span style="color:green; font-weight:bold;">£137</span><br>
-         <strong>Monthly saving:</strong> £580<br>
-         <strong>Debt written off:</strong> 78%*</p>
-
-      <p style="font-size: 13px; color: #666;">*A debt write-off amount of 80% is realistic based on average figures from IVA clients between April 2024 and April 2025. Every case is different and assessed individually.</p>
-
-      <a href="debt-calculator.html" style="color: #0000EE;">Use our IVA Calculator</a> to see how much you could save.
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Calculate My IVA Savings</a>
-    </div>
-
-    <div class="section">
-      <h2>IVA vs Other Debt Options</h2>
-      <p>Not sure if an IVA is right for you? You might want to compare it with other debt solutions:</p>
-      <ul>
-        <li><a href="compare-solutions.html" style="color: #0000EE;">IVA vs DMP vs Bankruptcy</a></li>
-        <li><a href="dmp.html" style="color: #0000EE;">Debt Management Plans (DMPs)</a></li>
-        <li><a href="dro.html" style="color: #0000EE;">Debt Relief Orders (DROs)</a></li>
-        <li><a href="bankruptcy.html" style="color: #0000EE;">Bankruptcy</a></li>
-      </ul>
-      <p>Each has pros and cons — and our <strong>debt specialists</strong> can help guide you to the right fit.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find the Right Option</a>
-    </div>
-    <div class="section">
-      <h2>Why Choose Fresh Start?</h2>
-      <p>We’re a small, dedicated team that helps people across the UK get out of debt faster. Unlike some of the big companies, we work with fewer clients so we can give you the personal attention you deserve.</p>
-      <ul>
-        <li>✅ Get a response within 1 hour (Mon–Sat)</li>
-        <li>✅ Speak to a real UK debt <strong>specialist</strong></li>
-        <li>✅ We can offer a unique reference number to speed up your application</li>
-        <li>✅ Free, private and pressure-free support</li>
-      </ul>
-      <p>Let us help you take the first step toward a debt-free future.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-    </div>
-
-    <div class="section trust-badges">
-      <h2>Trusted UK Debt Support</h2>
-      <ul>
-        <li>✅ Trusted by thousands across the UK</li>
-        <li>✅ Secure, confidential & free guidance</li>
-        <li>✅ Rated for clear, friendly support</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My IVA Check</a>
-    </div>
+  <div class="menu-section">
+    <h4>Types of Debt</h4>
+    <a href="credit-card-debt.html">Credit Card Debt</a>
+    <a href="loan-debt.html">Personal Loans</a>
+    <a href="catalogue-debt.html">Catalogue Debt</a>
+    <a href="council-tax-debt.html">Council Tax Debt</a>
+    <a href="utility-debt.html">Utility Bills</a>
+    <a href="payday-loan-debt.html">Payday Loans</a>
+    <a href="overdraft-debt.html">Bank Overdrafts</a>
+    <a href="store-card-debt.html">Store Cards</a>
+    <a href="tax-debt.html">Tax & HMRC Debt</a>
+    <a href="rent-arrears.html">Rent Arrears</a>
+    <a href="gambling-debt.html">Gambling Debts</a>
   </div>
 
-  <footer>
-    © 2025 Fresh Start Debt Support. All rights reserved. This website does not offer any financial advice and is not regulated by the FCA
-  </footer>
+  <div class="menu-section">
+    <h4>Debt Collectors</h4>
+    <a href="lowell.html">Lowell Financial</a>
+    <a href="moorcroft.html">Moorcroft</a>
+    <a href="cabot.html">Cabot Financial</a>
+    <a href="link-financial.html">Link Financial</a>
+    <a href="pra-group.html">PRA Group</a>
+    <a href="resolvecall.html">Resolvecall</a>
+    <a href="advantis.html">Advantis Credit</a>
+    <a href="hoist-finance.html">Hoist Finance</a>
+    <a href="robinson-way.html">Robinson Way</a>
+    <a href="fredrickson.html">Fredrickson</a>
+    <a href="drydensfairfax.html">Drydensfairfax</a>
+    <a href="jacobs-enforcement.html">Jacobs</a>
+    <a href="bristow-sutor.html">Bristow & Sutor</a>
+    <a href="rossendales.html">Rossendales</a>
+    <a href="equita.html">Equita</a>
+    <a href="cdcbailiffs.html">CDCBailiffs</a>
+    <a href="marston-holdings.html">Marston Holdings</a>
+    <a href="excel-civil-enforcement.html">Excel Enforcement</a>
+    <a href="newlyn.html">Newlyn</a>
+    <a href="swift-credit.html">Swift Credit</a>
+  </div>
+
+  <div class="menu-section">
+    <h4>Popular</h4>
+    <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
+    <a href="clear-debt-fast.html">Clear Debt Fast</a>
+    <a href="iva-company.html">IVA Company</a>
+    <a href="dmp-provider.html">DMP Provider</a>
+    <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
+    <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
+  </div>
+
+  <a href="step1.html" class="menu-cta">Check If You Qualify</a>
+</div> <!-- END MENU -->
+
+<div class="container">
+  <h1>What is an IVA?</h1>
+  <p>An <strong><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></strong> is a formal debt solution that lets you reduce your monthly payments and write off a significant portion of your debt. It’s legally binding and protects you from creditor contact, interest, charges, and legal action.</p>
+
+  <h2>Who Qualifies for an IVA?</h2>
+  <p>You may be eligible for an IVA if you:</p>
+  <ul>
+    <li>Owe over £6,000 in <a href="credit-card-debt.html">unsecured debt</a></li>
+    <li>Have debts with two or more creditors</li>
+    <li>Live in England, Wales or Northern Ireland</li>
+    <li>Have a regular source of income from employment, self-employment, or benefits</li>
+  </ul>
+  <p>Not sure if you qualify? Our <a href="step1.html">debt specialists</a> can give you free, no-pressure guidance based on your circumstances.</p>
+
+  <h2>What Debts Can Be Included in an IVA?</h2>
+  <p>You can include a wide range of unsecured debts in an IVA, including:</p>
+  <ul>
+    <li><a href="credit-card-debt.html">Credit card debt</a></li>
+    <li><a href="loan-debt.html">Personal loans</a></li>
+    <li><a href="overdraft-debt.html">Overdrafts</a></li>
+    <li><a href="catalogue-debt.html">Catalogue accounts</a></li>
+    <li><a href="payday-loan-debt.html">Payday loans</a></li>
+    <li><a href="council-tax-debt.html">Council tax arrears</a></li>
+    <li><a href="utility-debt.html">Gas, electric, and water bills</a></li>
+    <li><a href="store-card-debt.html">Store cards</a></li>
+    <li><a href="tax-debt.html">HMRC debts</a></li>
+  </ul>
+
+  <a href="step1.html" class="menu-cta" style="margin-top: 15px; display: inline-block;">See If You Qualify</a>
+  <h2>Benefits of an IVA</h2>
+  <ul>
+    <li>✅ Stop <a href="stop-debt-collectors.html">debt collectors</a> and bailiff action</li>
+    <li>✅ Freeze interest and late charges</li>
+    <li>✅ Protect your home and essential assets</li>
+    <li>✅ Write off unaffordable debt legally</li>
+    <li>✅ One simple affordable monthly payment</li>
+    <li>✅ Get peace of mind and a clear end date</li>
+  </ul>
+
+  <p>Our debt specialists are here to explain your options clearly and make sure an IVA is the right fit for you.</p>
+
+  <a href="step1.html" class="menu-cta" style="margin-top: 10px; display: inline-block;">Talk to a Debt Specialist</a>
+
+  <h2>Example of How an IVA Works</h2>
+  <p>Here’s a typical case showing how an IVA can reduce monthly payments and write off unaffordable debt:</p>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <thead>
+      <tr style="background-color: #d4f2dc;">
+        <th style="padding: 10px; text-align: left;">Type of Debt</th>
+        <th style="padding: 10px; text-align: left;">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding: 10px;">Loan(s)</td><td style="padding: 10px;">£5,000</td></tr>
+      <tr style="background: #f9f9f9;"><td style="padding: 10px;">Overdraft</td><td style="padding: 10px;">£3,000</td></tr>
+      <tr><td style="padding: 10px;">Credit Card(s)</td><td style="padding: 10px;">£13,500</td></tr>
+      <tr style="background: #f9f9f9;"><td style="padding: 10px;">Store Card(s)</td><td style="padding: 10px;">£4,500</td></tr>
+      <tr><td style="padding: 10px;">Utility Bill(s)</td><td style="padding: 10px;">£1,500</td></tr>
+      <tr style="background-color: #d4f2dc;"><td style="padding: 10px; font-weight: bold;">Total Owed</td><td style="padding: 10px; font-weight: bold;">£27,500</td></tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top: 15px;"><strong>Before IVA:</strong> Monthly payments: <del>£717</del><br>
+     <strong>After IVA:</strong> Monthly payments: <span style="color: green; font-weight: bold;">£137</span><br>
+     <strong>Monthly saving:</strong> £580<br>
+     <strong>Debt written off:</strong> 78%</p>
+
+  <p style="font-size: 13px; color: #666;">*A debt write-off amount of 80% is realistic based on average figures from IVA clients between April 2024 and April 2025. Every case is different and assessed individually.</p>
+
+  <a href="debt-calculator.html">Use our IVA Calculator</a> to see how much you could save.
+  <a href="step1.html" class="menu-cta" style="margin-top: 10px; display: inline-block;">Calculate My IVA Savings</a>
+
+  <h2>IVA vs Other Debt Options</h2>
+  <p>Not sure if an IVA is right for you? You might want to compare it with other debt solutions:</p>
+  <ul>
+    <li><a href="compare-solutions.html">IVA vs DMP vs Bankruptcy</a></li>
+    <li><a href="dmp.html">Debt Management Plans (DMPs)</a></li>
+    <li><a href="dro.html">Debt Relief Orders (DROs)</a></li>
+    <li><a href="bankruptcy.html">Bankruptcy</a></li>
+  </ul>
+  <p>Each has pros and cons — and our debt specialists can help guide you to the right fit.</p>
+
+  <a href="step1.html" class="menu-cta" style="margin-top: 10px; display: inline-block;">Find the Right Option</a>
+
+  <h2>Why Choose Fresh Start?</h2>
+  <p>We’re a small, dedicated team that helps people across the UK get out of debt faster. Unlike some of the big companies, we work with fewer clients so we can give you the personal attention you deserve.</p>
+  <ul>
+    <li>✅ Get a response within 1 hour (Mon–Sat)</li>
+    <li>✅ Speak to a real UK debt specialist</li>
+    <li>✅ We can offer a unique reference number to speed up your application</li>
+    <li>✅ Free, private and pressure-free support</li>
+  </ul>
+
+  <p>Let us help you take the first step toward a debt-free future.</p>
+  <a href="step1.html" class="menu-cta" style="margin-top: 10px; display: inline-block;">Check If You Qualify</a>
+
+  <h2>Trusted UK Debt Support</h2>
+  <ul>
+    <li>✅ Trusted by thousands across the UK</li>
+    <li>✅ Secure, confidential & free guidance</li>
+    <li>✅ Rated for clear, friendly support</li>
+  </ul>
+
+  <a href="step1.html" class="menu-cta" style="margin-top: 10px; display: inline-block;">Start My IVA Check</a>
+</div> <!-- END .container -->
+
+<footer style="text-align: center; padding: 30px 10px; background: #f1f1f1; font-size: 14px; color: #555; margin-top: 40px;">
+  © 2025 Fresh Start Debt Support. All rights reserved. This website does not offer any financial advice and is not regulated by the FCA.
+</footer>
 
 </body>
 </html>
