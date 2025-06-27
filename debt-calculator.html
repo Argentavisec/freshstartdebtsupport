@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debt Calculator | Fresh Start Debt Support</title>
-  <meta name="description" content="Use our free debt calculator to estimate monthly payments and explore IVA, DMP, or DRO options. Get help reducing debt today." />
-  <meta name="keywords" content="debt calculator UK, estimate debt payments, IVA calculator, DMP help, reduce debt UK, free debt advice">
+  <title>UK Debt Calculator & Repayment Planner 2025 | Estimate Monthly Payments</title>
+  <meta name="description" content="Use our free UK debt calculator to estimate monthly repayments, compare debt solutions, and plan your path to becoming debt‑free. IVA, DMP, DRO, Bankruptcy." />
+  <meta name="keywords" content="debt calculator UK, monthly repayment calculator, debt repayment plan, IVA calculator, DMP estimator, DRO planner">
   <style>
     body {
       margin: 0;
@@ -19,144 +19,70 @@
     .banner {
       background: #4CAF50;
       padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
     }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
+    .logo { height: 50px; }
+    .site-name { color: #fff; font-size: 24px; font-weight: bold; }
     .btn-menu {
-      margin-top: 10px;
       background: #4CAF50;
       color: #fff;
       border: none;
       padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      font-size:16px;
+      border-radius:6px;
+      cursor:pointer;
+      margin: 10px auto;
+      display:block;
     }
-    .btn-menu:hover {
-      background: #45a045;
-    }
+    .btn-menu:hover { background: #45a045; }
     .menu-content {
-      display: none;
-      flex-direction: column;
+      display:none;
       background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      padding:10px;
+      margin:auto;
+      border-radius:6px;
     }
     .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
+      display:block;
+      color:white;
+      padding:6px 12px;
+      text-decoration:none;
     }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
+    .menu-content a:hover { background:#45a045; }
     .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
+      background:#a5e6b0;
+      color:#000;
+      padding:12px 16px;
+      text-align:center;
+      display:block;
       margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
+      width:200px;
+      border-radius:5px;
+      text-decoration:none;
     }
-    .menu-cta:hover {
-      background: #88d292;
-    }
+    .menu-cta:hover { background:#88d292; }
     .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
+      flex:1;
+      padding:20px;
+      max-width:800px;
+      margin:auto;
     }
     .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background:#e9f5ec;
+      border-radius:8px;
+      padding:20px;
+      margin-top:20px;
     }
+    table { width:100%; border-collapse:collapse; margin-top:15px; }
+    td, th { border:1px solid #ccc; padding:10px; text-align:left; }
+    h1, h2, h3 { color: #4CAF50; }
+    ul { margin-left:20px; }
     footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    label, input {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
-      font-size: 16px;
-    }
-    input[type="number"] {
-      padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    button.calc-btn {
-      background: #4CAF50;
-      color: white;
-      font-weight: bold;
-      padding: 10px;
-      border: none;
-      margin-top: 15px;
-      width: 100%;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button.calc-btn:hover {
-      background: #45a045;
-    }
-    .result {
-      font-weight: bold;
-      color: #2d7a3e;
-      margin-top: 15px;
+      background:#4CAF50;
+      color:#fff;
+      text-align:center;
+      padding:15px;
+      font-size:14px;
     }
   </style>
   <script>
@@ -164,148 +90,125 @@
       const menu = document.getElementById("menuContent");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
-    });
-
-    function calculatePayment() {
-      const debt = parseFloat(document.getElementById("debtAmount").value);
-      const result = document.getElementById("result");
-      if (!isNaN(debt) && debt > 0) {
-        if (debt < 5000) {
-          result.innerText = "Based on your debt amount, a DMP or DRO may be more suitable. Contact us for free advice.";
-        } else {
-          result.innerText = "You may qualify for an IVA starting from just £70/month. Contact us today for a free assessment.";
-        }
-      } else {
-        result.innerText = "Please enter a valid debt amount.";
-      }
-    }
   </script>
 </head>
 <body>
   <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
+    <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
+    <div class="site-name">Fresh Start Debt Support</div>
   </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+
+  <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
+
+  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+
   <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-<div class="menu-section">
-  <h4>About Us</h4>
-  <a href="index.html">About Us</a>
-  <a href="what-we-do.html">What We Do</a>
-  <a href="privacy.html">Privacy Policy</a>
-</div>
-
-<div class="menu-section">
-  <h4>Choose a Debt Solution</h4>
-  <a href="iva.html">About an IVA</a>
-  <a href="dmp.html">About a DMP</a>
-  <a href="dro.html">About a DRO</a>
-  <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-  <a href="debt-calculator.html">Debt Calculator</a>
-</div>
-
-<div class="menu-section">
-  <h4>Types of Debt</h4>
-  <a href="credit-card-debt.html">Credit Card Debt</a>
-  <a href="loan-debt.html">Personal Loans</a>
-  <a href="catalogue-debt.html">Catalogue Debt</a>
-  <a href="council-tax-debt.html">Council Tax Debt</a>
-  <a href="utility-debt.html">Utility Bills</a>
-  <a href="payday-loan-debt.html">Payday Loans</a>
-  <a href="overdraft-debt.html">Bank Overdrafts</a>
-  <a href="store-card-debt.html">Store Cards</a>
-  <a href="mortgage-arrears.html">Mortgage Arrears</a>
-  <a href="business-debt.html">Business Debt</a>
-  <a href="tax-debt.html">Tax & HMRC Debt</a>
-  <a href="rent-arrears.html">Rent Arrears</a>
-  <a href="gambling-debt.html">Gambling Debts</a>
-</div>
-
-<div class="menu-section">
-  <h4>List of Creditors</h4>
-  <a href="barclays.html">Barclays</a>
-  <a href="hsbc.html">HSBC</a>
-  <a href="natwest.html">NatWest</a>
-  <a href="lloyds.html">Lloyds</a>
-  <a href="capital-one.html">Capital One</a>
-</div>
-
-<div class="menu-section">
-  <h4>List of Debt Collectors & Bailiffs</h4>
-  <a href="lowell.html">Lowell Financial</a>
-  <a href="cabot.html">Cabot Financial</a>
-  <a href="moriarty-law.html">Moriarty Law</a>
-  <a href="pra-group.html">PRA Group</a>
-  <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-  <a href="advantis.html">Advantis Credit</a>
-  <a href="link-financial.html">Link Financial</a>
-  <a href="capquest.html">Capquest Debt Recovery</a>
-  <a href="wescot.html">Wescot Credit Services</a>
-  <a href="resolvecall.html">Resolvecall</a>
-  <a href="hoist-finance.html">Hoist Finance</a>
-  <a href="robinson-way.html">Robinson Way</a>
-  <a href="fredrickson.html">Fredrickson International</a>
-  <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-  <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-  <a href="bristow-sutor.html">Bristow & Sutor</a>
-  <a href="rossendales.html">Rossendales</a>
-  <a href="equita.html">Equita</a>
-  <a href="cdcbailiffs.html">CDCBailiffs</a>
-  <a href="marston-holdings.html">Marston Holdings</a>
-  <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-  <a href="newlyn.html">Newlyn</a>
-  <a href="swift-credit.html">Swift Credit Services</a>
-</div>
-
-<div class="menu-section">
-  <h4>Popular Searches</h4>
-  <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-  <a href="clear-debt-fast.html">Clear Debt Fast</a>
-  <a href="iva-company.html">IVA Company</a>
-  <a href="dmp-provider.html">DMP Provider</a>
-  <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-  <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-</div>
-
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+    <a href="index.html">About Us</a>
+    <a href="iva.html">IVA</a>
+    <a href="dmp.html">DMP</a>
+    <a href="dro.html">DRO</a>
+    <a href="compare-solutions.html">Compare Options</a>
+    <a href="credit-card-debt.html">Credit Card Debt</a>
+    <a href="council-tax-debt.html">Council Tax Debt</a>
+    <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
+    <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
+    <a href="debt-calculator.html">Debt Calculator</a>
   </div>
+
   <div class="container">
     <div class="section">
-      <h1>Free Debt Calculator</h1>
-      <p>Use our quick and simple debt calculator to estimate your potential solution and explore the right help for your situation. This tool gives you a rough guide — our team can provide a tailored plan if you’d like to speak with someone.</p>
-      <label for="debtAmount">Total Unsecured Debt (£):</label>
-      <input type="number" id="debtAmount" placeholder="e.g. 12000" />
-      <button class="calc-btn" onclick="calculatePayment()">Estimate My Monthly Payment</button>
-      <div class="result" id="result"></div>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personalised Help Now</a>
+      <h1>Debt Calculator UK – Estimate Monthly Repayments in 60 Seconds</h1>
+      <p>Use our free <strong>UK debt calculator</strong> to estimate your monthly repayments and discover which <a href="compare-solutions.html">debt solution</a> you may qualify for. Whether you’re struggling with credit card bills, payday loans, council tax arrears or overdrafts, our tool gives you an instant, confidential estimate based on your current financial situation.</p>
+
+      <p>This page helps you understand:</p>
+      <ul>
+        <li>✅ How much you could pay back each month</li>
+        <li>✅ Which debts you can include in a solution</li>
+        <li>✅ If you could write off some of your unaffordable debt</li>
+        <li>✅ Whether an <a href="iva.html">IVA</a>, <a href="dmp.html">DMP</a>, or <a href="dro.html">DRO</a> might be right for you</li>
+      </ul>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
+    </div>
+    <div class="section">
+      <h2>Example of What You Could Save</h2>
+      <p>Here’s a typical example of someone using a debt solution like an IVA or DMP to reduce their monthly payments and regain control of their finances:</p>
+
+      <table style="width:100%; background:#fff; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <tr style="background:#d4f2dc; font-weight:bold;">
+          <td style="padding: 10px;">Type of Debt</td>
+          <td style="padding: 10px;">Amount Owed</td>
+        </tr>
+        <tr><td style="padding: 10px;">Credit Cards</td><td style="padding: 10px;">£8,400</td></tr>
+        <tr style="background:#f0f0f0;"><td style="padding: 10px;">Payday Loans</td><td style="padding: 10px;">£2,500</td></tr>
+        <tr><td style="padding: 10px;">Overdraft</td><td style="padding: 10px;">£1,750</td></tr>
+        <tr style="background:#f0f0f0;"><td style="padding: 10px;">Store Cards</td><td style="padding: 10px;">£1,850</td></tr>
+        <tr><td style="padding: 10px;">Council Tax Arrears</td><td style="padding: 10px;">£1,000</td></tr>
+        <tr style="background:#d4f2dc; font-weight:bold;"><td style="padding: 10px;">Total Debt</td><td style="padding: 10px;">£15,500</td></tr>
+      </table>
+
+      <p><strong>Before help:</strong> Monthly repayments: <del>£570</del><br>
+         <strong>After plan:</strong> Monthly repayments: <span style="color:green; font-weight:bold;">£129</span><br>
+         <strong>Total written off:</strong> 75%*</p>
+
+      <p style="font-size: 13px; color: #666;">*Based on real case outcomes. Every situation is assessed individually. Some debts may not be included, and results vary depending on eligibility.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Estimate</a>
+    </div>
+    <div class="section">
+      <h2>What Types of Debt Can Be Included?</h2>
+      <p>Debt solutions like IVAs, DMPs, and DROs can help you reduce and manage a wide range of <strong>unsecured debts</strong>. These may include:</p>
+
+      <ul>
+        <li><a href="credit-card-debt.html" style="color: #0000EE;">Credit card debt</a></li>
+        <li><a href="loan-debt.html" style="color: #0000EE;">Personal loans</a></li>
+        <li><a href="catalogue-debt.html" style="color: #0000EE;">Catalogue debts</a></li>
+        <li><a href="council-tax-debt.html" style="color: #0000EE;">Council tax arrears</a></li>
+        <li><a href="utility-debt.html" style="color: #0000EE;">Utility bill debt</a> (gas, electric, water)</li>
+        <li><a href="payday-loan-debt.html" style="color: #0000EE;">Payday loans</a></li>
+        <li><a href="overdraft-debt.html" style="color: #0000EE;">Bank overdrafts</a></li>
+        <li><a href="store-card-debt.html" style="color: #0000EE;">Store cards</a></li>
+        <li><a href="tax-debt.html" style="color: #0000EE;">HMRC debts</a></li>
+        <li><a href="rent-arrears.html" style="color: #0000EE;">Rent arrears</a></li>
+        <li><a href="gambling-debt.html" style="color: #0000EE;">Gambling debts</a></li>
+      </ul>
+
+      <p>These plans typically <strong>cannot include secured debts</strong> like mortgages or car finance agreements. However, our team can advise on how these may be managed alongside your plan.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Eligibility</a>
+    </div>
+    <div class="section">
+      <h2>What Happens After You Start a Debt Plan?</h2>
+      <p>Once your debt solution begins — whether it's an <a href="iva.html" style="color: #0000EE;">IVA</a>, <a href="dmp.html" style="color: #0000EE;">Debt Management Plan</a>, or <a href="dro.html" style="color: #0000EE;">Debt Relief Order</a> — you’ll experience immediate relief from debt pressures:</p>
+      
+      <ul>
+        <li>✅ <strong>Creditor contact usually stops</strong> — no more constant letters or calls</li>
+        <li>✅ <strong>Interest and charges may be frozen</strong> on eligible debts</li>
+        <li>✅ <strong>Legal action is paused</strong> for IVA and DRO applicants</li>
+        <li>✅ <strong>One affordable monthly payment</strong> instead of multiple demands</li>
+      </ul>
+
+      <p>You'll regain control of your finances, know exactly what’s being paid, and have peace of mind with a clear path forward. Over time, you may also improve your budgeting and reduce money stress — creating healthier financial habits for the future.</p>
+
+      <p><strong>Need clarity on your options?</strong> Our friendly team is here to help you understand your results and take the next step:</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Review</a>
     </div>
     <div class="section trust-badges">
-      <h3>Trusted UK Debt Support</h3>
-      <p>✅ Trusted by thousands across the UK</p>
-      <p>✅ Secure, confidential & free advice</p>
-      <p>✅ Rated for clear, friendly guidance</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
+      <h2>Trusted UK Debt Help – Confidential & Judgment-Free</h2>
+      <ul>
+        <li>✅ Thousands of UK residents supported with real results</li>
+        <li>✅ Fast, discreet, and no-pressure service</li>
+        <li>✅ Speak to a UK-based debt specialist (not a call centre)</li>
+      </ul>
+      <p>If you're ready to take back control, get in touch now and we’ll help you find the best debt solution for your circumstances.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
     </div>
   </div>
+
   <footer>
-    © 2025 Fresh Start Debt Support. All rights reserved.
+    © 2025 Fresh Start Debt Support. All rights reserved.<br>
+    This website does not provide financial advice and is not regulated by the FCA.
   </footer>
 </body>
 </html>
