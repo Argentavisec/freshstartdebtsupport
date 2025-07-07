@@ -2,114 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Find out exactly what we do at Fresh Start Debt Support. Learn how we help you stop creditor contact, lower monthly payments, and write off unaffordable debt."/>
+  <meta name="keywords" content="what we do, debt support, UK debt help, IVA, DMP, DRO, Fresh Start Debt Support"/>
   <title>What We Do | Fresh Start Debt Support</title>
-  <meta name="description" content="Find out what Fresh Start Debt Support does and how we help people across the UK freeze interest, reduce payments, and stop creditor pressure." />
-  <meta name="keywords" content="debt help UK, what we do, Fresh Start Debt Support services, IVA help, DMP advice, stop debt collectors, freeze interest">
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
-    .banner {
+
+    header {
       background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      padding: 10px 20px;
+      text-align: center;
+      position: relative;
     }
+
     .logo {
       height: 50px;
     }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-      flex: 1;
+
+    .menu-buttons {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      display: flex;
+      gap: 10px;
     }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
+
+    .menu-buttons a {
+      background: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 5px;
       font-weight: bold;
+      font-size: 14px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
-    .btn-menu:hover { background: #45a045; }
 
-    .menu-content {
+    .dropdown-menu {
       display: none;
       flex-direction: column;
       background: #4CAF50;
       padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
       border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      z-index: 1000;
+      width: 260px;
     }
-    .menu-section { padding: 10px 0; border-top: 1px solid #ffffff44; }
-    .menu-section h4 {
+
+    .dropdown-menu .section {
+      border-top: 1px solid #ffffff33;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    .dropdown-menu .section h4 {
       color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
+      margin: 0 0 6px 0;
       font-size: 15px;
+      text-transform: uppercase;
     }
-    .menu-content a:hover {
-      background: #45a045;
+
+    .dropdown-menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 0;
+      display: block;
+      font-size: 14px;
+    }
+
+    .dropdown-menu a:hover {
       text-decoration: underline;
     }
+
     .menu-cta {
       background: #a5e6b0;
-      color: #000 !important;
+      color: #000;
       font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
+      padding: 10px;
       text-align: center;
-      display: block;
+      margin-top: 15px;
+      border-radius: 6px;
       text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
     }
-    .menu-cta:hover { background: #88d292; }
 
     .container {
-      padding: 20px;
       max-width: 800px;
-      margin: auto;
-      flex: 1;
+      margin: 20px auto;
+      padding: 0 20px;
     }
-    .section {
+
+    .section-content {
       background: #e9f5ec;
-      border-radius: 8px;
       padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
+    h1, h2 {
+      color: #2e7d32;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
       background: #4CAF50;
       color: #fff;
@@ -117,50 +123,56 @@
       padding: 15px;
       font-size: 14px;
     }
-    h1, h2, h3 { color: #4CAF50; }
-    ul { margin-left: 20px; }
 
-    @media (max-width:600px) {
-      .banner { flex-direction: column; }
-      .btn-menu { font-size:14px; padding:8px 14px; }
-      .menu-cta { width: 90%; }
-      .site-name { font-size:20px; margin-top:10px; }
+    @media (max-width: 600px) {
+      .menu-buttons {
+        flex-direction: column;
+        top: 60px;
+        right: 10px;
+      }
+
+      .menu-buttons a {
+        padding: 8px;
+        font-size: 13px;
+      }
+
+      .dropdown-menu {
+        width: 90%;
+        right: 5%;
+      }
     }
   </style>
-
   <script>
     function toggleMenu() {
-      const m = document.getElementById("menuContent");
-      m.style.display = m.style.display === "flex" ? "none" : "flex";
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
+
     window.addEventListener("click", function(e) {
-      const m = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!m.contains(e.target) && e.target !== btn) {
-        m.style.display = "none";
+      const menu = document.getElementById("dropdownMenu");
+      const button = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== button) {
+        menu.style.display = "none";
       }
     });
   </script>
 </head>
-
 <body>
-  <div class="banner">
-    <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-    <div class="site-name">Fresh Start Debt Support</div>
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
+  <header>
+    <img src="logo.png" alt="Fresh Start Debt Support Logo" class="logo"/>
+    <div class="menu-buttons">
+      <a href="https://form.jotform.com/250596569907070">Check If You Qualify</a>
+      <a href="javascript:void(0);" id="menuButton" onclick="toggleMenu()">☰ Menu</a>
+    </div>
+  </header>
+  <div class="dropdown-menu" id="dropdownMenu">
+    <div class="section">
       <h4>About Us</h4>
       <a href="index.html">About Us</a>
       <a href="what-we-do.html">What We Do</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>
-
-    <div class="menu-section">
+    <div class="section">
       <h4>Choose a Debt Solution</h4>
       <a href="iva.html">About an IVA</a>
       <a href="dmp.html">About a DMP</a>
@@ -168,8 +180,7 @@
       <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
       <a href="debt-calculator.html">Debt Calculator</a>
     </div>
-
-    <div class="menu-section">
+    <div class="section">
       <h4>Types of Debt</h4>
       <a href="credit-card-debt.html">Credit Card Debt</a>
       <a href="loan-debt.html">Personal Loans</a>
@@ -185,8 +196,7 @@
       <a href="rent-arrears.html">Rent Arrears</a>
       <a href="gambling-debt.html">Gambling Debts</a>
     </div>
-
-    <div class="menu-section">
+    <div class="section">
       <h4>List of Creditors</h4>
       <a href="barclays.html">Barclays</a>
       <a href="hsbc.html">HSBC</a>
@@ -194,8 +204,7 @@
       <a href="lloyds.html">Lloyds</a>
       <a href="capital-one.html">Capital One</a>
     </div>
-
-    <div class="menu-section">
+    <div class="section">
       <h4>List of Debt Collectors & Bailiffs</h4>
       <a href="lowell.html">Lowell Financial</a>
       <a href="cabot.html">Cabot Financial</a>
@@ -221,8 +230,7 @@
       <a href="newlyn.html">Newlyn</a>
       <a href="swift-credit.html">Swift Credit Services</a>
     </div>
-
-    <div class="menu-section">
+    <div class="section">
       <h4>Popular Searches</h4>
       <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
       <a href="clear-debt-fast.html">Clear Debt Fast</a>
@@ -233,81 +241,54 @@
     </div>
   </div>
   <div class="container">
-    <div class="section">
+    <div class="section-content">
       <h1>What We Do at Fresh Start Debt Support</h1>
-      <p>At Fresh Start, we help people across the UK take control of their debt by connecting them with practical, affordable solutions. Our goal is to simplify the process, reduce stress, and support you with a plan that fits your life.</p>
-      <p>Whether you're overwhelmed by <a href="credit-card-debt.html">credit card debt</a>, struggling with <a href="council-tax-debt.html">council tax arrears</a>, or getting constant calls from <a href="stop-debt-collectors.html">debt collectors</a> — we’re here to help you find a way forward.</p>
-    </div>
+      <p>At Fresh Start, we help people across the UK deal with unaffordable debts by connecting them with trusted solutions such as IVAs, DMPs, and DROs. Our goal is to reduce stress, stop creditor contact, and give people a path to financial freedom — quickly and confidentially.</p>
 
-    <div class="section">
-      <h2>What We Can Help With</h2>
+      <h2>Our Mission</h2>
+      <p>We’re not here to judge — we’re here to help. Whether you’ve fallen behind on credit cards, council tax, payday loans, or any other unsecured debt, we work hard to find a debt solution that fits your personal situation. Every case is different, and we treat it that way.</p>
+
+      <h2>How We Help You</h2>
       <ul>
-        <li>✅ Freeze interest and stop creditor contact</li>
-        <li>✅ Reduce your monthly repayments to an affordable amount</li>
-        <li>✅ Protect your wages, home and essential assets</li>
-        <li>✅ Get you into a formal or informal solution depending on your needs</li>
-        <li>✅ Provide a reference number you can quote to creditors</li>
+        <li>✅ Explain your debt solution options in plain English</li>
+        <li>✅ Check if you qualify for a government-backed IVA or DRO</li>
+        <li>✅ Refer you to a licensed provider to handle your case</li>
+        <li>✅ Help reduce monthly payments to something affordable</li>
+        <li>✅ Stop contact from bailiffs and debt collectors</li>
+        <li>✅ Support you through every step — with no pressure</li>
       </ul>
-      <p>We specialise in guiding people through debt solutions like:</p>
+
+      <h2>Which Debt Solutions Can We Help With?</h2>
+      <p>We can help you explore a range of options, including:</p>
       <ul>
-        <li><a href="iva.html">IVAs (Individual Voluntary Arrangements)</a></li>
+        <li><a href="iva.html">Individual Voluntary Arrangements (IVAs)</a></li>
         <li><a href="dmp.html">Debt Management Plans (DMPs)</a></li>
         <li><a href="dro.html">Debt Relief Orders (DROs)</a></li>
-        <li><a href="compare-solutions.html">Comparisons between IVAs, DMPs, Bankruptcy & more</a></li>
+        <li><a href="compare-solutions.html">Bankruptcy and other comparisons</a></li>
       </ul>
-    </div>
-    <div class="section">
-      <h2>Real Example: Lower Payments, Less Stress</h2>
-      <p>Here’s how we helped one of our clients find breathing room with an IVA:</p>
-      <table style="width:100%; border-collapse: collapse;">
-        <tr style="background:#c8e6c9;">
-          <th style="padding:8px; border:1px solid #4CAF50;">Type of Debt</th>
-          <th style="padding:8px; border:1px solid #4CAF50;">Amount</th>
-        </tr>
-        <tr>
-          <td style="padding:8px; border:1px solid #ccc;">Credit Cards</td>
-          <td style="padding:8px; border:1px solid #ccc;">£11,200</td>
-        </tr>
-        <tr>
-          <td style="padding:8px; border:1px solid #ccc;">Loans</td>
-          <td style="padding:8px; border:1px solid #ccc;">£6,000</td>
-        </tr>
-        <tr>
-          <td style="padding:8px; border:1px solid #ccc;">Overdraft</td>
-          <td style="padding:8px; border:1px solid #ccc;">£2,800</td>
-        </tr>
-        <tr>
-          <td style="padding:8px; border:1px solid #ccc;"><strong>Total Debt</strong></td>
-          <td style="padding:8px; border:1px solid #ccc;"><strong>£20,000+</strong></td>
-        </tr>
-      </table>
-      <p><strong>Before IVA:</strong> Monthly payments over £500<br />
-         <strong>After IVA:</strong> One monthly payment of £115<br />
-         <strong>Debt written off:</strong> Over 70%*</p>
-      <p style="font-size: 14px; color: #555;">*Write-off percentage varies. Based on real client averages from 2024–2025.</p>
-    </div>
 
-    <div class="section">
-      <h2>Why Choose Us Over the Big Firms?</h2>
-      <p>We don’t treat you like a number. At Fresh Start, you’ll deal with real UK-based debt specialists who take the time to understand your situation. No call centres. No pressure. Just honest support that’s focused on YOU.</p>
-      <ul>
-        <li>📞 Speak to someone in under an hour (Mon–Sat)</li>
-        <li>🔐 100% confidential and private service</li>
-        <li>📩 Get fast help and clear answers without judgment</li>
-        <li>✅ We work with fewer clients to give more personal support</li>
-      </ul>
+      <p>If you’re not sure what’s right for you, that’s completely fine — our role is to help you understand your options without pressure or obligation.</p>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
     </div>
+    <div class="section-content">
+      <h2>Trusted UK Debt Support</h2>
+      <p>We’ve helped thousands of people across the UK stop creditor contact, reduce their repayments, and feel in control again.</p>
+      <ul>
+        <li>✅ Private & confidential support</li>
+        <li>✅ No judgment, no pressure</li>
+        <li>✅ Fast response and clear guidance</li>
+      </ul>
 
-    <div class="section">
-      <h3>Need Help Now?</h3>
-      <p>Whether you're just curious or urgently need support, we’re here for you. You don’t have to face debt alone. Let’s see what we can do together.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Free Debt Help Now</a>
+      <p>You don’t have to face debt alone — and you don’t have to feel stuck. Let us help you get back on track.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start Your Fresh Start</a>
     </div>
-    <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
-    </footer>
   </div>
+
+  <footer>
+    © 2025 Fresh Start Debt Support. All rights reserved.<br />
+    This website does not offer regulated financial advice and is not authorised by the FCA.
+  </footer>
 </body>
 </html>
