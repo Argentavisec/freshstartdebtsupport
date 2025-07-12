@@ -1,76 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Pages -->
-  <url><loc>https://freshstartdebtsupport.co.uk/index.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/what-we-do.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/privacy.html</loc></url>
+<div class="section">
+  <h1>HTML Sitemap</h1>
 
-  <!-- Debt Solutions -->
-  <url><loc>https://freshstartdebtsupport.co.uk/iva.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/dmp.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/dro.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/compare-solutions.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/debt-calculator.html</loc></url>
+  <h2>About Us</h2>
+  <ul>
+    <li><a href="index.html">About Us</a></li>
+    <li><a href="what-we-do.html">What We Do</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+  </ul>
 
-  <!-- Types of Debt -->
-  <url><loc>https://freshstartdebtsupport.co.uk/credit-card-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/loan-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/catalogue-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/council-tax-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/utility-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/payday-loan-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/overdraft-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/store-card-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/mortgage-arrears.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/business-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/tax-debt.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/rent-arrears.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/gambling-debt.html</loc></url>
+  <h2>Choose a Debt Solution</h2>
+  <ul>
+    <li><a href="iva.html">About an IVA</a></li>
+    <li><a href="dmp.html">About a DMP</a></li>
+    <li><a href="dro.html">About a DRO</a></li>
+    <li><a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a></li>
+    <li><a href="debt-calculator.html">Debt Calculator</a></li>
+  </ul>
 
-  <!-- Creditors -->
-  <url><loc>https://freshstartdebtsupport.co.uk/barclays.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/hsbc.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/natwest.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/lloyds.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/capital-one.html</loc></url>
+  <h2>Types of Debt</h2>
+  <ul>
+    <li><a href="credit-card-debt.html">Credit Card Debt</a></li>
+    <li><a href="loan-debt.html">Personal Loans</a></li>
+    <li><a href="catalogue-debt.html">Catalogue Debt</a></li>
+    <li><a href="council-tax-debt.html">Council Tax Debt</a></li>
+    <li><a href="utility-debt.html">Utility Bills</a></li>
+    <li><a href="payday-loan-debt.html">Payday Loans</a></li>
+    <li><a href="overdraft-debt.html">Bank Overdrafts</a></li>
+    <li><a href="store-card-debt.html">Store Cards</a></li>
+    <li><a href="mortgage-arrears.html">Mortgage Arrears</a></li>
+    <li><a href="business-debt.html">Business Debt</a></li>
+    <li><a href="tax-debt.html">Tax & HMRC Debt</a></li>
+    <li><a href="rent-arrears.html">Rent Arrears</a></li>
+    <li><a href="gambling-debt.html">Gambling Debts</a></li>
+  </ul>
 
-  <!-- Debt Collectors -->
-  <url><loc>https://freshstartdebtsupport.co.uk/lowell.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/cabot.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/moriarty-law.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/pra-group.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/moorcroft.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/advantis.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/link-financial.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/capquest.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/wescot.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/resolvecall.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/hoist-finance.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/robinson-way.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/fredrickson.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/drydensfairfax.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/jacobs-enforcement.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/bristow-sutor.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/rossendales.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/equita.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/cdcbailiffs.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/marston-holdings.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/excel-civil-enforcement.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/newlyn.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/swift-credit.html</loc></url>
+  <h2>List of Creditors</h2>
+  <ul>
+    <li><a href="barclays.html">Barclays</a></li>
+    <li><a href="hsbc.html">HSBC</a></li>
+    <li><a href="natwest.html">NatWest</a></li>
+    <li><a href="lloyds.html">Lloyds</a></li>
+    <li><a href="capital-one.html">Capital One</a></li>
+  </ul>
 
-  <!-- Popular Searches -->
-  <url><loc>https://freshstartdebtsupport.co.uk/debt-help-uk-2025.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/clear-debt-fast.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/iva-company.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/dmp-provider.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/stop-debt-collectors.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/affordable-repayment-plans.html</loc></url>
+  <h2>Debt Collectors & Bailiffs</h2>
+  <ul>
+    <li><a href="lowell.html">Lowell Financial</a></li>
+    <li><a href="cabot.html">Cabot Financial</a></li>
+    <li><a href="moriarty-law.html">Moriarty Law</a></li>
+    <li><a href="pra-group.html">PRA Group</a></li>
+    <li><a href="moorcroft.html">Moorcroft Debt Recovery</a></li>
+    <li><a href="advantis.html">Advantis Credit</a></li>
+    <li><a href="link-financial.html">Link Financial</a></li>
+    <li><a href="capquest.html">Capquest Debt Recovery</a></li>
+    <li><a href="wescot.html">Wescot Credit Services</a></li>
+    <li><a href="resolvecall.html">Resolvecall</a></li>
+    <li><a href="hoist-finance.html">Hoist Finance</a></li>
+    <li><a href="robinson-way.html">Robinson Way</a></li>
+    <li><a href="fredrickson.html">Fredrickson International</a></li>
+    <li><a href="drydensfairfax.html">Drydensfairfax Solicitors</a></li>
+    <li><a href="jacobs-enforcement.html">Jacobs Enforcement</a></li>
+    <li><a href="bristow-sutor.html">Bristow & Sutor</a></li>
+    <li><a href="rossendales.html">Rossendales</a></li>
+    <li><a href="equita.html">Equita</a></li>
+    <li><a href="cdcbailiffs.html">CDCBailiffs</a></li>
+    <li><a href="marston-holdings.html">Marston Holdings</a></li>
+    <li><a href="excel-civil-enforcement.html">Excel Civil Enforcement</a></li>
+    <li><a href="newlyn.html">Newlyn</a></li>
+    <li><a href="swift-credit.html">Swift Credit Services</a></li>
+  </ul>
 
-  <!-- Enquiry Form Steps -->
-  <url><loc>https://freshstartdebtsupport.co.uk/enquire1.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/enquire2.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/enquire3.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/enquire4.html</loc></url>
-  <url><loc>https://freshstartdebtsupport.co.uk/enquire-thankyou.html</loc></url>
-</urlset>
+  <h2>Popular Searches</h2>
+  <ul>
+    <li><a href="debt-help-uk-2025.html">Debt Help UK 2025</a></li>
+    <li><a href="clear-debt-fast.html">Clear Debt Fast</a></li>
+    <li><a href="iva-company.html">IVA Company</a></li>
+    <li><a href="dmp-provider.html">DMP Provider</a></li>
+    <li><a href="stop-debt-collectors.html">Stop Debt Collectors</a></li>
+    <li><a href="affordable-repayment-plans.html">Affordable Repayment Plans</a></li>
+  </ul>
+</div>
