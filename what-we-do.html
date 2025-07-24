@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>What We Do | Fresh Start Debt Support</title>
-  <meta name="description" content="Discover how Fresh Start Debt Support helps people across the UK with IVAs, DMPs, and debt solutions to stop bailiffs and reduce repayments." />
-  <meta name="keywords" content="debt support UK, IVA help, DMP plans, stop bailiffs, debt solutions, affordable repayment">
+  <meta name="description" content="See how Fresh Start Debt Support helps people across the UK with affordable debt help, IVAs, DMPs, and more. Check if you qualify today." />
+  <meta name="keywords" content="debt help, UK debt support, IVA, DMP, stop bailiffs, affordable repayment, freeze interest">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,18 +13,14 @@
   <!-- Header -->
   <div class="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
       <div class="site-name">Fresh Start Debt Support</div>
+      <a href="https://form.jotform.com/250596569907070" class="cta-button">Check If You Qualify</a>
+      <button id="menuButton" class="btn-menu" onclick="toggleMenu()">☰ Menu</button>
     </div>
   </div>
 
-  <!-- Single CTA + Menu Button -->
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-  </div>
-
-  <!-- Menu Placeholder -->
+  <!-- Dropdown Menu -->
   <div id="menu-placeholder"></div>
   <script>
     fetch("menu.html")
@@ -32,72 +28,84 @@
       .then(data => document.getElementById("menu-placeholder").innerHTML = data);
   </script>
 
+  <!-- Page Content -->
   <div class="container">
 
     <!-- Section 1 -->
     <div class="section">
       <h1>What We Do at Fresh Start Debt Support</h1>
-      <p>At Fresh Start Debt Support, we help people across the UK regain control of their finances with <strong>confidential, personalised support</strong>. Whether you're facing mounting <a href="credit-card-debt.html">credit card debt</a>, rising <a href="loan-debt.html">personal loans</a>, or overdue <a href="council-tax-debt.html">council tax bills</a>, we're here to guide you toward the right solution.</p>
-      <p>Our team listens without judgment and takes quick action. We help stop <a href="bailiffs.html">bailiffs</a>, freeze interest, and build affordable repayment plans so you can move forward with confidence.</p>
+      <p>At Fresh Start Debt Support, we help people across the UK escape the stress of unmanageable debt through <strong>confidential, non-judgmental support</strong>. Whether you're dealing with <a href="credit-card-debt.html">credit card debt</a>, <a href="loan-debt.html">personal loans</a>, or <a href="council-tax-debt.html">council tax arrears</a>, we’re here to help you find a way forward.</p>
+      <p>Our team specialises in quick, tailored solutions that can <strong>freeze interest</strong>, stop <a href="stop-debt-collectors.html">debt collectors</a> and <a href="bailiffs.html">bailiffs</a>, and create one affordable monthly payment so you can breathe again.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
     </div>
 
     <!-- Section 2 -->
     <div class="section">
-      <h2>Our Core Debt Support Services</h2>
+      <h2>Types of Debt We Help With</h2>
       <ul>
-        <li><strong>IVAs (Individual Voluntary Arrangements)</strong> – Write off unaffordable debt after fixed monthly payments. <a href="iva.html">Learn more</a>.</li>
-        <li><strong>DMPs (Debt Management Plans)</strong> – Flexible repayment plans that fit your income. <a href="dmp.html">Explore DMPs</a>.</li>
-        <li><strong>DROs (Debt Relief Orders)</strong> – Ideal for those with low income and no assets. <a href="dro.html">Find out if you qualify</a>.</li>
-        <li><strong>Creditor Support</strong> – We help you deal with creditors and debt collectors.</li>
-        <li><strong>Bailiff Prevention</strong> – Stop bailiff visits and take back control. <a href="stop-debt-collectors.html">See how</a>.</li>
+        <li>✅ Credit Cards, Loans & Overdrafts</li>
+        <li>✅ Council Tax, Rent & Utility Arrears</li>
+        <li>✅ Payday Loans & Buy Now Pay Later Debt</li>
+        <li>✅ Store Cards, Benefit Overpayments, HMRC Debts</li>
       </ul>
-      <a href="compare-solutions.html" class="menu-cta">Compare All Debt Solutions</a>
+      <p>From everyday debts to more complex arrears, our small, focused team works with you one-on-one to explore the best route based on your circumstances.</p>
+      <a href="debt-calculator.html" class="menu-cta">Use Our Debt Calculator</a>
     </div>
 
     <!-- Section 3 -->
     <div class="section">
-      <h2>Tailored Support — Not a Call Centre</h2>
-      <p>We’re different from large firms. Our team is small and dedicated, so you speak directly with someone who understands your situation. We don’t read from scripts or rush you into decisions.</p>
-      <p>Whether you're in a temporary financial crisis or long-term debt cycle, we'll help you find the most effective way forward — from stopping <a href="bailiffs.html">bailiffs</a> to reducing payments on <a href="utility-debt.html">utility arrears</a> and <a href="rent-arrears.html">rent arrears</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify</a>
+      <h2>Debt Solutions We Can Help You Access</h2>
+      <p>We connect you with suitable debt solutions — all based on your income, circumstances, and eligibility:</p>
+      <ul>
+        <li><a href="iva.html">IVA (Individual Voluntary Arrangement)</a>: Reduce debts and write off what you can’t afford over 5–6 years.</li>
+        <li><a href="dmp.html">Debt Management Plan (DMP)</a>: Make flexible monthly payments based on what you can afford.</li>
+        <li><a href="dro.html">Debt Relief Order (DRO)</a>: Write off debt after 12 months if you're on a low income.</li>
+        <li><a href="compare-solutions.html">Compare All Options</a>: See the pros and cons of bankruptcy, IVAs, DMPs, DROs and more.</li>
+      </ul>
+      <p>We’re not here to push one option — our goal is to give you clarity, not pressure.</p>
+      <a href="compare-solutions.html" class="menu-cta">Explore My Options</a>
     </div>
 
     <!-- Section 4 -->
     <div class="section">
-      <h2>Who We Help</h2>
-      <p>We support individuals from all walks of life — single parents, full-time workers, people on <a href="benefits-debt.html">benefits</a>, and those dealing with unexpected financial shocks. No matter your background, we offer solutions without judgment.</p>
-      <p>If you're being contacted by <a href="lowell.html">Lowell</a>, <a href="moorcroft.html">Moorcroft</a>, or other debt collectors, we can help you respond and reclaim control.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personalised Help</a>
+      <h2>Why Choose Fresh Start Debt Support?</h2>
+      <ul>
+        <li>✅ UK-based team offering fast, compassionate help</li>
+        <li>✅ We support fewer clients for a more personal service</li>
+        <li>✅ No judgment, no call centre scripts — just honest support</li>
+        <li>✅ Clear communication, no hidden fees or surprises</li>
+        <li>✅ Support with all types of debt — even <a href="gambling-debt.html">gambling debt</a></li>
+      </ul>
+      <a href="testimonials.html" class="menu-cta">See What Others Say</a>
     </div>
 
     <!-- Section 5 -->
-    <div class="section" id="faq">
+    <div class="section">
       <h2>Frequently Asked Questions</h2>
+      <h3>Do I need to speak to creditors myself?</h3>
+      <p>No. Once a debt solution is arranged, we or the provider can handle all communication with creditors and bailiffs for you.</p>
 
-      <h3>Do you charge for your services?</h3>
-      <p>No — we offer completely free guidance. If a formal debt solution is suitable, we'll help you understand the next steps clearly.</p>
+      <h3>Is the service confidential?</h3>
+      <p>Yes — everything is 100% confidential and judgment-free. We’re here to help, not criticise.</p>
 
-      <h3>Is my information kept confidential?</h3>
-      <p>Yes. We treat all personal information with the highest level of confidentiality and respect.</p>
+      <h3>Will it affect my credit file?</h3>
+      <p>Some solutions can impact your credit score. But avoiding action often prevents worse consequences like court or bailiffs.</p>
 
-      <h3>Will my credit be affected?</h3>
-      <p>Most debt solutions can impact your credit, but this is often less damaging than continuing to miss payments or face court action.</p>
+      <h3>Can I still qualify if I’m on benefits or low income?</h3>
+      <p>Yes. Many people on Universal Credit or similar qualify for support, especially for options like a <a href="dro.html">Debt Relief Order</a>.</p>
 
-      <h3>Can you help with bailiffs?</h3>
-      <p>Yes. We offer fast support to stop bailiff action and put legal protection in place.</p>
+      <h3>How long does it take to set up a plan?</h3>
+      <p>We aim to get you started the same day. In urgent cases, we can act within hours to stop calls or enforcement.</p>
 
-      <h3>Am I eligible for a solution?</h3>
-      <p>We can help you check eligibility in minutes. <a href="iva.html">IVAs</a>, <a href="dmp.html">DMPs</a>, or <a href="dro.html">DROs</a> all have different requirements.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Eligibility</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
     </div>
 
     <!-- Footer -->
     <footer>
       <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
-      <p>This website does not provide financial advice and is not regulated by the FCA. All guidance is for informational purposes only.</p>
+      <p>This site does not offer financial advice and is not regulated by the FCA. Guidance is provided based on available public information.</p>
     </footer>
+
   </div>
 
   <!-- WhatsApp Button -->
@@ -109,9 +117,12 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
     }
-    window.addEventListener("click", function (e) {
+
+    window.addEventListener("click", function(e) {
       const menu = document.getElementById("menuContent");
       const btn = document.getElementById("menuButton");
       if (menu && !menu.contains(e.target) && e.target !== btn) {
