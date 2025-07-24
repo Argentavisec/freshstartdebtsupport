@@ -5,328 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fresh Start Debt Support | Affordable UK Debt Help</title>
   <meta name="description" content="Struggling with debt? Fresh Start Debt Support offers confidential, affordable help including IVAs, DMPs & more. See if you qualify today." />
-  <meta name="keywords" content="UK debt help, IVA, debt management plan, freeze interest, write off debt, affordable repayments">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    @media screen and (max-width: 600px) {
-      .top-bar {
-        flex-direction: column;
-        text-align: center;
-      }
-      .menu-content {
-        width: 90%;
-      }
-    }
-
-    /* WhatsApp Floating Button */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      font-weight: bold;
-      padding: 12px 16px;
-      border-radius: 50px;
-      font-size: 16px;
-      z-index: 999;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-      transition: background-color 0.3s ease;
-    }
-    .whatsapp-button:hover {
-      background-color: #1ebe5b;
-    }
-  </style>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
-    });
-  </script>
+  <meta name="keywords" content="UK debt help, IVA, DMP, debt write off, affordable repayments, stop bailiffs">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+  <!-- Header + Menu Button -->
   <div class="banner">
     <div class="top-bar">
       <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
+
+  <!-- Menu Button -->
   <div style="text-align: center;">
     <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
   </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <h1>Debt Help That’s Simple, Supportive, and Free</h1>
-      <p>At Fresh Start Debt Support, we help people across the UK take control of their finances with solutions like IVAs, DMPs, DROs, and more. Whether you’re behind on bills or juggling credit cards, we’ll guide you toward a fresh start — without judgment or pressure.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If You Qualify</a>
-    </div>
 
+  <!-- CTA -->
+  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+
+  <!-- Menu Include -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
+  </script>
+
+  <!-- Main Content Container -->
+  <div class="container">
+
+    <!-- Section 1 -->
     <div class="section">
-      <h2>How We Help</h2>
+      <h1>Struggling with Debt? Get a Fresh Start Today</h1>
+      <p>If you’re overwhelmed by debt, missed payments, or calls from creditors, you’re not alone — and there are real solutions. At <strong>Fresh Start Debt Support</strong>, we help individuals across the UK take control with personalised, affordable debt help tailored to your situation.</p>
+      <p>From formal solutions like <a href="iva.html">IVAs</a> to flexible <a href="dmp.html">Debt Management Plans</a>, we provide honest support without pressure or judgment. Our team is small and focused, meaning you get personal attention — not a call centre.</p>
+      <p>We help with all types of debt including <a href="credit-card-debt.html">credit cards</a>, <a href="loan-debt.html">loans</a>, <a href="council-tax-debt.html">council tax</a>, and <a href="utility-debt.html">utility arrears</a>. If you need to stop <a href="stop-debt-collectors.html">debt collectors</a> or <a href="bailiffs.html">bailiffs</a>, we can help.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Check</a>
+    </div>
+    <!-- Section 2 -->
+    <div class="section">
+      <h2>How We Help You Take Control</h2>
       <ul>
-        <li>✅ Freeze interest and charges on debts</li>
+        <li>✅ Freeze interest and charges on your debts</li>
         <li>✅ Stop contact from creditors and bailiffs</li>
         <li>✅ Set up one affordable monthly payment</li>
-        <li>✅ Legally write off unaffordable debts in some cases</li>
-        <li>✅ Support and updates throughout your journey</li>
+        <li>✅ Write off unaffordable debt (subject to eligibility)</li>
+        <li>✅ Access confidential, judgment-free support</li>
       </ul>
-      <p><strong>No complicated jargon. No pressure. Just honest support when you need it most.</strong></p>
+      <p>Our goal is to make debt support simple and accessible. We explain everything clearly, avoid jargon, and work with you at your pace. Whether you're dealing with <a href="payday-loan-debt.html">payday loans</a>, <a href="overdraft-debt.html">overdrafts</a>, or <a href="gambling-debt.html">gambling debts</a>, we’re here to help.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify</a>
     </div>
+
+    <!-- Section 3 -->
     <div class="section">
-      <h2>Explore Your Debt Solutions</h2>
+      <h2>Explore Your Debt Options</h2>
 
       <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
-      <p>An IVA is a formal solution that lets you write off unaffordable debt and make one reduced monthly payment over 5–6 years. You’re protected from creditors and legal action during this time.</p>
+      <p>An IVA is a formal agreement that allows you to repay debts with one reduced monthly payment — and write off unaffordable balances after 5–6 years. It protects you from creditor action and bailiffs.</p>
 
       <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
-      <p>A DMP is an informal repayment plan based on what you can afford. You’ll repay your debts over time, and we’ll work to get interest and charges frozen by your creditors.</p>
+      <p>A flexible, informal solution based on what you can afford. A DMP lets you repay debts over time, often with interest frozen. It’s ideal for those with regular income but no lump sum.</p>
 
       <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
-      <p>For those on a low income with minimal assets, a DRO can offer legal protection and complete debt write-off after 12 months. Strict qualifying criteria apply.</p>
+      <p>If you’re on a low income with minimal assets, a DRO offers legal protection and debt write-off after 12 months. Ideal for those unable to afford other solutions.</p>
 
-      <h3><a href="compare-solutions.html">Bankruptcy</a></h3>
-      <p>Bankruptcy can clear your debts if there’s no other way out — but it comes with consequences. We can help you explore if this is the right step before proceeding.</p>
+      <h3><a href="compare-solutions.html">Bankruptcy & Trust Deeds</a></h3>
+      <p>Bankruptcy might be a last resort, but it's sometimes the right choice. Scottish residents may consider a Trust Deed. Learn more by visiting our <a href="compare-solutions.html">comparison page</a>.</p>
 
-      <h3><a href="compare-solutions.html">Trust Deed (Scotland only)</a></h3>
-      <p>If you live in Scotland, a Trust Deed offers similar benefits to an IVA — with debt written off and one monthly payment based on affordability.</p>
-
-      <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
+      <a href="compare-solutions.html" class="menu-cta">Compare All Options</a>
     </div>
+    <!-- Section 4 -->
     <div class="section">
-      <h2>Why People Choose Fresh Start</h2>
+      <h2>Why People Choose Fresh Start Debt Support</h2>
       <ul>
-        <li>✅ Fast, supportive UK-based debt help</li>
-        <li>✅ We work with fewer clients so you get more attention</li>
-        <li>✅ Confidential and judgment-free guidance</li>
-        <li>✅ Clear answers with no hidden fees or pressure</li>
+        <li>✅ UK-based, fast and supportive service</li>
+        <li>✅ We work with fewer clients to provide personal attention</li>
+        <li>✅ Friendly, non-judgmental specialists</li>
+        <li>✅ Clear information — no pressure or hidden fees</li>
+        <li>✅ Support for everything from <a href="council-tax-debt.html">council tax arrears</a> to <a href="credit-card-debt.html">credit card debt</a></li>
       </ul>
-      <p>Whether you're dealing with credit cards, loans, council tax or bailiffs, we’ll help you find a way forward.</p>
+      <p>Unlike larger companies, we treat you like a person — not a number. Whether you’re struggling with <a href="utility-debt.html">utility bills</a>, <a href="rent-arrears.html">rent arrears</a>, or <a href="loan-debt.html">personal loans</a>, we’ll help you move forward with confidence.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
     </div>
 
+    <!-- Section 5 -->
     <div class="section">
-      <h3>Real Results from Real People</h3>
-      <p><em>“I was drowning in debt and didn’t know what to do. Fresh Start made everything simple and gave me hope again.” – Claire, Manchester</em></p>
-      <p><em>“I wish I’d reached out sooner. I’m now on a plan and my stress has dropped overnight.” – John, Birmingham</em></p>
-      <a href="testimonials.html" class="menu-cta">Read More Success Stories</a>
+      <h2>Real Results from Real People</h2>
+      <p><em>"I was drowning in debt and didn’t know what to do. Fresh Start made everything simple and gave me hope again." – Claire, Manchester</em></p>
+      <p><em>"I wish I’d reached out sooner. I’m now on a plan and my stress has dropped overnight." – John, Birmingham</em></p>
+      <p>We’ve helped people all over the UK — from Stoke-on-Trent to London — take back control of their finances and start a new chapter. <a href="testimonials.html">See more success stories here</a>.</p>
+      <a href="testimonials.html" class="menu-cta">Read Client Testimonials</a>
+    </div>
+    <!-- Section 6 -->
+    <div class="section" id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How quickly can I get help?</h3>
+      <p>We aim to respond within 24 hours. Once your details are reviewed, we can begin the process immediately and help freeze interest or creditor contact quickly.</p>
+
+      <h3>Do you offer free debt advice?</h3>
+      <p>We’re not regulated financial advisers and don’t provide advice. Instead, we offer free guidance and help you explore options like an <a href="iva.html">IVA</a>, <a href="dmp.html">DMP</a>, or <a href="dro.html">DRO</a>.</p>
+
+      <h3>Will my credit score be affected?</h3>
+      <p>Most debt solutions can impact your credit file. However, getting help sooner often prevents further damage from defaults or legal action.</p>
+
+      <h3>Am I eligible if I’m on benefits or low income?</h3>
+      <p>Yes. There are solutions designed for people on a low income, like a <a href="dro.html">Debt Relief Order</a>. We’ll help you check your eligibility.</p>
+
+      <h3>Do I have to speak to my creditors?</h3>
+      <p>No. Once a solution is in place, communication with your creditors can be handled by the provider. You won’t need to face them alone.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
     </div>
 
+    <!-- Footer -->
     <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
     </footer>
   </div>
+
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">
-  💬 Chat on WhatsApp
-</a>
+    💬 Chat on WhatsApp
+  </a>
 </body>
 </html>
