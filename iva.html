@@ -7,128 +7,136 @@
   <meta name="description" content="Learn how an IVA works, who qualifies, and how to legally write off debt in the UK. Start your Individual Voluntary Arrangement today." />
   <meta name="keywords" content="what is an IVA, IVA UK, Individual Voluntary Arrangement, write off debt UK, IVA help, stop bailiffs, IVA 2025" />
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menuContent');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'column';
+      }
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
 </head>
 <body>
 
-  <!-- Load Shared Menu -->
-  <div id="menu-container">
-    <script>
-      fetch("menu.html")
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById("menu-container").innerHTML = data;
-        });
-    </script>
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
   </div>
 
-  <div class="container">
+  <!-- Load menu.html dynamically -->
+  <div id="menu-container"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-container").innerHTML = html;
+      });
+  </script>
 
+  <div class="container">
     <div class="section">
       <h1>What Is an IVA?</h1>
-      <p>If you’ve been searching for <strong>“What is an IVA?”</strong> or even the trending term <strong>“What is a IVA UK”</strong>, you’re not alone. Thousands of people across the country are looking for safe, legal ways to deal with unaffordable debt — and an IVA could be the answer.</p>
-      <p>An <strong>Individual Voluntary Arrangement (IVA)</strong> is a government-approved debt solution that lets you reduce your monthly payments and write off remaining debt after a fixed term. It’s legally binding, protects you from bailiffs, and is managed by a licensed insolvency practitioner.</p>
-      <p>Once approved, your creditors must stop contacting you. Interest is frozen, legal action is halted, and you pay only what you can afford each month — usually for 5 or 6 years.</p>
+      <p>If you've been searching for <strong>\"What is an IVA?\"</strong> or even <strong>\"What is a IVA UK\"</strong>, you're not alone. These terms are among the most searched debt-related phrases in the UK right now, as more people look for ways to legally reduce their debt and stop creditor contact.</p>
+      <p>An <strong>Individual Voluntary Arrangement (IVA)</strong> is a formal and legally binding agreement between you and your creditors. It allows you to make affordable monthly payments towards your unsecured debts — and after 5 or 6 years, the rest can be written off.</p>
+      <p>Once your IVA is approved, creditors must stop contacting you. Interest is frozen. Bailiff action stops. And you can finally breathe again.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
     </div>
 
     <div class="section">
-      <h2>Who Can Get an IVA?</h2>
-      <p>Not everyone is eligible, but an IVA is ideal if you meet these criteria:</p>
+      <h2>Who Qualifies for an IVA?</h2>
+      <p>Not everyone qualifies — but if you meet the following criteria, an IVA could be the best debt solution for you:</p>
       <ul>
-        <li>You owe over <strong>£6,000</strong> in unsecured debt</li>
-        <li>You have debts with at least <strong>two different creditors</strong></li>
-        <li>You live in <strong>England, Wales or Northern Ireland</strong></li>
-        <li>You have a regular income — from employment, self-employment, or benefits</li>
+        <li>Unsecured debts over £6,000</li>
+        <li>At least two different creditors (e.g. loans, credit cards, HMRC)</li>
+        <li>Live in England, Wales, or Northern Ireland</li>
+        <li>Have a regular income (job, self-employment, or benefits)</li>
       </ul>
-      <p>Our team can assess your situation and confirm your eligibility confidentially and without pressure.</p>
+      <p>Not sure if you're eligible? Our team can check in minutes with no cost and no obligation.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify</a>
     </div>
 
     <div class="section">
-      <h2>Debts You Can Include in an IVA</h2>
-      <p>Most unsecured debts are eligible to be included in an IVA. These typically include:</p>
+      <h2>What Debts Can You Include in an IVA?</h2>
+      <p>Most unsecured debts are eligible for an IVA. These include:</p>
       <ul>
-        <li><a href="credit-card-debt.html">Credit card debts</a></li>
+        <li><a href="credit-card-debt.html">Credit card debt</a></li>
         <li><a href="loan-debt.html">Personal loans</a></li>
+        <li><a href="overdraft-debt.html">Bank overdrafts</a></li>
         <li><a href="council-tax-debt.html">Council tax arrears</a></li>
         <li><a href="utility-debt.html">Gas, electric, and water bills</a></li>
-        <li><a href="overdraft-debt.html">Bank overdrafts</a></li>
         <li><a href="payday-loan-debt.html">Payday loans</a></li>
         <li><a href="catalogue-debt.html">Catalogue and store card debt</a></li>
-        <li><a href="tax-debt.html">Self-employed tax or HMRC debts</a></li>
+        <li><a href="tax-debt.html">Self-employed or HMRC debts</a></li>
+        <li><a href="rent-arrears.html">Rent arrears</a></li>
       </ul>
-      <p>If you're being chased by bailiffs or enforcement agents, an IVA can stop legal action almost immediately.</p>
+      <p>We’ll confirm what can and can’t be included before you proceed.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Debts</a>
     </div>
 
     <div class="section">
-      <h2>How Much Debt Can I Write Off?</h2>
-      <p>In most cases, an IVA allows you to write off a significant portion of your debt. Based on our client data from 2024–2025, the average debt write-off is between <strong>60% and 85%</strong>.</p>
-      <p><strong>Example:</strong></p>
+      <h2>How Much Debt Can Be Written Off?</h2>
+      <p>With an IVA, it’s common to write off a large portion of your debt. Here’s an example:</p>
       <ul>
-        <li>Total Debt: £24,000</li>
-        <li>Monthly Payment Before IVA: £600+</li>
-        <li>New IVA Monthly Payment: £120</li>
-        <li>Debt Written Off: ~£18,000</li>
+        <li><strong>Total debt:</strong> £22,000</li>
+        <li><strong>Monthly payments before IVA:</strong> £580</li>
+        <li><strong>New IVA payment:</strong> £130</li>
+        <li><strong>Debt written off:</strong> ~70%</li>
       </ul>
-      <p>Every case is different, but the savings can be life-changing.</p>
-      <a href="debt-calculator.html" class="menu-cta">Use Our Debt Calculator</a>
+      <p>The actual amount depends on your circumstances, but most people see significant reductions.</p>
+      <a href="debt-calculator.html" class="menu-cta">Try the IVA Calculator</a>
     </div>
 
     <div class="section">
-      <h2>IVA vs Other Debt Options</h2>
-      <p>The UK offers a range of debt solutions. An IVA is just one — here’s how it compares:</p>
+      <h2>IVA vs Other Debt Solutions</h2>
+      <p>Wondering how an IVA compares to other UK debt solutions?</p>
       <ul>
-        <li><a href="dmp.html"><strong>DMP (Debt Management Plan)</strong></a> – Informal and flexible, but creditors can still chase you.</li>
-        <li><a href="dro.html"><strong>DRO (Debt Relief Order)</strong></a> – Good for low income, low asset individuals.</li>
-        <li><a href="compare-solutions.html"><strong>Bankruptcy</strong></a> – Drastic but quick. Can affect your home or career.</li>
+        <li><strong><a href="dmp.html">DMP</a></strong> – Informal and flexible, but no legal protection</li>
+        <li><strong><a href="dro.html">DRO</a></strong> – For very low income and no assets, strict limits</li>
+        <li><strong><a href="compare-solutions.html">Bankruptcy</a></strong> – Fast but more severe consequences</li>
       </ul>
-      <p>If you're unsure which route is best, our <a href="compare-solutions.html">debt solution comparison guide</a> will help.</p>
+      <p>For many people with steady income and high debt, an IVA strikes the right balance.</p>
       <a href="compare-solutions.html" class="menu-cta">Compare Debt Solutions</a>
     </div>
 
     <div class="section">
-      <h2>Why So Many People Are Googling “Individual Voluntary Arrangement”</h2>
-      <p>Recent UK search data shows that terms like <strong>“Individual Voluntary Arrangement”</strong> and <strong>“IVA UK”</strong> are being searched more than ever. With rising living costs, more people are exploring formal solutions that stop bailiffs, reduce payments, and legally write off debt.</p>
-      <p>An IVA offers certainty and structure, which is why it’s one of the most searched debt topics on Google in 2025.</p>
+      <h2>Why Choose Fresh Start Debt Support?</h2>
+      <p>We’re not a huge call centre. We’re a small UK-based team who support real people with real debt. We offer:</p>
+      <ul>
+        <li>✅ Fast help — usually within 1 hour</li>
+        <li>✅ Clear, honest guidance</li>
+        <li>✅ A reference number to fast-track your IVA</li>
+        <li>✅ 100% confidential support with no pressure</li>
+      </ul>
+      <p>We've helped thousands of people stop bailiffs, freeze interest, and reduce payments through IVAs.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
+    </div>
+
+    <div class="section">
+      <h2>Get Started Today</h2>
+      <p>Your enquiry is free, takes less than 1 minute, and is completely confidential. We'll ask about your debts, income, and living situation — and help you understand if an IVA is your best option.</p>
+      <p>You’ll receive no pressure to proceed. Just facts, support, and a clear way forward.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My IVA Check</a>
     </div>
-
-    <div class="section">
-      <h2>Why Choose Fresh Start Debt Support?</h2>
-      <p>We’re a small, focused team that offers clear, personal support. Our clients trust us because:</p>
-      <ul>
-        <li>✅ We respond quickly — usually within 1 hour (Mon–Sat)</li>
-        <li>✅ We assign you a dedicated UK specialist</li>
-        <li>✅ We don't pressure or upsell — just help you decide</li>
-        <li>✅ We provide a reference number to speed up the process</li>
-      </ul>
-      <p>Need help with council tax, credit cards, or HMRC debt? We’ve helped hundreds find the right solution fast.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Talk to a Specialist</a>
-    </div>
-
-    <div class="section">
-      <h2>Start Your IVA Today</h2>
-      <p>Your situation can change in just a few days. If approved, an IVA can give you:</p>
-      <ul>
-        <li>✅ Protection from legal action</li>
-        <li>✅ A freeze on all interest and charges</li>
-        <li>✅ A single affordable payment</li>
-        <li>✅ A clear end date to your debt</li>
-        <li>✅ Freedom from phone calls and bailiffs</li>
-      </ul>
-      <p>There's no cost to enquire and absolutely no pressure to proceed.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My IVA Now</a>
-    </div>
-
   </div>
 
-  <footer style="background: #4CAF50; color: #fff; text-align: center; padding: 20px; font-size: 14px;">
+  <footer>
     © 2025 Fresh Start Debt Support. All rights reserved.<br />
     This website does not offer financial advice and is not regulated by the FCA.
   </footer>
 
-  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">
     💬 Chat on WhatsApp
   </a>
