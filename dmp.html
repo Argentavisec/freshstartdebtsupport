@@ -3,96 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Debt Management Plan (DMP) – Affordable UK Debt Help</title>
-  <meta name="description" content="Learn how a Debt Management Plan (DMP) can help you reduce your monthly payments. Get free help with debt in the UK today. Check if you qualify now.">
+  <title>DMP Help 2025 | Fresh Start Debt Support</title>
+  <meta name="description" content="Discover how a Debt Management Plan (DMP) can help you reduce monthly payments and regain control. Check if you qualify for a DMP in 2025 with Fresh Start." />
+  <meta name="keywords" content="DMP help 2025, debt management plan UK, breathing space, lower monthly payments, avoid bankruptcy, debt support UK, debt help 2025">
   <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-  <!-- Include Menu -->
-  <div w3-include-html="menu.html"></div>
-
-  <!-- Section 1 -->
-  <div class="content-box">
-    <h2>What Is a Debt Management Plan (DMP)?</h2>
-    <p>A Debt Management Plan (DMP) is a flexible, informal way to repay unsecured debts at a pace you can afford. If you're overwhelmed with repayments on credit cards, loans, or store cards, a DMP can consolidate your debts into one lower monthly payment without the need for insolvency.</p>
-    <p>Searches for terms like <strong>“debt management plan UK”</strong> and <strong>“get out of debt without IVA”</strong> are trending across the UK, showing how many people want an alternative to formal arrangements like IVAs or bankruptcy.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Start My DMP Enquiry</a>
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
   </div>
 
-  <!-- Section 2 -->
-  <div class="content-box">
-    <h2>How Does a DMP Work?</h2>
-    <p>When you set up a DMP, a debt specialist will review your income and living costs. Based on what you can afford, they’ll negotiate with your creditors to accept a lower payment. You make one monthly payment, which is distributed between all included creditors.</p>
-    <p>This informal agreement avoids court action, reduces stress, and helps you gradually clear your debts. Many creditors will freeze interest and stop chasing you, as long as you stick to the plan.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">See If You Qualify</a>
-  </div>
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
 
-  <!-- Section 3 -->
-  <div class="content-box">
-    <h2>What Debts Can Be Included?</h2>
-    <p>A DMP can cover most unsecured debts such as:</p>
-    <ul>
-      <li>Credit cards</li>
-      <li>Overdrafts</li>
-      <li>Personal loans</li>
-      <li>Store cards</li>
-      <li>Payday loans</li>
-      <li>Catalogues and old bills</li>
-    </ul>
-    <p>You can’t usually include secured debts like mortgages or car finance, but your specialist can help you prioritise those separately.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Get Help With My Debts</a>
-  </div>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    }
 
-  <!-- Section 4 -->
-  <div class="content-box">
-    <h2>Benefits of a DMP</h2>
-    <ul>
-      <li>✅ One monthly affordable payment</li>
-      <li>✅ Interest and charges often frozen</li>
-      <li>✅ Reduced creditor contact</li>
-      <li>✅ Flexible and can be changed if your situation does</li>
-      <li>✅ Avoids formal insolvency</li>
-    </ul>
-    <p>Searches like <strong>"monthly debt repayment help"</strong> and <strong>"best debt help UK"</strong> are rising in popularity. A DMP offers a practical, non-judgemental solution if you're struggling to keep up with payments.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Take the First Step</a>
-  </div>
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("menuContent");
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
 
-  <!-- Section 5 -->
-  <div class="content-box">
-    <h2>Will It Affect My Credit Score?</h2>
-    <p>A DMP will usually impact your credit file, especially if you’re behind on payments. However, it shows you're taking steps to fix the problem. Long term, paying off your debts can actually improve your financial standing.</p>
-    <p>Trending questions like <strong>“does a DMP hurt your credit?”</strong> show that people want to understand the consequences. While your score may dip, the peace of mind and control you gain is often worth it.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Find Out If It’s Right for You</a>
-  </div>
+  <!-- Page Content -->
+  <div class="container">
 
-  <!-- Section 6 -->
-  <div class="content-box">
-    <h2>Is a DMP Right for Me?</h2>
-    <p>You may be eligible for a DMP if:</p>
-    <ul>
-      <li>You have over £2,000 in unsecured debt</li>
-      <li>You’re struggling to meet monthly payments</li>
-      <li>You have a regular income</li>
-    </ul>
-    <p>If you're searching terms like <strong>"how to clear debt without IVA"</strong> or <strong>"reduce debt payments UK"</strong>, you're not alone. A DMP can provide a path forward without the legal complexities of an IVA.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Check My Eligibility</a>
-  </div>
+    <div class="section">
+      <h1>Debt Management Plan (DMP) - A Flexible Way to Get Debt-Free</h1>
+      <p>In 2025, more people are searching for "DMP help UK", "debt management plan", and "how to get breathing space from creditors" than ever before. A <strong>Debt Management Plan (DMP)</strong> is an informal solution that allows you to pay back what you can afford without pressure from creditors or added interest.</p>
+      <p>At <strong>Fresh Start Debt Support</strong>, we help you build a plan that fits your real-life budget — so you can sleep better at night and finally start moving forward again. Whether you're looking for <strong>debt relief without bankruptcy</strong> or trying to enter the government's <strong>breathing space scheme</strong>, a DMP is a great first step.</p>
+      <a href="https://form.jotform.com/250594347028056" class="menu-cta">Check If I Qualify</a>
+    </div>
 
-  <!-- Section 7 -->
-  <div class="content-box">
-    <h2>Talk to a UK Debt Specialist</h2>
-    <p>We know every financial situation is unique. Our team can help you understand if a DMP is the right solution — or if there’s a better alternative like an IVA, DRO, or Bankruptcy. We’ll walk you through your options, without judgment or pressure.</p>
-    <p>Our mission is to help you <strong>get back on track and reduce the burden of debt</strong>. If you're searching for <strong>"affordable debt solutions UK"</strong>, we’re here to help.</p>
-    <a href="https://form.jotform.com/250594347028056" class="cta-button">Start Your Free DMP Check</a>
+    <div class="section">
+      <h2>How Does a DMP Work?</h2>
+      <p>A DMP lets you repay unsecured debts in manageable monthly instalments. You make a single monthly payment based on what’s left after essential living costs — rent, food, bills — are covered. We then negotiate with your creditors to freeze interest and charges where possible.</p>
+      <p>Searches for terms like <strong>"DMP vs IVA 2025"</strong>, <strong>"affordable repayment plan UK"</strong>, and <strong>"stop interest on debt 2025"</strong> are increasing, as more people choose DMPs for their flexibility and simplicity. A DMP works alongside or as a step before the <strong>breathing space debt respite scheme</strong>, giving you time to sort your finances.</p>
+      <a href="https://form.jotform.com/250594347028056" class="menu-cta">Start My Free Debt Check</a>
+    </div>
+
+    <div class="section">
+      <h2>DMP Benefits in 2025</h2>
+      <ul>
+        <li>✅ Combine multiple debts into one monthly payment</li>
+        <li>✅ Potential to freeze interest and stop late charges</li>
+        <li>✅ No legal process or court involvement</li>
+        <li>✅ Flexible — adjust payments if your situation changes</li>
+        <li>✅ Reduce creditor calls and letters</li>
+        <li>✅ Avoid the consequences of bankruptcy</li>
+      </ul>
+      <p>If you're searching for <strong>"lower payments no bankruptcy UK"</strong>, or trending queries like <strong>"debt management breathing space"</strong>, a DMP could be your ideal path to peace of mind.</p>
+    </div>
+
+    <div class="section">
+      <h2>Who Is a DMP Right For?</h2>
+      <ul>
+        <li>People with unsecured debts like credit cards, payday loans, or overdrafts</li>
+        <li>Those who can’t afford their current payments but can pay something</li>
+        <li>Anyone who wants a non-legal solution without formal insolvency</li>
+      </ul>
+      <p>If you're behind on bills and struggling to cope, this solution can help reduce stress, avoid bailiffs, and get your life back on track. It's especially useful if you’ve recently entered or are considering the <strong>Breathing Space debt scheme</strong>.</p>
+      <a href="https://form.jotform.com/250594347028056" class="menu-cta">See If I’m Eligible</a>
+    </div>
+
+    <div class="section">
+      <h2>Common Questions About DMPs</h2>
+
+      <h3>Will creditors stop contacting me?</h3>
+      <p>Many do once a DMP is in place — especially if interest is frozen and regular payments are made. It isn’t guaranteed, but we’ll request this on your behalf.</p>
+
+      <h3>How long does a DMP last?</h3>
+      <p>That depends on your level of debt and what you can afford to repay. Some people finish in 3–5 years, others longer. There's no set term.</p>
+
+      <h3>Will it affect my credit score?</h3>
+      <p>Yes — a DMP will usually appear on your credit file, but so will missed payments if you do nothing. A DMP shows you’re addressing the issue.</p>
+
+      <h3>Can I include all my debts?</h3>
+      <p>Most unsecured debts can be included — credit cards, loans, store cards, catalogues, payday loans, etc. Secured debts like mortgages can't be included.</p>
+
+      <h3>Can I cancel the DMP?</h3>
+      <p>Yes. A DMP is informal, so you can cancel at any time. It’s a flexible arrangement built to support you.</p>
+    </div>
+
+    <div class="section">
+      <h2>Start Your Fresh Start Today</h2>
+      <p>Trending search terms in 2025 like <strong>"stop bailiffs UK"</strong>, <strong>"help with debt UK"</strong>, <strong>"debt management plan 2025"</strong>, and <strong>"breathing space debt support"</strong> show how many people are now taking action. You’re not alone — and real help is just a click away.</p>
+      <a href="https://form.jotform.com/250594347028056" class="menu-cta">Start My Free DMP Check</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website does not offer financial advice and is not regulated by the FCA.</p>
+    </footer>
+
   </div>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/447000000000" class="whatsapp-button" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp Chat" />
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
   </a>
 
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script>w3.includeHTML();</script>
 </body>
 </html>
-
