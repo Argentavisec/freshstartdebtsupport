@@ -3,117 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debt Management Plans (DMPs) UK | Write Off Debt & Stop Bailiffs</title>
-  <meta name="description" content="Discover how a Debt Management Plan (DMP) can help you manage debt, stop bailiffs, and reduce payments. Find out if you're eligible and apply today." />
-  <meta name="keywords" content="debt management plan, DMP, DMP UK, write off debt, stop bailiffs, lower payments, debt help UK" />
+  <title>Debt Management Plan (DMP) | Lower Monthly Payments UK</title>
+  <meta name="description" content="Struggling with unaffordable debts? A Debt Management Plan (DMP) could help reduce monthly payments. Learn how it works, if you qualify, and how to get started." />
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleMenu() {
-      var menu = document.getElementById('menuContent');
-      if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-      } else {
-        menu.style.display = 'flex';
-        menu.style.flexDirection = 'column';
-      }
-    }
-
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
-    });
-  </script>
 </head>
 <body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
 
-  <!-- Menu Inject -->
+  <!-- Header -->
+  <header class="green-header">
+    <div class="header-content">
+      <img src="logo.png" alt="Fresh Start Debt Support Logo" class="logo" />
+      <div class="header-buttons">
+        <a href="step1.html" class="cta-button">Check If You Qualify</a>
+        <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu -->
   <div id="menu-container"></div>
   <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-container").innerHTML = html;
-      });
+    async function loadMenu() {
+      const response = await fetch('menu.html');
+      const menu = await response.text();
+      document.getElementById('menu-container').innerHTML = menu;
+    }
+    loadMenu();
+    function toggleMenu() {
+      const menu = document.getElementById('menu-container');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
   </script>
 
-  <div class="container">
+  <!-- Main Content -->
+  <main>
 
-    <div class="section">
-      <h1>What Is a Debt Management Plan (DMP)?</h1>
-      <p>A <strong>Debt Management Plan</strong> or <strong>DMP</strong> is an informal agreement between you and your creditors to pay back debts at a reduced and more affordable rate. It’s a flexible solution often used by those struggling to meet full payments on credit cards, loans, catalogues, or payday lenders.</p>
-      <p>Unlike an <a href="iva.html">IVA (Individual Voluntary Arrangement)</a>, a DMP is not legally binding, but still offers a structured way to regain control over your finances. It’s also a popular search term in the UK, with consistent interest shown on platforms like Google Trends. In fact, searches for "dmp" and "debt management plan" have stayed strong over the past 5 years — showing that this solution continues to help thousands each year.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
+    <div class="content-box">
+      <h1>What is a Debt Management Plan (DMP)?</h1>
+      <p>A Debt Management Plan (DMP) is a flexible, informal debt solution designed to help individuals who are struggling to keep up with monthly repayments. It allows you to consolidate your unsecured debts into one affordable monthly payment based on what you can realistically afford. With a DMP, you can regain control of your finances without the pressure of court proceedings or bailiff action.</p>
+      <p>Search interest in “dmp” and “debt management plan” remains high across the UK, according to recent Google Trends data. This shows how many people are looking for reliable debt support.</p>
+      <a href="step1.html" class="cta-button">See If You Qualify Now</a>
     </div>
 
-    <div class="section">
-      <h2>How a DMP Helps You Manage Your Debts</h2>
-      <p>Under a DMP, your specialist will work with your creditors to agree on reduced monthly payments that fit your budget. Interest and charges may be frozen depending on the creditor, making it easier to focus on clearing your debt rather than just paying off interest.</p>
-      <p>This solution is often ideal for those searching terms like "debt management plan UC" – especially Universal Credit claimants who want a more manageable payment plan while on a low income. If you’re on benefits, part-time income, or struggling financially, a DMP could be your path to relief.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
+    <div class="content-box">
+      <h2>How Does a DMP Work?</h2>
+      <p>When you enter a Debt Management Plan, your specialist will contact your creditors to negotiate lower payments, freeze interest and charges where possible, and combine all your debts into one manageable monthly payment. You continue paying until your debts are repaid, without the need for court involvement. This makes DMPs especially popular for people who want breathing space from mounting pressure.</p>
+      <p>With Google Trends showing consistent searches for terms like “debt management UC” and “how to lower monthly payments”, it’s clear many households are seeking breathing space — and a DMP can provide exactly that.</p>
+      <a href="step1.html" class="cta-button">Get Breathing Space Today</a>
     </div>
 
-    <div class="section">
-      <h2>Who Qualifies for a DMP?</h2>
-      <p>If you have unsecured debts like credit cards, overdrafts, store cards, payday loans or personal loans, and you're struggling to keep up with payments, you may qualify for a DMP. There’s no minimum or maximum debt level to apply, though plans typically suit those with multiple creditors and a regular income (wages or benefits).</p>
-      <p>With rising search trends in 2025 for terms like "debt management UC" and "DMP UK", it's clear that more people are looking for flexible solutions that don't involve legal proceedings or insolvency.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find Out If You Qualify</a>
-    </div>
-
-    <div class="section">
-      <h2>Benefits of a DMP</h2>
+    <div class="content-box">
+      <h2>Who Can Benefit from a DMP?</h2>
+      <p>A DMP may be suitable if you:</p>
       <ul>
-        <li>Reduced and affordable monthly payments</li>
-        <li>Fewer creditor calls and letters</li>
-        <li>No court involvement</li>
-        <li>Can be cancelled at any time</li>
-        <li>Interest and charges may be frozen</li>
+        <li>Have more than £1,000 in unsecured debts</li>
+        <li>Can only afford partial repayments each month</li>
+        <li>Receive income from employment, self-employment or Universal Credit</li>
+        <li>Are being chased by creditors or debt collectors</li>
       </ul>
-      <p>A DMP is also one of the most searched debt solutions in the UK, according to Google Trends data. The high interest shows that many people are exploring this as an alternative to more formal solutions like <a href="dro.html">Debt Relief Orders (DROs)</a> or <a href="bankruptcy.html">bankruptcy</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Plan</a>
+      <p>This solution is ideal for people who want to avoid insolvency but still reduce their payments and deal with creditors on a structured basis.</p>
+      <a href="step1.html" class="cta-button">Check If You Qualify for a DMP</a>
     </div>
 
-    <div class="section">
-      <h2>Is a DMP Right for Me?</h2>
-      <p>DMPs aren’t suitable for everyone. They won’t write off debt, unlike some <a href="iva.html">IVAs</a> which may write off a significant portion after 5 years. However, they do offer more flexibility and control, and are a good option for those with temporary financial struggles or people wanting to avoid insolvency records.</p>
-      <p>Our team will assess your situation and recommend whether a DMP or another solution would suit you best.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Free Assessment</a>
+    <div class="content-box">
+      <h2>Which Debts Can Go Into a DMP?</h2>
+      <p>DMPs typically include unsecured debts such as:</p>
+      <ul>
+        <li>Credit cards</li>
+        <li>Overdrafts</li>
+        <li>Catalogues and store cards</li>
+        <li>Payday loans</li>
+        <li>Personal loans</li>
+      </ul>
+      <p>Secured debts (like mortgages and car finance) and priority bills (like rent and council tax) are not usually included, so you’ll need to continue paying those separately.</p>
+      <a href="step1.html" class="cta-button">Start Your Plan Today</a>
     </div>
 
-    <div class="section">
-      <h2>Frequently Asked Questions</h2>
-      <h3>Will a DMP affect my credit rating?</h3>
-      <p>Yes, a DMP can affect your credit score as it involves paying less than originally agreed. However, if you’re already missing payments, it may help you start repairing your credit over time.</p>
-
-      <h3>Do DMPs stop bailiffs?</h3>
-      <p>Once creditors agree to the plan, they should stop further legal action. A DMP may help avoid court proceedings and bailiff action if set up early enough. If you're already dealing with bailiffs, see our guide on <a href="stop-debt-collectors.html">stopping debt collectors</a>.</p>
-
-      <h3>Can I cancel a DMP?</h3>
-      <p>Yes. You can leave a DMP at any time, without penalty. It’s a voluntary arrangement.</p>
-
-      <h3>What if I’m on Universal Credit?</h3>
-      <p>Many people search for "debt management UC" as they receive Universal Credit. You can still qualify for a DMP, even on a low or variable income.</p>
+    <div class="content-box">
+      <h2>DMP vs IVA: What's the Difference?</h2>
+      <p>Unlike an <a href="iva.html">IVA (Individual Voluntary Arrangement)</a>, a DMP is not legally binding and doesn’t require court approval. This means it’s more flexible, but creditors aren’t obligated to freeze interest or stop legal action. If you’re unsure which is better, you may want to compare both in our <a href="compare-solutions.html">Debt Solution Comparison Guide</a>.</p>
+      <p>Some clients start on a DMP and later switch to an IVA once their situation becomes clearer. Search volumes for both "dmp" and "iva" suggest people are actively comparing options — and we can help guide you.</p>
+      <a href="step1.html" class="cta-button">Compare My Options</a>
     </div>
 
-    <div class="section">
-      <h2>Take the First Step</h2>
-      <p>If you're struggling with unsecured debt, don't wait. A DMP could help lower your monthly payments, reduce stress, and give you a path toward financial control.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    <div class="content-box">
+      <h2>What Are the Pros and Cons of a DMP?</h2>
+      <p><strong>Pros:</strong></p>
+      <ul>
+        <li>One simple payment per month</li>
+        <li>No court process</li>
+        <li>Possible freeze on interest and charges</li>
+        <li>Flexible — can be changed or cancelled anytime</li>
+      </ul>
+      <p><strong>Cons:</strong></p>
+      <ul>
+        <li>Not legally binding — creditors don’t have to cooperate</li>
+        <li>May take longer to repay debts in full</li>
+        <li>No guarantee of stopping legal action</li>
+        <li>Will show on your credit report</li>
+      </ul>
+      <a href="step1.html" class="cta-button">Speak to a Specialist</a>
     </div>
 
-  </div>
+    <div class="content-box">
+      <h2>Why So Many UK Households Search for DMP Help</h2>
+      <p>In the past five years, searches for “debt management plan” and “dmp” have remained steady on Google Trends — reflecting the continued demand for practical debt help. Even during economic ups and downs, the need for lower monthly payments and breathing space is constant. Many people are now searching for “debt management UC” or “DMP with benefits” as the cost of living rises.</p>
+      <p>We understand the emotional and financial pressure that debt causes — and we’re here to help.</p>
+      <a href="step1.html" class="cta-button">Get Help with Your DMP</a>
+    </div>
 
-  <footer style="background: #4CAF50; color: #fff; text-align: center; padding: 20px; font-size: 14px;">
-    © 2025 Fresh Start Debt Support. All rights reserved.<br />
-    This website does not offer financial advice and is not regulated by the FCA.
+    <div class="content-box">
+      <h2>Other Pages You Might Find Helpful</h2>
+      <ul>
+        <li><a href="iva.html">What is an IVA?</a></li>
+        <li><a href="dro.html">What is a DRO?</a></li>
+        <li><a href="stop-debt-collectors.html">How to Stop Debt Collectors</a></li>
+        <li><a href="affordable-repayment-plans.html">Affordable Repayment Plans</a></li>
+      </ul>
+      <a href="step1.html" class="cta-button">See If You Qualify</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.<br />
+    This website does not offer financial advice and is not regulated by the FCA.</p>
   </footer>
+
 </body>
 </html>
