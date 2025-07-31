@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Loan Debt Help | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with personal loan debt? Reduce repayments, stop interest, and get breathing space support with Fresh Start Debt Support." />
-  <meta name="keywords" content="personal loan debt, reduce loan repayments, breathing space scheme, IVA, DMP, write off debt, UK loan help" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Debt Help UK | Fresh Start Debt Support</title>
+  <meta name="description" content="Struggling with loan debt? Learn how to reduce repayments on personal loans, payday loans, and more. Check if you qualify for help under a DMP or breathing space scheme." />
+  <meta name="keywords" content="loan debt help, personal loan debt UK, reduce loan repayments, payday loan support, DMP, IVA, breathing space scheme 2025, debt relief UK">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Banner and Logo -->
+  <!-- Header -->
   <div class="banner">
-    <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
-    <a href="https://form.jotform.com/250596569907070" class="enquire-button">Check If You Qualify</a>
-    <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
   </div>
 
-  <!-- Menu (loaded from external file) -->
-  <div id="menu-container"></div>
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
   <script>
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
       });
 
     function toggleMenu() {
@@ -32,75 +34,83 @@
         menu.style.display = menu.style.display === "flex" ? "none" : "flex";
       }
     }
+
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("menuContent");
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
+        menu.style.display = "none";
+      }
+    });
   </script>
 
+  <!-- Page Content -->
   <div class="container">
 
     <div class="section">
-      <h1>Help With Personal Loan Debt in the UK</h1>
-      <p>Personal loan debt in the UK is one of the most common causes of financial stress, especially as interest rates and living costs continue to rise. If you’re struggling to meet your monthly loan repayments, you’re not alone — and there is help available. At Fresh Start Debt Support, we help individuals reduce loan repayments, freeze interest, and explore whether they qualify to write off debt legally through a solution like an <a href="iva.html">IVA</a> or <a href="dmp.html">DMP</a>.</p>
+      <h1>Struggling With Loan Debt in 2025?</h1>
+      <p>Thousands across the UK are searching Google daily for terms like <strong>"loan debt help"</strong>, <strong>"reduce loan repayments"</strong>, and <strong>"breathing space scheme"</strong>. If you're one of them, you're not alone — and there are real solutions available. Whether you’ve taken out a personal loan, payday loan, or high-interest loan, we can help you take control.</p>
+      <p>At <strong>Fresh Start Debt Support</strong>, we specialise in helping people with unsecured loans reduce their monthly repayments, freeze interest, and stop collection calls — often within 24 hours. Find out if you qualify for help through a <a href="dmp.html">Debt Management Plan (DMP)</a>, <a href="iva.html">IVA</a>, or the government’s <strong>Breathing Space scheme</strong>.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
     </div>
 
     <div class="section">
-      <h2>What Happens If I Can’t Pay My Personal Loan?</h2>
-      <p>If you fall behind on personal loan repayments, the lender may add charges or default interest. In many cases, your debt may be passed to a debt collection agency like <a href="lowell.html">Lowell Financial</a> or <a href="moriarty-law.html">Moriarty Law</a>. This can damage your credit file and lead to legal action such as County Court Judgments (CCJs).</p>
-      <p>We work with people in your situation every day and can help you pause the pressure through the <strong>Breathing Space scheme</strong>, or find a longer-term debt solution.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop the Interest and Get Help</a>
-    </div>
-
-    <div class="section">
-      <h2>Solutions to Personal Loan Debt</h2>
-      <p>You might qualify for one of the following UK debt solutions:</p>
+      <h2>Types of Loan Debt We Help With</h2>
       <ul>
-        <li><strong><a href="iva.html">IVA (Individual Voluntary Arrangement)</a></strong>: Reduce your personal loan repayments to one affordable monthly payment and write off remaining debt after 5 years.</li>
-        <li><strong><a href="dmp.html">DMP (Debt Management Plan)</a></strong>: An informal plan to lower payments and freeze interest. Great for personal loans from banks and online lenders.</li>
-        <li><strong><a href="dro.html">DRO (Debt Relief Order)</a></strong>: Suitable for people with low income and little to no assets. Ideal for small personal loan debts.</li>
-        <li><a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a></li>
+        <li>Personal loans from banks or online lenders</li>
+        <li>Payday loans and short-term credit</li>
+        <li>Guarantor loans and logbook loans</li>
+        <li>Doorstep loans and buy-now-pay-later agreements</li>
+        <li>Overdrafts used as ongoing credit</li>
       </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See Which Plan You Qualify For</a>
+      <p>No matter how the loan started, if the repayments have become unmanageable, we can help you explore safe, legal ways to reduce or even stop payments — without resorting to bankruptcy.</p>
     </div>
 
     <div class="section">
-      <h2>Google Trends: Why Personal Loan Debt Is Growing</h2>
-      <p>Search terms like "<strong>personal loan debt help</strong>", "<strong>reduce loan repayments</strong>", and "<strong>breathing space debt scheme</strong>" have all surged in Google Trends. This reflects the growing financial pressure in the UK. The good news is that you're not alone — and with the right plan, you can regain control and protect your mental health and finances.</p>
-      <p>Other popular searches include "<strong>DMP UK</strong>", "<strong>IVA for personal loans</strong>", "<strong>write off personal loan UK</strong>", and "<strong>debt support near me</strong>". We help you address all of these with one confidential consultation.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start With a Free Check</a>
+      <h2>How the Breathing Space Scheme Can Help</h2>
+      <p>The <strong>Breathing Space debt respite scheme</strong> gives you up to 60 days of legal protection from creditors while you get debt advice. During this time, collection activity must pause — including interest and court action. This is often the first step before entering a more permanent solution like a <a href="dmp.html">DMP</a> or <a href="dro.html">DRO</a>.</p>
+      <p>If you’ve recently Googled “breathing space for loan debt”, you're already on the right track. We can help refer you into the scheme and ensure your loan providers respect the pause.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Apply for Breathing Space</a>
     </div>
 
     <div class="section">
-      <h2>Will This Affect My Credit Score?</h2>
-      <p>Debt solutions like IVAs and DMPs will appear on your credit file. However, if you're already falling behind on personal loan payments or have defaults, the impact may already be there. Most clients choose to get help now rather than let the situation spiral further. Getting support now helps you protect your income, housing, and peace of mind.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
-    </div>
-
-    <div class="section">
-      <h2>Why Choose Fresh Start Debt Support?</h2>
+      <h2>Loan Debt Solutions That Work</h2>
+      <p>There’s no one-size-fits-all answer. That’s why we look at your full situation and guide you toward the right solution:</p>
       <ul>
-        <li>We help reduce personal loan repayments legally</li>
-        <li>Quick qualification check — no credit impact</li>
-        <li>Stop interest, charges, and legal threats</li>
-        <li>Confidential, non-judgemental support</li>
+        <li><strong>Debt Management Plan (DMP)</strong> – One affordable monthly payment covering all your unsecured debts</li>
+        <li><strong>IVA</strong> – Write off a portion of debt if you qualify</li>
+        <li><strong>DRO</strong> – For people on low income with under £30,000 of debt</li>
+        <li><strong>Full & Final Settlements</strong> – Pay a reduced amount in lump sum where possible</li>
       </ul>
-      <p>Whether your loans are from high street banks, online lenders, or credit unions — our team will help you understand your rights and explore your options.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personal Loan Help Now</a>
+      <p>Search trends for <strong>"DMP for loan debt"</strong> and <strong>"stop interest on personal loan"</strong> are rising — and for good reason. These options work. Let us explain how they could apply to your loan situation.</p>
+      <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
     </div>
 
     <div class="section">
-      <h2>Ready for a Fresh Start?</h2>
-      <p>You don’t need to face personal loan debt alone. Whether you’re behind on payments, worried about collectors, or simply need breathing space — Fresh Start Debt Support is here for you. With solutions like IVAs and DMPs, we’ll help you reduce loan repayments, freeze interest, and stop the stress.</p>
-      <p><strong>Start your journey to financial freedom today.</strong></p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify in 30 Seconds</a>
+      <h2>Can I Be Taken to Court for Loan Debt?</h2>
+      <p>Yes — if left unpaid, loan companies may take legal action through a County Court Judgment (CCJ). In severe cases, this can lead to bailiff action. But entering into a solution early, like a DMP or IVA, can help stop legal action before it begins.</p>
+      <p>One of the most Googled concerns in 2025 is <strong>"how to stop bailiffs for loan debt"</strong>. If this is your situation, speak to us urgently. We may be able to block bailiff visits within 24 hours through emergency support.</p>
     </div>
+
+    <div class="section">
+      <h2>Start Your Fresh Start Today</h2>
+      <p>Don’t let payday loans or high-interest debt spiral out of control. With searches for <strong>"loan debt help 2025"</strong> and <strong>"reduce monthly repayments UK"</strong> trending upwards, more people are choosing safe solutions over stress. We’re here to help you do the same.</p>
+      <p>Take your first step now — no pressure, no judgment, just support.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Loan Debt Check</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website does not offer financial advice and is not regulated by the FCA.</p>
+    </footer>
 
   </div>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
-
-  <footer>
-    © 2025 Fresh Start Debt Support. This site is not regulated by the FCA and does not provide financial advice.
-  </footer>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20loan%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
 
 </body>
 </html>
