@@ -2,338 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lloyds Debt Help | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with Lloyds Bank debt? Learn how to manage credit card, loan or overdraft arrears. Get confidential help and repayment plans today." />
-  <meta name="keywords" content="Lloyds debt help, Lloyds collections, Lloyds Bank repayment plan, IVA Lloyds, DMP Lloyds">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="description" content="Struggling with Lloyds Bank debt? Learn how to stop interest, reduce payments, and take control with IVA, DMP, or Breathing Space. Get expert help today." />
+  <meta name="keywords" content="Lloyds debt, Lloyds bank debt help, breathing space scheme, DMP, IVA, debt support, debt management plan">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2, h3 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div id="menu-placeholder"></div>
   <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
     }
-    window.addEventListener("click", function(e) {
+
+    window.addEventListener("click", function (e) {
       const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
         menu.style.display = "none";
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-  </div>
+
+  <!-- Content Container -->
   <div class="container">
- <div class="container">
-  <div class="section">
-    <h1>Struggling With Lloyds Bank Debt? Get Help to Stop It Spiralling</h1>
-    <p>If you’re behind on <strong>Lloyds credit card</strong>, <strong>loan</strong>, or <strong>overdraft repayments</strong>, you're not alone. Every month, thousands of people in the UK face rising debt with high street banks like Lloyds. But the good news is — help is available.</p>
-    <p><a href="index.html">Fresh Start Debt Support</a> works with people who are struggling to manage Lloyds debts, offering confidential, non-judgmental help to reduce payments and stop further action.</p>
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify Now</a>
-  </div>
+    <div class="section">
+      <h1>Lloyds Debt Help – Take Control Today</h1>
+      <p>If you're receiving letters or calls from Lloyds Bank about overdue debt, you're not alone — and help is available. Whether you're behind on a credit card, personal loan, or overdraft with Lloyds, our team at <strong>Fresh Start Debt Support</strong> can help you take back control with solutions like a <a href="dmp.html">Debt Management Plan (DMP)</a>, <a href="iva.html">IVA</a>, or the <a href="breathing-space.html">Breathing Space scheme</a>.</p>
+      <p>Lloyds Bank, like other major lenders, may pass your debt to collection agencies or apply interest and charges that make things worse. But you have legal options to stop the pressure and get affordable repayment terms.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
+    </div>
 
-  <div class="section">
-    <h2>Types of Lloyds Debt We Help With</h2>
-    <ul>
-      <li>✅ Credit card debt</li>
-      <li>✅ Personal loans and finance</li>
-      <li>✅ Overdrafts and current account arrears</li>
-      <li>✅ Debts sold to collectors (e.g. <a href="lowell.html">Lowell</a>, <a href="link-financial.html">Link Financial</a>)</li>
-    </ul>
-    <p>Whether you’re still dealing with Lloyds directly or a debt collection agency, we can help you take control.</p>
-  </div>
+    <div class="section">
+      <h2>Common Lloyds Debts We Can Help With</h2>
+      <ul>
+        <li>Overdue Lloyds credit card balances</li>
+        <li>Lloyds personal loans</li>
+        <li>Lloyds overdraft charges</li>
+        <li>Accounts passed to debt collectors</li>
+      </ul>
+      <p>We help people across the UK deal with debt from high street banks like Lloyds, as well as their in-house or third-party collection teams. Whether your account has just fallen behind or you're facing court action, we can guide you through your options.</p>
+    </div>
 
-  <div class="section">
-    <h2>What Happens If You Don’t Pay Lloyds?</h2>
-    <p>If you miss repayments with Lloyds, the following may happen:</p>
-    <ul>
-      <li>⚠️ Interest and late charges continue to build</li>
-      <li>⚠️ Your credit file is impacted with default notices</li>
-      <li>⚠️ Lloyds may pass your account to a third-party debt collector</li>
-      <li>⚠️ In rare cases, legal action such as CCJs or enforcement can follow</li>
-    </ul>
-    <p>The sooner you act, the more options you have. We can help stop creditor contact and set up a solution that gives you breathing room.</p>
-  </div>
+    <div class="section">
+      <h2>Stop Interest, Charges, and Legal Action</h2>
+      <p>When you enter a formal debt solution such as an <a href="iva.html">IVA</a> or <a href="dmp.html">DMP</a>, your creditors — including Lloyds — may be required to freeze interest and stop chasing you for payments. This gives you breathing space to repay what you can afford, without the constant stress.</p>
+      <p>The <a href="breathing-space.html">Breathing Space scheme</a> also protects you from court action and interest for up to 60 days, giving you valuable time to get a plan in place.</p>
+      <p>Need urgent help? We can act fast — especially if you're being threatened with bailiffs or legal letters.</p>
+      <a href="stop-debt-collectors.html" class="menu-cta">Stop Lloyds Collection Calls</a>
+    </div>
+    <div class="section">
+      <h2>Why It’s Important to Act Early with Lloyds Debt</h2>
+      <p>Ignoring letters or calls from Lloyds Bank can lead to escalating action — including defaults, debt collectors, or even County Court Judgments (CCJs). These can severely affect your credit rating and lead to bailiff involvement. But early action puts the power back in your hands.</p>
+      <p>Our team can assess your financial situation quickly and confidentially, and help you access options that reduce payments and protect your assets.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Assessment</a>
+    </div>
 
-  <div class="section">
-    <h2>What Debt Solutions Could Help?</h2>
-    <p>You don’t need to keep struggling. There are government-approved options that could reduce or even write off some of your debt:</p>
-    <ul>
-      <li><a href="iva.html">IVA (Individual Voluntary Arrangement)</a> – Freeze interest, make one affordable payment, and write off debt after 5–6 years</li>
-      <li><a href="dmp.html">Debt Management Plan (DMP)</a> – Lower your monthly payments and freeze interest</li>
-      <li><a href="dro.html">Debt Relief Order (DRO)</a> – For low-income households to wipe debt in 12 months</li>
-      <li><a href="compare-solutions.html">Compare your options</a> in detail</li>
-    </ul>
-    <p>These solutions are designed to give you a <strong>fresh financial start</strong> — not make your situation worse.</p>
-  </div>
+    <div class="section">
+      <h2>Solutions for Lloyds Bank Debt</h2>
 
-  <div class="section">
-    <h2>Has Lloyds Sold Your Debt?</h2>
-    <p>If your Lloyds debt has been passed to a company like <a href="cabot.html">Cabot</a>, <a href="pra-group.html">PRA Group</a>, or <a href="hoist-finance.html">Hoist Finance</a>, don’t panic. We regularly deal with these agencies and can still help include those debts in a formal plan to stop further action.</p>
-  </div>
+      <h3><a href="iva.html">IVA (Individual Voluntary Arrangement)</a></h3>
+      <p>An IVA is a formal agreement where you pay back what you can afford each month — often over 5 years. After that, any remaining debt is written off. Lloyds and other creditors may agree to stop interest and write off up to 85% of your debt.</p>
 
-  <div class="section">
-    <h2>Why Choose Fresh Start Debt Support?</h2>
-    <ul>
-      <li>✔️ We’re a small, UK-based team — no pressure or upselling</li>
-      <li>✔️ We help explain your options in simple terms</li>
-      <li>✔️ You stay in control — we only move forward if you're ready</li>
-      <li>✔️ Trusted by people across the UK for fast, clear support</li>
-    </ul>
-    <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify Today</a>
-  </div>
+      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
+      <p>A DMP is an informal solution that helps you pay off your Lloyds debt with reduced monthly payments. It’s ideal if you can’t meet the minimum payments but want to repay in full over time.</p>
 
-  <div class="section">
-    <h2>Need Help With Other Debts Too?</h2>
-    <p>You don’t have to deal with each lender separately. Most clients include several debts in one monthly payment plan:</p>
-    <ul>
-      <li><a href="credit-card-debt.html">Credit Cards</a></li>
-      <li><a href="loan-debt.html">Loans</a></li>
-      <li><a href="utility-debt.html">Utility Bills</a></li>
-      <li><a href="catalogue-debt.html">Catalogue Debt</a></li>
-      <li><a href="gambling-debt.html">Gambling Debt</a></li>
-      <li><a href="tax-debt.html">Tax & HMRC Debt</a></li>
-    </ul>
-    <p>You can also get a quick estimate using our <a href="debt-calculator.html">free online debt calculator</a>.</p>
-  </div>
-</div>
+      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
+      <p>If you owe under £30,000, have no assets and little disposable income, a DRO could be the best solution. It stops all payments and wipes eligible debts after 12 months — including Lloyds debts.</p>
+
+      <h3><a href="breathing-space.html">Breathing Space Scheme</a></h3>
+      <p>This legal scheme gives you 60 days of protection from interest, charges, and enforcement while you get help. It’s ideal if you need urgent relief from Lloyds debt pressure.</p>
+
+      <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
+    </div>
+
+    <div class="section">
+      <h2>How We Help You With Lloyds Bank Debt</h2>
+      <ul>
+        <li>✅ Stop letters, calls, and bailiffs</li>
+        <li>✅ Freeze interest and lower payments</li>
+        <li>✅ Support with IVAs, DMPs, DROs, and more</li>
+        <li>✅ Friendly UK-based specialists who care</li>
+        <li>✅ Completely confidential and stress-free</li>
+      </ul>
+      <p>We understand how overwhelming Lloyds debt can feel. Our team is here to guide you without judgment, and we’ll work with you — not pressure you. We’ve helped thousands of people get peace of mind again.</p>
+      <a href="testimonials.html" class="menu-cta">See Success Stories</a>
+    </div>
+
+    <div class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>Can you help with Lloyds overdraft debt?</h3>
+      <p>Yes. Whether it’s an overdraft, loan, or credit card, we can help you reduce payments and stop interest on Lloyds debts.</p>
+
+      <h3>Will my credit be affected?</h3>
+      <p>Debt solutions like IVAs and DROs do impact your credit, but so does unpaid Lloyds debt. The difference is — with our help, you’ll be on a path to clearing your debt.</p>
+
+      <h3>Is this confidential?</h3>
+      <p>Yes. Everything is private and secure. We never contact your employer or family, and you stay in control.</p>
+
+      <h3>How quickly can you help?</h3>
+      <p>We can often get you protection in 24–48 hours, especially if bailiffs or legal letters are involved.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
+    </div>
+
     <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This site does not offer financial advice and is not affiliated with Lloyds Bank or regulated by the FCA.</p>
     </footer>
-    <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
-
   </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20Lloyds%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
 </body>
 </html>
