@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Header -->
   <div class="banner">
     <div class="top-bar">
       <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
@@ -16,34 +17,34 @@
     </div>
   </div>
 
+  <!-- Menu Placeholder -->
   <div id="menu-placeholder"></div>
   <script>
     fetch("menu.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("menu-placeholder").innerHTML = html;
-        document.getElementById("menuContent").style.display = "none";
+        // Apply smooth toggle behavior
+        const button = document.getElementById("menuButton");
+        const menu = document.getElementById("menuContent");
+        if (button && menu) {
+          button.addEventListener("click", function () {
+            menu.classList.toggle("show");
+          });
+        }
+
+        window.addEventListener("click", function (e) {
+          if (menu && !menu.contains(e.target) && e.target !== button) {
+            menu.classList.remove("show");
+          }
+        });
       });
-
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      if (menu) {
-        menu.classList.toggle("show");
-      }
-    }
-
-    window.addEventListener("click", function (e) {
-      const menu = document.getElementById("menuContent");
-      const button = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== button) {
-        menu.classList.remove("show");
-      }
-    });
   </script>
 
+  <!-- Page Content -->
   <div class="container">
 
-    <!-- Section: Privacy Policy -->
+    <!-- Privacy Policy -->
     <div class="section">
       <h1>Privacy Policy</h1>
       <p>At Fresh Start Debt Support, your privacy matters. This page explains how we collect, use, and protect your personal information when you use our website or contact us through our forms.</p>
@@ -75,11 +76,10 @@
         <li>Request corrections or deletion</li>
         <li>Withdraw consent at any time</li>
       </ul>
-
       <p>To request data access or deletion, email: <strong>homesusticesoltions@gmail.com</strong>.</p>
     </div>
 
-    <!-- Section: Cookie Policy -->
+    <!-- Cookie Policy -->
     <div class="section">
       <h2>Cookie Policy</h2>
       <p>We use cookies to improve website performance and track user behaviour using tools such as Google Analytics.</p>
@@ -93,11 +93,10 @@
         <li>Monitor site traffic and performance</li>
         <li>Improve site content and usability</li>
       </ul>
-
       <p>You can disable cookies in your browser settings. Continued use of our site is considered consent to our cookie usage.</p>
     </div>
 
-    <!-- Section: Terms and Conditions -->
+    <!-- Terms and Conditions -->
     <div class="section">
       <h2>Terms & Conditions</h2>
       <p>By using this website, you agree to the following terms:</p>
@@ -115,22 +114,22 @@
       <p>Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites.</p>
     </div>
 
-    <!-- Section: Contact -->
+    <!-- Contact -->
     <div class="section">
       <h2>Contact Us</h2>
       <p>If you have any questions about this Privacy Policy or your data, contact us at:</p>
-<a href="https://form.jotform.com/250596569907070" class="menu-cta">Contact us today about the privacy policy and your data</a>
-
-<p>Or contact us on our business whatsapp</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Contact us today about the privacy policy and your data</a>
+      <p>Or contact us on our business WhatsApp below.</p>
+    </div>
 
     <!-- Footer -->
     <footer>
       <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
       <p>This website does not offer regulated financial advice and is not authorised by the Financial Conduct Authority (FCA).</p>
     </footer>
-
   </div>
 
+  <!-- WhatsApp Button -->
   <a href="https://wa.me/447752296301?text=Hi%20I%20have%20a%20question%20about%20your%20privacy%20policy" class="whatsapp-button" target="_blank">
     💬 Chat with Us on WhatsApp
   </a>
