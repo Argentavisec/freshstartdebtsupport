@@ -2,352 +2,229 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moriarty Law Debt Help | Fresh Start Debt Support</title>
-  <meta name="description" content="Dealing with Moriarty Law debt letters or court threats? Get support to stop contact, explore debt solutions and take back control." />
-  <meta name="keywords" content="Moriarty Law debt help, Moriarty Law collections, Moriarty Law court claim, Moriarty Law payment plan, IVA Moriarty Law, DMP Moriarty Law">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moriarty Law Debt Collectors | Stop Court Action & Freeze Interest</title>
+  <meta name="description" content="Struggling with Moriarty Law? Learn how to stop court claims, freeze interest, and reduce payments. Get help with DMPs, IVAs, DROs & Breathing Space today." />
+  <meta name="keywords" content="Moriarty Law, debt collectors, court claim, freeze interest, stop bailiffs, breathing space scheme, DMP, IVA, DRO, CCJ, debt help, debt solutions, affordable repayment plans">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
   <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
     }
-    window.addEventListener("click", function(e) {
+
+    window.addEventListener("click", function (e) {
       const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
         menu.style.display = "none";
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
+
+  <!-- Page Content -->
   <div class="container">
-<div class="section">
-  <h1>Moriarty Law Debt Recovery – What You Need to Know</h1>
-  <p>Received a letter, claim form, or County Court Judgment (CCJ) threat from <strong>Moriarty Law Solicitors</strong>? You’re not alone. This firm often acts on behalf of creditors like utility companies, mobile phone providers, and debt buyers. But before you panic — understand your rights and how to respond.</p>
 
-  <p>Fresh Start Debt Support helps people across the UK deal with companies like Moriarty Law. Whether you're worried about legal action or struggling to repay, we can help you understand your options without judgment or pressure.</p>
+    <!-- Intro Section -->
+    <div class="section">
+      <h1>Moriarty Law Debt Collectors – Stop Court Action, Freeze Interest & Get Help</h1>
+      <p>Received a letter from <strong>Moriarty Law</strong>? You’re not alone. Thousands across the UK are chased each year for unpaid debts passed from utility providers, catalogues, or mobile phone contracts. Often, these come as a shock — with threats of court claims, CCJs (County Court Judgments), and bailiff action.</p>
+      <p>At <strong>Fresh Start Debt Support</strong>, we help people stop debt collectors like Moriarty Law from taking further action. With the right debt solution in place — like a <a href="dmp.html">Debt Management Plan (DMP)</a>, <a href="iva.html">IVA</a>, or <a href="dro.html">DRO</a> — you may be able to <strong>freeze interest, stop court claims, and regain control of your finances</strong>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help with Moriarty Law Now</a>
+    </div>
 
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-</div>
+    <!-- Who Are Moriarty Law? -->
+    <div class="section">
+      <h2>Who Are Moriarty Law?</h2>
+      <p>Moriarty Law is a legal debt recovery firm that often works alongside Lowell Portfolio I Ltd and other debt buyers. They specialise in initiating legal proceedings to recover old or unpaid debts. If you've received a letter or claim form from them, it typically means your debt has escalated beyond basic collection tactics — and they’re preparing for court action.</p>
+      <p>Debts handled by Moriarty Law often include:</p>
+      <ul>
+        <li>📱 Old mobile phone contracts (Vodafone, O2, EE)</li>
+        <li>💡 Utility bills (gas/electricity)</li>
+        <li>📦 Catalogue debts (Very, Littlewoods)</li>
+        <li>💳 Store and credit card accounts</li>
+        <li>💼 Overdrafts and unsecured personal loans</li>
+      </ul>
+      <p>If left unresolved, this can lead to a <strong>County Court Judgment (CCJ)</strong> or bailiff enforcement — but there are ways to stop this before it happens.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Can Stop Court Action</a>
+    </div>
+    <!-- Have You Received a Court Claim from Moriarty Law? -->
+    <div class="section">
+      <h2>Have You Received a Court Claim from Moriarty Law?</h2>
+      <p>If Moriarty Law has sent you a <strong>Letter Before Claim</strong> or a court form, it means they’re trying to obtain a <strong>CCJ</strong> against you. This can seriously damage your credit file and may lead to further enforcement action such as:</p>
+      <ul>
+        <li>🚪 Visits from <a href="stop-debt-collectors.html">bailiffs</a></li>
+        <li>💷 Deductions from your wages (Attachment of Earnings)</li>
+        <li>🏦 Money taken directly from your bank account (Third Party Debt Orders)</li>
+      </ul>
+      <p>But don’t panic — help is available. If you respond quickly and speak to a specialist, you can explore options to halt legal action and settle the debt in an affordable way. Ignoring a claim could result in a CCJ being issued by default, which will appear on your credit file for six years.</p>
+      <p>In most cases, <strong>we can stop the court process before it goes any further</strong> by helping you set up a recognised debt solution.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Can Stop the Claim</a>
+    </div>
 
-<div class="section">
-  <h2>Who Are Moriarty Law?</h2>
-  <p>Moriarty Law is a UK-based legal firm that specialises in <strong>debt recovery and litigation</strong>. They are known for issuing pre-action letters and court claims on behalf of their clients, who may include:</p>
-  <ul>
-    <li>Lowell Portfolio</li>
-    <li>Utility providers (e.g., gas, electricity, water)</li>
-    <li>Mobile networks</li>
-    <li>Other debt purchasers or creditors</li>
-  </ul>
-  <p>If you've received contact from Moriarty Law, it's likely related to a debt that has either been sold to a third party or is in arrears. But just because you receive a letter, it doesn’t mean court action is guaranteed — and there may be ways to stop it.</p>
-</div>
+    <!-- How to Stop Bailiffs and CCJs from Moriarty Law -->
+    <div class="section">
+      <h2>How to Stop Bailiffs and CCJs from Moriarty Law</h2>
+      <p>Many people feel helpless when faced with legal threats from debt collection firms. But you are not powerless. With the right advice and protection, you can avoid bailiffs, stop interest, and protect your possessions and income.</p>
+      <p>Some of the most effective ways to stop debt collectors and bailiffs include:</p>
+      <ul>
+        <li><a href="breathing-space.html">Breathing Space Scheme</a> – 60 days of protection from legal action and collection activity</li>
+        <li><a href="dmp.html">Debt Management Plan (DMP)</a> – freezes interest and allows reduced, affordable payments</li>
+        <li><a href="iva.html">Individual Voluntary Arrangement (IVA)</a> – writes off unaffordable debt and stops all legal action</li>
+        <li><a href="dro.html">Debt Relief Order (DRO)</a> – ideal for low-income individuals with less than £30,000 in total debt</li>
+      </ul>
+      <p>Our team will assess your income, expenses, and creditor list to determine which solution best fits your circumstances. Most people are surprised at how much protection they can get in just 24–48 hours of contacting us.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect Myself from Bailiffs</a>
+    </div>
 
-<div class="section">
-  <h2>What Actions Can Moriarty Law Take?</h2>
-  <p>Moriarty Law may send:</p>
-  <ul>
-    <li>Pre-legal letters requesting payment</li>
-    <li>Letters before claim (LBC)</li>
-    <li>County Court claims</li>
-    <li>Applications for CCJs if ignored</li>
-  </ul>
-  <p>If a CCJ is issued and goes unpaid, enforcement methods like <a href="bailiff-debt.html">bailiffs</a>, <a href="attachment-of-earnings.html">wage deductions</a>, or charging orders may follow.</p>
-  <p>It's important to respond early — but that doesn’t always mean paying in full. We can help you explore legally recognised ways to <a href="stop-debt-collectors.html">stop debt collectors</a> or reduce what you owe through affordable repayment plans.</p>
-</div>
+    <!-- Debt Solutions That Can Help with Moriarty Law Debts -->
+    <div class="section">
+      <h2>Debt Solutions That Can Help with Moriarty Law Debts</h2>
+      <p>You don’t need to deal with Moriarty Law alone. At Fresh Start Debt Support, we specialise in helping people resolve their debts through formal and informal arrangements. Here’s a quick guide to the options that may help:</p>
 
-<div class="section">
-  <h2>How to Stop Action from Moriarty Law</h2>
-  <p>You may be able to prevent further legal steps if you act early. Depending on your circumstances, you could:</p>
-  <ul>
-    <li>Settle the debt (in full or at a reduced rate)</li>
-    <li>Agree a repayment plan</li>
-    <li>Include the debt in a formal solution like an <a href="iva.html">IVA</a> or <a href="dmp.html">DMP</a></li>
-    <li>Challenge the debt if it’s incorrect or unenforceable</li>
-  </ul>
-  <p>Each situation is different. We don’t offer financial advice, but we can help you explore your options and check whether you're eligible for a government-backed or informal debt solution.</p>
-</div>
+      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
+      <p>A DMP is an informal agreement where you make one monthly payment to cover all your debts, including any with Moriarty Law. Interest and charges can often be frozen, making the debt easier to manage.</p>
 
-<div class="section">
-  <h2>Can Moriarty Law Issue a CCJ?</h2>
-  <p>Yes — Moriarty Law can issue County Court claims if a debt remains unpaid. Ignoring these letters can result in a CCJ by default, which can damage your credit score for six years.</p>
-  <p>Before that happens, you may be able to respond with a defence, propose a settlement, or include the debt in a plan like a <a href="dro.html">Debt Relief Order</a> or IVA. Acting fast is key to protecting your rights and credit file.</p>
-</div>
+      <h3><a href="iva.html">IVA (Individual Voluntary Arrangement)</a></h3>
+      <p>If you owe more than £6,000 across multiple creditors, an IVA might allow you to <strong>write off up to 85% of your debt</strong>. All legal action is frozen, and once the plan completes (usually after 5 years), remaining debt is cleared.</p>
 
-<div class="section">
-  <h2>Include Moriarty Law Debts in a Formal Plan</h2>
-  <p>Many people choose to include debts from firms like Moriarty Law in a wider solution, such as:</p>
-  <ul>
-    <li><a href="iva.html">Individual Voluntary Arrangement (IVA)</a> – freezes interest and can write off unaffordable debt after 5 years</li>
-    <li><a href="dmp.html">Debt Management Plan (DMP)</a> – informal monthly payment plan with creditor agreement</li>
-    <li><a href="dro.html">Debt Relief Order (DRO)</a> – for low income, no asset cases (eligibility criteria apply)</li>
-  </ul>
-  <p>We can help you check whether you qualify for one of these routes and what impact it may have on your finances.</p>
+      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
+      <p>If you're on a low income, have few assets, and less than £30,000 of debt, you may qualify for a DRO. This solution includes debts with firms like Moriarty Law and wipes the slate clean after 12 months.</p>
 
-  <a href="debt-calculator.html" class="menu-cta">Use Our Free Debt Calculator</a>
-</div>
+      <h3><a href="breathing-space.html">Breathing Space</a></h3>
+      <p>This gives you 60 days to pause enforcement and collections while you seek a longer-term solution. It’s a great way to stop pressure and protect your mental health.</p>
 
-<div class="section">
-  <h2>What If the Debt Isn't Yours?</h2>
-  <p>If you believe Moriarty Law has contacted you about a debt you don’t owe, you have the right to request:</p>
-  <ul>
-    <li>Proof of the debt (debt validation)</li>
-    <li>Details of the original creditor</li>
-    <li>Information on any court claims filed against you</li>
-  </ul>
-  <p>Do not ignore the letter — take action and get help confirming your options.</p>
-</div>
+      <a href="compare-solutions.html" class="menu-cta">Compare All My Options</a>
+    </div>
+    <!-- Can Moriarty Law Take Me to Court? -->
+    <div class="section">
+      <h2>Can Moriarty Law Take Me to Court?</h2>
+      <p>Yes — if you’ve ignored previous communication or made no arrangements to repay your debt, <strong>Moriarty Law can begin court proceedings</strong>. Their goal is usually to secure a <strong>County Court Judgment (CCJ)</strong>, which gives them the legal power to enforce repayment through further action like:</p>
+      <ul>
+        <li>📩 Court claim letters</li>
+        <li>⚖️ Default judgments if you don't respond</li>
+        <li>🚪 Applications for bailiff enforcement</li>
+      </ul>
+      <p>If you respond in time, you can defend the claim or offer a fair repayment plan. If you qualify for help such as an <a href="iva.html">IVA</a>, <a href="dmp.html">DMP</a>, or <a href="dro.html">DRO</a>, court action may be avoided entirely. </p>
+      <p>Acting quickly can make all the difference.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Legal Action Now</a>
+    </div>
 
-<div class="section">
-  <h2>Take the First Step Today</h2>
-  <p>If you're worried about a Moriarty Law letter, court claim, or CCJ, you're not alone — and there may be ways to stop it. Our UK-based team can help you:</p>
-  <ul>
-    <li>Check if you qualify for debt support</li>
-    <li>Stop further legal action</li>
-    <li>Set up an affordable plan</li>
-    <li>Deal with multiple debts in one place</li>
-  </ul>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help with Moriarty Law</a>
-</div>
+    <!-- What If I Already Have a CCJ from Moriarty Law? -->
+    <div class="section">
+      <h2>What If I Already Have a CCJ from Moriarty Law?</h2>
+      <p>If a CCJ has already been issued against you, there are still ways to manage the situation. While a CCJ stays on your credit file for 6 years, you can still protect yourself from further enforcement by setting up an affordable payment or applying for a debt solution that includes the CCJ.</p>
+      <p>Depending on your circumstances, you may still qualify for an:</p>
+      <ul>
+        <li><a href="iva.html">IVA</a> – includes existing CCJs and stops bailiff action</li>
+        <li><a href="dro.html">DRO</a> – wipes eligible CCJ debt after 12 months</li>
+        <li><a href="dmp.html">DMP</a> – arranges a new affordable repayment plan to stop pressure</li>
+      </ul>
+      <p>The earlier you act, the more options you’ll have. If enforcement agents haven’t been involved yet, we may be able to stop that from happening.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Can Still Get Help</a>
+    </div>
+
+    <!-- Can Moriarty Law Send Bailiffs to My Home? -->
+    <div class="section">
+      <h2>Can Moriarty Law Send Bailiffs to My Home?</h2>
+      <p>They can — but only after a court has granted a CCJ and further enforcement has been approved. Moriarty Law themselves are not bailiffs, but they can apply for a <strong>warrant of control</strong>, allowing certified bailiffs to visit your home to collect goods or demand payment.</p>
+      <p>Bailiff action is serious and stressful. If you’re concerned, know that <strong>you still have time to stop them</strong>. Options like the <a href="breathing-space.html">Breathing Space scheme</a> or an <a href="iva.html">IVA</a> can halt bailiff action before it starts.</p>
+      <p>Our team has helped hundreds of people stop bailiffs with fast-track solutions and emergency action.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Bailiffs from Coming</a>
+    </div>
+    <!-- Can I Write Off Debt with Moriarty Law? -->
+    <div class="section">
+      <h2>Can I Write Off Debt with Moriarty Law?</h2>
+      <p>Yes — if you meet the criteria for certain government-approved debt solutions, you may be able to <strong>write off part or all of your debt to Moriarty Law</strong>. Many people are shocked to discover how much of their debt can be reduced or eliminated when they get the right help.</p>
+      <p>Common write-off routes include:</p>
+      <ul>
+        <li>✅ <a href="iva.html">IVA</a> – write off unaffordable debt after 5 years</li>
+        <li>✅ <a href="dro.html">DRO</a> – debt cleared after 12 months for those on low income</li>
+        <li>✅ <a href="bankruptcy.html">Bankruptcy</a> – full write-off but should be a last resort</li>
+      </ul>
+      <p>We never pressure you into a decision. Our goal is to assess your circumstances and explain your options clearly and confidentially.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find Out If I Can Write Off My Debt</a>
+    </div>
+
+    <!-- What Should I Do If I Can’t Afford to Pay Moriarty Law? -->
+    <div class="section">
+      <h2>What Should I Do If I Can’t Afford to Pay Moriarty Law?</h2>
+      <p>If you simply can’t afford to repay the full amount being demanded — whether due to job loss, illness, or rising living costs — you’re not alone. Many people feel overwhelmed and don’t know where to turn.</p>
+      <p>We help you regain control by:</p>
+      <ul>
+        <li>📉 Assessing your budget and debts</li>
+        <li>📋 Explaining all debt solutions clearly</li>
+        <li>🚫 Stopping bailiff visits and legal letters</li>
+        <li>🔒 Ensuring your home and income are protected</li>
+      </ul>
+      <p>We’ve helped people with £300 in debt — and others with over £30,000. No case is too small or too large. The first step is speaking with someone who understands and can act fast on your behalf.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Free Confidential Help</a>
+    </div>
+
+    <!-- Real Client Examples -->
+    <div class="section">
+      <h2>Real People, Real Results</h2>
+      <p>Here are just a few examples of how we’ve helped clients deal with aggressive debt collectors like Moriarty Law:</p>
+
+      <p><strong>Sarah, Manchester:</strong> “I was terrified after receiving a letter from Moriarty Law threatening court. Fresh Start stopped the claim with a Breathing Space and got me onto a DMP within a week. They saved me from bailiffs.”</p>
+
+      <p><strong>James, Birmingham:</strong> “I ignored the letters and ended up with a CCJ. I thought it was game over, but they helped me get a DRO and everything was wiped after 12 months. Best decision I ever made.”</p>
+
+      <p><strong>Ali, Glasgow:</strong> “They were chasing me for an old mobile bill from years ago. Fresh Start got it included in an IVA and now I’m finally moving forward debt-free.”</p>
+
+      <p>Every situation is different, but the first step is always the same: <strong>get in touch</strong>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
+    </div>
+
+    <!-- Internal Links for SEO -->
+    <div class="section">
+      <h2>Helpful Guides and Pages</h2>
+      <ul>
+        <li><a href="iva.html">What is an IVA?</a></li>
+        <li><a href="dmp.html">Debt Management Plans Explained</a></li>
+        <li><a href="dro.html">Debt Relief Orders (DROs)</a></li>
+        <li><a href="breathing-space.html">How Breathing Space Works</a></li>
+        <li><a href="stop-debt-collectors.html">Stop Debt Collectors and Bailiffs</a></li>
+        <li><a href="compare-solutions.html">Compare All Debt Solutions</a></li>
+        <li><a href="catalogue-debt.html">Catalogue Debt Help</a></li>
+        <li><a href="loan-debt.html">Loan Debt Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
     <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website does not offer regulated financial advice and is not authorised by the FCA.</p>
     </footer>
-    <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
 
-  </div>
+  </div> <!-- End of Container -->
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20Moriarty%20Law%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat with Us on WhatsApp
+  </a>
+
 </body>
 </html>
