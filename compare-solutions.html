@@ -2,400 +2,440 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Compare Debt Solutions | IVA vs DMP vs Bankruptcy UK</title>
-  <meta name="description" content="Compare IVA, DMP, DRO and Bankruptcy options in the UK. Find out which debt solution suits your needs best." />
-  <meta name="keywords" content="Compare debt solutions, IVA vs DMP, DRO vs bankruptcy, best debt option UK, debt help comparison" />
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Debt Solutions | IVA vs DMP vs DRO vs Bankruptcy vs Trust Deed</title>
+  <meta name="description" content="Compare the top UK debt solutions – IVA, DMP, DRO, Bankruptcy & Trust Deed. See which debt plan fits your situation and how to write off debt or freeze interest." />
+  <meta name="keywords" content="compare debt solutions, IVA vs DMP, bankruptcy vs DRO, trust deed, freeze interest, write off debt, UK debt help, best debt solution, debt plan comparison, affordable repayments">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin-top: 5px;
-      width: 100%;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 100%;
-      margin: auto;
-      flex: 1;
-      box-sizing: border-box;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 900px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      box-sizing: border-box;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      display: block;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-    table th, table td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2, h3 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    @media screen and (max-width: 600px) {
-      .top-bar {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
   <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
     }
-    window.addEventListener("click", function(e) {
+
+    window.addEventListener("click", function (e) {
       const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
         menu.style.display = "none";
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Debt Solutions</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare Debt Solutions</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Debt Types</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Arrears</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">HMRC Debts</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>Debt Collectors</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="wescot.html">Wescot</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="drydensfairfax.html">Drydensfairfax</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>More Help</h4>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-    </div>
-  </div>
+
+  <!-- Page Content -->
   <div class="container">
-    <div class="section">
-      <h1>Compare Debt Solutions: IVA vs DMP vs Bankruptcy vs DRO</h1>
-      <p>Not sure which debt solution is right for you? This guide compares the most popular UK debt options — including <a href="iva.html">IVAs</a>, <a href="dmp.html">Debt Management Plans</a>, <a href="dro.html">Debt Relief Orders</a>, and Bankruptcy — so you can make an informed decision based on your financial situation.</p>
-      <p>At Fresh Start Debt Support, we help people across the UK find the right solution — with no pressure, no jargon, and no judgment.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-    </div>
 
+    <!-- Intro Section -->
     <div class="section">
-      <h2>Quick Overview of Each Debt Option</h2>
+      <h1>Compare UK Debt Solutions – IVA, DMP, DRO, Bankruptcy & Trust Deed</h1>
+      <p>Unsure which debt solution is right for you? In this complete guide, we’ll break down and compare the most common debt options available in the UK: <strong>Individual Voluntary Arrangement (IVA)</strong>, <strong>Debt Management Plan (DMP)</strong>, <strong>Debt Relief Order (DRO)</strong>, <strong>Bankruptcy</strong>, and the <strong>Trust Deed</strong> (Scotland only).</p>
+      <p>Each option has different advantages depending on your circumstances — whether you want to <strong>write off debt</strong>, <strong>freeze interest</strong>, <strong>stop bailiffs</strong>, or simply make your payments more manageable. Our expert comparison will help you understand:</p>
       <ul>
-        <li><strong><a href="iva.html">IVA</a></strong> – Legally write off unaffordable debt and pay what you can afford over 5–6 years.</li>
-        <li><strong><a href="dmp.html">DMP</a></strong> – Informal payment plan to repay debts over time, usually with frozen interest.</li>
-        <li><strong><a href="dro.html">DRO</a></strong> – Debt relief for those on low income with no assets; debts are cleared after 12 months.</li>
-        <li><strong>Bankruptcy</strong> – Clears debts quickly, but can impact your job and home depending on your situation.</li>
+        <li>✅ Which debt solution clears debt fastest</li>
+        <li>✅ Which plans stop legal action or bailiffs</li>
+        <li>✅ Which ones affect your home or credit file</li>
+        <li>✅ Who qualifies for each one</li>
       </ul>
+      <p>If you're facing unaffordable debt, you're not alone — and there are ways to regain control without stress.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check Which Debt Plan Fits Me</a>
     </div>
-
+    <!-- IVA Section -->
     <div class="section">
-      <h2>Compare Debt Solutions Side by Side</h2>
-      <div style="overflow-x:auto;">
-        <table style="width:100%; border-collapse: collapse; font-size: 15px;">
-          <thead style="background:#4CAF50; color:#fff;">
+      <h2>Individual Voluntary Arrangement (IVA)</h2>
+      <p>An <strong>Individual Voluntary Arrangement (IVA)</strong> is one of the most popular formal debt solutions in the UK, allowing you to legally write off a portion of your debt while making affordable monthly repayments over a set period (usually 5 or 6 years). It’s approved by the courts and managed by a licensed insolvency practitioner.</p>
+
+      <p>With an IVA, you can often <strong>write off up to 85% of your unsecured debt</strong> if your circumstances qualify. Once it’s approved, all interest and charges are frozen, and creditors can’t take further legal action or send bailiffs. Your payments are based entirely on what you can afford.</p>
+
+      <h3>Key Benefits of an IVA:</h3>
+      <ul>
+        <li>✅ Write off unaffordable debt legally</li>
+        <li>✅ Stop creditor harassment and bailiff action</li>
+        <li>✅ Freeze interest and charges</li>
+        <li>✅ Make one affordable monthly payment</li>
+        <li>✅ Protect your home (if you own one)</li>
+        <li>✅ Fixed timeframe – usually 5 years</li>
+      </ul>
+
+      <h3>Who is eligible for an IVA?</h3>
+      <p>You may qualify for an IVA if:</p>
+      <ul>
+        <li>You live in England, Wales or Northern Ireland</li>
+        <li>You owe over £6,000 in unsecured debts (e.g. credit cards, loans, overdrafts, Klarna, etc.)</li>
+        <li>You owe money to two or more creditors</li>
+        <li>You have a regular income (employed or self-employed)</li>
+      </ul>
+
+      <h3>Common debts included in an IVA:</h3>
+      <ul>
+        <li>Credit card debt</li>
+        <li>Catalogue debt</li>
+        <li>Loan debt (including personal loans and payday loans)</li>
+        <li>Klarna and Buy Now Pay Later debt</li>
+        <li>Utility arrears</li>
+        <li>Overdrafts</li>
+        <li>Store cards and more</li>
+      </ul>
+
+      <p>While IVAs do appear on your credit file and public insolvency register, many people find it a small price to pay for the relief of becoming debt-free legally.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for an IVA</a>
+    </div>
+    <!-- DMP Section -->
+    <div class="section">
+      <h2>Debt Management Plan (DMP)</h2>
+      <p>A <strong>Debt Management Plan (DMP)</strong> is an informal debt solution that allows you to repay your unsecured debts through one monthly payment based on what you can afford. It’s a flexible way to manage your finances without committing to insolvency or legal arrangements.</p>
+
+      <p>With a DMP, your payment is divided between your creditors, and many lenders agree to <strong>freeze interest and charges</strong> to help you get back on track. It’s commonly used for credit card debt, catalogue accounts, payday loans, and overdrafts.</p>
+
+      <h3>Key Benefits of a DMP:</h3>
+      <ul>
+        <li>✅ One monthly affordable payment</li>
+        <li>✅ Interest and charges often frozen</li>
+        <li>✅ Stops harassing calls and letters</li>
+        <li>✅ No court involvement required</li>
+        <li>✅ Can be adjusted if your income changes</li>
+      </ul>
+
+      <h3>Who is a DMP suitable for?</h3>
+      <p>You might benefit from a DMP if:</p>
+      <ul>
+        <li>You’re struggling to meet minimum payments</li>
+        <li>You have multiple debts like credit cards, loans, and catalogues</li>
+        <li>You want to avoid formal insolvency options</li>
+        <li>You want to protect your credit rating as much as possible</li>
+      </ul>
+
+      <h3>Debts commonly included in a DMP:</h3>
+      <ul>
+        <li>Credit card balances</li>
+        <li>Catalogue debts (e.g. Very, Littlewoods)</li>
+        <li>Buy Now Pay Later (Klarna, Clearpay)</li>
+        <li>Personal loans</li>
+        <li>Overdrafts</li>
+        <li>Payday loans</li>
+      </ul>
+
+      <h3>DMP Pros and Cons</h3>
+      <p><strong>Pros:</strong></p>
+      <ul>
+        <li>Flexible and non-legally binding</li>
+        <li>No court records or insolvency register</li>
+        <li>Can be changed or cancelled at any time</li>
+      </ul>
+      <p><strong>Cons:</strong></p>
+      <ul>
+        <li>No legal protection from court action (unlike an IVA or DRO)</li>
+        <li>May take longer to repay than other solutions</li>
+        <li>Creditors can refuse or withdraw from the arrangement</li>
+      </ul>
+
+      <p>Many people start with a DMP as a way to regain control quickly, then later consider moving to a more permanent solution like an IVA once their situation stabilises.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If a DMP Is Right for Me</a>
+    </div>
+    <!-- DRO Section -->
+    <div class="section">
+      <h2>Debt Relief Order (DRO)</h2>
+      <p>A <strong>Debt Relief Order (DRO)</strong> is a low-cost debt solution designed for individuals with low income, minimal assets, and relatively low debt levels. It allows you to <strong>write off your debts completely after 12 months</strong> — if your financial situation hasn’t improved in that time. During the 12-month “moratorium” period, you make no payments at all.</p>
+
+      <p>DROs are ideal for people who simply cannot afford to repay their debts and don’t own a house or significant assets. It offers <strong>legal protection</strong> from creditors and stops all enforcement action, interest, and charges.</p>
+
+      <h3>Key Benefits of a DRO:</h3>
+      <ul>
+        <li>✅ Full debt write-off after 12 months</li>
+        <li>✅ No monthly payments required</li>
+        <li>✅ Stops bailiffs and court action</li>
+        <li>✅ Interest and charges are frozen</li>
+        <li>✅ Costs only £90 total to apply</li>
+      </ul>
+
+      <h3>Who qualifies for a DRO?</h3>
+      <p>You may be eligible for a DRO if you:</p>
+      <ul>
+        <li>Owe less than £30,000 in total unsecured debt (as of 2021 regulations)</li>
+        <li>Have under £75 monthly disposable income</li>
+        <li>Don’t own your home</li>
+        <li>Have less than £2,000 in total assets</li>
+        <li>Live in England, Wales or Northern Ireland</li>
+      </ul>
+
+      <h3>Debts included in a DRO:</h3>
+      <ul>
+        <li>Credit cards</li>
+        <li>Catalogue accounts</li>
+        <li>Personal loans and payday loans</li>
+        <li>Utility arrears</li>
+        <li>Overdrafts</li>
+        <li>Council tax arrears</li>
+      </ul>
+
+      <h3>DRO Pros and Cons</h3>
+      <p><strong>Pros:</strong></p>
+      <ul>
+        <li>Ideal for low income or benefits claimants</li>
+        <li>Legal debt write-off in just 12 months</li>
+        <li>Protection from creditor action and court enforcement</li>
+      </ul>
+      <p><strong>Cons:</strong></p>
+      <ul>
+        <li>Strict eligibility rules</li>
+        <li>Appears on the insolvency register for 15 months</li>
+        <li>Credit rating will be negatively impacted</li>
+      </ul>
+
+      <p>Many people on Universal Credit or with no surplus income find that a DRO is the fastest and cheapest route to <strong>becoming debt-free</strong> legally.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for a DRO</a>
+    </div>
+    <!-- Bankruptcy Section -->
+    <div class="section">
+      <h2>Bankruptcy</h2>
+      <p><strong>Bankruptcy</strong> is a formal insolvency solution designed for individuals who are unable to repay their debts. It offers a clean slate by legally <strong>writing off most unsecured debts</strong>, giving you a chance to start over financially. While it has serious consequences, it may be the right option for some people who have exhausted all alternatives.</p>
+
+      <p>Bankruptcy typically lasts 12 months. During this time, your finances are handled by an Official Receiver. Once the process is complete, most of your debts are legally written off — including credit cards, loans, overdrafts, council tax, and more.</p>
+
+      <h3>Key Benefits of Bankruptcy:</h3>
+      <ul>
+        <li>✅ Legally write off most unsecured debts</li>
+        <li>✅ Stops bailiffs and all legal action</li>
+        <li>✅ Interest and charges are frozen</li>
+        <li>✅ Usually lasts only 1 year</li>
+        <li>✅ Fresh financial start with no ongoing repayments (in most cases)</li>
+      </ul>
+
+      <h3>How to declare bankruptcy in the UK</h3>
+      <p>You can apply for bankruptcy online through the Insolvency Service. It costs £680, which must be paid before your application is reviewed. If approved, you will be declared bankrupt and all enforcement action against you will stop.</p>
+
+      <h3>Debts that can be written off with bankruptcy:</h3>
+      <ul>
+        <li>Credit cards and loans</li>
+        <li>Klarna and BNPL debts</li>
+        <li>Payday loans</li>
+        <li>Overdrafts</li>
+        <li>Council tax arrears</li>
+        <li>Utility bills</li>
+        <li>Catalogue and store card debts</li>
+      </ul>
+
+      <h3>What are the downsides of bankruptcy?</h3>
+      <ul>
+        <li>You may have to sell assets like your home or car (if valuable)</li>
+        <li>Your credit score will be affected for 6 years</li>
+        <li>You’ll appear on the public insolvency register</li>
+        <li>You may have restrictions placed on your finances during the bankruptcy</li>
+        <li>Bankruptcy may affect employment in certain professions (e.g., legal or financial roles)</li>
+      </ul>
+
+      <h3>Bankruptcy vs IVA</h3>
+      <p>While both solutions write off debt, an IVA allows you to keep your assets and make manageable monthly payments — whereas bankruptcy may involve asset loss but no ongoing repayments (unless you have surplus income). Many choose an IVA over bankruptcy to protect their home or career.</p>
+
+      <p>Bankruptcy can feel like a last resort, but for some, it’s a powerful tool to reset their finances and eliminate unmanageable debt for good.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find Out If Bankruptcy Is Right for Me</a>
+    </div>
+    <!-- Trust Deed Section -->
+    <div class="section">
+      <h2>Trust Deed (Scotland Only)</h2>
+      <p>A <strong>Trust Deed</strong> is a formal debt solution available only in <strong>Scotland</strong>. It’s very similar to an IVA, offering legal protection from creditors and the chance to <strong>write off unaffordable debt</strong>. A Protected Trust Deed (PTD) is legally binding and must be set up by a licensed insolvency practitioner.</p>
+
+      <p>Once protected, creditors can no longer contact you, add interest, or take enforcement action. You’ll make one affordable monthly payment for 4 years, after which any remaining debt is written off.</p>
+
+      <h3>Key Benefits of a Protected Trust Deed:</h3>
+      <ul>
+        <li>✅ Write off debt legally after 4 years</li>
+        <li>✅ Stop interest, charges, and legal action</li>
+        <li>✅ Make one affordable monthly payment</li>
+        <li>✅ Protects your home and assets (in most cases)</li>
+        <li>✅ No more pressure from creditors or debt collectors</li>
+      </ul>
+
+      <h3>Who qualifies for a Trust Deed in Scotland?</h3>
+      <p>You may be eligible for a Trust Deed if:</p>
+      <ul>
+        <li>You live in Scotland</li>
+        <li>You owe over £5,000 in unsecured debts</li>
+        <li>You have multiple creditors</li>
+        <li>You can afford a reasonable monthly contribution</li>
+      </ul>
+
+      <p>Common debts included:</p>
+      <ul>
+        <li>Credit cards</li>
+        <li>Loans (including payday loans)</li>
+        <li>Klarna & BNPL debt</li>
+        <li>Overdrafts</li>
+        <li>Council tax and utility bills</li>
+        <li>Store cards and catalogue accounts</li>
+      </ul>
+
+      <h3>Trust Deed vs IVA:</h3>
+      <p>An <strong>IVA</strong> is available in England, Wales, and Northern Ireland. A <strong>Trust Deed</strong> is for people in Scotland only. Both offer legal protection and debt write-off — but a Trust Deed usually lasts 4 years instead of 5 or 6 with an IVA.</p>
+
+      <p>If you live in Scotland and are struggling with debt, a Protected Trust Deed could be your most effective way to regain control.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for a Trust Deed</a>
+    </div>
+    <!-- Comparison Table -->
+    <div class="section">
+      <h2>Compare All Debt Solutions Side by Side</h2>
+      <p>Here’s a quick comparison of the main debt solutions discussed above. Use this table to see which might be best for your personal circumstances.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
             <tr>
-              <th style="padding:10px; text-align:left;">Feature</th>
-              <th style="padding:10px; text-align:left;">IVA</th>
-              <th style="padding:10px; text-align:left;">DMP</th>
-              <th style="padding:10px; text-align:left;">DRO</th>
-              <th style="padding:10px; text-align:left;">Bankruptcy</th>
+              <th>Solution</th>
+              <th>Write Off Debt</th>
+              <th>Monthly Payment</th>
+              <th>Stop Bailiffs</th>
+              <th>Impact on Credit</th>
+              <th>Eligibility</th>
+              <th>Duration</th>
             </tr>
           </thead>
-          <tbody style="background:#fff;">
+          <tbody>
             <tr>
-              <td style="padding:10px;">Debt Written Off</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">No</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
-            </tr>
-            <tr style="background:#f4f4f4;">
-              <td style="padding:10px;">Legally Binding</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">No</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
+              <td><a href="iva.html">IVA</a></td>
+              <td>✔️ Up to 85%</td>
+              <td>✔️ Based on affordability</td>
+              <td>✔️ Yes</td>
+              <td>❗ Yes (6 years)</td>
+              <td>£6,000+ debt, regular income</td>
+              <td>5-6 years</td>
             </tr>
             <tr>
-              <td style="padding:10px;">Stops Bailiffs & Creditors</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Sometimes</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
-            </tr>
-            <tr style="background:#f4f4f4;">
-              <td style="padding:10px;">Impact on Job or Home</td>
-              <td style="padding:10px;">Low</td>
-              <td style="padding:10px;">Low</td>
-              <td style="padding:10px;">Low</td>
-              <td style="padding:10px;">High</td>
+              <td><a href="dmp.html">DMP</a></td>
+              <td>❌ No</td>
+              <td>✔️ Based on budget</td>
+              <td>✔️ Yes (informally)</td>
+              <td>❗ Yes (until cleared)</td>
+              <td>Any amount, flexible income</td>
+              <td>Flexible</td>
             </tr>
             <tr>
-              <td style="padding:10px;">Duration</td>
-              <td style="padding:10px;">5–6 years</td>
-              <td style="padding:10px;">Flexible</td>
-              <td style="padding:10px;">12 months</td>
-              <td style="padding:10px;">12 months</td>
+              <td><a href="dro.html">DRO</a></td>
+              <td>✔️ 100% after 12 months</td>
+              <td>❌ None</td>
+              <td>✔️ Yes</td>
+              <td>❗ Yes (6 years)</td>
+              <td>Low income, under £30k debt</td>
+              <td>12 months</td>
             </tr>
-            <tr style="background:#f4f4f4;">
-              <td style="padding:10px;">Credit Rating Impact</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
-              <td style="padding:10px;">Yes</td>
+            <tr>
+              <td><a href="bankruptcy.html">Bankruptcy</a></td>
+              <td>✔️ 100%</td>
+              <td>✔️ If income allows</td>
+              <td>✔️ Yes</td>
+              <td>❗ Yes (6 years)</td>
+              <td>No assets or surplus income</td>
+              <td>12 months</td>
+            </tr>
+            <tr>
+              <td>Trust Deed (Scotland)</td>
+              <td>✔️ Up to 90%</td>
+              <td>✔️ Based on budget</td>
+              <td>✔️ Yes</td>
+              <td>❗ Yes (6 years)</td>
+              <td>£5,000+ debt, Scottish resident</td>
+              <td>4 years</td>
+            </tr>
+            <tr>
+              <td><a href="breathing-space.html">Breathing Space</a></td>
+              <td>❌ No</td>
+              <td>❌ None</td>
+              <td>✔️ Yes (temporary)</td>
+              <td>❌ No direct impact</td>
+              <td>Anyone in problem debt</td>
+              <td>60 days</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="margin-top: 15px;"><em>*Every debt solution affects your credit file. The best option depends on your specific situation. Always seek personalised guidance before committing.</em></p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find Out What You Qualify For</a>
-    </div>
-    <div class="section">
-      <h2>Which Debt Solution Is Right for Me?</h2>
-      <p>The right debt solution depends on your individual situation. If you:</p>
-      <ul>
-        <li><strong>Have over £6,000 of unsecured debt</strong> and a steady income, an <a href="iva.html">IVA</a> may be ideal.</li>
-        <li><strong>Can afford to repay debts in full</strong> but need lower monthly payments, a <a href="dmp.html">DMP</a> might work best.</li>
-        <li><strong>Are on a low income with little to no assets</strong>, consider a <a href="dro.html">DRO</a>.</li>
-        <li><strong>Have no other way out</strong> and need a clean slate, then Bankruptcy could be the last resort.</li>
-      </ul>
-      <p><strong>Still unsure?</strong> Our team at Fresh Start can help you understand your options with no pressure and no obligation.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Options</a>
+
+      <style>
+        .table-container {
+          overflow-x: auto;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+        }
+        th, td {
+          padding: 10px;
+          text-align: left;
+          border: 1px solid #ccc;
+          white-space: nowrap;
+        }
+        th {
+          background-color: #f0fdf4;
+        }
+        @media screen and (max-width: 768px) {
+          table {
+            font-size: 14px;
+          }
+        }
+      </style>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find The Right Solution For Me</a>
     </div>
 
+    <!-- Final Summary Section -->
     <div class="section">
-      <h2>Why Choose Fresh Start Debt Support?</h2>
+      <h2>Which Debt Solution Is Right for You?</h2>
+      <p>There’s no one-size-fits-all answer. What works for one person may not suit another — which is why our specialists assess your finances confidentially and explain all your options before anything moves forward.</p>
+      <p>Whether you need to <strong>stop bailiffs</strong>, <strong>freeze interest</strong>, <strong>avoid a CCJ</strong>, or <strong>write off debt</strong>, there’s usually help available — often within 24 hours.</p>
+      <p>Our mission is simple: to give you a <strong>Fresh Start</strong> and take the pressure off, fast.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Fresh Start Today</a>
+    </div>
+    <!-- Internal SEO Links -->
+    <div class="section">
+      <h2>Explore More Debt Help Guides</h2>
       <ul>
-        <li>✅ Personal support from real UK debt specialists</li>
-        <li>✅ We work with fewer clients — so you get more time and help</li>
-        <li>✅ Fast, friendly and confidential help</li>
-        <li>✅ No pressure, no upfront fees, and no judgment</li>
+        <li><a href="iva.html">What Is an IVA and How Does It Work?</a></li>
+        <li><a href="dmp.html">Debt Management Plans Explained</a></li>
+        <li><a href="dro.html">Do I Qualify for a Debt Relief Order?</a></li>
+        <li><a href="bankruptcy.html">Bankruptcy in the UK: Pros & Cons</a></li>
+        <li><a href="breathing-space.html">How the Breathing Space Scheme Can Help</a></li>
+        <li><a href="clear-debt-fast.html">How to Clear Debt Quickly</a></li>
+        <li><a href="stop-debt-collectors.html">How to Stop Debt Collectors Legally</a></li>
       </ul>
-      <p>Thousands across the UK trust us to help them move forward from debt. Let us help you take that first step too.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify Now</a>
     </div>
 
-    <div class="section">
-      <h2>Helpful Pages You Might Like</h2>
-      <ul>
-        <li><a href="iva.html">What is an IVA?</a></li>
-        <li><a href="dmp.html">Debt Management Plan</a></li>
-        <li><a href="dro.html">Debt Relief Order (DRO)</a></li>
-        <li><a href="debt-calculator.html">Use Our Free Debt Calculator</a></li>
-        <li><a href="stop-debt-collectors.html">How to Stop Debt Collectors</a></li>
-        <li><a href="affordable-repayment-plans.html">Affordable Repayment Plans</a></li>
-      </ul>
-    </div>
+    <!-- Footer -->
     <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
+      <p>&copy; 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website does not offer regulated financial advice. For regulated debt advice, contact an FCA-authorised provider such as <a href="https://www.stepchange.org/" target="_blank" style="color: white; text-decoration: underline;">StepChange</a> or <a href="https://www.nationaldebtline.org/" target="_blank" style="color: white; text-decoration: underline;">National Debtline</a>.</p>
+      <p>Use of this site is subject to our <a href="privacy.html" style="color: white; text-decoration: underline;">Privacy Policy</a>.</p>
     </footer>
-        </div>
-  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">
-  💬 Chat on WhatsApp
-</a>
-  </div>
-</body>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/447123456789" class="whatsapp-button" target="_blank">
+      💬 Message Us on WhatsApp
+    </a>
+  </body>
 </html>
