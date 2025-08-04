@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/index.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/about-us.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/what-we-do.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/breathing-space.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/privacy.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -34,31 +36,37 @@
   <!-- Solutions -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/iva.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.freshstartdebtsupport.co.uk/IndividualVoluntaryArrangement.html</loc>
+    <lastmod>2025-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://www.freshstartdebtsupport.co.uk/dmp.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/dro.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/compare-solutions.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/debt-calculator.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,295 +74,296 @@
   <!-- Types of Debt -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/klarna.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/credit-card-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/loan-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/catalogue-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/council-tax-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Add more URLs as needed following the same structure -->
+</urlset>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/utility-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/overdraft-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/store-card-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/business-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/tax-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/rent-arrears.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/gambling-debt.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <!-- Creditors -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/barclays.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/hsbc.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/natwest.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/lloyds.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/capital-one.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Collectors & Bailiffs -->
+  <!-- Debt Collectors & Bailiffs -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/lowell.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/cabot.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/moriarty-law.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/pra-group.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/moorcroft.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/advantis.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/link-financial.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/capquest.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/wescot.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/resolvecall.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/hoist-finance.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/robinson-way.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/fredrickson.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/drydensfairfax.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/bristow-sutor.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/rossendales.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/equita.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/marston-holdings.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/newlyn.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/swift-credit.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Popular -->
+  <!-- High-Value SEO Pages -->
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/iva-company.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/dmp-provider.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html</loc>
-    <lastmod>2025-08-01</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
