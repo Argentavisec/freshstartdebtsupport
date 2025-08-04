@@ -1,3 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVA (Individual Voluntary Arrangement) | Fresh Start Debt Support</title>
+  <meta name="description" content="Find out how an IVA (Individual Voluntary Arrangement) can help you write off debt, freeze interest, and stop bailiffs. Check if you qualify today with Fresh Start Debt Support." />
+  <meta name="keywords" content="IVA, individual voluntary arrangement, write off debt UK, freeze interest, stop bailiffs, debt solution, reduce debt, IVA help, debt repayment plan, debt write off, affordable payments IVA">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    }
+
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("menuContent");
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
 <div class="section">
   <h1>Individual Voluntary Arrangement (IVA) – Regain Control of Your Debt</h1>
   <p>If you’re searching for how to reduce debt legally and stop creditor pressure, an <strong>Individual Voluntary Arrangement (IVA)</strong> could be the right solution. Thousands of people in the UK use IVAs each year to protect themselves from bailiffs, freeze interest, and pay back what they can afford — not what creditors demand.</p>
@@ -344,7 +391,7 @@
   <p><strong>Disclaimer:</strong> We are not a regulated debt advice firm and do not offer formal advice. We refer individuals to regulated professionals where appropriate. All IVA arrangements are handled by licensed Insolvency Practitioners. We do not charge you any fees. Your credit rating may be affected. Your home may be at risk if you fail to maintain your IVA or mortgage payments. Always consider all options before entering into a financial solution.</p>
 </div>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/447123456789" class="whatsapp-float" target="_blank" rel="noopener" style="position:fixed; bottom:20px; right:20px; background-color:#25D366; color:white; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:28px; z-index:1000; text-decoration:none;">
-  &#x1F4AC;
-</a>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
