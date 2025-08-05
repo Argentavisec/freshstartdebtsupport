@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.banner {
+  background: #4CAF50;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+.site-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-menu {
+  margin-top: 10px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-menu:hover {
+  background: #45a045;
+}
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+  background: #4CAF50;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: fit-content;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-section {
+  padding: 10px 0;
+  border-top: 1px solid #ffffff44;
+}
+
+.menu-section h4 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 5px 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 15px;
+}
+
+.menu-content a:hover {
+  background: #45a045;
+  text-decoration: underline;
+}
+
+.menu-cta {
+  background: #a5e6b0;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 10px 16px;
+  margin: 12px auto;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  transition: background 0.3s;
+}
+
+.menu-cta:hover {
+  background: #88d292;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  flex: 1;
+}
+
+.section {
+  background: #e9f5ec;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+h1, h2 {
+  color: #4CAF50;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* WhatsApp floating button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  z-index: 999;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5b;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-content {
+    width: 90%;
+  }
+}
