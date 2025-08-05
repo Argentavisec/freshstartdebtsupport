@@ -20,29 +20,29 @@
 
   <!-- Menu -->
   <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-placeholder").innerHTML = html;
-        document.getElementById("menuContent").style.display = "none";
-      });
-
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      if (menu) {
-        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-      }
-    }
-
-    window.addEventListener("click", function (e) {
-      const menu = document.getElementById("menuContent");
-      const button = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== button) {
-        menu.style.display = "none";
-      }
+<script>
+  fetch("https://www.freshstartdebtsupport.co.uk/menu.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("menu-placeholder").innerHTML = html;
+      document.getElementById("menuContent").style.display = "none";
     });
-  </script>
+
+  function toggleMenu() {
+    const menu = document.getElementById("menuContent");
+    if (menu) {
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  }
+
+  window.addEventListener("click", function (e) {
+    const menu = document.getElementById("menuContent");
+    const button = document.getElementById("menuButton");
+    if (menu && !menu.contains(e.target) && e.target !== button) {
+      menu.style.display = "none";
+    }
+  });
+</script>
 
   <!-- Blog Content -->
   <div class="container">
