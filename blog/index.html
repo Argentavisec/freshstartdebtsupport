@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debt Help Blog | Fresh Start</title>
+  <meta name="description" content="Read expert articles on debt help, IVA advice, stopping bailiffs, and more. Stay informed with the Fresh Start Debt Support blog." />
+  <meta name="keywords" content="debt help blog, IVA articles, debt solutions UK, financial support blog, Fresh Start Debt Support blog">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="../logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("../menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    }
+
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("menuContent");
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- Blog Content -->
+  <div class="container">
+    <div class="section">
+      <h1>Debt Help Blog – Advice, News & Support</h1>
+      <p>Welcome to the <strong>Fresh Start Debt Help Blog</strong>, your go-to resource for practical guidance, news and updates about debt solutions, IVAs, managing creditors, and more. Whether you're looking to stop bailiffs, manage your repayments or understand your rights — we've got you covered.</p>
+    </div>
+
+    <!-- Blog Post List -->
+    <div class="section">
+      <h2>Latest Blog Posts</h2>
+      <ul>
+        <li><a href="can-debt-collectors-come-to-your-house-uk.html">Can Debt Collectors Come to Your House in the UK?</a></li>
+        <!-- Add more blog posts below as you create them -->
+        <!-- Example: <li><a href="your-next-post.html">Title of Your Next Blog</a></li> -->
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="section">
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personal Debt Advice Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website offers guidance and support services. It is not regulated by the Financial Conduct Authority. Insolvency services are referred to licensed and authorised practitioners.</p>
+    </footer>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
+</body>
+</html>
