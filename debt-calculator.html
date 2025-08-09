@@ -2,161 +2,295 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debt Calculator UK – Estimate Affordable Monthly Payments</title>
-  <meta name="description" content="Use our free UK debt calculator to estimate monthly repayments and see which debt solution like IVA or DMP you may qualify for. Fast, confidential, and secure." />
-  <meta name="keywords" content="UK debt calculator, IVA calculator, monthly debt repayments, affordable debt help, DMP estimator">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Debt Calculator UK – Work Out What You Can Afford to Pay Each Month | Fresh Start Debt Support</title>
+  <meta name="description" content="Use our UK Debt Calculator to estimate affordable monthly payments and discover which debt solutions you might qualify for. Fresh Start Debt Support offers expert guidance on IVAs, DMPs, DROs, Bankruptcy, and Trust Deeds." />
+  <meta name="keywords" content="debt calculator UK, affordable monthly payments, IVA calculator, DMP affordability, debt help UK, debt solutions UK, debt affordability tool" />
+  <link rel="stylesheet" href="style.css" />
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0PJ0YPPJST');
+  </script>
+
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <style>
+    .calculator {
+      background: #f9f9f9;
       padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
+      margin: 25px 0;
       border-radius: 8px;
-      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+    .calculator label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .calculator input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .calculator button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .calculator button:hover {
+      background-color: #45a049;
+    }
+    .result {
       margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
     }
   </style>
+</head>
+<body>
+
+  <!-- Header / Banner -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Menu Include -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        const menu = document.getElementById("menuContent");
+        if(menu) menu.style.display = "none";
+      });
+
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      if(menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if(menu && !menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
+  <!-- Main Content Container -->
+  <div class="container">
+
+    <!-- Section 1: Introduction -->
+    <div class="section">
+      <h1>Debt Calculator UK – Work Out What You Can Afford to Pay Each Month</h1>
+      <p>Are you overwhelmed by debt and unsure how much you can realistically afford to repay each month? Our <strong>UK Debt Calculator</strong> helps you estimate affordable monthly payments and guides you towards the debt solutions you might qualify for.</p>
+      <p>Understanding your repayment capacity is key to choosing the right path—whether that’s an <a href="iva.html">Individual Voluntary Arrangement (IVA)</a>, a <a href="dmp.html">Debt Management Plan (DMP)</a>, a <a href="dro.html">Debt Relief Order (DRO)</a>, bankruptcy, or a <a href="trust-deed.html">Trust Deed (Scotland)</a>. Fresh Start Debt Support offers expert, confidential advice every step of the way.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Assessment</a>
+    </div>
+
+    <!-- Section 2: How the Debt Calculator Works -->
+    <div class="section">
+      <h2>How Our Debt Calculator Helps You</h2>
+      <p>The debt calculator lets you input your total unsecured debt amount and then estimates what monthly repayments might look like based on common debt solutions available in the UK.</p>
+      <p>By using this tool, you can:</p>
+      <ul>
+        <li>✅ Get a clear idea of what affordable repayments might be</li>
+        <li>✅ See which debt solutions you could qualify for depending on your debt size</li>
+        <li>✅ Plan your next steps with realistic repayment expectations</li>
+        <li>✅ Understand how different solutions impact your monthly budget</li>
+      </ul>
+      <a href="compare-solutions.html" class="menu-cta">Compare UK Debt Solutions</a>
+    </div>
+
+    <!-- Section 3: Interactive Debt Calculator -->
+    <div class="section">
+      <h2>Try Our Interactive Debt Calculator</h2>
+      <div class="calculator">
+        <label for="debtAmount">Enter Your Total Unsecured Debt (£):</label>
+        <input type="number" id="debtAmount" min="0" step="100" placeholder="e.g. 15000" />
+
+        <button onclick="calculateDebtSolution()">Calculate My Options</button>
+
+        <div id="result" class="result"></div>
+      </div>
+
+      <script>
+        function calculateDebtSolution() {
+          const debt = Number(document.getElementById('debtAmount').value);
+          const resultDiv = document.getElementById('result');
+          if (isNaN(debt) || debt <= 0) {
+            resultDiv.textContent = "Please enter a valid debt amount greater than £0.";
+            return;
+          }
+
+          let message = `With £${debt.toLocaleString()} debt, here are your likely options:\n\n`;
+
+          if (debt < 1000) {
+            message += "- You might manage repayments informally or consider a Debt Management Plan (DMP).\n";
+            message += "- DRO is unlikely since debts are below threshold.\n";
+            message += "- Bankruptcy is generally not needed at this level.";
+          } else if (debt >= 1000 && debt < 6000) {
+            message += "- A Debt Management Plan (DMP) could be suitable.\n";
+            message += "- You may qualify for a Debt Relief Order (DRO) if your income and assets are low.\n";
+            message += "- IVAs usually require higher debt levels but can be discussed.\n";
+            message += "- Bankruptcy is a last resort.";
+          } else if (debt >= 6000 && debt < 30000) {
+            message += "- An Individual Voluntary Arrangement (IVA) is often the best formal solution.\n";
+            message += "- Debt Management Plans (DMPs) offer flexibility but no legal protection.\n";
+            message += "- DRO may be possible if income/assets are low, but debt might be too high.\n";
+            message += "- Bankruptcy can be considered if other options fail.";
+          } else {
+            message += "- Bankruptcy is often the most appropriate option for high debts.\n";
+            message += "- IVAs can also be suitable depending on your income.\n";
+            message += "- Debt Management Plans may be unaffordable at this level.\n";
+            message += "- DRO eligibility is unlikely for debts over £30,000.";
+          }
+
+          resultDiv.innerHTML = message.replace(/\n/g, "<br>");
+        }
+      </script>
+    </div>
+
+    <!-- Section 4: Understanding Debt Solutions Based on Your Calculator Result -->
+    <div class="section">
+      <h2>Understanding Your Debt Solution Options</h2>
+      <p>Once you have an idea of what you might afford each month, it’s important to understand the debt solutions available:</p>
+
+      <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
+      <p>IVAs are formal, legally binding agreements where you make monthly payments over 5-6 years, after which remaining qualifying debt can be written off. They provide legal protection from creditors and bailiffs.</p>
+
+      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
+      <p>DMPs offer flexible repayment plans based on what you can afford. They are informal, so creditors can still take legal action, but often agree to freeze interest and charges.</p>
+
+      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
+      <p>DROs help people with low income and minimal assets by freezing debts for 12 months, after which debts may be written off if circumstances remain unchanged.</p>
+
+      <h3><a href="bankruptcy.html">Bankruptcy</a></h3>
+      <p>Bankruptcy is a formal insolvency solution that discharges debts usually after 12 months. It has a significant impact on credit but can offer a fresh start.</p>
+
+      <h3><a href="trust-deed.html">Trust Deed (Scotland)</a></h3>
+      <p>Trust Deeds are formal agreements in Scotland that provide debt write-off after typically 4 years, with legal protections during that time.</p>
+
+      <a href="compare-solutions.html" class="menu-cta">Compare All Debt Solutions</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Expert Debt Advice Now</a>
+    </div>
+
+    <!-- Section 5: How Fresh Start Debt Support Helps You -->
+    <div class="section">
+      <h2>How Fresh Start Debt Support Helps You Use Your Debt Calculator Results</h2>
+      <p>Our experts provide:</p>
+      <ul>
+        <li>Free, confidential assessments based on your debt and affordability</li>
+        <li>Clear explanations of your debt solution options</li>
+        <li>Assistance applying for formal solutions like IVAs, DROs, or bankruptcy</li>
+        <li>Support negotiating with creditors for DMPs or informal arrangements</li>
+        <li>Ongoing help to keep you on track and reduce financial stress</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Assessment</a>
+    </div>
+
+    <!-- Section 6: Frequently Asked Questions -->
+    <div class="section" id="faq">
+      <h2>Debt Calculator UK – Frequently Asked Questions</h2>
+
+      <h3>Is this debt calculator accurate for my situation?</h3>
+      <p>This calculator provides an estimate based on your debt amount only. For a full personalised affordability assessment, please contact our team.</p>
+
+      <h3>Can I use the calculator if I have secured debts?</h3>
+      <p>This tool is designed for unsecured debts like credit cards, loans, and overdrafts. Secured debts like mortgages are treated differently.</p>
+
+      <h3>What if my income fluctuates each month?</h3>
+      <p>We can help you with budgeting advice tailored to variable income situations and find debt solutions that offer flexibility.</p>
+
+      <h3>Will using this calculator affect my credit score?</h3>
+      <p>No. Using this calculator is free and confidential and does not impact your credit file.</p>
+
+      <h3>How soon can I get help after using this calculator?</h3>
+      <p>Contact us today for a free assessment. Many clients get help started within 24 hours.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Contact Fresh Start Debt Support Now</a>
+    </div>
+
+    <!-- Section 7: Why Choose Fresh Start Debt Support -->
+    <div class="section">
+      <h2>Why Choose Fresh Start Debt Support?</h2>
+      <p>We’re a UK-based, small team committed to personal, compassionate debt help. Our advantages include:</p>
+      <ul>
+        <li>✔ Fast response times and personalised service</li>
+        <li>✔ Expert guidance through complex debt solutions</li>
+        <li>✔ Transparent advice with no pressure</li>
+        <li>✔ Support from first contact through to debt freedom</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Your Free Debt Help Today</a>
+    </div>
+
+    <!-- Section 8: Real Client Success Stories -->
+    <div class="section">
+      <h2>Success Stories from Fresh Start Debt Support</h2>
+      <blockquote>
+        <p><em>“Using the debt calculator helped me understand what I could afford. Fresh Start guided me to an IVA, and I’m now on the path to being debt-free.” – Mark, Leeds</em></p>
+      </blockquote>
+      <blockquote>
+        <p><em>“The calculator was a great starting point. The team helped me apply for a DMP that really fits my budget.” – Chloe, Manchester</em></p>
+      </blockquote>
+      <blockquote>
+        <p><em>“I didn’t think I qualified for help with my debts. The calculator and Fresh Start’s advice changed everything.” – Raj, London</em></p>
+      </blockquote>
+      <p>Read more client stories on our <a href="testimonials.html">testimonials page</a>.</p>
+      <a href="testimonials.html" class="menu-cta">Read More Testimonials</a>
+    </div>
+
+    <!-- Section 9: Take Action Today -->
+    <div class="section">
+      <h2>Work Out Your Debt Affordability and Take Control Now</h2>
+      <p>Don’t let debt stress take over your life. Use our calculator to estimate your affordability and contact Fresh Start Debt Support for tailored advice and solutions.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Assessment</a>
+      <p>Have questions? Visit our <a href="faq.html">FAQ</a> or <a href="contact-us.html">Contact Us</a> page.</p>
+    </div>
+
+  </div> <!-- End container -->
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not provide regulated financial advice and is not FCA authorised. All guidance is offered free of charge. For personalised advice, please consult a regulated professional.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Menu Toggle Script -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
+
     window.addEventListener("click", function(e) {
       const menu = document.getElementById("menuContent");
       const btn = document.getElementById("menuButton");
@@ -165,141 +299,6 @@
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-
-  <div class="menu-content" id="menuContent">
-    <!-- full dropdown menu will go here -->
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-      <h1>Debt Calculator UK – Work Out What You Can Afford to Pay Each Month</h1>
-      <p>Our free <strong>UK debt calculator</strong> is designed to help you understand your monthly repayment options based on your financial situation. Whether you're dealing with <a href="credit-card-debt.html">credit card debt</a>, <a href="council-tax-debt.html">council tax arrears</a>, or <a href="payday-loan-debt.html">payday loans</a>, our calculator gives you a quick estimate of what you might realistically afford each month — and what solutions you could qualify for, including <a href="iva.html">IVAs</a>, <a href="dmp.html">DMPs</a>, and <a href="dro.html">DROs</a>.</p>
-
-      <p>This tool is 100% confidential, free to use, and takes under a minute.</p>
-
-      <ul>
-        <li>✅ See how much you can afford to repay each month</li>
-        <li>✅ Find out if you qualify for writing off unaffordable debt</li>
-        <li>✅ Instantly understand which solutions may apply to your debts</li>
-        <li>✅ Compare IVA, DMP, DRO and Bankruptcy options side-by-side</li>
-      </ul>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-      <h2>How Our Debt Calculator Works</h2>
-      <p>To get an estimate, our tool will ask for key financial details — such as:</p>
-      <ul>
-        <li>Your total unsecured debt (e.g. credit cards, loans, overdrafts)</li>
-        <li>Your current income and monthly living expenses</li>
-        <li>Your employment status and number of creditors</li>
-      </ul>
-
-      <p>Based on your answers, we’ll show a likely monthly payment amount, and which solutions you may be eligible for:</p>
-      <ul>
-        <li><strong><a href="iva.html" style="color:#0000EE;">IVA</a></strong> – Pay what you can afford for 5–6 years, write off remaining debt</li>
-        <li><strong><a href="dmp.html" style="color:#0000EE;">DMP</a></strong> – Informal agreement to repay debts in full over time</li>
-        <li><strong><a href="dro.html" style="color:#0000EE;">DRO</a></strong> – Government-backed relief if you owe less than £30,000 and have no assets</li>
-      </ul>
-
-      <h2>Example: Jane from Birmingham</h2>
-      <p><strong>Debts:</strong> £14,200 (credit cards, catalogue, payday loans)<br>
-         <strong>Monthly income:</strong> £1,600<br>
-         <strong>Essential living costs:</strong> £1,200</p>
-      <p>Using the calculator, Jane found she could afford around £150/month. She qualified for an <a href="iva.html">IVA</a> and is now writing off over £9,000 of debt after 60 months of affordable payments.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See What You Could Write Off</a>
-    </div>
-    <div class="section">
-      <h2>What Happens After You Use the Calculator?</h2>
-      <p>Once you’ve used the tool, you’ll have a clear picture of what solutions may work for you. If you choose to continue, one of our friendly UK debt specialists will:</p>
-      <ul>
-        <li>✅ Review your situation with you (no judgment, no pressure)</li>
-        <li>✅ Check if any charges or interest could be frozen</li>
-        <li>✅ Talk through <a href="compare-solutions.html">your solution options</a> so you can make an informed decision</li>
-        <li>✅ Help you apply if you choose to move forward — no obligation</li>
-      </ul>
-
-      <h2>Benefits of Using Our Debt Calculator</h2>
-      <ul>
-        <li>✔️ It’s completely free and doesn’t impact your credit score</li>
-        <li>✔️ It’s available 24/7, so you can use it whenever suits you</li>
-        <li>✔️ It gives you instant clarity and control</li>
-        <li>✔️ It helps you explore ways to <strong>write off debt</strong> and reduce stress</li>
-      </ul>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-    </div>
-    <div class="section trust-badges">
-      <h3>Trusted UK Debt Help</h3>
-      <p>✅ Rated for clear and friendly support</p>
-      <p>✅ Fast responses and personalised help</p>
-      <p>✅ Thousands of people helped across the UK</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-    </div>
-
-  <footer>
-    © 2025 Fresh Start Debt Support. All rights reserved.
-  </footer>
-  <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
 
 </body>
 </html>
