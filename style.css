@@ -1,165 +1,138 @@
-/* Reset and basics */
+/* Reset and base */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  align-items: center; /* Center all content horizontally */
+  text-align: center;
 }
 
+.container {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  flex: 1;
+}
+
+/* Banner/Header */
 .banner {
   background: #4CAF50;
   padding: 20px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  text-align: center;
 }
 
-.banner img.logo {
+.banner img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
   height: 50px;
 }
 
 .site-name {
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
+}
+
+/* Menu button */
+.btn-menu, #menuButton {
+  margin: 20px auto 10px;
+  background: #4CAF50;
   color: #fff;
-}
-
-/* Menu Button */
-#menuButton {
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  border: 2px solid #3e8e41;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  width: 120px;
-  text-align: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-#menuButton:hover,
-#menuButton:focus {
-  background-color: #45a045;
-  border-color: #367c38;
-  outline: none;
-}
-
-/* "Get Started for Free" button below menu */
-.get-started-btn {
-  background-color: #a5e6b0;
-  color: #000;
-  font-weight: bold;
-  padding: 10px 16px;
-  border-radius: 6px;
-  width: 160px;
-  text-align: center;
-  margin: 0 auto 20px auto;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
   border: none;
-  font-size: 16px;
-  display: block;
-}
-
-.get-started-btn:hover,
-.get-started-btn:focus {
-  background-color: #88d292;
-  outline: none;
-}
-
-/* Menu Content */
-#menuContent {
-  display: none;
-  flex-direction: column;
-  background-color: #4CAF50;
-  width: 220px;
-  margin: 0 auto 20px auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  padding: 10px 0;
-  font-size: 16px;
-  user-select: none;
-}
-
-#menuContent a {
-  color: white;
-  padding: 8px 20px;
-  text-decoration: none;
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-#menuContent a:hover,
-#menuContent a:focus {
-  background-color: #45a045;
-  outline: none;
-}
-
-/* Section headings inside menu */
-#menuContent hr {
-  margin: 10px 0;
-  border-color: #3e8e41;
-}
-
-#menuContent strong {
-  color: white;
-  padding: 10px 20px;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 1px solid #3e8e41;
-  user-select: none;
-}
-
-/* Container for main content */
-.container {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  padding: 20px;
-  flex-grow: 1;
-}
-
-/* Section styling */
-.section {
-  background-color: #e9f5ec;
+  padding: 12px 28px;
+  font-size: 18px;
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  text-align: center;
+  transition: background 0.3s;
 }
 
-/* Headings */
+.btn-menu:hover, #menuButton:hover {
+  background: #45a045;
+}
+
+/* CTA buttons styled exactly like the "Get Started for Free" button */
+.menu-cta {
+  background: #a5e6b0;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 14px 32px;
+  margin: 16px auto;
+  border-radius: 12px;
+  width: 260px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-cta:hover {
+  background: #88d292;
+  box-shadow: 0 8px 14px rgba(0,0,0,0.35);
+}
+
+/* Sections */
+.section {
+  background: #e9f5ec;
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left; /* Text left aligned inside sections for readability */
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1, h2 {
   color: #4CAF50;
-  margin-top: 0;
+  margin-bottom: 16px;
 }
 
-/* Lists */
 ul {
   margin-left: 20px;
-  padding-left: 0;
 }
 
-li {
-  margin-bottom: 6px;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
-  background-color: #4CAF50;
-  color: white;
+  background: #4CAF50;
+  color: #fff;
   text-align: center;
-  padding: 15px 10px;
+  padding: 20px;
   font-size: 14px;
+  width: 100%;
 }
 
 /* WhatsApp floating button */
@@ -170,30 +143,85 @@ footer {
   background-color: #25D366;
   color: white;
   font-weight: bold;
-  padding: 12px 18px;
+  padding: 14px 22px;
   border-radius: 50px;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  font-size: 18px;
+  z-index: 999;
   text-decoration: none;
-  z-index: 9999;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.whatsapp-button:hover,
-.whatsapp-button:focus {
+.whatsapp-button:hover {
   background-color: #1ebe5b;
+}
+
+/* Menu content - vertical green menu */
+.menu-content {
+  display: none;
+  flex-direction: column;
+  background: #4CAF50;
+  padding: 24px 32px;
+  margin: 16px auto;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 16px;
+}
+
+.menu-section {
+  padding: 16px 0;
+  border-top: 1px solid #ffffff44;
+}
+
+.menu-section:first-child {
+  border-top: none;
+}
+
+.menu-section h4 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Menu links */
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.menu-content a:hover,
+.menu-content a:focus {
+  background: #3d9a36;
+  text-decoration: none;
   outline: none;
 }
 
-/* Responsive tweaks */
+/* Mobile styles */
 @media screen and (max-width: 600px) {
-  #menuContent {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-content {
     width: 90%;
+    padding: 20px;
   }
   .container {
-    padding: 10px;
+    padding: 15px;
+    max-width: 100%;
+  }
+  .menu-cta {
+    width: 90%;
+    padding: 14px 0;
   }
 }
