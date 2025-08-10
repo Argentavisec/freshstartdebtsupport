@@ -1,202 +1,162 @@
-/* Reset and base */
+/* Reset & basics */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  align-items: center; /* Center all page content horizontally */
-  text-align: center;
+  align-items: center;
 }
 
-/* Main container with fixed max-width and centered */
-.container {
-  padding: 20px;
-  max-width: 800px;
-  width: 100%;
-  flex: 1;
-  margin: 0 auto;
-  text-align: left; /* Keep text left-aligned inside */
-}
-
-/* Banner/Header */
+/* Banner with centered logo and text */
 .banner {
   background: #4CAF50;
-  padding: 20px;
   width: 100%;
+  padding: 15px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-}
-
-.banner img {
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.banner h1 {
-  color: #fff;
-  font-size: 28px;
-  margin: 0;
-}
-
-.top-bar {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.logo {
-  height: 50px;
+.banner img.logo {
+  height: 70px;
 }
 
-.site-name {
-  color: #fff;
-  font-size: 24px;
+.banner .site-name {
   font-weight: bold;
+  color: white;
+  font-size: 22px;
 }
 
-/* Menu button */
-#menuButton {
-  margin: 20px auto 12px;
-  background: #4CAF50;
-  color: #fff;
-  border: none;
-  padding: 14px 36px;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-  display: block;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-#menuButton:hover {
-  background: #45a045;
-}
-
-/* Menu content - vertical green menu centered and narrower */
-.menu-content {
-  display: none;
-  flex-direction: column;
-  background: #4CAF50;
-  padding: 24px 36px;
-  margin: 12px auto;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+/* Center container with max width */
+.container {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto;
   text-align: left;
-  font-size: 16px;
-  font-weight: 400;
-  color: white;
-  line-height: 1.6;
 }
 
-/* Menu sections spacing and borders */
-.menu-section {
-  padding: 18px 0;
-  border-top: 1px solid #ffffff44;
-}
-
-.menu-section:first-child {
-  border-top: none;
-}
-
-/* Menu section headings */
-.menu-section h4 {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 0 14px 0;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* Menu links */
-.menu-content a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 10px 14px;
-  font-size: 16px;
-  border-radius: 8px;
-  transition: background-color 0.25s ease;
-}
-
-.menu-content a:hover,
-.menu-content a:focus {
-  background: #3d9a36;
-  text-decoration: none;
-  outline: none;
-}
-
-/* Section boxes */
+/* Section styling */
 .section {
   background: #e9f5ec;
-  border-radius: 14px;
-  padding: 36px 44px;
-  margin-top: 36px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
 }
 
-/* Headings */
-h1, h2 {
+/* Style for all h1, h2, h3 in content */
+h1, h2, h3 {
   color: #4CAF50;
-  margin-bottom: 18px;
+  margin-top: 0;
 }
 
-ul {
-  margin-left: 24px;
-  margin-bottom: 12px;
+/* Menu button centered */
+#menu-placeholder {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto 5px auto;
+  display: flex;
+  justify-content: center;
 }
 
-/* CTA Buttons styled like "Get Started for Free" */
+.btn-menu, #menuButton {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover, #menuButton:hover {
+  background: #3b8b3b;
+}
+
+/* CTA button style - used for top CTA and section CTAs */
 .menu-cta {
   background: #a5e6b0;
   color: #000 !important;
-  font-weight: 900;
-  padding: 16px 40px;
-  margin: 20px auto;
-  border-radius: 18px;
-  width: 280px;
-  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 30px;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
+  font-size: 18px;
+  display: inline-block;
   text-align: center;
-  display: block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
   text-decoration: none;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
 }
 
 .menu-cta:hover {
   background: #88d292;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
 }
 
-/* Footer */
-footer {
-  background: #4CAF50;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+/* Center top CTA under menu button */
+#top-cta {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
 }
 
-/* WhatsApp floating button */
+/* Menu content styling */
+.menu-content {
+  display: none; /* hidden initially */
+  flex-direction: column;
+  background: #4CAF50;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin: 10px auto 40px auto;
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+}
+
+/* Each menu section with padding and separator */
+.menu-section {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu-section:last-child {
+  border-bottom: none;
+}
+
+/* Section titles */
+.menu-section h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+/* Links inside menu */
+.menu-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 7px 0;
+  transition: background-color 0.3s ease;
+}
+
+.menu-content a:hover {
+  background: #3b8b3b;
+  padding-left: 10px;
+}
+
+/* WhatsApp button fixed bottom right */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -204,12 +164,12 @@ footer {
   background-color: #25D366;
   color: white;
   font-weight: bold;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 50px;
-  font-size: 18px;
-  z-index: 999;
+  font-size: 16px;
+  z-index: 9999;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
 }
 
@@ -217,22 +177,14 @@ footer {
   background-color: #1ebe5b;
 }
 
-/* Mobile styles */
+/* Responsive adjustments */
 @media screen and (max-width: 600px) {
-  .top-bar {
-    flex-direction: column;
-    text-align: center;
+  .container {
+    width: 95%;
   }
+
   .menu-content {
     width: 90%;
-    padding: 24px 20px;
-  }
-  .container {
-    padding: 15px;
-    max-width: 100%;
-  }
-  .menu-cta {
-    width: 90%;
-    padding: 16px 0;
+    margin: 10px auto 30px auto;
   }
 }
