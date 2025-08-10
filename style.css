@@ -1,69 +1,52 @@
-/* Reset & basics */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Banner with centered logo and text */
+/* Banner - center logo and text */
 .banner {
   background: #4CAF50;
   width: 100%;
   padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+  text-align: center;
+  color: white;
 }
 
 .banner img.logo {
   height: 70px;
+  display: block;
+  margin: 0 auto 8px auto;
 }
 
 .banner .site-name {
   font-weight: bold;
-  color: white;
   font-size: 22px;
 }
 
-/* Center container with max width */
-.container {
+/* Wrapper for CTA and menu button */
+.cta-menu-wrapper {
   max-width: 800px;
   width: 95%;
   margin: 20px auto;
-  text-align: left;
+  text-align: center;
 }
 
-/* Section styling */
-.section {
-  background: #e9f5ec;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  position: relative;
+/* CTA Button */
+.menu-cta {
+  background: #a5e6b0;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Style for all h1, h2, h3 in content */
-h1, h2, h3 {
-  color: #4CAF50;
-  margin-top: 0;
+.menu-cta:hover {
+  background: #88d292;
 }
 
-/* Menu button centered */
-#menu-placeholder {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto 5px auto;
-  display: flex;
-  justify-content: center;
-}
-
+/* Menu Button */
 .btn-menu, #menuButton {
   background: #4CAF50;
   color: white;
@@ -75,56 +58,29 @@ h1, h2, h3 {
   font-weight: bold;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   transition: background-color 0.3s ease;
+  margin-bottom: 15px;
 }
 
 .btn-menu:hover, #menuButton:hover {
   background: #3b8b3b;
 }
 
-/* CTA button style - used for top CTA and section CTAs */
-.menu-cta {
-  background: #a5e6b0;
-  color: #000 !important;
-  font-weight: bold;
-  padding: 12px 30px;
-  margin: 20px auto 0 auto;
-  border-radius: 10px;
-  font-size: 18px;
-  display: inline-block;
-  text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.menu-cta:hover {
-  background: #88d292;
-}
-
-/* Center top CTA under menu button */
-#top-cta {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-
-/* Menu content styling */
+/* Menu Content */
 .menu-content {
-  display: none; /* hidden initially */
+  display: none;
   flex-direction: column;
   background: #4CAF50;
   width: 280px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  margin: 10px auto 40px auto;
+  margin: 0 auto;
   font-size: 16px;
   color: white;
   overflow: hidden;
+  text-align: left;
 }
 
-/* Each menu section with padding and separator */
+/* Menu Sections */
 .menu-section {
   padding: 15px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -134,7 +90,7 @@ h1, h2, h3 {
   border-bottom: none;
 }
 
-/* Section titles */
+/* Menu Section Titles */
 .menu-section h4 {
   font-weight: bold;
   text-transform: uppercase;
@@ -142,7 +98,7 @@ h1, h2, h3 {
   font-size: 16px;
 }
 
-/* Links inside menu */
+/* Menu Links */
 .menu-content a {
   color: white;
   text-decoration: none;
@@ -156,7 +112,7 @@ h1, h2, h3 {
   padding-left: 10px;
 }
 
-/* WhatsApp button fixed bottom right */
+/* WhatsApp Floating Button */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -177,14 +133,13 @@ h1, h2, h3 {
   background-color: #1ebe5b;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media screen and (max-width: 600px) {
-  .container {
+  .cta-menu-wrapper {
     width: 95%;
   }
 
   .menu-content {
     width: 90%;
-    margin: 10px auto 30px auto;
   }
 }
