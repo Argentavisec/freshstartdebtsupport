@@ -2,340 +2,517 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Credit Card Debt Help UK | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with credit card debt in the UK? Get confidential support and explore options like IVAs and DMPs to reduce or write off credit card balances today." />
-  <meta name="keywords" content="credit card debt help UK, reduce credit card debt, write off credit card debt, IVA for credit card, DMP, debt support UK">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Card Debt Help | Stop Debt Collectors & Avoid CCJs | Fresh Start Debt Support</title>
+  <meta name="description" content="Struggling with credit card debt? Get expert help to stop debt collectors, freeze interest, avoid CCJs, and write off debt. Explore IVAs, DMPs, DROs & Breathing Space." />
+  <meta name="keywords" content="credit card debt, credit card debt help, credit card debt collectors, stop credit card debt collectors, freeze credit card interest, credit card repayment plan, credit card debt write off, avoid CCJ credit card debt, IVA for credit card debt, DMP for credit card debt, DRO for credit card debt, bankruptcy credit card debt, breathing space credit card debt">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      max-width: 90%;
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 850px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 20px;
-    }
-    h1, h2, h3 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    @media screen and (max-width: 600px) {
-      .top-bar {
-        flex-direction: column;
-        text-align: center;
-      }
-      .menu-content {
-        width: 95%;
-      }
-    }
-  </style>
+  <!-- Header -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="menu-placeholder"></div>
   <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        document.getElementById("menuContent").style.display = "none";
+      });
+
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      if (menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
     }
-    window.addEventListener("click", function(e) {
+
+    window.addEventListener("click", function (e) {
       const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
+      const button = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== button) {
         menu.style.display = "none";
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
 
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
+  <!-- Page Content -->
   <div class="container">
+
+    <!-- Intro Section -->
     <div class="section">
-      <h1>Credit Card Debt Help in the UK</h1>
-      <p>Are you struggling with <strong>credit card debt in the UK</strong>? You’re not alone — millions of people are finding it harder to keep up with high interest rates and growing balances. At Fresh Start Debt Support, we help people just like you reduce or even write off unaffordable credit card debt, with no pressure or judgment.</p>
-      <p>Whether you've missed a few payments or are facing pressure from <a href="debt-collectors.html">debt collectors</a>, we can guide you through your options. We’ll help you understand what’s possible and how to move forward — free of charge.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify</a>
+      <h1>Credit Card Debt Help – Stop Debt Collectors, Freeze Interest & Avoid CCJs</h1>
+      <p>Are you struggling with mounting credit card debt? You're not alone. Credit card debt is one of the most common financial challenges in the UK, with millions facing increasing interest charges, relentless debt collectors, and the threat of court action.</p>
+      <p>At Fresh Start Debt Support, we specialise in helping people just like you regain control. Whether you want to stop credit card debt collectors, freeze crippling interest, avoid County Court Judgments (CCJs), or write off debt you simply can’t afford, we can guide you every step of the way.</p>
+      <p>We offer trusted solutions including <a href="iva.html">IVAs</a>, <a href="dmp.html">DMPs</a>, <a href="dro.html">DROs</a>, and access to the government’s <a href="breathing-space.html">Breathing Space scheme</a>. Our expert advisers will confidentially assess your situation and find the best debt relief options tailored to you.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Credit Card Debt Help Now</a>
     </div>
 
+    <!-- Credit Card Debt Explained -->
     <div class="section">
-      <h2>What Happens If I Can’t Pay My Credit Card Debt?</h2>
-      <p>Missing payments can quickly lead to:</p>
+      <h2>What Is Credit Card Debt?</h2>
+      <p>Credit card debt occurs when you borrow money on a credit card and do not pay back the full balance each month. Instead, interest is charged on the outstanding amount, which can quickly cause your debt to grow if payments are missed or only minimum payments are made.</p>
+      <p>Common causes of credit card debt include:</p>
       <ul>
-        <li>✅ Additional interest and late fees</li>
-        <li>✅ Damage to your credit score</li>
-        <li>✅ Persistent contact from creditors or debt collectors</li>
-        <li>✅ Legal action in some cases</li>
+        <li>Unexpected expenses or emergencies</li>
+        <li>Low income or loss of income</li>
+        <li>Overuse of credit cards for everyday expenses</li>
+        <li>High interest rates increasing balances rapidly</li>
       </ul>
-      <p>But help is available. We support people every day who have fallen behind — even by thousands of pounds — and guide them toward a fresh financial start using trusted debt solutions like <a href="iva.html">IVAs</a>, <a href="dmp.html">DMPs</a>, and <a href="dro.html">DROs</a>.</p>
+      <p>Ignoring credit card debt can lead to aggressive collection efforts, damage to your credit rating, and even legal action.</p>
+      <a href="about-us.html" class="menu-cta">Learn More About Us</a>
     </div>
+
+    <!-- Debt Collectors for Credit Card Debt -->
     <div class="section">
-      <h2>How We Help People With Credit Card Debt</h2>
-      <p>Fresh Start Debt Support offers a simple and confidential way to get back in control of your credit card payments. Depending on your situation, we may be able to:</p>
+      <h2>Who Are Credit Card Debt Collectors?</h2>
+      <p>If you miss payments on your credit card, your creditor may eventually hand your debt over to third-party debt collection agencies. Some common debt collectors who work with credit card companies include:</p>
       <ul>
-        <li>✅ Freeze interest and stop fees from building up</li>
-        <li>✅ Reduce your monthly payments to something affordable</li>
-        <li>✅ Stop creditor contact and legal action</li>
-        <li>✅ Write off unaffordable debt through formal solutions</li>
+        <li>Lowell Financial Ltd</li>
+        <li>Moriarty Law</li>
+        <li>Advantis Credit</li>
+        <li>Rossendales</li>
+        <li>Capquest</li>
       </ul>
-      <p>Every case is different — and we’ll help you understand the options without any pressure. Whether it’s an <a href="iva.html">IVA</a>, a <a href="dmp.html">Debt Management Plan</a>, or a <a href="dro.html">Debt Relief Order</a>, we’ll walk you through everything clearly.</p>
+      <p>These agencies may contact you via phone, letters, or emails, demanding repayment. However, you do have rights and options to manage or stop such contact legally.</p>
+      <a href="stop-debt-collectors.html" class="menu-cta">Stop Credit Card Debt Collectors</a>
     </div>
 
+    <!-- Legal Action on Credit Card Debt -->
     <div class="section">
-      <h2>Debt Solutions for Credit Card Debt</h2>
-      <p>If you're behind on payments, you may qualify for one of the following solutions:</p>
-
-      <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
-      <p>With an IVA, you could write off a portion of your debt and make one affordable monthly payment over 5–6 years. It offers legal protection from creditors and bailiffs.</p>
-
-      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
-      <p>A DMP allows you to repay your credit card debt at a pace you can afford. We'll negotiate with your creditors to freeze interest and charges where possible.</p>
-
-      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
-      <p>If you owe less than £30,000 and have few assets, a DRO can help write off your debt after 12 months — with no payments required in that time.</p>
-
-      <p>Not sure what’s right for you? Try our <a href="debt-calculator.html">Debt Calculator</a> to explore your options in minutes.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find My Best Option</a>
+      <h2>Can Credit Card Companies Take You to Court?</h2>
+      <p>Yes. If your credit card debt remains unpaid for an extended period, your lender or debt collector can apply to the court for a <strong>County Court Judgment (CCJ)</strong>. A CCJ is a legal order to repay your debt and can severely affect your credit score for up to six years.</p>
+      <p>Following a CCJ, enforcement actions such as wage garnishment, bailiff visits, or freezing of bank accounts can take place. But if you seek help early, you can often avoid these serious consequences.</p>
+      <a href="iva.html" class="menu-cta">Avoid a CCJ with an IVA</a>
     </div>
+
+    <!-- Breathing Space Scheme -->
     <div class="section">
-      <h2>Real Results From Real People</h2>
-      <p><em>"I had over £10,000 in credit card debt and felt trapped. Fresh Start explained everything clearly and helped me get onto a proper plan. Now I finally sleep at night." – Emma, Leeds</em></p>
-      <p><em>"I was scared to even answer the phone. These guys helped stop the calls and gave me a clear way forward. Thank you!" – David, London</em></p>
-      <a href="testimonials.html" class="menu-cta">Read More Success Stories</a>
+      <h2>How Does the Breathing Space Scheme Help With Credit Card Debt?</h2>
+      <p>The <a href="breathing-space.html">Breathing Space scheme</a> provides you with legal protection by pausing most creditor enforcement actions for up to 60 days. This includes stopping interest charges and debt collection calls on your credit card debts during this time.</p>
+      <p>This temporary relief allows you to get professional advice and explore longer-term debt solutions without pressure.</p>
+      <a href="breathing-space.html" class="menu-cta">Apply for Breathing Space Now</a>
     </div>
 
+    <!-- Individual Voluntary Arrangement (IVA) -->
     <div class="section">
-      <h2>Take the First Step Today</h2>
-      <p>Whether your credit card debt is with Capital One, Barclaycard, Halifax, or another lender — you're not alone, and you don't have to figure it out by yourself. We're here to help you find a solution that fits your life.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+      <h2>What Is an IVA and Can It Help My Credit Card Debt?</h2>
+      <p>An <a href="iva.html">Individual Voluntary Arrangement (IVA)</a> is a legally binding agreement to repay what you can afford over typically 5-6 years, with the rest of your unsecured debts, like credit card balances, written off at the end.</p>
+      <p>Benefits of an IVA for credit card debt:</p>
+      <ul>
+        <li>❌ Stops interest and charges</li>
+        <li>❌ Stops calls and letters from creditors</li>
+        <li>❌ Prevents court action and CCJs</li>
+        <li>✅ Consolidates all credit card debts into one manageable monthly payment</li>
+      </ul>
+      <p>You usually need a minimum of £6,000 unsecured debt and a steady income to qualify.</p>
+      <a href="iva.html" class="menu-cta">Find Out If You Qualify for an IVA</a>
     </div>
 
+    <!-- Debt Management Plan (DMP) -->
+    <div class="section">
+      <h2>Can a Debt Management Plan (DMP) Help With Credit Card Debt?</h2>
+      <p>A <a href="dmp.html">Debt Management Plan (DMP)</a> is an informal agreement between you and your creditors to pay back what you can afford each month.</p>
+      <p>DMP advantages:</p>
+      <ul>
+        <li>✅ One monthly payment to a single provider</li>
+        <li>✅ Credit card companies may freeze interest during the plan</li>
+        <li>✅ Flexible to changes in your financial situation</li>
+      </ul>
+      <p>DMPs do not legally stop creditors from taking action, but they often improve communication and payment structure.</p>
+      <a href="dmp.html" class="menu-cta">Set Up a Credit Card Debt DMP</a>
+    </div>
+
+    <!-- Debt Relief Order (DRO) -->
+    <div class="section">
+      <h2>Is a Debt Relief Order (DRO) Right for My Credit Card Debt?</h2>
+      <p>If your total unsecured debt, including credit card debt, is under £30,000 and you have little disposable income or assets, a <a href="dro.html">Debt Relief Order (DRO)</a> might be suitable.</p>
+      <p>Benefits of a DRO:</p>
+      <ul>
+        <li>❄️ Freezes all contact and enforcement by creditors</li>
+        <li>📉 Debts written off after 12 months if no new repayments are made</li>
+        <li>💰 No ongoing repayments required</li>
+      </ul>
+      <a href="dro.html" class="menu-cta">Check If You Qualify for a DRO</a>
+    </div>
+
+    <!-- Bankruptcy -->
+    <div class="section">
+      <h2>When Is Bankruptcy an Option for Credit Card Debt?</h2>
+      <p><a href="bankruptcy.html">Bankruptcy</a> is usually the last resort but can clear most or all credit card debts within 12 months.</p>
+      <p>Consider bankruptcy if:</p>
+      <ul>
+        <li>Debt is overwhelming and you cannot repay</li>
+        <li>You have no realistic repayment options</li>
+        <li>You want a fresh financial start despite restrictions</li>
+      </ul>
+      <a href="bankruptcy.html" class="menu-cta">Explore Bankruptcy Options</a>
+    </div>
+
+    <!-- Affordability and Complaints -->
+    <div class="section">
+      <h2>Can I Complain About My Credit Card Provider?</h2>
+      <p>If you believe your credit card company lent irresponsibly or failed to properly assess your ability to repay, you can raise an <strong>affordability complaint</strong>.</p>
+      <p>Start by contacting your credit card provider’s complaints team. If unresolved, escalate to the <a href="https://www.financial-ombudsman.org.uk" target="_blank" rel="noopener noreferrer">Financial Ombudsman Service</a>.</p>
+      <a href="complaints.html" class="menu-cta">Learn How to File a Complaint</a>
+    </div>
+
+    <!-- Mental Health and Credit Card Debt -->
+    <div class="section">
+      <h2>Credit Card Debt and Mental Health</h2>
+      <p>Debt stress is real. Struggling with credit card repayments can cause anxiety, depression, and sleep problems. You’re not alone — many people feel overwhelmed by the pressure.</p>
+      <p>We provide compassionate, confidential support to help you manage both your debt and mental wellbeing.</p>
+      <a href="free-debt-help.html" class="menu-cta">Get Free, Confidential Debt Support</a>
+    </div>
+
+    <!-- Contacting Credit Card Providers -->
+    <div class="section">
+      <h2>Should I Talk to My Credit Card Provider?</h2>
+      <p>Yes, but carefully. Avoid making promises you can’t keep. Instead, let a specialist debt adviser help you communicate and negotiate with your credit card providers to find the best solution.</p>
+      <a href="enquire1.html" class="menu-cta">Let Us Talk to Credit Card Providers for You</a>
+    </div>
+
+    <!-- SEO Keyword Integration -->
+    <div class="section">
+      <h2>Popular Credit Card Debt Help Searches</h2>
+      <p>People often search for help with:</p>
+      <ul>
+        <li>“credit card debt help uk”</li>
+        <li>“stop credit card debt collectors”</li>
+        <li>“freeze credit card interest”</li>
+        <li>“credit card debt repayment plan”</li>
+        <li>“write off credit card debt”</li>
+        <li>“avoid credit card CCJ”</li>
+        <li>“credit card debt and bankruptcy”</li>
+        <li>“DMP for credit card debt”</li>
+        <li>“IVA for credit card debt”</li>
+        <li>“breathing space credit card debt”</li>
+      </ul>
+      <p>If you’re searching for answers, we’re here to help.</p>
+      <a href="qualify.html" class="menu-cta">Check If You Qualify Now</a>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="section">
+      <h2>What Our Clients Say</h2>
+      <p><em>"Fresh Start helped me get a DMP for my credit card debt. They stopped the calls, froze the interest, and made payments affordable. Highly recommended!"</em> — Sarah, Leeds</p>
+      <p><em>"I was drowning in credit card debt and feared court. With an IVA arranged through Fresh Start, I have my life back."</em> — Mark, London</p>
+      <a href="testimonials.html" class="menu-cta">Read More Stories</a>
+    </div>
+
+    <!-- FAQs -->
+    <div class="section">
+      <h2>Frequently Asked Questions About Credit Card Debt</h2>
+      <h3>Can my credit card debt be written off?</h3>
+      <p>Yes. Through debt solutions like IVAs or DROs, you can have a significant portion of your credit card debt legally written off.</p>
+
+      <h3>Will credit card debt affect my credit score?</h3>
+      <p>Yes. Missed payments, CCJs, and defaults will negatively impact your credit rating.</p>
+
+      <h3>What happens if I ignore credit card debt collectors?</h3>
+      <p>Ignoring them may lead to court action, CCJs, and enforcement such as bailiffs visiting your home.</p>
+
+      <h3>Can I stop credit card debt collectors from contacting me?</h3>
+      <p>Yes. Legal protections like Breathing Space or formal debt solutions can stop debt collectors from contacting you.</p>
+
+      <h3>How do I know which debt solution is right for me?</h3>
+      <p>Speak with a qualified debt adviser who can assess your financial situation and recommend the best course of action.</p>
+    </div>
+
+    <!-- Footer -->
     <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
+      <p>© 2025 Fresh Start Debt Support. This site does not offer regulated financial advice. For formal advice, speak to an FCA-authorised debt adviser. We are not affiliated with any credit card companies.</p>
     </footer>
-    <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
 
-  </div>
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-button" href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer">
+      💬 Message Us on WhatsApp
+    </a>
+
+  </div> <!-- end container -->
+</body>
+</html>
+    <!-- Understanding Interest and Charges on Credit Cards -->
+    <div class="section">
+      <h2>How Does Interest Work on Credit Card Debt?</h2>
+      <p>Interest is the main reason credit card debt can grow rapidly. When you don’t pay off your full balance each month, credit card companies charge interest on the remaining amount, often at very high rates — typically between 18% and 30% APR or more.</p>
+      <p>This means your debt can balloon quickly if you only make minimum payments. Additional fees for late payments or exceeding your credit limit can also increase your balance.</p>
+      <p>Understanding how interest is calculated and charged can help you make smarter repayment decisions.</p>
+      <a href="credit-card-debt.html" class="menu-cta">Learn More About Credit Card Interest</a>
+    </div>
+
+    <!-- What Happens If You Miss Credit Card Payments? -->
+    <div class="section">
+      <h2>Consequences of Missing Credit Card Payments</h2>
+      <p>Missing payments can lead to:</p>
+      <ul>
+        <li>❗ Increased interest rates and fees</li>
+        <li>📉 Damage to your credit score</li>
+        <li>☎️ Contact from debt collectors</li>
+        <li>⚖️ Potential legal action and CCJs</li>
+        <li>💸 Financial stress and difficulty accessing future credit</li>
+      </ul>
+      <p>If you are struggling to make payments, it’s important to act quickly and seek help rather than ignoring the problem.</p>
+      <a href="free-debt-help.html" class="menu-cta">Get Free Help Today</a>
+    </div>
+
+    <!-- How to Prioritise Credit Card Debt -->
+    <div class="section">
+      <h2>Should You Prioritise Credit Card Debt Over Other Debts?</h2>
+      <p>Credit card debt is typically unsecured but can be very costly due to high interest rates. When deciding which debts to pay first, consider:</p>
+      <ul>
+        <li>Which debts have the highest interest rates</li>
+        <li>Any debts with imminent legal action</li>
+        <li>Your overall financial situation and income</li>
+      </ul>
+      <p>We recommend seeking tailored advice to prioritise debts effectively and avoid worsening your financial position.</p>
+      <a href="enquire1.html" class="menu-cta">Speak to an Adviser</a>
+    </div>
+
+    <!-- Debt Consolidation Options -->
+    <div class="section">
+      <h2>Is Debt Consolidation Right for Your Credit Card Debt?</h2>
+      <p>Debt consolidation involves combining multiple debts into a single loan with a potentially lower interest rate. This can make repayments more manageable but may not suit everyone.</p>
+      <p>Consider debt consolidation if:</p>
+      <ul>
+        <li>You have multiple credit cards with high balances</li>
+        <li>You can secure a consolidation loan with a lower rate</li>
+        <li>You have steady income and good credit to qualify</li>
+      </ul>
+      <p>Beware: consolidation loans increase your overall borrowing and could put assets at risk if secured.</p>
+      <a href="consolidationloannatwest.html" class="menu-cta">Explore Debt Consolidation Loans</a>
+    </div>
+
+    <!-- Credit Card Debt and Your Credit Report -->
+    <div class="section">
+      <h2>How Does Credit Card Debt Affect Your Credit Report?</h2>
+      <p>Late payments, defaults, and CCJs linked to credit card debt appear on your credit report and impact your credit score, making it harder and more expensive to get future credit.</p>
+      <p>It’s vital to address credit card debt early to prevent long-term damage to your financial reputation.</p>
+      <a href="what-is-an-iva.html" class="menu-cta">Protect Your Credit with an IVA</a>
+    </div>
+
+    <!-- Dealing With Multiple Credit Card Debts -->
+    <div class="section">
+      <h2>Managing Multiple Credit Card Debts</h2>
+      <p>If you have credit card debts across several providers, it can be hard to keep track of payments and interest rates. Solutions like IVAs and DMPs help consolidate your debts into one payment plan, simplifying management.</p>
+      <p>We can help you combine multiple credit card debts, negotiate with creditors, and reduce your overall payments.</p>
+      <a href="compare-solutions.html" class="menu-cta">Compare Debt Solutions</a>
+    </div>
+
+    <!-- Impact of Credit Card Debt on Mental Health -->
+    <div class="section">
+      <h2>How Credit Card Debt Affects Your Mental Health</h2>
+      <p>Dealing with credit card debt can cause anxiety, depression, stress, and other mental health challenges. Persistent calls and letters from collectors can exacerbate this.</p>
+      <p>We provide compassionate support and can refer you to specialist mental health services if needed while helping you manage your debts.</p>
+      <a href="free-debt-help.html" class="menu-cta">Get Support Now</a>
+    </div>
+
+    <!-- FAQs Expanded -->
+    <div class="section">
+      <h2>More FAQs About Credit Card Debt</h2>
+      <h3>What is the difference between secured and unsecured credit card debt?</h3>
+      <p>Credit card debt is unsecured, meaning the lender does not have collateral. This differs from secured debt like mortgages where property can be repossessed.</p>
+
+      <h3>Can I include credit card debt in a bankruptcy?</h3>
+      <p>Yes. Bankruptcy can discharge most unsecured debts, including credit card balances.</p>
+
+      <h3>Will stopping payments on credit cards hurt my credit score?</h3>
+      <p>Yes, missed payments negatively affect your score, but managing the situation through formal solutions is better than ignoring it.</p>
+
+      <h3>How long does it take to clear credit card debt through an IVA?</h3>
+      <p>Typically 5 to 6 years, after which remaining debt is written off.</p>
+
+      <h3>Can I still get credit with an IVA or DRO?</h3>
+      <p>These solutions affect your credit rating and may limit your ability to get new credit during the agreement and for some time after.</p>
+    </div>
+    <!-- Negotiating with Credit Card Companies -->
+    <div class="section">
+      <h2>How to Negotiate With Credit Card Companies</h2>
+      <p>If you’re struggling with credit card debt, negotiating directly with your credit card provider or debt collectors may help reduce payments, freeze interest, or agree on a settlement.</p>
+      <p>Tips for successful negotiation:</p>
+      <ul>
+        <li>Be honest about your financial situation</li>
+        <li>Request interest freezes or reduced payments</li>
+        <li>Ask if they will accept a lump-sum settlement for less than owed</li>
+        <li>Get any agreement in writing</li>
+      </ul>
+      <p>Keep in mind, not all creditors will negotiate, and formal debt solutions may provide better protection.</p>
+      <a href="enquire1.html" class="menu-cta">Get Help Negotiating Credit Card Debt</a>
+    </div>
+
+    <!-- Budgeting Tips for Managing Credit Card Debt -->
+    <div class="section">
+      <h2>Effective Budgeting Tips to Manage Credit Card Debt</h2>
+      <p>Creating and sticking to a budget is key to managing and eventually clearing credit card debt. Here’s how to get started:</p>
+      <ul>
+        <li>Track your income and all monthly expenses</li>
+        <li>Prioritise essential bills and minimum credit card payments</li>
+        <li>Cut non-essential spending where possible</li>
+        <li>Use budgeting apps or tools to stay on track</li>
+        <li>Consider speaking to a debt adviser for personalised plans</li>
+      </ul>
+      <a href="free-debt-help.html" class="menu-cta">Get Personalised Budget Help</a>
+    </div>
+
+    <!-- Legal Protections When You Have Credit Card Debt -->
+    <div class="section">
+      <h2>Your Legal Rights When Facing Credit Card Debt</h2>
+      <p>You have important legal protections against unfair treatment from credit card lenders and debt collectors. For example:</p>
+      <ul>
+        <li>Debt collectors cannot harass or threaten you unlawfully</li>
+        <li>You can request proof of debt</li>
+        <li>Debt collectors must follow the FCA’s rules</li>
+        <li>You have the right to challenge unfair lending or treatment via complaints</li>
+      </ul>
+      <p>If you feel your rights have been violated, we can help you make formal complaints or take legal action if needed.</p>
+      <a href="complaints.html" class="menu-cta">Know Your Rights & File Complaints</a>
+    </div>
+
+    <!-- Credit Card Debt and Joint Accounts -->
+    <div class="section">
+      <h2>Managing Credit Card Debt on Joint Accounts</h2>
+      <p>Joint credit card accounts mean both parties are legally responsible for the debt. If payments are missed, both credit reports are affected.</p>
+      <p>It’s important to communicate openly with your co-account holder and consider joint solutions such as:</p>
+      <ul>
+        <li>Joint Debt Management Plans</li>
+        <li>Joint IVA agreements</li>
+        <li>Mutual budgeting and repayment strategies</li>
+      </ul>
+      <a href="jointloansnatwest.html" class="menu-cta">Explore Joint Debt Solutions</a>
+    </div>
+
+    <!-- Impact of Credit Card Debt on Mortgage Applications -->
+    <div class="section">
+      <h2>How Credit Card Debt Affects Your Mortgage Application</h2>
+      <p>High levels of credit card debt can negatively impact your ability to get a mortgage or remortgage. Lenders view high unsecured debt as a risk.</p>
+      <p>Improving your debt situation by consolidating debts or entering formal repayment plans can boost your mortgage eligibility.</p>
+      <a href="mortgage-arrears.html" class="menu-cta">Learn About Mortgage Arrears & Debt</a>
+    </div>
+
+    <!-- Credit Card Debt and Self-Employed Individuals -->
+    <div class="section">
+      <h2>Credit Card Debt Help for Self-Employed People</h2>
+      <p>Being self-employed can make credit card debt management more challenging due to variable income.</p>
+      <p>We understand these unique challenges and offer flexible solutions tailored to fluctuating incomes, including payment plans that adjust over time.</p>
+      <a href="self-employed-debt.html" class="menu-cta">Get Help for Self-Employed Debt</a>
+    </div>
+
+    <!-- Credit Card Debt and Council Tax Arrears -->
+    <div class="section">
+      <h2>Handling Credit Card Debt Alongside Council Tax Arrears</h2>
+      <p>If you have both credit card debt and council tax arrears, managing repayments can be difficult. Prioritising unsecured credit card debt alongside council tax is crucial to avoid bailiff action or legal proceedings.</p>
+      <p>We can help coordinate payments and negotiate with both councils and credit providers.</p>
+      <a href="council-tax-debt.html" class="menu-cta">Get Council Tax Debt Help</a>
+    </div>
+
+    <!-- Credit Card Debt and Gambling Issues -->
+    <div class="section">
+      <h2>When Credit Card Debt Is Linked to Gambling Problems</h2>
+      <p>Unfortunately, credit cards are sometimes used to fund gambling addictions, leading to significant debt. Recognising the problem early is vital.</p>
+      <p>We offer confidential support and can connect you to specialist gambling addiction services alongside debt solutions.</p>
+      <a href="gambling-debt.html" class="menu-cta">Help with Gambling-Related Debt</a>
+    </div>
+    <!-- How Credit Card Debt Impacts Your Financial Future -->
+    <div class="section">
+      <h2>The Long-Term Impact of Credit Card Debt on Your Financial Health</h2>
+      <p>Unresolved credit card debt doesn’t just affect your present finances—it can have lasting consequences. Poor credit scores can make renting a home, getting a mortgage, or even securing a job more difficult.</p>
+      <p>By tackling your credit card debt early, you can rebuild your credit and improve your financial opportunities over time.</p>
+      <a href="what-we-do.html" class="menu-cta">See How We Can Help Your Financial Future</a>
+    </div>
+
+    <!-- Credit Card Debt and Your Employment Prospects -->
+    <div class="section">
+      <h2>Does Credit Card Debt Affect Your Employment?</h2>
+      <p>While employers generally cannot see your credit report, certain sectors—especially financial services—may require credit checks as part of background screening. Significant debt problems can be a red flag.</p>
+      <p>Managing your credit card debt responsibly can help you avoid employment issues and maintain professional opportunities.</p>
+      <a href="free-debt-help.html" class="menu-cta">Get Support to Manage Your Debt</a>
+    </div>
+
+    <!-- Using IVA Companies for Credit Card Debt Solutions -->
+    <div class="section">
+      <h2>Choosing an IVA Company for Your Credit Card Debt</h2>
+      <p>There are many IVA companies, but it’s crucial to pick one you trust to guide you fairly and effectively through the process.</p>
+      <p>We work alongside reputable <a href="ivacompanies.html">IVA companies</a> to ensure you get the best advice tailored to your circumstances.</p>
+      <a href="iva.html" class="menu-cta">Find Out More About IVA Companies</a>
+    </div>
+
+    <!-- Credit Card Debt Help in Manchester and UK-wide -->
+    <div class="section">
+      <h2>Credit Card Debt Help in Manchester and Across the UK</h2>
+      <p>Whether you’re in Manchester, London, or anywhere in the UK, our team offers confidential, expert advice on credit card debt solutions.</p>
+      <p>We understand local challenges and connect you to debt advisers near you or provide remote support.</p>
+      <a href="debt-help-manchester.html" class="menu-cta">Get Credit Card Debt Help Near You</a>
+    </div>
+
+    <!-- How We Help You Avoid Bailiff Action on Credit Card Debt -->
+    <div class="section">
+      <h2>Stopping Bailiffs From Enforcing Credit Card Debt</h2>
+      <p>If a court grants a CCJ against you, bailiffs may be sent to collect outstanding credit card debt. This can be stressful and invasive.</p>
+      <p>We help clients legally stop bailiff action by arranging repayment plans, Breathing Space, or formal insolvency solutions.</p>
+      <a href="stop-bailiffs.html" class="menu-cta">Stop Bailiffs Taking Your Property</a>
+    </div>
+
+    <!-- Credit Card Debt and Utility Bills -->
+    <div class="section">
+      <h2>Managing Credit Card Debt Alongside Utility Bills</h2>
+      <p>Many people juggling credit card debt also struggle with utility bills like gas, electric, and water. Ignoring any of these debts can lead to disconnection or further financial penalties.</p>
+      <p>We offer comprehensive support for multiple debts, helping you prioritise and manage payments effectively.</p>
+      <a href="whatisutilitydebt.html" class="menu-cta">Get Help With Utility and Credit Card Debt</a>
+    </div>
+
+    <!-- The Role of StepChange and Other Alternatives -->
+    <div class="section">
+      <h2>StepChange and Other Credit Card Debt Alternatives</h2>
+      <p><a href="stepchange-alternatives.html">StepChange Debt Charity</a> is a well-known provider of free debt advice and solutions. However, there are many alternatives that might better suit your specific credit card debt situation.</p>
+      <p>We can help you explore all available options and choose the best fit.</p>
+      <a href="stepchange-alternatives.html" class="menu-cta">Explore Debt Help Alternatives</a>
+    </div>
+
+    <!-- Glossary: Common Terms Related to Credit Card Debt -->
+    <div class="section">
+      <h2>Glossary of Credit Card Debt Terms</h2>
+      <ul>
+        <li><strong>CCJ:</strong> County Court Judgment, a court order to repay debts.</li>
+        <li><strong>IVA:</strong> Individual Voluntary Arrangement, a formal debt solution.</li>
+        <li><strong>DMP:</strong> Debt Management Plan, an informal repayment plan.</li>
+        <li><strong>DRO:</strong> Debt Relief Order, a debt write-off option for low income and low debt.</li>
+        <li><strong>Breathing Space:</strong> A government scheme to pause creditor action temporarily.</li>
+      </ul>
+      <a href="compare-solutions.html" class="menu-cta">Compare Debt Solutions in Detail</a>
+    </div>
+
+    <!-- Final Call to Action -->
+    <div class="section">
+      <h2>Ready to Take Control of Your Credit Card Debt?</h2>
+      <p>Don’t wait until things get worse. Contact Fresh Start Debt Support now for a free, no-obligation consultation. Our expert advisers will work with you to find the best debt solution tailored to your needs.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Credit Card Debt Help Today</a>
+    </div>
+
+    <!-- Using Credit Card Debt Calculators -->
+    <div class="section">
+      <h2>Estimate Your Credit Card Debt Using Our Calculator</h2>
+      <p>Understanding how quickly your debt is growing can motivate change. Use our <a href="debt-calculator.html">debt calculator</a> to estimate interest accumulation and repayment timelines.</p>
+      <p>This tool helps you visualise the benefits of different repayment plans or solutions.</p>
+      <a href="debt-calculator.html" class="menu-cta">Try Our Credit Card Debt Calculator</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fresh Start Debt Support. This site does not offer regulated financial advice. For formal advice, speak to an FCA-authorised debt adviser. We are not affiliated with any credit card companies.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="whatsapp-button" href="https://wa.me/447000000000" target="_blank" rel="noopener noreferrer">
+      💬 Message Us on WhatsApp
+    </a>
+
+  </div> <!-- end container -->
 </body>
 </html>
