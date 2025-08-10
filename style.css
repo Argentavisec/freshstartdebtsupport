@@ -176,6 +176,13 @@ ul {
     padding-left: 20px;
   }
   .menu-cta {
-    width: 55vw;
+    width: 90vw;
+  }
+}
+@media (max-width: 768px) {
+  .menu-cta {
+    width: 140px; /* Adjust width for mobile */
+    font-size: 14px; /* Slightly smaller font */
+    padding: 8px 12px; /* Adjust padding for better fit */
   }
 }
