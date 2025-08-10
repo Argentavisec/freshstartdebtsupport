@@ -8,206 +8,180 @@ body {
   min-height: 100vh;
 }
 
+/* Banner styles */
 .banner {
   background: #4CAF50;
-  padding: 20px;
+  padding: 15px 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 15px;
 }
 
 .banner img {
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-.banner h1 {
-  color: #fff;
-  font-size: 28px;
-  margin: 0;
-}
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  height: 50px;
+  height: 60px;
+  width: auto;
 }
 
 .site-name {
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
+/* Menu button */
 .btn-menu {
-  margin-top: 10px;
+  margin: 20px auto 10px;
   background: #4CAF50;
   color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 6px;
+  border: 3px solid #4CAF50;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  transition: background 0.3s, border-color 0.3s;
+  display: block;
+  width: fit-content;
+  text-align: center;
 }
 
 .btn-menu:hover {
-  background: #45a045;
+  background: #3d8e3d;
+  border-color: #3d8e3d;
 }
 
+/* Side menu container */
 .menu-content {
-  display: none;
+  display: flex;
   flex-direction: column;
-  background: #4CAF50;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 5px;
-  width: fit-content;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: #5eb864; /* slightly lighter green */
+  padding: 15px 25px;
+  margin: 0 auto 40px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  user-select: none;
 }
 
+/* Sections inside menu */
 .menu-section {
-  padding: 10px 0;
-  border-top: 1px solid #ffffff44;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #4ca53f;
+  padding-bottom: 12px;
 }
 
+/* Section headers */
 .menu-section h4 {
-  color: #fff;
-  font-size: 16px;
-  margin: 0 0 5px 12px;
-  font-weight: bold;
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
-.menu-content a {
-  display: block;
+/* Links container for each section */
+.menu-section .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+}
+
+/* Menu links */
+.menu-section .links a {
   color: white;
   text-decoration: none;
-  padding: 6px 12px;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: text-decoration 0.3s;
 }
 
-.menu-content a:hover {
-  background: #45a045;
+.menu-section .links a:hover {
   text-decoration: underline;
 }
 
-.menu-cta {
+/* "Check If You Qualify" button top left */
+.check-qualify-btn {
+  position: fixed;
+  top: 80px;
+  left: 15px;
   background: #a5e6b0;
-  color: #000 !important;
-  font-weight: bold;
-  padding: 10px 16px;
-  margin: 12px auto;
-  border-radius: 5px;
-  width: 200px;
-  font-size: 16px;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-  transition: background 0.3s;
-}
-
-.menu-cta:hover {
-  background: #88d292;
-}
-
-.container {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  flex: 1;
-}
-
-.section {
-  background: #e9f5ec;
+  color: #000;
+  font-weight: 700;
+  padding: 12px 20px;
   border-radius: 8px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-footer {
-  background: #4CAF50;
-  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  cursor: pointer;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  width: fit-content;
+  z-index: 1000;
+  transition: background 0.3s;
+  user-select: none;
 }
 
-h1, h2 {
-  color: #4CAF50;
-}
-
-ul {
-  margin-left: 20px;
+.check-qualify-btn:hover {
+  background: #88d292;
 }
 
 /* WhatsApp floating button */
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: #25D366;
   color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
+  font-weight: 700;
+  padding: 14px 22px;
+  border-radius: 40px;
   font-size: 16px;
   z-index: 999;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
   transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .whatsapp-button:hover {
   background-color: #1ebe5b;
 }
 
-/* Mobile styles */
+/* Responsive styles */
 @media screen and (max-width: 600px) {
-  .top-bar {
+  .banner {
     flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .banner img {
+    height: 50px;
+  }
+
+  .site-name {
+    font-size: 18px;
     text-align: center;
   }
+
   .menu-content {
     width: 90%;
+    padding: 15px 20px;
   }
-}
 
-.testimonial {
-  background-color: #f5f5f5;
-  border-left: 4px solid #4caf50; /* You can match your brand colour */
-  padding: 1.5em;
-  margin-bottom: 1.5em;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
+  .menu-section .links {
+    justify-content: center;
+  }
 
-.testimonial p {
-  margin: 0.5em 0;
-  line-height: 1.6;
-}
-
-.testimonial em {
-  font-style: italic;
-  color: #444;
-  display: block;
-}
-
-.testimonial strong {
-  display: block;
-  margin-top: 0.5em;
-  color: #333;
+  .check-qualify-btn {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 10px 18px;
+  }
 }
