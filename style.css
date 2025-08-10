@@ -1,118 +1,129 @@
-/* ----------------
-  GENERAL PAGE STYLES
-------------------*/
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   color: #222;
+  line-height: 1.6;
 }
 
-a {
-  color: #3a5f3a;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #2a4a2a;
-  text-decoration: none;
-}
-
-.container {
-  max-width: 960px;
-  margin: 30px auto;
-  padding: 0 15px;
-}
-
-/* ----------------
-  HEADER / BANNER
-------------------*/
-
+/* Banner with centered logo and site name */
 .banner {
   background-color: #399639;
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
   color: white;
-  font-weight: bold;
-  font-size: 1.3rem;
-  position: relative;
 }
 
 .banner .top-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 }
 
 .banner .logo {
-  max-width: 90px;
-  margin-bottom: 8px;
+  max-width: 80px;
+  height: auto;
 }
 
-/* ----------------
-  MENU & CTA BUTTONS
-------------------*/
+.banner .site-name {
+  font-weight: 700;
+  font-size: 22px;
+}
 
-/* Container for menu button and CTA */
+/* Container for main content */
+.container {
+  max-width: 900px;
+  margin: 20px auto 60px auto;
+  padding: 0 20px;
+}
+
+/* Sections styling */
+.section {
+  background-color: #e7f3e7;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.section h1, .section h2, .section h3 {
+  color: #399639;
+  margin-top: 0;
+}
+
+.section a.menu-cta {
+  display: inline-block;
+  background-color: #a0d695;
+  color: black !important;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+}
+
+.section a.menu-cta:hover {
+  background-color: #8ac779;
+}
+
+/* Menu button centered above menu */
 #menu-placeholder {
   text-align: center;
-  margin: 20px 0 35px 0;
-  position: relative;
-  z-index: 1100;
+  margin: 20px 0 10px 0;
 }
 
-/* Menu button style */
-.btn-menu, #menuButton {
-  background-color: #2f6b2f;
+#menuButton {
+  background-color: #2e6b2e;
   color: white;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 16px;
   border: none;
-  padding: 12px 25px;
-  font-weight: 600;
-  font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   transition: background-color 0.3s ease;
-  user-select: none;
 }
 
-.btn-menu:hover, #menuButton:hover {
-  background-color: #246324;
+#menuButton:hover {
+  background-color: #267326;
 }
 
-/* CTA button below menu button */
+/* CTA button above menu */
 .menu-cta {
   display: inline-block;
-  background-color: #a6d7a6;
-  padding: 12px 30px;
-  font-weight: 700;
-  font-size: 1rem;
-  border-radius: 8px;
-  margin-top: 12px;
+  background-color: #a0d695;
   color: black !important;
-  box-shadow: 1.5px 1.5px 6px rgba(0,0,0,0.2);
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 15px auto 25px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-decoration: none;
 }
 
 .menu-cta:hover {
-  background-color: #8bc98b;
+  background-color: #8ac779;
 }
 
-/* ----------------
-  MENU CONTENT STYLES
-------------------*/
-
-/* Hide menu by default */
+/* Menu dropdown container */
 .menu-content {
-  display: none;
+  display: none; /* hidden initially */
+  flex-direction: column;
   background-color: #399639;
   max-width: 400px;
-  margin: 20px auto 40px auto;
+  margin: 0 auto 40px auto;
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(0,0,0,0.25);
   padding: 20px 25px;
@@ -120,22 +131,28 @@ a:hover {
   font-size: 14px;
   text-align: left;
   user-select: none;
-  z-index: 1050;
   position: relative;
+  z-index: 1050;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 /* Show menu when toggled */
-.menu-content.show {
-  display: block;
+.menu-content[style*="flex"] {
+  display: flex !important;
 }
 
-/* Menu sections stacked vertically */
+/* Stack menu sections vertically */
 .menu-section {
-  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255,0.25);
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
+/* Remove border and margin on last section */
 .menu-section:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -152,13 +169,12 @@ a:hover {
   color: white;
 }
 
-/* Menu links */
+/* Menu links stacked vertically */
 .menu-section a {
-  display: block;
+  padding: 6px 0;
   color: white !important;
-  font-weight: 400;
   text-decoration: none;
-  padding: 5px 0;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
@@ -167,22 +183,26 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ----------------
-  RESPONSIVE
-------------------*/
+/* WhatsApp floating button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white !important;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+  z-index: 1100;
+}
 
-@media (max-width: 480px) {
-  .banner {
-    font-size: 1.1rem;
-  }
-  .banner .logo {
-    max-width: 70px;
-  }
-  #menu-placeholder {
-    margin: 15px 0 30px 0;
-  }
-  .menu-content {
-    width: 90%;
-    padding: 15px 20px;
-  }
+.whatsapp-button:hover {
+  background-color: #1ebe57;
 }
