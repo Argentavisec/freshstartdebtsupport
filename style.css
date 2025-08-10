@@ -7,15 +7,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center; /* Center all content horizontally */
+  align-items: center; /* Center all page content horizontally */
   text-align: center;
 }
 
+/* Main container with fixed max-width and centered */
 .container {
   padding: 20px;
   max-width: 800px;
   width: 100%;
   flex: 1;
+  margin: 0 auto;
+  text-align: left; /* Keep text left-aligned inside */
 }
 
 /* Banner/Header */
@@ -60,69 +63,127 @@ body {
 }
 
 /* Menu button */
-.btn-menu, #menuButton {
-  margin: 20px auto 10px;
+#menuButton {
+  margin: 20px auto 12px;
   background: #4CAF50;
   color: #fff;
   border: none;
-  padding: 12px 28px;
+  padding: 14px 36px;
   font-size: 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
   display: block;
   text-align: center;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
-.btn-menu:hover, #menuButton:hover {
+#menuButton:hover {
   background: #45a045;
 }
 
-/* CTA buttons styled exactly like the "Get Started for Free" button */
+/* Menu content - vertical green menu centered and narrower */
+.menu-content {
+  display: none;
+  flex-direction: column;
+  background: #4CAF50;
+  padding: 24px 36px;
+  margin: 12px auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Menu sections spacing and borders */
+.menu-section {
+  padding: 18px 0;
+  border-top: 1px solid #ffffff44;
+}
+
+.menu-section:first-child {
+  border-top: none;
+}
+
+/* Menu section headings */
+.menu-section h4 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Menu links */
+.menu-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.menu-content a:hover,
+.menu-content a:focus {
+  background: #3d9a36;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Section boxes */
+.section {
+  background: #e9f5ec;
+  border-radius: 14px;
+  padding: 36px 44px;
+  margin-top: 36px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Headings */
+h1, h2 {
+  color: #4CAF50;
+  margin-bottom: 18px;
+}
+
+ul {
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+/* CTA Buttons styled like "Get Started for Free" */
 .menu-cta {
   background: #a5e6b0;
   color: #000 !important;
-  font-weight: bold;
-  padding: 14px 32px;
-  margin: 16px auto;
-  border-radius: 12px;
-  width: 260px;
-  font-size: 18px;
+  font-weight: 900;
+  padding: 16px 40px;
+  margin: 20px auto;
+  border-radius: 18px;
+  width: 280px;
+  font-size: 20px;
   text-align: center;
   display: block;
   text-decoration: none;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
   transition: background 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  letter-spacing: 0.5px;
 }
 
 .menu-cta:hover {
   background: #88d292;
-  box-shadow: 0 8px 14px rgba(0,0,0,0.35);
-}
-
-/* Sections */
-.section {
-  background: #e9f5ec;
-  border-radius: 12px;
-  padding: 30px 40px;
-  margin-top: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: left; /* Text left aligned inside sections for readability */
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1, h2 {
-  color: #4CAF50;
-  margin-bottom: 16px;
-}
-
-ul {
-  margin-left: 20px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.45);
 }
 
 /* Footer */
@@ -143,67 +204,17 @@ footer {
   background-color: #25D366;
   color: white;
   font-weight: bold;
-  padding: 14px 22px;
+  padding: 14px 24px;
   border-radius: 50px;
   font-size: 18px;
   z-index: 999;
   text-decoration: none;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
 }
 
 .whatsapp-button:hover {
   background-color: #1ebe5b;
-}
-
-/* Menu content - vertical green menu */
-.menu-content {
-  display: none;
-  flex-direction: column;
-  background: #4CAF50;
-  padding: 24px 32px;
-  margin: 16px auto;
-  width: 320px;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-  text-align: left;
-  font-size: 16px;
-}
-
-.menu-section {
-  padding: 16px 0;
-  border-top: 1px solid #ffffff44;
-}
-
-.menu-section:first-child {
-  border-top: none;
-}
-
-.menu-section h4 {
-  color: #fff;
-  font-size: 18px;
-  margin: 0 0 12px 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* Menu links */
-.menu-content a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  font-size: 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.menu-content a:hover,
-.menu-content a:focus {
-  background: #3d9a36;
-  text-decoration: none;
-  outline: none;
 }
 
 /* Mobile styles */
@@ -214,7 +225,7 @@ footer {
   }
   .menu-content {
     width: 90%;
-    padding: 20px;
+    padding: 24px 20px;
   }
   .container {
     padding: 15px;
@@ -222,6 +233,6 @@ footer {
   }
   .menu-cta {
     width: 90%;
-    padding: 14px 0;
+    padding: 16px 0;
   }
 }
