@@ -2,187 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bank Overdraft Debt Help | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with bank overdraft fees? Learn how to reduce overdraft debt, stop daily charges, and get help from Fresh Start Debt Support in the UK." />
-  <meta name="keywords" content="bank overdraft debt UK, overdraft help, stop overdraft interest, reduce overdraft charges, overdraft repayment plan">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fresh Start Debt Support | Bank Overdraft Debt Help UK | Starting from £69 per month</title>
+  <meta name="description" content="Struggling with bank overdraft debt? Get UK help to stop fees, set one affordable payment, and prioritise council tax debt and essentials. See if you qualify today." />
+  <meta name="keywords" content="bank overdraft debt, overdraft charges, overdraft help UK, council tax debt, DMP, IVA, DRO, affordable repayments, stop debt collectors" />
+  <link rel="stylesheet" href="style.css" />
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul { margin-left: 20px; }
-    .trust-badges {
-      background: #dff3e2;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      margin: 20px auto;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .trust-badges h3 {
-      margin: 0 0 10px;
-      color: #2d7a3e;
-    }
-    .trust-badges p {
-      font-weight: bold;
-      color: #2d7a3e;
-      margin: 5px 0;
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
-    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0PJ0YPPJST');
   </script>
+
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- Header / Banner -->
   <div class="banner">
     <div class="top-bar">
       <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
@@ -190,167 +30,253 @@
     </div>
   </div>
 
-  <!-- Menu Toggle Button -->
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
+  <!-- Menu Include -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
+  </script>
 
-  <!-- CTA Button -->
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-
-  <!-- Dropdown Menu -->
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
-
-  <!-- Main Content -->
+  <!-- Main Content Container -->
   <div class="container">
-<div class="section">
-  <h1>Help With Overdraft Debt in the UK</h1>
-  <p>Are you stuck in your overdraft and can’t get out? Overdrafts were designed for short-term use — but many people end up using them as part of their monthly income. With high fees, interest, and constant pressure from the bank, overdraft debt can quickly become overwhelming. But there is a way out — and we’re here to help.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Overdraft Help Now</a>
-</div>
 
-<div class="section">
-  <h2>Why Overdrafts Are So Hard to Clear</h2>
-  <p>Banks charge daily or monthly fees just for using your overdraft — even if you’re only slightly overdrawn. Interest rates of 40% or more are not uncommon, and once you rely on it to pay bills or survive the month, it becomes a trap.</p>
-  <ul>
-    <li>You’re charged interest every month, even if you don’t spend more</li>
-    <li>Going over your limit triggers unarranged overdraft fees</li>
-    <li>It impacts your credit file and financial stability</li>
-    <li>You may face collection letters or account closure</li>
-  </ul>
-</div>
+    <!-- Section 1 -->
+    <div class="section">
+      <h1>Bank Overdraft Debt Help: Stop Charges, Stabilise Your Budget & Protect Priority Bills</h1>
+      <p>Constant overdraft fees can turn a manageable shortfall into a monthly struggle. If your balance never seems to recover, transactions are declined, and you’re worried about <strong>council tax debt</strong> or energy bills falling behind, you’re in the right place.</p>
+      <p>At <strong>Fresh Start Debt Support</strong>, we help people across the UK bring <em>bank overdraft debt</em> under control—reducing pressure, setting one affordable payment where suitable, and making sure essentials like <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a> and <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utilities</a> are protected first.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Overdraft Debt Check</a>
+      <p>New here? See <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">what we do</a> and browse practical steps on our <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>.</p>
+    </div>
 
-<div class="section">
-  <h2>Can I Include My Overdraft in a Debt Solution?</h2>
-  <p>Yes. Overdrafts are considered unsecured debts — meaning they can be included in solutions like:</p>
-  <ul>
-    <li><a href="iva.html">IVA (Individual Voluntary Arrangement)</a> – One monthly payment, freeze interest, and write off remaining debt after 5 years</li>
-    <li><a href="dmp.html">Debt Management Plan (DMP)</a> – Reduce overdraft repayments based on your budget</li>
-    <li><a href="dro.html">Debt Relief Order (DRO)</a> – If you’re on low income and have less than £30,000 total debt</li>
-  </ul>
-  <p>We’ll help you include the overdraft along with any credit cards, loans, or payday debt you may have.</p>
-</div>
+    <!-- Section 2 -->
+    <div class="section">
+      <h2>Why Bank Overdraft Debt Spirals (and How to Slow It Down)</h2>
+      <p>Overdrafts are sold as flexible buffers, but repeated fees and interest can trap you below zero. Each month’s charges reduce your next month’s spending power, making it harder to keep up with essentials and nudging you toward more borrowing—cards, catalogues, payday loans or loans.</p>
+      <ul>
+        <li>🔄 <strong>Rolling charges</strong> – interest and fees eat into your income every month.</li>
+        <li>💳 <strong>Stacked debts</strong> – cards, <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">catalogues</a>, and BNPL add more pressure.</li>
+        <li>⚡ <strong>Essentials at risk</strong> – falling behind on <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utility bills</a> or <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a> creates bigger problems.</li>
+        <li>📞 <strong>Collection contact</strong> – calls and letters increase stress and mistakes.</li>
+      </ul>
+      <p>Our first step is to <em>stabilise</em> your situation: reduce contact pressure, protect priority bills, and build a monthly plan you can actually keep.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for Immediate Help</a>
+      <p>Useful reads: <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a> and <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>.</p>
+    </div>
 
-<div class="section">
-  <h2>What If I’m Being Chased By My Bank?</h2>
-  <p>Banks like <a href="hsbc.html">HSBC</a>, <a href="lloyds.html">Lloyds</a>, <a href="natwest.html">NatWest</a>, or <a href="barclays.html">Barclays</a> may send overdraft debt to collection agencies if your account is closed or defaulted. These debts can also be sold to third-party collectors such as <a href="link-financial.html">Link Financial</a> or <a href="lowell.html">Lowell Financial</a>.</p>
-  <p>We’ll stop all contact from creditors once your plan is in place. You don’t need to deal with them alone.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop the Stress — Get Help</a>
-</div>
+    <!-- Section 3 -->
+    <div class="section">
+      <h2>First Steps: Stabilise, Budget, Choose a Route</h2>
+      <h3>Stabilise Contact & Reduce Stress</h3>
+      <p>When banks or agencies are chasing overdraft arrears, learn how the process works at <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a> and use practical steps at <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a> to communicate clearly and calmly.</p>
+      <h3>Build a Realistic Budget</h3>
+      <p>Start with essentials—housing, <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a>, <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utilities</a>, food and travel. Then see what’s genuinely left for non-priority debts using our <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a>.</p>
+      <h3>Pick the Right Path</h3>
+      <p>Depending on your income, assets and total debts, you may benefit from a flexible informal plan or a formal arrangement. Compare routes here:</p>
+      <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html" class="menu-cta">Compare IVA vs DMP vs DRO</a>
+    </div>
 
-<div class="section">
-  <h2>Can I Keep My Bank Account If I Go Into a Debt Plan?</h2>
-  <p>If your overdraft is included in a debt solution, you may need to switch to a new basic bank account — one without an overdraft. This prevents further charges and gives you a fresh start without surprise deductions.</p>
-  <p>We’ll guide you through opening a safe account and managing your money moving forward.</p>
-</div>
+    <!-- Section 4 -->
+    <div class="section">
+      <h2>Solutions That Can Include Bank Overdraft Debt</h2>
+      <p>Bringing all your non-priority debts—overdrafts, credit cards, catalogues and loans—into <em>one</em> payment often works best. It reduces charges, cuts admin and adds predictability.</p>
+      <ul>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/dmp.html">Debt Management Plan (DMP)</a> – informal and flexible; many creditors agree to freeze or reduce interest/charges.</li>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/iva.html">Individual Voluntary Arrangement (IVA)</a> – formal and legally binding; one affordable monthly payment and, at completion, remaining eligible unsecured debt may be written off.</li>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/dro.html">Debt Relief Order (DRO)</a> – for low income/low assets; debts are frozen for 12 months and then written off if your situation doesn’t improve.</li>
+      </ul>
+      <p>Not sure which fits? Read more about <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMPs</a>, <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVAs</a> and <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DROs</a>, or compare them all at <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare Solutions</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Eligibility Check</a>
+    </div>
 
-<div class="section">
-  <h2>Other Debts You Can Combine With Overdrafts</h2>
-  <p>We help people combine overdrafts with other types of debt every day, including:</p>
-  <ul>
-    <li><a href="credit-card-debt.html">Credit card debt</a></li>
-    <li><a href="loan-debt.html">Personal loans</a></li>
-    <li><a href="catalogue-debt.html">Catalogue debt</a></li>
-    <li><a href="payday-loan-debt.html">Payday loans</a></li>
-    <li><a href="council-tax-debt.html">Council tax arrears</a></li>
-  </ul>
-  <p>Instead of juggling 5–10 payments, you’ll make one payment each month, based on what you can afford — not what creditors demand.</p>
-</div>
+    <!-- Section 5 -->
+    <div class="section">
+      <h2>Priority vs Non-Priority: Where Overdrafts Fit (and Why Council Tax Debt Comes First)</h2>
+      <p>Overdrafts are normally <em>non-priority</em>. That means you should first protect essential living costs and priority bills such as <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax debt</a>, <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">rent</a>/<a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">mortgage</a>, and <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utilities</a>. Once essentials are safe, you can share a fair, affordable amount across non-priority debts via a structured plan.</p>
+      <ul>
+        <li>🏠 Keep the roof over your head—rent or mortgage first.</li>
+        <li>⚡ Keep energy and water on—utilities next.</li>
+        <li>🏛️ Avoid escalation—deal with <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a> promptly.</li>
+        <li>🧮 Use the <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a> to set a sustainable offer to overdraft and other non-priority creditors.</li>
+      </ul>
+      <p>This approach reduces risk and helps you stay in control month to month.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Prioritising My Budget</a>
+    </div>
 
-<div class="section">
-  <h2>Why Choose Fresh Start Debt Support?</h2>
-  <ul>
-    <li>✅ Fast, free support with no obligation</li>
-    <li>✅ Friendly and confidential service</li>
-    <li>✅ We deal with your creditors — you don’t have to</li>
-    <li>✅ Trusted by people across the UK</li>
-    <li>✅ Rated for clarity, honesty and support</li>
-  </ul>
-  <p>Don’t let your overdraft control your life. We’ll help you break free — with clear, expert guidance at every step.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Assessment</a>
-</div>
-    <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
-    </footer>
-    <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
+    <!-- Section 6 -->
+    <div class="section">
+      <h2>Overdraft Debt + Other Debts: Move to One Affordable Payment</h2>
+      <p>If you’re juggling multiple creditors, consolidating your efforts into one affordable payment can make a huge difference. We regularly help clients include:</p>
+      <ul>
+        <li>💳 <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a> and <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a></li>
+        <li>🏦 <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a> and <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a></li>
+        <li>🧾 <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a> and <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a></li>
+        <li>🏚️ <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a> and <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a> (prioritised appropriately)</li>
+        <li>💼 <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a> and <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax &amp; HMRC Debt</a></li>
+        <li>🎰 <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a></li>
+      </ul>
+      <p>Fewer surprises, less admin, and a clearer finish line.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Roll My Debts into One Plan</a>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <h2>If Your Bank Overdraft Debt Is with a Collector</h2>
+      <p>Banks sometimes pass overdraft arrears to collection agencies or solicitors. It’s stressful, but you still have rights and options. Start with the basics:</p>
+      <p><a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a> · <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a></p>
+      <p>We’ve also written about many well-known firms to help you understand how they work and how to respond:</p>
+      <p>
+        <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax</a> ·
+        <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+      </p>
+      <p>We’ll help you reply calmly, offer what’s affordable, and bring everything into one plan where suitable.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’m Being Chased — Help Me</a>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <h2>Direct Bank Payment Arrangements vs Formal Solutions</h2>
+      <h3>Direct Arrangement with Your Bank</h3>
+      <p>If your overdraft is modest and income steady, a bank may accept a staged repayment plan. This can help—but if other debts keep eating your budget, a direct plan may prove hard to sustain.</p>
+      <h3>When a Wider Plan Works Better</h3>
+      <p>Combining all non-priority debts into one affordable payment is often simpler and fairer for everyone. Explore <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a>, <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a> and <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DRO</a>, or compare at <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare Solutions</a>.</p>
+      <h3>Linking Overdrafts with Council Tax & Utilities</h3>
+      <p>Always protect essentials and priority bills first—especially <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax debt</a> and <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utility arrears</a>. Then share a fair amount across credit cards, catalogues and overdrafts.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find My Best Route</a>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <h2>Overdraft Debt & Your Wider Finances</h2>
+      <h3>Banks and Card Lenders</h3>
+      <p>Different lenders have different policies, so it helps to know how they operate. See our lender pages: <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>, <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>, <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>, <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>, <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>.</p>
+      <h3>Struggling with Other Debts Too?</h3>
+      <p>Add them into the same plan. Learn about <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">credit cards</a>, <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">loans</a>, <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">catalogues</a>, and BNPL like <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna</a>.</p>
+      <h3>Self-Employed or Variable Income?</h3>
+      <p>Fluctuating income needs flexible planning. If your business cash flow is involved, see <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>. We’ll shape a route that can handle ups and downs.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I Need Personalised Help</a>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section">
+      <h2>Can Bank Overdraft Debt Be Written Off?</h2>
+      <p>It can be included in formal solutions. For example, in an <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a>, remaining eligible unsecured debt may be written off at successful completion. In a <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DRO</a>, qualifying debts are frozen for 12 months and then written off if circumstances don’t improve.</p>
+      <p>Write-off is never automatic—it depends on your full picture (income, assets, household costs and total debts). Review the trade-offs at <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare Solutions</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Can Write Off Overdraft Debt</a>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="section">
+      <h2>Protecting Your Wellbeing While You Tackle Overdraft Debt</h2>
+      <p>Stress from money worries affects sleep, focus and relationships. We combine clear steps with steady support. Prefer to explore privately first? Try:</p>
+      <ul>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a></li>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a></li>
+        <li><a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a></li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Support for Debt &amp; Wellbeing</a>
+    </div>
+
+    <!-- Section 12 -->
+    <div class="section">
+      <h2>Success Path: From Overdrawn to Organised</h2>
+      <ol>
+        <li><strong>Reach out:</strong> Tell us what’s happening via the quick form below.</li>
+        <li><strong>Stabilise:</strong> Reduce contact pressure while we build your plan (see <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>).</li>
+        <li><strong>Plan:</strong> Use the <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a> to set a fair, sustainable payment.</li>
+        <li><strong>Choose:</strong> Decide between a <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a>, <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a> or <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DRO</a>.</li>
+        <li><strong>Implement:</strong> We help you set everything up and deal with creditors.</li>
+      </ol>
+      <p>Our aim: protect essentials, reduce charges, and make every month more manageable than the last.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Overdraft Debt Check</a>
+    </div>
+
+    <!-- Section 13 -->
+    <div class="section">
+      <h2>Bank Overdraft Debt FAQs</h2>
+
+      <h3>Can bank overdraft debt be included in a DMP or IVA?</h3>
+      <p>Often, yes. Overdrafts commonly sit alongside cards, catalogues and loans in a <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a> or a formal <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a>. Which route fits depends on your income, assets and total debts—compare at <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare Solutions</a>.</p>
+
+      <h3>Will a DMP freeze overdraft interest and charges?</h3>
+      <p>Many creditors freeze or reduce interest/charges in a <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a>, but it isn’t guaranteed. A formal <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a> is legally binding and usually freezes interest and charges across included debts.</p>
+
+      <h3>Should I prioritise overdraft repayments over council tax or energy bills?</h3>
+      <p>No. Protect essentials first—<a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a> and <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">utilities</a> are priorities. Then offer a fair amount to overdraft and other non-priority debts through a plan.</p>
+
+      <h3>My bank closed my account—what now?</h3>
+      <p>That’s scary, but there are “basic” bank accounts available. Meanwhile, you can still treat the overdrawn balance as part of a wider plan like a <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a> or <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a>, depending on eligibility.</p>
+
+      <h3>Can overdraft debt be written off?</h3>
+      <p>Potentially, within a <a href="https://www.freshstartdebtsupport.co.uk/iva.html">completed IVA</a> or an eligible <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DRO</a>. It depends on your circumstances.</p>
+
+      <h3>Collectors are threatening court—what should I do?</h3>
+      <p>Start with your rights at <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a> and practical actions at <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>. If specific firms are writing to you, see our guides (e.g., <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell</a>, <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft</a>, <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot</a>).</p>
+
+      <h4>Didn’t see your question?</h4>
+      <p>Ask us directly and get a personalised answer in minutes.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask an Overdraft Debt Question</a>
+    </div>
+
+    <!-- Section 14 -->
+    <div class="section">
+      <h2>Practical Tips to Escape the Overdraft Trap</h2>
+      <h3>1) Anchor Your Budget</h3>
+      <p>Use the <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a> to set a sustainable ceiling on what you can pay to non-priority debts. Consistency beats over-promising.</p>
+      <h3>2) Protect Priority Bills</h3>
+      <p>Guard <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">council tax</a>, <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">energy/water</a>, and housing first. This avoids costly escalation and keeps essentials running.</p>
+      <h3>3) Consolidate the Chaos</h3>
+      <p>One structured plan is easier to manage than several ad-hoc arrangements. Review <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">DMP</a>, <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVA</a> and <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DRO</a>.</p>
+      <h3>4) Reduce Contact Pressure</h3>
+      <p>Follow step-by-step guidance at <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a> to communicate on your terms and cut stress.</p>
+      <h3>5) Track Small Wins</h3>
+      <p>Every fee avoided helps your balance recover. See <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a> and our <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a> for quick wins.</p>
+      <p>We’ll help you turn monthly chaos into a simple, repeatable routine—one bill at a time.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Show Me My Best Options</a>
+      <p>We respect your data. Read our <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>.</p>
+    </div>
 
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20bank%20overdraft%20debt" class="whatsapp-button" target="_blank" rel="noopener">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
 </body>
 </html>
