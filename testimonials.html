@@ -93,5 +93,21 @@
     💬 Chat on WhatsApp
   </a>
 
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
+
 </body>
 </html>
