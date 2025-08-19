@@ -2,161 +2,325 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Link Financial Debt Help | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with Link Financial? Find out how to stop letters, calls, and get help through debt solutions like IVAs and DMPs." />
-  <meta name="keywords" content="Link Financial help, Link debt recovery, Link payment plan, IVA Link Financial, DMP Link Financial">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What is Link Financial? UK Debt Collector Guide | Stop Calls & Know Your Options</title>
+  <meta name="description" content="Who are Link Financial and why are they contacting you? A plain-English UK guide: what Link Financial does, your rights, Breathing Space, affordable plan options (DMP, IVA, DRO), and calm next steps. Start a free debt check." />
+  <meta name="keywords" content="Link Financial, Link Financial debt collectors, who are Link Financial, Link Financial UK, debt collection, stop debt collectors, DMP, IVA, DRO, breathing space" />
+  <link rel="stylesheet" href="style.css" />
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0PJ0YPPJST');
+  </script>
+
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+</head>
+<body>
+
+  <!-- Header / Banner -->
+  <div class="banner">
+    <div class="top-bar">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
+  </div>
+
+  <!-- Menu Include -->
+  <div id="menu-placeholder"></div>
+  <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
+  </script>
+
+  <!-- Main Content Container -->
+  <div class="container">
+
+    <!-- Section 1 -->
+    <div class="section">
+      <h1>What is Link Financial? The Calm UK Guide to Letters, Calls & Next Steps</h1>
+      <p>If you’ve had a text, letter or call from <strong>Link Financial</strong>, you’re not alone. Link Financial are a well-known UK debt collection company. They either collect on behalf of lenders or, quite often, they <em>buy</em> overdue accounts such as credit cards, personal loans and store cards, then try to recover the balance from you.</p>
+      <p>This page explains—in plain English—<em>who Link Financial are, why they’re contacting you, what they can and can’t do, and how to stop the pressure</em>. We’ll walk through your rights, sensible steps to check the debt, and affordable ways to get everything under control using solutions like a <a href="dmp.html">Debt Management Plan (DMP)</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a> where appropriate. We’ll also show how to use <a href="breathing-space.html">Breathing Space</a> to pause most creditor action while a plan is set up.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
+      <p>Want a quick refresher first? See <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and our general overview <a href="debt-collection.html">What is debt collection?</a></p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <h2>Who Exactly Are Link Financial?</h2>
+      <p><strong>Link Financial</strong> are a debt purchaser and collector. That means they may contact you about a balance originally from a bank or card brand (for example, accounts like those discussed on our lender pages: <a href="barclays.html">Barclays</a>, <a href="hsbc.html">HSBC</a>, <a href="natwest.html">NatWest</a>, <a href="lloyds.html">Lloyds</a>, <a href="capital-one.html">Capital One</a>). When lenders sell or outsource accounts, companies like Link Financial become your point of contact.</p>
+
+      <h3>Why Is Link Financial Contacting Me?</h3>
+      <ul>
+        <li>The original lender may have <em>sold</em> the debt to Link Financial.</li>
+        <li>They may be <em>collecting on behalf</em> of the lender or another agency.</li>
+        <li>They’ve matched your details to an account they believe you owe.</li>
+      </ul>
+      <p>Don’t panic. Contact from a collector doesn’t mean bailiffs, and it doesn’t remove your rights. There’s a calm, structured way to deal with this, which we outline below.</p>
+
+      <h3>Are They Legitimate?</h3>
+      <p>Debt purchasers/collectors like Link Financial are common in the UK credit market. The key is to <strong>verify the debt</strong>, protect your essential bills, and only agree to a <em>realistic</em> plan you can actually keep. Jumping into a payment you can’t sustain is the #1 mistake people tell us they regret later.</p>
+
+      <h3>What Types of Debts Do They Chase?</h3>
+      <p>Typical Link Financial accounts include <a href="credit-card-debt.html">credit cards</a>, <a href="loan-debt.html">personal loans</a>, store cards and sometimes <a href="overdraft-debt.html">overdrafts</a>. If yours is different, that’s fine—the follow-up steps are similar.</p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <h2>Your Rights When Link Financial Contacts You</h2>
+      <p>Collectors must treat you fairly. If you feel overwhelmed, remember: <strong>you are allowed breathing room</strong> to understand what’s being claimed, check your budget and decide your next step.</p>
+
+      <h3>Priority Bills Come First</h3>
+      <p>Before you talk money with Link Financial, protect your essentials: housing, energy and <a href="council-tax-debt.html">council tax</a>. See our guides to <a href="rent-arrears.html">rent</a>/<a href="mortgage-arrears.html">mortgage arrears</a> and <a href="utility-debt.html">utilities</a>. Once the essentials are safe, we can build a fair offer for everything else.</p>
+
+      <h3>You Can Ask for Information</h3>
+      <p>You can request details of the account—original lender, balance and any interest/charges added. If it’s a regulated credit agreement (like a card or loan), you can also request a copy of the agreement. We can help you understand what’s reasonable and what to expect.</p>
+
+      <h3>Use Breathing Space If Needed</h3>
+      <p><a href="breathing-space.html">Breathing Space</a> can pause most interest, fees and enforcement for a limited time while we build a long-term plan. This can be extremely helpful if contact is causing stress or there are multiple debts involved.</p>
+
+      <h3>Only Pay What’s Affordable</h3>
+      <p>Any offer should be based on a proper budget. Try our <a href="debt-calculator.html">Debt Calculator</a> to test what’s realistic. If you proceed with a solution such as a <a href="dmp.html">DMP</a> or <a href="iva.html">IVA</a>, the payment is designed around your essential spending, not the loudest collector.</p>
+
+      <h3>If You’re Vulnerable or Your Circumstances Are Complex</h3>
+      <p>Tell us privately and we’ll adapt. We frequently support people with health issues, variable income, self-employment (<a href="business-debt.html">business debt</a> and <a href="tax-debt.html">HMRC</a> arrears included), or urgent household risks. The goal is a plan you can keep without sacrificing the basics.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <h2>Step-by-Step: What To Do When Link Financial Writes or Calls</h2>
+
+      <h3>Step 1 — Don’t Ignore, but Don’t Panic</h3>
+      <p>Open the letter or read the message fully. Keep it. Note dates and any deadlines they mention. If they say the debt was <em>sold</em>, the balance is now claimed by Link Financial. If they’re <em>collecting for</em> a lender, the lender still owns it.</p>
+
+      <h3>Step 2 — Check the Debt</h3>
+      <p>If you’re unsure what the debt is, we can guide a <em>free credit check</em> to see the account history and identify gaps. This is part of our normal fact-find (see our <a href="what-we-do.html">What We Do</a> page). Accuracy matters; people often discover missed accounts they’d forgotten about.</p>
+
+      <h3>Step 3 — Protect the Essentials</h3>
+      <p>Stabilise housing, heating and council tax first. Review <a href="council-tax-debt.html">Council Tax Debt</a>, <a href="utility-debt.html">utilities</a> and (if relevant) <a href="rent-arrears.html">rent</a>/<a href="mortgage-arrears.html">mortgage</a>. This is non-negotiable—keeping your home safe takes priority over cards and loans.</p>
+
+      <h3>Step 4 — Build a Realistic Budget</h3>
+      <p>Use our <a href="debt-calculator.html">Debt Calculator</a> to map income and essential spending. A fair, defendable budget is the strongest tool you have when responding to Link Financial or any collector.</p>
+
+      <h3>Step 5 — Choose a Route That Fits</h3>
+      <p>Depending on your numbers, you may be best suited to:</p>
+      <ul>
+        <li><a href="dmp.html">DMP</a> — informal, flexible. Many creditors freeze or reduce interest/charges. Good for steady payments without formal insolvency.</li>
+        <li><a href="iva.html">IVA</a> — formal, legally binding. One affordable payment; remaining eligible unsecured debt may be written off at successful completion.</li>
+        <li><a href="dro.html">DRO</a> — for low income/low assets. Debts are typically frozen for 12 months and then written off if circumstances haven’t improved. Strict eligibility.</li>
+      </ul>
+
+      <h3>Step 6 — Consider Breathing Space</h3>
+      <p>If calls and letters are mounting, <a href="breathing-space.html">Breathing Space</a> can pause most action and give you headroom to set up your long-term plan. We’ll explain how it works and if it’s appropriate.</p>
+
+      <h3>Step 7 — Communicate Clearly</h3>
+      <p>When we represent you, we provide a reference number and help channel contact via the plan you choose. Confident, clear communication tends to reduce pressure quickly.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’ve Heard from Link Financial — Start My Free Debt Check</a>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <h2>Common Link Financial Situations (and How We Handle Them)</h2>
+
+      <h3>“They Say I Owe More Than I Remember”</h3>
+      <p>Sold debts can include interest/charges added by the original lender. We review your statements and the collector’s breakdown. A fair budget and, where relevant, a reasonable challenge, can help resolve discrepancies.</p>
+
+      <h3>“They’re Calling a Lot — I Feel Harassed”</h3>
+      <p>Frequent contact is stressful. We help move communication onto a calmer footing and, where appropriate, use <a href="breathing-space.html">Breathing Space</a>. See <a href="stop-debt-collectors.html">Stop Debt Collectors</a> for additional tips.</p>
+
+      <h3>“They’ve Mentioned Court or a CCJ”</h3>
+      <p>Talk to us quickly. With a structured plan or rapid engagement, many cases avoid escalation. If a claim is issued, we’ll help you understand the paperwork and your options. Remember: a fair, documented affordability picture is your ally.</p>
+
+      <h3>“The Debt Is Old — Is It Statute-Barred?”</h3>
+      <p>In England/Wales, many simple credit debts may be unenforceable in court after six years without payment or written acknowledgment (five in Scotland), but individual circumstances vary. If you think this might apply, speak to us before responding—there are important nuances.</p>
+
+      <h3>“My Account Was with Another Agency Before”</h3>
+      <p>It’s common for accounts to be passed between agencies like <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a>, <a href="moorcroft.html">Moorcroft</a>, <a href="advantis.html">Advantis</a>, <a href="capquest.html">Capquest</a>, <a href="wescot.html">Wescot</a>, <a href="resolvecall.html">Resolvecall</a> and <a href="pra-group.html">PRA Group</a>. The process is similar: verify, budget, then agree an affordable route.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <h2>How We Help When Link Financial Is Involved</h2>
+
+      <h3>Clear, Human Advice (No Judgement)</h3>
+      <p>We start by listening. Then we map your full situation—<em>including a free credit check if you’re unsure what’s out there</em>—and help you protect your essential bills.</p>
+
+      <h3>One Affordable Payment (Where Suitable)</h3>
+      <p>Most clients prefer to roll multiple accounts into one manageable payment via a <a href="dmp.html">DMP</a> or, when appropriate, into a formal route like an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>. You can compare options at <a href="compare-solutions.html">Compare Solutions</a>.</p>
+
+      <h3>Breathing Space & Reference Number</h3>
+      <p>Where appropriate we help you enter <a href="breathing-space.html">Breathing Space</a>. You’ll have a reference number to quote to creditors like Link Financial while we organise your plan. This typically reduces calls and letters quickly.</p>
+
+      <h3>Support for Self-Employed & Directors</h3>
+      <p>Variable income? We routinely support sole traders and company directors. See <a href="business-debt.html">Business Debt</a> and <a href="tax-debt.html">Tax/HMRC</a> for more.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for Help</a>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <h2>Choosing the Right Debt Solution with Link Financial in the Picture</h2>
+
+      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
+      <p>Best for flexibility and informal arrangements. Many creditors freeze or reduce interest and charges. A DMP suits people who want adaptability and can maintain a steady, realistic payment.</p>
+
+      <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
+      <p>One legally binding payment based on affordability. On successful completion, remaining eligible unsecured debt may be written off. Provides strong protection from most creditor action.</p>
+
+      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
+      <p>For those with low income/low assets. Debts are usually frozen for 12 months and written off if your situation doesn’t improve. Strict eligibility—ask us to check.</p>
+
+      <h3>Need a Quick Side-by-Side?</h3>
+      <p>Use <a href="compare-solutions.html">Compare Solutions</a> for a clear overview, then we’ll tailor a recommendation to your numbers.</p>
+
+      <h3>Linking Different Debts Into One Plan</h3>
+      <ul>
+        <li>💳 <a href="credit-card-debt.html">Credit &amp; Store Cards</a></li>
+        <li>🧾 <a href="catalogue-debt.html">Catalogues</a> &amp; BNPL (e.g., <a href="klarna.html">Klarna</a>)</li>
+        <li>🏦 <a href="loan-debt.html">Personal Loans</a> and <a href="overdraft-debt.html">Overdrafts</a></li>
+        <li>🏚️ <a href="rent-arrears.html">Rent Arrears</a> &amp; <a href="mortgage-arrears.html">Mortgage Arrears</a> (priority treatment)</li>
+        <li>🏢 <a href="business-debt.html">Business Debt</a> &amp; <a href="tax-debt.html">Tax/HMRC</a></li>
+        <li>🎰 <a href="gambling-debt.html">Gambling Debts</a></li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Roll My Debts Into One Affordable Payment</a>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <h2>Practical Scripts & Tips for Talking to Link Financial</h2>
+
+      <h3>If You Can’t Afford What They’re Asking</h3>
+      <p>Be honest and firm: “I’m assessing my full budget and essential bills first. I will be back in touch with an affordable proposal.” Then complete our <a href="https://form.jotform.com/250596569907070">free debt check</a> so we can help you lock in a sustainable plan.</p>
+
+      <h3>If You Need Them to Write Instead of Call</h3>
+      <p>Ask for communication in writing. This helps you keep a clean paper trail. If calls feel intense, we’ll help channel contact via your chosen solution. See <a href="stop-debt-collectors.html">Stop Debt Collectors</a> for more ways to reduce pressure.</p>
+
+      <h3>If They’re Asking for a Lump Sum</h3>
+      <p>Only consider settlements if it doesn’t jeopardise rent, mortgage, energy or council tax. We’ll help you weigh the pros/cons of settlement vs spreading costs in a plan.</p>
+
+      <h3>Keep Copies of Everything</h3>
+      <p>File letters, screenshots and notes of any calls (time/date, who you spoke to, what was said). This record helps if anything needs clarifying later.</p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <h2>Link Financial: Frequently Asked Questions</h2>
+
+      <h3>Are Link Financial bailiffs?</h3>
+      <p>No. Debt collectors aren’t bailiffs. They can’t enter your home or take goods. Court enforcement (bailiffs) only happens after a legal process. If you’re worried, start our <a href="https://form.jotform.com/250596569907070">free debt check</a> and we’ll review any paperwork with you.</p>
+
+      <h3>Can Link Financial add interest or charges?</h3>
+      <p>It depends on the original agreement and the account status. Many collectors will consider freezing interest/charges once a fair arrangement is in place. A DMP often helps with that—see <a href="dmp.html">DMP</a>.</p>
+
+      <h3>What if I don’t recognise the debt?</h3>
+      <p>Ask for more information. We’ll help verify by guiding a <em>free credit check</em> and reviewing the details. Never pay what you can’t confirm.</p>
+
+      <h3>Will contact from Link Financial affect my credit score?</h3>
+      <p>The account itself may already be on your credit file from the original lender. Taking a formal solution (like an <a href="iva.html">IVA</a>) can affect your credit file, but for many people the priority is stabilising the household and reducing risk.</p>
+
+      <h3>Can Link Financial take me to court?</h3>
+      <p>Collectors <em>can</em> start a claim, but plenty of cases settle without court once you engage and evidence what you can afford. If you receive claim forms, talk to us immediately—we’ll help you respond properly.</p>
+
+      <h3>How quickly can you help after I complete the JotForm?</h3>
+      <p>We’ll try to call you promptly (and WhatsApp if we can’t get through). From there, we begin your fact-find and budgeting, prioritising urgent risks like <a href="council-tax-debt.html">council tax debt</a> and <a href="utility-debt.html">utilities</a>.</p>
+
+      <h3>Do I need a list of every debt before speaking?</h3>
+      <p>No. If you’re unsure, we’ll guide a <em>free credit check</em> to identify missing accounts and confirm details.</p>
+
+      <h3>What if my income changes later?</h3>
+      <p>We’ll set a plan with headroom where possible. <a href="dmp.html">DMPs</a> are usually more flexible; <a href="iva.html">IVAs</a> can be varied formally. If anything changes, we review and adjust.</p>
+
+      <h3>I’m self-employed—can you help?</h3>
+      <p>Yes. We regularly support sole traders and directors. See <a href="business-debt.html">Business Debt</a> and we’ll shape the route to variable income.</p>
+
+      <h4>Didn’t see your question?</h4>
+      <p>Ask us directly and get a personalised answer in minutes.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask a Debt Specialist</a>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section">
+      <h2>Building a Budget You Can Keep (So Link Financial Accepts It)</h2>
+      <p>Your strongest position is a <em>defendable</em> affordability statement. We ground budgets in real-world spending, not ideal-world guesses. Try our <a href="debt-calculator.html">Debt Calculator</a> to test sizes of payment and see what’s sustainable.</p>
+
+      <h3>Essentials First</h3>
+      <p>Protect housing, energy and <a href="council-tax-debt.html">council tax</a>. This reduces risk and helps you avoid emergency costs later.</p>
+
+      <h3>Non-Priority Debts Next</h3>
+      <p>Cards, <a href="catalogue-debt.html">catalogues</a>, <a href="overdraft-debt.html">overdrafts</a>, <a href="loan-debt.html">loans</a> and similar debts can be rolled into a fair offer through a <a href="dmp.html">DMP</a> or set within a formal arrangement such as an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a> when appropriate.</p>
+
+      <h3>Breathing Space Where Appropriate</h3>
+      <p>Read our quick guide to <a href="breathing-space.html">Breathing Space</a>. It gives you time to plan without pressure, while we get your long-term route ready.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Build My Budget with a Specialist</a>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="section">
+      <h2>Comparing Link Financial with Other UK Collectors</h2>
+      <p>Different agencies have different approaches, but your core steps don’t change: verify, protect essentials, budget properly and pick a route that fits. For context, see our pages on <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a>, <a href="moorcroft.html">Moorcroft</a>, <a href="advantis.html">Advantis</a>, <a href="capquest.html">Capquest</a>, <a href="wescot.html">Wescot</a>, <a href="resolvecall.html">Resolvecall</a>, <a href="hoist-finance.html">Hoist</a>, <a href="robinson-way.html">Robinson Way</a>, <a href="fredrickson.html">Fredrickson</a>, <a href="moriarty-law.html">Moriarty Law</a>, <a href="drydensfairfax.html">Drydensfairfax</a> and <a href="pra-group.html">PRA Group</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Dealing with Link Financial</a>
+    </div>
+
+    <!-- Section 12 -->
+    <div class="section">
+      <h2>Ready for Less Stress? Here’s the Shortcut</h2>
+      <ol>
+        <li><strong>Verify:</strong> Gather letters/texts from Link Financial.</li>
+        <li><strong>Protect essentials:</strong> Review <a href="council-tax-debt.html">council tax</a>, <a href="utility-debt.html">utilities</a>, <a href="rent-arrears.html">rent</a>/<a href="mortgage-arrears.html">mortgage</a>.</li>
+        <li><strong>Budget:</strong> Test realistic payments with our <a href="debt-calculator.html">Debt Calculator</a>.</li>
+        <li><strong>Pick a route:</strong> Compare <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a>, <a href="dro.html">DRO</a> at <a href="compare-solutions.html">Compare Solutions</a>.</li>
+        <li><strong>Pause pressure:</strong> Use <a href="breathing-space.html">Breathing Space</a> where suitable.</li>
+        <li><strong>Channel contact:</strong> We provide a reference number and communicate clearly with Link Financial.</li>
+      </ol>
+      <p>Our aim is simple: fewer letters and calls, protected essentials, and a plan you can sleep on.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
+    </div>
+
+    <!-- Section 13 -->
+    <div class="section">
+      <h2>More Helpful Reads While You Decide</h2>
+      <ul>
+        <li><a href="link-financial.html">Link Financial (Overview)</a></li>
+        <li><a href="stop-debt-collectors.html">Stop Debt Collectors</a></li>
+        <li><a href="debt-help-uk-2025.html">Debt Help UK 2025</a></li>
+        <li><a href="clear-debt-fast.html">Clear Debt Fast</a></li>
+        <li><a href="iva-company.html">IVA Company</a></li>
+        <li><a href="dmp-provider.html">DMP Provider</a></li>
+        <li><a href="affordable-repayment-plans.html">Affordable Repayment Plans</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      <p>When you’re ready, we’re ready—on your terms and timeline.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20debt%20help%20with%20Link%20Financial" class="whatsapp-button" target="_blank" rel="noopener">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Menu Toggle Script -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
+
     window.addEventListener("click", function(e) {
       const menu = document.getElementById("menuContent");
       const btn = document.getElementById("menuButton");
@@ -165,181 +329,6 @@
       }
     });
   </script>
-</head>
-<body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
-  <div class="container">
-<div class="section">
-  <h1>Link Financial Debt Help – Freeze Action & Lower Repayments</h1>
-  <p>Been contacted by <strong>Link Financial Outsourcing</strong>? If you're receiving letters, phone calls, or emails from them, you're likely being pursued for an old debt — sometimes one you barely recognise.</p>
-  <p>At Fresh Start Debt Support, we help people all over the UK take control of debts held by Link Financial. We explain your options clearly, without pressure or judgment, and help you stop contact, freeze interest, and set up a manageable repayment plan if you qualify.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
-</div>
 
-<div class="section">
-  <h2>Who Are Link Financial?</h2>
-  <p><strong>Link Financial</strong> is one of the UK’s largest debt purchasing companies. They buy debts from high street banks, credit card companies, utility firms, and car finance providers — often for a fraction of the original balance. Once they buy the debt, they become the legal owner and take over the process of collecting payment.</p>
-  <p>They may be chasing debt from:</p>
-  <ul>
-    <li>Barclays, NatWest, HSBC, or Lloyds</li>
-    <li>Capital One, Vanquis, or store card providers</li>
-    <li>Car finance or personal loan companies</li>
-    <li>Overdraft or credit card balances</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Is Link Financial a Bailiff?</h2>
-  <p>No. Link Financial are <strong>not bailiffs</strong>. They do not have the right to enter your home or seize your possessions. They are a debt purchaser, not an enforcement agent. However, they may take further action such as referring your case to solicitors, issuing a County Court Judgment (CCJ), or passing the case to actual bailiffs — if the debt goes unpaid and legal steps are taken.</p>
-  <p><a href="stop-debt-collectors.html">Learn how to stop debt collectors</a> and avoid escalation by taking action early.</p>
-</div>
-
-<div class="section">
-  <h2>What Happens If I Ignore Link Financial?</h2>
-  <p>If you ignore their contact, the following may happen:</p>
-  <ul>
-    <li>More frequent letters and phone calls</li>
-    <li>Referral to legal teams for court action (e.g. CCJ)</li>
-    <li>Potential extra fees or charges</li>
-  </ul>
-  <p>Ignoring the problem won't make it go away — but the good news is that there are ways to <strong>freeze action, stop contact, and reduce your payments</strong>, often legally.</p>
-</div>
-
-<div class="section">
-  <h2>Can I Stop Link Financial From Contacting Me?</h2>
-  <p>Yes. You can request all communication in writing only and ask for proof of the debt. But more powerfully, many people stop the contact altogether by entering into a <a href="iva.html">formal debt solution</a> that protects them from creditors — including Link Financial.</p>
-  <p>The most common ways people deal with Link debts include:</p>
-  <ul>
-    <li><a href="iva.html">IVA (Individual Voluntary Arrangement)</a> – write off unaffordable debt after 5 years</li>
-    <li><a href="dmp.html">Debt Management Plan (DMP)</a> – flexible monthly repayments</li>
-    <li><a href="dro.html">Debt Relief Order (DRO)</a> – for low income, low asset individuals</li>
-  </ul>
-  <p>These plans can freeze interest, stop legal action, and reduce the total you repay.</p>
-</div>
-
-<div class="section">
-  <h2>How Do I Know If the Debt Is Legitimate?</h2>
-  <p>If you don’t recognise the debt Link Financial is chasing, you can request:</p>
-  <ul>
-    <li>Proof that they own the debt (deed of assignment)</li>
-    <li>A copy of the original credit agreement</li>
-    <li>A full statement showing how the balance has been calculated</li>
-  </ul>
-  <p>Until they provide this, you're not obliged to pay — and if they can’t provide it, the debt may be unenforceable. We can guide you on the best way to request this information.</p>
-</div>
-
-<div class="section">
-  <h2>Include Link Financial in a Repayment Plan</h2>
-  <p>If you’re struggling with multiple debts, you may be eligible to include Link Financial in a broader debt solution. Many clients include debts from multiple collectors, such as:</p>
-  <ul>
-    <li><a href="lowell.html">Lowell Financial</a></li>
-    <li><a href="cabot.html">Cabot Financial</a></li>
-    <li><a href="moriarty-law.html">Moriarty Law</a></li>
-    <li><a href="pra-group.html">PRA Group</a></li>
-    <li><a href="moorcroft.html">Moorcroft</a></li>
-  </ul>
-  <p>This way, you deal with everything at once and reduce the stress of constant letters and calls.</p>
-  <a href="debt-calculator.html" class="menu-cta">Use Our Debt Calculator</a>
-</div>
-
-<div class="section">
-  <h2>How We Can Help</h2>
-  <p>We don’t offer advice, but we can help you explore regulated debt solutions that may stop Link Financial and lower your payments. Our small UK-based team makes the process easy to understand and fast to start.</p>
-  <p>All help is free to check, and there's no pressure to proceed.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If You Qualify Today</a>
-</div>
-    <footer>
-      © 2025 Fresh Start Debt Support. All rights reserved.<br />
-      This website does not offer financial advice and is not regulated by the FCA.
-    </footer>
-    <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
-
-  </div>
 </body>
 </html>
