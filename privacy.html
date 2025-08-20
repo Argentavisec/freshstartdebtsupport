@@ -9,36 +9,25 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+</head>
+<body>
+
+  <!-- Header / Banner -->
   <div class="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
 
-  <!-- Menu Placeholder -->
+  <!-- Menu Include -->
   <div id="menu-placeholder"></div>
   <script>
     fetch("menu.html")
       .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-placeholder").innerHTML = html;
-        // Apply smooth toggle behavior
-        const button = document.getElementById("menuButton");
-        const menu = document.getElementById("menuContent");
-        if (button && menu) {
-          button.addEventListener("click", function () {
-            menu.classList.toggle("show");
-          });
-        }
-
-        window.addEventListener("click", function (e) {
-          if (menu && !menu.contains(e.target) && e.target !== button) {
-            menu.classList.remove("show");
-          }
-        });
-      });
+      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
   </script>
 
   <!-- Page Content -->
@@ -133,6 +122,22 @@
   <a href="https://wa.me/447752296301?text=Hi%20I%20have%20a%20question%20about%20your%20privacy%20policy" class="whatsapp-button" target="_blank">
     💬 Chat with Us on WhatsApp
   </a>
+
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if (!menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
+  </script>
+
 
 </body>
 </html>
