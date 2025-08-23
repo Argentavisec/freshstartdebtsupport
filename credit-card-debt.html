@@ -98,6 +98,15 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+    .statbar{display:grid;gap:10px;margin:16px 0 0 0}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:10px 14px;font-size:14px;display:inline-block}
+    .mini-note{font-size:12px;opacity:.9;margin-top:6px}
+    .quiz-card{background:#f7fff9;border:1px solid #d3f0dd;border-radius:16px;padding:16px;margin:16px 0}
+    .quiz-card h3{margin-top:0}
+    .quiz-row{display:grid;grid-template-columns:1fr;gap:10px}
+    .quiz-row label{font-weight:600}
+    .quiz-actions{margin-top:10px}
+    .trust-list li{margin-bottom:6px}
   </style>
 </head>
 
@@ -122,10 +131,69 @@
         </p>
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt check">✅ Get Started Free</a>
         <div class="hero-trust">Free &amp; confidential • Takes 60–90 seconds</div>
+
+        <!-- NEW: Stats pills to boost topical relevance -->
+        <div class="statbar" aria-label="Latest UK credit card debt stats">
+          <span class="pill">5% of UK adults (≈2.8m) are in persistent credit card debt</span>
+          <span class="pill">14% (≈7.4m) felt heavily burdened by bills & credit (Jan 2024)</span>
+          <span class="pill">DRO fee scrapped & debt limit raised to £50,000 (England & Wales)</span>
+          <div class="mini-note">Sources: FCA Financial Lives (2024), FCA updates, GOV.UK (see Evidence below).</div>
+        </div>
       </div>
     </div>
   </section>
   <!-- /HERO -->
+
+  <!-- NEW: Quick interactive quiz (early engagement) -->
+  <div class="container">
+    <div class="section" id="quick-check" aria-labelledby="quick-check-title">
+      <div class="quiz-card">
+        <h3 id="quick-check-title">60-Second Credit Card Debt Check</h3>
+        <div class="quiz-row">
+          <label for="qc-debt">Total card + unsecured debt</label>
+          <select id="qc-debt">
+            <option value="under5">Under £5,000</option>
+            <option value="5to20">£5,000–£20,000</option>
+            <option value="over20">Over £20,000</option>
+          </select>
+
+          <label for="qc-spare">Monthly spare after essentials</label>
+          <select id="qc-spare">
+            <option value="under75">Under £75</option>
+            <option value="75to200">£75–£200</option>
+            <option value="over200">Over £200</option>
+          </select>
+
+          <label for="qc-missed">Any missed/late payments in last 6 months?</label>
+          <select id="qc-missed">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+        <div class="quiz-actions">
+          <button class="menu-cta" onclick="qcSuggest()">See My Likely Options</button>
+          <a href="https://form.jotform.com/250596569907070" class="menu-cta" style="margin-left:8px;">Start Free Debt Check</a>
+        </div>
+        <p id="qc-result" style="margin-top:12px;font-weight:bold;"></p>
+      </div>
+
+      <!-- NEW: Micro-tool for ‘persistent debt’ -->
+      <div class="quiz-card" id="pd-checker" aria-labelledby="pd-title">
+        <h3 id="pd-title">Quick ‘Persistent Debt’ Checker</h3>
+        <p style="margin-top:-8px">Have you mostly paid <em>interest/fees</em> rather than your balance for 18+ months?</p>
+        <label for="pd-months">Months paying mostly interest/fees</label>
+        <select id="pd-months">
+          <option value="0">Under 12 months</option>
+          <option value="18">18–35 months</option>
+          <option value="36">36+ months</option>
+        </select>
+        <div class="quiz-actions">
+          <button class="menu-cta" onclick="pdExplain()">Check What This Means</button>
+        </div>
+        <p id="pd-result" style="margin-top:12px;font-weight:bold;"></p>
+      </div>
+    </div>
+  </div>
 
   <!-- Menu Include -->
   <div id="menu-placeholder"></div>
@@ -407,19 +475,24 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Like They Did</a>
     </div>
 
-    <!-- Government guidance -->
+    <!-- Government guidance (expanded with trusted charities) -->
     <div class="section" id="gov-guidance">
-      <h2>Official Guidance & Consumer Protections</h2>
+      <h2>Official Guidance & Trusted Free Support</h2>
       <p>For added reassurance, here are trusted UK resources about problem debt and card borrowing:</p>
-      <ul>
-        <li>📖 <a href="https://www.gov.uk/options-for-dealing-with-your-debts" target="_blank" rel="noopener">Options for dealing with your debts (gov.uk)</a></li>
+      <ul class="trust-list">
+        <li>📖 <a href="https://www.gov.uk/options-for-dealing-with-your-debts" target="_blank" rel="noopener">Options for dealing with your debts (GOV.UK)</a></li>
         <li>🛑 <a href="https://www.gov.uk/breathing-space" target="_blank" rel="noopener">Breathing Space (Debt Respite Scheme)</a></li>
         <li>📢 <a href="https://www.fca.org.uk/news/press-releases/new-credit-card-rules-introduced-fca" target="_blank" rel="noopener">FCA persistent credit card debt rules</a></li>
+        <li>🏛️ <a href="https://www.gov.uk/government/news/changes-to-debt-relief-orders-will-support-people-in-financial-distress" target="_blank" rel="noopener">DRO changes (fee scrapped; limit to £50,000)</a></li>
+        <li>🤝 <a href="https://www.stepchange.org/debt-info/credit-card-debt.aspx" target="_blank" rel="noopener">StepChange: Credit card debt help</a></li>
+        <li>📞 <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline: Free debt advice</a></li>
+        <li>🧭 <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener">MoneyHelper: Dealing with debt</a></li>
+        <li>💬 <a href="https://www.citizensadvice.org.uk/debt-and-money/borrowing-money/credit-cards/if-youre-struggling-to-pay-your-credit-card/" target="_blank" rel="noopener">Citizens Advice: Struggling to pay your credit card</a></li>
       </ul>
-      <p>We recommend reviewing these alongside our free support so you know your rights and protections.</p>
+      <p>Review these alongside our free support so you know your rights and protections.</p>
     </div>
 
-    <!-- FAQ -->
+    <!-- FAQ (enhanced with regulation transparency & common concerns) -->
     <div class="section" id="faq">
       <h2>Credit Card Debt — Frequently Asked Questions</h2>
 
@@ -440,6 +513,19 @@
 
       <h3>Is help really free?</h3>
       <p>Yes, our guidance is free and confidential. We’ll also explain any third-party fees (for example, if you proceed with a formal solution) before you decide.</p>
+
+      <!-- NEW: Regulation transparency & trust FAQs -->
+      <h3>Are you regulated and who oversees debt solutions?</h3>
+      <p>Debt advice in the UK is regulated by the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener">Financial Conduct Authority (FCA)</a>. IVAs are administered by licensed Insolvency Practitioners and DROs are made via approved intermediaries with the <a href="https://www.gov.uk/government/organisations/insolvency-service" target="_blank" rel="noopener">Insolvency Service</a>. If you want free, impartial advice, you can also speak to <a href="https://www.stepchange.org/" target="_blank" rel="noopener">StepChange</a> or <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline</a>.</p>
+
+      <h3>How do you get paid? Do you earn commission?</h3>
+      <p>We’ll always explain any fees clearly before you proceed. Where a third party provides a formal solution (e.g., an IVA provider), their fees are disclosed in writing. You’re free to compare with <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener">MoneyHelper</a> and debt charities before deciding.</p>
+
+      <h3>What are my complaint routes?</h3>
+      <p>If you’re unhappy, you can complain to us first. If unresolved, you may be able to escalate to the <a href="https://www.financial-ombudsman.org.uk/" target="_blank" rel="noopener">Financial Ombudsman Service</a>. For insolvency-related matters (e.g., IVA conduct), see the Insolvency Service’s <a href="https://www.gov.uk/complain-about-insolvency-practitioner" target="_blank" rel="noopener">complaints guidance</a>.</p>
+
+      <h3>Will you share my data?</h3>
+      <p>We take privacy seriously and only share your information with your permission when it’s necessary to deliver your chosen solution. Read our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
 
       <h3>Can bailiffs visit for credit card debt?</h3>
       <p>Only after a court judgment and enforcement stage. You don’t have to let bailiffs in for these debts, and there are rules on what they can take. See <a href="bailiffs-rights.html">Bailiffs: Your Rights</a>.</p>
@@ -472,17 +558,21 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
     </div>
 
-    <!-- Evidence -->
+    <!-- Evidence (kept + strengthened with FCA 2024/25 stats) -->
     <div class="section" id="evidence">
       <h2>Evidence & Trusted Resources on Credit Card Debt</h2>
       <p>Use these independent sources to understand your rights and options:</p>
       <ul>
-        <li>📢 <a href="https://www.fca.org.uk/news/press-releases/new-credit-card-rules-introduced-fca" target="_blank" rel="noopener">FCA rules on persistent credit card debt</a></li>
+        <li>📊 <a href="https://www.fca.org.uk/publication/financial-lives/financial-lives-survey-2024-key-findings.pdf" target="_blank" rel="noopener">FCA Financial Lives 2024 – Key findings (PDF)</a></li>
+        <li>📈 <a href="https://www.fca.org.uk/news/blogs/evolution-consumer-credit-what-next-decade-holds" target="_blank" rel="noopener">FCA blog: 5% (~2.8m) in persistent credit card debt</a></li>
         <li>🧾 <a href="https://www.gov.uk/options-for-dealing-with-your-debts" target="_blank" rel="noopener">Options for dealing with your debts (GOV.UK)</a></li>
         <li>🛑 <a href="https://www.gov.uk/breathing-space" target="_blank" rel="noopener">Breathing Space (Debt Respite Scheme)</a></li>
         <li>✅ <a href="https://www.gov.uk/government/news/changes-to-debt-relief-orders-will-support-people-in-financial-distress" target="_blank" rel="noopener">DRO changes: £50,000 limit & fee abolished</a></li>
-        <li>🕒 <a href="https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/dealing-with-your-debts/check-if-you-have-to-pay-a-debt/" target="_blank" rel="noopener">Limitation periods (England &amp; Wales)</a> and <a href="https://www.citizensadvice.org.uk/scotland/debt-and-money/help-with-debt/dealing-with-your-debts/check-if-you-have-to-pay-a-debt-s/" target="_blank" rel="noopener">(Scotland)</a></li>
+        <li>📚 <a href="https://www.fca.org.uk/financial-lives/financial-lives-2024" target="_blank" rel="noopener">FCA: Financial Lives 2024 hub</a></li>
         <li>⚖️ <a href="https://www.stepchange.org/debt-info/credit-card-debt.aspx" target="_blank" rel="noopener">StepChange: credit card debt guidance</a></li>
+        <li>📞 <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline: free debt advice</a></li>
+        <li>🧭 <a href="https://www.moneyhelper.org.uk/en/everyday-money/credit/simple-guide-to-credit-cards" target="_blank" rel="noopener">MoneyHelper: credit cards guide</a></li>
+        <li>💬 <a href="https://www.citizensadvice.org.uk/debt-and-money/borrowing-money/credit-cards/if-youre-struggling-to-pay-your-credit-card/" target="_blank" rel="noopener">Citizens Advice: struggling with credit cards</a></li>
       </ul>
       <p>These confirm your protections and the solutions we can set up with you.</p>
     </div>
@@ -522,6 +612,29 @@
           else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements.";
 
           document.getElementById("suggestion-result").innerText = result + " 👉 Try our free debt check to confirm.";
+        }
+
+        // NEW quick-check logic
+        function qcSuggest(){
+          const d = document.getElementById('qc-debt').value;
+          const s = document.getElementById('qc-spare').value;
+          const m = document.getElementById('qc-missed').value;
+          let msg = "We’ll need a free debt check to match you properly.";
+          if(d==='over20' && (s==='under75' || s==='75to200')) msg="Likely IVA or Trust Deed (Scotland). You may write off part of your balances.";
+          else if(d==='5to20' && s==='under75') msg="You may qualify for a DRO (≤ £50,000 total debt in England & Wales).";
+          else if(d==='under5' && s==='under75') msg="Consider Breathing Space, a token plan or a DRO if criteria fit.";
+          else if(s==='over200' && m==='no') msg="You may manage with a DMP or a 0% balance transfer (if available).";
+          if(m==='yes') msg += " Because you’ve missed payments, freezing interest/enforcement may be urgent.";
+          document.getElementById('qc-result').innerText = msg + " 👉 Start a free check to confirm.";
+        }
+
+        // NEW persistent-debt explainer
+        function pdExplain(){
+          const months = parseInt(document.getElementById('pd-months').value,10);
+          let txt="If you’re paying mostly interest, ask your lender for help or explore solutions.";
+          if(months>=36) txt="36+ months usually triggers stronger action from lenders. Ask for a sustainable plan or explore IVA/DMP options; interest may be frozen.";
+          else if(months>=18) txt="18–35 months: lenders should help you exit ‘persistent debt’. If their plan is unaffordable, consider DMP/IVA support.";
+          document.getElementById('pd-result').innerText = txt + " See FCA guidance in Evidence.";
         }
       </script>
     </div>
