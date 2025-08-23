@@ -42,9 +42,7 @@
         "name":"Fresh Start Debt Support",
         "url":"https://www.freshstartdebtsupport.co.uk/",
         "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
-        "sameAs":[
-          "https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"
-        ]
+        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
       },
       {
         "@type":"BreadcrumbList",
@@ -70,40 +68,19 @@
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"How do I know if I have too much debt?",
-            "acceptedAnswer":{"@type":"Answer","text":"Common signs include only making minimum payments, borrowing to pay other debts, falling behind on priority bills like rent or council tax, or receiving letters from bailiffs and debt collectors."}
-          },
-          {
-            "@type":"Question",
-            "name":"Can I write off debt legally in the UK?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes. IVAs and Debt Relief Orders are formal, government-backed solutions that can write off unaffordable debt if you meet eligibility criteria."}
-          },
-          {
-            "@type":"Question",
-            "name":"Will a debt solution stop bailiffs and interest?",
-            "acceptedAnswer":{"@type":"Answer","text":"Formal solutions such as IVAs and DROs typically stop enforcement and freeze interest and charges. Many DMPs can also get interest frozen informally."}
-          },
-          {
-            "@type":"Question",
-            "name":"Does getting debt help affect my credit?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes, but the impact is generally less harmful than continued defaults and CCJs. Your credit can be rebuilt after completion."}
-          },
-          {
-            "@type":"Question",
-            "name":"Is the help really free?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes, Fresh Start Debt Support offers free, confidential guidance and will explain any third-party fees before you proceed."}
-          }
+          {"@type":"Question","name":"How do I know if I have too much debt?","acceptedAnswer":{"@type":"Answer","text":"Common signs include only making minimum payments, borrowing to pay other debts, falling behind on priority bills like rent or council tax, or receiving letters from bailiffs and debt collectors."}},
+          {"@type":"Question","name":"Can I write off debt legally in the UK?","acceptedAnswer":{"@type":"Answer","text":"Yes. IVAs and Debt Relief Orders are formal, government-backed solutions that can write off unaffordable debt if you meet eligibility criteria."}},
+          {"@type":"Question","name":"Will a debt solution stop bailiffs and interest?","acceptedAnswer":{"@type":"Answer","text":"Formal solutions such as IVAs and DROs typically stop enforcement and freeze interest and charges. Many DMPs can also get interest frozen informally."}},
+          {"@type":"Question","name":"Does getting debt help affect my credit?","acceptedAnswer":{"@type":"Answer","text":"Yes, but the impact is generally less harmful than continued defaults and CCJs. Your credit can be rebuilt after completion."}},
+          {"@type":"Question","name":"Is the help really free?","acceptedAnswer":{"@type":"Answer","text":"Yes, Fresh Start Debt Support offers free, confidential guidance and will explain any third-party fees before you proceed."}}
         ]
       }
     ]
   }
   </script>
 
-  <!-- Inline critical CSS for the hero (optional; keep or move to style.css) -->
+  <!-- Inline critical CSS for hero (you can leave this or move to style.css) -->
   <style>
-    /* ===== Full-width Above-the-Fold Hero CTA ===== */
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
       color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
@@ -134,27 +111,23 @@
     </div>
   </div>
 
-<section class="landing-hero" role="region" aria-label="Get debt help">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <!-- keep H2 for SEO structure -->
-      <h2 class="hero-title">Too Much Debt?</h2>
-      <p class="hero-sub">
-        Stop creditor contact and check if you can <strong>write off unaffordable debt</strong>
-        with an IVA, DRO or DMP.
-      </p>
-      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt check">
-        ✅ Get Started Free
-      </a>
-      <div class="hero-trust">Free &amp; confidential • Takes 60–90 seconds</div>
+  <!-- HERO -->
+  <section class="landing-hero" role="region" aria-label="Get debt help">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h2 class="hero-title">Too Much Debt?</h2>
+        <p class="hero-sub">
+          Stop creditor contact and check if you can <strong>write off unaffordable debt</strong>
+          with an IVA, DRO or DMP.
+        </p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt check">✅ Get Started Free</a>
+        <div class="hero-trust">Free &amp; confidential • Takes 60–90 seconds</div>
+      </div>
     </div>
-  </div>
-</section>
-
   </section>
-  <!-- ===== /HERO ===== -->
+  <!-- /HERO -->
 
-    <!-- Menu Include (working version) -->
+  <!-- Menu Include -->
   <div id="menu-placeholder"></div>
   <script>
     fetch("menu.html")
@@ -164,18 +137,14 @@
         const menu = document.getElementById("menuContent");
         if (menu) menu.style.display = "none";
       });
-
-    function toggleMenu() {
+    function toggleMenu(){
       const menu = document.getElementById("menuContent");
       if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
     }
-
     window.addEventListener("click", function(e) {
       const menu = document.getElementById("menuContent");
       const btn  = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
+      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
     });
   </script>
 
@@ -192,17 +161,13 @@
       </script>
     </div>
 
-
-    <!-- Hero / Quick Answer -->
-    <div class="section highlight">
+    <!-- Intro + TOC (uniform section) -->
+    <div class="section" id="intro">
       <h1>Too Much Debt? Free UK Help to Stop Interest, Write Off Balances & End Bailiff Pressure</h1>
-      <div class="quick-answer card">
-        <p><strong>Quick answer:</strong> If you’re borrowing to cover other repayments, only making minimums, behind on <a href="utility-debt.html">utilities</a> or council tax, or avoiding calls from <a href="stop-debt-collectors.html">debt collectors</a> or <a href="bailiffs-rights.html">bailiffs</a>, you likely have <em>too much debt</em>. We’ll check if you can <a href="help-write-off-debt.html">write off unaffordable balances</a>, freeze interest, and reduce payments — free and confidential.</p>
-        <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-      </div>
+      <p><strong>Quick answer:</strong> If you’re borrowing to cover other repayments, only making minimums, behind on <a href="utility-debt.html">utilities</a> or council tax, or avoiding calls from <a href="stop-debt-collectors.html">debt collectors</a> or <a href="bailiffs-rights.html">bailiffs</a>, you likely have <em>too much debt</em>. We’ll check if you can <a href="help-write-off-debt.html">write off unaffordable balances</a>, freeze interest, and reduce payments — free and confidential.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
 
-      <!-- Table of Contents -->
-      <nav class="toc">
+      <nav class="toc" aria-label="Table of contents">
         <ul>
           <li><a href="#signs">Signs you have too much debt</a></li>
           <li><a href="#assessment">Self-assessment checklist</a></li>
@@ -210,6 +175,7 @@
           <li><a href="#writeoff">Debts you can include / write off</a></li>
           <li><a href="#solutions">Best solutions (IVA, DRO, DMP, Trust Deed)</a></li>
           <li><a href="#howto">How to take control (step-by-step)</a></li>
+          <li><a href="#breathing-space">Breathing Space</a></li>
           <li><a href="#bailiffs">Bailiffs & collectors: what to do</a></li>
           <li><a href="#impact">The hidden emotional impact</a></li>
           <li><a href="#stories">Real stories</a></li>
@@ -219,7 +185,7 @@
       </nav>
     </div>
 
-    <!-- Section: What is 'too much debt'? / Signs -->
+    <!-- Signs -->
     <div class="section" id="signs">
       <h2>What Counts as <span class="nowrap">“Too Much Debt”</span> in the UK?</h2>
       <p>Debt becomes “too much” when repayments no longer fit your budget, interest keeps growing, or money worries affect your health and relationships. Look for these signals:</p>
@@ -234,7 +200,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Can Get Help</a>
     </div>
 
-    <!-- Section: Self-assessment checklist -->
+    <!-- Self-assessment -->
     <div class="section" id="assessment">
       <h2>Am I in Too Much Debt? A Simple Self-Assessment</h2>
       <p>Tick any that sound like you:</p>
@@ -249,7 +215,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Self-Check My Options</a>
     </div>
 
-    <!-- Section: Risks -->
+    <!-- Risks -->
     <div class="section" id="risks">
       <h2>What Happens If You Ignore Too Much Debt?</h2>
       <p>Delaying action usually leads to higher balances and formal action:</p>
@@ -264,7 +230,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Freeze Interest & Stop Action</a>
     </div>
 
-    <!-- Section: Write-off eligibility -->
+    <!-- Write-off -->
     <div class="section" id="writeoff">
       <h2>Debts You Can Include — and Often <em>Write Off</em></h2>
       <p>Depending on eligibility, these debts can be included in an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>, and usually managed within a <a href="dmp.html">DMP</a> too:</p>
@@ -282,69 +248,62 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">See What I Can Include</a>
     </div>
 
-<!-- Section: Solutions comparison -->
-<div class="section" id="solutions">
-  <h2>Best Solutions When You Have Too Much Debt</h2>
-  <p>There’s no one-size-fits-all. Here’s a quick comparison of the main UK options:</p>
+    <!-- Solutions -->
+    <div class="section" id="solutions">
+      <h2>Best Solutions When You Have Too Much Debt</h2>
+      <p>There’s no one-size-fits-all. Here’s a quick comparison of the main UK options:</p>
 
-  <div class="solutions-vertical">
-    <!-- IVA -->
-    <div class="solution-vertical">
-      <h3>IVA</h3>
-      <dl>
-        <dt>Best for</dt><dd>£6,000+ unsecured debt, steady income</dd>
-        <dt>Stops enforcement</dt><dd>Yes — legal protection</dd>
-        <dt>Write off</dt><dd>Yes, after completion</dd>
-        <dt>Typical term</dt><dd>5–6 years</dd>
-      </dl>
-      <a class="solution-link" href="iva.html">Read the IVA guide →</a>
+      <div class="solutions-vertical">
+        <div class="solution-vertical">
+          <h3>IVA</h3>
+          <dl>
+            <dt>Best for</dt><dd>£6,000+ unsecured debt, steady income</dd>
+            <dt>Stops enforcement</dt><dd>Yes — legal protection</dd>
+            <dt>Write off</dt><dd>Yes, after completion</dd>
+            <dt>Typical term</dt><dd>5–6 years</dd>
+          </dl>
+          <a class="solution-link" href="iva.html">Read the IVA guide →</a>
+        </div>
+
+        <div class="solution-vertical">
+          <h3>DRO</h3>
+          <dl>
+            <dt>Best for</dt><dd>Low income, low assets, debt under ~£30,000</dd>
+            <dt>Stops enforcement</dt><dd>Yes — moratorium</dd>
+            <dt>Write off</dt><dd>Yes, after 12 months</dd>
+            <dt>Typical term</dt><dd>12 months</dd>
+          </dl>
+          <a class="solution-link" href="dro.html">Read the DRO guide →</a>
+        </div>
+
+        <div class="solution-vertical">
+          <h3>DMP</h3>
+          <dl>
+            <dt>Best for</dt><dd>Flexible, informal repayments</dd>
+            <dt>Stops enforcement</dt><dd>Often — by agreement</dd>
+            <dt>Write off</dt><dd>No formal write-off</dd>
+            <dt>Typical term</dt><dd>Varies</dd>
+          </dl>
+          <a class="solution-link" href="dmp.html">Read the DMP guide →</a>
+        </div>
+
+        <div class="solution-vertical">
+          <h3>Trust Deed (Scotland)</h3>
+          <dl>
+            <dt>Best for</dt><dd>Scottish residents with multiple debts</dd>
+            <dt>Stops enforcement</dt><dd>Yes — legal protection</dd>
+            <dt>Write off</dt><dd>Yes, after completion</dd>
+            <dt>Typical term</dt><dd>~4 years</dd>
+          </dl>
+          <a class="solution-link" href="trustdeed.html">Read the Trust Deed guide →</a>
+        </div>
+      </div>
+
+      <p>We’ll match you to the route that fits your budget and goals — and explain every trade-off in plain English.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare My Options</a>
     </div>
 
-    <!-- DRO -->
-    <div class="solution-vertical">
-      <h3>DRO</h3>
-      <dl>
-        <dt>Best for</dt><dd>Low income, low assets, debt under ~£30,000</dd>
-        <dt>Stops enforcement</dt><dd>Yes — moratorium</dd>
-        <dt>Write off</dt><dd>Yes, after 12 months</dd>
-        <dt>Typical term</dt><dd>12 months</dd>
-      </dl>
-      <a class="solution-link" href="dro.html">Read the DRO guide →</a>
-    </div>
-
-    <!-- DMP -->
-    <div class="solution-vertical">
-      <h3>DMP</h3>
-      <dl>
-        <dt>Best for</dt><dd>Flexible, informal repayments</dd>
-        <dt>Stops enforcement</dt><dd>Often — by agreement</dd>
-        <dt>Write off</dt><dd>No formal write-off</dd>
-        <dt>Typical term</dt><dd>Varies</dd>
-      </dl>
-      <a class="solution-link" href="dmp.html">Read the DMP guide →</a>
-    </div>
-
-    <!-- Trust Deed -->
-    <div class="solution-vertical">
-      <h3>Trust Deed (Scotland)</h3>
-      <dl>
-        <dt>Best for</dt><dd>Scottish residents with multiple debts</dd>
-        <dt>Stops enforcement</dt><dd>Yes — legal protection</dd>
-        <dt>Write off</dt><dd>Yes, after completion</dd>
-        <dt>Typical term</dt><dd>~4 years</dd>
-      </dl>
-      <a class="solution-link" href="trustdeed.html">Read the Trust Deed guide →</a>
-    </div>
-  </div>
-
-  <p>We’ll match you to the route that fits your budget and goals — and explain every trade-off in plain English.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare My Options</a>
-</div>
-
-
-
-
-    <!-- Section: HowTo (matches schema) -->
+    <!-- HowTo (single unique section) -->
     <div class="section" id="howto">
       <h2>How to Take Control of Too Much Debt (Step-by-Step)</h2>
       <ol>
@@ -358,236 +317,219 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start the Step-by-Step Now</a>
     </div>
 
-    </div> <!-- end of solutions section -->
+    <!-- Breathing Space -->
+    <div class="section" id="breathing-space">
+      <h2>Breathing Space — A Pause If You Have Too Much Debt</h2>
+      <p>If your debts feel overwhelming and you need time to get advice, you may qualify for the government’s <a href="breathing-space.html">Breathing Space scheme</a>. It gives you:</p>
+      <ul>
+        <li>🛑 Up to 60 days where creditors can’t chase, add interest or take enforcement</li>
+        <li>⚖️ Protection from bailiffs and court action during this period</li>
+        <li>💡 Breathing room to explore longer-term solutions like an IVA, DRO or DMP</li>
+      </ul>
+      <p>This is often the first safe step when you have <strong>too much debt</strong> and need urgent relief while you decide your long-term plan.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for Breathing Space</a>
+    </div>
 
-    <!-- Section: Breathing Space -->
-<div class="section" id="breathing-space">
-  <h2>Breathing Space — A Pause If You Have Too Much Debt</h2>
-  <p>If your debts feel overwhelming and you need time to get advice, you may qualify for the government’s <a href="breathing-space.html">Breathing Space scheme</a>. It gives you:</p>
-  <ul>
-    <li>🛑 Up to 60 days where creditors can’t chase, add interest or take enforcement</li>
-    <li>⚖️ Protection from bailiffs and court action during this period</li>
-    <li>💡 Breathing room to explore longer-term solutions like an IVA, DRO or DMP</li>
-  </ul>
-  <p>This is often the first safe step when you have <strong>too much debt</strong> and need urgent relief while you decide your long-term plan.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for Breathing Space</a>
-</div>
+    <!-- Bailiffs & collectors -->
+    <div class="section" id="bailiffs">
+      <h2>Bailiffs & Debt Collectors: Your Rights When You Have Too Much Debt</h2>
+      <p>Letters and visits are frightening — but you have rights. Here’s what to know:</p>
+      <ul>
+        <li>Debt collectors <em>cannot</em> enter your home or take goods. Bailiffs have stricter rules and must give notice.</li>
+        <li>For many debts, entering a formal solution stops enforcement and new fees/interest.</li>
+        <li>Never ignore a court claim; respond before the deadline to avoid default judgments.</li>
+      </ul>
+      <p>Read our full guides and use them at the door:</p>
+      <ul>
+        <li><a href="bailiffs-rights.html">Bailiffs: Your Rights</a></li>
+        <li><a href="stop-debt-collectors.html">How to Stop Debt Collectors</a></li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Bailiff Pressure</a>
+    </div>
 
-<!-- Section: HowTo -->
-<div class="section" id="howto">
-  <h2>How to Take Control of Too Much Debt (Step-by-Step)</h2>
-  <ol>
-    <li><strong>List your priority bills.</strong> Keep rent/mortgage, council tax and energy up to date first.</li>
-    <li><strong>Gather all creditor letters.</strong> Note balances, interest rates and any enforcement dates.</li>
-    <li><strong>Build a realistic budget.</strong> Include food, transport, childcare and essentials — not just debts.</li>
-    <li><strong>Check your eligibility.</strong> You may qualify for an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>; a <a href="dmp.html">DMP</a> may suit if your income varies.</li>
-    <li><strong>Choose and start.</strong> Once approved, interest/enforcement is typically stopped so you can breathe.</li>
-  </ol>
-  <p>If you’re unsure which path fits, we’ll talk it through with you — free and without pressure.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start the Step-by-Step Now</a>
-</div>
+    <!-- Emotional impact -->
+    <div class="section" id="impact">
+      <h2>The Hidden Emotional Impact of Carrying Too Much Debt</h2>
+      <p>Debt isn’t just numbers — it’s how you feel each day. Many people report:</p>
+      <ul>
+        <li>Persistent worry and sleepless nights</li>
+        <li>Avoiding phone calls and unopened post</li>
+        <li>Strain with partners and family</li>
+        <li>Isolation, shame and loss of confidence</li>
+      </ul>
+      <p>Getting help is not just about lower payments — it’s about getting your life back. Most clients tell us their only regret is not acting sooner.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Take the First Step</a>
+    </div>
 
-<!-- Section: Bailiffs & collectors -->
-<div class="section" id="bailiffs">
-  <h2>Bailiffs & Debt Collectors: Your Rights When You Have Too Much Debt</h2>
-  <p>Letters and visits are frightening — but you have rights. Here’s what to know:</p>
-  <ul>
-    <li>Debt collectors <em>cannot</em> enter your home or take goods. Bailiffs have stricter rules and must give notice.</li>
-    <li>For many debts, entering a formal solution stops enforcement and new fees/interest.</li>
-    <li>Never ignore a court claim; respond before the deadline to avoid default judgments.</li>
-  </ul>
-  <p>Read our full guides and use them at the door:</p>
-  <ul>
-    <li><a href="bailiffs-rights.html">Bailiffs: Your Rights</a></li>
-    <li><a href="stop-debt-collectors.html">How to Stop Debt Collectors</a></li>
-  </ul>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Bailiff Pressure</a>
-</div>
+    <!-- Real stories -->
+    <div class="section" id="stories">
+      <h2>Real People Who Faced Too Much Debt — and Got Help</h2>
+      <p><strong>Emily, Manchester:</strong> £18,000 across cards and loans. Approved for an <a href="iva.html">IVA</a> — now pays £95/month, interest frozen, no more calls.</p>
+      <p><strong>Martin, Liverpool:</strong> Multiple payday loans and arrears. Qualified for a <a href="dro.html">DRO</a> — debts written off after 12 months when circumstances didn’t change.</p>
+      <p><strong>Claire, Stoke-on-Trent:</strong> “I can finally open my post without fear. I wish I’d asked for help sooner.” See more on our <a href="testimonials.html">testimonials</a> page.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Like They Did</a>
+    </div>
 
-<!-- Section: Emotional impact -->
-<div class="section" id="impact">
-  <h2>The Hidden Emotional Impact of Carrying Too Much Debt</h2>
-  <p>Debt isn’t just numbers — it’s how you feel each day. Many people report:</p>
-  <ul>
-    <li>Persistent worry and sleepless nights</li>
-    <li>Avoiding phone calls and unopened post</li>
-    <li>Strain with partners and family</li>
-    <li>Isolation, shame and loss of confidence</li>
-  </ul>
-  <p>Getting help is not just about lower payments — it’s about getting your life back. Most clients tell us their only regret is not acting sooner.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Take the First Step</a>
-</div>
+    <!-- Government guidance -->
+    <div class="section" id="gov-guidance">
+      <h2>Official Government Guidance on Too Much Debt</h2>
+      <p>For added reassurance, here are trusted UK government resources about dealing with problem debt:</p>
+      <ul>
+        <li>📖 <a href="https://www.gov.uk/options-for-dealing-with-your-debts" target="_blank" rel="noopener">Options for dealing with your debts (gov.uk)</a></li>
+        <li>⚖️ <a href="https://www.gov.uk/breathing-space" target="_blank" rel="noopener">Breathing Space (Debt Respite Scheme)</a></li>
+        <li>🏠 <a href="https://www.gov.uk/cost-of-living" target="_blank" rel="noopener">Government help with cost of living</a></li>
+      </ul>
+      <p>We recommend reviewing these in addition to our free debt support, so you know all your rights and protections.</p>
+    </div>
 
-<!-- Section: Real stories -->
-<div class="section" id="stories">
-  <h2>Real People Who Faced Too Much Debt — and Got Help</h2>
-  <p><strong>Emily, Manchester:</strong> £18,000 across cards and loans. Approved for an <a href="iva.html">IVA</a> — now pays £95/month, interest frozen, no more calls.</p>
-  <p><strong>Martin, Liverpool:</strong> Multiple payday loans and arrears. Qualified for a <a href="dro.html">DRO</a> — debts written off after 12 months when circumstances didn’t change.</p>
-  <p><strong>Claire, Stoke-on-Trent:</strong> “I can finally open my post without fear. I wish I’d asked for help sooner.” See more on our <a href="testimonials.html">testimonials</a> page.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Like They Did</a>
-</div>
+    <!-- FAQ -->
+    <div class="section" id="faq">
+      <h2>Too Much Debt — Frequently Asked Questions</h2>
 
-<!-- Section: Official Government Guidance -->
-<div class="section" id="gov-guidance">
-  <h2>Official Government Guidance on Too Much Debt</h2>
-  <p>For added reassurance, here are trusted UK government resources about dealing with problem debt:</p>
-  <ul>
-    <li>📖 <a href="https://www.gov.uk/options-for-dealing-with-your-debts" target="_blank" rel="noopener">Options for dealing with your debts (gov.uk)</a></li>
-    <li>⚖️ <a href="https://www.gov.uk/breathing-space" target="_blank" rel="noopener">Breathing Space (Debt Respite Scheme)</a></li>
-    <li>🏠 <a href="https://www.gov.uk/cost-of-living" target="_blank" rel="noopener">Government help with cost of living</a></li>
-  </ul>
-  <p>We recommend reviewing these in addition to our free debt support, so you know all your rights and protections.</p>
-</div>
+      <h3>How much debt is considered too much in the UK?</h3>
+      <p>There’s no single number. It’s “too much” when repayments are unaffordable <em>for your budget</em>, interest keeps growing, or you’re missing priority bills. Our free check shows what’s workable.</p>
 
-<!-- Section: Extended FAQs -->
-<div class="section" id="faq">
-  <h2>Too Much Debt — Frequently Asked Questions</h2>
+      <h3>Can I stop interest and charges today?</h3>
+      <p>With formal solutions like an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>, interest and enforcement are typically halted once approved. Many creditors will also freeze interest in a <a href="dmp.html">DMP</a>.</p>
 
-  <h3>How much debt is considered too much in the UK?</h3>
-  <p>There’s no single number. It’s “too much” when repayments are unaffordable <em>for your budget</em>, interest keeps growing, or you’re missing priority bills. Our free check shows what’s workable.</p>
+      <h3>Will I lose my home or car?</h3>
+      <p>Most solutions protect essential assets, though high equity or high-value vehicles can affect eligibility. We’ll explain your options and safeguards upfront.</p>
 
-  <h3>Can I stop interest and charges today?</h3>
-  <p>With formal solutions like an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>, interest and enforcement are typically halted once approved. Many creditors will also freeze interest in a <a href="dmp.html">DMP</a>.</p>
+      <h3>What if I have priority debts like rent or council tax?</h3>
+      <p>Prioritise them and speak to us urgently. We’ll help you stop enforcement and build a plan that covers both priority and non-priority debts safely.</p>
 
-  <h3>Will I lose my home or car?</h3>
-  <p>Most solutions protect essential assets, though high equity or high-value vehicles can affect eligibility. We’ll explain your options and safeguards upfront.</p>
+      <h3>Can I still get a mortgage in future?</h3>
+      <p>Yes. Your credit can be rebuilt after completion. Lenders look at stability, deposit and recent credit behaviour — we’ll share a step-by-step rebuild plan.</p>
 
-  <h3>What if I have priority debts like rent or council tax?</h3>
-  <p>Prioritise them and speak to us urgently. We’ll help you stop enforcement and build a plan that covers both priority and non-priority debts safely.</p>
+      <h3>Is help really free?</h3>
+      <p>Yes, our guidance is free and confidential. We’ll also explain any third-party fees (for example, if you proceed with a formal solution) before you decide.</p>
 
-  <h3>Can I still get a mortgage in future?</h3>
-  <p>Yes. Your credit can be rebuilt after completion. Lenders look at stability, deposit and recent credit behaviour — we’ll share a step-by-step rebuild plan.</p>
+      <h3>How fast can I get relief?</h3>
+      <p>Assessment is fast. Stopping calls and interest depends on the route you choose; we’ll aim for the quickest safe protection.</p>
 
-  <h3>Is help really free?</h3>
-  <p>Yes, our guidance is free and confidential. We’ll also explain any third-party fees (for example, if you proceed with a formal solution) before you decide.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
+    </div>
 
-  <h3>How fast can I get relief?</h3>
-  <p>Assessment is fast. Stopping calls and interest depends on the route you choose; we’ll aim for the quickest safe protection.</p>
+    <!-- Related guides -->
+    <div class="section" id="guides">
+      <h2>Related Guides & Next Steps</h2>
+      <ul class="columns">
+        <li><a href="iva.html">What is an IVA?</a></li>
+        <li><a href="dro.html">What is a DRO?</a></li>
+        <li><a href="dmp.html">What is a DMP?</a></li>
+        <li><a href="trustdeed.html">Trust Deed (Scotland)</a></li>
+        <li><a href="compare-solutions.html">Compare debt solutions</a></li>
+        <li><a href="help-write-off-debt.html">Help to write off debt</a></li>
+        <li><a href="bailiffs-rights.html">Bailiffs: your rights</a></li>
+        <li><a href="stop-debt-collectors.html">Stop debt collectors</a></li>
+        <li><a href="free-debt-help.html">Free debt help UK</a></li>
+        <li><a href="utility-debt.html">Utility debt help</a></li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Check</a>
+    </div>
 
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
-</div>
+    <!-- Final CTA -->
+    <div class="section" id="final-cta">
+      <h2>Your Fresh Start Begins Today</h2>
+      <p>Having <strong>too much debt</strong> doesn’t define you. With the right plan you can stop interest, halt enforcement, protect your home and — in many cases — <a href="help-write-off-debt.html">write off unaffordable balances</a>. We’ll guide you every step of the way, free and without judgment.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
+    </div>
 
-<!-- Section: Related guides -->
-<div class="section" id="guides">
-  <h2>Related Guides & Next Steps</h2>
-  <ul class="columns">
-    <li><a href="iva.html">What is an IVA?</a></li>
-    <li><a href="dro.html">What is a DRO?</a></li>
-    <li><a href="dmp.html">What is a DMP?</a></li>
-    <li><a href="trustdeed.html">Trust Deed (Scotland)</a></li>
-    <li><a href="compare-solutions.html">Compare debt solutions</a></li>
-    <li><a href="help-write-off-debt.html">Help to write off debt</a></li>
-    <li><a href="bailiffs-rights.html">Bailiffs: your rights</a></li>
-    <li><a href="stop-debt-collectors.html">Stop debt collectors</a></li>
-    <li><a href="free-debt-help.html">Free debt help UK</a></li>
-    <li><a href="utility-debt.html">Utility debt help</a></li>
-  </ul>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Check</a>
-</div>
+    <!-- Evidence -->
+    <div class="section" id="evidence">
+      <h2>Debt in the UK — Evidence & Trusted Resources</h2>
+      <p>Getting the right help is easier when you have the facts. Here are some trusted sources and statistics about problem debt in the UK:</p>
+      <ul>
+        <li>📊 <a href="https://www.fca.org.uk/publications/research/financial-lives" target="_blank" rel="noopener">FCA Financial Lives Survey</a> — over 7.8 million UK adults are over-indebted.</li>
+        <li>📉 <a href="https://www.stepchange.org/policy-and-research/debt-statistics.aspx" target="_blank" rel="noopener">StepChange Debt Statistics</a> — demand for debt advice has surged, especially for council tax and energy arrears.</li>
+        <li>⚖️ <a href="https://commonslibrary.parliament.uk/research-briefings/sn04744/" target="_blank" rel="noopener">House of Commons Briefing</a> — details of enforcement, bailiff powers, and protections.</li>
+      </ul>
+      <p>These independent sources confirm: you’re not alone, and effective solutions exist.</p>
+    </div>
 
-<!-- Section: Final CTA -->
-<div class="section">
-  <h2>Your Fresh Start Begins Today</h2>
-  <p>Having <strong>too much debt</strong> doesn’t define you. With the right plan you can stop interest, halt enforcement, protect your home and — in many cases — <a href="help-write-off-debt.html">write off unaffordable balances</a>. We’ll guide you every step of the way, free and without judgment.</p>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-</div>
+    <!-- Decision Support -->
+    <div class="section" id="decision-support">
+      <h2>Which Debt Solution Fits You Best?</h2>
+      <p>Answer these quick questions to see which options may suit your circumstances:</p>
+      <form onsubmit="return false;" class="decision-form">
+        <label>How much unsecured debt do you have?</label><br>
+        <select id="debt-amount">
+          <option value="low">Under £5,000</option>
+          <option value="medium">£5,000–£20,000</option>
+          <option value="high">Over £20,000</option>
+        </select><br><br>
 
-<!-- Section: Evidence -->
-<div class="section" id="evidence">
-  <h2>Debt in the UK — Evidence & Trusted Resources</h2>
-  <p>Getting the right help is easier when you have the facts. Here are some trusted sources and statistics about problem debt in the UK:</p>
-  <ul>
-    <li>📊 <a href="https://www.fca.org.uk/publications/research/financial-lives" target="_blank" rel="noopener">FCA Financial Lives Survey</a> — over 7.8 million UK adults are over-indebted.</li>
-    <li>📉 <a href="https://www.stepchange.org/policy-and-research/debt-statistics.aspx" target="_blank" rel="noopener">StepChange Debt Statistics</a> — demand for debt advice has surged, especially for council tax and energy arrears.</li>
-    <li>⚖️ <a href="https://commonslibrary.parliament.uk/research-briefings/sn04744/" target="_blank" rel="noopener">House of Commons Briefing</a> — details of enforcement, bailiff powers, and protections.</li>
-  </ul>
-  <p>These independent sources confirm: you’re not alone, and effective solutions exist.</p>
-</div>
+        <label>What’s your monthly spare income after essentials?</label><br>
+        <select id="income">
+          <option value="low">Under £75</option>
+          <option value="medium">£75–£200</option>
+          <option value="high">Over £200</option>
+        </select><br><br>
 
-<!-- Section: Decision Support -->
-<div class="section" id="decision-support">
-  <h2>Which Debt Solution Fits You Best?</h2>
-  <p>Answer these quick questions to see which options may suit your circumstances:</p>
-  <form onsubmit="return false;" class="decision-form">
-    <label>How much unsecured debt do you have?</label><br>
-    <select id="debt-amount">
-      <option value="low">Under £5,000</option>
-      <option value="medium">£5,000–£20,000</option>
-      <option value="high">Over £20,000</option>
-    </select><br><br>
+        <button onclick="suggestSolution()" class="menu-cta">See My Likely Options</button>
+      </form>
+      <p id="suggestion-result" style="margin-top:15px; font-weight:bold;"></p>
 
-    <label>What’s your monthly spare income after essentials?</label><br>
-    <select id="income">
-      <option value="low">Under £75</option>
-      <option value="medium">£75–£200</option>
-      <option value="high">Over £200</option>
-    </select><br><br>
+      <script>
+        function suggestSolution() {
+          const debt = document.getElementById("debt-amount").value;
+          const income = document.getElementById("income").value;
+          let result = "We’ll need a free debt check to match you properly.";
 
-    <button onclick="suggestSolution()" class="menu-cta">See My Likely Options</button>
-  </form>
-  <p id="suggestion-result" style="margin-top:15px; font-weight:bold;"></p>
+          if (debt === "high" && income === "medium") result = "An IVA could reduce payments and write off balances.";
+          else if (debt === "medium" && income === "low") result = "You may qualify for a DRO (if under £30,000 total debt).";
+          else if (debt === "low" && income === "low") result = "Breathing Space or a DRO may be best.";
+          else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements.";
 
-  <script>
-    function suggestSolution() {
-      const debt = document.getElementById("debt-amount").value;
-      const income = document.getElementById("income").value;
-      let result = "We’ll need a free debt check to match you properly.";
+          document.getElementById("suggestion-result").innerText = result + " 👉 Try our free debt check to confirm.";
+        }
+      </script>
+    </div>
 
-      if (debt === "high" && income === "medium") result = "An IVA could reduce payments and write off balances.";
-      else if (debt === "medium" && income === "low") result = "You may qualify for a DRO (if under £30,000 total debt).";
-      else if (debt === "low" && income === "low") result = "Breathing Space or a DRO may be best.";
-      else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements.";
+    <!-- Calculator -->
+    <div class="section" id="calculator">
+      <h2>Debt Repayment vs Write-Off Calculator</h2>
+      <p>Estimate how long repayments might take without help, versus using a formal solution:</p>
+      <form onsubmit="return false;" class="calc-form">
+        <label>Total unsecured debt (£):</label><br>
+        <input type="number" id="total-debt" placeholder="e.g. 12000"><br><br>
 
-      document.getElementById("suggestion-result").innerText = result + " 👉 Try our free debt check to confirm.";
-    }
-  </script>
-</div>
+        <label>Monthly payment you can afford (£):</label><br>
+        <input type="number" id="monthly-payment" placeholder="e.g. 150"><br><br>
 
-<!-- Section: Interactive Calculator -->
-<div class="section" id="calculator">
-  <h2>Debt Repayment vs Write-Off Calculator</h2>
-  <p>Estimate how long repayments might take without help, versus using a formal solution:</p>
-  <form onsubmit="return false;" class="calc-form">
-    <label>Total unsecured debt (£):</label><br>
-    <input type="number" id="total-debt" placeholder="e.g. 12000"><br><br>
+        <button onclick="calculateRepayment()" class="menu-cta">Calculate</button>
+      </form>
+      <p id="calc-result" style="margin-top:15px; font-weight:bold;"></p>
 
-    <label>Monthly payment you can afford (£):</label><br>
-    <input type="number" id="monthly-payment" placeholder="e.g. 150"><br><br>
+      <script>
+        function calculateRepayment() {
+          const debt = parseFloat(document.getElementById("total-debt").value);
+          const monthly = parseFloat(document.getElementById("monthly-payment").value);
+          if (!debt || !monthly) {
+            document.getElementById("calc-result").innerText = "Please enter valid numbers.";
+            return;
+          }
+          const months = Math.ceil(debt / monthly);
+          const years = (months / 12).toFixed(1);
 
-    <button onclick="calculateRepayment()" class="menu-cta">Calculate</button>
-  </form>
-  <p id="calc-result" style="margin-top:15px; font-weight:bold;"></p>
+          document.getElementById("calc-result").innerText =
+            "At this rate, it would take ~" + years + " years (" + months + " months) without interest. " +
+            "👉 With an IVA or DRO, large parts of the debt could be written off sooner.";
+        }
+      </script>
+    </div>
 
-  <script>
-    function calculateRepayment() {
-      const debt = parseFloat(document.getElementById("total-debt").value);
-      const monthly = parseFloat(document.getElementById("monthly-payment").value);
-      if (!debt || !monthly) {
-        document.getElementById("calc-result").innerText = "Please enter valid numbers.";
-        return;
-      }
-      const months = Math.ceil(debt / monthly);
-      const years = (months / 12).toFixed(1);
+  </div> <!-- /container -->
 
-      document.getElementById("calc-result").innerText =
-        "At this rate, it would take ~" + years + " years (" + months + " months) without interest. " +
-        "👉 With an IVA or DRO, large parts of the debt could be written off sooner.";
-    }
-  </script>
-</div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge. We recommend contacting a regulated adviser for personalised advice.</p>
+    <p><a href="testimonials.html">Read Our Client Testimonials</a></p>
+  </footer>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
-  <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge. We recommend contacting a regulated adviser for personalised advice.</p>
-  <p><a href="testimonials.html">Read Our Client Testimonials</a></p>
-</footer>
-</div> <!-- closes .container -->
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
 
 </body>
 </html>
-
-
