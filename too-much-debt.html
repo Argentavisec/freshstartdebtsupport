@@ -100,10 +100,31 @@
     ]
   }
   </script>
+
+  <!-- Inline critical CSS for the hero (optional; keep or move to style.css) -->
+  <style>
+    /* ===== Full-width Above-the-Fold Hero CTA ===== */
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
+    }
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-copy{text-align:center}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
+    .hero-cta:hover{background:#e8f6ec;color:#215a29}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+  </style>
 </head>
 
 <body>
-
 
   <!-- Header / Banner -->
   <div class="banner">
@@ -121,14 +142,12 @@
       .then(html => {
         document.getElementById("menu-placeholder").innerHTML = html;
         const menu = document.getElementById("menuContent");
-        if (menu) menu.style.display = "none"; // ensure hidden on load
+        if (menu) menu.style.display = "none";
       });
 
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
-      if (menu) {
-        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-      }
+      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
     }
 
     window.addEventListener("click", function(e) {
@@ -140,17 +159,27 @@
     });
   </script>
 
+  <!-- ===== FULL-WIDTH ABOVE-THE-FOLD HERO (outside .container) ===== -->
+  <section class="landing-hero" role="region" aria-label="Get debt help">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <!-- keep this as H2 so your main content keeps the H1 for SEO -->
+        <h2 class="hero-title">Too Much Debt?</h2>
+        <p class="hero-sub">
+          Stop creditor contact and check if you can <strong>write off unaffordable debt</strong>
+          with an IVA, DRO or DMP.
+        </p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt check">
+          Get Started Free
+        </a>
+        <div class="hero-trust">Free &amp; confidential • Takes 60–90 seconds</div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== /HERO ===== -->
+
   <!-- Main Content Container -->
   <div class="container">
-
-    <!-- Landing CTA: above-the-fold -->
-<div class="landing-cta" role="region" aria-label="Get debt help">
-  <h2>Too Much Debt?</h2>
-  <p>Stop creditor contact and check if you can <strong>write off unaffordable debt</strong> with an IVA, DRO or DMP.</p>
-  <a href="https://form.jotform.com/250596569907070" class="cta-button">✅ Get Started Free</a>
-  <div class="cta-trust">Free & confidential • Takes 60–90 seconds</div>
-</div>
-
 
     <!-- E-E-A-T / Freshness -->
     <div class="meta small">

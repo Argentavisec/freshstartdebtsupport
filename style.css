@@ -472,3 +472,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
   font-style: italic;
   color: #e0f2e9;
 }
+
+/* Make the hero feel like a big banner and keep it snappy */
+.landing-hero { border-bottom: 1px solid rgba(255,255,255,.25); }
+.hero-inner { padding: 6px 0; } /* subtle tighten */
+.hero-cta:focus { outline: 3px solid #ffffff; outline-offset: 2px; }
