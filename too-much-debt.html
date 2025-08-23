@@ -419,6 +419,91 @@
     </div>
     -->
 
+        <!-- Section: Authoritative Evidence & Support Tools -->
+    <div class="section" id="evidence">
+      <h2>Debt in the UK — Evidence & Trusted Resources</h2>
+      <p>Getting the right help is easier when you have the facts. Here are some trusted sources and statistics about problem debt in the UK:</p>
+      <ul>
+        <li>📊 <a href="https://www.fca.org.uk/publications/research/financial-lives" target="_blank" rel="noopener">FCA Financial Lives Survey</a> — over 7.8 million UK adults are over-indebted.</li>
+        <li>📉 <a href="https://www.stepchange.org/policy-and-research/debt-statistics.aspx" target="_blank" rel="noopener">StepChange Debt Statistics</a> — demand for debt advice has surged, especially for council tax and energy arrears.</li>
+        <li>⚖️ <a href="https://commonslibrary.parliament.uk/research-briefings/sn04744/" target="_blank" rel="noopener">House of Commons Briefing</a> — details of enforcement, bailiff powers, and protections.</li>
+      </ul>
+      <p>These independent sources confirm: you’re not alone, and effective solutions exist.</p>
+    </div>
+
+    <!-- Section: Decision Support -->
+    <div class="section" id="decision-support">
+      <h2>Which Debt Solution Fits You Best?</h2>
+      <p>Answer these quick questions to see which options may suit your circumstances:</p>
+      <form onsubmit="return false;" class="decision-form">
+        <label>How much unsecured debt do you have?</label><br>
+        <select id="debt-amount">
+          <option value="low">Under £5,000</option>
+          <option value="medium">£5,000–£20,000</option>
+          <option value="high">Over £20,000</option>
+        </select><br><br>
+
+        <label>What’s your monthly spare income after essentials?</label><br>
+        <select id="income">
+          <option value="low">Under £75</option>
+          <option value="medium">£75–£200</option>
+          <option value="high">Over £200</option>
+        </select><br><br>
+
+        <button onclick="suggestSolution()" class="menu-cta">See My Likely Options</button>
+      </form>
+      <p id="suggestion-result" style="margin-top:15px; font-weight:bold;"></p>
+
+      <script>
+        function suggestSolution() {
+          const debt = document.getElementById("debt-amount").value;
+          const income = document.getElementById("income").value;
+          let result = "We’ll need a free debt check to match you properly.";
+
+          if (debt === "high" && income === "medium") result = "An IVA could reduce payments and write off balances.";
+          else if (debt === "medium" && income === "low") result = "You may qualify for a DRO (if under £30,000 total debt).";
+          else if (debt === "low" && income === "low") result = "Breathing Space or a DRO may be best.";
+          else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements.";
+
+          document.getElementById("suggestion-result").innerText = result + " 👉 Try our free debt check to confirm.";
+        }
+      </script>
+    </div>
+
+    <!-- Section: Interactive Calculator -->
+    <div class="section" id="calculator">
+      <h2>Debt Repayment vs Write-Off Calculator</h2>
+      <p>Estimate how long repayments might take without help, versus using a formal solution:</p>
+      <form onsubmit="return false;" class="calc-form">
+        <label>Total unsecured debt (£):</label><br>
+        <input type="number" id="total-debt" placeholder="e.g. 12000"><br><br>
+
+        <label>Monthly payment you can afford (£):</label><br>
+        <input type="number" id="monthly-payment" placeholder="e.g. 150"><br><br>
+
+        <button onclick="calculateRepayment()" class="menu-cta">Calculate</button>
+      </form>
+      <p id="calc-result" style="margin-top:15px; font-weight:bold;"></p>
+
+      <script>
+        function calculateRepayment() {
+          const debt = parseFloat(document.getElementById("total-debt").value);
+          const monthly = parseFloat(document.getElementById("monthly-payment").value);
+          if (!debt || !monthly) {
+            document.getElementById("calc-result").innerText = "Please enter valid numbers.";
+            return;
+          }
+          const months = Math.ceil(debt / monthly);
+          const years = (months / 12).toFixed(1);
+
+          document.getElementById("calc-result").innerText =
+            "At this rate, it would take ~" + years + " years (" + months + " months) without interest. " +
+            "👉 With an IVA or DRO, large parts of the debt could be written off sooner.";
+        }
+      </script>
+    </div>
+
+
     <!-- Footer -->
     <footer>
       <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>

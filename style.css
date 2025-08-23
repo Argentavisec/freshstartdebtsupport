@@ -369,3 +369,22 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .solution-link:hover {
   border-bottom-color: rgba(47,111,54,0.5);
 }
+
+/* keep new interactive elements neat on mobile */
+.decision-form select,
+.calc-form input[type="number"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+#suggestion-result,
+#calc-result {
+  line-height: 1.4;
+}
+
+/* prevent any accidental horizontal scroll */
+#evidence a { word-break: break-word; }
