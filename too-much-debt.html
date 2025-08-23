@@ -93,10 +93,31 @@
     </div>
   </div>
 
-  <!-- Menu -->
+  <!-- Menu Include -->
   <div id="menu-placeholder"></div>
   <script>
-    fetch("menu.html").then(res=>res.text()).then(html=>{document.getElementById("menu-placeholder").innerHTML=html});
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        const menu = document.getElementById("menuContent");
+        if(menu) menu.style.display = "none";
+      });
+
+    function toggleMenu() {
+      const menu = document.getElementById("menuContent");
+      if(menu) {
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    }
+
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn = document.getElementById("menuButton");
+      if(menu && !menu.contains(e.target) && e.target !== btn) {
+        menu.style.display = "none";
+      }
+    });
   </script>
 
   <!-- Main -->
