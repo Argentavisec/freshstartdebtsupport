@@ -229,3 +229,82 @@ ul {
   }
 }
 
+/* keep existing table styles … */
+
+/* Show table on desktop/tablet, hide cards */
+.solutions-table { display: block; }
+.solutions-cards { display: none; }
+
+/* Mobile cards styles */
+.solution-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 12px 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.solution-card h3 {
+  margin: 0 0 10px 0;
+  color: #2f6f36; /* a darker green complement */
+  font-size: 18px;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2x2 grid */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fact {
+  background: #f7faf8;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.fact strong {
+  font-size: 13px;
+  color: #444;
+}
+.fact span {
+  font-size: 14px;
+  color: #111;
+}
+
+.solution-link {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2f6f36;
+  border-bottom: 2px solid rgba(47,111,54,0.2);
+  padding-bottom: 2px;
+}
+.solution-link:hover {
+  border-bottom-color: rgba(47,111,54,0.5);
+}
+
+/* Switch to cards on small screens */
+@media (max-width: 680px) {
+  .solutions-table { display: none; }
+  .solutions-cards { display: block; }
+
+  /* Hide the scroll hint when cards are active */
+  .scroll-hint.solutions-table { display: none !important; }
+
+  /* Ensure 2x2 grid on most phones; stack to 1 column on very narrow screens if needed */
+  .solution-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Optional: ultra-narrow phones fall back to single column */
+@media (max-width: 360px) {
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
