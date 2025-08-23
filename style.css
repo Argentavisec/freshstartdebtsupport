@@ -426,3 +426,49 @@ html, body { max-width: 100%; overflow-x: hidden; }
     text-align: center;
   }
 }
+
+.landing-cta {
+  background: #4CAF50;
+  color: #fff;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.landing-cta h2 {
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.landing-cta p {
+  font-size: 16px;
+  margin: 12px 0 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #fff;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background: #45a045;
+  color: #fff;
+}
+
+.cta-trust {
+  margin-top: 12px;
+  font-size: 14px;
+  font-style: italic;
+  color: #e0f2e9;
+}
