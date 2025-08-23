@@ -318,3 +318,54 @@ ul {
 
 /* Global safety net: avoid accidental horizontal scroll from any wide child */
 html, body { max-width: 100%; overflow-x: hidden; }
+
+/* Vertical solutions styling */
+.solutions-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.solution-vertical {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.solution-vertical h3 {
+  margin-top: 0;
+  color: #2f6f36;
+  font-size: 18px;
+}
+
+.solution-vertical dl {
+  margin: 0;
+}
+
+.solution-vertical dt {
+  font-weight: bold;
+  margin-top: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.solution-vertical dd {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #111;
+}
+
+.solution-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2f6f36;
+  border-bottom: 2px solid rgba(47,111,54,0.2);
+  padding-bottom: 2px;
+}
+.solution-link:hover {
+  border-bottom-color: rgba(47,111,54,0.5);
+}
