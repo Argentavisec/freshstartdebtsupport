@@ -187,16 +187,27 @@ ul {
   }
 }
 
+/* ---------- Solutions table (desktop look preserved) ---------- */
+
+/* Scrollable wrapper (kept) */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
+/* Base table */
 .responsive-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px;
+  table-layout: auto; /* normal layout by default */
+}
+
+/* Desktop/large screens: keep a comfortable min-width so columns breathe */
+@media (min-width: 681px) {
+  .responsive-table {
+    min-width: 600px;
+  }
 }
 
 .responsive-table th,
@@ -206,6 +217,9 @@ ul {
   text-align: left;
   vertical-align: top;
   font-size: 14px;
+  white-space: normal;          /* allow wrapping */
+  word-break: break-word;       /* break long words/URLs */
+  overflow-wrap: anywhere;      /* modern wrap fallback */
 }
 
 .responsive-table th {
@@ -224,18 +238,16 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .scroll-hint {
-    display: block;
-  }
+  .scroll-hint { display: block; }
 }
 
-/* keep existing table styles … */
+/* ---------- Optional solutions cards (keep hidden unless you enable them) ---------- */
 
-/* Show table on desktop/tablet, hide cards */
+/* By default: show table everywhere; keep cards off unless you decide otherwise */
 .solutions-table { display: block; }
 .solutions-cards { display: none; }
 
-/* Mobile cards styles */
+/* Card visuals (safe to keep even if hidden) */
 .solution-card {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -246,7 +258,7 @@ ul {
 }
 .solution-card h3 {
   margin: 0 0 10px 0;
-  color: #2f6f36; /* a darker green complement */
+  color: #2f6f36;
   font-size: 18px;
 }
 
@@ -266,14 +278,8 @@ ul {
   flex-direction: column;
   gap: 4px;
 }
-.fact strong {
-  font-size: 13px;
-  color: #444;
-}
-.fact span {
-  font-size: 14px;
-  color: #111;
-}
+.fact strong { font-size: 13px; color: #444; }
+.fact span   { font-size: 14px; color: #111; }
 
 .solution-link {
   display: inline-block;
@@ -283,28 +289,32 @@ ul {
   border-bottom: 2px solid rgba(47,111,54,0.2);
   padding-bottom: 2px;
 }
-.solution-link:hover {
-  border-bottom-color: rgba(47,111,54,0.5);
-}
+.solution-link:hover { border-bottom-color: rgba(47,111,54,0.5); }
 
-/* Switch to cards on small screens */
+/* ---------- Mobile-specific hardening ---------- */
+
+/* Phones: ensure table never stretches viewport */
 @media (max-width: 680px) {
+  .responsive-table {
+    min-width: 0;              /* neutralise any min-width */
+    table-layout: fixed;       /* equal columns; prevents overflow calc */
+  }
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 13px;           /* slight downsize for narrow screens */
+  }
+
+  /* If you ever switch to cards on phones, uncomment below
   .solutions-table { display: none; }
   .solutions-cards { display: block; }
-
-  /* Hide the scroll hint when cards are active */
   .scroll-hint.solutions-table { display: none !important; }
-
-  /* Ensure 2x2 grid on most phones; stack to 1 column on very narrow screens if needed */
-  .solution-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+  */
 }
 
-/* Optional: ultra-narrow phones fall back to single column */
+/* Ultra-narrow devices: stack card grid if you enable cards */
 @media (max-width: 360px) {
-  .solution-grid {
-    grid-template-columns: 1fr;
-  }
+  .solution-grid { grid-template-columns: 1fr; }
 }
 
+/* Global safety net: avoid accidental horizontal scroll from any wide child */
+html, body { max-width: 100%; overflow-x: hidden; }
