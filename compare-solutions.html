@@ -32,7 +32,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Schema: Org + Breadcrumb + HowTo + (MERGED) FAQ -->
+  <!-- Schema: Org + Breadcrumb + HowTo + (MERGED) FAQ with comparison Qs -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -73,7 +73,10 @@
           {"@type":"Question","name":"Will these solutions affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"Yes. Formal solutions are recorded for 6 years from start (or discharge for bankruptcy). Many people rebuild credit after completion."}},
           {"@type":"Question","name":"What debts can I include?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues and BNPL can be included. Secured debts (mortgage/HP), child maintenance and certain fines are generally excluded."}},
           {"@type":"Question","name":"Do I pay fees upfront?","acceptedAnswer":{"@type":"Answer","text":"For IVAs and Trust Deeds, fees are set out in your proposal and taken from your affordable monthly payments once approved. A DRO has a government-set fee; bankruptcy has application/court fees. DMP provider fees vary (many charities charge no fees)."}},
-          {"@type":"Question","name":"Can I switch solutions later?","acceptedAnswer":{"@type":"Answer","text":"Yes, if circumstances change, it may be possible to switch. Get advice before making changes."}}
+          {"@type":"Question","name":"Can I switch solutions later?","acceptedAnswer":{"@type":"Answer","text":"Yes, if circumstances change, it may be possible to switch. Get advice before making changes."}},
+          {"@type":"Question","name":"IVA vs DMP — which is better?","acceptedAnswer":{"@type":"Answer","text":"Choose an IVA if you have higher unsecured debts, need legal protection and want remaining qualifying debt written off after completion. Choose a DMP if you need flexibility and an informal plan; interest freezes depend on creditor agreement and there’s no automatic write-off."}},
+          {"@type":"Question","name":"IVA vs DRO — which fits my situation?","acceptedAnswer":{"@type":"Answer","text":"A DRO is often best if you meet strict low income/low asset criteria; debts can be written off after 12 months. If you don’t meet DRO criteria but have steady income and need legal protection, an IVA may be suitable."}},
+          {"@type":"Question","name":"IVA vs Bankruptcy — what’s safer?","acceptedAnswer":{"@type":"Answer","text":"Bankruptcy is the fastest reset but can affect assets and comes with restrictions. An IVA can help protect assets if you can afford monthly contributions and need a legally binding plan that usually freezes interest and enforcement."}}
         ]
       }
     ]
@@ -114,6 +117,10 @@
     .solution-vertical{border:1px solid #d3f0dd;border-radius:16px;padding:14px;background:#f7fff9}
     .solution-vertical h3{margin-top:0}
     .solution-link{display:inline-block;margin-top:6px}
+    /* tiny FAQ microcopy styling inside comparison sections */
+    .micro-faq{margin-top:10px}
+    .micro-faq h4{margin:10px 0 6px 0;font-size:1.05rem}
+    .micro-faq p{margin:0 0 8px 0}
   </style>
 </head>
 
@@ -187,6 +194,9 @@
         <ul>
           <li><a href="#why-compare">Why compare first</a></li>
           <li><a href="#solutions">Solutions explained</a></li>
+          <li><a href="#iva-vs-dmp">IVA vs DMP</a></li>
+          <li><a href="#iva-vs-dro">IVA vs DRO</a></li>
+          <li><a href="#iva-vs-bankruptcy">IVA vs Bankruptcy</a></li>
           <li><a href="#costs">Costs & fees</a></li>
           <li><a href="#eligibility">Eligibility</a></li>
           <li><a href="#protections">Legal protections & credit impact</a></li>
@@ -274,41 +284,59 @@
       </div>
     </div>
 
-    <!-- BEGIN: Head-to-Head Comparisons -->
-    <div class="section" id="iva-or-dmp">
-      <h2>IVA or DMP — Which Is Better?</h2>
-      <p>If you’re deciding between an <strong>IVA or DMP</strong>, it usually comes down to <em>how much you owe</em> and <em>whether you need legal protection</em>.</p>
+    <!-- BEGIN: Head-to-Head Comparisons (exact-match headings + micro FAQs) -->
+    <div class="section" id="iva-vs-dmp">
+      <h2>IVA vs DMP — What’s the Difference?</h2>
+      <p>If you’re deciding between an <strong>IVA vs DMP</strong>, it usually comes down to <em>how much you owe</em> and <em>whether you need legal protection</em>.</p>
       <ul>
         <li><strong>Choose an IVA</strong> if you have ~£6,000+ unsecured debts, a steady income and need interest and most enforcement <em>legally</em> stopped. Remaining qualifying debt can be <strong>written off after completion</strong>.</li>
         <li><strong>Choose a DMP</strong> if you want a flexible, <em>informal</em> plan with payments you can adjust. Interest freeze depends on creditor agreement and there’s no automatic write-off.</li>
       </ul>
       <p><em>Rule of thumb:</em> Higher debts + need for certainty → IVA. Variable income or temporary difficulty → DMP.</p>
+      <div class="micro-faq" aria-label="IVA vs DMP FAQs">
+        <h4>Is an IVA better than a DMP?</h4>
+        <p>It can be if you need legal certainty (frozen interest/enforcement and potential write-off). A DMP is better for flexibility without a formal insolvency.</p>
+        <h4>Which is cheaper: IVA or DMP?</h4>
+        <p>IVA fees are taken from approved contributions; DMPs can be free via charities. The “cheapest” route depends on affordability and whether interest continues.</p>
+      </div>
       <a href="iva.html" class="menu-cta">Learn About IVAs</a>
       <a href="dmp.html" class="menu-cta">Learn About DMPs</a>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get a Free Comparison</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get a Free IVA vs DMP Comparison</a>
     </div>
 
-    <div class="section" id="iva-or-dro">
-      <h2>IVA or DRO — Which Fits Your Situation?</h2>
-      <p>Comparing <strong>IVA or DRO</strong> hinges on <em>income, assets and total debt</em>.</p>
+    <div class="section" id="iva-vs-dro">
+      <h2>IVA vs DRO — Which Is Best?</h2>
+      <p>Comparing <strong>IVA vs DRO</strong> hinges on <em>income, assets and total debt</em>.</p>
       <ul>
         <li><strong>Choose an IVA</strong> when you have regular income to contribute monthly and want to protect assets where possible. Typical term <strong>5–6 years</strong>.</li>
         <li><strong>Choose a DRO</strong> if you meet strict <em>low income/low asset</em> criteria. Debts are <strong>written off after 12 months</strong> if your situation doesn’t improve.</li>
       </ul>
       <p><em>Rule of thumb:</em> If you pass DRO criteria, it’s often the quickest/cheapest reset. If not, an IVA may still give strong protection and a clear end-date.</p>
+      <div class="micro-faq" aria-label="IVA vs DRO FAQs">
+        <h4>Is a DRO better than an IVA?</h4>
+        <p>Often yes, if you qualify — a DRO can be faster and cheaper. If you don’t qualify, an IVA may still offer protection and a write-off after completion.</p>
+        <h4>Do I pay IVA or DRO fees upfront?</h4>
+        <p>IVA fees are taken from contributions after approval. A DRO has a government-set fee; we’ll explain what applies to you.</p>
+      </div>
       <a href="dro.html" class="menu-cta">Learn About DROs</a>
       <a href="iva.html" class="menu-cta">Learn About IVAs</a>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for a DRO</a>
     </div>
 
-    <div class="section" id="iva-or-bankruptcy">
-      <h2>IVA or Bankruptcy — What’s Safer for You?</h2>
-      <p>Choosing between an <strong>IVA or Bankruptcy</strong> depends on <em>asset risk</em> and <em>how fast you need a reset</em>.</p>
+    <div class="section" id="iva-vs-bankruptcy">
+      <h2>IVA vs Bankruptcy — What Should I Choose?</h2>
+      <p>Choosing between <strong>IVA vs Bankruptcy</strong> depends on <em>asset risk</em> and <em>how fast you need a reset</em>.</p>
       <ul>
         <li><strong>Choose an IVA</strong> if keeping your home or certain assets is important and you can afford a fair monthly contribution. It’s legally binding and usually freezes interest/enforcement.</li>
         <li><strong>Choose Bankruptcy</strong> for the <em>fastest clean break</em> (normally 1 year to discharge) when repayments aren’t realistic — but be aware of potential asset impacts and restrictions.</li>
       </ul>
       <p><em>Rule of thumb:</em> Need speed and have limited assets → Bankruptcy. Want to protect assets and can pay monthly → IVA.</p>
+      <div class="micro-faq" aria-label="IVA vs Bankruptcy FAQs">
+        <h4>Is bankruptcy quicker than an IVA?</h4>
+        <p>Usually yes (around one year to discharge). An IVA typically runs 5–6 years but can better protect assets depending on equity.</p>
+        <h4>Will either option wreck my credit?</h4>
+        <p>Both affect your credit for roughly six years, but many people rebuild after completion or discharge. We’ll show realistic timelines.</p>
+      </div>
       <a href="bankruptcy.html" class="menu-cta">Learn About Bankruptcy</a>
       <a href="iva.html" class="menu-cta">Learn About IVAs</a>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare IVA vs Bankruptcy</a>
