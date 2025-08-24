@@ -79,6 +79,22 @@
   }
   </script>
 
+  <!-- NEW: Additional FAQ schema for your target queries (added, nothing removed) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"IVA UK eligibility — do I qualify?","acceptedAnswer":{"@type":"Answer","text":"You may qualify for an IVA in the UK if you have around £6,000+ of unsecured debt, more than one creditor, and a steady income. Affordability, your budget and any assets are also considered."}},
+      {"@type":"Question","name":"What is an IVA (Individual Voluntary Arrangement)?","acceptedAnswer":{"@type":"Answer","text":"An IVA is a legally binding agreement to repay what you can afford, usually over 5–6 years, with interest typically frozen and remaining qualifying unsecured debt written off at completion."}},
+      {"@type":"Question","name":"What debts can go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, BNPL and some HMRC debts can be included. Secured debts (mortgages, HP) and obligations like child maintenance or fines are generally excluded."}},
+      {"@type":"Question","name":"IVA vs DRO vs Bankruptcy UK — which is best?","acceptedAnswer":{"@type":"Answer","text":"An IVA may suit higher debts with steady income while protecting assets where possible. A DRO can suit low income and low assets if you meet criteria. Bankruptcy is the fastest reset but may risk assets and has stricter restrictions."}},
+      {"@type":"Question","name":"IVA cost fees UK — do I pay upfront?","acceptedAnswer":{"@type":"Answer","text":"IVA fees (nominee, supervisory, completion) are agreed with creditors and taken from your affordable monthly payments, not added on top or paid upfront."}},
+      {"@type":"Question","name":"How long does an IVA last in the UK?","acceptedAnswer":{"@type":"Answer","text":"Most IVAs last 5–6 years. If home equity cannot be released, a 12-month extension is sometimes proposed."}}
+    ]
+  }
+  </script>
+
   <!-- Inline critical CSS for hero (same layout) -->
   <style>
     .landing-hero{
@@ -107,6 +123,9 @@
     .quiz-row label{font-weight:600}
     .quiz-actions{margin-top:10px}
     .trust-list li{margin-bottom:6px}
+    /* NEW small utility for jump links */
+    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
   </style>
 </head>
 
@@ -198,7 +217,89 @@
           <li><a href="#calculator">Repayment vs write-off calculator</a></li>
         </ul>
       </nav>
+
+      <!-- NEW: Jump links for search intent -->
+      <div class="jump-links" aria-label="Popular IVA topics">
+        <a href="#iva-uk-eligibility">IVA UK eligibility</a>
+        <a href="#iva-search-term">Searching “IVA”</a>
+        <a href="#iva-what-is">What is an IVA</a>
+        <a href="#iva-debts">What debts go in an IVA</a>
+        <a href="#iva-compare">IVA vs DRO vs bankruptcy UK</a>
+        <a href="#iva-costs">IVA cost fees UK</a>
+        <a href="#iva-duration">How long an IVA lasts</a>
+      </div>
     </div>
+
+    <!-- ====== NEW SEARCH-INTENT SECTIONS (added, nothing removed) ====== -->
+
+    <div class="section" id="iva-uk-eligibility">
+      <h2>IVA UK Eligibility — Do You Qualify?</h2>
+      <p>To meet <strong>IVA UK eligibility</strong>, you’ll usually need:</p>
+      <ul>
+        <li>💷 Around <strong>£6,000+ in unsecured debts</strong> (often more than one creditor)</li>
+        <li>📈 A <strong>steady income</strong> (wages or benefits) to make an affordable payment</li>
+        <li>🧮 A realistic <strong>household budget</strong> after priority bills</li>
+        <li>🏠 A wish to avoid bankruptcy and protect essentials/assets where possible</li>
+      </ul>
+      <p>Eligibility is checked case-by-case. We’ll confirm your options and explain any trade-offs, including <a href="#alternatives">alternatives</a> if an IVA isn’t best.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My IVA Eligibility (Free)</a>
+    </div>
+
+    <div class="section" id="iva-search-term">
+      <h2>Searching “IVA” — What People Want to Know</h2>
+      <p>If you’ve searched simply for <strong>“IVA”</strong> you’re likely looking for: what an IVA is, who qualifies, what it costs, how long it lasts, and how it compares with a <a href="dro.html">DRO</a> or <a href="bankruptcy.html">bankruptcy</a>. This page answers all of that in one place and links to official guidance for added reassurance.</p>
+      <ul>
+        <li><a href="#iva-what-is">What is an IVA?</a></li>
+        <li><a href="#iva-uk-eligibility">IVA UK eligibility</a></li>
+        <li><a href="#iva-debts">What debts can go in an IVA?</a></li>
+        <li><a href="#iva-costs">IVA cost & fees UK</a></li>
+        <li><a href="#iva-duration">How long does an IVA last?</a></li>
+      </ul>
+    </div>
+
+    <div class="section" id="iva-what-is">
+      <h2>What Is an IVA (Individual Voluntary Arrangement)?</h2>
+      <p>An <strong>IVA</strong> is a legally binding agreement with your creditors to repay what you can afford over a fixed period (usually <strong>5–6 years</strong>). Once approved, <strong>interest and most enforcement are typically frozen</strong>. After successful completion, remaining qualifying unsecured debt is <strong>legally written off</strong>. It’s overseen by a licensed <em>Insolvency Practitioner</em>.</p>
+      <a href="#process" class="menu-cta">See the IVA Process Step-by-Step</a>
+    </div>
+
+    <div class="section" id="iva-debts">
+      <h2>What Debts Can Go in an IVA?</h2>
+      <p><strong>Usually included (unsecured):</strong> credit/store cards, catalogues, loans, payday loans, overdrafts, <abbr title="Buy Now Pay Later">BNPL</abbr>, utility arrears and some HMRC debts.</p>
+      <p><strong>Not included:</strong> secured debts (e.g., mortgages, HP), student loans, child maintenance and most fines. You must maintain secured payments alongside your IVA.</p>
+      <a href="credit-card-debt.html" class="menu-cta">Help with Credit Card Debt</a>
+      <a href="loan-debt.html" class="menu-cta">Support for Loan Debt</a>
+    </div>
+
+    <div class="section" id="iva-compare">
+      <h2>IVA vs DRO, IVA vs Bankruptcy (UK)</h2>
+      <ul>
+        <li><strong>IVA:</strong> Best where debts are higher (≈£6k+) with a <strong>regular income</strong>; aims to protect assets where possible.</li>
+        <li><a href="dro.html"><strong>DRO</strong></a>: For <strong>low income/low assets</strong> within set criteria; suitable for smaller debts.</li>
+        <li><a href="bankruptcy.html"><strong>Bankruptcy</strong></a>: Quickest reset but may risk assets and carries stricter restrictions.</li>
+      </ul>
+      <a href="compare-solutions.html" class="menu-cta">Compare All Debt Solutions</a>
+    </div>
+
+    <div class="section" id="iva-costs">
+      <h2>IVA Cost & Fees UK</h2>
+      <p>You don’t pay IVA fees upfront. They’re taken from your <strong>affordable monthly payment</strong> and agreed with creditors:</p>
+      <ul>
+        <li>🧾 <strong>Nominee fee</strong> — preparing the proposal</li>
+        <li>🔄 <strong>Supervisory fee</strong> — ongoing case management</li>
+        <li>✅ <strong>Completion fee</strong></li>
+      </ul>
+      <p>Fees are <strong>transparent, regulated</strong> and shown in writing before you decide.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See My Likely IVA Costs</a>
+    </div>
+
+    <div class="section" id="iva-duration">
+      <h2>How Long Does an IVA Last?</h2>
+      <p>Most IVAs run for <strong>5–6 years</strong>. If you have home equity that can’t be released, a <strong>12-month extension</strong> is sometimes proposed instead of a sale. We’ll set expectations clearly at the start.</p>
+      <a href="#faq" class="menu-cta">Read FAQs on IVA Duration</a>
+    </div>
+
+    <!-- ====== END NEW SECTIONS ====== -->
 
     <!-- What is an IVA -->
     <div class="section" id="what">
