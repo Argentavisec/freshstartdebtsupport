@@ -15,10 +15,19 @@
   <meta property="og:description" content="Compare IVA providers, see how they differ, and learn why Fresh Start offers faster, more personal IVA help to write off unaffordable debt." />
   <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/iva-companies.html" />
   <meta property="og:site_name" content="Fresh Start Debt Support" />
+  <!-- NEW: Add a social image so shares/preview cards look great -->
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/og/iva-companies-2025.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/og/iva-companies-2025.jpg" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Performance: preconnect to 3rd-parties -->
+  <!-- NEW -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
@@ -32,7 +41,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Schema: Org + Breadcrumb + FAQ + HowTo (+ WebPage w/ dateModified) + Article + Speakable -->
+  <!-- Schema: Org + Breadcrumb + FAQ + HowTo (+ WebPage w/ dateModified) + Article + Speakable + WebSite/SearchAction + ItemList -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -43,6 +52,16 @@
         "url":"https://www.freshstartdebtsupport.co.uk/",
         "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
         "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
+      },
+      {
+        "@type":"WebSite",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "name":"Fresh Start Debt Support",
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target":"https://www.freshstartdebtsupport.co.uk/search.html?q={search_term_string}",
+          "query-input":"required name=search_term_string"
+        }
       },
       {
         "@type":"WebPage",
@@ -82,9 +101,25 @@
           {"@type":"Question","name":"What debts can be included in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts (credit cards, loans, overdrafts, payday, council tax, utilities). Usually excluded: student loans, child maintenance, and criminal fines."}},
           {"@type":"Question","name":"Are IVA companies regulated?","acceptedAnswer":{"@type":"Answer","text":"Insolvency Practitioners (IPs) are authorised and regulated by professional bodies such as the IPA or ICAEW. Marketing rules and advice standards are covered by UK regulators (e.g., FCA for certain activities, ASA for advertising)."}},
           {"@type":"Question","name":"What is the best IVA company in the UK?","acceptedAnswer":{"@type":"Answer","text":"There isn’t one universal “best”. The right IVA provider depends on your situation — for example: charities that publish outcomes (e.g., StepChange notes ~85% completion in recent years), providers who apply the 2025 Protocol correctly for homeowners, and firms that offer fast set-up with a named case manager."}},
-          {"@type":"Question","name":"How can I choose the best IVA company for my situation?","acceptedAnswer":{"@type":"Answer","text":"Match your needs to a provider: (1) If you’re a homeowner, confirm the 2025 Protocol rules on 60 vs 72 months and remortgage alternatives in writing. (2) If you need rapid set-up, ask for time to creditor vote and how quickly contact is reduced. (3) If you want higher completion support, prioritise providers that publish their outcomes and hardship policies."}},
           {"@type":"Question","name":"How can I compare IVA providers objectively?","acceptedAnswer":{"@type":"Answer","text":"Ask for completion rates, typical time to creditor vote, named case manager availability, homeowner equity policy under the 2025 Protocol, and a clear fee breakdown in writing."}},
-          {"@type":"Question","name":"Are IVA company rankings paid for?","acceptedAnswer":{"@type":"Answer","text":"Some comparison pages may be sponsored. We do not accept payment to rank firms; we link to neutral sources and explain trade-offs, including when a DRO or DMP may be safer."}}
+          {"@type":"Question","name":"Are IVA company rankings paid for?","acceptedAnswer":{"@type":"Answer","text":"Some comparison pages may be sponsored. We do not accept payment to rank firms; we link to neutral sources and explain trade-offs, including when a DRO or DMP may be safer."}},
+          /* NEW: Expanded FAQs for more long-tail coverage */
+          {"@type":"Question","name":"How fast can an IVA be set up?","acceptedAnswer":{"@type":"Answer","text":"Times vary by provider. Ask for typical time to creditor vote and what they do to reduce contact during proposal drafting."}},
+          {"@type":"Question","name":"What happens if my income drops during an IVA?","acceptedAnswer":{"@type":"Answer","text":"Good firms offer payment breaks, variation meetings and affordability reviews. Ask for their hardship policy in writing."}},
+          {"@type":"Question","name":"Do IVAs affect homeowners in 2025?","acceptedAnswer":{"@type":"Answer","text":"Under the 2025 Protocol, remortgaging pressure is reduced. If there’s over £10,000 beneficial interest, a 72-month term may apply instead of equity release."}}
+        ]
+      },
+      /* NEW: ItemList for the providers section (eligible for rich results) */
+      {
+        "@type":"ItemList",
+        "name":"Popular UK IVA Companies",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Creditfix","url":"https://www.creditfix.co.uk/"},
+          {"@type":"ListItem","position":2,"name":"StepChange IVA","url":"https://www.stepchange.org/"},
+          {"@type":"ListItem","position":3,"name":"PayPlan","url":"https://www.payplan.com/"},
+          {"@type":"ListItem","position":4,"name":"Freeman Jones (Financial Wellness Group)","url":"https://www.financialwellnessgroup.co.uk/"},
+          {"@type":"ListItem","position":5,"name":"Hanover Insolvency","url":"https://www.hanoverinsolvency.co.uk/"},
+          {"@type":"ListItem","position":6,"name":"McCambridge Duffy","url":"https://www.mccambridgeduffy.com/"}
         ]
       },
       {
@@ -144,6 +179,13 @@
 
     /* Quick answer callout */
     .quick-answer{background:#f5fbf7;border:1px solid #d9f1df;border-radius:12px;padding:12px;margin:12px 0;font-weight:600}
+
+    /* NEW: Related guides cards */
+    .guide-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+    .guide-card{background:#fbfefc;border:1px solid #e7f3ea;border-radius:12px;padding:14px}
+    .guide-card h3{margin:0 0 6px;font-size:1.05rem}
+    .guide-card p{margin:0 0 10px}
+    .guide-card a.cta{display:inline-block;border:1px solid #cdeed6;border-radius:999px;padding:6px 10px;background:#eef9f2;text-decoration:none;font-weight:700}
   </style>
 </head>
 
@@ -152,7 +194,7 @@
   <!-- Header / Banner (identical structure) -->
   <div class="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
+      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" loading="lazy" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
@@ -290,7 +332,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare My IVA Options</a>
     </div>
 
-    <!-- NEW: Real, updated data/statistics / Protocol changes 2025 -->
+    <!-- Protocol changes 2025 -->
     <div class="section" id="protocol-changes-2025">
       <h2>2025 IVA Protocol Changes (What Homeowners Should Know)</h2>
       <p>From <strong>1 July 2025</strong>, the revised <em>Consumer IVA Protocol</em> took effect to improve protections and service standards. Two key points for homeowners:</p>
@@ -302,7 +344,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask an Expert About the Changes</a>
     </div>
 
-    <!-- NEW: Trust signals / results -->
+    <!-- Trust signals / results -->
     <div class="section" id="trust">
       <h2>Results, Reviews &amp; Why People Choose Fresh Start</h2>
       <div class="kpis" aria-label="Trust metrics">
@@ -311,14 +353,12 @@
         <div class="kpi"><strong>Evidence-based guidance:</strong><br><span class="muted">We link to neutral sources (Citizens Advice, MoneyHelper, FCA) so you can double-check every claim.</span></div>
       </div>
 
-      <!-- Featured outcomes / case studies -->
       <div class="cards" aria-label="Case studies">
         <div class="card"><strong>Case study: Family home protected</strong><br><span class="small">Homeowner with £28,400 unsecured debt; Protocol applied with <em>72-month</em> term instead of remortgage. Affordable payments maintained through a 6-month income drop review.</span></div>
         <div class="card"><strong>Case study: Faster set-up</strong><br><span class="small">Single parent, £16,200 debt. Proposal submitted in 7 business days; creditor contact reduced within 48 hours of proposal issue.</span></div>
         <div class="card"><strong>Case study: Wellbeing support</strong><br><span class="small">Client experiencing anxiety supported with payment holiday and signposting to mental-health resources; plan successfully resumed.</span></div>
       </div>
 
-      <!-- Optional Trustpilot widget placement -->
       <div class="trustpilot" aria-label="Trustpilot reviews" style="margin-top:12px">
         <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="freshstartdebtsupport.co.uk" data-style-height="200px" data-style-width="100%" data-theme="light">
           <a href="https://www.trustpilot.com/review/freshstartdebtsupport.co.uk" rel="noopener" target="_blank">Read our Trustpilot reviews</a>
@@ -328,7 +368,7 @@
       <p class="disclaimer">We never publish fake testimonials. For real experiences, see <a href="testimonials.html">Client Testimonials</a>.</p>
     </div>
 
-    <!-- NEW: Best IVA company UK (no tables; cards + bullets) -->
+    <!-- Best IVA company by situation -->
     <div class="section" id="best-iva-company-uk">
       <h2>Best IVA Company UK — Plain-English Picks by Situation</h2>
       <p>There isn’t a single “best IVA company” for everyone — the right choice depends on your income stability, whether you’re a homeowner, and how quickly you need creditor contact to ease. Here’s how to match the provider to <em>your</em> situation:</p>
@@ -396,7 +436,7 @@
       <p>Bankruptcy can be faster but may impact assets more. An IVA can be less disruptive and more flexible, depending on your situation.</p>
     </div>
 
-    <!-- NEW: Best IVA Companies 2025 (review-style long-tail cluster) -->
+    <!-- Best IVA Companies 2025 -->
     <div class="section" id="best-iva-companies-2025">
       <h2>Best IVA Companies 2025 — What to Look For (Without the Hype)</h2>
       <p>Pages titled <em>“Best IVA Companies 2025”</em> can look like rankings — but the <strong>best</strong> firm depends on your budget, stability of income, and whether you’re a homeowner. Use this quick matrix to shortlist:</p>
@@ -409,7 +449,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Shortlist My IVA Options</a>
     </div>
 
-    <!-- NEW: How to find the best IVA companies (adjacent long-tail cluster) -->
+    <!-- How to find -->
     <div class="section" id="how-to-find-best-iva-companies">
       <h2>How to Find the Best IVA Companies (Checklist)</h2>
       <ol>
@@ -422,7 +462,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Use the Checklist With an Adviser</a>
     </div>
 
-    <!-- NEW: Methodology / transparency -->
+    <!-- Methodology -->
     <div class="section" id="methodology">
       <h2>How We Compare IVA Providers (Methodology)</h2>
       <p>We don’t sell rankings. Instead, we assess providers against transparent criteria you can verify:</p>
@@ -435,7 +475,7 @@
       <p class="small">Where a provider publishes data (e.g., completion %), we link to it in <a href="#references">References</a>. If not, we ask them to provide it before making any claim.</p>
     </div>
 
-    <!-- NEW: Search intent coverage -->
+    <!-- Search intent coverage -->
     <div class="section" id="search-intent-coverage">
       <h2>Search Intent Coverage — Queries This Page Answers</h2>
       <p class="small">To help you (and searchers) faster, these are the common questions we cover:</p>
@@ -447,7 +487,7 @@
       </ul>
     </div>
 
-    <!-- NEW: People also ask (accordion, no tables) -->
+    <!-- People also ask -->
     <div class="section" id="people-also-ask">
       <h2>People Also Ask — “Best IVA Company UK”</h2>
       <div class="accordion" role="region" aria-label="People also ask">
@@ -479,7 +519,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta" style="margin-top:12px;display:inline-block">Get Help Choosing an IVA Company</a>
     </div>
 
-    <!-- HowTo (step-by-step section in-page to mirror schema) -->
+    <!-- HowTo (step-by-step) -->
     <div class="section" id="howto">
       <h2>How to Choose an IVA Provider (Step-by-Step)</h2>
       <ol>
@@ -492,7 +532,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start the Free IVA Check</a>
     </div>
 
-    <!-- Decision Support (kept identical structure & IDs) -->
+    <!-- Decision Support -->
     <div class="section" id="decision-support">
       <h2>Which IVA Provider Might Suit Me?</h2>
       <p>Answer these quick questions to see likely options:</p>
@@ -531,7 +571,7 @@
       </script>
     </div>
 
-    <!-- Calculator (same IDs & script pattern) -->
+    <!-- Calculator -->
     <div class="section" id="calculator">
       <h2>IVA Repayment vs Write-Off Calculator</h2>
       <p>Estimate how long repayments might take without help, versus using an IVA:</p>
@@ -564,7 +604,7 @@
       </script>
     </div>
 
-    <!-- NEW: External guidance (neutral best practices & compliance) -->
+    <!-- External guidance -->
     <div class="section" id="external-guidance">
       <h2>Neutral Best Practices (Before You Choose)</h2>
       <ul class="refs">
@@ -576,7 +616,7 @@
       <p class="disclaimer">We summarise external sources for convenience — follow the links above to read the full official guidance.</p>
     </div>
 
-    <!-- FAQ (kept same structure; IVA-specific) -->
+    <!-- FAQ -->
     <div class="section" id="faq">
       <h2>IVA Companies — Frequently Asked Questions</h2>
 
@@ -604,23 +644,54 @@
       <h3>What should I avoid when choosing?</h3>
       <p>Avoid upfront fees, pressure to sign quickly, and providers who won’t explain the <a href="#protocol-changes-2025">2025 homeowner rules</a> in writing.</p>
 
+      <!-- NEW: Extra FAQs (mirror JSON-LD additions) -->
+      <h3>How fast can an IVA be set up?</h3>
+      <p>It varies. Ask each provider for their typical time to creditor vote and how quickly they reduce creditor contact during the proposal stage.</p>
+
+      <h3>What if my income drops during an IVA?</h3>
+      <p>Responsible providers have hardship policies (payment holidays, variations, affordability reviews). Ask for these in writing before you choose.</p>
+
+      <h3>Do the 2025 rules change equity release?</h3>
+      <p>Yes. The 2025 Protocol reduces pressure to remortgage. If you have over £10,000 beneficial interest, a 72-month term may be used instead.</p>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Free IVA Advice</a>
     </div>
 
-        <!-- NEW: Related guides (internal linking cluster) -->
+    <!-- Related guides (expanded) -->
     <div class="section" id="guides">
       <h2>Related IVA & Debt Guides</h2>
-      <ul>
-        <li><a href="iva.html">What is an IVA?</a> — A complete overview of how IVAs work.</li>
-        <li><a href="iva-vs-dro.html">IVA vs DRO</a> — Compare affordability and eligibility.</li>
-        <li><a href="debt-management-plan-vs-iva.html">Debt Management Plan vs IVA</a> — Pros and cons of each.</li>
-        <li><a href="too-much-debt.html">Too Much Debt</a> — Practical steps to get relief quickly.</li>
-        <li><a href="write-off-debt.html">Write Off Debt</a> — Explore legal ways to clear unaffordable balances.</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Explore My Debt Options</a>
+      <!-- NEW: richer internal links with short summaries + mini-CTAs -->
+      <div class="guide-cards">
+        <div class="guide-card">
+          <h3><a href="iva.html">What is an IVA?</a></h3>
+          <p>How IVAs work, eligibility, payments, and what happens at the end.</p>
+          <a class="cta" href="iva.html">Read the guide</a>
+        </div>
+        <div class="guide-card">
+          <h3><a href="debt-management-plan-vs-iva.html">Debt Management Plan vs IVA</a></h3>
+          <p>When an informal DMP beats an IVA — and when it doesn’t.</p>
+          <a class="cta" href="debt-management-plan-vs-iva.html">Compare DMP vs IVA</a>
+        </div>
+        <div class="guide-card">
+          <h3><a href="iva-vs-dro.html">IVA vs DRO</a></h3>
+          <p>Low income or debts under ~£30,000? A DRO might be safer.</p>
+          <a class="cta" href="iva-vs-dro.html">See if DRO fits</a>
+        </div>
+        <div class="guide-card">
+          <h3><a href="too-much-debt.html">Too Much Debt</a></h3>
+          <p>Practical steps to stabilise quickly and protect essentials.</p>
+          <a class="cta" href="too-much-debt.html">Stabilise now</a>
+        </div>
+        <div class="guide-card">
+          <h3><a href="write-off-debt.html">Write Off Debt</a></h3>
+          <p>Legal routes to clear unaffordable balances, with pros & cons.</p>
+          <a class="cta" href="write-off-debt.html">Explore options</a>
+        </div>
+      </div>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta" style="margin-top:12px;display:inline-block">Explore My Debt Options</a>
     </div>
 
-    <!-- References (sources and transparency) -->
+    <!-- References -->
     <div class="section" id="references">
       <h2>References</h2>
       <ol class="small refs">
