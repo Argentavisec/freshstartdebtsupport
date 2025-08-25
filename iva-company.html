@@ -80,7 +80,9 @@
           {"@type":"Question","name":"Do IVA companies charge fees?","acceptedAnswer":{"@type":"Answer","text":"Yes. Fees are agreed with creditors and built into your monthly payment — not paid upfront."}},
           {"@type":"Question","name":"Can I switch IVA providers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switching before approval is typically simpler; after approval it’s more complex but possible. Get advice before switching."}},
           {"@type":"Question","name":"What debts can be included in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts (credit cards, loans, overdrafts, payday, council tax, utilities). Usually excluded: student loans, child maintenance, and criminal fines."}},
-          {"@type":"Question","name":"Are IVA companies regulated?","acceptedAnswer":{"@type":"Answer","text":"Insolvency Practitioners (IPs) are authorised and regulated by professional bodies such as the IPA or ICAEW. Marketing rules and advice standards are covered by UK regulators (e.g., FCA for certain activities, ASA for advertising)."}}
+          {"@type":"Question","name":"Are IVA companies regulated?","acceptedAnswer":{"@type":"Answer","text":"Insolvency Practitioners (IPs) are authorised and regulated by professional bodies such as the IPA or ICAEW. Marketing rules and advice standards are covered by UK regulators (e.g., FCA for certain activities, ASA for advertising)."}},
+          {"@type":"Question","name":"What is the best IVA company in the UK?","acceptedAnswer":{"@type":"Answer","text":"There isn’t one universal “best”. The right IVA provider depends on your situation — for example: charities that publish outcomes (e.g., StepChange notes ~85% completion in recent years), providers who apply the 2025 Protocol correctly for homeowners, and firms that offer fast set-up with a named case manager. Use our on-page checklist and speak to an adviser before choosing."}},
+          {"@type":"Question","name":"How can I choose the best IVA company for my situation?","acceptedAnswer":{"@type":"Answer","text":"Match your needs to a provider: (1) If you’re a homeowner, confirm the 2025 Protocol rules on 60 vs 72 months and remortgage alternatives in writing. (2) If you need rapid set-up, ask for time to creditor vote and how quickly contact is reduced. (3) If you want higher completion support, prioritise providers that publish their outcomes and hardship policies."}}
         ]
       }
     ]
@@ -111,6 +113,15 @@
     .card{border:1px solid #e7f3ea;border-radius:12px;padding:12px;background:#fbfefc}
     .small{font-size:.92rem}
     .pill{display:inline-block;padding:3px 8px;border-radius:999px;border:1px solid #cdeed6;background:#eef9f2;font-size:.8rem;font-weight:700}
+
+    /* New: accordion + a11y utilities (no tables) */
+    .accordion{border:1px solid #e7f3ea;border-radius:12px;background:#fbfefc}
+    .accordion details{border-top:1px solid #e7f3ea}
+    .accordion details:first-of-type{border-top:0}
+    .accordion summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style:none}
+    .accordion summary::-webkit-details-marker{display:none}
+    .accordion .content{padding:0 16px 14px 16px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
 </head>
 
@@ -187,6 +198,8 @@
           <li><a href="#choose">How to choose the best IVA firm</a></li>
           <li><a href="#protocol-changes-2025">2025 IVA Protocol changes</a></li>
           <li><a href="#trust">Results, reviews &amp; trust</a></li>
+          <li><a href="#best-iva-company-uk">Best IVA company UK (by situation)</a></li>
+          <li><a href="#people-also-ask">People also ask</a></li>
           <li><a href="#switch">Can you switch IVA companies?</a></li>
           <li><a href="#include">Debts an IVA can include</a></li>
           <li><a href="#compare-solutions">IVA vs DMP vs DRO vs Bankruptcy</a></li>
@@ -209,7 +222,7 @@
       <div class="kpis" aria-label="Unique support features">
         <div class="kpi"><strong>Wellbeing support:</strong><br><span class="muted">Check providers that offer mental health signposting, payment holiday guidance, and hardship reviews — not just sales calls.</span></div>
         <div class="kpi"><strong>Named case manager:</strong><br><span class="muted">Ask for a single point of contact and realistic caseload limits so you’re not repeating your story.</span></div>
-        <div class="kpi"><strong>Resilience checks:</strong><br><span class="muted">Good firms run affordability stress‑tests and explain risks before you commit.</span></div>
+        <div class="kpi"><strong>Resilience checks:</strong><br><span class="muted">Good firms run affordability stress-tests and explain risks before you commit.</span></div>
       </div>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for an IVA</a>
     </div>
@@ -267,14 +280,14 @@
       <div class="kpis" aria-label="Trust metrics">
         <div class="kpi"><strong>Transparent fees:</strong><br><span class="muted">Explained in plain English and built into your monthly payment.</span></div>
         <div class="kpi"><strong>Independent reviews:</strong><br><span class="muted">Read verified client feedback on our <a href="testimonials.html">Testimonials</a> page and Trustpilot.</span></div>
-        <div class="kpi"><strong>Evidence‑based guidance:</strong><br><span class="muted">We link to neutral sources (Citizens Advice, MoneyHelper, FCA) so you can double‑check every claim.</span></div>
+        <div class="kpi"><strong>Evidence-based guidance:</strong><br><span class="muted">We link to neutral sources (Citizens Advice, MoneyHelper, FCA) so you can double-check every claim.</span></div>
       </div>
 
       <!-- Featured outcomes / case studies -->
       <div class="cards" aria-label="Case studies">
-        <div class="card"><strong>Case study: Family home protected</strong><br><span class="small">Homeowner with £28,400 unsecured debt; Protocol applied with <em>72‑month</em> term instead of remortgage. Affordable payments maintained through a 6‑month income drop review.</span></div>
-        <div class="card"><strong>Case study: Faster set‑up</strong><br><span class="small">Single parent, £16,200 debt. Proposal submitted in 7 business days; creditor contact reduced within 48 hours of proposal issue.</span></div>
-        <div class="card"><strong>Case study: Wellbeing support</strong><br><span class="small">Client experiencing anxiety supported with payment holiday and signposting to mental‑health resources; plan successfully resumed.</span></div>
+        <div class="card"><strong>Case study: Family home protected</strong><br><span class="small">Homeowner with £28,400 unsecured debt; Protocol applied with <em>72-month</em> term instead of remortgage. Affordable payments maintained through a 6-month income drop review.</span></div>
+        <div class="card"><strong>Case study: Faster set-up</strong><br><span class="small">Single parent, £16,200 debt. Proposal submitted in 7 business days; creditor contact reduced within 48 hours of proposal issue.</span></div>
+        <div class="card"><strong>Case study: Wellbeing support</strong><br><span class="small">Client experiencing anxiety supported with payment holiday and signposting to mental-health resources; plan successfully resumed.</span></div>
       </div>
 
       <!-- Optional Trustpilot widget placement -->
@@ -285,6 +298,44 @@
       </div>
 
       <p class="disclaimer">We never publish fake testimonials. For real experiences, see <a href="testimonials.html">Client Testimonials</a>.</p>
+    </div>
+
+    <!-- NEW: Best IVA company UK (no tables; cards + bullets) -->
+    <div class="section" id="best-iva-company-uk">
+      <h2>Best IVA Company UK — Plain-English Picks by Situation</h2>
+      <p>There isn’t a single “best IVA company” for everyone — the right choice depends on your income stability, whether you’re a homeowner, and how quickly you need creditor contact to ease. Here’s how to match the provider to <em>your</em> situation:</p>
+      <div class="cards">
+        <div class="card">
+          <strong>If you’re a homeowner</strong>
+          <ul class="small">
+            <li>Ask providers to confirm in writing how they apply the <a href="#protocol-changes-2025">2025 IVA Protocol</a> (60 vs 72 months; term extension instead of remortgage).</li>
+            <li>Request an <em>equity calculation walkthrough</em> so there are no surprises later.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>If you need fast setup</strong>
+          <ul class="small">
+            <li>Ask for typical <em>time to creditor vote</em> and what they do to reduce contact during proposal.</li>
+            <li>Check you’ll have a <em>named case manager</em> (not a rotating call centre).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>If you want strong completion support</strong>
+          <ul class="small">
+            <li>Prioritise providers that publish outcomes. For example, StepChange has stated ~85% IVA completion in recent years (see <a href="#references">References</a>).</li>
+            <li>Ask about hardship policies, payment breaks, and variation success rates.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>If you value personal guidance</strong>
+          <ul class="small">
+            <li>Choose smaller caseloads, clear fee explanations, and regular affordability reviews.</li>
+            <li>We’ll benchmark options and advise if a <a href="dro.html">DRO</a> or <a href="dmp.html">DMP</a> may be safer.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">We don’t rank providers for payment. We’ll compare options objectively and help you choose what’s safest for your goals.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Shortlist for “Best IVA Company UK”</a>
     </div>
 
     <!-- Switch -->
@@ -323,10 +374,10 @@
       <p>Pages titled <em>“Best IVA Companies 2025”</em> can look like rankings — but the <strong>best</strong> firm depends on your budget, stability of income, and whether you’re a homeowner. Use this quick matrix to shortlist:</p>
       <ul>
         <li><strong>If you want rigorous advice &amp; high completion support:</strong> Look at charities and providers that publish audited outcomes (e.g., StepChange states ~85% completions in recent years).</li>
-        <li><strong>If you need rapid set‑up:</strong> Ask each firm for <em>time to creditor vote</em> and <em>time to stop contact</em> — and what happens if income drops within 6 months.</li>
+        <li><strong>If you need rapid set-up:</strong> Ask each firm for <em>time to creditor vote</em> and <em>time to stop contact</em> — and what happens if income drops within 6 months.</li>
         <li><strong>If you’re a homeowner:</strong> Confirm how the <a href="#protocol-changes-2025">2025 Protocol</a> is applied to avoid unsuitable remortgage expectations.</li>
       </ul>
-      <p class="note">We don’t do “pay‑to‑rank”. We’ll compare options and tell you when a different solution (like DRO or DMP) may be safer.</p>
+      <p class="note">We don’t do “pay-to-rank”. We’ll compare options and tell you when a different solution (like DRO or DMP) may be safer.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Shortlist My IVA Options</a>
     </div>
 
@@ -366,6 +417,38 @@
         <li><span class="pill">iva protocol july 2025</span> <span class="pill">iva for homeowners rules</span></li>
         <li><span class="pill">switch iva company</span> <span class="pill">iva vs dmp vs dro</span></li>
       </ul>
+    </div>
+
+    <!-- NEW: People also ask (accordion, no tables) -->
+    <div class="section" id="people-also-ask">
+      <h2>People Also Ask — “Best IVA Company UK”</h2>
+      <div class="accordion" role="region" aria-label="People also ask">
+        <details>
+          <summary>Who is the best IVA company in the UK?</summary>
+          <div class="content">
+            <p>There’s no single “best” for everyone. Match provider strengths to your needs: audited outcomes and clear hardship policies, fast set-up and reduced contact, and correct homeowner treatment under the <a href="#protocol-changes-2025">2025 Protocol</a>. Use our <a href="#how-to-find-best-iva-companies">checklist</a> to compare.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Which IVA companies have high completion rates?</summary>
+          <div class="content">
+            <p>Some charities publish outcomes — for example, StepChange has stated ~85% completion in recent years (see <a href="#references">References</a>). Ask any provider to share their latest audited figures and how they support clients through income shocks.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What matters most when choosing an IVA provider?</summary>
+          <div class="content">
+            <p>Speed of response, a named case manager, transparent fees, and homeowner safeguards. Also check how quickly they reduce creditor contact and how they handle payment breaks or variations.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Are rankings paid for?</summary>
+          <div class="content">
+            <p>Some comparison pages are sponsored. We do not accept payment to rank firms. Instead, we explain trade-offs and tell you if a <a href="dro.html">DRO</a> or <a href="dmp.html">DMP</a> could be safer.</p>
+          </div>
+        </details>
+      </div>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta" style="margin-top:12px;display:inline-block">Get Help Choosing an IVA Company</a>
     </div>
 
     <!-- HowTo (step-by-step section in-page to mirror schema) -->
@@ -460,7 +543,7 @@
         <li><strong>Citizens Advice:</strong> What an IVA is, risks, and alternatives — creditors should stop interest/charges once approved. <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/before-you-start-an-iva/check-what-an-iva-is/" rel="noopener nofollow" target="_blank">Read guidance</a>.</li>
         <li><strong>MoneyHelper:</strong> How IVAs work and typical affordability expectations. <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" rel="noopener nofollow" target="_blank">View overview</a>.</li>
         <li><strong>Insolvency Service (gov.uk):</strong> <em>IVA Protocol 2025</em> and July 2025 update to improve protections and standards. <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol/iva-protocol-2025" rel="noopener nofollow" target="_blank">Protocol</a> • <a href="https://www.gov.uk/government/news/insolvency-service-publishes-new-individual-voluntary-arrangement-protocol-to-help-protect-people-in-debt" rel="noopener nofollow" target="_blank">News release</a>.</li>
-        <li><strong>FCA:</strong> Ban on debt‑packager referral fees to reduce mis‑selling incentives; check you receive impartial, suitable advice. <a href="https://www.fca.org.uk/publications/policy-statements/ps23-5-debt-packagers-feedback-cp23-5-final-rules" rel="noopener nofollow" target="_blank">Policy statement</a>.</li>
+        <li><strong>FCA:</strong> Ban on debt-packager referral fees to reduce mis-selling incentives; check you receive impartial, suitable advice. <a href="https://www.fca.org.uk/publications/policy-statements/ps23-5-debt-packagers-feedback-cp23-5-final-rules" rel="noopener nofollow" target="_blank">Policy statement</a>.</li>
       </ul>
       <p class="disclaimer">We summarise external sources for convenience — follow the links above to read the full official guidance.</p>
     </div>
@@ -518,11 +601,11 @@
       <h2>References</h2>
       <ol class="refs">
         <li>StepChange IVA outcomes: “For the last five years 85% … completed” — <a href="https://www.stepchange.org/how-we-help/individual-voluntary-arrangement.aspx" target="_blank" rel="noopener nofollow">stepchange.org</a>.</li>
-        <li>IVA Protocol 2025 (gov.uk): length and homeowner beneficial interest — <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol/iva-protocol-2025" target="_blank" rel="noopener nofollow">gov.uk</a>. News release on July 2025 go‑live — <a href="https://www.gov.uk/government/news/insolvency-service-publishes-new-individual-voluntary-arrangement-protocol-to-help-protect-people-in-debt" target="_blank" rel="noopener nofollow">gov.uk</a>.</li>
+        <li>IVA Protocol 2025 (gov.uk): length and homeowner beneficial interest — <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol/iva-protocol-2025" target="_blank" rel="noopener nofollow">gov.uk</a>. News release on July 2025 go-live — <a href="https://www.gov.uk/government/news/insolvency-service-publishes-new-individual-voluntary-arrangement-protocol-to-help-protect-people-in-debt" target="_blank" rel="noopener nofollow">gov.uk</a>.</li>
         <li>Money Advice commentary on July 2025 homeowner protections (term extension vs remortgage) — <a href="https://moneyadvice.co.uk/protecting-your-home-in-an-iva-key-changes-from-july-2025/" target="_blank" rel="noopener nofollow">moneyadvice.co.uk</a>.</li>
         <li>Citizens Advice IVA overview — <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/before-you-start-an-iva/check-what-an-iva-is/" target="_blank" rel="noopener nofollow">citizensadvice.org.uk</a>.</li>
         <li>MoneyHelper IVA explainer — <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener nofollow">moneyhelper.org.uk</a>.</li>
-        <li>FCA ban on debt‑packager referral fees — <a href="https://www.fca.org.uk/publications/policy-statements/ps23-5-debt-packagers-feedback-cp23-5-final-rules" target="_blank" rel="noopener nofollow">fca.org.uk</a>.</li>
+        <li>FCA ban on debt-packager referral fees — <a href="https://www.fca.org.uk/publications/policy-statements/ps23-5-debt-packagers-feedback-cp23-5-final-rules" target="_blank" rel="noopener nofollow">fca.org.uk</a>.</li>
       </ol>
       <p class="disclaimer">Links provided for verification. We keep this section updated as guidance evolves.</p>
     </div>
