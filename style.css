@@ -308,3 +308,37 @@ html, body { max-width: 100%; overflow-x: hidden; }
   }
   .hero-inner { width: 100%; }
 }
+
+/* General link styling */
+a {
+  color: #2f6f36;               /* Match your brand green */
+  text-decoration: none;        /* Remove default underline */
+  font-weight: 500;             /* Slightly bolder for clarity */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent; /* Clean underline effect on hover */
+}
+
+/* Hover effect */
+a:hover {
+  color: #45a045;               /* Slightly lighter green on hover */
+  border-bottom: 2px solid #45a045;
+}
+
+/* Active/focus states for accessibility */
+a:active,
+a:focus {
+  color: #215a29;
+  border-bottom: 2px solid #215a29;
+  outline: none;
+}
+
+/* Optional: Differentiate important links (like CTAs inside text) */
+a.cta-link {
+  font-weight: bold;
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+}
+a.cta-link:hover {
+  color: #2f6f36;
+  border-bottom-color: #2f6f36;
+}
