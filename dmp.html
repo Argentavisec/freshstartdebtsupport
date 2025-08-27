@@ -18,12 +18,8 @@
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Minimal inline styles to support new components -->
+  <!-- Minimal inline styles to support components -->
   <style>
-    .mini-checker{max-width:860px;margin:18px auto 0;display:grid;gap:12px;grid-template-columns:1fr 1fr auto}
-    .mini-checker select,.mini-checker input{padding:12px;border-radius:10px;border:1px solid #d7e5db;font-size:16px}
-    .mini-checker button{border:0;border-radius:999px;padding:12px 18px;font-weight:800;box-shadow:0 6px 0 rgba(0,0,0,.18);background:#fff;color:#2f6f36;cursor:pointer}
-    .mini-checker small{grid-column:1/-1;opacity:.9}
     .trust-line{margin-top:10px;font-size:14px;opacity:.95}
     .candor{border-left:4px solid #cc4b37;background:#fff6f5;padding:14px;border-radius:8px;margin:18px 0}
     .triage-banner{background:#f0fbf3;border:1px solid #d9f2e0;padding:16px;border-radius:12px}
@@ -106,81 +102,21 @@
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"What is a Debt Management Plan (DMP)?",
-            "acceptedAnswer":{"@type":"Answer","text":"An informal agreement to repay debts via a single affordable monthly payment. A provider distributes payments to creditors, who may freeze or reduce interest."}
-          },
-          {
-            "@type":"Question",
-            "name":"Who is eligible for a DMP?",
-            "acceptedAnswer":{"@type":"Answer","text":"Typically those with non-priority unsecured debts and some spare income who want to avoid formal insolvency."}
-          },
-          {
-            "@type":"Question",
-            "name":"Will a DMP affect my credit score?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes—accounts may be marked 'in arrangement', potentially lowering your score, though it can be better than ongoing defaults or legal action."}
-          },
-          {
-            "@type":"Question",
-            "name":"Are there free DMP options?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes—some charities run DMPs without monthly management fees. Fee-charging firms deduct fees from your payment which can slow debt repayment."}
-          },
-          {
-            "@type":"Question",
-            "name":"What are priority debts and can they go in a DMP?",
-            "acceptedAnswer":{"@type":"Answer","text":"Priority debts—like rent or mortgage arrears, council tax, energy arrears, court fines, child maintenance and some taxes—carry serious consequences and should be dealt with first or alongside a plan. They are usually not included in a DMP but can be addressed through protections like Breathing Space and, where appropriate, formal solutions like an IVA or DRO."}
-          },
-          {
-            "@type":"Question",
-            "name":"Fee vs free: How much difference do fees make?",
-            "acceptedAnswer":{"@type":"Answer","text":"Example: with £12,000 of debt, a £30 monthly DMP fee over 5 years equals £1,800 not going to creditors (plus any set-up fee). Free providers don’t take a monthly fee, so more of your payment clears debt faster."}
-          },
-          {
-            "@type":"Question",
-            "name":"Is there an online tracker to see my progress?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes—our Online Plan Tracker concept shows balances, payments sent to each creditor, estimated completion date, and lets you request reviews when your budget changes."}
-          },
-          {
-            "@type":"Question",
-            "name":"How often will my DMP be reviewed?",
-            "acceptedAnswer":{"@type":"Answer","text":"We build in annual reviews as standard and provide on-demand reviews whenever your income or expenses change to keep payments realistic."}
-          },
-          {
-            "@type":"Question",
-            "name":"Can a DMP stop bailiffs and legal action?",
-            "acceptedAnswer":{"@type":"Answer","text":"A DMP is not legally binding, but many creditors pause or stop enforcement once regular payments begin. For immediate legal protection, consider Breathing Space or a formal option like an IVA where suitable."}
-          },
-          {
-            "@type":"Question",
-            "name":"How long does a DMP last on average?",
-            "acceptedAnswer":{"@type":"Answer","text":"It depends on your total debt, whether interest is frozen, and your monthly payment. Many plans run 3–7 years, with reviews that can shorten or extend the timeline."}
-          },
-          {
-            "@type":"Question",
-            "name":"Will I have to close credit cards?",
-            "acceptedAnswer":{"@type":"Answer","text":"Often you’ll need to stop using and close the cards included in your plan; new borrowing is discouraged and can breach terms."}
-          },
-          {
-            "@type":"Question",
-            "name":"Can I include joint debts or guarantor loans?",
-            "acceptedAnswer":{"@type":"Answer","text":"Joint debts affect both parties; guarantor loans can impact the guarantor. We’ll explain implications and options before including them in a plan."}
-          },
-          {
-            "@type":"Question",
-            "name":"What happens if I miss a DMP payment?",
-            "acceptedAnswer":{"@type":"Answer","text":"Your provider will contact you to get the plan back on track. Creditors may resume interest or contact until payments restart."}
-          },
-          {
-            "@type":"Question",
-            "name":"Will a DMP affect getting a mortgage later?",
-            "acceptedAnswer":{"@type":"Answer","text":"Arrangement-to-pay markers can affect applications in the short term. With stability and good conduct after completion, many borrowers later qualify—timelines vary by lender."}
-          },
-          {
-            "@type":"Question",
-            "name":"DMP vs consolidation vs IVA vs DRO—when is each best?",
-            "acceptedAnswer":{"@type":"Answer","text":"DMP suits affordable repayment without formal insolvency; consolidation adds new credit risk; IVA/DRO offer legal protection and potential write-off if you meet criteria. We compare these with you."}
-          }
+          {"@type":"Question","name":"What is a Debt Management Plan (DMP)?","acceptedAnswer":{"@type":"Answer","text":"An informal agreement to repay debts via a single affordable monthly payment. A provider distributes payments to creditors, who may freeze or reduce interest."}},
+          {"@type":"Question","name":"Who is eligible for a DMP?","acceptedAnswer":{"@type":"Answer","text":"Typically those with non-priority unsecured debts and some spare income who want to avoid formal insolvency."}},
+          {"@type":"Question","name":"Will a DMP affect my credit score?","acceptedAnswer":{"@type":"Answer","text":"Yes—accounts may be marked 'in arrangement', potentially lowering your score, though it can be better than ongoing defaults or legal action."}},
+          {"@type":"Question","name":"Are there free DMP options?","acceptedAnswer":{"@type":"Answer","text":"Yes—some charities run DMPs without monthly management fees. Fee-charging firms deduct fees from your payment which can slow debt repayment."}},
+          {"@type":"Question","name":"What are priority debts and can they go in a DMP?","acceptedAnswer":{"@type":"Answer","text":"Priority debts—like rent or mortgage arrears, council tax, energy arrears, court fines, child maintenance and some taxes—carry serious consequences and should be dealt with first or alongside a plan. They are usually not included in a DMP but can be addressed through protections like Breathing Space and, where appropriate, formal solutions like an IVA or DRO."}},
+          {"@type":"Question","name":"Fee vs free: How much difference do fees make?","acceptedAnswer":{"@type":"Answer","text":"Example: with £12,000 of debt, a £30 monthly DMP fee over 5 years equals £1,800 not going to creditors (plus any set-up fee). Free providers don’t take a monthly fee, so more of your payment clears debt faster."}},
+          {"@type":"Question","name":"Is there an online tracker to see my progress?","acceptedAnswer":{"@type":"Answer","text":"Yes—our Online Plan Tracker concept shows balances, payments sent to each creditor, estimated completion date, and lets you request reviews when your budget changes."}},
+          {"@type":"Question","name":"How often will my DMP be reviewed?","acceptedAnswer":{"@type":"Answer","text":"We build in annual reviews as standard and provide on-demand reviews whenever your income or expenses change to keep payments realistic."}},
+          {"@type":"Question","name":"Can a DMP stop bailiffs and legal action?","acceptedAnswer":{"@type":"Answer","text":"A DMP is not legally binding, but many creditors pause or stop enforcement once regular payments begin. For immediate legal protection, consider Breathing Space or a formal option like an IVA where suitable."}},
+          {"@type":"Question","name":"How long does a DMP last on average?","acceptedAnswer":{"@type":"Answer","text":"It depends on your total debt, whether interest is frozen, and your monthly payment. Many plans run 3–7 years, with reviews that can shorten or extend the timeline."}},
+          {"@type":"Question","name":"Will I have to close credit cards?","acceptedAnswer":{"@type":"Answer","text":"Often you’ll need to stop using and close the cards included in your plan; new borrowing is discouraged and can breach terms."}},
+          {"@type":"Question","name":"Can I include joint debts or guarantor loans?","acceptedAnswer":{"@type":"Answer","text":"Joint debts affect both parties; guarantor loans can impact the guarantor. We’ll explain implications and options before including them in a plan."}},
+          {"@type":"Question","name":"What happens if I miss a DMP payment?","acceptedAnswer":{"@type":"Answer","text":"Your provider will contact you to get the plan back on track. Creditors may resume interest or contact until payments restart."}},
+          {"@type":"Question","name":"Will a DMP affect getting a mortgage later?","acceptedAnswer":{"@type":"Answer","text":"Arrangement-to-pay markers can affect applications in the short term. With stability and good conduct after completion, many borrowers later qualify—timelines vary by lender."}},
+          {"@type":"Question","name":"DMP vs consolidation vs IVA vs DRO—when is each best?","acceptedAnswer":{"@type":"Answer","text":"DMP suits affordable repayment without formal insolvency; consolidation adds new credit risk; IVA/DRO offer legal protection and potential write-off if you meet criteria. We compare these with you."}}
         ]
       }
     ]
@@ -188,12 +124,13 @@
   </script>
 </head>
 <body>
-  <!-- Header and hero -->
+  <!-- Header -->
   <div class="banner"><div class="top-bar">
     <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
     <div class="site-name">Fresh Start Debt Support</div>
   </div></div>
 
+  <!-- HERO (mini pre-qual removed) -->
   <section class="landing-hero" role="region" aria-label="DMP overview">
     <div class="hero-inner"><div class="hero-copy">
       <h2 class="hero-title">Complete Guide to Debt Management Plans (DMPs)</h2>
@@ -202,27 +139,15 @@
       </p>
       <a href="#start" class="hero-cta">Start My Free DMP Check Now</a>
       <div class="hero-trust">Free & confidential • Built for UK residents</div>
+      <div class="trust-line">
+        Check a firm's authorisation on the <a href="https://register.fca.org.uk/s/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">FCA Register</a>.
+        Independent guidance: <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-a-debt-management-plan" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">MoneyHelper (MaPS)</a>.
+      </div>
+      <div class="reviewed-line">Reviewed on <span id="reviewed-date">August 2025</span> by <strong>Debt Adviser (CertDR)</strong></div>
     </div></div>
-
-    <!-- Mini 2-question pre-qual -->
-    <form class="mini-checker" onsubmit="return false" aria-label="Quick DMP pre-check">
-      <select id="mc-debt" aria-label="How much unsecured debt do you have?">
-        <option value="" selected disabled>How much unsecured debt?</option>
-        <option value="under5">Under £5,000</option>
-        <option value="5to20">£5,000–£20,000</option>
-        <option value="20plus">Over £20,000</option>
-      </select>
-      <select id="mc-spare" aria-label="Spare per month after essentials?">
-        <option value="" selected disabled>Spare per month after essentials?</option>
-        <option value="lt75">Under £75</option>
-        <option value="75to200">£75–£200</option>
-        <option value="gt200">Over £200</option>
-      </select>
-      <button id="mc-btn" onclick="mcSuggest()">See My Likely Options</button>
-      <small id="mc-result" aria-live="polite"></small>
-    </form>
   </section>
 
+  <!-- Menu Include -->
   <div id="menu-placeholder"></div>
   <script>
     fetch("menu.html").then(r=>r.text()).then(html=>{
@@ -234,30 +159,21 @@
       const m=document.getElementById("menuContent"), b=document.getElementById("menuButton");
       if(m && !m.contains(e.target) && e.target!==b) m.style.display="none";
     });
-    function mcSuggest(){
-      const d=document.getElementById('mc-debt').value;
-      const s=document.getElementById('mc-spare').value;
-      let t="We’ll compare DMP with IVA/DRO and Breathing Space for you.";
-      if(d==="20plus" && (s==="75to200"||s==="gt200")) t="DMP likely viable. IVA may reduce term if eligible.";
-      else if((d==="5to20"||d==="under5") && s==="lt75") t="Low spare income—DRO (if eligible) or Breathing Space may fit better than a DMP.";
-      else if(d==="5to20" && s==="75to200") t="DMP is commonly suitable; creditors may freeze interest.";
-      else if(d==="under5" && s==="gt200") t="Consider rapid DMP, snowball, or 0% balance transfer.";
-      document.getElementById('mc-result').innerHTML = t + ' <a href="https://form.jotform.com/250596569907070" style="text-decoration:underline;">Start my free check</a>.';
-    }
   </script>
 
   <div class="container">
 
-      <!-- E-E-A-T / Freshness -->
+    <!-- E-E-A-T / Freshness -->
     <div class="meta small">
       <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span></p>
       <script>
-        const now = new Date();
-        document.getElementById("updated").innerText =
-          "Last updated " + now.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+        (function(){
+          const now = new Date();
+          const el = document.getElementById("updated");
+          if(el){ el.innerText = "Last updated " + now.toLocaleDateString("en-GB", { month: "long", year: "numeric" }); }
+        })();
       </script>
     </div>
-
 
     <!-- Table of Contents -->
     <nav class="toc" aria-label="Table of contents">
