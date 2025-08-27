@@ -436,6 +436,25 @@
     <p>© 2025 Fresh Start Debt Support. This site does not offer regulated financial advice. For formal advice, speak to an FCA-authorised debt adviser. We are not affiliated with Klarna.</p>
   </footer>
 
+    <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        const menu = document.getElementById("menuContent");
+        if (menu) menu.style.display = "none";
+      });
+    function toggleMenu(){
+      const menu = document.getElementById("menuContent");
+      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
+    }
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn  = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
+    });
+  </script>
+
   <!-- WhatsApp Floating Button -->
   <a class="whatsapp-button" href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" target="_blank" rel="noopener">
     💬 Message Us on WhatsApp
