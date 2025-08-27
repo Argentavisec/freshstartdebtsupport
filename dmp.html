@@ -137,7 +137,7 @@
       <p class="hero-sub">Everything you need to know—how they work, whether you qualify, pros, cons & smarter alternatives like IVAs and DROs.
         <span class="badge">Fee-free or fee-transparent</span>
       </p>
-      <a href="#start" class="hero-cta">Start My Free DMP Check Now</a>
+      <a href="https://form.jotform.com/250596569907070" class="hero-cta">Start My Free DMP Check Now</a>
       <div class="hero-trust">Free & confidential • Built for UK residents</div>
     </div></div>
   </section>
@@ -502,5 +502,25 @@
       }
     })();
   </script>
+
+    <script>
+    fetch("menu.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("menu-placeholder").innerHTML = html;
+        const menu = document.getElementById("menuContent");
+        if (menu) menu.style.display = "none";
+      });
+    function toggleMenu(){
+      const menu = document.getElementById("menuContent");
+      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
+    }
+    window.addEventListener("click", function(e) {
+      const menu = document.getElementById("menuContent");
+      const btn  = document.getElementById("menuButton");
+      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
+    });
+  </script>
+
 </body>
 </html>
