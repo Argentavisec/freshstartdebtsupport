@@ -115,7 +115,7 @@
   }
   </script>
 
-  <!-- Inline critical CSS for hero (same layout) -->
+  <!-- Inline critical CSS for hero (same layout, copied from IVA page) -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -138,47 +138,21 @@
     .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:10px 14px;font-size:14px;display:inline-block}
     .mini-note{font-size:12px;opacity:.9;margin-top:6px}
     .quiz-card{background:#f7fff9;border:1px solid #d3f0dd;border-radius:16px;padding:16px;margin:16px 0}
-    .quiz-card .vh3{margin-top:0}
+    .quiz-card h3{margin-top:0}
     .quiz-row{display:grid;grid-template-columns:1fr;gap:10px}
     .quiz-row label{font-weight:600}
     .quiz-actions{margin-top:10px}
     .trust-list li{margin-bottom:6px}
+    /* NEW small utility for jump links */
     .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-    /* FAQ accordion (simple) */
+    /* Simple FAQ accordion to match your content */
     details.faq{border:1px solid #d3f0dd;border-radius:12px;padding:12px;background:#f8fffb;margin:10px 0}
     details.faq > summary{font-weight:700;cursor:pointer}
-
-    /* Hidden headings utility (SEO present, visually hidden) */
-    .hidden-h{
-      position:absolute!important;
-      left:-9999px!important;
-      top:auto!important;
-      width:1px!important;
-      height:1px!important;
-      overflow:hidden!important;
-      white-space:nowrap!important;
-    }
-
-    /* Visual heading styles (no h1–h5 tags used for visible text) */
-    .vh1{font-size:clamp(28px,6vw,36px);font-weight:800;line-height:1.1;margin:.2em 0;}
-    .vh2{font-size:clamp(22px,4.5vw,28px);font-weight:800;margin:.8em 0 .4em;}
-    .vh3{font-size:clamp(18px,3.5vw,22px);font-weight:700;margin:.7em 0 .35em;}
-    .vh4{font-size:clamp(16px,3vw,18px);font-weight:700;margin:.6em 0 .3em;opacity:.95}
-    .vh5{font-size:clamp(14px,2.8vw,16px);font-weight:700;margin:.5em 0 .25em;opacity:.9}
   </style>
 </head>
 
 <body>
-
-  <!-- Hidden H1–H5 (SEO only, not visible) -->
-  <div aria-hidden="true">
-    <h1 class="hidden-h">Bristow &amp; Sutor Bailiffs: Fees, Stages, Rights &amp; Notice of Enforcement</h1>
-    <h2 class="hidden-h">How to Stop Bristow &amp; Sutor Escalation Legally</h2>
-    <h3 class="hidden-h">Bristow &amp; Sutor Payment Plans, Complaints, Vulnerability &amp; Car Clamping</h3>
-    <h4 class="hidden-h">Council Tax Arrears &amp; PCN Enforcement: Compliance, Enforcement, Sale</h4>
-    <h5 class="hidden-h">Breathing Space, Controlled Goods Agreements, Doorstep Visits &amp; Entry Rights</h5>
-  </div>
 
   <!-- Header / Banner -->
   <div class="banner">
@@ -192,12 +166,13 @@
   <section class="landing-hero" role="region" aria-label="Help with Bristow & Sutor bailiffs">
     <div class="hero-inner">
       <div class="hero-copy">
-        <div class="hero-title vh1" role="heading" aria-level="1">Bristow &amp; Sutor Bailiffs — Calm, Legal Steps That Work</div>
+        <h2 class="hero-title">Bristow &amp; Sutor Bailiffs — Calm, Legal Steps That Work</h2>
         <p class="hero-sub">
           Understand <strong>Notice of Enforcement</strong>, <strong>fees &amp; stages</strong>, your <strong>rights</strong>, and how to set an <strong>affordable plan</strong> that stops escalation.
         </p>
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free Bristow & Sutor assessment">✅ Start Free Bristow &amp; Sutor Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • UK-wide</div>
+        </div>
       </div>
     </div>
   </section>
@@ -239,7 +214,7 @@
 
     <!-- Intro + TOC -->
     <div class="section" id="intro">
-      <div class="vh1" role="heading" aria-level="1">Bristow &amp; Sutor Bailiffs (Enforcement Agents) — Fees, Rights, Notice of Enforcement &amp; Affordable Plans</div>
+      <h1>Bristow &amp; Sutor Bailiffs (Enforcement Agents) — Fees, Rights, Notice of Enforcement &amp; Affordable Plans</h1>
       <p><strong>Quick answer:</strong> If Bristow &amp; Sutor have written, texted or visited, you still have options. Build a <strong>realistic budget</strong>, prefer <strong>written contact</strong>, consider <a href="breathing-space.html">Breathing Space</a>, and set a <strong>defendable payment plan</strong> (or a formal solution if eligible). Fixed fees are applied at each stage (Compliance, Enforcement, Sale) and you shouldn’t agree to unaffordable amounts at the door.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Bristow &amp; Sutor Check</a>
 
@@ -275,9 +250,9 @@
 
     <!-- Who they are -->
     <div class="section" id="who">
-      <div class="vh2" role="heading" aria-level="2">Who Are Bristow &amp; Sutor and Why Are They Contacting Me?</div>
+      <h2>Who Are Bristow &amp; Sutor and Why Are They Contacting Me?</h2>
       <p><strong>Bristow &amp; Sutor</strong> are enforcement agents (bailiffs) commonly instructed by UK local authorities to collect <strong>council tax arrears</strong> and <strong>parking/traffic penalties (PCNs)</strong>. When a council obtains a liability order (council tax) or a PCN progresses, an enforcement firm can be appointed to recover the debt and fees under the <em>Taking Control of Goods</em> regulations.</p>
-      <div class="vh3" role="heading" aria-level="3">Typical reasons they make contact</div>
+      <h3>Typical reasons they make contact</h3>
       <ul>
         <li>Council tax arrears escalated after reminders and court action</li>
         <li>Parking or traffic penalties (PCNs) progressed to enforcement</li>
@@ -288,7 +263,7 @@
 
     <!-- Stages & fees -->
     <div class="section" id="stages-fees">
-      <div class="vh2" role="heading" aria-level="2">Bristow &amp; Sutor Enforcement Stages &amp; Fees (Clear Summary)</div>
+      <h2>Bristow &amp; Sutor Enforcement Stages &amp; Fees (Clear Summary)</h2>
       <p>The regulations set fixed fees per stage. For most local-authority debts (not High Court writs), the standard schedule is:</p>
       <ul>
         <li><strong>Compliance:</strong> £75 (Notice of Enforcement)</li>
@@ -302,9 +277,9 @@
 
     <!-- Notice of Enforcement -->
     <div class="section" id="notice">
-      <div class="vh2" role="heading" aria-level="2">What Is a Notice of Enforcement?</div>
+      <h2>What Is a Notice of Enforcement?</h2>
       <p>The <strong>Notice of Enforcement</strong> starts the <em>Compliance</em> stage and sets a deadline to respond or pay. If you set a realistic arrangement <em>before</em> a visit, you may avoid Enforcement fees. Keep the letter, envelope and any texts for your records.</p>
-      <div class="vh3" role="heading" aria-level="3">What to do when the notice arrives</div>
+      <h3>What to do when the notice arrives</h3>
       <ol>
         <li><strong>Stay calm &amp; keep evidence</strong> — photos of letters/cards and note reference numbers.</li>
         <li><strong>Protect essentials first</strong> — rent/mortgage, council tax, energy and travel to work.</li>
@@ -316,57 +291,57 @@
 
     <!-- Rights & vulnerability -->
     <div class="section" id="rights">
-      <div class="vh2" role="heading" aria-level="2">Your Rights, Conduct Rules &amp; Vulnerability</div>
+      <h2>Your Rights, Conduct Rules &amp; Vulnerability</h2>
       <p>Enforcement agents must follow clear standards on identification, conduct, hours and dealing with vulnerable people. For council tax/PCNs, forced entry is generally <strong>not</strong> allowed on a first visit. You can speak through a closed door and request written communication. If you’re vulnerable (health, disability, recent bereavement, pregnancy, single parent without support, etc.), ask for <strong>reasonable adjustments</strong> and help in writing.</p>
-      <div class="vh3" role="heading" aria-level="3">Controlled Goods Agreements (CGA)</div>
+      <h3>Controlled Goods Agreements (CGA)</h3>
       <p>A CGA lists goods “under control” to secure repayments. Don’t sign under pressure. Only sign if the plan is truly affordable and you understand the implications.</p>
-      <div class="vh4" role="heading" aria-level="4">Simple scripts you can use</div>
+      <h4>Simple scripts you can use</h4>
       <p>“I’m seeking debt advice and will respond in writing with an affordable proposal. Please note that I do not consent to entry.”</p>
       <a href="stop-debt-collectors.html" class="menu-cta">More Scripts &amp; Templates</a>
     </div>
 
     <!-- Doorstep -->
     <div class="section" id="doorstep">
-      <div class="vh2" role="heading" aria-level="2">Doorstep Visits — What You Can Do</div>
+      <h2>Doorstep Visits — What You Can Do</h2>
       <p>Visits can feel intimidating. You can keep the door closed, ask for ID through the window/letterbox, and request communications in writing. If you’re not home, keep any cards left and don’t rush into a high repayment over the phone. Build the budget first.</p>
-      <div class="vh3" role="heading" aria-level="3">If you already let them in</div>
+      <h3>If you already let them in</h3>
       <p>Tell us what happened. We’ll help stabilise the situation and set a plan you can actually keep.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’ve Had a Visit — Help Me</a>
     </div>
 
     <!-- Cars -->
     <div class="section" id="cars">
-      <div class="vh2" role="heading" aria-level="2">Can Bristow &amp; Sutor Take My Car?</div>
+      <h2>Can Bristow &amp; Sutor Take My Car?</h2>
       <p>Vehicles can be taken if they’re not exempt <em>and</em> are accessible, but cars used for work or essential needs may be protected within limits. Keep proof of use (e.g., employer letter, invoices, disability/medical evidence). Don’t sign a CGA that risks essential transport without advice.</p>
-      <div class="vh4" role="heading" aria-level="4">Parking on private land or in a locked garage</div>
+      <h4>Parking on private land or in a locked garage</h4>
       <p>Discuss safe steps with us first — the aim is to avoid escalation by agreeing an affordable, defendable plan early.</p>
     </div>
 
     <!-- Breathing Space -->
     <div class="section" id="breathing">
-      <div class="vh2" role="heading" aria-level="2">Breathing Space (Debt Respite Scheme)</div>
+      <h2>Breathing Space (Debt Respite Scheme)</h2>
       <p><strong>Standard Breathing Space</strong> can give 60 days’ protection from most enforcement and interest while you work with a debt adviser. There’s also <strong>Mental Health Crisis Breathing Space</strong> with extended protection during treatment. You’ll still need to keep up ongoing priority bills where possible.</p>
       <a href="breathing-space.html" class="menu-cta">Ask About Breathing Space</a>
     </div>
 
     <!-- Plans -->
     <div class="section" id="plans">
-      <div class="vh2" role="heading" aria-level="2">Rolling Bristow &amp; Sutor Into One Affordable Plan (Where Suitable)</div>
+      <h2>Rolling Bristow &amp; Sutor Into One Affordable Plan (Where Suitable)</h2>
       <p>If you also have credit cards, loans, catalogues/BNPL, overdrafts, energy or HMRC arrears, it can be easier to manage everything together.</p>
-      <div class="vh3" role="heading" aria-level="3"><a href="dmp.html">Debt Management Plan (DMP)</a></div>
+      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
       <p>One monthly payment shared across creditors. Many creditors reduce or freeze interest (not guaranteed). Flexible if income changes.</p>
-      <div class="vh3" role="heading" aria-level="3"><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></div>
+      <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
       <p>Formal, legally binding. You pay what’s affordable for an agreed term; remaining eligible unsecured debt may be written off on completion. Strong protections once approved.</p>
-      <div class="vh3" role="heading" aria-level="3"><a href="dro.html">Debt Relief Order (DRO)</a></div>
+      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
       <p>For low income/low assets within strict criteria. Debts are usually written off after 12 months if your situation doesn’t improve.</p>
-      <div class="vh4" role="heading" aria-level="4">Not sure which fits?</div>
+      <h4>Not sure which fits?</h4>
       <p>See <a href="compare-solutions.html">Compare Solutions</a> for a side-by-side view, then get a tailored recommendation.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Personalised Plan</a>
     </div>
 
     <!-- FAQs with dropdowns -->
     <div class="section" id="faq">
-      <div class="vh2" role="heading" aria-level="2">Bristow &amp; Sutor — Frequently Asked Questions</div>
+      <h2>Bristow &amp; Sutor — Frequently Asked Questions</h2>
 
       <details class="faq"><summary>Can Bristow &amp; Sutor force entry for council tax or PCNs?</summary>
         <p>For council tax and PCNs, forced entry is generally <strong>not</strong> the default on a first visit. Keep doors closed, stay polite, and use written contact. If you’ve signed a Controlled Goods Agreement or they are returning to take controlled goods, rules change — get advice quickly.</p>
@@ -397,45 +372,45 @@
 
     <!-- Search-intent clusters -->
     <div class="section" id="clusters">
-      <div class="vh2" role="heading" aria-level="2">Quick Answers to Popular Searches</div>
+      <h2>Quick Answers to Popular Searches</h2>
 
       <div class="quiz-card">
-        <div class="vh3" role="heading" aria-level="3">“Bristow &amp; Sutor payment plan”</div>
+        <h3>“Bristow &amp; Sutor payment plan”</h3>
         <p>Propose a figure based on a realistic budget, not what’s demanded on the spot. Written offers + evidence of affordability work best.</p>
       </div>
 
       <div class="quiz-card">
-        <div class="vh3" role="heading" aria-level="3">“Bristow &amp; Sutor fees 2025”</div>
+        <h3>“Bristow &amp; Sutor fees 2025”</h3>
         <p>Standard fixed fees remain at £75 (Compliance), £235 (Enforcement) and £110 (Sale) with 7.5% over £1,500 at Enforcement/Sale (different for High Court). Act at Compliance to limit costs.</p>
       </div>
 
       <div class="quiz-card">
-        <div class="vh3" role="heading" aria-level="3">“Is Bristow &amp; Sutor legit?”</div>
+        <h3>“Is Bristow &amp; Sutor legit?”</h3>
         <p>They are a long-standing enforcement company used by local authorities. You still have rights and don’t have to accept unaffordable terms.</p>
       </div>
 
       <div class="quiz-card">
-        <div class="vh3" role="heading" aria-level="3">“Stop Bristow &amp; Sutor at the door”</div>
+        <h3>“Stop Bristow &amp; Sutor at the door”</h3>
         <p>Keep the door closed, speak politely, request written contact, and set a realistic offer after budgeting. Ask about Breathing Space if you qualify.</p>
       </div>
 
       <div class="quiz-card">
-        <div class="vh3" role="heading" aria-level="3">“Bristow &amp; Sutor vulnerable policy”</div>
+        <h3>“Bristow &amp; Sutor vulnerable policy”</h3>
         <p>Tell them (in writing) about any vulnerability and request reasonable adjustments. We’ll help you word it and include supporting evidence.</p>
       </div>
     </div>
 
     <!-- Complaints -->
     <div class="section" id="complaints">
-      <div class="vh2" role="heading" aria-level="2">Complaints &amp; Conduct (Keeping a Clean Trail)</div>
+      <h2>Complaints &amp; Conduct (Keeping a Clean Trail)</h2>
       <p>If behaviour is unacceptable, <strong>complain in writing</strong> to Bristow &amp; Sutor first, then the council that instructed them, and escalate to the relevant ombudsman if needed. Keep a log (dates, names, promises, letters) and attach evidence. Standards for identification, behaviour and hours are set in the National Standards for Enforcement Agents.</p>
-      <div class="vh5" role="heading" aria-level="5">Tip</div>
+      <h5>Tip</h5>
       <p>Send complaints by email and keep a PDF copy. A tidy paper trail gets faster results.</p>
     </div>
 
     <!-- Official resources -->
     <div class="section" id="resources">
-      <div class="vh2" role="heading" aria-level="2">Official Guidance & Trusted Help</div>
+      <h2>Official Guidance & Trusted Help</h2>
       <ul class="trust-list">
         <li>🏛️ National Standards for Enforcement Agents (GOV.UK)</li>
         <li>🧾 Taking Control of Goods (Fees) — HMRC manual fee table</li>
@@ -447,14 +422,14 @@
 
     <!-- Final CTA -->
     <div class="section" id="final-cta">
-      <div class="vh2" role="heading" aria-level="2">Your Fresh Start Begins Today</div>
+      <h2>Your Fresh Start Begins Today</h2>
       <p>We’ll help you stabilise essentials, reduce contact pressure, and set a plan you can keep. No judgment — just clear steps that work.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Bristow &amp; Sutor Check</a>
     </div>
 
     <!-- === APPEND-ONLY: COMPETITOR-GAP SECTIONS FOR SEARCH INTENT === -->
     <div class="section" id="verify-visit">
-      <div class="vh2" role="heading" aria-level="2">How to Check a Bristow &amp; Sutor Visit/Letter Is Legit</div>
+      <h2>How to Check a Bristow &amp; Sutor Visit/Letter Is Legit</h2>
       <p>Before you respond, verify the contact and keep a clean evidence trail:</p>
       <ol>
         <li><strong>Ask for ID &amp; written proof</strong> — enforcement agents must identify themselves and provide written notice before visiting. Keep copies/photos. <span class="mini-note">National Standards set conduct/ID expectations.</span></li>
@@ -467,16 +442,16 @@
     </div>
 
     <div class="section" id="times-and-entry">
-      <div class="vh2" role="heading" aria-level="2">What Times Can Bailiffs Visit? Do I Have to Let Them In?</div>
+      <h2>What Times Can Bailiffs Visit? Do I Have to Let Them In?</h2>
       <p>For council tax and PCNs, agents generally arrange visits during standard hours. Keep the door closed, speak politely through the door/letterbox, and request written communication. If you’re classed as <strong>vulnerable</strong> (health, disability, bereavement, pregnancy, language barriers, etc.), ask for <strong>reasonable adjustments</strong> and extra time in writing.</p>
-      <div class="vh4" role="heading" aria-level="4">The safer way to respond</div>
+      <h4>The safer way to respond</h4>
       <p>“I’m seeking debt advice and will reply in writing with an affordable proposal. I don’t consent to entry. Please leave any documents through the letterbox.”</p>
       <a href="breathing-space.html" class="menu-cta">Ask About 60-Day Breathing Space</a>
       <p class="mini-note">Conduct &amp; vulnerability handling: National Standards (MoJ). Breathing Space scheme overview: National Debtline.</p>
     </div>
 
     <div class="section" id="fees-table-explainer">
-      <div class="vh2" role="heading" aria-level="2">Bristow &amp; Sutor Fees — Clear Table &amp; How to Avoid Later Charges</div>
+      <h2>Bristow &amp; Sutor Fees — Clear Table &amp; How to Avoid Later Charges</h2>
       <ul>
         <li><strong>Compliance</strong> (Notice of Enforcement): <strong>£75</strong></li>
         <li><strong>Enforcement</strong> (home visit): <strong>£235</strong> + <strong>7.5%</strong> of the amount <em>over</em> £1,500</li>
@@ -488,19 +463,19 @@
     </div>
 
     <div class="section" id="pcn-vs-council-tax">
-      <div class="vh2" role="heading" aria-level="2">PCN vs Council Tax: Why the Path to Enforcement Differs</div>
-      <div class="vh3" role="heading" aria-level="3">Council Tax (Liability Order → Enforcement)</div>
+      <h2>PCN vs Council Tax: Why the Path to Enforcement Differs</h2>
+      <h3>Council Tax (Liability Order → Enforcement)</h3>
       <p>Councils usually seek a <em>liability order</em> before instructing enforcement agents. You’ll then receive a <strong>Notice of Enforcement</strong> with a deadline to respond.</p>
-      <div class="vh3" role="heading" aria-level="3">PCNs (Parking/Traffic)</div>
+      <h3>PCNs (Parking/Traffic)</h3>
       <p>Unpaid PCNs progress through statutory notices. Once registered and passed to enforcement, similar stages/fees apply. Timings differ from council tax — respond in writing and budget first.</p>
       <a href="council-tax-debt.html" class="menu-cta">Council Tax Help</a>
       <a href="stop-debt-collectors.html" class="menu-cta">PCN &amp; Collector Scripts</a>
     </div>
 
     <div class="section" id="vehicle-rules">
-      <div class="vh2" role="heading" aria-level="2">Can They Clamp or Take My Car?</div>
+      <h2>Can They Clamp or Take My Car?</h2>
       <p>Vehicles can be taken if not exempt and accessible, <em>but</em> cars used for work or essential needs can be protected within limits. Keep evidence (employer letter, invoices, medical/disability documentation). If your car was clamped, contact us before signing anything.</p>
-      <div class="vh5" role="heading" aria-level="5">Quick checklist</div>
+      <h5>Quick checklist</h5>
       <ul>
         <li>Is it needed for work or disability?</li>
         <li>Is it on finance (HP/PCP)?</li>
@@ -511,8 +486,8 @@
     </div>
 
     <div class="section" id="templates">
-      <div class="vh2" role="heading" aria-level="2">Free Templates: Offer Letter, Vulnerability Note &amp; Complaint</div>
-      <div class="vh3" role="heading" aria-level="3">Affordable Offer Email</div>
+      <h2>Free Templates: Offer Letter, Vulnerability Note &amp; Complaint</h2>
+      <h3>Affordable Offer Email</h3>
       <pre style="white-space:pre-wrap;border:1px solid #d3f0dd;border-radius:12px;padding:12px;background:#f8fffb">
 Subject: [Your name] – Account/Ref [ref] – Affordable Payment Proposal
 
@@ -522,7 +497,7 @@ Please confirm bank details and that further enforcement is paused while this is
 Kind regards,
 [Your name] [Address] [Ref]</pre>
 
-      <div class="vh3" role="heading" aria-level="3">Vulnerability &amp; Reasonable Adjustments</div>
+      <h3>Vulnerability &amp; Reasonable Adjustments</h3>
       <pre style="white-space:pre-wrap;border:1px solid #d3f0dd;border-radius:12px;padding:12px;background:#f8fffb">
 Subject: Vulnerability disclosure – request for reasonable adjustments
 
@@ -534,7 +509,7 @@ I’m considered vulnerable due to [health/bereavement/disability/etc]. Please:
 Kind regards,
 [Your name] [Evidence note if available]</pre>
 
-      <div class="vh3" role="heading" aria-level="3">Complaint Ladder (Company → Council → Ombudsman)</div>
+      <h3>Complaint Ladder (Company → Council → Ombudsman)</h3>
       <pre style="white-space:pre-wrap;border:1px solid #d3f0dd;border-radius:12px;padding:12px;background:#f8fffb">
 Subject: Formal complaint – conduct on [date] – Ref [ref]
 
@@ -548,11 +523,11 @@ Kind regards,
     </div>
 
     <div class="section" id="paa-queries">
-      <div class="vh2" role="heading" aria-level="2">Quick Answers to “People Also Ask” Style Queries</div>
-      <div class="quiz-card"><div class="vh3" role="heading" aria-level="3">Do I have to pay immediately?</div><p>No. Respond in writing with a budget-based offer first. Don’t agree to unaffordable doorstep amounts.</p></div>
-      <div class="quiz-card"><div class="vh3" role="heading" aria-level="3">How long after a Notice can they visit?</div><p>After <strong>7 clear days</strong> (not counting the delivery day). Use that time to set a realistic plan. <span class="mini-note">Citizens Advice.</span></p></div>
-      <div class="quiz-card"><div class="vh3" role="heading" aria-level="3">What if I’ve already signed a CGA?</div><p>Don’t panic. You can still request changes or complain if you were pressured. Get advice quickly. <span class="mini-note">Citizens Advice.</span></p></div>
-      <div class="quiz-card"><div class="vh3" role="heading" aria-level="3">Are fees changing in 2025?</div><p>The MoJ has indicated an <strong>intention</strong> to uplift fees by ~5% following consultation. Always check the latest status. <span class="mini-note">MoJ consultation response.</span></p></div>
+      <h2>Quick Answers to “People Also Ask” Style Queries</h2>
+      <div class="quiz-card"><h3>Do I have to pay immediately?</h3><p>No. Respond in writing with a budget-based offer first. Don’t agree to unaffordable doorstep amounts.</p></div>
+      <div class="quiz-card"><h3>How long after a Notice can they visit?</h3><p>After <strong>7 clear days</strong> (not counting the delivery day). Use that time to set a realistic plan. <span class="mini-note">Citizens Advice.</span></p></div>
+      <div class="quiz-card"><h3>What if I’ve already signed a CGA?</h3><p>Don’t panic. You can still request changes or complain if you were pressured. Get advice quickly. <span class="mini-note">Citizens Advice.</span></p></div>
+      <div class="quiz-card"><h3>Are fees changing in 2025?</h3><p>The MoJ has indicated an <strong>intention</strong> to uplift fees by ~5% following consultation. Always check the latest status. <span class="mini-note">MoJ consultation response.</span></p></div>
     </div>
     <!-- === END APPEND-ONLY SECTIONS === -->
 
