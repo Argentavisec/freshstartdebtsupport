@@ -19,6 +19,25 @@
 
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <style>
+    /* Light utilities for appended blocks (keeps your design) */
+    .meta.small{font-size:.95rem;opacity:.95;margin:10px 0}
+    .breadcrumbs{font-size:.95rem;margin:8px 0 16px}
+    .breadcrumbs a{text-decoration:none}
+    .breadcrumbs .sep{opacity:.6;margin:0 6px}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef7f1;margin:6px 8px 0 0}
+    .script-box, .note, .tip, .warning{border-radius:12px;padding:14px;margin:12px 0}
+    .script-box{background:#f6fff8;border:1px solid #d9f0df}
+    .note{background:#fff7e6;border:1px solid #ffe0a6}
+    .tip{background:#eef4ff;border:1px solid #cfe0ff}
+    .warning{background:#ffeef0;border:1px solid #ffd0d6}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New",monospace;background:#f2f4f5;padding:2px 6px;border-radius:6px}
+    .muted{opacity:.9}
+    .calc-card{background:#f8fafb;border:1px solid #e7ecf0;border-radius:14px;padding:16px}
+    .calc-card input{width:100%;max-width:360px;padding:10px;border:1px solid #ccd6dd;border-radius:8px;margin:6px 0}
+    .calc-result{font-weight:700;margin-top:10px}
+  </style>
 </head>
 <body>
 
@@ -40,6 +59,23 @@
 
   <!-- Main Content Container -->
   <div class="container">
+
+    <!-- (APPENDED) Freshness + Breadcrumbs for E-E-A-T -->
+    <div class="meta small">
+      <strong>Reviewed by:</strong> UK Debt Support Team • <span id="updated">Last updated</span>
+      <script>
+        const now = new Date();
+        document.getElementById("updated").innerText =
+          now.toLocaleDateString("en-GB", { day:"2-digit", month:"long", year:"numeric" });
+      </script>
+    </div>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> <span class="sep">›</span>
+      <a href="bailiffs-rights.html">Bailiffs: Your Rights</a> <span class="sep">›</span>
+      <span>Marston Holdings</span>
+    </nav>
+
+    <!-- ======== YOUR ORIGINAL PAGE (UNTOUCHED) STARTS ======== -->
 
     <!-- Section 1 -->
     <div class="section">
@@ -344,6 +380,118 @@
       </ul>
       <p>When you’re ready, we’re ready—on your terms and timeline.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
+    </div>
+
+    <!-- ======== YOUR ORIGINAL PAGE (UNTOUCHED) ENDS ======== -->
+
+    <!-- ================== NEW, COMPETITOR-INFORMED SECTIONS (APPENDED) ================== -->
+
+    <!-- Competitor term cluster: “Marston fees”, “bailiff fees 75 235 110”, “Taking Control of Goods fees” -->
+    <div class="section" id="marston-fees-2025">
+      <h2>Marston Fees Explained (2025): Compliance, Enforcement & Sale</h2>
+      <p>For most council tax and PCN cases in England & Wales, statutory bailiff fees are set by the <em>Taking Control of Goods (Fees) Regulations 2014</em>. Typical stages include: <strong>Compliance £75</strong> (after the Notice of Enforcement), <strong>Enforcement £235</strong> (first visit) plus <strong>7.5%</strong> of any debt over £1,500, and <strong>Sale £110</strong> plus <strong>7.5%</strong> over £1,500 if goods are removed for sale. Extra disbursements can apply in limited circumstances (e.g., storage/locksmith). :contentReference[oaicite:0]{index=0}</p>
+      <p class="muted">Why this matters: acting during the <em>Compliance</em> stage can avoid the higher <em>Enforcement</em> visit fee. If you’ve had a Notice of Enforcement, respond fast—ideally in writing with a defendable offer.</p>
+    </div>
+
+    <!-- Competitor term cluster: “Notice of Enforcement”, “ignore Marston letter”, “how long do I have?” -->
+    <div class="section" id="notice-of-enforcement">
+      <h2>Notice of Enforcement: How Long Do You Have & What Happens If You Ignore It?</h2>
+      <p>You generally have at least <strong>7 clear days</strong> from the Notice of Enforcement before a bailiff can visit. Ignoring it can push your case to the Enforcement stage, adding the £235 fee on top. Act quickly: switch to written contact, share your circumstances, and propose an affordable plan—or ask us about <a href="breathing-space.html">Breathing Space</a> if you need a legal pause. :contentReference[oaicite:1]{index=1}</p>
+    </div>
+
+    <!-- Competitor term cluster: “can Marston take my car”, “car on finance”, “clamped on driveway/private land” -->
+    <div class="section" id="car-and-clamps">
+      <h2>Can Marston Take or Clamp My Car?</h2>
+      <h3>Vehicles they typically target</h3>
+      <p>Bailiffs often look for a vehicle because it’s easy to take control of. They can clamp or remove it if they lawfully take control of goods for the debt. If the car is essential for work (“tools of the trade”) or subject to certain protections (e.g., Blue Badge context), tell them in writing and provide evidence. :contentReference[oaicite:2]{index=2}</p>
+      <h3>What if the car is on finance or lease?</h3>
+      <p>If you don’t legally own the vehicle (e.g., it’s on hire purchase/lease), it may be exempt—share proof quickly. If mistakenly clamped, you can challenge with evidence. :contentReference[oaicite:3]{index=3}</p>
+      <h4>Fast action tip</h4>
+      <p>Send your documents by email and keep copies. Don’t agree to unaffordable sums to release a clamp—ask us for wording and a sustainable plan first. :contentReference[oaicite:4]{index=4}</p>
+    </div>
+
+    <!-- Competitor term cluster: “can bailiffs force entry”, “what hours can bailiffs visit”, “do bailiffs work weekends” -->
+    <div class="section" id="entry-hours">
+      <h2>Entry & Visiting Hours: What Marston Can and Can’t Do</h2>
+      <p>You usually <em>don’t</em> have to open your door. Bailiffs cannot enter by force on a first council tax/PCN visit, and visits should not be between <strong>9pm and 6am</strong>. They can force entry only in specific situations (e.g., some criminal fines, certain HMRC debts, or if there’s a defaulted Controlled Goods Agreement). :contentReference[oaicite:5]{index=5}</p>
+      <p class="muted">If you feel unsafe or pressured, keep communication in writing, record the date/time of visits, and ask for reasonable adjustments if you’re vulnerable.</p>
+    </div>
+
+    <!-- Competitor term cluster: “Marston payment plan”, “negotiate with bailiffs”, “affordable offer” -->
+    <div class="section" id="marston-payment-plans">
+      <h2>Setting a Marston Payment Plan (Without Over-Promising)</h2>
+      <p>Build your budget first, then make an offer you can defend. Share income, essential costs, and a realistic monthly amount. Send it in writing and ask for confirmation in writing. If you need breathing room to organise this, ask about <a href="breathing-space.html">Breathing Space</a>. :contentReference[oaicite:6]{index=6}</p>
+      <div class="tip"><strong>Tip:</strong> Include account references and ask to pause visits while your affordable plan is reviewed. Keep a log (<span class="kbd">date</span>, <span class="kbd">time</span>, <span class="kbd">what was agreed</span>).</div>
+    </div>
+
+    <!-- Long-tail “easy to rank” cluster: weekends, private land, pay council, vulnerable flags -->
+    <div class="section" id="quick-answers-longtail">
+      <h2>Quick Answers People Search (Marston & Bailiffs)</h2>
+
+      <h3>Do Marston work weekends?</h3>
+      <p>Visits can happen on weekends, but not at night (9pm–6am). Keep doors closed and ask for written contact if a visit feels pressured. :contentReference[oaicite:7]{index=7}</p>
+
+      <h3>Can they clamp a car on my driveway/private land?</h3>
+      <p>If they’ve lawfully taken control of goods, clamping on a driveway is possible. Dispute quickly if the car is exempt (on finance, essential work vehicle, or protected circumstances). :contentReference[oaicite:8]{index=8}</p>
+
+      <h3>Can I pay the council instead of Marston?</h3>
+      <p>Once a case is with enforcement, councils usually direct you to deal with the enforcement company because statutory fees are attached to the case. Try to agree an affordable plan in writing. :contentReference[oaicite:9]{index=9}</p>
+
+      <h3>What if I ignore a Notice of Enforcement?</h3>
+      <p>The case can progress to a visit, adding the £235 enforcement fee. Respond fast with a defendable offer—or get advice about a suitable solution and timing. :contentReference[oaicite:10]{index=10}</p>
+    </div>
+
+    <!-- Trust & E-E-A-T reinforcement -->
+    <div class="section" id="trust">
+      <h2>Trust & Transparency</h2>
+      <p class="muted">We provide free, plain-English guidance and connect you—where needed—to appropriately regulated providers for formal solutions. We’re independent, focus on affordability first, and will never push you to agree to unaffordable payments.</p>
+      <div class="script-box">
+        <strong>What you’ll get:</strong>
+        <ul>
+          <li>A defendable budget that protects rent/mortgage, council tax and energy</li>
+          <li>Clear scripts and letters to move contact to writing</li>
+          <li>Help using <a href="breathing-space.html">Breathing Space</a> (where appropriate)</li>
+          <li>A route that matches your numbers: <a href="dmp.html">DMP</a> / <a href="iva.html">IVA</a> / <a href="dro.html">DRO</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- On-page challenge: simple calculator + JotForm funnel -->
+    <div class="section" id="calculator">
+      <h2>Debt & Fee Impact: Quick Calculator</h2>
+      <p>Estimate how long it could take to clear unsecured debts on your own vs. setting an affordable plan (ignoring interest for simplicity). Then ask us to pressure-test your budget.</p>
+      <div class="calc-card">
+        <label>Total unsecured debt (£)</label><br/>
+        <input id="calc-debt" type="number" placeholder="e.g. 12000" />
+        <br/>
+        <label>Monthly amount you can afford (£)</label><br/>
+        <input id="calc-monthly" type="number" placeholder="e.g. 150" />
+        <br/>
+        <button class="menu-cta" onclick="calcPlan()">Calculate</button>
+        <p id="calc-out" class="calc-result"></p>
+        <p><a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Budget Checked (Free)</a></p>
+      </div>
+      <script>
+        function calcPlan(){
+          const d = parseFloat(document.getElementById('calc-debt').value);
+          const m = parseFloat(document.getElementById('calc-monthly').value);
+          const out = document.getElementById('calc-out');
+          if(!d || !m || d<=0 || m<=0){ out.textContent = "Please enter valid amounts."; return; }
+          const months = Math.ceil(d / m);
+          const years = (months/12).toFixed(1);
+          out.textContent = `At £${m.toFixed(0)}/mo, that’s roughly ${months} months (~${years} years). We’ll help you check a safer, defendable figure and route—without over-promising.`;
+        }
+      </script>
+      <p class="muted">Note: Enforcement fees and interest can change the maths—act early to keep costs down. :contentReference[oaicite:11]{index=11}</p>
+    </div>
+
+    <!-- Optional reference note (SEO transparency) -->
+    <div class="section" id="references">
+      <h2>Verification Sources (for key facts)</h2>
+      <p>Statutory fee framework & examples: Citizens Advice; Taking Control of Goods (Fees) Regulations 2014; MoJ review/update. :contentReference[oaicite:12]{index=12}</p>
+      <p>Notice of Enforcement timeline & negotiation basics: Citizens Advice guides. :contentReference[oaicite:13]{index=13}</p>
+      <p>Entry powers & hours; when force is allowed: GOV.UK; StepChange. :contentReference[oaicite:14]{index=14}</p>
+      <p>Vehicles & exemptions (finance, work necessity): Citizens Advice. :contentReference[oaicite:15]{index=15}</p>
     </div>
 
   </div>
