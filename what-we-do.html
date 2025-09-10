@@ -93,7 +93,7 @@
   }
   </script>
 
-  <!-- Inline critical CSS for hero (matching your IVA template) -->
+  <!-- Inline critical CSS -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -112,7 +112,8 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
-    /* Utilities (as per template) */
+
+    /* Utilities */
     .meta.small{font-size:.95rem;opacity:.95;margin:10px 0}
     .breadcrumbs{font-size:.95rem;margin:8px 0 16px}
     .breadcrumbs a{text-decoration:none}
@@ -125,14 +126,20 @@
     .warning{background:#ffeef0;border:1px solid #ffd0d6}
     .muted{opacity:.9}
     .grid{display:grid;gap:12px}
-    @media (min-width:760px){.grid-3{grid-template-columns:repeat(3,1fr)}}
     .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
     .table-wrap{overflow:auto;border:1px solid #e7ecf0;border-radius:12px}
-    table{width:100%;border-collapse:collapse;font-size:.98rem}
-    th,td{padding:12px;border-bottom:1px solid #edf1f4;text-align:left}
-    th{background:#f7faf9;font-weight:700}
-    .menu-cta{display:inline-block;margin-top:12px}
+    .menu-cta{
+      /* Match hero button style + center automatically */
+      display:block;
+      width:fit-content;
+      border:0;border-radius:999px;padding:14px 22px;margin:12px auto 0;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
+    .menu-cta:hover{background:#e8f6ec;color:#215a29}
+    .menu-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
   </style>
 </head>
 
@@ -226,7 +233,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Matched to the Right Route</a>
     </div>
 
-    <!-- Section: Breathing Space (core intent) -->
+    <!-- Breathing Space -->
     <div class="section" id="breathing-space">
       <h2>Breathing Space (Debt Respite Scheme): How It Protects You</h2>
       <h3>What it does</h3>
@@ -234,15 +241,15 @@
 
       <h3>Why we lead with Breathing Space</h3>
       <ul>
-        <li>Reduces immediate pressure — you can focus on essentials and planning</li>
+        <li>Reduces immediate pressure so you can focus on priority bills</li>
         <li>Stops most collections escalation while we organise your budget</li>
         <li>Creates a calm path into a sustainable solution (DMP/IVA/DRO)</li>
       </ul>
-      <p class="muted">Independent explainers: GOV.UK (official scheme overview), MoneyHelper and Citizens Advice.</p>
+      <p class="muted">Neutral sources: GOV.UK (official scheme overview), MoneyHelper, Citizens Advice.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask If I Can Get Breathing Space</a>
     </div>
 
-    <!-- Section: Eligibility & documents -->
+    <!-- Eligibility & documents -->
     <div class="section" id="eligibility">
       <h2>Breathing Space Eligibility & What We’ll Ask For</h2>
       <h3>Basic checks</h3>
@@ -261,19 +268,19 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Eligibility (Free)</a>
     </div>
 
-    <!-- Section: Mental Health Crisis Breathing Space -->
+    <!-- Mental Health Crisis Breathing Space -->
     <div class="section" id="mental-health">
       <h2>Mental Health Crisis Breathing Space</h2>
       <p>If you’re in <strong>mental health crisis treatment</strong> certified by an Approved Mental Health Professional (AMHP), protections last for the <strong>duration of treatment plus 30 days</strong>. We’ll work with your care team to ensure the right documentation is in place and that your creditors are notified properly.</p>
       <ul>
-        <li>Same protections as standard Breathing Space (pause interest/most enforcement)</li>
+        <li>Same protections as standard Breathing Space</li>
         <li>No 12-month waiting limit between uses while you qualify</li>
         <li>Sensitive handling and trauma-informed communication</li>
       </ul>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help with Mental Health Breathing Space</a>
     </div>
 
-    <!-- Section: Which debts qualify -->
+    <!-- Which debts qualify -->
     <div class="section" id="included-debts">
       <h2>Which Debts Are Covered by Breathing Space?</h2>
       <p><strong>Generally covered:</strong> most personal unsecured debts — credit cards, loans, overdrafts, store/catalogue accounts, BNPL and many arrears (e.g., utilities).</p>
@@ -282,7 +289,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask Which of My Debts Qualify</a>
     </div>
 
-    <!-- Section: Stopping bailiffs & claims -->
+    <!-- Stopping bailiffs & claims -->
     <div class="section" id="stop-bailiffs">
       <h2>Stopping Bailiffs, Interest & Most New Legal Action</h2>
       <p>Once you’re in Breathing Space, creditors should not contact you to demand payment and should pause <strong>most enforcement</strong>. This typically includes halting bailiff action and freezing interest/charges on qualifying debts while protections are active. If you still receive contact, we’ll respond in writing and reference the scheme rules.</p>
@@ -294,7 +301,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Enforcement — Start My Free Check</a>
     </div>
 
-    <!-- Section: After Breathing Space -->
+    <!-- After Breathing Space -->
     <div class="section" id="after-breathing-space">
       <h2>What Happens After Breathing Space Ends?</h2>
       <p>Breathing Space is a window to set up a <strong>sustainable plan</strong>. Before it ends, we’ll help you move to the best route for your numbers:</p>
@@ -307,45 +314,26 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Plan My Next Step (Free)</a>
     </div>
 
-    <!-- Section: Compare solutions -->
+    <!-- Compare solutions (no table) -->
     <div class="section" id="solutions">
-      <h2>Compare IVA, DMP & DRO — Choosing the Right Route</h2>
-      <div class="table-wrap">
-        <table aria-label="Comparison of debt solutions">
-          <thead>
-            <tr><th>Solution</th><th>When it suits</th><th>Protections</th><th>Write-off potential</th><th>Notes</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="iva.html">IVA</a></td>
-              <td>Debts ≈ £6k+ and steady income</td>
-              <td>Legal once approved; freezes most enforcement</td>
-              <td>Yes, on qualifying unsecured debt at completion</td>
-              <td>5–6 years typical; equity clauses may apply</td>
-            </tr>
-            <tr>
-              <td><a href="dmp.html">DMP</a></td>
-              <td>Wants flexibility; variable income</td>
-              <td>Informal; freezes often requested but not guaranteed</td>
-              <td>No formal write-off</td>
-              <td>One payment; creditors cooperate voluntarily</td>
-            </tr>
-            <tr>
-              <td><a href="dro.html">DRO</a></td>
-              <td>Low income, low assets within limits</td>
-              <td>Legal; creditors included are bound</td>
-              <td>Yes, after the DRO period if criteria still met</td>
-              <td>Strict eligibility; quick/low cost vs bankruptcy</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="muted">Scotland has different solutions (e.g., Trust Deeds/DAS). Ask us if you’re north of the border.</p>
-      <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
+      <h2>IVA, DMP or DRO — Choosing the Right Route</h2>
+
+      <h3>IVA — Individual Voluntary Arrangement</h3>
+      <p>Best when debts are around <strong>£6,000+</strong> and you have a <strong>steady income</strong>. Once approved, it usually freezes most enforcement and interest. After successful completion, remaining qualifying unsecured debt may be written off. Typical term: <strong>5–6 years</strong>.</p>
+      <a href="iva.html" class="menu-cta">Learn About IVAs</a>
+
+      <h3>DMP — Debt Management Plan</h3>
+      <p>An <strong>informal</strong> plan with one reduced payment to non-priority debts based on what you can afford. Interest reductions/freezes are commonly requested but not guaranteed. Flexible if income varies.</p>
+      <a href="dmp.html" class="menu-cta">Learn About DMPs</a>
+
+      <h3>DRO — Debt Relief Order</h3>
+      <p>For people with <strong>low income and low assets</strong> within set limits. Legally pauses included debts and may write them off after the DRO period if criteria still apply. Low-cost and quicker than bankruptcy.</p>
+      <a href="dro.html" class="menu-cta">Learn About DROs</a>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get a Personal Recommendation</a>
     </div>
 
-    <!-- Section: Competitor-informed clarity & trusted sources -->
+    <!-- Trusted sources -->
     <div class="section" id="trusted-sources">
       <h2>Clear, Verified Guidance</h2>
       <p>For added reassurance, here are neutral sources that explain Breathing Space and formal solutions clearly:</p>
@@ -358,7 +346,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Talk to Us — Free & Confidential</a>
     </div>
 
-    <!-- Section: FAQs (on-page content) -->
+    <!-- FAQs -->
     <div class="section" id="faq">
       <h2>Frequently Asked Questions</h2>
 
@@ -387,7 +375,7 @@
     <div class="section" id="final-cta">
       <h2>Start Your Fresh Start Today</h2>
       <p>Get protected with <strong>Breathing Space</strong> and move into a plan that fits your life. We keep priority bills safe, speak to creditors in writing, and guide you to the route with the best long-term outcome.</p>
-      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment now">✅ Start Free Debt Check</a>
+      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment now" style="display:block;margin:12px auto 0; width:max-content;">✅ Start Free Debt Check</a>
     </div>
 
     <!-- ======== CONTENT ENDS ======== -->
