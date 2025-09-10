@@ -95,6 +95,13 @@
 
   <!-- Inline critical CSS -->
   <style>
+    :root{
+      --green:#4CAF50;
+      --green-2:#3b8f40;
+      --green-3:#56d68a;
+      --dark:#2f6f36;
+    }
+
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
       color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
@@ -104,13 +111,21 @@
     .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
     .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
     .hero-cta{
-      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      display:inline-flex;align-items:center;gap:10px;
+      border:0;border-radius:999px;padding:14px 22px;margin:0 auto;
       font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
-      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
-      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+      background:#fff;color:var(--dark);
+      box-shadow:0 8px 0 rgba(0,0,0,.22);
+      transition:transform .06s ease,box-shadow .06s ease,filter .15s ease
     }
-    .hero-cta:hover{background:#e8f6ec;color:#215a29}
-    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-cta::before{
+      content:"✓";
+      display:inline-grid;place-items:center;
+      width:28px;height:28px;border-radius:999px;
+      background:var(--green);color:#fff;font-weight:900;line-height:1;
+    }
+    .hero-cta:hover{filter:brightness(1.03)}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 5px 0 rgba(0,0,0,.22)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
 
     /* Utilities */
@@ -128,18 +143,17 @@
     .grid{display:grid;gap:12px}
     .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-    .table-wrap{overflow:auto;border:1px solid #e7ecf0;border-radius:12px}
+
+    /* CTA buttons to match your IVA page look (centered + pill + drop shadow) */
     .menu-cta{
-      /* Match hero button style + center automatically */
-      display:block;
-      width:fit-content;
-      border:0;border-radius:999px;padding:14px 22px;margin:12px auto 0;
-      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
-      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
-      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+      display:block;width:max-content;margin:12px auto 0;
+      border-radius:999px;padding:14px 22px;font-weight:800;font-size:clamp(16px,2.8vw,18px);
+      text-decoration:none;color:#fff;background:linear-gradient(180deg,var(--green-3),var(--green-2));
+      box-shadow:0 8px 0 rgba(0,0,0,.22);
+      transition:transform .06s ease,box-shadow .06s ease,filter .15s ease
     }
-    .menu-cta:hover{background:#e8f6ec;color:#215a29}
-    .menu-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .menu-cta:hover{filter:brightness(1.05)}
+    .menu-cta:active{transform:translateY(2px);box-shadow:0 5px 0 rgba(0,0,0,.22)}
   </style>
 </head>
 
@@ -162,7 +176,7 @@
           Pause <strong>interest, charges and most enforcement for up to 60 days</strong> while we set up a sustainable plan
           — <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>. Free, confidential and judgment-free.
         </p>
-        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment">✅ Start Free Debt Check</a>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment">Start Free Debt Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
       </div>
     </div>
@@ -375,7 +389,7 @@
     <div class="section" id="final-cta">
       <h2>Start Your Fresh Start Today</h2>
       <p>Get protected with <strong>Breathing Space</strong> and move into a plan that fits your life. We keep priority bills safe, speak to creditors in writing, and guide you to the route with the best long-term outcome.</p>
-      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment now" style="display:block;margin:12px auto 0; width:max-content;">✅ Start Free Debt Check</a>
+      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment now" style="display:inline-flex;margin:12px auto 0;">Start Free Debt Check</a>
     </div>
 
     <!-- ======== CONTENT ENDS ======== -->
