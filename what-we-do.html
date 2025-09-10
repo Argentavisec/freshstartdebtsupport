@@ -34,7 +34,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Schema: Org + Breadcrumb + Service + HowTo (Breathing Space) + FAQ -->
+  <!-- Schema: Org + Breadcrumb + Service + HowTo (Breathing Space) + HowTo (Our Process) + FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -77,6 +77,19 @@
         ]
       },
       {
+        "@type":"HowTo",
+        "name":"Our end-to-end process to match you with the right solution",
+        "description":"From enquiry to set-up — we gather accurate numbers and place you with a DMP provider or Insolvency Practitioner that fits your needs.",
+        "step":[
+          {"@type":"HowToStep","name":"Enquire or WhatsApp us","text":"Send an enquiry via the website or message us on WhatsApp to get started quickly."},
+          {"@type":"HowToStep","name":"Welcome call & financial review","text":"We phone you to complete a full review of income, bills, dependants and spending so nothing is missed."},
+          {"@type":"HowToStep","name":"Confirm balances","text":"We total up your debts and, with your consent, run free credit searches if needed to make sure the list is complete."},
+          {"@type":"HowToStep","name":"Bank statements & accurate budget","text":"With your permission we review bank statements to build a fair, realistic budget and confirm what you can actually afford to repay."},
+          {"@type":"HowToStep","name":"Match to the right plan/IP","text":"We place you with a suitable DMP provider or licensed IP for an IVA/DRO, so you don’t have to repeat your story to multiple firms."},
+          {"@type":"HowToStep","name":"Set-up & stress reduction","text":"Your plan is set up; creditors are contacted in writing and you make one affordable payment while protections apply where relevant."}
+        ]
+      },
+      {
         "@type":"FAQPage",
         "mainEntity":[
           {"@type":"Question","name":"What is Breathing Space?","acceptedAnswer":{"@type":"Answer","text":"A government-backed scheme in England and Wales that pauses interest, charges and most enforcement action on qualifying debts while you work with a debt adviser to set up a plan. Standard Breathing Space lasts up to 60 days."}},
@@ -103,7 +116,7 @@
     .hero-copy{text-align:center}
     .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
     .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
-    /* EXACT same hero CTA style as IVA page (white pill, centered via text-align) */
+    /* EXACT same hero CTA style as IVA page (white pill, centered) */
     .hero-cta{
       display:inline-block;border:0;border-radius:999px;padding:14px 22px;
       font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
@@ -129,7 +142,7 @@
     .grid{display:grid;gap:12px}
     .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-    /* NOTE: Section CTAs (.menu-cta) use your site-wide style.css (same as IVA page). */
+    /* NOTE: Section CTAs (.menu-cta) come from your site-wide style.css (same as IVA page). */
   </style>
 </head>
 
@@ -207,10 +220,28 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
     </div>
 
+    <!-- NEW: Our Process (added per your request) -->
+    <div class="section" id="our-process">
+      <h2>Our Process — Simple, Accurate, Stress-Free</h2>
+      <p>We do the heavy lifting so you don’t have to call around and repeat the same details ten times. Here’s how we work:</p>
+      <ol>
+        <li><strong>Make an enquiry or WhatsApp us.</strong> Message us on WhatsApp or use the online form to get started fast.</li>
+        <li><strong>Welcome call & full financial review.</strong> We phone you to go through income, bills, dependants and spending in detail.</li>
+        <li><strong>Total up your debts.</strong> We confirm balances and, <em>with your consent</em>, run free credit searches if needed to ensure nothing is missed.</li>
+        <li><strong>Bank statements & accurate budget.</strong> With permission we review statements to build a fair budget and confirm what you can truly afford to repay — 100% accurate.</li>
+        <li><strong>Match you to the right provider.</strong> We place you with a suitable <abbr title="Debt Management Plan">DMP</abbr> provider or a licensed Insolvency Practitioner for an IVA/DRO that fits your needs and affordability.</li>
+        <li><strong>Set-up & support.</strong> We coordinate the set-up and creditor communications so you can focus on life, not phone calls.</li>
+      </ol>
+      <div class="tip">Outcome: the right solution for your situation, with less stress and no repeated explanations.</div>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Begin with a Free Debt Check</a>
+      <a href="https://wa.me/447752296301?text=Hi%20I%20want%20to%20start%20the%20process" class="menu-cta">Chat to Us on WhatsApp</a>
+    </div>
+
     <!-- Jump Links -->
     <div class="section" id="toc">
       <h2>Quick Access</h2>
       <div class="jump-links" aria-label="Popular help topics">
+        <a href="#our-process">Our process</a>
         <a href="#breathing-space">Breathing Space explained</a>
         <a href="#eligibility">Eligibility & documents</a>
         <a href="#mental-health">Mental health route</a>
