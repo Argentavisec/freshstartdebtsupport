@@ -6,7 +6,29 @@
   <title>Fresh Start Debt Support | Debt Help UK & Our Process | Starting from £69 per month</title>
   <meta name="description" content="Need debt help? Discover our simple step-by-step process: quick JotForm, specialist call, free credit check, affordable plan, breathing space and ongoing support. Council tax debt, credit cards, loans, catalogues and more." />
   <meta name="keywords" content="debt help, council tax debt, UK debt support, DMP, IVA, DRO, debt process, breathing space, stop debt collectors, affordable repayments" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline critical CSS for HERO (from your working pattern) -->
+  <style>
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
+    }
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-copy{text-align:center}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
+    .hero-cta:hover{background:#e8f6ec;color:#215a29}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
@@ -29,6 +51,23 @@
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
+
+  <!-- HERO -->
+  <section class="landing-hero" role="region" aria-label="Debt help in the UK — our process">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h2 class="hero-title">Debt Help UK — A Simple 7-Step Process</h2>
+        <p class="hero-sub">
+          Quick JotForm → friendly specialist call → free credit check (if needed) → one affordable plan
+          (DMP · IVA · DRO) — with <strong>Breathing Space</strong> available where suitable. Many start from
+          <strong>around £69/month</strong>, depending on circumstances.
+        </p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free UK debt help assessment">✅ Start My Free Debt Check</a>
+        <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
+      </div>
+    </div>
+  </section>
+  <!-- /HERO -->
 
   <!-- Menu Include -->
   <div id="menu-placeholder"></div>
@@ -260,12 +299,14 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menuContent");
+      if (!menu) return;
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
     }
 
     window.addEventListener("click", function(e) {
       const menu = document.getElementById("menuContent");
       const btn = document.getElementById("menuButton");
+      if (!menu) return;
       if (!menu.contains(e.target) && e.target !== btn) {
         menu.style.display = "none";
       }
