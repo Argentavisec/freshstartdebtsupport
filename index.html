@@ -12,9 +12,27 @@
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/index.html" />
   <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/index.html" />
 
+  <!-- NEW: Open Graph / Twitter for richer SERP/Share cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fresh Start Debt Support" />
+  <meta property="og:title" content="Debt Help UK — Simple 7-Step Process | Fresh Start Debt Support" />
+  <meta property="og:description" content="Quick JotForm → specialist call → free credit check → one affordable plan (DMP · IVA · DRO) with Breathing Space where suitable." />
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+  <meta property="og:image:alt" content="Fresh Start Debt Support" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Debt Help UK — Simple 7-Step Process | Fresh Start Debt Support" />
+  <meta name="twitter:description" content="Free, confidential check. Protect essentials, reduce contact pressure and move to one affordable plan where suitable." />
+  <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+
+  <!-- NEW: Performance hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
+  <link rel="preconnect" href="https://form.jotform.com" crossorigin>
+
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS for HERO (from your working pattern) -->
+  <!-- Inline critical CSS for HERO (from your working pattern) + small utilities -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -33,6 +51,18 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+
+    /* NEW: small trust stat pills under hero */
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* NEW: tiny meta strip for E-E-A-T (updated date) */
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* NEW: accessibility helper (skip link) */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -46,13 +76,65 @@
 
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <!-- NEW: Structured Data (Org + WebPage + HowTo + FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Fresh Start Debt Support",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
+        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
+      },
+      {
+        "@type":"WebPage",
+        "url":"https://www.freshstartdebtsupport.co.uk/index.html",
+        "name":"Debt Help UK — Our Simple 7-Step Process",
+        "description":"Step-by-step UK debt help: quick JotForm, specialist call, free credit check, realistic budget and one affordable plan (DMP · IVA · DRO) with Breathing Space where suitable."
+      },
+      {
+        "@type":"HowTo",
+        "name":"Our 7-Step Debt Help Process",
+        "description":"From first click to ongoing support.",
+        "totalTime":"P7D",
+        "step":[
+          {"@type":"HowToStep","name":"Read the essentials","text":"Compare IVA vs DMP vs DRO, and priority bills like council tax and utilities."},
+          {"@type":"HowToStep","name":"Complete the quick JotForm","text":"Share the basics so we can reach you."},
+          {"@type":"HowToStep","name":"We contact you","text":"Phone first, then WhatsApp if easier."},
+          {"@type":"HowToStep","name":"Full fact-find & free credit check","text":"List every debt and identify any priorities."},
+          {"@type":"HowToStep","name":"Budget & affordability","text":"Agree a realistic contribution that protects essentials."},
+          {"@type":"HowToStep","name":"Match with a senior advisor","text":"Discuss DMP, IVA or DRO and choose the best route."},
+          {"@type":"HowToStep","name":"Breathing Space & ongoing support","text":"Use your reference number and legal pause where appropriate while everything is set up."}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"How fast can you start helping once I complete the JotForm?","acceptedAnswer":{"@type":"Answer","text":"We’ll try to call you promptly and WhatsApp if we can’t get through. From there we begin your fact-find and budgeting immediately, prioritising urgent risks like council tax and utilities."}},
+          {"@type":"Question","name":"Do I need to list every debt before we speak?","acceptedAnswer":{"@type":"Answer","text":"No. If you’re unsure, we’ll guide a free credit check to identify missing accounts and pick up any priority debts."}},
+          {"@type":"Question","name":"Will a DMP or IVA stop calls and letters?","acceptedAnswer":{"@type":"Answer","text":"Contact usually reduces significantly once in place. We also help you use Breathing Space appropriately and issue a reference number to quote while your plan is being set up."}},
+          {"@type":"Question","name":"Will my credit score be affected?","acceptedAnswer":{"@type":"Answer","text":"Debt solutions can affect your credit file, but the priority is stabilising the household, protecting essentials and stopping the spiral. We’ll explain the trade-offs clearly."}},
+          {"@type":"Question","name":"Can debts be written off?","acceptedAnswer":{"@type":"Answer","text":"Some formal routes allow write-off at completion (e.g., a successful IVA) or after a qualifying period (e.g., an eligible DRO). We’ll confirm eligibility and implications before you choose."}},
+          {"@type":"Question","name":"What if my income changes later?","acceptedAnswer":{"@type":"Answer","text":"We’ll help you set a plan with realistic headroom. If your income changes, we can review and adjust where the solution allows."}},
+          {"@type":"Question","name":"I’m self-employed. Can you still help?","acceptedAnswer":{"@type":"Answer","text":"Yes — we regularly support sole traders and company directors and tailor your route to variable income."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- NEW: Accessibility -->
+  <a href="#main-start" class="skip-link">Skip to content</a>
 
   <!-- Header / Banner -->
   <div class="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
   </div>
@@ -69,10 +151,32 @@
         </p>
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free UK debt help assessment">✅ Start My Free Debt Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
+
+        <!-- NEW: trust/benefit stat pills -->
+        <div class="statbar" aria-label="Key benefits">
+          <span class="pill">Protect essentials first</span>
+          <span class="pill">Reduce calls & letters</span>
+          <span class="pill">One affordable payment</span>
+          <span class="pill">Use Breathing Space where suitable</span>
+        </div>
       </div>
     </div>
   </section>
   <!-- /HERO -->
+
+  <!-- NEW: Meta strip with last updated -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
+    <script>
+      (function(){
+        var el=document.getElementById('updated');
+        if(el){ el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"}); }
+      })();
+    </script>
+  </div>
+
+  <!-- Anchor for skip link -->
+  <div id="main-start"></div>
 
   <!-- Menu Include -->
   <div id="menu-placeholder"></div>
@@ -287,6 +391,19 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
     </div>
 
+    <!-- NEW: Optional Trustpilot widget spot (shows if your business unit is configured) -->
+    <div class="section" aria-label="Reviews">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- Footer -->
@@ -296,7 +413,7 @@
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20debt%20help%20and%20want%20to%20know%20your%20process" class="whatsapp-button" target="_blank" rel="noopener">
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20debt%20help%20and%20want%20to%20know%20your%20process" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     💬 Chat on WhatsApp
   </a>
 
