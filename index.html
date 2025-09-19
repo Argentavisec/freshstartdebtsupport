@@ -63,6 +63,11 @@
     /* NEW: accessibility helper (skip link) */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* NEW: intent jump menu */
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -77,7 +82,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- NEW: Structured Data (Org + WebPage + HowTo + FAQ) -->
+  <!-- Structured Data (Org + WebPage + HowTo + FAQ) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -152,7 +157,7 @@
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free UK debt help assessment">✅ Start My Free Debt Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
 
-        <!-- NEW: trust/benefit stat pills -->
+        <!-- trust/benefit stat pills -->
         <div class="statbar" aria-label="Key benefits">
           <span class="pill">Protect essentials first</span>
           <span class="pill">Reduce calls & letters</span>
@@ -188,6 +193,8 @@
 
   <!-- Main Content Container -->
   <div class="container">
+
+    <!-- ======= YOUR ORIGINAL CONTENT (UNTOUCHED) ======= -->
 
     <!-- Section 1 -->
     <div class="section">
@@ -391,7 +398,119 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
     </div>
 
-    <!-- NEW: Optional Trustpilot widget spot (shows if your business unit is configured) -->
+    <!-- ======= NEW: SEARCH-INTENT NAV (JUMP LINKS) ======= -->
+    <div class="section intent-nav" aria-label="Popular searches">
+      <h2>Popular UK Questions We’re Asked (Quick Links)</h2>
+      <div class="chips">
+        <a href="#breathing-space-uk">Breathing Space — 60-day pause</a>
+        <a href="#stop-bailiffs-council-tax">Stop council tax bailiffs</a>
+        <a href="#ccj-help">CCJ help — stop or remove</a>
+        <a href="#attachment-of-earnings">Attachment of earnings</a>
+        <a href="#statute-barred">Statute-barred (6-year rule)</a>
+        <a href="#bnpl-help">Klarna / BNPL arrears</a>
+        <a href="#token-payments">£1 token payments</a>
+      </div>
+    </div>
+
+    <!-- ======= NEW: SEARCH-INTENT SECTIONS (CONTENT-RICH) ======= -->
+
+    <div class="section" id="breathing-space-uk">
+      <h2>Breathing Space UK — How to Get the 60-Day Legal Pause</h2>
+      <p><strong>Breathing Space (Debt Respite Scheme)</strong> is a government legal protection that can pause most interest, fees and creditor enforcement for <strong>up to 60 days</strong> while you get debt advice and set up a solution. It’s administered by the Insolvency Service and typically requires a debt adviser to start it for you.</p>
+      <h3>What it usually covers</h3>
+      <ul>
+        <li>Most unsecured debts (credit cards, loans, overdrafts, BNPL, arrears)</li>
+        <li>Pauses most enforcement and new interest/charges during the period</li>
+      </ul>
+      <h3>What it doesn’t cover</h3>
+      <ul>
+        <li>Ongoing priority bills still need paying where possible (rent, council tax, utilities)</li>
+        <li>Some debts are excluded or treated differently (e.g., criminal fines)</li>
+      </ul>
+      <p>Official guidance: <a href="https://www.gov.uk/options-for-dealing-with-your-debts#breathing-space" target="_blank" rel="noopener">GOV.UK — options for dealing with your debts</a> and the <a href="https://www.legislation.gov.uk/uksi/2020/1311/contents/made" target="_blank" rel="noopener">Debt Respite Scheme Regulations 2020</a>. Independent explainers: <a href="https://www.stepchange.org/breathing-space-partners.aspx" target="_blank" rel="noopener">StepChange</a>.</p>
+      <a class="menu-cta" href="breathing-space.html">How Breathing Space Works</a>
+    </div>
+
+    <div class="section" id="stop-bailiffs-council-tax">
+      <h2>Stop Council Tax Bailiffs (Enforcement Agents) — What to Do Today</h2>
+      <p>If you’ve had a <strong>council tax bailiff/enforcement</strong> letter or visit, act quickly. In England & Wales, bailiffs can’t force entry for council tax on a first visit. You can usually arrange affordable payments and ask them not to visit if a plan is in place, especially if you’re vulnerable.</p>
+      <h3>Immediate steps</h3>
+      <ul>
+        <li>Don’t let them in. Speak through the door and arrange payments in writing/phone.</li>
+        <li>Prioritise essentials, then make a realistic offer — not a one-off that fails next month.</li>
+        <li>Tell us if you’re vulnerable (health, disability, children); extra protections may apply.</li>
+      </ul>
+      <p>Read more at <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/your-things-are-protected-from-bailiffs/if-a-bailiff-visits-you/" target="_blank" rel="noopener">Citizens Advice — if a bailiff visits you</a> and their <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/if-you-owe-council-tax/" target="_blank" rel="noopener">council tax bailiffs guide</a>.</p>
+      <a class="menu-cta" href="council-tax-debt.html">Council Tax Debt Help</a>
+    </div>
+
+    <div class="section" id="ccj-help">
+      <h2>CCJ Help — How to Stop, Set Aside, or Remove a County Court Judgment</h2>
+      <p>A <strong>CCJ</strong> happens after a claim is issued and either admitted or not defended. If you receive a claim form, you generally have <strong>14 days to respond</strong> (or acknowledge to get 28). Paying a CCJ in full within <strong>one month</strong> usually removes it from the public register; after that, it’s marked as “satisfied” if paid.</p>
+      <h3>Your options</h3>
+      <ul>
+        <li><strong>Before judgment:</strong> Defend, admit with an offer, or settle.</li>
+        <li><strong>After judgment:</strong> Apply to vary if the payment is unaffordable, or to set aside if there’s a valid reason (e.g., papers never received).</li>
+        <li><strong>Pay within a month</strong> to remove it; otherwise it stays for 6 years.</li>
+      </ul>
+      <p>Official guidance: <a href="https://www.gov.uk/options-for-dealing-with-your-debts#county-court-judgments-ccjs" target="_blank" rel="noopener">GOV.UK — CCJs overview</a> and <a href="https://www.gov.uk/county-court-judgments-ccj-for-debt" target="_blank" rel="noopener">GOV.UK — CCJ for debt</a>.</p>
+      <a class="menu-cta" href="stop-court-action.html">Stop Court Action</a>
+    </div>
+
+    <div class="section" id="attachment-of-earnings">
+      <h2>Attachment of Earnings Order — Stop or Reduce Deductions from Wages</h2>
+      <p>An <strong>Attachment of Earnings Order (AEO)</strong> tells your employer to take money from your wages to pay a judgment debt. If it’s unaffordable, you can usually apply to <strong>vary or suspend</strong> the order by showing your budget and circumstances.</p>
+      <h3>What to do</h3>
+      <ul>
+        <li>Prepare a realistic income & expenditure (we can help) and evidence.</li>
+        <li>Apply to vary/suspend using the court’s process (ask the court named on your order).</li>
+        <li>Consider a formal solution (DMP/IVA/DRO) to replace chaotic deductions with one plan.</li>
+      </ul>
+      <p>See the rules in the <a href="https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part89#89.3" target="_blank" rel="noopener">Civil Procedure Rules — Part 89 (Attachment of Earnings)</a> and practical guidance via <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/court-action-and-your-debt/attachment-of-earnings/" target="_blank" rel="noopener">Citizens Advice</a>.</p>
+      <a class="menu-cta" href="stop-court-action.html">Talk About Stopping Deductions</a>
+    </div>
+
+    <div class="section" id="statute-barred">
+      <h2>Statute-Barred Debt — Does the 6-Year Rule Apply to You?</h2>
+      <p>Most unsecured debts in England & Wales become <strong>statute-barred</strong> if there’s been <strong>no court claim, no written acknowledgment and no payment for 6 years</strong> (different rules for mortgage shortfalls and some debts). A CCJ <em>never</em> becomes statute-barred — it must be resolved.</p>
+      <h3>Key points</h3>
+      <ul>
+        <li>If you think a debt’s too old to enforce, don’t pay or admit it before checking.</li>
+        <li>Ask the creditor for proof of liability and last payment/activity date.</li>
+        <li>Some debts have different limitation periods.</li>
+      </ul>
+      <p>Learn more from <a href="https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/how-to-deal-with-your-debts/if-you-think-a-debt-is-statute-barred/" target="_blank" rel="noopener">Citizens Advice — statute-barred debts</a>.</p>
+      <a class="menu-cta" href="stop-debt-collectors.html">If You’re Being Chased for an Old Debt</a>
+    </div>
+
+    <div class="section" id="bnpl-help">
+      <h2>Buy Now Pay Later (Klarna, Clearpay) — What If You Can’t Pay?</h2>
+      <p><strong>BNPL</strong> is easy to stack across different merchants. If you fall behind, treat it like any other unsecured credit: list every agreement, prioritise essentials, and offer a realistic plan. Consider consolidating into a single managed solution if the total is unaffordable.</p>
+      <h3>Practical steps</h3>
+      <ul>
+        <li>Stop new BNPL spending and cancel non-essentials.</li>
+        <li>Tell the provider you’re seeking debt help and request breathing room on interest/charges.</li>
+        <li>Add BNPL to your DMP/IVA assessment so nothing is missed.</li>
+      </ul>
+      <p>Independent guidance: <a href="https://www.moneyhelper.org.uk/en/credit/loans/buy-now-pay-later" target="_blank" rel="noopener">MoneyHelper — Buy Now Pay Later</a>.</p>
+      <a class="menu-cta" href="catalogue-debt.html">BNPL & Catalogue Debt Help</a>
+    </div>
+
+    <div class="section" id="token-payments">
+      <h2>£1 Token Payment Plan — When It’s Sensible and How to Ask</h2>
+      <p>When your budget is under severe pressure, a short-term <strong>token payment</strong> (e.g., £1 per creditor) can hold the line while you stabilise essentials or wait for a longer-term solution. Explain your circumstances, provide your budget, and ask for a freeze on interest/charges if possible.</p>
+      <h3>Good uses</h3>
+      <ul>
+        <li>While waiting for benefits, a new job, or a formal debt solution to start</li>
+        <li>During Breathing Space or a temporary crisis</li>
+      </ul>
+      <p>See impartial advice: <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/talk-to-your-creditors" target="_blank" rel="noopener">MoneyHelper — talk to your creditors</a> and <a href="https://www.stepchange.org/debt-info/arranging-payment-with-creditors.aspx" target="_blank" rel="noopener">StepChange — arranging payments (incl. token plans)</a>.</p>
+      <a class="menu-cta" href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
+    </div>
+
+    <!-- ======= END OF NEW INTENT SECTIONS ======= -->
+
+    <!-- Optional Trustpilot widget spot -->
     <div class="section" aria-label="Reviews">
       <div class="trustpilot-widget"
            data-locale="en-GB"
