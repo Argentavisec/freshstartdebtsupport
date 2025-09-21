@@ -136,13 +136,26 @@
   <!-- NEW: Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner -->
-  <div class="banner">
-    <div class="top-bar">
+<!-- Header / Banner -->
+<div class="banner">
+  <div class="top-bar">
+    <div class="brand">
       <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       <div class="site-name">Fresh Start Debt Support</div>
     </div>
+
+    <!-- New: Hamburger button (far right) -->
+    <button id="menuButton"
+            class="hamburger"
+            aria-label="Open menu"
+            aria-controls="menuContent"
+            aria-expanded="false"
+            onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</div>
+
 
   <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="Debt help in the UK — our process">
@@ -179,20 +192,6 @@
       })();
     </script>
   </div>
-
-  <!-- Anchor for skip link -->
-  <div id="main-start"></div>
-
-  <!-- Menu Include -->
-  <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
-  </script>
-
-  <!-- Main Content Container -->
-  <div class="container">
 
     <!-- ======= YOUR ORIGINAL CONTENT (UNTOUCHED) ======= -->
 
@@ -536,23 +535,25 @@
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      if (!menu) return;
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
+<!-- Header / Banner -->
+<div class="banner">
+  <div class="top-bar">
+    <div class="brand">
+      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+      <div class="site-name">Fresh Start Debt Support</div>
+    </div>
 
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu) return;
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
-      }
-    });
-  </script>
+    <!-- New: Hamburger button (far right) -->
+    <button id="menuButton"
+            class="hamburger"
+            aria-label="Open menu"
+            aria-controls="menuContent"
+            aria-expanded="false"
+            onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
 
 </body>
 </html>

@@ -342,3 +342,74 @@ a.cta-link:hover {
   color: #2f6f36;
   border-bottom-color: #2f6f36;
 }
+
+/* ===== Sticky header overrides (added) ===== */
+.banner {
+  position: sticky;
+  top: 0;
+  z-index: 1100; /* above content & floating widgets */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Keep anchor targets visible beneath the sticky header */
+.section, #main-start {
+  scroll-margin-top: 80px; /* adjust if banner height changes */
+}
+/* --- Sticky banner remains as you set --- */
+.banner {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Make the header content spread left/right */
+.top-bar {
+  justify-content: space-between;     /* was center */
+  width: 100%;
+  max-width: 1100px;                  /* keeps it neat on wide screens */
+  margin: 0 auto;
+}
+
+/* Group logo + site name */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- New: Hamburger button on the right --- */
+.hamburger {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.hamburger:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* the three lines */
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background: #fff;
+  border-radius: 3px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.hamburger span + span { margin-top: 5px; }
+
+/* animate to "X" when open */
+.hamburger.is-open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; }
+.hamburger.is-open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* Keep anchor targets visible beneath the sticky header */
+.section, #main-start { scroll-margin-top: 80px; }
