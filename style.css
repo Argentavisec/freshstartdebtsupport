@@ -75,7 +75,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .logo { height: 50px; }
 .site-name { color: #fff; font-size: 24px; font-weight: bold; }
 
-/* --- Hamburger (three horizontal lines on the right) --- */
+/* --- Hamburger (three horizontal lines stacked) --- */
 .hamburger {
   appearance: none;
   background: transparent;
@@ -91,7 +91,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 .hamburger:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 
-/* the three lines */
+/* the three lines (horizontal bars stacked vertically) */
 .hamburger span {
   display: block;
   width: 22px;
@@ -111,7 +111,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .section, #main-start { scroll-margin-top: 80px; }
 
 /* ===========================
-   Menu (button + panel)
+   Menu (panel)
    =========================== */
 
 .btn-menu {
@@ -138,6 +138,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
   width: fit-content;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1200; /* ensure it's above hero if overlapping */
 }
 
 .menu-sections { display: flex; gap: 15px; justify-content: center; }
