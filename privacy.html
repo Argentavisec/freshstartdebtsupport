@@ -2,142 +2,209 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy | Fresh Start Debt Support</title>
-  <meta name="description" content="View our Privacy Policy, Cookie Notice, and Terms & Conditions. Learn how we handle data, cookies, and our non-FCA-regulated debt support services." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy, Cookies & Terms | Fresh Start Debt Support</title>
+  <meta name="description" content="Read our Privacy Policy, Cookie Notice and Terms & Conditions. Learn how Fresh Start Debt Support collects and uses data, GDPR rights, cookies, and FCA disclaimer." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/privacy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy, Cookies & Terms | Fresh Start Debt Support" />
+  <meta property="og:description" content="How we collect and protect your data, GDPR rights, cookies we use, and important terms about our non-FCA regulated debt help website." />
+  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/privacy.html" />
+  <meta property="og:site_name" content="Fresh Start Debt Support" />
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+  <meta property="og:image:alt" content="Fresh Start Debt Support" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+
+  <!-- Inline critical CSS -->
+  <style>
+    .landing-hero{background:linear-gradient(135deg,#4CAF50,#2f6f36);color:#fff;padding:clamp(28px,6vw,72px) 16px;text-align:center}
+    .hero-title{font-size:clamp(28px,6vw,42px);margin-bottom:8px}
+    .hero-sub{font-size:clamp(16px,2.5vw,18px);margin-bottom:16px}
+    .hero-cta{display:inline-block;padding:12px 20px;border-radius:999px;background:#fff;color:#2f6f36;font-weight:700;text-decoration:none;box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-cta:hover{background:#e8f6ec}
+    .meta.small{max-width:1000px;margin:12px auto;font-size:13px;color:#555;opacity:.95;padding:0 16px}
+  </style>
 
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Fresh Start Debt Support",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg"
+      },
+      {
+        "@type":"WebPage",
+        "name":"Privacy Policy, Cookies & Terms",
+        "url":"https://www.freshstartdebtsupport.co.uk/privacy.html",
+        "description":"Read our Privacy Policy, Cookie Notice and Terms & Conditions. Learn how we collect data, GDPR rights, and our non-FCA regulated debt help disclaimer."
+      },
+      {
+        "@type":"LegalService",
+        "name":"Fresh Start Debt Support",
+        "areaServed":"GB",
+        "url":"https://www.freshstartdebtsupport.co.uk/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Header / Banner -->
-  <div class="banner">
+  <!-- Header -->
+  <div class="banner" role="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
+      <div class="brand">
+        <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+      </div>
+      <button id="menuButton" class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="menu-content" id="menuContent">
+      <!-- Menu sections injected here -->
+    </nav>
   </div>
 
-  <!-- Menu Include -->
-  <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(data => document.getElementById("menu-placeholder").innerHTML = data);
-  </script>
+  <!-- HERO -->
+  <section class="landing-hero" aria-label="Privacy & terms">
+    <h1 class="hero-title">Privacy Policy, Cookies & Terms</h1>
+    <p class="hero-sub">Your data matters. Learn how we handle personal details, cookies, and the terms of using this debt help website.</p>
+    <a href="https://form.jotform.com/250596569907070" class="hero-cta">📩 Contact Us About Privacy</a>
+  </section>
 
-  <!-- Page Content -->
+  <!-- Meta strip -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support • <span id="updated"></span></p>
+    <script>
+      document.getElementById('updated').textContent =
+        "Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"});
+    </script>
+  </div>
+
+  <!-- Main -->
   <div class="container">
 
     <!-- Privacy Policy -->
     <div class="section">
-      <h1>Privacy Policy</h1>
-      <p>At Fresh Start Debt Support, your privacy matters. This page explains how we collect, use, and protect your personal information when you use our website or contact us through our forms.</p>
+      <h2>Privacy Policy</h2>
+      <p>At <strong>Fresh Start Debt Support</strong>, we respect your privacy. This policy explains how we handle your data when you visit our site or submit details through our forms.</p>
 
-      <h2>What Data We Collect</h2>
+      <h3>What We Collect</h3>
       <ul>
-        <li>Full name</li>
-        <li>Email address and phone number</li>
-        <li>Details you submit via our enquiry forms (e.g. debt type, employment status)</li>
-        <li>Browser and device information (via analytics tools)</li>
+        <li>Name and contact details (email, phone number)</li>
+        <li>Debt-related information you choose to provide (type of debt, employment status, urgency)</li>
+        <li>Technical data (browser, device, cookies, analytics)</li>
       </ul>
 
-      <h2>How We Use Your Information</h2>
-      <p>Your information is used to:</p>
+      <h3>How We Use It</h3>
       <ul>
-        <li>Respond to your enquiry</li>
-        <li>Provide debt support based on your situation</li>
-        <li>Send updates about your case (if applicable)</li>
-        <li>Improve website experience (via Google Analytics)</li>
+        <li>To respond to your enquiry quickly</li>
+        <li>To connect you with debt advice support</li>
+        <li>To improve our website experience (Google Analytics)</li>
       </ul>
 
-      <h2>Data Storage and Security</h2>
-      <p>We store your data securely and only share it with trusted service providers (e.g. JotForm, Slack, Google Sheets) for the purpose of processing your enquiry. Your data will never be sold or used for marketing without your consent.</p>
+      <h3>Who We Share With</h3>
+      <p>We only share your data with trusted providers such as JotForm (form submissions), Google Analytics (site traffic), and secure communications platforms. We never sell your data.</p>
 
-      <h2>Your Rights (Under GDPR)</h2>
-      <p>You have the right to:</p>
+      <h3>Your GDPR Rights</h3>
       <ul>
-        <li>Access the data we hold about you</li>
-        <li>Request corrections or deletion</li>
+        <li>Request a copy of your data</li>
+        <li>Ask us to correct or delete it</li>
         <li>Withdraw consent at any time</li>
       </ul>
-      <p>To request data access or deletion, email: <strong>homesusticesoltions@gmail.com</strong>.</p>
+      <p>Email requests to: <strong>homesusticesoltions@gmail.com</strong> or use our <a href="https://form.jotform.com/250596569907070">contact form</a>.</p>
     </div>
 
-    <!-- Cookie Policy -->
+    <!-- Cookies -->
     <div class="section">
       <h2>Cookie Policy</h2>
-      <p>We use cookies to improve website performance and track user behaviour using tools such as Google Analytics.</p>
-
-      <h3>What Are Cookies?</h3>
-      <p>Cookies are small files stored on your device that help us understand how visitors use the website.</p>
-
-      <h3>How We Use Cookies:</h3>
+      <p>Cookies are small files stored on your device that help us improve your browsing experience.</p>
+      <h3>We Use Cookies To:</h3>
       <ul>
-        <li>Track anonymous visitor activity</li>
-        <li>Monitor site traffic and performance</li>
-        <li>Improve site content and usability</li>
+        <li>Track anonymous visitor behaviour (via Google Analytics)</li>
+        <li>Monitor site performance</li>
+        <li>Remember basic preferences</li>
       </ul>
-      <p>You can disable cookies in your browser settings. Continued use of our site is considered consent to our cookie usage.</p>
+      <p>You can disable cookies in your browser at any time. For official guidance, see <a href="https://ico.org.uk/your-data-matters/online/cookies/" target="_blank" rel="noopener">ICO — Cookies</a>.</p>
     </div>
 
-    <!-- Terms and Conditions -->
+    <!-- Terms -->
     <div class="section">
       <h2>Terms & Conditions</h2>
-      <p>By using this website, you agree to the following terms:</p>
-
       <h3>1. No Financial Advice</h3>
-      <p>This website does not provide regulated financial advice. We are not authorised by the Financial Conduct Authority (FCA). All information provided is for general guidance only.</p>
+      <p>We provide debt help information and guidance, but we are not regulated by the Financial Conduct Authority (FCA). For regulated advice, contact a licensed debt adviser.</p>
 
       <h3>2. Liability</h3>
-      <p>We do not accept liability for actions taken based on information found on this site. Users should seek professional advice from a regulated body if needed.</p>
+      <p>We are not liable for decisions made based on information found on this site. Always double-check with an FCA-regulated provider before committing to a debt solution.</p>
 
       <h3>3. Intellectual Property</h3>
-      <p>All content on this site is owned by Fresh Start Debt Support. Do not reproduce or copy content without permission.</p>
+      <p>All site content is owned by Fresh Start Debt Support. Do not reproduce without permission.</p>
 
-      <h3>4. Third Party Links</h3>
-      <p>Our website may contain links to third-party websites. We are not responsible for the content or privacy practices of these external sites.</p>
+      <h3>4. External Links</h3>
+      <p>We sometimes link to external sites (e.g. <a href="https://www.gov.uk/" target="_blank" rel="noopener">GOV.UK</a>, <a href="https://www.moneyhelper.org.uk/" target="_blank" rel="noopener">MoneyHelper</a>). We are not responsible for their content.</p>
     </div>
 
     <!-- Contact -->
     <div class="section">
-      <h2>Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy or your data, contact us at:</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Contact us today about the privacy policy and your data</a>
-      <p>Or contact us on our business WhatsApp below.</p>
+      <h2>Contact Us About Privacy</h2>
+      <p>If you have concerns about how your data is used, please contact us:</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">📩 Contact Form</a>
+      <p>Or message us on WhatsApp using the button below.</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
-      <p>This website does not offer regulated financial advice and is not authorised by the Financial Conduct Authority (FCA).</p>
-    </footer>
+    <!-- Trustpilot -->
+    <div class="section">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank">Trustpilot</a>
+      </div>
+    </div>
+
   </div>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/447752296301?text=Hi%20I%20have%20a%20question%20about%20your%20privacy%20policy" class="whatsapp-button" target="_blank">
-    💬 Chat with Us on WhatsApp
-  </a>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer regulated financial advice and is not authorised by the FCA.</p>
+  </footer>
 
-    <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20have%20a%20privacy%20question" class="whatsapp-button" target="_blank">💬 Chat on WhatsApp</a>
+
+  <!-- Menu script -->
+  <script>
+    function toggleMenu(){
+      const menu=document.getElementById("menuContent");
+      menu.style.display=(menu.style.display==="flex"?"none":"flex");
     }
-
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
+    document.addEventListener("click",e=>{
+      const menu=document.getElementById("menuContent");
+      const btn=document.getElementById("menuButton");
+      if(menu && btn && menu.style.display==="flex" && !menu.contains(e.target) && !btn.contains(e.target)){
+        menu.style.display="none";
       }
     });
   </script>
-
 
 </body>
 </html>
