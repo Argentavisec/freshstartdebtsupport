@@ -6,6 +6,7 @@
 
   <title>IVA Advice UK | Individual Voluntary Arrangements Explained, Eligibility & How to Start</title>
   <meta name="description" content="Learn how IVAs work in the UK: eligibility, benefits, costs, process, and alternatives. Freeze interest, stop creditor action and see if you can write off unaffordable debts. Free, confidential assessment." />
+  <meta name="keywords" content="IVA, IVA UK, Individual Voluntary Arrangement, what is an IVA, IVA eligibility, IVA costs, stop bailiffs, freeze interest, write off debt, how to start an IVA" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/iva.html" />
 
@@ -15,10 +16,82 @@
   <meta property="og:description" content="Freeze interest, stop bailiffs and creditor action, and see if you can write off part of your debts with an IVA. Free, confidential help across the UK." />
   <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/iva.html" />
   <meta property="og:site_name" content="Fresh Start Debt Support" />
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+  <meta property="og:image:alt" content="Fresh Start Debt Support" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IVA Help UK — Individual Voluntary Arrangements Explained" />
+  <meta name="twitter:description" content="Freeze interest, stop creditor action and see if you can write off unaffordable debts. Free, confidential assessment." />
+  <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
+  <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline critical CSS for hero + utilities -->
+  <style>
+    :root{
+      --brand:#2f6f36;
+      --brand2:#4CAF50;
+      --bg-soft:#f7fff9;
+      --border:#d3f0dd;
+      --pill:#e8f6ec;
+      --text:#16301a;
+      --muted:#4b5a50;
+    }
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:fixed;left:10px;top:10px;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
+    }
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-copy{text-align:center}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
+    .hero-cta:hover{background:#e8f6ec;color:#215a29}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+    .statbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:16px 0 0 0}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:10px 14px;font-size:14px;display:inline-block}
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .section{padding:28px 0;border-bottom:1px solid #eef5ef}
+    .menu-cta{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:999px;background:#f0fff4;border:1px solid #cdebd6;color:#215a29;text-decoration:none;font-weight:700}
+    .menu-cta:hover{background:#e7f8ec}
+    .table-wrap{overflow:auto;border:1px solid #e6efe7;border-radius:12px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px;border-bottom:1px solid #e6efe7;text-align:left}
+    th{background:#f8fffb}
+    /* Details/summary accordion for FAQs & extras */
+    details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:12px;margin:12px 0}
+    details>summary{cursor:pointer;font-weight:700;color:var(--text)}
+    details[open]{background:#ffffff}
+    /* Footer + WhatsApp btn quick styles */
+    footer{padding:24px 16px;background:#0f2014;color:#eaf5ec}
+    footer a{color:#eaf5ec;text-decoration:underline}
+    .whatsapp-button{
+      position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.15)
+    }
+    /* Accessibility helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
@@ -30,9 +103,9 @@
   </script>
 
   <!-- TrustBox script -->
-  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  <script defer src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"></script>
 
-  <!-- Schema: Org + Breadcrumb + HowTo + (MERGED) FAQ -->
+  <!-- Schema: Org + Breadcrumb + HowTo + merged FAQ -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -72,506 +145,408 @@
           {"@type":"Question","name":"Who is eligible for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Typically, people with around £6,000+ of unsecured debt, multiple creditors and stable income. Your circumstances and assets also matter — we’ll check for you free."}},
           {"@type":"Question","name":"Do IVAs stop bailiffs and legal action?","acceptedAnswer":{"@type":"Answer","text":"Yes. Once approved, creditors are generally prevented from starting or continuing most enforcement, and interest/charges are usually frozen."}},
           {"@type":"Question","name":"How does an IVA affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"An IVA stays on your credit file for 6 years from the start date. You can rebuild credit after completion."}},
-          {"@type":"Question","name":"What debts can be included?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, and some arrears. Secured debts like mortgages are not included but can be managed alongside."}},
-          {"@type":"Question","name":"IVA UK eligibility — do I qualify?","acceptedAnswer":{"@type":"Answer","text":"You may qualify for an IVA in the UK if you have around £6,000+ of unsecured debt, more than one creditor, and a steady income. Affordability, your budget and any assets are also considered."}},
-          {"@type":"Question","name":"What is an IVA (Individual Voluntary Arrangement)?","acceptedAnswer":{"@type":"Answer","text":"An IVA is a legally binding agreement to repay what you can afford, usually over 5–6 years, with interest typically frozen and remaining qualifying unsecured debt written off at completion."}},
-          {"@type":"Question","name":"What debts can go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, BNPL and some HMRC debts can be included. Secured debts (mortgages, HP) and obligations like child maintenance or fines are generally excluded."}},
-          {"@type":"Question","name":"IVA vs DRO vs Bankruptcy UK — which is best?","acceptedAnswer":{"@type":"Answer","text":"An IVA may suit higher debts with steady income while protecting assets where possible. A DRO can suit low income and low assets if you meet criteria. Bankruptcy is the fastest reset but may risk assets and has stricter restrictions."}},
-          {"@type":"Question","name":"IVA cost fees UK — do I pay upfront?","acceptedAnswer":{"@type":"Answer","text":"IVA fees (nominee, supervisory, completion) are agreed with creditors and taken from your affordable monthly payments, not added on top or paid upfront."}},
-          {"@type":"Question","name":"How long does an IVA last in the UK?","acceptedAnswer":{"@type":"Answer","text":"Most IVAs last 5–6 years. If home equity cannot be released, a 12-month extension is sometimes proposed."}},
-
-          /* Added high-intent FAQs matching new sections */
-          {"@type":"Question","name":"How does an IVA work, step by step?","acceptedAnswer":{"@type":"Answer","text":"After a free assessment and budget, a licensed Insolvency Practitioner drafts your proposal. If 75% by value of voting creditors agree, the IVA is approved, interest/enforcement are typically frozen, and you make one affordable payment for the term. On successful completion, remaining qualifying unsecured debt is written off."}},
-          {"@type":"Question","name":"How much will I pay in an IVA each month?","acceptedAnswer":{"@type":"Answer","text":"Payments are based on disposable income after essential bills using common expenditure guidelines. Reviews ensure contributions stay affordable if your circumstances change."}},
-          {"@type":"Question","name":"Can HMRC debts go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Some HMRC debts (like income tax or VAT arrears) can be included subject to HMRC voting and any conditions they apply. Not all liabilities are eligible — your IP will confirm."}},
-          {"@type":"Question","name":"How do I apply for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Start with a free eligibility and affordability check, provide documents, and an Insolvency Practitioner will prepare your proposal to creditors for a vote."}}
+          {"@type":"Question","name":"What debts can be included?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, BNPL and some HMRC arrears can be included. Secured debts (mortgages, HP) and obligations like child maintenance or fines are generally excluded."}},
+          {"@type":"Question","name":"How much will I pay each month in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Payments are based on disposable income after essential bills using guideline ranges. Reviews ensure contributions stay affordable if your circumstances change."}},
+          {"@type":"Question","name":"Can HMRC debts go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Some HMRC debts (like income tax or VAT arrears) can be included subject to HMRC voting and conditions such as filings being up to date."}},
+          {"@type":"Question","name":"How do I apply for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Start with a free eligibility and affordability check, provide documents, and an Insolvency Practitioner will prepare your proposal to creditors for a vote."}},
+          {"@type":"Question","name":"What happens if I have home equity?","acceptedAnswer":{"@type":"Answer","text":"The IVA Protocol (often 2024/2025 versions) may include an equity review around month 54. If equity release isn’t possible or affordable, a 12-month extension might be proposed instead."}}
         ]
       }
     ]
   }
   </script>
-
-  <!-- Inline critical CSS for hero (same layout) -->
-  <style>
-    .landing-hero{
-      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
-      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
-    }
-    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
-    .hero-copy{text-align:center}
-    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
-    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
-    .hero-cta{
-      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
-      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
-      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
-      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
-    }
-    .hero-cta:hover{background:#e8f6ec;color:#215a29}
-    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
-    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
-    .statbar{display:grid;gap:10px;margin:16px 0 0 0}
-    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:10px 14px;font-size:14px;display:inline-block}
-    .mini-note{font-size:12px;opacity:.9;margin-top:6px}
-    .quiz-card{background:#f7fff9;border:1px solid #d3f0dd;border-radius:16px;padding:16px;margin:16px 0}
-    .quiz-card h3{margin-top:0}
-    .quiz-row{display:grid;grid-template-columns:1fr;gap:10px}
-    .quiz-row label{font-weight:600}
-    .quiz-actions{margin-top:10px}
-    .trust-list li{margin-bottom:6px}
-    /* NEW small utility for jump links */
-    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-  </style>
 </head>
 
 <body>
 
-  <!-- Header / Banner -->
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
+  <!-- Accessibility -->
+  <a href="#main-start" class="skip-link">Skip to content</a>
+
+  <!-- Header / Banner (simple placeholder; keep your own site-wide header if preferred) -->
+  <div class="banner" role="banner" aria-label="Site header">
+    <div class="top-bar" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #eef5ef;background:#fff">
+      <div class="brand" style="display:flex;align-items:center;gap:10px">
+        <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" width="44" height="44" loading="eager" />
+        <strong>Fresh Start Debt Support</strong>
+      </div>
+      <!-- Hamburger button (optional if you include your full mega menu) -->
+      <button id="menuButton"
+              class="hamburger"
+              aria-label="Open menu"
+              aria-controls="menuContent"
+              aria-expanded="false"
+              onclick="toggleMenu()"
+              style="background:#f0fff4;border:1px solid #cdebd6;border-radius:10px;padding:8px 12px">
+        Menu
+      </button>
     </div>
+
+    <!-- Centralised menu (keep your original mega menu here if you use it site-wide) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton" style="display:none;flex-direction:column;gap:6px;padding:12px 16px;border-bottom:1px solid #eef5ef;background:#fff">
+      <div class="menu-sections" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a><br>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a><br>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a><br>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a><br>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+        </div>
+        <div class="menu-section">
+          <h4>Debt Solutions</h4>
+          <a href="iva.html">About an IVA</a><br>
+          <a href="dmp.html">About a DMP</a><br>
+          <a href="dro.html">About a DRO</a><br>
+          <a href="compare-solutions.html">Compare Solutions</a><br>
+          <a href="debt-calculator.html">Debt Calculator</a>
+        </div>
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="credit-card-debt.html">Credit Cards</a><br>
+          <a href="loan-debt.html">Loans</a><br>
+          <a href="catalogue-debt.html">Catalogues</a><br>
+          <a href="council-tax-debt.html">Council Tax</a><br>
+          <a href="utility-debt.html">Utilities</a>
+        </div>
+        <div class="menu-section">
+          <h4>Popular</h4>
+          <a href="debt-help-uk-2025.html">Debt Help UK 2025</a><br>
+          <a href="iva-company.html">IVA Company</a><br>
+          <a href="dmp-provider.html">DMP Provider</a><br>
+          <a href="stop-debt-collectors.html">Stop Debt Collectors</a><br>
+          <a href="blog/">Blog</a>
+        </div>
+      </div>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
   </div>
 
   <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="Get IVA help">
     <div class="hero-inner">
       <div class="hero-copy">
-        <h2 class="hero-title">IVA Advice — Freeze Interest & Stop Creditor Action</h2>
+        <h1 class="hero-title">IVA Advice — Freeze Interest & Stop Creditor Action</h1>
         <p class="hero-sub">
           Find out if an <strong>Individual Voluntary Arrangement</strong> can reduce your payments and
-          <strong>write off unaffordable debts</strong> after completion.
+          <strong>write off unaffordable debts</strong> after completion. We’ll check eligibility, costs and next steps — free and confidential.
         </p>
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free IVA assessment">✅ Start Free IVA Check</a>
-        <div class="hero-trust">Free &amp; confidential • Takes 60–90 seconds</div>
+        <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
+
+        <div class="statbar" aria-label="Quick facts">
+          <span class="pill">England &amp; Wales</span>
+          <span class="pill">5–6 year plans</span>
+          <span class="pill">Interest &amp; charges usually frozen</span>
+          <span class="pill">Most creditor action paused</span>
         </div>
       </div>
     </div>
   </section>
   <!-- /HERO -->
 
-  <!-- Menu Include -->
-  <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-placeholder").innerHTML = html;
-        const menu = document.getElementById("menuContent");
-        if (menu) menu.style.display = "none";
-      });
-    function toggleMenu(){
-      const menu = document.getElementById("menuContent");
-      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn  = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
-    });
-  </script>
+  <!-- Meta strip -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Includes trusted GOV.UK & charity links</p>
+    <script>
+      (function(){
+        var el=document.getElementById('updated');
+        if(el){ el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"}); }
+      })();
+    </script>
+  </div>
+
+  <!-- Anchor target for skip link -->
+  <div id="main-start"></div>
 
   <!-- Main Content Container -->
   <div class="container">
 
-    <!-- E-E-A-T / Freshness -->
-    <div class="meta small">
-      <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span></p>
-      <script>
-        const now = new Date();
-        document.getElementById("updated").innerText =
-          "Last updated " + now.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
-      </script>
-    </div>
-
-    <!-- Intro + TOC -->
+    <!-- Intro + TOC + Jump links -->
     <div class="section" id="intro">
-      <h1>IVA advice — What It Is, Who Qualifies, Costs, Process & Alternatives</h1>
+      <h2>IVA advice — What It Is, Who Qualifies, Costs, Process & Alternatives</h2>
       <p><strong>Quick answer:</strong> An <em>Individual Voluntary Arrangement (IVA)</em> is a legally binding plan that typically freezes interest and creditor enforcement while you make <strong>one affordable monthly payment</strong>. After successful completion, remaining qualifying unsecured debt is <strong>legally written off</strong>. We’ll confirm if you’re eligible and explain every trade-off.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free IVA Check</a>
 
       <nav class="toc" aria-label="Table of contents">
         <ul>
-          <li><a href="#what">What is an IVA?</a></li>
-          <li><a href="#works">How an IVA works</a></li>
-          <li><a href="#eligibility">Who is eligible</a></li>
-          <li><a href="#benefits">Key benefits</a></li>
-          <li><a href="#vs-bankruptcy">IVA vs bankruptcy</a></li>
-          <li><a href="#process">Process (step-by-step)</a></li>
-          <li><a href="#debts">Debts you can include</a></li>
-          <li><a href="#bailiffs">How it stops bailiffs & claims</a></li>
-          <li><a href="#credit">Effect on your credit file</a></li>
-          <li><a href="#home">Keeping your home</a></li>
-          <li><a href="#fees">Costs & fees</a></li>
-          <li><a href="#alternatives">Alternatives to an IVA</a></li>
-          <li><a href="#stories">Real stories</a></li>
-          <li><a href="#gov-guidance">Official guidance & charities</a></li>
-          <li><a href="#faq">FAQs</a></li>
-          <li><a href="#decision-support">Decision support</a></li>
+          <li><a href="#what-is-iva">What is an IVA?</a></li>
+          <li><a href="#iva-eligibility">Who is eligible</a></li>
+          <li><a href="#iva-costs">Costs & fees</a></li>
+          <li><a href="#iva-debts">Debts you can include</a></li>
+          <li><a href="#iva-process">IVA process step-by-step</a></li>
+          <li><a href="#iva-bailiffs">Stopping bailiffs & claims</a></li>
+          <li><a href="#iva-credit">Credit score impact</a></li>
+          <li><a href="#iva-home">Homeowner & equity</a></li>
+          <li><a href="#iva-alternatives">Alternatives</a></li>
+          <li><a href="#provider-compare">IVA provider comparison</a></li>
           <li><a href="#calculator">Repayment vs write-off calculator</a></li>
-          <!-- Added high-volume intents -->
-          <li><a href="#si-what-is-iva">What is IVA (query variant)</a></li>
-          <li><a href="#si-iva-uk">IVA UK — overview</a></li>
-          <li><a href="#si-what-is-an-iva-uk">What is an IVA UK</a></li>
-          <li><a href="#si-iva-debt">IVA debt — what it means</a></li>
-          <li><a href="#si-how-does-iva-work">How does an IVA work?</a></li>
-          <li><a href="#si-iva-eligibility">IVA eligibility (quick check)</a></li>
-          <li><a href="#si-getting-an-iva">How to get/apply for an IVA</a></li>
-          <li><a href="#si-iva-costs">IVA cost & fees UK</a></li>
-          <li><a href="#si-iva-payments">IVA payments — how much?</a></li>
-          <li><a href="#si-iva-hmrc">IVA & HMRC debts</a></li>
-          <li><a href="#si-define-iva">Define “Individual Voluntary Arrangement”</a></li>
+          <li><a href="#iva-faqs">FAQs</a></li>
         </ul>
       </nav>
 
-      <!-- NEW: Jump links for search intent -->
       <div class="jump-links" aria-label="Popular IVA topics">
-        <a href="#si-iva-eligibility">IVA UK eligibility</a>
+        <a href="#si-iva-eligibility">IVA eligibility (quick)</a>
         <a href="#si-what-is-iva">What is IVA</a>
-        <a href="#si-iva-debt">IVA debt</a>
-        <a href="#si-how-does-iva-work">How does an IVA work</a>
         <a href="#si-iva-costs">IVA costs</a>
         <a href="#si-iva-payments">IVA payments</a>
-        <a href="#si-getting-an-iva">Apply for an IVA</a>
-        <a href="#si-iva-hmrc">IVA HMRC</a>
+        <a href="#si-iva-hmrc">IVA & HMRC</a>
+        <a href="#provider-compare">Compare providers</a>
       </div>
     </div>
 
-    <!-- ====== NEW SEARCH-INTENT SECTIONS (added, nothing removed) ====== -->
-
-    <div class="section" id="iva-uk-eligibility">
-      <h2>IVA UK Eligibility — Do You Qualify?</h2>
-      <p>To meet <strong>IVA UK eligibility</strong>, you’ll usually need:</p>
-      <ul>
-        <li>💷 Around <strong>£6,000+ in unsecured debts</strong> (often more than one creditor)</li>
-        <li>📈 A <strong>steady income</strong> (wages or benefits) to make an affordable payment</li>
-        <li>🧮 A realistic <strong>household budget</strong> after priority bills</li>
-        <li>🏠 A wish to avoid bankruptcy and protect essentials/assets where possible</li>
-      </ul>
-      <p>Eligibility is checked case-by-case. We’ll confirm your options and explain any trade-offs, including <a href="#alternatives">alternatives</a> if an IVA isn’t best. See independent guidance from <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a> and <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/before-you-start-an-iva/check-what-an-iva-is/" target="_blank" rel="noopener">Citizens Advice</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My IVA Eligibility (Free)</a>
-    </div>
-
-    <div class="section" id="iva-search-term">
-      <h2>Searching “IVA” — What People Want to Know</h2>
-      <p>If you’ve searched simply for <strong>“IVA”</strong> you’re likely looking for: what an IVA is, who qualifies, what it costs, how long it lasts, and how it compares with a <a href="dro.html">DRO</a> or <a href="bankruptcy.html">bankruptcy</a>. This page answers all of that in one place and links to official guidance for added reassurance.</p>
-      <ul>
-        <li><a href="#iva-what-is">What is an IVA?</a></li>
-        <li><a href="#iva-uk-eligibility">IVA UK eligibility</a></li>
-        <li><a href="#iva-debts">What debts can go in an IVA?</a></li>
-        <li><a href="#iva-costs">IVA cost & fees UK</a></li>
-        <li><a href="#iva-duration">How long does an IVA last?</a></li>
-      </ul>
-    </div>
-
-    <div class="section" id="iva-what-is">
+    <!-- WHAT IS IVA -->
+    <div class="section" id="what-is-iva">
       <h2>What Is an IVA (Individual Voluntary Arrangement)?</h2>
-      <p>An <strong>IVA</strong> is a legally binding agreement with your creditors to repay what you can afford over a fixed period (usually <strong>5–6 years</strong>). Once approved, <strong>interest and most enforcement are typically frozen</strong>. After successful completion, remaining qualifying unsecured debt is <strong>legally written off</strong>. It’s overseen by a licensed <em>Insolvency Practitioner</em>. See <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">official GOV.UK guidance</a> for the formal definition.</p>
-      <a href="#process" class="menu-cta">See the IVA Process Step-by-Step</a>
+      <p>An <strong>IVA</strong> is a formal, legally binding agreement with your creditors to repay what you can afford over a fixed period (usually <strong>5–6 years</strong>). Once approved, <strong>interest and most enforcement</strong> are typically frozen. After successful completion, remaining qualifying unsecured debt is <strong>written off</strong>. A licensed <em>Insolvency Practitioner</em> (IP) manages it.</p>
+      <p>Independent guidance: <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK</a> • <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a> • <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange</a></p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If an IVA Fits Me</a>
     </div>
 
-    <div class="section" id="iva-debts">
-      <h2>What Debts Can Go in an IVA?</h2>
-      <p><strong>Usually included (unsecured):</strong> credit/store cards, catalogues, loans, payday loans, overdrafts, <abbr title="Buy Now Pay Later">BNPL</abbr>, utility arrears and some HMRC debts.</p>
-      <p><strong>Not included:</strong> secured debts (e.g., mortgages, HP), student loans, child maintenance and most fines. You must maintain secured payments alongside your IVA. For neutral guidance see <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange on IVAs</a>.</p>
-      <a href="credit-card-debt.html" class="menu-cta">Help with Credit Card Debt</a>
-      <a href="loan-debt.html" class="menu-cta">Support for Loan Debt</a>
-    </div>
-
-    <div class="section" id="iva-compare">
-      <h2>IVA vs DRO, IVA vs Bankruptcy (UK)</h2>
-      <ul>
-        <li><strong>IVA:</strong> Best where debts are higher (≈£6k+) with a <strong>regular income</strong>; aims to protect assets where possible.</li>
-        <li><a href="dro.html"><strong>DRO</strong></a>: For <strong>low income/low assets</strong> within set criteria; suitable for smaller debts.</li>
-        <li><a href="bankruptcy.html"><strong>Bankruptcy</strong></a>: Quickest reset but may risk assets and carries stricter restrictions.</li>
-      </ul>
-      <a href="compare-solutions.html" class="menu-cta">Compare All Debt Solutions</a>
-    </div>
-
-    <div class="section" id="iva-costs">
-      <h2>IVA Cost & Fees UK</h2>
-      <p>You don’t pay IVA fees upfront. They’re taken from your <strong>affordable monthly payment</strong> and agreed with creditors:</p>
-      <ul>
-        <li>🧾 <strong>Nominee fee</strong> — preparing the proposal</li>
-        <li>🔄 <strong>Supervisory fee</strong> — ongoing case management</li>
-        <li>✅ <strong>Completion fee</strong></li>
-      </ul>
-      <p>Fees are <strong>transparent, regulated</strong> and shown in writing before you decide. See <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol" target="_blank" rel="noopener">the IVA Protocol</a> and the <a href="https://insolvencyservice.blog.gov.uk/2023/02/21/what-you-need-to-know-about-individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Insolvency Service blog</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See My Likely IVA Costs</a>
-    </div>
-
-    <div class="section" id="iva-duration">
-      <h2>How Long Does an IVA Last?</h2>
-      <p>Most IVAs run for <strong>5–6 years</strong>. If you have home equity that can’t be released, a <strong>12-month extension</strong> is sometimes proposed instead of a sale. We’ll set expectations clearly at the start.</p>
-      <a href="#faq" class="menu-cta">Read FAQs on IVA Duration</a>
-    </div>
-
-    <!-- ====== END OF YOUR ORIGINAL NEW BLOCKS ====== -->
-
-    <!-- ========= HIGH-VOLUME SEARCH INTENT SECTIONS ========= -->
-
-    <div class="section" id="si-what-is-iva">
-      <h2>What Is IVA? (Short Query Variant)</h2>
-      <p><strong>“What is IVA?”</strong> is the classic short-form query. It means the same as “what is an IVA” — a <em>formal, legally binding</em> agreement where you repay what you can afford for a fixed term, with interest/charges usually frozen and remaining qualifying unsecured debt written off on successful completion. Independent explanations: <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK</a>, <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If an IVA Fits Me</a>
-    </div>
-
-    <div class="section" id="si-iva-uk">
-      <h2>IVA UK — What It Covers in England & Wales</h2>
-      <p>In England & Wales, an <strong>IVA</strong> is set up and supervised by a licensed <em>Insolvency Practitioner</em>. Creditors vote — if at least <strong>75% by value</strong> of those who vote agree, the IVA is approved and binds all included creditors. You keep paying priority bills (rent, council tax, utilities) and make <strong>one affordable monthly payment</strong>. See <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK</a> and <a href="https://insolvencyservice.blog.gov.uk/2023/02/21/what-you-need-to-know-about-individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Insolvency Service</a>.</p>
-      <a href="#process" class="menu-cta">See the IVA Steps</a>
-    </div>
-
-    <div class="section" id="si-what-is-an-iva-uk">
-      <h2>What Is an IVA UK? (Plain-English Definition)</h2>
-      <p>An <strong>IVA in the UK</strong> is a court-recognised agreement that pauses most enforcement once approved and channels your affordable income toward debts for a set term. At completion, any qualifying unpaid balance is written off. It’s designed to give you structure and protection without the full consequences of bankruptcy. Neutral explainers: <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/before-you-start-an-iva/check-what-an-iva-is/" target="_blank" rel="noopener">Citizens Advice</a>, <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start a Free IVA Check</a>
-    </div>
-
-    <div class="section" id="si-iva-debt">
-      <h2>IVA Debt — What People Mean When They Say It</h2>
-      <p>People say <strong>“IVA debt”</strong> to mean debts that go into an IVA: <em>unsecured</em> borrowing like credit cards, loans, overdrafts, catalogues, BNPL, utility arrears and some HMRC arrears. <strong>Secured debts</strong> (mortgage, HP) are not included, but you must keep paying them. Once your IVA starts, interest/charges are typically frozen and collections pressure should reduce. See <a href="#debts">debts you can include</a> and <a href="#bailiffs">how protections work</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If My Debts Qualify</a>
-    </div>
-
-    <div class="section" id="si-how-does-iva-work">
-      <h2>How Does an IVA Work? (In Depth)</h2>
-      <ol>
-        <li><strong>Assessment:</strong> We confirm your debts, income and essential spending using fair expenditure guidelines.</li>
-        <li><strong>Proposal:</strong> A licensed IP drafts terms creditors are likely to accept — realistic payment, asset treatment, and any equity clause.</li>
-        <li><strong>Vote:</strong> Creditors vote; approval needs 75% by value of those voting. Approved terms bind all included creditors.</li>
-        <li><strong>Protection:</strong> Interest and most enforcement are typically frozen; communications should reduce.</li>
-        <li><strong>Supervision:</strong> Annual reviews make sure payments stay affordable. Changes can be proposed if circumstances shift.</li>
-        <li><strong>Completion:</strong> After the term, remaining qualifying unsecured debt is written off and you receive a completion certificate.</li>
-      </ol>
-      <p>Independent sources: <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK</a>, <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a>.</p>
-      <a href="#process" class="menu-cta">See Our Step-by-Step</a>
-    </div>
-
-    <div class="section" id="si-iva-eligibility">
-      <h2>IVA Eligibility (Quick Check)</h2>
+    <!-- ELIGIBILITY -->
+    <div class="section" id="iva-eligibility">
+      <h2>IVA UK Eligibility — Do You Qualify?</h2>
       <p>Good indicators you’re in IVA territory:</p>
       <ul>
-        <li>Unsecured debts around <strong>£6,000+</strong> across multiple creditors</li>
-        <li>Spare income after essentials of roughly <strong>£75+/month</strong> (varies by case)</li>
-        <li>Stable income stream (employment or benefits)</li>
-        <li>Desire to avoid bankruptcy and keep essentials where possible</li>
+        <li>Unsecured debts of around <strong>£6,000+</strong> across multiple creditors</li>
+        <li>Spare income after essentials (often <strong>~£75+/month</strong>, but case-by-case)</li>
+        <li>Stable income (employment or benefits)</li>
+        <li>Prefer to avoid bankruptcy and protect essentials where possible</li>
       </ul>
-      <p>Rules differ for Scotland (Trust Deeds). For impartial reading see <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/before-you-start-an-iva/check-what-an-iva-is/" target="_blank" rel="noopener">Citizens Advice</a>.</p>
+      <p>We’ll check eligibility free and confirm pros/cons — plus alternatives if an IVA isn’t the best fit.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Free 60–90s Eligibility Check</a>
     </div>
 
-    <div class="section" id="si-getting-an-iva">
-      <h2>How to Get / Apply for an IVA</h2>
-      <p>Applying is straightforward and handled by a licensed Insolvency Practitioner:</p>
-      <ol>
-        <li><strong>Free check:</strong> Share debts, income, outgoings, and any assets.</li>
-        <li><strong>Documents:</strong> Provide ID, payslips/benefit letters, bank statements, creditor details.</li>
-        <li><strong>Drafting:</strong> Your IP builds a <em>realistic</em> proposal creditors will consider.</li>
-        <li><strong>Vote & start:</strong> If approved, protections apply and you make one monthly payment.</li>
-      </ol>
-      <p>There are <strong>no upfront fees</strong>; IVA fees are taken from your affordable payment once approved (see <a href="#si-iva-costs">costs</a>).</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Apply for an IVA (Free Assessment)</a>
-    </div>
-
-    <div class="section" id="si-iva-costs">
-      <h2>IVA Cost & Fees UK (Plain English)</h2>
-      <p>All fees are <strong>built into</strong> your contribution and agreed with creditors. Typical components:</p>
+    <!-- COSTS -->
+    <div class="section" id="iva-costs">
+      <h2>IVA Cost & Fees (Plain English)</h2>
+      <p>You don’t pay IVA fees upfront. They’re taken from your <strong>affordable monthly payment</strong> and agreed with creditors:</p>
       <ul>
-        <li><strong>Nominee fee</strong> — work to assess, draft and convene the vote</li>
-        <li><strong>Supervisory fee</strong> — ongoing case management, creditor payments, reviews</li>
+        <li><strong>Nominee fee</strong> — assessing, drafting and convening the vote</li>
+        <li><strong>Supervisory fee</strong> — ongoing case management & reviews</li>
         <li><strong>Completion fee</strong> — issuing your completion certificate</li>
       </ul>
-      <p>Because fees come from what you can afford, they don’t increase your monthly payment: they’re part of it. Read more on <a href="https://insolvencyservice.blog.gov.uk/2023/02/21/what-you-need-to-know-about-individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Insolvency Service</a> and the <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol" target="_blank" rel="noopener">IVA Protocol</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See My Likely Fees</a>
+      <p>See more: <a href="https://www.gov.uk/government/publications/individual-voluntary-arrangement-iva-protocol" target="_blank" rel="noopener">IVA Protocol</a> • <a href="https://insolvencyservice.blog.gov.uk/2023/02/21/what-you-need-to-know-about-individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Insolvency Service blog</a></p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See My Likely IVA Costs</a>
     </div>
 
-    <div class="section" id="si-iva-payments">
-      <h2>IVA Payments — How Much Will I Pay?</h2>
-      <p>Your payment is based on <strong>disposable income</strong> after essential bills (rent/mortgage, utilities, food, transport, childcare). We use recognised household guideline ranges to keep it fair. If income drops or costs rise, your IP can review and propose changes so the IVA stays sustainable. Guidance on how IVAs work is available from <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a>.</p>
-      <a href="#calculator" class="menu-cta">Estimate with the Calculator</a>
+    <!-- DEBTS -->
+    <div class="section" id="iva-debts">
+      <h2>Which Debts Can You Include?</h2>
+      <p><strong>Usually included (unsecured):</strong> credit/store cards, catalogues, loans, payday loans, overdrafts, BNPL, utility arrears and some HMRC arrears.</p>
+      <p><strong>Not included:</strong> secured debts (mortgage, HP), student loans, child maintenance and most fines. You must maintain secured payments alongside the IVA.</p>
+      <p>Neutral explainers: <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange</a> • <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Citizens Advice</a></p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If My Debts Qualify</a>
     </div>
 
-    <div class="section" id="si-iva-hmrc">
-      <h2>IVA & HMRC Debts — Can Tax Arrears Be Included?</h2>
-      <p><strong>Some HMRC debts</strong> (for example, income tax/VAT arrears) can be included and voted on by HMRC. They may set conditions (like keeping filings/payments up to date). Not every liability is eligible; your IP will confirm what can go in your case. For impartial info, see <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange</a> and <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About HMRC in an IVA</a>
-    </div>
-
-    <div class="section" id="si-define-iva">
-      <h2>Define: “Individual Voluntary Arrangement” (IVA)</h2>
-      <p>An <strong>Individual Voluntary Arrangement</strong> is a <em>statutory debt solution</em> where you and your creditors agree a binding plan, supervised by a licensed Insolvency Practitioner, typically lasting 5–6 years. It offers legal structure, freezes interest/most enforcement once approved, and can write off remaining qualifying unsecured debt on completion. See the <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">formal definition</a> and the <a href="https://insolvencyservice.blog.gov.uk/2023/02/21/what-you-need-to-know-about-individual-voluntary-arrangements-ivas/" target="_blank" rel="noopener">Insolvency Service overview</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help with an IVA</a>
-    </div>
-
-    <!-- ========= /HIGH-VOLUME SEARCH INTENT SECTIONS ========= -->
-
-    <!-- What is an IVA -->
-    <div class="section" id="what">
-      <h2>What Is an IVA?</h2>
-      <p>An <strong>Individual Voluntary Arrangement</strong> is a formal agreement between you and your creditors to repay debts you can reasonably afford over a set period (usually 5–6 years). It’s managed by a licensed <em>Insolvency Practitioner</em> (IP). Once approved, interest/charges are typically frozen and creditors are generally prevented from taking further enforcement.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for an IVA</a>
-    </div>
-
-    <!-- How it works -->
-    <div class="section" id="works">
-      <h2>How Does an IVA Work?</h2>
-      <ul>
-        <li>🧮 <strong>Affordable payment:</strong> One monthly amount based on a realistic household budget.</li>
-        <li>🛑 <strong>Freeze interest & action:</strong> Creditors usually stop interest, charges and most enforcement once approved.</li>
-        <li>🧭 <strong>Managed by an IP:</strong> Your licensed Insolvency Practitioner handles proposals, votes and supervision.</li>
-        <li>✂️ <strong>Debt write-off:</strong> Any qualifying balance left at the end is written off.</li>
-      </ul>
-      <a href="#process" class="menu-cta">See the Step-by-Step Process</a>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My IVA Assessment</a>
-    </div>
-
-    <!-- Eligibility -->
-    <div class="section" id="eligibility">
-      <h2>Who Is Eligible for an IVA?</h2>
-      <p>IVAs are typically suitable if you:</p>
-      <ul>
-        <li>✔ Have unsecured debts of around <strong>£6,000+</strong> with multiple creditors</li>
-        <li>✔ Have a <strong>reliable income</strong> (wages or benefits) to make an affordable contribution</li>
-        <li>✔ Want to avoid bankruptcy and protect essential assets where possible</li>
-      </ul>
-      <p>Eligibility depends on debts, income, expenses and assets. We’ll run a free check and show the pros and cons, including <a href="#alternatives">alternatives</a> if an IVA isn’t the best fit.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My IVA Eligibility</a>
-      <a href="dmp.html" class="menu-cta">Compare with a DMP</a>
-    </div>
-
-    <!-- Benefits -->
-    <div class="section" id="benefits">
-      <h2>Key IVA Benefits</h2>
-      <ul>
-        <li>🛑 Protection from most creditor action (including bailiffs) once approved</li>
-        <li>💷 One affordable payment, based on a realistic budget</li>
-        <li>⏳ Clear timeframe (usually 5–6 years)</li>
-        <li>✂️ Potential write-off of remaining qualifying unsecured debt at completion</li>
-        <li>🏠 Options to protect your home depending on equity and affordability</li>
-        <li>🔍 Transparent oversight by a licensed Insolvency Practitioner</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started with IVA Help</a>
-    </div>
-
-    <!-- IVA vs Bankruptcy -->
-    <div class="section" id="vs-bankruptcy">
-      <h2>IVA vs Bankruptcy — Which Is Right for You?</h2>
-      <p>Bankruptcy can be quicker for a clean break, but may risk assets and impose stricter restrictions. An IVA offers:</p>
-      <ul>
-        <li>More control over assets (home considerations depend on equity)</li>
-        <li>A structured, affordable repayment plan</li>
-        <li>Legal protections without full bankruptcy restrictions</li>
-      </ul>
-      <p>We’ll compare both routes privately and recommend the safest option for your goals.</p>
-      <a href="bankruptcy.html" class="menu-cta">Learn About Bankruptcy</a>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare IVA vs Bankruptcy</a>
-    </div>
-
-    <!-- Process -->
-    <div class="section" id="process">
-      <h2>The IVA Process (Step-by-Step)</h2>
+    <!-- PROCESS -->
+    <div class="section" id="iva-process">
+      <h2>The IVA Process — Step-by-Step</h2>
       <ol>
         <li><strong>Free assessment:</strong> We review debts, income, spending and assets.</li>
-        <li><strong>Budget & proposal:</strong> Your IP drafts an affordable plan.</li>
-        <li><strong>Creditor vote:</strong> 75% by value must agree (modifications possible).</li>
-        <li><strong>Approval:</strong> Protections usually apply; interest/enforcement typically paused.</li>
-        <li><strong>Ongoing support:</strong> Supervision and annual reviews keep payments realistic.</li>
-        <li><strong>Completion:</strong> Remaining qualifying unsecured debts are written off.</li>
+        <li><strong>Budget & proposal:</strong> Your IP drafts a realistic plan creditors can accept.</li>
+        <li><strong>Creditor vote:</strong> <em>75% by value</em> of those voting must agree; modifications possible.</li>
+        <li><strong>Approval:</strong> Interest/charges and most enforcement usually pause.</li>
+        <li><strong>Supervision:</strong> Annual reviews keep payments sustainable.</li>
+        <li><strong>Completion:</strong> Remaining qualifying unsecured debt is written off.</li>
       </ol>
+      <p>Official guidance: <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK — IVAs</a></p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start the IVA Process</a>
     </div>
 
-    <!-- Debts included -->
-    <div class="section" id="debts">
-      <h2>Which Debts Can You Include in an IVA?</h2>
-      <p>Usually included:</p>
-      <ul>
-        <li>Credit cards, store cards and catalogues</li>
-        <li>Personal loans and overdrafts</li>
-        <li>Utility arrears and some HMRC debts</li>
-        <li>Buy-Now-Pay-Later and similar unsecured credit</li>
-      </ul>
-      <p><strong>Not included:</strong> Secured debts (e.g., mortgages, HP car finance). These run alongside your IVA, and you must maintain payments. Certain debts like child maintenance and some fines are not usually written off.</p>
-      <a href="credit-card-debt.html" class="menu-cta">Help with Credit Card Debt</a>
-      <a href="loan-debt.html" class="menu-cta">Support for Loan Debt</a>
+    <!-- BAILIFFS/COURT -->
+    <div class="section" id="iva-bailiffs">
+      <h2>How an IVA Helps with Bailiffs, CCJs & Court Action</h2>
+      <p>Once your IVA is <strong>approved</strong>, creditors are generally prevented from starting or continuing most enforcement on included debts. Communications should reduce, helping you focus on the plan.</p>
+      <p>Read more: <a href="https://www.gov.uk/county-court-judgments-ccj-for-debt" target="_blank" rel="noopener">GOV.UK — CCJs</a> • <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/" target="_blank" rel="noopener">Citizens Advice — Bailiffs</a></p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Pressure from Bailiffs or Courts</a>
     </div>
 
-    <!-- Bailiffs & legal -->
-    <div class="section" id="bailiffs">
-      <h2>How an IVA Stops Bailiffs & Legal Action</h2>
-      <p>Once your IVA is approved, creditors generally must stop or not start most enforcement (like bailiff visits or new court claims), provided you comply with the IVA terms. This protection helps you focus on affordable repayments.</p>
-      <ul>
-        <li>🚪 Bailiffs typically cannot enforce once the IVA is in place</li>
-        <li>📨 Letters and calls should reduce significantly</li>
-        <li>⚖️ New legal action is usually restricted</li>
-      </ul>
-      <a href="bailiffs-rights.html" class="menu-cta">Bailiffs: Your Rights</a>
-      <a href="stop-debt-collectors.html" class="menu-cta">Stop Debt Collectors</a>
-    </div>
-
-    <!-- Credit file -->
-    <div class="section" id="credit">
+    <!-- CREDIT FILE -->
+    <div class="section" id="iva-credit">
       <h2>IVA and Your Credit File</h2>
-      <p>An IVA will appear on your credit report for <strong>six years</strong> from the start date. During this period you may find it harder or more expensive to obtain credit. Many people find that completing an IVA gives a clearer path to rebuilding credit than ongoing defaults or informal arrangements that drag on.</p>
-      <a href="credit-score-help.html" class="menu-cta">Rebuild Credit After an IVA</a>
+      <p>An IVA will appear on your report for <strong>six years</strong> from the start date. During this time, obtaining credit can be harder. Many people still prefer the certainty of a clear end-date and structured rebuild after completion compared with years of rolling arrears.</p>
+      <p>Independent overview: <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/what-is-an-individual-voluntary-arrangement" target="_blank" rel="noopener">MoneyHelper</a></p>
+      <a href="credit-score-help.html" class="menu-cta">Ask About Rebuilding Credit</a>
     </div>
 
-    <!-- Home -->
-    <div class="section" id="home">
-      <h2>Can You Keep Your Home During an IVA?</h2>
-      <p>Often yes. Your IP will assess equity and affordability. In some cases, equity release or a modest extension to the IVA may be proposed instead of selling. Keeping mortgage payments up to date is essential.</p>
-      <ul>
-        <li>🏠 Equity may affect terms (not an automatic sale)</li>
-        <li>💬 We’ll explain options like remortgage or 12-month extensions</li>
-      </ul>
-      <a href="mortgage-arrears.html" class="menu-cta">Help with Mortgage Arrears</a>
+    <!-- HOME/EQUITY -->
+    <div class="section" id="iva-home">
+      <h2>Can You Keep Your Home During an IVA? (Homeowner & Equity — 2025)</h2>
+      <p>Often yes. Your IP assesses equity and affordability. If equity can’t be released, a <strong>12-month extension</strong> is sometimes proposed instead of a sale. Keeping mortgage payments up to date is essential.</p>
+      <details>
+        <summary>Equity Review (typically around month 54)</summary>
+        <p>Under the IVA Protocol used by many providers, there’s often an equity review near month 54. If remortgage is unavailable or would make your budget unaffordable, a 12-month extension can be proposed. Exact handling varies by the terms agreed with your creditors.</p>
+      </details>
+      <a href="mortgage-arrears.html" class="menu-cta">Guidance on Mortgage Arrears</a>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Advice on Protecting Your Home</a>
     </div>
 
-    <!-- Fees -->
-    <div class="section" id="fees">
-      <h2>Understanding IVA Costs & Fees</h2>
-      <p>IVA fees are set out clearly in your proposal, agreed with creditors and taken from your monthly contributions — not added on top.</p>
-      <ul>
-        <li>🧾 Set-up (Nominee) fee</li>
-        <li>🔄 Supervision (ongoing) fee</li>
-        <li>✅ Completion fee</li>
-      </ul>
-      <p>We’ll explain all costs before you decide, and show how they fit within your affordable payment.</p>
-      <a href="#process" class="menu-cta">See How Fees Fit into the Process</a>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My IVA Costs</a>
-    </div>
-
-    <!-- Alternatives -->
-    <div class="section" id="alternatives">
+    <!-- ALTERNATIVES -->
+    <div class="section" id="iva-alternatives">
       <h2>Alternatives to an IVA</h2>
-      <p>If an IVA isn’t suitable, we’ll recommend safer alternatives:</p>
+      <p>If an IVA isn’t suitable, we’ll discuss safer alternatives:</p>
       <ul>
-        <li><a href="dmp.html">Debt Management Plan (DMP)</a> — informal, flexible payments (interest freeze not guaranteed)</li>
-        <li><a href="dro.html">Debt Relief Order (DRO)</a> — for low income/low assets within set limits</li>
-        <li><a href="bankruptcy.html">Bankruptcy</a> — formal insolvency with faster discharge but stricter impacts</li>
-        <li><a href="breathing-space.html">Breathing Space</a> — 60-day pause while you choose a solution</li>
+        <li><a href="dmp.html">Debt Management Plan (DMP)</a> — flexible and informal (interest freeze not guaranteed)</li>
+        <li><a href="dro.html">Debt Relief Order (DRO)</a> — for low income/low assets within limits</li>
+        <li><a href="bankruptcy.html">Bankruptcy</a> — fastest reset but stricter impacts</li>
+        <li><a href="breathing-space.html">Breathing Space</a> — 60-day legal pause while you choose</li>
       </ul>
-      <a href="compare-solutions.html" class="menu-cta">Compare Debt Solutions</a>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Debt Check</a>
+      <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
     </div>
 
-    <!-- Real stories -->
-    <div class="section" id="stories">
-      <h2>Real IVA Stories</h2>
-      <p><strong>Karen, Bristol:</strong> “Fresh Start explained everything about IVAs and helped me apply. I’m on a manageable plan and the stress has eased.”</p>
-      <p><strong>James, London:</strong> “I avoided bankruptcy thanks to IVA advice. The team was supportive and professional throughout.”</p>
-      <p><strong>Maria, Newcastle:</strong> “My IVA was approved quickly — I can finally see a debt-free future.” See more on our <a href="testimonials.html">testimonials</a> page.</p>
-      <a href="testimonials.html" class="menu-cta">Read More Testimonials</a>
+    <!-- HIGH-INTENT ADD-ONS -->
+    <div class="section" id="iva-self-employed">
+      <h2>IVA for Self-Employed & Company Directors</h2>
+      <p>Irregular income doesn’t rule you out. We’ll map seasonal swings and essential business costs so your contribution remains realistic. An IVA can stabilise creditor action and protect key trading assets while you keep operating.</p>
+      <ul>
+        <li>Include trade creditors and eligible HMRC arrears</li>
+        <li>Build headroom for quiet months & tax set-asides</li>
+        <li>Use formal variation if your income changes materially</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About a Self-Employed IVA</a>
     </div>
 
-    <!-- Government guidance / charities -->
+    <div class="section" id="iva-benefits-income">
+      <h2>Can You Get an IVA on Benefits or Low Income?</h2>
+      <p>Yes, if there’s a small, stable surplus after essentials. If your disposable income is very low, a <a href="dro.html">DRO</a> or token payments may be safer.</p>
+      <ul>
+        <li>Protect priority bills first (rent, council tax, utilities)</li>
+        <li>Consider Breathing Space while you decide</li>
+        <li>Annual reviews keep payments affordable</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify on Benefits</a>
+    </div>
+
+    <div class="section" id="iva-hmrc">
+      <h2>IVA & HMRC Debts</h2>
+      <p><strong>Some HMRC debts</strong> (e.g., income tax or VAT arrears) can be included and voted on by HMRC. They may require filings to be up to date and future liabilities paid on time. Your IP will confirm what’s eligible in your case.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About HMRC in an IVA</a>
+    </div>
+
+    <div class="section" id="iva-car-finance">
+      <h2>IVA and Car Finance (HP/PCP)</h2>
+      <p>HP/PCP agreements are <em>secured</em> on the vehicle. The arrears position and lender policy matter. Many people keep essential vehicles if payments are sustainable. We’ll review your agreement and build the plan around essential transport needs.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Can Keep My Car</a>
+    </div>
+
+    <div class="section" id="iva-ccj">
+      <h2>IVA with Existing CCJs</h2>
+      <p>If you already have a <strong>CCJ</strong>, an approved IVA can usually restrict further enforcement on included debts. If there’s urgent enforcement (like an Attachment of Earnings), we’ll prioritise fast steps.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help with CCJs</a>
+    </div>
+
+    <div class="section" id="iva-early-settlement">
+      <h2>Can You Settle an IVA Early?</h2>
+      <p>Sometimes, yes — typically via a lump-sum <em>full and final</em> offer funded by a third party (not your IVA savings). Creditors vote on the offer. We’ll help you prepare a realistic proposal if it’s appropriate.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About Early Settlement</a>
+    </div>
+
+    <div class="section" id="iva-myths">
+      <h2>IVA Myths vs Facts</h2>
+      <ul>
+        <li><strong>Myth:</strong> “You always lose your home.” <strong>Fact:</strong> Many homeowners keep their homes; equity is reviewed case-by-case.</li>
+        <li><strong>Myth:</strong> “Payments never change.” <strong>Fact:</strong> Reviews can adjust payments if circumstances change.</li>
+        <li><strong>Myth:</strong> “All debts are included.” <strong>Fact:</strong> Some are excluded; we’ll check each one.</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Clear, Personal Answers</a>
+    </div>
+
+    <div class="section" id="iva-scotland">
+      <h2>Outside England & Wales? Scotland & Northern Ireland</h2>
+      <p>IVAs apply to <strong>England &amp; Wales</strong>. Scotland’s equivalent is a <strong>Protected Trust Deed</strong> or a <strong>DAS</strong> (Debt Arrangement Scheme). Northern Ireland has different processes. Use official links and we’ll guide the right route for your nation.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Nation-Specific Help</a>
+    </div>
+
+    <!-- PROVIDER COMPARISON (intent-targeting section) -->
+    <div class="section" id="provider-compare">
+      <h2>IVA Provider Comparison (At-a-Glance)</h2>
+      <p>Different routes exist to set up an IVA. Here’s a simple, provider-neutral comparison to help you decide who to speak to first:</p>
+      <div class="table-wrap" role="region" aria-label="Compare IVA providers">
+        <table>
+          <thead>
+            <tr>
+              <th>Route</th>
+              <th>Typical strengths</th>
+              <th>Things to consider</th>
+              <th>Good for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Free charities (e.g., major national debt charities)</td>
+              <td>Impartial guidance, broad solution coverage</td>
+              <td>High demand can mean longer queues at busy times</td>
+              <td>Anyone wanting independent guidance before choosing</td>
+            </tr>
+            <tr>
+              <td>Large IVA firms</td>
+              <td>Established processes, creditor familiarity</td>
+              <td>High volume; service style may feel less personal</td>
+              <td>Straightforward cases with predictable income</td>
+            </tr>
+            <tr>
+              <td>Specialist/smaller IP practices</td>
+              <td>More tailored case handling, flexible thinking</td>
+              <td>Availability varies by region/capacity</td>
+              <td>Complex income or asset situations</td>
+            </tr>
+            <tr>
+              <td><strong>Fresh Start Debt Support (us)</strong></td>
+              <td><strong>Free, confidential triage; we compare options, explain trade-offs, and connect you with a suitable IP</strong></td>
+              <td>We are not a regulator; we signpost to impartial sources alongside our help</td>
+              <td>People who want a clear, low-pressure walkthrough first</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mini-note">We link out to GOV.UK, MoneyHelper and charities so you can cross-check information before deciding.</p>
+      <a href="iva-company.html" class="menu-cta">How to Choose an IVA Company</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Talk to a Specialist (Free)</a>
+    </div>
+
+    <!-- DECISION SUPPORT -->
+    <div class="section" id="decision-support">
+      <h2>Is an IVA Likely Right for You?</h2>
+      <p>Answer these quick questions to see whether you may be in IVA territory:</p>
+      <form onsubmit="return false;" class="decision-form">
+        <label for="debt-amount">Total unsecured debt:</label><br>
+        <select id="debt-amount" aria-label="Total unsecured debt">
+          <option value="low">Under £5,000</option>
+          <option value="medium">£5,000–£20,000</option>
+          <option value="high">Over £20,000</option>
+        </select><br><br>
+
+        <label for="income">Monthly spare income after essentials:</label><br>
+        <select id="income" aria-label="Monthly spare income">
+          <option value="low">Under £75</option>
+          <option value="medium">£75–£200</option>
+          <option value="high">Over £200</option>
+        </select><br><br>
+
+        <button onclick="suggestSolution()" class="menu-cta">See My Likely Options</button>
+      </form>
+      <p id="suggestion-result" style="margin-top:15px; font-weight:bold;"></p>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="section" id="calculator">
+      <h2>Repayment vs IVA Write-Off Calculator</h2>
+      <p>Estimate how long repayments might take without help, versus using a formal solution like an IVA:</p>
+      <form onsubmit="return false;" class="calc-form">
+        <label for="total-debt">Total unsecured debt (£):</label><br>
+        <input type="number" id="total-debt" placeholder="e.g. 12000" inputmode="decimal"><br><br>
+
+        <label for="monthly-payment">Monthly payment you can afford (£):</label><br>
+        <input type="number" id="monthly-payment" placeholder="e.g. 150" inputmode="decimal"><br><br>
+
+        <button onclick="calculateRepayment()" class="menu-cta">Calculate</button>
+      </form>
+      <p id="calc-result" style="margin-top:15px; font-weight:bold;"></p>
+    </div>
+
+    <!-- GOV & CHARITIES -->
     <div class="section" id="gov-guidance">
       <h2>Official Guidance & Trusted Free Support</h2>
-      <p>For added reassurance, review these trusted UK resources about IVAs and debt solutions:</p>
       <ul class="trust-list">
         <li>🏛️ <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK: Individual Voluntary Arrangements (IVAs)</a></li>
         <li>🏢 <a href="https://www.gov.uk/government/organisations/insolvency-service" target="_blank" rel="noopener">The Insolvency Service</a></li>
@@ -581,125 +556,71 @@
         <li>🧭 <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener">MoneyHelper: Dealing with debt</a></li>
         <li>⚖️ <a href="https://www.financial-ombudsman.org.uk/" target="_blank" rel="noopener">Financial Ombudsman Service</a></li>
       </ul>
-      <p>Use these alongside our free support so you know your rights and protections.</p>
     </div>
 
-    <!-- FAQ -->
-    <div class="section" id="faq">
+    <!-- STORIES -->
+    <div class="section" id="stories">
+      <h2>Real IVA Stories</h2>
+      <p><strong>Karen, Bristol:</strong> “Fresh Start explained everything about IVAs and helped me apply. I’m on a manageable plan and the stress has eased.”</p>
+      <p><strong>James, London:</strong> “I avoided bankruptcy thanks to IVA advice. The team was supportive and professional throughout.”</p>
+      <p><strong>Maria, Newcastle:</strong> “My IVA was approved quickly — I can finally see a debt-free future.” See more on our <a href="testimonials.html">testimonials</a> page.</p>
+      <a href="testimonials.html" class="menu-cta">Read More Testimonials</a>
+    </div>
+
+    <!-- FAQs (on-page accordions for UX; content also in JSON-LD above) -->
+    <div class="section" id="iva-faqs">
       <h2>IVA — Frequently Asked Questions</h2>
 
-      <h3>How long does an IVA last?</h3>
-      <p>Most IVAs last <strong>5–6 years</strong>. In some cases an extra 12 months may be proposed if equity can’t be released.</p>
+      <details>
+        <summary>How long does an IVA last?</summary>
+        <p>Most IVAs last <strong>5–6 years</strong>. If equity can’t be released, a 12-month extension may be proposed.</p>
+      </details>
 
-      <h3>Will my creditors keep contacting me?</h3>
-      <p>Contact should reduce significantly after approval. If you receive calls or letters, let us know — we’ll help ensure protections are respected.</p>
+      <details>
+        <summary>Will creditors keep contacting me?</summary>
+        <p>Contact should reduce significantly once your IVA is approved. Tell us about any issues and we’ll help ensure protections are respected.</p>
+      </details>
 
-      <h3>Can I change my payment if my income changes?</h3>
-      <p>Yes, your IP can review the budget. Payments may be adjusted if your circumstances change.</p>
+      <details>
+        <summary>Can my payments change if my income changes?</summary>
+        <p>Yes. If your income or essentials change, your IP can review and propose adjustments.</p>
+      </details>
 
-      <h3>Are you regulated and who oversees IVAs?</h3>
-      <p>Debt advice is regulated by the <a href="https://www.fca.org.uk/" target="_blank" rel="noopener">FCA</a>. IVAs are administered by licensed Insolvency Practitioners and overseen by the <a href="https://www.gov.uk/government/organisations/insolvency-service" target="_blank" rel="noopener">Insolvency Service</a>. For impartial advice you can also speak to <a href="https://www.stepchange.org/" target="_blank" rel="noopener">StepChange</a> or <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline</a>.</p>
+      <details>
+        <summary>Who regulates this?</summary>
+        <p>The Insolvency Service oversees the framework and IPs are licensed by their professional bodies. For impartial advice, see <a href="https://www.stepchange.org/" target="_blank" rel="noopener">StepChange</a> or <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline</a>. Consumer protection guidance: <a href="https://www.fca.org.uk/consumers/debt-help" target="_blank" rel="noopener">FCA — Debt help</a>.</p>
+      </details>
 
-      <h3>How do you get paid? Do you earn commission?</h3>
-      <p>We explain any fees before you decide. Where a third party provides a formal solution, their fees are disclosed in writing in your proposal.</p>
+      <details>
+        <summary>How do fees work?</summary>
+        <p>Fees are agreed with creditors and taken from your affordable payment. You don’t pay them on top.</p>
+      </details>
 
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify Now</a>
-    </div>
-
-    <!-- Decision Support -->
-    <div class="section" id="decision-support">
-      <h2>Is an IVA Likely Right for You?</h2>
-      <p>Answer these quick questions to see whether you may be in IVA territory:</p>
-      <form onsubmit="return false;" class="decision-form">
-        <label>Total unsecured debt:</label><br>
-        <select id="debt-amount">
-          <option value="low">Under £5,000</option>
-          <option value="medium">£5,000–£20,000</option>
-          <option value="high">Over £20,000</option>
-        </select><br><br>
-
-        <label>Monthly spare income after essentials:</label><br>
-        <select id="income">
-          <option value="low">Under £75</option>
-          <option value="medium">£75–£200</option>
-          <option value="high">Over £200</option>
-        </select><br><br>
-
-        <button onclick="suggestSolution()" class="menu-cta">See My Likely Options</button>
-      </form>
-      <p id="suggestion-result" style="margin-top:15px; font-weight:bold;"></p>
-
-      <script>
-        function suggestSolution() {
-          const debt = document.getElementById("debt-amount").value;
-          const income = document.getElementById("income").value;
-          let result = "We’ll need a free debt check to match you properly.";
-
-          if ((debt === "high" || debt === "medium") && income !== "low") result = "An IVA could reduce payments and write off unaffordable balances after completion.";
-          else if (debt === "medium" && income === "low") result = "You may qualify for a DRO if your total debts and circumstances fit the criteria.";
-          else if (debt === "low" && income === "low") result = "Consider Breathing Space, a token plan or a DRO if eligible.";
-          else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements and goals.";
-
-          document.getElementById("suggestion-result").innerText = result + " 👉 Try our free IVA check to confirm.";
-        }
-      </script>
-    </div>
-
-    <!-- Calculator -->
-    <div class="section" id="calculator">
-      <h2>Repayment vs IVA Write-Off Calculator</h2>
-      <p>Estimate how long repayments might take without help, versus using a formal solution like an IVA:</p>
-      <form onsubmit="return false;" class="calc-form">
-        <label>Total unsecured debt (£):</label><br>
-        <input type="number" id="total-debt" placeholder="e.g. 12000"><br><br>
-
-        <label>Monthly payment you can afford (£):</label><br>
-        <input type="number" id="monthly-payment" placeholder="e.g. 150"><br><br>
-
-        <button onclick="calculateRepayment()" class="menu-cta">Calculate</button>
-      </form>
-      <p id="calc-result" style="margin-top:15px; font-weight:bold;"></p>
-
-      <script>
-        function calculateRepayment() {
-          const debt = parseFloat(document.getElementById("total-debt").value);
-          const monthly = parseFloat(document.getElementById("monthly-payment").value);
-          if (!debt || !monthly) {
-            document.getElementById("calc-result").innerText = "Please enter valid numbers.";
-            return;
-          }
-          const months = Math.ceil(debt / monthly);
-          const years = (months / 12).toFixed(1);
-          document.getElementById("calc-result").innerText =
-            "At this rate, it would take ~" + years + " years (" + months + " months) without interest. " +
-            "👉 With an IVA, interest/enforcement are typically frozen and remaining qualifying debt may be written off after completion.";
-        }
-      </script>
-    </div>
-
-    <!-- Evidence / resources -->
-    <div class="section" id="evidence">
-      <h2>Evidence & Trusted Resources on IVAs</h2>
-      <p>Use these independent sources to understand your rights and options:</p>
-      <ul>
-        <li>🏛️ <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK: Individual Voluntary Arrangements</a></li>
-        <li>🏢 <a href="https://www.gov.uk/government/organisations/insolvency-service" target="_blank" rel="noopener">The Insolvency Service (official IVA guidance)</a></li>
-        <li>🛡️ <a href="https://www.fca.org.uk/consumers/debt-help" target="_blank" rel="noopener">FCA: Debt help for consumers</a></li>
-        <li>🤝 <a href="https://www.stepchange.org/debt-info/iva.aspx" target="_blank" rel="noopener">StepChange: About IVAs</a></li>
-        <li>📞 <a href="https://nationaldebtline.org/" target="_blank" rel="noopener">National Debtline</a></li>
-        <li>🧭 <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt" target="_blank" rel="noopener">MoneyHelper: Dealing with debt</a></li>
-      </ul>
-      <p>These confirm your protections and how an IVA works in practice.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask a Specialist Now</a>
     </div>
 
     <!-- Final CTA -->
     <div class="section" id="final-cta">
       <h2>Your Fresh Start with an IVA Begins Today</h2>
       <p><strong>IVAs</strong> can stop interest, halt enforcement, protect your home and — in many cases — <strong>write off unaffordable unsecured debts</strong> after completion. We’ll guide you every step, free and without judgment.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free IVA Assessment</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta" aria-label="Start your IVA check">Start My Free IVA Assessment</a>
     </div>
 
-  </div> <!-- /container -->
+    <!-- Social proof / Trustpilot -->
+    <div class="section" aria-label="Reviews">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /container -->
 
   <!-- Footer -->
   <footer>
@@ -709,7 +630,85 @@
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20IVA" class="whatsapp-button" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20IVA" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+
+      var isOpen = menu.style.display === "flex";
+      if (isOpen) {
+        menu.style.display = "none";
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.style.display = "flex";
+        btn.setAttribute("aria-expanded", "true");
+        var firstLink = menu.querySelector("a");
+        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
+      }
+    }
+
+    // Close on outside click
+    document.addEventListener("click", function(e) {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
+        menu.style.display = "none";
+        btn.setAttribute("aria-expanded","false");
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn && menu.style.display === "flex") {
+          menu.style.display = "none";
+          btn.setAttribute("aria-expanded","false");
+          btn.focus();
+        }
+      }
+    });
+
+    // Decision helper
+    function suggestSolution() {
+      const debt = document.getElementById("debt-amount").value;
+      const income = document.getElementById("income").value;
+      let result = "We’ll need a free debt check to match you properly.";
+
+      if ((debt === "high" || debt === "medium") && income !== "low") result = "An IVA could reduce payments and write off unaffordable balances after completion.";
+      else if (debt === "medium" && income === "low") result = "You may qualify for a DRO if your total debts and circumstances fit the criteria.";
+      else if (debt === "low" && income === "low") result = "Consider Breathing Space, a token plan or a DRO if eligible.";
+      else if (income === "high") result = "A DMP or IVA could be suitable depending on creditor agreements and goals.";
+
+      document.getElementById("suggestion-result").innerText = result + " 👉 Try our free IVA check to confirm.";
+    }
+
+    // Calculator
+    function calculateRepayment() {
+      const debt = parseFloat(document.getElementById("total-debt").value);
+      const monthly = parseFloat(document.getElementById("monthly-payment").value);
+      const out = document.getElementById("calc-result");
+      if (!debt || !monthly || debt <=0 || monthly <=0) {
+        out.innerText = "Please enter valid numbers.";
+        return;
+      }
+      const months = Math.ceil(debt / monthly);
+      const years = (months / 12).toFixed(1);
+      out.innerText =
+        "At this rate, it would take ~" + years + " years (" + months + " months) without interest. " +
+        "👉 With an IVA, interest/enforcement are typically frozen and remaining qualifying unsecured debt may be written off after completion.";
+    }
+  </script>
 
 </body>
 </html>
