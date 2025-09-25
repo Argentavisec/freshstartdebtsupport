@@ -7,7 +7,7 @@
   <title>IVA Advice UK | Individual Voluntary Arrangements Explained, Eligibility & How to Start</title>
   <meta name="description" content="Learn how IVAs work in the UK: eligibility, benefits, costs, process, and alternatives. Freeze interest, stop creditor action and see if you can write off unaffordable debts. Free, confidential assessment." />
   <meta name="keywords" content="IVA, IVA UK, Individual Voluntary Arrangement, what is an IVA, IVA eligibility, IVA costs, stop bailiffs, freeze interest, write off debt, how to start an IVA" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/iva.html" />
 
   <!-- Open Graph / Twitter -->
@@ -29,22 +29,11 @@
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Styles -->
+  <!-- Site stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS for hero + utilities -->
+  <!-- Inline critical CSS (mirror of the page you like) -->
   <style>
-    :root{
-      --brand:#2f6f36;
-      --brand2:#4CAF50;
-      --bg-soft:#f7fff9;
-      --border:#d3f0dd;
-      --pill:#e8f6ec;
-      --text:#16301a;
-      --muted:#4b5a50;
-    }
-    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{position:fixed;left:10px;top:10px;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
       color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
@@ -62,15 +51,23 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
-    .statbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:16px 0 0 0}
-    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:10px 14px;font-size:14px;display:inline-block}
+    /* stat pills style to match */
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* meta strip */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* accessibility helper */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* utility bits (same look as ref page) */
     .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
     .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
-    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
+
     .container{max-width:1000px;margin:0 auto;padding:0 16px}
     .section{padding:28px 0;border-bottom:1px solid #eef5ef}
     .menu-cta{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:999px;background:#f0fff4;border:1px solid #cdebd6;color:#215a29;text-decoration:none;font-weight:700}
@@ -79,21 +76,19 @@
     table{width:100%;border-collapse:collapse}
     th,td{padding:12px;border-bottom:1px solid #e6efe7;text-align:left}
     th{background:#f8fffb}
-    /* Details/summary accordion for FAQs & extras */
-    details{background:var(--bg-soft);border:1px solid var(--border);border-radius:12px;padding:12px;margin:12px 0}
-    details>summary{cursor:pointer;font-weight:700;color:var(--text)}
+
+    details{background:#f7fff9;border:1px solid #d3f0dd;border-radius:12px;padding:12px;margin:12px 0}
+    details>summary{cursor:pointer;font-weight:700;color:#16301a}
     details[open]{background:#ffffff}
-    /* Footer + WhatsApp btn quick styles */
+
     footer{padding:24px 16px;background:#0f2014;color:#eaf5ec}
     footer a{color:#eaf5ec;text-decoration:underline}
     .whatsapp-button{
       position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.15)
     }
-    /* Accessibility helpers */
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -102,56 +97,38 @@
     gtag('config', 'G-0PJ0YPPJST');
   </script>
 
-  <!-- TrustBox script -->
-  <script defer src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"></script>
+  <!-- TrustBox -->
+  <script src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Schema: Org + Breadcrumb + HowTo + merged FAQ -->
+  <!-- Schema (Org + Breadcrumb + HowTo + FAQ) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
-      {
-        "@type":"Organization",
-        "name":"Fresh Start Debt Support",
-        "url":"https://www.freshstartdebtsupport.co.uk/",
-        "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
-        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
-      },
-      {
-        "@type":"BreadcrumbList",
-        "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/index.html"},
-          {"@type":"ListItem","position":2,"name":"IVA","item":"https://www.freshstartdebtsupport.co.uk/iva.html"}
-        ]
-      },
-      {
-        "@type":"HowTo",
-        "name":"How to start an IVA (Individual Voluntary Arrangement)",
-        "description":"A practical, step-by-step guide to begin an IVA in the UK.",
-        "totalTime":"P30D",
-        "step":[
-          {"@type":"HowToStep","name":"Check eligibility","text":"Gather details on debts, income, spending, assets and your household. We confirm if an IVA may be suitable."},
-          {"@type":"HowToStep","name":"Build your budget","text":"Create a realistic budget for priority bills and living costs to calculate an affordable contribution."},
-          {"@type":"HowToStep","name":"Draft the proposal","text":"A licensed Insolvency Practitioner prepares your IVA proposal to creditors."},
-          {"@type":"HowToStep","name":"Creditor vote","text":"Creditors vote; at least 75% by value must agree. Modifications may be proposed."},
-          {"@type":"HowToStep","name":"Approval & protections","text":"On approval, interest/enforcement are typically frozen and you make one monthly payment."},
-          {"@type":"HowToStep","name":"Complete & write off","text":"After you complete the term, remaining qualifying unsecured debt is written off."}
-        ]
-      },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {"@type":"Question","name":"What is an IVA?","acceptedAnswer":{"@type":"Answer","text":"An IVA is a formal, legally binding agreement with your creditors to repay what you can afford over a set term (usually 5–6 years), often writing off remaining qualifying unsecured debt at completion."}},
-          {"@type":"Question","name":"Who is eligible for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Typically, people with around £6,000+ of unsecured debt, multiple creditors and stable income. Your circumstances and assets also matter — we’ll check for you free."}},
-          {"@type":"Question","name":"Do IVAs stop bailiffs and legal action?","acceptedAnswer":{"@type":"Answer","text":"Yes. Once approved, creditors are generally prevented from starting or continuing most enforcement, and interest/charges are usually frozen."}},
-          {"@type":"Question","name":"How does an IVA affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"An IVA stays on your credit file for 6 years from the start date. You can rebuild credit after completion."}},
-          {"@type":"Question","name":"What debts can be included?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, BNPL and some HMRC arrears can be included. Secured debts (mortgages, HP) and obligations like child maintenance or fines are generally excluded."}},
-          {"@type":"Question","name":"How much will I pay each month in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Payments are based on disposable income after essential bills using guideline ranges. Reviews ensure contributions stay affordable if your circumstances change."}},
-          {"@type":"Question","name":"Can HMRC debts go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Some HMRC debts (like income tax or VAT arrears) can be included subject to HMRC voting and conditions such as filings being up to date."}},
-          {"@type":"Question","name":"How do I apply for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Start with a free eligibility and affordability check, provide documents, and an Insolvency Practitioner will prepare your proposal to creditors for a vote."}},
-          {"@type":"Question","name":"What happens if I have home equity?","acceptedAnswer":{"@type":"Answer","text":"The IVA Protocol (often 2024/2025 versions) may include an equity review around month 54. If equity release isn’t possible or affordable, a 12-month extension might be proposed instead."}}
-        ]
-      }
+      {"@type":"Organization","name":"Fresh Start Debt Support","url":"https://www.freshstartdebtsupport.co.uk/","logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg","sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]},
+      {"@type":"BreadcrumbList","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/index.html"},
+        {"@type":"ListItem","position":2,"name":"IVA","item":"https://www.freshstartdebtsupport.co.uk/iva.html"}
+      ]},
+      {"@type":"HowTo","name":"How to start an IVA (Individual Voluntary Arrangement)","description":"A practical, step-by-step guide to begin an IVA in the UK.","totalTime":"P30D","step":[
+        {"@type":"HowToStep","name":"Check eligibility","text":"Gather details on debts, income, spending, assets and your household. We confirm if an IVA may be suitable."},
+        {"@type":"HowToStep","name":"Build your budget","text":"Create a realistic budget for priority bills and living costs to calculate an affordable contribution."},
+        {"@type":"HowToStep","name":"Draft the proposal","text":"A licensed Insolvency Practitioner prepares your IVA proposal to creditors."},
+        {"@type":"HowToStep","name":"Creditor vote","text":"Creditors vote; at least 75% by value must agree. Modifications may be proposed."},
+        {"@type":"HowToStep","name":"Approval & protections","text":"On approval, interest/enforcement are typically frozen and you make one monthly payment."},
+        {"@type":"HowToStep","name":"Complete & write off","text":"After you complete the term, remaining qualifying unsecured debt is written off."}
+      ]},
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"What is an IVA?","acceptedAnswer":{"@type":"Answer","text":"An IVA is a formal, legally binding agreement with your creditors to repay what you can afford over a set term (usually 5–6 years), often writing off remaining qualifying unsecured debt at completion."}},
+        {"@type":"Question","name":"Who is eligible for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Typically, people with around £6,000+ of unsecured debt, multiple creditors and stable income. Your circumstances and assets also matter — we’ll check for you free."}},
+        {"@type":"Question","name":"Do IVAs stop bailiffs and legal action?","acceptedAnswer":{"@type":"Answer","text":"Yes. Once approved, creditors are generally prevented from starting or continuing most enforcement, and interest/charges are usually frozen."}},
+        {"@type":"Question","name":"How does an IVA affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"An IVA stays on your credit file for 6 years from the start date. You can rebuild credit after completion."}},
+        {"@type":"Question","name":"What debts can be included?","acceptedAnswer":{"@type":"Answer","text":"Most unsecured debts such as credit cards, loans, overdrafts, catalogues, BNPL and some HMRC arrears can be included. Secured debts (mortgages, HP) and obligations like child maintenance or fines are generally excluded."}},
+        {"@type":"Question","name":"How much will I pay each month in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Payments are based on disposable income after essential bills using guideline ranges. Reviews ensure contributions stay affordable if your circumstances change."}},
+        {"@type":"Question","name":"Can HMRC debts go in an IVA?","acceptedAnswer":{"@type":"Answer","text":"Some HMRC debts (like income tax or VAT arrears) can be included subject to HMRC voting and conditions such as filings being up to date."}},
+        {"@type":"Question","name":"How do I apply for an IVA?","acceptedAnswer":{"@type":"Answer","text":"Start with a free eligibility and affordability check, provide documents, and an Insolvency Practitioner will prepare your proposal to creditors for a vote."}},
+        {"@type":"Question","name":"What happens if I have home equity?","acceptedAnswer":{"@type":"Answer","text":"The IVA Protocol may include an equity review around month 54. If equity release isn’t possible or affordable, a 12-month extension might be proposed instead."}}
+      ]}
     ]
   }
   </script>
@@ -162,70 +139,74 @@
   <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner (simple placeholder; keep your own site-wide header if preferred) -->
-  <div class="banner" role="banner" aria-label="Site header">
-    <div class="top-bar" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #eef5ef;background:#fff">
-      <div class="brand" style="display:flex;align-items:center;gap:10px">
-        <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo" width="44" height="44" loading="eager" />
-        <strong>Fresh Start Debt Support</strong>
+  <!-- Header / Banner (same structure & behaviour as your preferred page) -->
+  <div class="banner" role="banner">
+    <div class="top-bar">
+      <div class="brand">
+        <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
-      <!-- Hamburger button (optional if you include your full mega menu) -->
+
+      <!-- Hamburger button (right) -->
       <button id="menuButton"
               class="hamburger"
               aria-label="Open menu"
               aria-controls="menuContent"
               aria-expanded="false"
-              onclick="toggleMenu()"
-              style="background:#f0fff4;border:1px solid #cdebd6;border-radius:10px;padding:8px 12px">
-        Menu
+              onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Centralised menu (keep your original mega menu here if you use it site-wide) -->
-    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton" style="display:none;flex-direction:column;gap:6px;padding:12px 16px;border-bottom:1px solid #eef5ef;background:#fff">
-      <div class="menu-sections" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px">
+    <!-- Centralised menu (identical layout) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
         <div class="menu-section">
           <h4>About Us</h4>
-          <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a><br>
-          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a><br>
-          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a><br>
-          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a><br>
+          <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
           <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
         </div>
+
         <div class="menu-section">
           <h4>Debt Solutions</h4>
-          <a href="iva.html">About an IVA</a><br>
-          <a href="dmp.html">About a DMP</a><br>
-          <a href="dro.html">About a DRO</a><br>
-          <a href="compare-solutions.html">Compare Solutions</a><br>
+          <a href="iva.html">About an IVA</a>
+          <a href="dmp.html">About a DMP</a>
+          <a href="dro.html">About a DRO</a>
+          <a href="compare-solutions.html">Compare Solutions</a>
           <a href="debt-calculator.html">Debt Calculator</a>
         </div>
+
         <div class="menu-section">
           <h4>Types of Debt</h4>
-          <a href="credit-card-debt.html">Credit Cards</a><br>
-          <a href="loan-debt.html">Loans</a><br>
-          <a href="catalogue-debt.html">Catalogues</a><br>
-          <a href="council-tax-debt.html">Council Tax</a><br>
+          <a href="credit-card-debt.html">Credit Cards</a>
+          <a href="loan-debt.html">Loans</a>
+          <a href="catalogue-debt.html">Catalogues</a>
+          <a href="council-tax-debt.html">Council Tax</a>
           <a href="utility-debt.html">Utilities</a>
         </div>
+
         <div class="menu-section">
           <h4>Popular</h4>
-          <a href="debt-help-uk-2025.html">Debt Help UK 2025</a><br>
-          <a href="iva-company.html">IVA Company</a><br>
-          <a href="dmp-provider.html">DMP Provider</a><br>
-          <a href="stop-debt-collectors.html">Stop Debt Collectors</a><br>
+          <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="iva-company.html">IVA Company</a>
+          <a href="dmp-provider.html">DMP Provider</a>
+          <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
           <a href="blog/">Blog</a>
         </div>
       </div>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
     </nav>
   </div>
+  <!-- /Header -->
 
-  <!-- HERO -->
+  <!-- HERO (same visual as ref) -->
   <section class="landing-hero" role="region" aria-label="Get IVA help">
     <div class="hero-inner">
       <div class="hero-copy">
-        <h1 class="hero-title">IVA Advice — Freeze Interest & Stop Creditor Action</h1>
+        <h2 class="hero-title">IVA Advice — Freeze Interest & Stop Creditor Action</h2>
         <p class="hero-sub">
           Find out if an <strong>Individual Voluntary Arrangement</strong> can reduce your payments and
           <strong>write off unaffordable debts</strong> after completion. We’ll check eligibility, costs and next steps — free and confidential.
@@ -242,7 +223,6 @@
       </div>
     </div>
   </section>
-  <!-- /HERO -->
 
   <!-- Meta strip -->
   <div class="meta small">
@@ -255,15 +235,15 @@
     </script>
   </div>
 
-  <!-- Anchor target for skip link -->
+  <!-- Anchor for skip link -->
   <div id="main-start"></div>
 
-  <!-- Main Content Container -->
+  <!-- ===== Main Content ===== -->
   <div class="container">
 
     <!-- Intro + TOC + Jump links -->
     <div class="section" id="intro">
-      <h2>IVA advice — What It Is, Who Qualifies, Costs, Process & Alternatives</h2>
+      <h1>IVA advice — What It Is, Who Qualifies, Costs, Process & Alternatives</h1>
       <p><strong>Quick answer:</strong> An <em>Individual Voluntary Arrangement (IVA)</em> is a legally binding plan that typically freezes interest and creditor enforcement while you make <strong>one affordable monthly payment</strong>. After successful completion, remaining qualifying unsecured debt is <strong>legally written off</strong>. We’ll confirm if you’re eligible and explain every trade-off.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free IVA Check</a>
 
@@ -284,13 +264,15 @@
         </ul>
       </nav>
 
-      <div class="jump-links" aria-label="Popular IVA topics">
-        <a href="#si-iva-eligibility">IVA eligibility (quick)</a>
-        <a href="#si-what-is-iva">What is IVA</a>
-        <a href="#si-iva-costs">IVA costs</a>
-        <a href="#si-iva-payments">IVA payments</a>
-        <a href="#si-iva-hmrc">IVA & HMRC</a>
-        <a href="#provider-compare">Compare providers</a>
+      <div class="intent-nav" aria-label="Popular IVA topics">
+        <div class="chips">
+          <a href="#si-iva-eligibility">IVA eligibility (quick)</a>
+          <a href="#si-what-is-iva">What is IVA</a>
+          <a href="#si-iva-costs">IVA costs</a>
+          <a href="#si-iva-payments">IVA payments</a>
+          <a href="#si-iva-hmrc">IVA & HMRC</a>
+          <a href="#provider-compare">Compare providers</a>
+        </div>
       </div>
     </div>
 
@@ -457,45 +439,20 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Nation-Specific Help</a>
     </div>
 
-    <!-- PROVIDER COMPARISON (intent-targeting section) -->
+    <!-- PROVIDER COMPARISON -->
     <div class="section" id="provider-compare">
       <h2>IVA Provider Comparison (At-a-Glance)</h2>
       <p>Different routes exist to set up an IVA. Here’s a simple, provider-neutral comparison to help you decide who to speak to first:</p>
       <div class="table-wrap" role="region" aria-label="Compare IVA providers">
         <table>
           <thead>
-            <tr>
-              <th>Route</th>
-              <th>Typical strengths</th>
-              <th>Things to consider</th>
-              <th>Good for</th>
-            </tr>
+            <tr><th>Route</th><th>Typical strengths</th><th>Things to consider</th><th>Good for</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Free charities (e.g., major national debt charities)</td>
-              <td>Impartial guidance, broad solution coverage</td>
-              <td>High demand can mean longer queues at busy times</td>
-              <td>Anyone wanting independent guidance before choosing</td>
-            </tr>
-            <tr>
-              <td>Large IVA firms</td>
-              <td>Established processes, creditor familiarity</td>
-              <td>High volume; service style may feel less personal</td>
-              <td>Straightforward cases with predictable income</td>
-            </tr>
-            <tr>
-              <td>Specialist/smaller IP practices</td>
-              <td>More tailored case handling, flexible thinking</td>
-              <td>Availability varies by region/capacity</td>
-              <td>Complex income or asset situations</td>
-            </tr>
-            <tr>
-              <td><strong>Fresh Start Debt Support (us)</strong></td>
-              <td><strong>Free, confidential triage; we compare options, explain trade-offs, and connect you with a suitable IP</strong></td>
-              <td>We are not a regulator; we signpost to impartial sources alongside our help</td>
-              <td>People who want a clear, low-pressure walkthrough first</td>
-            </tr>
+            <tr><td>Free charities (e.g., major national debt charities)</td><td>Impartial guidance, broad solution coverage</td><td>High demand can mean longer queues at busy times</td><td>Anyone wanting independent guidance before choosing</td></tr>
+            <tr><td>Large IVA firms</td><td>Established processes, creditor familiarity</td><td>High volume; service style may feel less personal</td><td>Straightforward cases with predictable income</td></tr>
+            <tr><td>Specialist/smaller IP practices</td><td>More tailored case handling, flexible thinking</td><td>Availability varies by region/capacity</td><td>Complex income or asset situations</td></tr>
+            <tr><td><strong>Fresh Start Debt Support (us)</strong></td><td><strong>Free, confidential triage; we compare options, explain trade-offs, and connect you with a suitable IP</strong></td><td>We are not a regulator; we signpost to impartial sources alongside our help</td><td>People who want a clear, low-pressure walkthrough first</td></tr>
           </tbody>
         </table>
       </div>
@@ -567,7 +524,7 @@
       <a href="testimonials.html" class="menu-cta">Read More Testimonials</a>
     </div>
 
-    <!-- FAQs (on-page accordions for UX; content also in JSON-LD above) -->
+    <!-- FAQs -->
     <div class="section" id="iva-faqs">
       <h2>IVA — Frequently Asked Questions</h2>
 
@@ -606,7 +563,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta" aria-label="Start your IVA check">Start My Free IVA Assessment</a>
     </div>
 
-    <!-- Social proof / Trustpilot -->
+    <!-- Trustpilot widget spot -->
     <div class="section" aria-label="Reviews">
       <div class="trustpilot-widget"
            data-locale="en-GB"
@@ -634,7 +591,7 @@
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Scripts -->
+  <!-- Menu Toggle Script (identical behaviour to ref page) -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
@@ -644,9 +601,11 @@
       var isOpen = menu.style.display === "flex";
       if (isOpen) {
         menu.style.display = "none";
+        btn.classList.remove("is-open");
         btn.setAttribute("aria-expanded", "false");
       } else {
         menu.style.display = "flex";
+        btn.classList.add("is-open");
         btn.setAttribute("aria-expanded", "true");
         var firstLink = menu.querySelector("a");
         if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
@@ -662,6 +621,7 @@
           !menu.contains(e.target) &&
           !btn.contains(e.target)) {
         menu.style.display = "none";
+        btn.classList.remove("is-open");
         btn.setAttribute("aria-expanded","false");
       }
     });
@@ -673,8 +633,22 @@
         var btn  = document.getElementById("menuButton");
         if (menu && btn && menu.style.display === "flex") {
           menu.style.display = "none";
+          btn.classList.remove("is-open");
           btn.setAttribute("aria-expanded","false");
           btn.focus();
+        }
+      }
+    });
+
+    // Close menu after clicking a link
+    document.getElementById("menuContent")?.addEventListener("click", function(e){
+      if (e.target.closest("a")) {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn) {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
         }
       }
     });
