@@ -29,11 +29,70 @@
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Site stylesheet -->
+  <!-- Your global styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS (mirror of the page you like) -->
+  <!-- Inline critical CSS (hero + sections + NEW mega menu) -->
   <style>
+    /* ===== Base utilities ===== */
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .section{padding:28px 0;border-bottom:1px solid #eef5ef}
+    .menu-cta{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:999px;background:#f0fff4;border:1px solid #cdebd6;color:#215a29;text-decoration:none;font-weight:700}
+    .menu-cta:hover{background:#e7f8ec}
+
+    /* Accessibility helper */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:fixed;left:10px;top:10px;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* ===== Header / top bar ===== */
+    .banner{position:sticky;top:0;z-index:1000;background:transparent}
+    .top-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+    .brand .logo{height:44px;width:auto;display:block}
+    .hamburger{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid #cdebd6;background:#f0fff4;cursor:pointer}
+    .hamburger span{display:block;width:18px;height:2px;background:#215a29;margin:2px 0;border-radius:2px}
+
+    /* ===== MEGA MENU (matches your “good” page) ===== */
+    .menu-overlay{position:fixed;inset:0;display:none;z-index:1100}
+    .menu-overlay.is-open{display:block}
+    .menu-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.25)}
+    .menu-content{
+      position:relative; /* sits over backdrop */
+      margin:70px auto 0;
+      max-width:1200px;
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;border-radius:12px;padding:18px 18px 22px;box-shadow:0 20px 60px rgba(0,0,0,.25)
+    }
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(180px,1fr));
+      gap:18px;
+      padding:6px 6px 10px;
+    }
+    .menu-section h4{margin:.2rem 0 .6rem;font-size:14px;letter-spacing:.4px;opacity:.95;border-top:1px solid rgba(255,255,255,.35);padding-top:8px}
+    .menu-section a{
+      display:block;padding:6px 8px;margin:2px 0;border-radius:8px;
+      color:#fff;text-decoration:none;font-weight:700
+    }
+    .menu-section a:hover{background:rgba(255,255,255,.12)}
+    .menu-cta-wide{
+      display:inline-block;background:#fff;color:#2f6f36;border-radius:999px;
+      font-weight:800;padding:10px 14px;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,.2)
+    }
+    .menu-close{
+      position:absolute;right:14px;top:12px;width:34px;height:34px;border-radius:999px;
+      background:#ffffff;color:#2f6f36;border:0;font-size:20px;line-height:34px;cursor:pointer;
+      font-weight:900;box-shadow:0 6px 18px rgba(0,0,0,.25)
+    }
+    /* Mobile stacking for menu */
+    @media (max-width:900px){
+      .menu-grid{grid-template-columns:1fr 1fr}
+      .menu-content{margin:56px 8px 0}
+    }
+    @media (max-width:560px){
+      .menu-grid{grid-template-columns:1fr}
+    }
+
+    /* ===== HERO ===== */
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
       color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
@@ -51,40 +110,40 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
-    /* stat pills style to match */
     .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
     .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
 
-    /* meta strip */
+    /* Meta strip */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
 
-    /* accessibility helper */
-    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
-
-    /* utility bits (same look as ref page) */
+    /* Intent chips */
     .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
     .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
 
-    .container{max-width:1000px;margin:0 auto;padding:0 16px}
-    .section{padding:28px 0;border-bottom:1px solid #eef5ef}
-    .menu-cta{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:999px;background:#f0fff4;border:1px solid #cdebd6;color:#215a29;text-decoration:none;font-weight:700}
-    .menu-cta:hover{background:#e7f8ec}
-    .table-wrap{overflow:auto;border:1px solid #e6efe7;border-radius:12px}
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:12px;border-bottom:1px solid #e6efe7;text-align:left}
-    th{background:#f8fffb}
-
+    /* Details accordions */
     details{background:#f7fff9;border:1px solid #d3f0dd;border-radius:12px;padding:12px;margin:12px 0}
     details>summary{cursor:pointer;font-weight:700;color:#16301a}
     details[open]{background:#ffffff}
 
+    /* Provider comparison cards (replaces table) */
+    .provider-grid{
+      display:grid;gap:12px;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+    .provider-card{
+      border:1px solid #e6efe7;border-radius:12px;padding:14px;background:#fff;
+    }
+    .provider-card h3{margin:0 0 6px;font-size:16px}
+    .provider-meta{font-size:13px;color:#2b3d30;margin:8px 0 0}
+    @media (max-width:700px){ .provider-grid{grid-template-columns:1fr;} }
+
+    /* Footer + WhatsApp */
     footer{padding:24px 16px;background:#0f2014;color:#eaf5ec}
     footer a{color:#eaf5ec;text-decoration:underline}
     .whatsapp-button{
-      position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.15)
+      position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.15);z-index:1050
     }
   </style>
 
@@ -139,70 +198,119 @@
   <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner (same structure & behaviour as your preferred page) -->
+  <!-- Header / Top bar -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
         <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
 
-      <!-- Hamburger button (right) -->
-      <button id="menuButton"
-              class="hamburger"
-              aria-label="Open menu"
-              aria-controls="menuContent"
-              aria-expanded="false"
-              onclick="toggleMenu()">
+      <!-- Hamburger (opens mega menu) -->
+      <button id="menuButton" class="hamburger" aria-label="Open menu" aria-controls="menuOverlay" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
+  </div>
 
-    <!-- Centralised menu (identical layout) -->
-    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
-      <div class="menu-sections">
+  <!-- MEGA MENU OVERLAY (like your second screenshot) -->
+  <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+    <div class="menu-backdrop" role="presentation"></div>
+
+    <nav class="menu-content" role="menu" aria-label="Site">
+      <button class="menu-close" aria-label="Close menu" id="menuClose">×</button>
+
+      <div class="menu-grid">
         <div class="menu-section">
-          <h4>About Us</h4>
+          <h4>ABOUT US</h4>
           <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a>
           <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
           <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
           <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
           <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+          <br>
+          <a href="https://form.jotform.com/250596569907070" class="menu-cta-wide">Check If You Qualify</a>
         </div>
 
         <div class="menu-section">
-          <h4>Debt Solutions</h4>
+          <h4>CHOOSE A DEBT SOLUTION</h4>
           <a href="iva.html">About an IVA</a>
           <a href="dmp.html">About a DMP</a>
           <a href="dro.html">About a DRO</a>
-          <a href="compare-solutions.html">Compare Solutions</a>
+          <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
           <a href="debt-calculator.html">Debt Calculator</a>
         </div>
 
         <div class="menu-section">
-          <h4>Types of Debt</h4>
-          <a href="credit-card-debt.html">Credit Cards</a>
-          <a href="loan-debt.html">Loans</a>
-          <a href="catalogue-debt.html">Catalogues</a>
-          <a href="council-tax-debt.html">Council Tax</a>
-          <a href="utility-debt.html">Utilities</a>
+          <h4>TYPES OF DEBT</h4>
+          <a href="klarna.html">Klarna Debt</a>
+          <a href="credit-card-debt.html">Credit Card Debt</a>
+          <a href="loan-debt.html">Personal Loans</a>
+          <a href="catalogue-debt.html">Catalogue Debt</a>
+          <a href="council-tax-debt.html">Council Tax Debt</a>
+          <a href="utility-debt.html">Utility Bills</a>
+          <a href="payday-loan-debt.html">Payday Loans</a>
+          <a href="overdraft-debt.html">Bank Overdrafts</a>
+          <a href="store-card-debt.html">Store Cards</a>
+          <a href="mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="business-debt.html">Business Debt</a>
+          <a href="tax-debt.html">Tax & HMRC Debt</a>
+          <a href="rent-arrears.html">Rent Arrears</a>
+          <a href="gambling-debt.html">Gambling Debts</a>
         </div>
 
         <div class="menu-section">
-          <h4>Popular</h4>
+          <h4>LIST OF CREDITORS</h4>
+          <a href="barclays.html">Barclays</a>
+          <a href="hsbc.html">HSBC</a>
+          <a href="natwest.html">NatWest</a>
+          <a href="lloyds.html">Lloyds</a>
+          <a href="capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>DEBT COLLECTORS & BAILIFFS</h4>
+          <a href="debt-collection.html">What is debt collection?</a>
+          <a href="lowell.html">Lowell Financial</a>
+          <a href="cabot.html">Cabot Financial</a>
+          <a href="moriarty-law.html">Moriarty Law</a>
+          <a href="pra-group.html">PRA Group</a>
+          <a href="moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="advantis.html">Advantis Credit</a>
+          <a href="link-financial.html">Link Financial</a>
+          <a href="capquest.html">Capquest Debt Recovery</a>
+          <a href="wescot.html">Wescot Credit Services</a>
+          <a href="resolvecall.html">Resolvecall</a>
+          <a href="hoist-finance.html">Hoist Finance</a>
+          <a href="robinson-way.html">Robinson Way</a>
+          <a href="fredrickson.html">Fredrickson International</a>
+          <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="bristow-sutor.html">Bristow & Sutor</a>
+          <a href="rossendales.html">Rossendales</a>
+          <a href="equita.html">Equita</a>
+          <a href="cdcbailiffs.html">CDCBailiffs</a>
+          <a href="marston-holdings.html">Marston Holdings</a>
+          <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="newlyn.html">Newlyn</a>
+          <a href="swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>POPULAR SEARCHES</h4>
           <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="clear-debt-fast.html">Clear Debt Fast</a>
           <a href="iva-company.html">IVA Company</a>
           <a href="dmp-provider.html">DMP Provider</a>
           <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
           <a href="blog/">Blog</a>
         </div>
       </div>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
     </nav>
   </div>
-  <!-- /Header -->
+  <!-- /MEGA MENU -->
 
-  <!-- HERO (same visual as ref) -->
+  <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="Get IVA help">
     <div class="hero-inner">
       <div class="hero-copy">
@@ -439,23 +547,41 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Nation-Specific Help</a>
     </div>
 
-    <!-- PROVIDER COMPARISON -->
+    <!-- PROVIDER COMPARISON (DIV CARDS; mobile friendly) -->
     <div class="section" id="provider-compare">
       <h2>IVA Provider Comparison (At-a-Glance)</h2>
       <p>Different routes exist to set up an IVA. Here’s a simple, provider-neutral comparison to help you decide who to speak to first:</p>
-      <div class="table-wrap" role="region" aria-label="Compare IVA providers">
-        <table>
-          <thead>
-            <tr><th>Route</th><th>Typical strengths</th><th>Things to consider</th><th>Good for</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Free charities (e.g., major national debt charities)</td><td>Impartial guidance, broad solution coverage</td><td>High demand can mean longer queues at busy times</td><td>Anyone wanting independent guidance before choosing</td></tr>
-            <tr><td>Large IVA firms</td><td>Established processes, creditor familiarity</td><td>High volume; service style may feel less personal</td><td>Straightforward cases with predictable income</td></tr>
-            <tr><td>Specialist/smaller IP practices</td><td>More tailored case handling, flexible thinking</td><td>Availability varies by region/capacity</td><td>Complex income or asset situations</td></tr>
-            <tr><td><strong>Fresh Start Debt Support (us)</strong></td><td><strong>Free, confidential triage; we compare options, explain trade-offs, and connect you with a suitable IP</strong></td><td>We are not a regulator; we signpost to impartial sources alongside our help</td><td>People who want a clear, low-pressure walkthrough first</td></tr>
-          </tbody>
-        </table>
+
+      <div class="provider-grid" role="list">
+        <div class="provider-card" role="listitem">
+          <h3>Free charities (major national debt charities)</h3>
+          <p><strong>Strengths:</strong> Impartial guidance, broad solution coverage.</p>
+          <p><strong>Consider:</strong> High demand can mean longer queues at busy times.</p>
+          <p class="provider-meta"><em>Good for:</em> Anyone wanting independent guidance before choosing.</p>
+        </div>
+
+        <div class="provider-card" role="listitem">
+          <h3>Large IVA firms</h3>
+          <p><strong>Strengths:</strong> Established processes, creditor familiarity.</p>
+          <p><strong>Consider:</strong> High volume; service style may feel less personal.</p>
+          <p class="provider-meta"><em>Good for:</em> Straightforward cases with predictable income.</p>
+        </div>
+
+        <div class="provider-card" role="listitem">
+          <h3>Specialist / smaller IP practices</h3>
+          <p><strong>Strengths:</strong> More tailored case handling, flexible thinking.</p>
+          <p><strong>Consider:</strong> Availability varies by region/capacity.</p>
+          <p class="provider-meta"><em>Good for:</em> Complex income or asset situations.</p>
+        </div>
+
+        <div class="provider-card" role="listitem">
+          <h3>Fresh Start Debt Support (us)</h3>
+          <p><strong>Strengths:</strong> Free, confidential triage; we compare options, explain trade-offs, and connect you with a suitable IP.</p>
+          <p><strong>Consider:</strong> We are not a regulator; we signpost to impartial sources alongside our help.</p>
+          <p class="provider-meta"><em>Good for:</em> People who want a clear, low-pressure walkthrough first.</p>
+        </div>
       </div>
+
       <p class="mini-note">We link out to GOV.UK, MoneyHelper and charities so you can cross-check information before deciding.</p>
       <a href="iva-company.html" class="menu-cta">How to Choose an IVA Company</a>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Talk to a Specialist (Free)</a>
@@ -591,67 +717,28 @@
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Menu Toggle Script (identical behaviour to ref page) -->
+  <!-- Scripts -->
   <script>
-    function toggleMenu() {
-      var menu = document.getElementById("menuContent");
-      var btn  = document.getElementById("menuButton");
-      if (!menu || !btn) return;
+    // Mega menu open/close
+    const btn = document.getElementById('menuButton');
+    const overlay = document.getElementById('menuOverlay');
+    const closeBtn = document.getElementById('menuClose');
 
-      var isOpen = menu.style.display === "flex";
-      if (isOpen) {
-        menu.style.display = "none";
-        btn.classList.remove("is-open");
-        btn.setAttribute("aria-expanded", "false");
-      } else {
-        menu.style.display = "flex";
-        btn.classList.add("is-open");
-        btn.setAttribute("aria-expanded", "true");
-        var firstLink = menu.querySelector("a");
-        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
-      }
+    function openMenu(){
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden','false');
+      btn.setAttribute('aria-expanded','true');
     }
-
-    // Close on outside click
-    document.addEventListener("click", function(e) {
-      var menu = document.getElementById("menuContent");
-      var btn  = document.getElementById("menuButton");
-      if (!menu || !btn) return;
-      if (menu.style.display === "flex" &&
-          !menu.contains(e.target) &&
-          !btn.contains(e.target)) {
-        menu.style.display = "none";
-        btn.classList.remove("is-open");
-        btn.setAttribute("aria-expanded","false");
-      }
-    });
-
-    // Close on Escape
-    document.addEventListener("keydown", function(e) {
-      if (e.key === "Escape") {
-        var menu = document.getElementById("menuContent");
-        var btn  = document.getElementById("menuButton");
-        if (menu && btn && menu.style.display === "flex") {
-          menu.style.display = "none";
-          btn.classList.remove("is-open");
-          btn.setAttribute("aria-expanded","false");
-          btn.focus();
-        }
-      }
-    });
-
-    // Close menu after clicking a link
-    document.getElementById("menuContent")?.addEventListener("click", function(e){
-      if (e.target.closest("a")) {
-        var menu = document.getElementById("menuContent");
-        var btn  = document.getElementById("menuButton");
-        if (menu && btn) {
-          menu.style.display = "none";
-          btn.classList.remove("is-open");
-          btn.setAttribute("aria-expanded","false");
-        }
-      }
-    });
+    function closeMenu(){
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden','true');
+      btn.setAttribute('aria-expanded','false');
+      btn.focus();
+    }
+    btn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('menu-backdrop')) closeMenu(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && overlay.classList.contains('is-open')) closeMenu(); });
 
     // Decision helper
     function suggestSolution() {
