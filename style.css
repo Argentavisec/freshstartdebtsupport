@@ -265,3 +265,135 @@ a:hover{ color:#45a045; border-bottom:2px solid #45a045; }
 a:active, a:focus{ color:#215a29; border-bottom:2px solid #215a29; outline:none; }
 a.cta-link{ font-weight:bold; color:#4CAF50; border-bottom:2px solid #4CAF50; }
 a.cta-link:hover{ color:#2f6f36; border-bottom-color:#2f6f36; }
+
+/* ===== Overlay Mega Menu (same look/feel as index, namespaced to avoid conflicts) ===== */
+.mega-overlay{position:fixed; inset:0; display:none; z-index:1200;}
+.mega-overlay.is-open{display:block;}
+.mega-backdrop{position:absolute; inset:0; background:rgba(0,0,0,.25);}
+
+.mega-menu{
+  position:relative;
+  margin:70px auto 0;
+  max-width:1200px;
+  background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+  color:#fff; border-radius:12px;
+  padding:18px 18px 22px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+.mega-close{
+  position:absolute; right:14px; top:12px; width:34px; height:34px;
+  border-radius:999px; background:#fff; color:#2f6f36; border:0;
+  font-size:20px; line-height:34px; cursor:pointer; font-weight:900;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+}
+.mega-grid{
+  display:grid; gap:18px; padding:6px 6px 10px;
+  grid-template-columns:repeat(5,minmax(180px,1fr));
+}
+.mega-section h4{
+  margin:.2rem 0 .6rem; font-size:14px; letter-spacing:.4px; opacity:.95;
+  border-top:1px solid rgba(255,255,255,.35); padding-top:8px;
+}
+.mega-section a{
+  display:block; padding:6px 8px; margin:2px 0; border-radius:8px;
+  color:#fff; text-decoration:none; font-weight:700;
+}
+.mega-section a:hover{ background:rgba(255,255,255,.12); }
+.mega-cta{
+  display:inline-block; background:#fff; color:#2f6f36; border-radius:999px;
+  font-weight:800; padding:10px 14px; text-decoration:none; box-shadow:0 6px 0 rgba(0,0,0,.2);
+}
+
+/* Keep your existing .hamburger styles; just ensure it’s white bars on green header */
+.hamburger span{ background:#fff; }
+@media (max-width:900px){ .mega-grid{grid-template-columns:1fr 1fr} .mega-menu{margin:56px 8px 0} }
+@media (max-width:560px){ .mega-grid{grid-template-columns:1fr} }
+
+/* ===== IVA overlay menu — make it match the sitewide mega-menu ===== */
+
+/* Overlay + backdrop */
+#menuOverlay{ position:fixed; inset:0; display:none; z-index:1200; }
+#menuOverlay.is-open{ display:block; }
+#menuOverlay .menu-backdrop{ position:absolute; inset:0; background:rgba(0,0,0,.25); }
+
+/* Menu container (centered card with gradient) */
+#menuOverlay .menu-content{
+  position:relative;
+  margin:70px auto 0;
+  max-width:1200px;
+  background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+  color:#fff;
+  border-radius:12px;
+  padding:18px 18px 22px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  overflow:visible;          /* avoid odd inner scrollbars */
+}
+
+/* Close button (white circular X in the top-right) */
+#menuOverlay .menu-close{
+  position:absolute; right:14px; top:12px;
+  width:34px; height:34px; line-height:34px;
+  border-radius:999px; border:0; cursor:pointer;
+  background:#ffffff; color:#2f6f36; font-weight:900; font-size:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+}
+
+/* Grid layout (works whether your wrapper is .menu-grid or .menu-sections) */
+#menuOverlay .menu-grid,
+#menuOverlay .menu-sections{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(180px,1fr));
+  gap:18px;
+  padding:6px 6px 10px;
+}
+
+/* Section headings */
+#menuOverlay .menu-section h4{
+  margin:.2rem 0 .6rem;
+  font-size:14px; letter-spacing:.4px; opacity:.95;
+  text-transform:uppercase; font-weight:800;
+  border-top:1px solid rgba(255,255,255,.35);
+  padding-top:8px;
+}
+
+/* Links inside the overlay */
+#menuOverlay .menu-section a{
+  display:block; padding:6px 8px; margin:2px 0;
+  border-radius:8px; text-decoration:none;
+  color:#fff; font-weight:700;
+  border-bottom:0 !important;         /* kill global link underline rule inside menu */
+}
+#menuOverlay .menu-section a:hover{
+  background:rgba(255,255,255,.12);
+  text-decoration:none;               /* keep it clean on hover */
+}
+
+/* CTA button in the menu */
+#menuOverlay .menu-cta,
+#menuOverlay .menu-cta-wide{
+  display:inline-block; background:#fff; color:#2f6f36 !important;
+  border-radius:999px; font-weight:800; padding:10px 14px;
+  text-decoration:none; box-shadow:0 6px 0 rgba(0,0,0,.2);
+}
+
+/* Make sure any default global link styles don’t bleed in here */
+#menuOverlay .menu-content a:focus{ outline:2px solid #fff; outline-offset:2px; }
+#menuOverlay .menu-content a:hover,
+#menuOverlay .menu-content a:active,
+#menuOverlay .menu-content a:focus{
+  border-bottom:0 !important;
+}
+
+/* Responsive columns to match your other pages */
+@media (max-width:900px){
+  #menuOverlay .menu-content{ margin:56px 8px 0; }
+  #menuOverlay .menu-grid,
+  #menuOverlay .menu-sections{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:560px){
+  #menuOverlay .menu-grid,
+  #menuOverlay .menu-sections{ grid-template-columns:1fr; }
+}
+
+/* Keep hamburger bars white on the green header (consistency) */
+.hamburger span{ background:#fff; }
