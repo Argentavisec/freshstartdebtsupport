@@ -29,68 +29,52 @@
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Your global styles -->
+  <!-- Site styles (matches index header/menu/hamburger) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS (keeps your hero/sections) -->
+  <!-- Inline critical CSS (same pattern as index) -->
   <style>
-    /* ===== Base utilities ===== */
+    /* Utilities used on content sections (kept lightweight) */
     .container{max-width:1000px;margin:0 auto;padding:0 16px}
     .section{padding:28px 0;border-bottom:1px solid #eef5ef}
     .menu-cta{display:inline-block;margin:8px 8px 0 0;padding:10px 14px;border-radius:999px;background:#f0fff4;border:1px solid #cdebd6;color:#215a29;text-decoration:none;font-weight:700}
     .menu-cta:hover{background:#e7f8ec}
+
+    /* Accessibility helper (same as index) */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{position:fixed;left:10px;top:10px;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
 
-    /* ===== Header / top bar (basic shell; colors come from style.css) ===== */
-    .banner{position:sticky;top:0;z-index:1100;background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);color:#fff}
-    .top-bar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;max-width:1100px;margin:0 auto}
-    .brand .logo{height:44px;width:auto;display:block}
-    .hamburger{appearance:none;background:transparent;border:0;width:44px;height:44px;border-radius:8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
-    .hamburger span{display:block;width:22px;height:2.5px;background:#fff;border-radius:3px;transition:transform .2s ease,opacity .2s ease}
-    .hamburger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
-    .hamburger.is-open span:nth-child(2){opacity:0}
-    .hamburger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    /* ===== HERO ===== */
-    .landing-hero{background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)}
+    /* HERO styling (identical gradient/typography as index) */
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
+    }
     .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
     .hero-copy{text-align:center}
     .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
     .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
-    .hero-cta{display:inline-block;border:0;border-radius:999px;padding:14px 22px;font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+
+    /* Trust stat pills (same look as index) */
     .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
     .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* Meta strip (last updated) */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
 
-    /* ===== NEW: Overlay Mega Menu (same as index look/feel) ===== */
-    .mega-overlay{position:fixed;inset:0;display:none;z-index:2000}
-    .mega-overlay.is-open{display:block}
-    .mega-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.25)}
-    .mega-menu{
-      position:relative;margin:64px auto;max-width:1200px;
-      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
-      color:#fff;border-radius:12px;padding:20px 20px 24px;
-      box-shadow:0 20px 60px rgba(0,0,0,.25);
-      max-height:calc(100vh - 96px);overflow:auto
-    }
-    .mega-close{
-      position:absolute;right:14px;top:12px;width:36px;height:36px;
-      border-radius:999px;background:#fff;color:#2f6f36;border:0;
-      font-size:24px;line-height:36px;cursor:pointer;font-weight:900;
-      box-shadow:0 6px 18px rgba(0,0,0,.25)
-    }
-    .mega-grid{display:grid;gap:18px;padding:6px 6px 10px;grid-template-columns:repeat(5,minmax(180px,1fr))}
-    .mega-section h4{margin:.2rem 0 .6rem;font-size:14px;letter-spacing:.4px;opacity:.95;border-top:1px solid rgba(255,255,255,.35);padding-top:8px}
-    .mega-section a{display:block;padding:6px 8px;margin:2px 0;border-radius:8px;color:#fff;text-decoration:none;font-weight:700}
-    .mega-section a:hover{background:rgba(255,255,255,.12)}
-    .mega-cta{display:inline-block;background:#fff;color:#2f6f36;border-radius:999px;font-weight:800;padding:10px 14px;text-decoration:none;box-shadow:0 6px 0 rgba(0,0,0,.2)}
-    @media (max-width:900px){.mega-grid{grid-template-columns:1fr 1fr}.mega-menu{margin:56px 8px}}
-    @media (max-width:560px){.mega-grid{grid-template-columns:1fr}}
+    /* Intent chips block (used under intro on this page) */
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
   </style>
 
   <!-- Google tag -->
@@ -144,118 +128,114 @@
   <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- ===== Header with overlay menu ===== -->
+  <!-- ===== Header (IDENTICAL to index: banner + hamburger + single menu-content) ===== -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
         <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
 
+      <!-- Hamburger (same as index) -->
       <button id="menuButton"
               class="hamburger"
               aria-label="Open menu"
-              aria-controls="siteMenu"
-              aria-expanded="false">
+              aria-controls="menuContent"
+              aria-expanded="false"
+              onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Full-screen overlay menu (hidden by default) -->
-    <div id="siteMenu" class="mega-overlay" aria-hidden="true">
-      <div class="mega-backdrop" role="presentation"></div>
-
-      <nav class="mega-menu" role="menu" aria-label="Site">
-        <button class="mega-close" aria-label="Close menu" id="menuClose">×</button>
-
-        <div class="mega-grid">
-          <div class="mega-section">
-            <h4>ABOUT US</h4>
-            <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a>
-            <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
-            <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
-            <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
-            <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
-            <br>
-            <a href="https://form.jotform.com/250596569907070" class="mega-cta">Check If You Qualify</a>
-          </div>
-
-          <div class="mega-section">
-            <h4>CHOOSE A DEBT SOLUTION</h4>
-            <a href="iva.html">About an IVA</a>
-            <a href="dmp.html">About a DMP</a>
-            <a href="dro.html">About a DRO</a>
-            <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-            <a href="debt-calculator.html">Debt Calculator</a>
-          </div>
-
-          <div class="mega-section">
-            <h4>TYPES OF DEBT</h4>
-            <a href="klarna.html">Klarna Debt</a>
-            <a href="credit-card-debt.html">Credit Card Debt</a>
-            <a href="loan-debt.html">Personal Loans</a>
-            <a href="catalogue-debt.html">Catalogue Debt</a>
-            <a href="council-tax-debt.html">Council Tax Debt</a>
-            <a href="utility-debt.html">Utility Bills</a>
-            <a href="payday-loan-debt.html">Payday Loans</a>
-            <a href="overdraft-debt.html">Bank Overdrafts</a>
-            <a href="store-card-debt.html">Store Cards</a>
-            <a href="mortgage-arrears.html">Mortgage Arrears</a>
-            <a href="business-debt.html">Business Debt</a>
-            <a href="tax-debt.html">Tax & HMRC Debt</a>
-            <a href="rent-arrears.html">Rent Arrears</a>
-            <a href="gambling-debt.html">Gambling Debts</a>
-          </div>
-
-          <div class="mega-section">
-            <h4>LIST OF CREDITORS</h4>
-            <a href="barclays.html">Barclays</a>
-            <a href="hsbc.html">HSBC</a>
-            <a href="natwest.html">NatWest</a>
-            <a href="lloyds.html">Lloyds</a>
-            <a href="capital-one.html">Capital One</a>
-          </div>
-
-          <div class="mega-section">
-            <h4>DEBT COLLECTORS & BAILIFFS</h4>
-            <a href="debt-collection.html">What is debt collection?</a>
-            <a href="lowell.html">Lowell Financial</a>
-            <a href="cabot.html">Cabot Financial</a>
-            <a href="moriarty-law.html">Moriarty Law</a>
-            <a href="pra-group.html">PRA Group</a>
-            <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-            <a href="advantis.html">Advantis Credit</a>
-            <a href="link-financial.html">Link Financial</a>
-            <a href="capquest.html">Capquest Debt Recovery</a>
-            <a href="wescot.html">Wescot Credit Services</a>
-            <a href="resolvecall.html">Resolvecall</a>
-            <a href="hoist-finance.html">Hoist Finance</a>
-            <a href="robinson-way.html">Robinson Way</a>
-            <a href="fredrickson.html">Fredrickson International</a>
-            <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-            <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-            <a href="bristow-sutor.html">Bristow & Sutor</a>
-            <a href="rossendales.html">Rossendales</a>
-            <a href="equita.html">Equita</a>
-            <a href="cdcbailiffs.html">CDCBailiffs</a>
-            <a href="marston-holdings.html">Marston Holdings</a>
-            <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-            <a href="newlyn.html">Newlyn</a>
-            <a href="swift-credit.html">Swift Credit Services</a>
-          </div>
-
-          <div class="mega-section">
-            <h4>POPULAR SEARCHES</h4>
-            <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-            <a href="clear-debt-fast.html">Clear Debt Fast</a>
-            <a href="iva-company.html">IVA Company</a>
-            <a href="dmp-provider.html">DMP Provider</a>
-            <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-            <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-            <a href="blog/">Blog</a>
-          </div>
+    <!-- Centralized menu content (copied from index) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
         </div>
-      </nav>
-    </div>
+
+        <div class="menu-section">
+          <h4>Choose a Debt Solution</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva.html">About an IVA</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">About a DMP</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dro.html">About a DRO</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Utility Bills</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax & HMRC Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>List of Creditors</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Debt Collectors & Bailiffs</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis Credit</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot Credit Services</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow & Sutor</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rossendales.html">Rossendales</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/equita.html">Equita</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html">CDCBailiffs</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/marston-holdings.html">Marston Holdings</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Popular Searches</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
+        </div>
+      </div>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
   </div>
   <!-- /Header -->
 
@@ -295,7 +275,7 @@
   <!-- Anchor for skip link -->
   <div id="main-start"></div>
 
-  <!-- ===== Main Content (unchanged) ===== -->
+  <!-- ===== Main Content (content preserved) ===== -->
   <div class="container">
 
     <!-- Intro + TOC + Jump links -->
@@ -667,46 +647,69 @@
   </a>
 
   <!-- Scripts -->
+  <!-- Menu Toggle Script (IDENTICAL to index) -->
   <script>
-    // Overlay menu controls
-    (function(){
-      const btn = document.getElementById('menuButton');
-      const overlay = document.getElementById('siteMenu');
-      const closeBtn = document.getElementById('menuClose') || document.getElementById('menuClose'); // safety
-      const backdrop = overlay ? overlay.querySelector('.mega-backdrop') : null;
+    function toggleMenu() {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
 
-      function openMenu(){
-        overlay.classList.add('is-open');
-        overlay.setAttribute('aria-hidden','false');
-        btn.classList.add('is-open');
-        btn.setAttribute('aria-expanded','true');
-        const firstLink = overlay.querySelector('a');
-        if(firstLink){ try{ firstLink.focus({preventScroll:true}); }catch(e){} }
+      var isOpen = menu.style.display === "flex";
+      if (isOpen) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.style.display = "flex";
+        btn.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        var firstLink = menu.querySelector("a");
+        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
       }
-      function closeMenu(){
-        overlay.classList.remove('is-open');
-        overlay.setAttribute('aria-hidden','true');
-        btn.classList.remove('is-open');
-        btn.setAttribute('aria-expanded','false');
-        btn.focus();
+    }
+
+    // Close on outside click
+    document.addEventListener("click", function(e) {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded","false");
       }
-      function toggle(){ overlay.classList.contains('is-open') ? closeMenu() : openMenu(); }
+    });
 
-      if(btn && overlay){
-        btn.addEventListener('click', toggle);
+    // Close on Escape
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn && menu.style.display === "flex") {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+          btn.focus();
+        }
       }
-      if(closeBtn){ closeBtn.addEventListener('click', closeMenu); }
-      if(backdrop){ backdrop.addEventListener('click', closeMenu); }
+    });
 
-      document.addEventListener('keydown', function(e){
-        if(e.key==='Escape' && overlay.classList.contains('is-open')) closeMenu();
-      });
-      overlay && overlay.addEventListener('click', function(e){
-        if(e.target.closest('a')) closeMenu();
-      });
-    })();
+    // Close menu after clicking a link
+    document.getElementById("menuContent")?.addEventListener("click", function(e){
+      if (e.target.closest("a")) {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn) {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+        }
+      }
+    });
 
-    // Decision helper
+    // Decision helper (kept from original IVA)
     function suggestSolution() {
       const debt = document.getElementById("debt-amount").value;
       const income = document.getElementById("income").value;
@@ -720,7 +723,7 @@
       document.getElementById("suggestion-result").innerText = result + " 👉 Try our free IVA check to confirm.";
     }
 
-    // Calculator
+    // Calculator (kept from original IVA)
     function calculateRepayment() {
       const debt = parseFloat(document.getElementById("total-debt").value);
       const monthly = parseFloat(document.getElementById("monthly-payment").value);
