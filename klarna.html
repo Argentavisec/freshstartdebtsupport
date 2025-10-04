@@ -2,43 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Klarna Debt Help | Stop Klarna Debt Collectors, Freeze Interest & Avoid CCJs</title>
   <meta name="description" content="Behind on Klarna? Freeze interest, stop collectors, avoid CCJs and roll Klarna into one affordable plan. Free, confidential UK help with DMPs, IVAs, DROs & Breathing Space." />
   <meta name="keywords" content="Klarna debt help, Klarna missed payments, Klarna debt collectors, Klarna CCJ, Klarna enforcement, freeze Klarna interest, Klarna breathing space, Klarna repayment plan, Klarna DMP, Klarna IVA, Klarna DRO, Klarna write off debt, Klarna court action" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="theme-color" content="#4CAF50" />
-  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/klarna.html" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- Snippet hints + rich results -->
-  <meta name="googlebot" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/klarna.html" />
+  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/klarna.html" />
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Fresh Start Debt Support" />
   <meta property="og:title" content="Klarna Debt Help – Freeze Interest & Stop CCJs" />
   <meta property="og:description" content="Missed a Klarna payment? Stop collectors, freeze interest and avoid court action. Free, confidential UK help." />
-  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/klarna.html" />
-  <meta property="og:site_name" content="Fresh Start Debt Support" />
-  <meta property="og:image" content="social-klarna.jpg" />
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/social-klarna.jpg" />
   <meta property="og:image:alt" content="Klarna debt help – stop collectors, freeze interest" />
-  <meta property="og:locale" content="en_GB" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Klarna Debt Help UK – Freeze Interest & Stop CCJs" />
   <meta name="twitter:description" content="Behind on Klarna? Freeze interest and stop CCJs with a plan that fits your budget." />
-  <meta name="twitter:image" content="social-klarna.jpg" />
-  <meta name="twitter:image:alt" content="Help with Klarna arrears in the UK" />
+  <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/social-klarna.jpg" />
 
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
+  <link rel="preconnect" href="https://form.jotform.com" crossorigin>
+
+  <!-- Site styles -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS (match calculator template + central CTAs) -->
+  <!-- Inline critical CSS (same as index hero + utilities) -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
       color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
     }
-    .hero-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
     .hero-copy{text-align:center}
-    .hero-title{margin:0 0 8px;font-size:clamp(30px,6vw,46px);line-height:1.1;color:#fff}
-    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,20px)}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
     .hero-cta{
       display:inline-block;border:0;border-radius:999px;padding:14px 22px;
       font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
@@ -49,15 +54,20 @@
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
 
-    /* Utilities used on this page */
-    .meta.small{opacity:.95;font-size:14px;margin-top:10px}
-    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
-    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-    .callout{background:#f6fff8;border:1px solid #d9f2e0;border-radius:10px;padding:12px;margin:12px 0}
-    .warning{background:#fff6f6;border-color:#f3c8c8}
-    .section{padding:12px 0}
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
 
-    /* Simple interactive tool */
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+
+    /* small tool styling */
     .tool{
       background:#f9f9f9;padding:16px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08);max-width:620px
     }
@@ -66,17 +76,13 @@
     .tool button{width:100%;border:0;border-radius:10px;padding:12px 16px;font-weight:800;background:#4CAF50;color:#fff;cursor:pointer}
     .tool button:hover{filter:brightness(1.05)}
     .tool .result{margin-top:10px;font-weight:700}
-
-    /* CENTER ALL CTAs (sections + hero) */
-    .menu-cta{display:block;margin:10px auto 0;width:max-content}
-    .hero-cta{margin-left:auto;margin-right:auto}
   </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-0PJ0YPPJST');
   </script>
@@ -84,7 +90,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Schema: Org + Breadcrumb + Service + Article + HowTo + FAQ (expanded) -->
+  <!-- Structured Data (Org + WebPage + HowTo + FAQ) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -97,28 +103,10 @@
         "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
       },
       {
-        "@type":"BreadcrumbList",
-        "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/index.html"},
-          {"@type":"ListItem","position":2,"name":"Klarna Debt Help","item":"https://www.freshstartdebtsupport.co.uk/klarna.html"}
-        ]
-      },
-      {
-        "@type":"Service",
-        "name":"BNPL & Klarna Debt Help (UK)",
-        "serviceType":"Debt guidance, Breathing Space access, DMP/IVA/DRO set-up",
-        "areaServed":{"@type":"Country","name":"United Kingdom"},
-        "provider":{"@type":"Organization","name":"Fresh Start Debt Support"},
-        "availableChannel":[{"@type":"ServiceChannel","serviceUrl":"https://form.jotform.com/250596569907070","serviceLocation":{"@type":"VirtualLocation"}}],
-        "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP","description":"Free, confidential assessment"}
-      },
-      {
-        "@type":"Article",
-        "headline":"Klarna Debt Help — Freeze Interest, Stop Collectors & Avoid CCJs",
-        "mainEntityOfPage":"https://www.freshstartdebtsupport.co.uk/klarna.html",
-        "author":{"@type":"Organization","name":"Fresh Start Debt Support"},
-        "publisher":{"@type":"Organization","name":"Fresh Start Debt Support","logo":{"@type":"ImageObject","url":"https://www.freshstartdebtsupport.co.uk/logo.jpg"}},
-        "image":"https://www.freshstartdebtsupport.co.uk/social-klarna.jpg"
+        "@type":"WebPage",
+        "url":"https://www.freshstartdebtsupport.co.uk/klarna.html",
+        "name":"Klarna Debt Help — Freeze Interest, Stop Collectors & Avoid CCJs",
+        "description":"Behind on Klarna? Freeze interest, stop collectors and avoid CCJs with one affordable plan. Free, confidential UK help with DMPs, IVAs, DROs & Breathing Space."
       },
       {
         "@type":"HowTo",
@@ -153,89 +141,153 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <div class="banner">
+  <!-- Accessibility -->
+  <a href="#main-start" class="skip-link">Skip to content</a>
+
+  <!-- Header / Banner (Sticky) -->
+  <div class="banner" role="banner">
     <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Debt Support Logo" class="logo">
-      <div class="site-name">Fresh Start Debt Support</div>
+      <div class="brand">
+        <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+      </div>
+
+      <!-- Hamburger button -->
+      <button id="menuButton"
+              class="hamburger"
+              aria-label="Open menu"
+              aria-controls="menuContent"
+              aria-expanded="false"
+              onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+
+    <!-- Centralised menu content (same as index) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/index.html">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Choose a Debt Solution</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva.html">About an IVA</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">About a DMP</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dro.html">About a DRO</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Utility Bills</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax & HMRC Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>List of Creditors</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Debt Collectors & Bailiffs</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis Credit</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot Credit Services</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow & Sutor</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rossendales.html">Rossendales</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/equita.html">Equita</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html">CDCBailiffs</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/marston-holdings.html">Marston Holdings</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Popular Searches</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
+        </div>
+      </div>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
   </div>
+  <!-- /Header -->
 
   <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="Klarna debt help">
     <div class="hero-inner">
       <div class="hero-copy">
         <h2 class="hero-title">Klarna Debt Help</h2>
-        <p class="hero-sub">Freeze interest, stop debt collectors and avoid CCJs with a plan that actually fits your budget.</p>
-        <a href="https://form.jotform.com/250596569907070" class="hero-cta">Get Klarna Debt Help Now</a>
+        <p class="hero-sub">
+          Freeze interest, stop debt collectors and avoid CCJs with a plan that actually fits your budget.
+        </p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free Klarna debt help assessment">✅ Get Klarna Debt Help Now</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
       </div>
     </div>
   </section>
+  <!-- /HERO -->
 
-  <!-- Menu Include -->
-  <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-placeholder").innerHTML = html;
-        const menu = document.getElementById("menuContent");
-        if (menu) menu.style.display = "none";
-      });
-    function toggleMenu(){
-      const menu = document.getElementById("menuContent");
-      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn  = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
-    });
-  </script>
+  <!-- Meta strip -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
+    <script>
+      (function(){
+        var el=document.getElementById('updated');
+        if(el){ el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"}); }
+      })();
+    </script>
+  </div>
 
-  <!-- Page Content -->
+  <!-- Anchor for skip link -->
+  <div id="main-start"></div>
+
+  <!-- Main Content Container -->
   <div class="container">
 
-    <!-- Freshness -->
-    <div class="meta small">
-      <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span></p>
-      <script>
-        const now = new Date();
-        document.getElementById("updated").innerText =
-          now.toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
-      </script>
-    </div>
-
-    <!-- Jump Links -->
-    <div class="section" id="toc">
-      <h2>Quick links</h2>
-      <div class="jump-links" aria-label="Popular Klarna help topics">
-        <a href="#intro">Overview</a>
-        <a href="#collections">Debt collectors</a>
-        <a href="#court">Court & CCJs</a>
-        <a href="#breathing-space">Breathing Space</a>
-        <a href="#iva">IVA</a>
-        <a href="#dmp">DMP</a>
-        <a href="#dro">DRO</a>
-        <a href="#bankruptcy">Bankruptcy</a>
-        <a href="#tool">Klarna plan checker</a>
-        <a href="#faq">FAQs</a>
-        <!-- NEW quick links -->
-        <a href="#missed-payment">Missed Klarna payment</a>
-        <a href="#sold-to-collectors">Klarna sold to collectors</a>
-        <a href="#bailiffs">Bailiffs for Klarna?</a>
-        <a href="#credit-file-klarna">Klarna & credit file</a>
-        <a href="#late-fees">Klarna late fees UK</a>
-        <a href="#template-letter">Template to stop calls</a>
-        <a href="#mortgage">Klarna & mortgage apps</a>
-        <a href="#disputes">Refunds & disputes</a>
-        <a href="#scotland">If you live in Scotland</a>
-      </div>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start Free Assessment</a>
-    </div>
-
-    <!-- Intro (EXISTING) -->
+    <!-- Intro -->
     <div class="section" id="intro">
       <h1>Klarna Debt Help – Freeze Interest, Stop Debt Collectors & Avoid CCJs</h1>
       <p>Klarna’s “buy now, pay later” can feel harmless—until payments stack up. If you’re missing instalments, getting texts or letters, or worried about court, we’ll help you pause the pressure, agree a <strong>realistic payment</strong>, and pick a route that protects you (often starting with <a href="breathing-space.html">Breathing Space</a>).</p>
@@ -243,26 +295,50 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Klarna Debt Help Now</a>
     </div>
 
-    <!-- Collectors (EXISTING) -->
+    <!-- Intent jump links -->
+    <div class="section intent-nav" aria-label="Popular Klarna searches">
+      <h2>Popular Klarna questions (quick links)</h2>
+      <div class="chips">
+        <a href="#collections">Klarna debt collectors</a>
+        <a href="#court">Klarna & CCJs</a>
+        <a href="#breathing-space">Breathing Space</a>
+        <a href="#dmp">DMP</a>
+        <a href="#iva">IVA</a>
+        <a href="#dro">DRO</a>
+        <a href="#bailiffs">Bailiffs for Klarna?</a>
+        <a href="#credit-file-klarna">Credit file</a>
+        <a href="#late-fees">Late fees</a>
+        <a href="#template-letter">Template letter</a>
+        <a href="#mortgage">Mortgage apps</a>
+        <a href="#disputes">Disputes & refunds</a>
+        <a href="#scotland">If you live in Scotland</a>
+        <a href="#tool">Plan checker</a>
+        <a href="#complaints">Complaints</a>
+        <a href="#wellbeing">Wellbeing</a>
+        <a href="#queries">Popular queries</a>
+        <a href="#faq">FAQs</a>
+      </div>
+    </div>
+
+    <!-- Collectors -->
     <div class="section" id="collections">
       <h2>Who do Klarna use for debt collection?</h2>
       <p>Missed payments can be passed to agencies such as Debt Recovery Plus (DRP), Intrum UK, Pastdue Credit Solutions, Controlaccount or Arvato Financial Solutions. Expect letters, emails and calls. If ignored, they may recommend legal action—but you still have strong options.</p>
       <h3>What to do when a collector writes to you</h3>
       <p>Keep doors closed to bailiffs (only after court). Reply in writing, not on-the-spot calls. Propose what you can <em>really</em> afford and ask about <a href="breathing-space.html">Breathing Space</a> to pause interest/most enforcement for 60 days while we set things up.</p>
-      <h4>Fast de-escalation steps</h4>
       <ol>
         <li>List income/essential bills to set a safe payment.</li>
         <li>Enter <a href="breathing-space.html">Breathing Space</a> (if eligible).</li>
         <li>Choose DMP/IVA/DRO for longer-term protection.</li>
       </ol>
-      <div class="callout"><strong>Search intent:</strong> “klarna debt collection uk”, “klarna sold to debt collectors”, “do bailiffs come for klarna”.</div>
+      <p><em>Search intent: “klarna debt collection uk”, “klarna sold to debt collectors”, “do bailiffs come for klarna”.</em></p>
       <a href="stop-debt-collectors.html" class="menu-cta">Stop Klarna Debt Collectors</a>
     </div>
 
-    <!-- Court (EXISTING) -->
+    <!-- Court -->
     <div class="section" id="court">
       <h2>Can Klarna take you to court?</h2>
-      <p>Yes—if arrears persist, a claim can be issued for a <strong>County Court Judgment (CCJ)</strong>. A CCJ can hurt your credit for six years and lead to enforcement (bailiffs, attachments). Acting early matters: formal solutions can halt claims and freeze interest.</p>
+      <p>Yes—if arrears persist, a claim can be issued for a <strong>County Court Judgment (CCJ)</strong>. A CCJ can hurt your credit for six years and lead to enforcement. Acting early matters: formal solutions can halt claims and freeze interest.</p>
       <h3>If you’ve had a “Letter of Claim”</h3>
       <p>Respond within the deadline and talk to us the same day. We’ll help you evidence an affordable budget and move into a route that protects you.</p>
       <h4>What if I already have a CCJ?</h4>
@@ -270,10 +346,10 @@
       <a href="iva.html" class="menu-cta">Avoid a Klarna CCJ with an IVA</a>
     </div>
 
-    <!-- Breathing Space (EXISTING) -->
+    <!-- Breathing Space -->
     <div class="section" id="breathing-space">
       <h2>Breathing Space: pause interest, charges & most enforcement</h2>
-      <p>The Debt Respite Scheme gives you up to <strong>60 days</strong> where most interest/fees and enforcement are paused. That space lets us verify your budget (via statements) and set up a DMP/IVA/DRO without constant pressure.</p>
+      <p>The Debt Respite Scheme gives you up to <strong>60 days</strong> where most interest/fees and enforcement are paused. That space lets us verify your budget and set up a DMP/IVA/DRO without constant pressure.</p>
       <h3>Who qualifies?</h3>
       <p>People in problem debt in England & Wales, via an approved adviser. There’s also a Mental Health Crisis route with longer protection.</p>
       <h4>What Breathing Space does not do</h4>
@@ -281,7 +357,16 @@
       <a href="breathing-space.html" class="menu-cta">Apply for Breathing Space</a>
     </div>
 
-    <!-- IVA (EXISTING) -->
+    <!-- DMP -->
+    <div class="section" id="dmp">
+      <h2>Include Klarna in a DMP (Debt Management Plan)</h2>
+      <p>A DMP is an <em>informal</em> plan with one affordable payment shared across creditors. Many lenders freeze or reduce interest/charges when shown a fair, evidence-based budget (not guaranteed).</p>
+      <h3>Direct Klarna plan vs DMP</h3>
+      <p><strong>Direct plan:</strong> only Klarna, quick to set up. <strong>DMP:</strong> covers Klarna <em>and</em> other debts in one payment, reducing admin and the risk of new arrears elsewhere.</p>
+      <a href="dmp.html" class="menu-cta">Set Up a Klarna DMP</a>
+    </div>
+
+    <!-- IVA -->
     <div class="section" id="iva">
       <h2>Include Klarna in an IVA (Individual Voluntary Arrangement)</h2>
       <p>An IVA is a legally binding plan (usually 5–6 years) with one affordable monthly payment. Interest/charges are frozen and, at completion, remaining eligible unsecured debt can be written off.</p>
@@ -296,20 +381,10 @@
       <a href="iva.html" class="menu-cta">Check IVA Eligibility</a>
     </div>
 
-    <!-- DMP (EXISTING) -->
-    <div class="section" id="dmp">
-      <h2>Include Klarna in a DMP (Debt Management Plan)</h2>
-      <p>A DMP is an <em>informal</em> plan with one affordable payment shared across creditors. Many lenders freeze or reduce interest/charges when shown a fair, evidence-based budget (not guaranteed).</p>
-      <h3>Direct Klarna plan vs DMP</h3>
-      <p><strong>Direct plan:</strong> only Klarna, quick to set up. <strong>DMP:</strong> covers Klarna <em>and</em> other debts in one payment, reducing admin and the risk of new arrears elsewhere.</p>
-      <a href="dmp.html" class="menu-cta">Set Up a Klarna DMP</a>
-    </div>
-
-    <!-- DRO (EXISTING) -->
+    <!-- DRO -->
     <div class="section" id="dro">
       <h2>Low income? Klarna may be covered by a DRO</h2>
       <p>A <a href="dro.html">Debt Relief Order</a> (strict eligibility) freezes debts for 12 months and then writes them off if your situation hasn’t improved. Suits low income/low assets up to the current DRO limits.</p>
-      <h3>Why people choose DRO</h3>
       <ul>
         <li>No ongoing repayments</li>
         <li>All eligible debts covered together (incl. Klarna)</li>
@@ -318,11 +393,10 @@
       <a href="dro.html" class="menu-cta">See If I Qualify for a DRO</a>
     </div>
 
-    <!-- Bankruptcy (EXISTING) -->
+    <!-- Bankruptcy -->
     <div class="section" id="bankruptcy">
       <h2>Bankruptcy and Klarna</h2>
       <p>As unsecured credit, Klarna is included in bankruptcy. It’s a serious step with restrictions but can be the cleanest reset when debts are unmanageable and income is limited.</p>
-      <h3>Key points</h3>
       <ul>
         <li>Debts usually discharged after 12 months</li>
         <li>Possible income payment agreements if surplus exists</li>
@@ -331,7 +405,66 @@
       <a href="bankruptcy.html" class="menu-cta">Explore Bankruptcy</a>
     </div>
 
-    <!-- Interactive Tool (EXISTING) -->
+    <!-- Bailiffs -->
+    <div class="section" id="bailiffs">
+      <h2>Bailiffs for Klarna — can they come to my home?</h2>
+      <p><strong>Not without a court order.</strong> Bailiffs only attend after a CCJ and enforcement. Early action (Breathing Space or a suitable plan) usually prevents this path entirely. Keep doors closed, communicate in writing, and get advice before you respond to any threats.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Bailiff Risk</a>
+    </div>
+
+    <!-- Credit file -->
+    <div class="section" id="credit-file-klarna">
+      <h2>Does Klarna show on your credit file — and for how long?</h2>
+      <p>It depends on the product and reporting. Missed payments and CCJs are the most damaging. A CCJ typically remains on your file for six years. If you’re already behind, moving into a credible plan can prevent escalation and show you’re addressing the debt.</p>
+      <ul>
+        <li>Prioritise essentials, then set one affordable payment across all debts</li>
+        <li>Use <a href="breathing-space.html">Breathing Space</a> to pause pressure while you organise</li>
+        <li>Choose a sustainable route (DMP/IVA/DRO)</li>
+      </ul>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect My Credit Position</a>
+    </div>
+
+    <!-- Late fees -->
+    <div class="section" id="late-fees">
+      <h2>Klarna late fees UK — will I be charged?</h2>
+      <p>Some BNPL products apply late fees; others don’t. More important is stopping escalation: enter a plan that matches your budget and ask for interest/charges to be paused where possible.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Freeze Fees & Interest</a>
+    </div>
+
+    <!-- Template letter -->
+    <div class="section" id="template-letter">
+      <h2>Template to stop Klarna calls & keep things in writing</h2>
+      <p>
+        <strong>Subject:</strong> Account Reference [xxxx] — Please communicate in writing only<br/>
+        Hello,<br/>
+        I’m seeking debt help and assessing an affordable budget. Please pause phone calls and contact me <em>in writing only</em>. I will confirm a repayment plan shortly, and I’m considering Breathing Space. Thank you.<br/>
+        Your name<br/>Your address<br/>Your reference(s)
+      </p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Have You Send This For Me</a>
+    </div>
+
+    <!-- Mortgage -->
+    <div class="section" id="mortgage">
+      <h2>Klarna arrears & mortgage applications — what to expect</h2>
+      <p>Recent late payments and CCJs can affect mortgage decisions. If you’re applying soon, act now: stabilise with Breathing Space if eligible, then move into a structured plan so your file begins to reflect control, not chaos.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stabilise Before a Mortgage Application</a>
+    </div>
+
+    <!-- Disputes & refunds -->
+    <div class="section" id="disputes">
+      <h2>Disputes & refunds — item not received or wrong amount?</h2>
+      <p>Raise disputes promptly with the merchant and Klarna. Keep copies of orders, tracking and emails. A dispute is separate from affordability — you can both challenge a transaction <em>and</em> enter a debt plan for what you genuinely owe.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Help Me With a Dispute</a>
+    </div>
+
+    <!-- Scotland -->
+    <div class="section" id="scotland">
+      <h2>Live in Scotland? Your options differ</h2>
+      <p>Instead of Breathing Space/IVA/DMP only, you may have a temporary moratorium, a Trust Deed or the Debt Arrangement Scheme (DAS). Tell us your postcode and we’ll route you correctly.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’m in Scotland — Show My Options</a>
+    </div>
+
+    <!-- Interactive tool -->
     <div class="section" id="tool">
       <h2>Klarna plan checker (quick guide)</h2>
       <p>Enter your Klarna balance and rough spare each month. We’ll suggest a likely route to discuss.</p>
@@ -348,28 +481,28 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Send My Numbers Securely</a>
     </div>
 
-    <!-- Complaints (EXISTING) -->
+    <!-- Complaints (restored) -->
     <div class="section" id="complaints">
       <h2>Affordability complaint about Klarna</h2>
       <p>If repeat approvals were made when repayments were clearly unaffordable, you can complain to Klarna and—if rejected—escalate to the <a href="https://www.financial-ombudsman.org.uk" target="_blank" rel="noopener">Financial Ombudsman Service</a>. Growing BNPL regulation will strengthen checks and complaint routes.</p>
       <a href="complaints.html" class="menu-cta">How to File a Klarna Complaint</a>
     </div>
 
-    <!-- Mental Health (EXISTING) -->
+    <!-- Wellbeing (restored) -->
     <div class="section" id="wellbeing">
       <h2>Klarna debt & your wellbeing</h2>
       <p>Debt stress is heavy. We keep calls in writing, pause pressure with <a href="breathing-space.html">Breathing Space</a> where suitable, and set a plan you can actually maintain.</p>
       <a href="free-debt-help.html" class="menu-cta">Get Free, Confidential Support</a>
     </div>
 
-    <!-- Popular queries (EXISTING) -->
+    <!-- Popular queries (restored) -->
     <div class="section" id="queries">
       <h2>Popular Klarna debt help searches (answered here)</h2>
       <p>“klarna debt collectors”, “can klarna take you to court”, “klarna payment plan can’t afford”, “freeze interest on klarna”, “missed klarna payment what to do”, “klarna on credit file”.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personalised Advice</a>
     </div>
 
-    <!-- Testimonials (EXISTING) -->
+    <!-- Testimonials -->
     <div class="section" id="testimonials">
       <h2>What clients say</h2>
       <p><em>“I owed Klarna and two cards. They got me Breathing Space, set a single payment and the calls stopped.”</em> — A., London</p>
@@ -377,7 +510,7 @@
       <a href="testimonials.html" class="menu-cta">Read More Stories</a>
     </div>
 
-    <!-- FAQs (EXISTING) -->
+    <!-- FAQs -->
     <div class="section" id="faq">
       <h2>FAQs about Klarna debt</h2>
 
@@ -396,145 +529,51 @@
       <h3>Can I write off Klarna debt?</h3>
       <p>Potentially in an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a> if eligible; a DMP reduces payments without insolvency.</p>
       <a href="iva.html" class="menu-cta">Check IVA/DRO Eligibility</a>
-
-      <h3>Can I use Klarna during an IVA?</h3>
-      <p>Generally not without your IP’s permission (usually no new credit &gt;£500).</p>
-      <a href="iva.html" class="menu-cta">Understand IVA Rules</a>
-
-      <h3>How do I stop letters and calls fast?</h3>
-      <p>Set a defendable budget, ask about Breathing Space, move into a formal or informal plan.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Plan</a>
     </div>
 
-    <!-- ======================
-         NEW: EASY-WIN CLUSTERS
-         ====================== -->
-
-    <!-- NEW: Missed Klarna payment -->
-    <div class="section" id="missed-payment">
-      <h2>Missed a Klarna payment — what happens & what to do (UK)</h2>
-      <h3>Short answer</h3>
-      <p>Expect reminders, possible late fees (product-dependent), and escalation if unpaid. Act early: set a realistic payment and consider <a href="breathing-space.html">Breathing Space</a> to pause interest/most enforcement while you pick a plan.</p>
-      <h4>Step-by-step if you’ve just missed a payment</h4>
-      <ol>
-        <li>List essentials first (rent/mortgage, council tax, utilities, food, travel).</li>
-        <li>Work out what you can <em>safely</em> pay monthly across all debts.</li>
-        <li>Tell Klarna in writing and propose that amount.</li>
-        <li>Ask us about DMP/IVA/DRO depending on your full picture.</li>
-      </ol>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Missed a Payment — Get Help Now</a>
+    <!-- Trustpilot -->
+    <div class="section" aria-label="Reviews">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+      </div>
     </div>
 
-    <!-- NEW: Sold to collectors -->
-    <div class="section" id="sold-to-collectors">
-      <h2>Klarna sold to debt collectors — what happens next?</h2>
-      <p>If Klarna pass your balance to a collection agency (e.g., Intrum, Pastdue, DRP, Controlaccount, Arvato), you’ll get letters, emails and calls. Keep communication in writing and don’t agree to amounts you can’t afford. We’ll help you present a fair budget and reduce pressure fast.</p>
-      <h3>Good next moves</h3>
-      <ul>
-        <li>Enter <a href="breathing-space.html">Breathing Space</a> (if eligible) to pause most enforcement</li>
-        <li>Start a <a href="dmp.html">DMP</a> or check <a href="iva.html">IVA</a>/<a href="dro.html">DRO</a> eligibility</li>
-        <li>Log creditor/agency references so we can contact them in writing</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’ve Been Passed to Collectors — Help</a>
-    </div>
-
-    <!-- NEW: Bailiffs -->
-    <div class="section" id="bailiffs">
-      <h2>Bailiffs for Klarna — can they come to my home?</h2>
-      <p><strong>Not without a court order.</strong> Bailiffs only attend after a CCJ and enforcement. Early action (Breathing Space or a suitable plan) usually prevents this path entirely. Keep doors closed, communicate in writing, and get advice before you respond to any threats.</p>
-      <h3>Protect yourself</h3>
-      <p>Don’t panic, don’t let strangers in, and don’t pay on the doorstep. Ask us to speak to creditors for you and stabilise the situation first.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Bailiff Risk</a>
-    </div>
-
-    <!-- NEW: Credit file -->
-    <div class="section" id="credit-file-klarna">
-      <h2>Does Klarna show on your credit file — and for how long?</h2>
-      <p>It depends on the product and reporting. Missed payments and CCJs are the most damaging. A CCJ typically remains on your file for six years. If you’re already behind, moving into a credible plan can prevent escalation and show you’re addressing the debt.</p>
-      <h3>How to limit damage</h3>
-      <ul>
-        <li>Prioritise essentials, then set one affordable payment across all debts</li>
-        <li>Use <a href="breathing-space.html">Breathing Space</a> to pause pressure while you organise</li>
-        <li>Choose a sustainable route (DMP/IVA/DRO)</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect My Credit Position</a>
-    </div>
-
-    <!-- NEW: Late fees -->
-    <div class="section" id="late-fees">
-      <h2>Klarna late fees UK — will I be charged?</h2>
-      <p>Some BNPL products apply late fees; others don’t. More important is stopping escalation: enter a plan that matches your budget and ask for interest/charges to be paused where possible.</p>
-      <h3>If fees have added up</h3>
-      <p>Show your verified budget and request freezes/reversals as goodwill once you’re in a plan (not guaranteed, but more likely when your payment is fair and consistent).</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Freeze Fees & Interest</a>
-    </div>
-
-    <!-- NEW: Template letter -->
-    <div class="section" id="template-letter">
-      <h2>Template to stop Klarna calls & keep things in writing</h2>
-      <h3>Copy, edit and send</h3>
-      <p>
-        <strong>Subject:</strong> Account Reference [xxxx] — Please communicate in writing only<br/>
-        Hello,<br/>
-        I’m seeking debt help and assessing an affordable budget. Please pause phone calls and contact me <em>in writing only</em>. I will confirm a repayment plan shortly, and I’m considering Breathing Space. Thank you.<br/>
-        Your name<br/>Your address<br/>Your reference(s)
-      </p>
-      <p>We can send a stronger version and handle replies for you.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Have You Send This For Me</a>
-    </div>
-
-    <!-- NEW: Mortgage -->
-    <div class="section" id="mortgage">
-      <h2>Klarna arrears & mortgage applications — what to expect</h2>
-      <p>Recent late payments and CCJs can affect mortgage decisions. If you’re applying soon, act now: stabilise with Breathing Space if eligible, then move into a structured plan so your file begins to reflect control, not chaos.</p>
-      <h3>What lenders want to see</h3>
-      <ul>
-        <li>Affordable, consistent payments (not broken promises)</li>
-        <li>Evidence you’ve stopped new borrowing</li>
-        <li>Reduction in active collections activity</li>
-      </ul>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stabilise Before a Mortgage Application</a>
-    </div>
-
-    <!-- NEW: Disputes & refunds -->
-    <div class="section" id="disputes">
-      <h2>Disputes & refunds — item not received or wrong amount?</h2>
-      <p>Raise disputes promptly with the merchant and Klarna. Keep copies of orders, tracking and emails. A dispute is separate from affordability — you can both challenge a transaction <em>and</em> enter a debt plan for what you genuinely owe.</p>
-      <h3>Tip</h3>
-      <p>Don’t stop engaging while a dispute is open; tell us the dispute reference so we reflect it in your plan.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Help Me With a Dispute</a>
-    </div>
-
-    <!-- NEW: Scotland -->
-    <div class="section" id="scotland">
-      <h2>Live in Scotland? Your options differ</h2>
-      <p>Instead of Breathing Space/IVA/DMP only, you may have a temporary moratorium, a Trust Deed or the Debt Arrangement Scheme (DAS). Tell us your postcode and we’ll route you correctly.</p>
-      <h3>Why it matters</h3>
-      <p>Rules, terms and protections differ. We’ll match you to the right framework fast.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’m in Scotland — Show My Options</a>
-    </div>
-
-    <!-- Final CTA (EXISTING) -->
+    <!-- Final CTA -->
     <div class="section" id="final-cta">
       <h2>Start your fresh start today</h2>
       <p>Freeze interest, stop collection pressure and choose a route that fits your life—often beginning with Breathing Space.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta" aria-label="Start free Klarna debt help assessment now">Start Free Debt Check</a>
     </div>
+
   </div>
+  <!-- /container -->
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Fresh Start Debt Support. This site does not offer regulated financial advice. For formal advice, speak to an FCA-authorised debt adviser. We are not affiliated with Klarna.</p>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. We are not affiliated with Klarna. All guidance is offered free of charge.</p>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20Klarna%20and%20BNPL%20debt" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬 Chat on WhatsApp
+  </a>
 
   <!-- Interactive Tool Script -->
   <script>
     function suggestPlan(){
-      const k = Number(document.getElementById('klarnaBal').value||0);
-      const o = Number(document.getElementById('otherBNPL').value||0);
-      const s = Number(document.getElementById('spare').value||0);
+      const k = Number(document.getElementById('klarnaBal')?.value||0);
+      const o = Number(document.getElementById('otherBNPL')?.value||0);
+      const s = Number(document.getElementById('spare')?.value||0);
       const total = k + o;
       const out = document.getElementById('toolResult');
+      if(!out){ return; }
       if(total<=0 || s<=0){
         out.textContent = "Enter realistic amounts for balances and spare income.";
         return;
@@ -555,9 +594,68 @@
     }
   </script>
 
-  <!-- WhatsApp Floating Button -->
-  <a class="whatsapp-button" href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20Klarna%20and%20BNPL%20debt" target="_blank" rel="noopener">
-    💬 Message Us on WhatsApp
-  </a>
+  <!-- Menu Toggle Script (same as index) -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+
+      var isOpen = menu.style.display === "flex";
+      if (isOpen) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.style.display = "flex";
+        btn.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        var firstLink = menu.querySelector("a");
+        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
+      }
+    }
+
+    // Close on outside click
+    document.addEventListener("click", function(e) {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded","false");
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn && menu.style.display === "flex") {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+          btn.focus();
+        }
+      }
+    });
+
+    // Close menu after clicking a link
+    document.getElementById("menuContent")?.addEventListener("click", function(e){
+      if (e.target.closest("a")) {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn) {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
