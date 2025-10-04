@@ -7,6 +7,8 @@
   <meta name="description" content="Clear, step-by-step guidance on Debt Relief Orders (DROs) in England & Wales. Check eligibility, what debts are included, fees, effects on credit, and how to apply. Free, confidential assessment." />
   <meta name="keywords" content="Debt Relief Order, DRO 2025, DRO eligibility, DRO fee, write off debt, low income debt help, debt help UK, priority bills, stop debt collectors" />
   <meta name="robots" content="index,follow" />
+  <!-- Eye-catching tag for Google & users -->
+  <meta name="headline" content="2025 Update: DRO fee scrapped · higher limits (debts ≤ £50k, car ≤ £4k) · quick free check" />
 
   <!-- Canonical to prefer /dro.html -->
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/dro.html" />
@@ -65,6 +67,16 @@
     .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
     .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+
+    /* Breadcrumbs (left-aligned) */
+    .breadcrumbs{max-width:1000px;margin:8px auto 0;padding:0 16px;font-size:13px}
+    .breadcrumbs a{color:#215a29;text-decoration:underline}
+    .badge{display:inline-block;background:#fff;color:#225c2a;border-radius:999px;padding:6px 10px;font-weight:800;margin-top:8px}
+    /* Interactive tool (quick check) */
+    .checker{max-width:1000px;margin:12px auto 0;padding:12px 16px;background:#f7fff9;border:1px solid #cdebd6;border-radius:12px}
+    .checker label{display:block;margin:6px 0}
+    .checker button{margin-top:8px;border:0;border-radius:999px;padding:10px 16px;background:#2f6f36;color:#fff;font-weight:800}
+    .checker-output{margin-top:8px;font-weight:700}
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -79,7 +91,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Structured Data (Org + WebPage + HowTo + FAQ) -->
+  <!-- Structured Data (Org + WebPage + HowTo + FAQ + Breadcrumb + Speakable) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -95,7 +107,19 @@
         "@type":"WebPage",
         "url":"https://www.freshstartdebtsupport.co.uk/dro.html",
         "name":"Debt Relief Orders (DRO) — Eligibility, Fee & How to Apply",
-        "description":"Step-by-step UK guide to DROs in 2025: who qualifies, what debts are included, the fee, how it affects credit, and how to apply. Free, confidential assessment."
+        "description":"Step-by-step UK guide to DROs in 2025: who qualifies, what debts are included, the fee, how it affects credit, and how to apply. Free, confidential assessment.",
+        "speakable":{
+          "@type":"SpeakableSpecification",
+          "xpath": ["//h1","//section[contains(@aria-label,'Debt Relief Orders')]/div/div/div/p[1]"]
+        }
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/"},
+          {"@type":"ListItem","position":2,"name":"Debt Solutions","item":"https://www.freshstartdebtsupport.co.uk/compare-solutions.html"},
+          {"@type":"ListItem","position":3,"name":"Debt Relief Order (DRO)","item":"https://www.freshstartdebtsupport.co.uk/dro.html"}
+        ]
       },
       {
         "@type":"HowTo",
@@ -113,11 +137,11 @@
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"What is the current DRO debt limit?","acceptedAnswer":{"@type":"Answer","text":"DROs are designed for lower debt levels; we’ll confirm the current threshold during your free check."}},
-          {"@type":"Question","name":"How much is the DRO fee?","acceptedAnswer":{"@type":"Answer","text":"There is a modest fee payable when applying for a DRO. We’ll explain options for paying it."}},
-          {"@type":"Question","name":"Will a DRO stop bailiffs and court action?","acceptedAnswer":{"@type":"Answer","text":"A DRO pauses most enforcement and new interest/charges during the order."}},
-          {"@type":"Question","name":"How long does a DRO last?","acceptedAnswer":{"@type":"Answer","text":"Typically 12 months; if your situation hasn’t improved, qualifying debts are then written off."}},
-          {"@type":"Question","name":"Will a DRO affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is recorded and usually remains for six years from approval. We’ll discuss implications and rebuilding steps."}}
+          {"@type":"Question","name":"Is there still a £90 fee for a DRO?","acceptedAnswer":{"@type":"Answer","text":"No. The £90 fee was abolished on 6 April 2024. We’ll show you how this affects your application."}},
+          {"@type":"Question","name":"What are the current DRO limits in 2025?","acceptedAnswer":{"@type":"Answer","text":"As a guide in England & Wales: total debts up to £50,000, assets up to £2,000, a single vehicle up to £4,000, and under £75 surplus income per month. We’ll confirm the latest thresholds during your free check."}},
+          {"@type":"Question","name":"Will a DRO stop bailiffs and court action?","acceptedAnswer":{"@type":"Answer","text":"A DRO pauses most enforcement and new interest/charges on included debts during the order."}},
+          {"@type":"Question","name":"How long does a DRO last?","acceptedAnswer":{"@type":"Answer","text":"Typically 12 months. If your situation hasn’t improved, qualifying debts are written off at the end of the period."}},
+          {"@type":"Question","name":"Will a DRO affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"Yes. It’s recorded and usually remains for six years from approval. We’ll discuss implications and rebuilding steps."}}
         ]
       }
     ]
@@ -146,6 +170,11 @@
         <span></span><span></span><span></span>
       </button>
     </div>
+
+    <!-- Breadcrumbs (left) -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> › <a href="/compare-solutions.html">Debt Solutions</a> › <span aria-current="page">Debt Relief Order (DRO)</span>
+    </nav>
 
     <!-- Centralised menu (same as index) -->
     <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
@@ -222,17 +251,6 @@
           <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
           <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
         </div>
-
-        <div class="menu-section">
-          <h4>Popular Searches</h4>
-          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
-          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
-        </div>
       </div>
 
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
@@ -249,6 +267,7 @@
           Low income or few assets? A <strong>DRO</strong> can pause most enforcement and — if your situation
           doesn’t improve — <strong>write off qualifying debts after 12 months</strong>. Free, confidential eligibility check.
         </p>
+        <span class="badge" aria-label="Latest updates">2025 update: £90 fee scrapped · higher limits</span><br/>
         <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free DRO eligibility check">✅ Check My DRO Eligibility</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
         <div class="statbar">
@@ -283,6 +302,7 @@
       <h1>DROs in England & Wales: What They Are and Who They Help</h1>
       <p>A <strong>Debt Relief Order (DRO)</strong> is a formal UK solution for people with <em>low income</em>, <em>few assets</em>, and <em>lower levels of debt</em>. It pauses most action from creditors for 12 months and, if your situation doesn’t improve, qualifying debts are <strong>written off</strong> at the end of the period.</p>
       <p>This guide explains eligibility, fees, what debts are included, how a DRO affects your credit file, and how to apply with an authorised intermediary. If a DRO isn’t right for you, we’ll compare alternatives like a <a href="dmp.html">DMP</a> or <a href="iva.html">IVA</a>.</p>
+      <p><strong>2025 fast facts:</strong> the £90 fee has been removed (from 6 April 2024), and current guidance sets typical thresholds around debts ≤ £50,000, assets ≤ £2,000, one vehicle ≤ £4,000, and surplus income &lt; £75/month (we confirm your exact position in a free check).</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free DRO Check</a>
       <p>Prefer to compare first? See <a href="compare-solutions.html">Compare Solutions</a> or read about <a href="breathing-space.html">Breathing Space</a>.</p>
     </div>
@@ -297,7 +317,32 @@
         <li>✅ One low fee to apply</li>
         <li>⚠️ Priority bills (e.g., <a href="council-tax-debt.html">council tax</a>, <a href="utility-debt.html">utilities</a>) still need attention</li>
       </ul>
-      <a href="#eligibility" class="menu-cta">See If You Qualify</a>
+
+      <!-- Interactive: quick eligibility checker (no tables) -->
+      <div class="checker" aria-label="DRO quick check">
+        <h3>Quick self-check (60 seconds)</h3>
+        <label><input type="checkbox" id="q1" /> My total unsecured debts are around or under £50,000</label>
+        <label><input type="checkbox" id="q2" /> I have £75 or less left each month after essentials</label>
+        <label><input type="checkbox" id="q3" /> My assets are worth £2,000 or less (car up to ~£4,000)</label>
+        <button type="button" onclick="droCheck()">Run check</button>
+        <div id="checkerOut" class="checker-output" role="status" aria-live="polite"></div>
+      </div>
+      <script>
+        function droCheck(){
+          var score = (document.getElementById('q1').checked?1:0)
+                    + (document.getElementById('q2').checked?1:0)
+                    + (document.getElementById('q3').checked?1:0);
+          var out = document.getElementById('checkerOut');
+          if(score===3){
+            out.textContent = "You may match common DRO rules. Get a free eligibility check to confirm.";
+          } else if(score===2){
+            out.textContent = "You might be close. A quick review can confirm your options (DRO, DMP or IVA).";
+          } else {
+            out.textContent = "A DRO may not fit, but alternatives like a DMP or IVA could help. Let's check your numbers.";
+          }
+        }
+      </script>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Begin Eligibility Check</a>
     </div>
 
@@ -313,7 +358,7 @@
       </ul>
       <p>If you don’t fit these rules, you might be better with a <a href="dmp.html">DMP</a> or <a href="iva.html">IVA</a>. We’ll explain both routes clearly.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My DRO Eligibility Now</a>
-      <a href="dmp.html" class="menu-cta">Explore DMPs</a>
+      <p class="small">Helpful reads: <a href="council-tax-debt.html">Council Tax Debt</a> · <a href="utility-debt.html">Utility Bills</a> · <a href="klarna.html">Klarna/BNPL</a></p>
     </div>
 
     <!-- Section 4 -->
@@ -338,8 +383,8 @@
         <li><strong>IVA:</strong> Formal, 1 affordable payment; write-off at completion (typically 5–6 years)</li>
         <li><strong>Bankruptcy:</strong> Fast discharge but heavier implications</li>
       </ul>
+      <p>Explore your choices then decide: <a href="compare-solutions.html">Compare Solutions</a>, <a href="iva.html">IVA</a>, <a href="dmp.html">DMP</a>.</p>
       <a href="compare-solutions.html" class="menu-cta">Compare All Solutions</a>
-      <a href="iva.html" class="menu-cta">Learn About IVAs</a>
     </div>
 
     <!-- Section 6 -->
@@ -352,6 +397,7 @@
         <li><strong>Submit:</strong> Pay the fee and submit the application</li>
         <li><strong>12 months:</strong> Most action is paused; if unchanged, debts are written off</li>
       </ol>
+      <p>Tip: If you’re under urgent pressure now, ask about <a href="breathing-space.html">Breathing Space</a> while we set things up.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Applying</a>
     </div>
 
@@ -367,13 +413,13 @@
       </ul>
       <p>Usually excluded: secured debts (mortgage, HP on car), court fines, student loans. We’ll check each account for you.</p>
       <a href="credit-card-debt.html" class="menu-cta">Credit Card Debt Help</a>
-      <a href="utility-debt.html" class="menu-cta">Utility Debt Support</a>
     </div>
 
     <!-- Section 8 -->
     <div class="section">
       <h2>How a DRO Affects Your Credit File</h2>
       <p>A DRO is normally recorded for <strong>six years</strong> from approval. It signals difficulty, but it also shows you took steps to resolve things. We’ll discuss rebuilding steps while protecting essentials.</p>
+      <p>Next steps: after stabilising with a DRO or alternative, plan a modest rebuild strategy (on-time priority bills, low utilisation) and use our <a href="debt-calculator.html">Debt Calculator</a> to sense-check affordability.</p>
       <a href="credit-score-help.html" class="menu-cta">Rebuild After a DRO</a>
     </div>
 
@@ -391,7 +437,7 @@
       <p>DROs apply to England & Wales. Scotland has Trust Deeds; Northern Ireland has separate procedures.</p>
 
       <h3>How much is the fee?</h3>
-      <p>There is a modest fee when applying for a DRO. We’ll explain how to pay it and any help available.</p>
+      <p>The historic £90 fee was removed in April 2024. We’ll explain what you need now to submit an application.</p>
 
       <h3>Will creditors still contact me?</h3>
       <p>During a DRO, most enforcement and new interest/charges are paused for included debts.</p>
@@ -408,6 +454,7 @@
         <li>✔ Help arranging an authorised intermediary</li>
         <li>✔ Alternatives explained if a DRO isn’t right</li>
       </ul>
+      <p>We also publish practical guides on <a href="stop-debt-collectors.html">stopping debt collectors</a>, <a href="business-debt.html">business debt</a>, and more.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My DRO Application</a>
     </div>
 
@@ -431,16 +478,52 @@
       <p>Still exploring? Try the <a href="debt-calculator.html">Debt Calculator</a> or <a href="compare-solutions.html">Compare Solutions</a>.</p>
     </div>
 
+    <!-- CLUSTER: common long-tail queries to capture easy wins -->
+    <div class="section" id="dro-fee">
+      <h2>DRO Fee in 2025 — Has It Been Scrapped?</h2>
+      <p>Yes — the historic £90 fee was abolished on <strong>6 April 2024</strong>. If you saw older advice mentioning a fee, that’s out of date. We’ll confirm exactly what you need now and help you submit fast.</p>
+      <p>If cost has stopped you before, this change removes a key barrier. Use <a href="breathing-space.html">Breathing Space</a> if you need a 60-day pause while we finalise your application.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start Free DRO Check</a>
+    </div>
+
+    <div class="section" id="dro-car-value">
+      <h2>Can I Keep My Car in a DRO?</h2>
+      <p>Typically you can keep a single vehicle worth up to about <strong>£4,000</strong> (or adapted for disability), as part of the asset limits. We’ll check market value and how it fits with your other assets (usually capped around £2,000).</p>
+      <p>If your car is above the cap, we’ll discuss alternatives (e.g., <a href="dmp.html">DMP</a> or <a href="iva.html">IVA</a>) so you can protect essentials like work and family transport.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If Your Car Qualifies</a>
+    </div>
+
+    <div class="section" id="dro-benefits">
+      <h2>Can I Get a DRO If I’m on Benefits or Low Income?</h2>
+      <p>Yes — DROs are designed for low income situations (including benefits). The key is your <em>surplus income</em> after essentials — generally under <strong>£75/month</strong>. We’ll build a realistic budget that protects rent, energy and <a href="council-tax-debt.html">council tax</a> before looking at debts.</p>
+      <p>If you’re not a match, a short-term £1 token plan or <a href="breathing-space.html">Breathing Space</a> can stabilise things while we line up the best long-term route.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify on Benefits</a>
+    </div>
+
+    <div class="section" id="dro-second">
+      <h2>Can I Get a Second DRO After 6 Years?</h2>
+      <p>Usually you can’t have another DRO within six years of your last one. After that period, it may be possible if you meet the rules again. If not, explore <a href="dmp.html">DMP</a> or <a href="iva.html">IVA</a> for protection and a single affordable payment.</p>
+      <p>Tell us your dates and we’ll confirm what’s realistic — no judgement, just clear options.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About a Second DRO</a>
+    </div>
+
+    <div class="section" id="dro-council-tax">
+      <h2>Does a DRO Cover Council Tax Arrears?</h2>
+      <p>Yes — council tax arrears are generally included. That said, current year council tax and other priority bills still need paying where possible. If bailiffs are contacting you, read <a href="council-tax-debt.html">Council Tax Debt</a> and <a href="stop-debt-collectors.html">Stop Debt Collectors</a> for calm steps that work.</p>
+      <p>If you qualify, a DRO plus good communication can stop the spiral and protect your household essentials.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Include My Council Tax in a Plan</a>
+    </div>
+
     <!-- SEARCH-INTENT NAV (chips) -->
     <div class="section intent-nav" aria-label="Popular DRO questions">
       <h2>Popular DRO Questions (Quick Links)</h2>
       <div class="chips">
         <a href="#eligibility">DRO eligibility rules</a>
-        <a href="#faq">DRO fee & timeline</a>
-        <a href="#faq">Second DRO within 6 years?</a>
-        <a href="#faq">DRO and credit files</a>
-        <a href="#faq">Included vs excluded debts</a>
-        <a href="#faq">Scotland & Northern Ireland</a>
+        <a href="#dro-fee">Is the £90 fee scrapped?</a>
+        <a href="#dro-car-value">Car value limits</a>
+        <a href="#dro-benefits">DRO on benefits</a>
+        <a href="#dro-second">Second DRO after 6 years</a>
+        <a href="#dro-council-tax">Council tax in a DRO</a>
       </div>
     </div>
 
@@ -455,6 +538,7 @@
            data-theme="light">
         <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
       </div>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
     </div>
 
   </div>
