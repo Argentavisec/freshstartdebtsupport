@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Debt Calculator UK — Affordable Payments & Breathing Space | IVA/DMP/DRO Estimator</title>
-  <meta name="description" content="Work out what you can afford to pay each month, estimate IVA write-off at £70 a month, and see if Breathing Space can pause interest and most enforcement. Free, confidential assessment — UK IVA, DMP & DRO support." />
+  <title>Debt Calculator UK | Affordable Payments, IVA/DMP/DRO & Breathing Space</title>
+  <meta name="description" content="Work out a realistic monthly payment, estimate IVA write-off at £70/month, and see if Breathing Space can pause interest and most enforcement. Free, confidential assessment for UK IVA, DMP & DRO." />
   <meta name="keywords" content="debt calculator UK, debt affordability calculator, IVA calculator UK, IVA write off calculator, DMP calculator UK, breathing space calculator, write off debt UK, stop bailiffs, freeze interest" />
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- Eye-catching/relevant hint for Google -->
-  <meta name="theme-color" content="#4CAF50" />
-  <meta name="google-site-verification" content="freshstart-debt-calculator-uk" />
-
-  <!-- Canonical -->
+  <!-- Canonical to this page -->
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html" />
   <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/debt-calculator.html" />
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="article" />
+  <!-- NEW: Open Graph / Twitter for richer SERP/Share cards -->
+  <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Fresh Start Debt Support" />
   <meta property="og:title" content="Debt Calculator UK — Affordable Payments & Breathing Space" />
-  <meta property="og:description" content="Estimate what you can afford, see potential IVA write-off at £70/month, and use Breathing Space to pause interest and most enforcement." />
+  <meta property="og:description" content="Estimate what you can afford, see potential IVA write-off at £70/month, and pause interest/enforcement with Breathing Space where suitable." />
   <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
   <meta property="og:image:alt" content="Fresh Start Debt Support" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -29,16 +24,16 @@
   <meta name="twitter:description" content="Free, confidential check. Protect essentials, reduce contact pressure and move to one affordable plan where suitable." />
   <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
 
-  <!-- Performance hints -->
+  <!-- NEW: Performance hints -->
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Site styles (shared with index) -->
+  <!-- Site styles (includes sticky header + hamburger) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS (matches index look) -->
+  <!-- Inline critical CSS for HERO + utilities (IDENTICAL TO INDEX) -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -58,23 +53,24 @@
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
 
-    /* Utilities */
+    /* NEW: small trust stat pills under hero */
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* NEW: tiny meta strip for E-E-A-T (updated date) */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* NEW: accessibility helper (skip link) */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* NEW: intent jump menu */
     .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
     .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
     .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
 
-    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#eef7f1;margin:6px 8px 0 0}
-    .script-box, .note, .tip, .warning{border-radius:12px;padding:14px;margin:12px 0}
-    .script-box{background:#f6fff8;border:1px solid #d9f0df}
-    .note{background:#fff7e6;border:1px solid #ffe0a6}
-    .tip{background:#eef4ff;border:1px solid #cfe0ff}
-    .warning{background:#ffeef0;border:1px solid #ffd0d6}
-    .muted{opacity:.9}
-    .jump-links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-    .jump-links a{background:#f0fff4;border:1px solid #d3f0dd;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none}
-
-    /* Calculators */
+    /* Calculator widgets (kept minimal; inherits site styles) */
     .calculator, .calculator-iva{
       background:#f9f9f9;padding:20px;margin:18px 0;border-radius:12px;
       box-shadow:0 2px 8px rgba(0,0,0,.08);max-width:560px
@@ -103,7 +99,7 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Structured Data (Org + Breadcrumb + Service + HowTo + FAQ) -->
+  <!-- Structured Data (Org + WebPage + HowTo + FAQ) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -116,55 +112,30 @@
         "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
       },
       {
-        "@type":"BreadcrumbList",
-        "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/index.html"},
-          {"@type":"ListItem","position":2,"name":"Debt Calculator","item":"https://www.freshstartdebtsupport.co.uk/debt-calculator.html"}
-        ]
-      },
-      {
-        "@type":"Service",
-        "name":"Debt Calculator & Breathing Space Support (UK)",
-        "serviceType":"Debt affordability assessment and set-up support",
-        "areaServed":{"@type":"Country","name":"United Kingdom"},
-        "provider":{"@type":"Organization","name":"Fresh Start Debt Support"},
-        "availableChannel":[
-          {"@type":"ServiceChannel","serviceUrl":"https://form.jotform.com/250596569907070","serviceLocation":{"@type":"VirtualLocation"}}
-        ],
-        "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP","description":"Free, confidential assessment"}
+        "@type":"WebPage",
+        "url":"https://www.freshstartdebtsupport.co.uk/debt-calculator.html",
+        "name":"Debt Calculator UK — Affordable Payments & Breathing Space",
+        "description":"Estimate a realistic monthly payment, potential IVA write-off at £70/month and learn how Breathing Space can pause interest/enforcement while you set up a plan."
       },
       {
         "@type":"HowTo",
-        "name":"How to estimate an affordable monthly debt payment",
-        "description":"Use the Fresh Start Debt Calculator to estimate what you can safely pay and the solutions that might fit.",
+        "name":"Use the UK Debt Calculator",
+        "description":"From entering your unsecured debt to selecting the right solution.",
         "totalTime":"PT2M",
         "step":[
-          {"@type":"HowToStep","name":"Enter total unsecured debt","text":"Add up credit cards, loans, overdrafts, BNPL and other non-secured debts."},
-          {"@type":"HowToStep","name":"See options","text":"Read the automated guidance on DMP, IVA, DRO or bankruptcy depending on debt level."},
-          {"@type":"HowToStep","name":"Refine with documents","text":"We sense-check against your bank statements so your budget is accurate and defendable."},
-          {"@type":"HowToStep","name":"Protect yourself","text":"Ask about Breathing Space to pause interest/most enforcement while the plan is set up."}
-        ]
-      },
-      {
-        "@type":"HowTo",
-        "name":"How to access Breathing Space (Debt Respite Scheme)",
-        "description":"Steps to pause interest, charges and most enforcement while you set up a plan.",
-        "totalTime":"P1D",
-        "step":[
-          {"@type":"HowToStep","name":"Talk to an approved debt adviser","text":"Share debts, income and essential bills; we confirm eligibility."},
-          {"@type":"HowToStep","name":"Provide account details","text":"List creditors, balances and references to include qualifying debts."},
-          {"@type":"HowToStep","name":"Enter the scheme","text":"If suitable, the adviser initiates Breathing Space; creditors are notified."},
-          {"@type":"HowToStep","name":"Build your plan","text":"Use the 60-day window (or mental health route duration + 30 days) to set up a DMP/IVA/DRO."}
+          {"@type":"HowToStep","name":"Enter total unsecured debt","text":"Cards, loans, overdrafts, BNPL and other non-secured debts."},
+          {"@type":"HowToStep","name":"Review suggestions","text":"The tool shows DMP/IVA/DRO or bankruptcy depending on level."},
+          {"@type":"HowToStep","name":"Verify budget","text":"We confirm with bank statements so creditors accept it."},
+          {"@type":"HowToStep","name":"Protect with Breathing Space","text":"Pause most enforcement while the plan is set up."}
         ]
       },
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"Is the calculator accurate for my situation?","acceptedAnswer":{"@type":"Answer","text":"It’s a guide. We verify with bank statements and a full review so your budget is realistic and acceptable to creditors."}},
-          {"@type":"Question","name":"Can Breathing Space freeze interest and stop most enforcement?","acceptedAnswer":{"@type":"Answer","text":"Yes, in England & Wales Breathing Space pauses interest, charges and most enforcement on qualifying debts while you work with an adviser."}},
-          {"@type":"Question","name":"Can I really write off debt in an IVA paying £70/month?","acceptedAnswer":{"@type":"Answer","text":"If you qualify and creditors approve, you repay what you can afford (e.g., £70/month) for 5–6 years; remaining qualifying unsecured debt may be written off at completion."}},
-          {"@type":"Question","name":"Has the £90 DRO fee been scrapped?","acceptedAnswer":{"@type":"Answer","text":"Yes — the Government removed the fee in April 2024, making DROs more accessible where eligible."}},
-          {"@type":"Question","name":"Will this hurt my credit file?","acceptedAnswer":{"@type":"Answer","text":"Breathing Space itself isn’t an insolvency entry, but payment history still matters. Formal solutions affect credit during the term; they also stop the situation worsening and give a clear end-point."}}
+          {"@type":"Question","name":"Will the calculator affect my credit score?","acceptedAnswer":{"@type":"Answer","text":"No. It’s guidance only. Formal solutions can impact credit during the term, but they also stop the situation worsening and provide a clear end point."}},
+          {"@type":"Question","name":"Can I really write off debt paying £70/month in an IVA?","acceptedAnswer":{"@type":"Answer","text":"If eligible and approved, you pay what you can afford (e.g., £70/month) for 5–6 years; remaining qualifying unsecured debt may be written off at completion."}},
+          {"@type":"Question","name":"Does Breathing Space freeze interest and most enforcement?","acceptedAnswer":{"@type":"Answer","text":"Yes, in England & Wales Breathing Space pauses interest, charges and most enforcement on qualifying debts while you work with a debt adviser."}},
+          {"@type":"Question","name":"Has the £90 DRO fee been removed?","acceptedAnswer":{"@type":"Answer","text":"Yes, the Government removed the fee in April 2024, making DROs more accessible where eligible."}}
         ]
       }
     ]
@@ -173,17 +144,14 @@
 </head>
 <body>
 
-  <!-- Accessibility -->
-  <a href="#main-start" class="skip-link">Skip to content</a>
-
-  <!-- Header / Banner (same as index) -->
+  <!-- Header / Banner (Sticky) -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
         <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
 
-      <!-- Hamburger -->
+      <!-- Hamburger button (far right) -->
       <button id="menuButton"
               class="hamburger"
               aria-label="Open menu"
@@ -194,48 +162,116 @@
       </button>
     </div>
 
-    <!-- Centralised menu (loaded via include below, kept here for a11y consistency) -->
-    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton"></nav>
+    <!-- Single, centralized menu content (shown when hamburger is toggled) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/index.html">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Choose a Debt Solution</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva.html">About an IVA</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">About a DMP</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dro.html">About a DRO</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html" aria-current="page">Debt Calculator</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Utility Bills</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax & HMRC Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>List of Creditors</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Debt Collectors & Bailiffs</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis Credit</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot Credit Services</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow & Sutor</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rossendales.html">Rossendales</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/equita.html">Equita</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html">CDCBailiffs</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/marston-holdings.html">Marston Holdings</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Popular Searches</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
+        </div>
+      </div>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
   </div>
+  <!-- /Header -->
 
   <!-- HERO -->
-  <section class="landing-hero" role="region" aria-label="Debt calculator and Breathing Space">
+  <section class="landing-hero" role="region" aria-label="Debt calculator and options">
     <div class="hero-inner">
       <div class="hero-copy">
-        <h2 class="hero-title">Debt Calculator UK — Work Out What You Can Afford</h2>
+        <h2 class="hero-title">Debt Calculator UK — A Simple Way to Find a Safe, Affordable Payment</h2>
         <p class="hero-sub">
-          Estimate an <strong>affordable monthly payment</strong>, see potential <a href="iva.html">IVA</a> write-off at <strong>£70/month</strong>, and ask about
-          <strong>Breathing Space</strong> to pause interest, charges and most enforcement while we set up the right plan.
+          Estimate a <strong>monthly payment you can keep</strong>, check a rough <strong>IVA write-off</strong> at £70/month,
+          and ask about <strong>Breathing Space</strong> to pause interest, charges and most enforcement while we set up your plan.
         </p>
-        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment">✅ Start Free Debt Check</a>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free UK debt help assessment">✅ Start My Free Debt Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
       </div>
     </div>
   </section>
   <!-- /HERO -->
 
-  <!-- Menu Include (same approach as your compare/index pages) -->
-  <div id="menu-placeholder"></div>
-  <script>
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("menu-placeholder").innerHTML = html;
-        const menu = document.getElementById("menuContent");
-        if (menu) menu.style.display = "none";
-      });
-    function toggleMenu(){
-      const menu = document.getElementById("menuContent");
-      if (menu) menu.style.display = (menu.style.display === "flex" ? "none" : "flex");
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn  = document.getElementById("menuButton");
-      if (menu && !menu.contains(e.target) && e.target !== btn) menu.style.display = "none";
-    });
-  </script>
-
-  <!-- Meta strip / freshness -->
+  <!-- NEW: Meta strip with last updated -->
   <div class="meta small">
     <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
     <script>
@@ -246,36 +282,21 @@
     </script>
   </div>
 
-  <!-- Anchor for skip link -->
-  <div id="main-start"></div>
 
   <!-- Main Content Container -->
   <div class="container">
 
     <!-- Section 1: Overview -->
-    <div class="section" id="overview">
-      <h1>Estimate Payments, Freeze Interest & Pick a Safe Route</h1>
-      <p>Use our tools below to estimate a <strong>realistic monthly payment</strong> and (if you qualify) a rough <strong>IVA write-off</strong> at £70 per month. Then, with your consent, we verify everything against bank statements and place you with the right team for a <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>. Where suitable, we help you access <a href="breathing-space.html"><strong>Breathing Space</strong></a> first to pause interest, charges and most enforcement while we set up your plan.</p>
+    <div class="section">
+      <h1>Debt Calculator UK: Estimate Payments, Freeze Interest & Pick a Safe Route</h1>
+      <p>Use the tools below to estimate a <strong>realistic monthly payment</strong> and (if eligible) a rough <strong>IVA write-off</strong> at £70/month. We confirm your budget against bank statements, then place you with the right team for a <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>. Where suitable, we help you use <a href="breathing-space.html">Breathing Space</a> first to pause interest, charges and most enforcement while your plan is set up.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
     </div>
 
-    <!-- Section 2: Jump Links / Clusters -->
-    <div class="section" id="toc">
-      <h2>Quick Access</h2>
-      <div class="jump-links" aria-label="Popular help topics">
-        <a href="#calculator-basic">Debt affordability calculator</a>
-        <a href="#calculator-iva">IVA write-off estimator (£70/month)</a>
-        <a href="#breathing-space">Breathing Space</a>
-        <a href="#clusters">High-intent debt calculator searches</a>
-        <a href="#faq">FAQs</a>
-      </div>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get a Personalised Plan</a>
-    </div>
-
-    <!-- Section 3: Affordability Calculator -->
+    <!-- Section 2: Debt Affordability Calculator -->
     <div class="section" id="calculator-basic">
       <h2>Debt Affordability Calculator</h2>
-      <p>Enter your total <strong>unsecured</strong> debt to see broad options. This is a guide — we’ll refine it with a full review and documents.</p>
+      <p>Enter your total <strong>unsecured</strong> debt to see broad options. This is guidance — we’ll refine it with a full review and documents so creditors accept it.</p>
 
       <div class="calculator" role="region" aria-label="Debt affordability calculator">
         <label for="debtAmount">Total unsecured debt (£):</label>
@@ -284,14 +305,14 @@
         <div id="result" class="result" aria-live="polite"></div>
       </div>
 
-      <p class="tip">Next step: ask about <a href="#breathing-space">Breathing Space</a> to pause interest/most enforcement while we build your plan. For a deeper comparison, see <a href="compare-solutions.html">Compare IVA vs DMP vs DRO vs Bankruptcy</a>.</p>
+      <p>Next step: ask about <a href="breathing-space.html">Breathing Space</a> to pause interest/most enforcement while we build your plan. For a side-by-side comparison, see <a href="compare-solutions.html">Compare Solutions</a>.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Send My Numbers Securely</a>
     </div>
 
-    <!-- Section 4: IVA Write-off Estimator -->
+    <!-- Section 3: IVA Write-off Estimator -->
     <div class="section" id="calculator-iva">
       <h2>IVA Write-Off Estimator — Paying £70/Month</h2>
-      <p>If you qualify for an <a href="iva.html">IVA</a>, you make <strong>one affordable payment</strong> for a fixed term (usually 5–6 years). Use this quick tool to estimate how much of your unsecured debt could be written off if you paid <strong>£70/month</strong>.</p>
+      <p>If you qualify for an <a href="iva.html">Individual Voluntary Arrangement (IVA)</a>, you make one affordable payment for a fixed term (usually 5–6 years). Use this tool to estimate how much of your unsecured debt could be written off paying <strong>£70/month</strong>.</p>
 
       <div class="calculator-iva" role="region" aria-label="IVA write-off estimator">
         <label for="ivaDebt">Your total unsecured debt (£):</label>
@@ -303,81 +324,78 @@
         </select>
         <button onclick="estimateIVAWriteOff()">Estimate Write-Off at £70/mo</button>
         <div id="ivaResult" class="result" aria-live="polite"></div>
-        <p class="note"><strong>Note:</strong> This is a simple estimator. IVA fees are typically included within your affordable payment. Exact terms depend on eligibility and creditor approval.</p>
+        <p><strong>Note:</strong> This is a simple estimator. IVA fees are typically included within your affordable payment. Exact terms depend on eligibility and creditor approval.</p>
       </div>
 
-      <p>Prefer a flexible approach? Read about a <a href="dmp.html">Debt Management Plan (DMP)</a> or check whether a <a href="dro.html">DRO</a> could be faster if you meet strict low-income/asset criteria.</p>
+      <p>Prefer flexibility? Read about a <a href="dmp.html">Debt Management Plan (DMP)</a> or check whether a <a href="dro.html">DRO</a> could be faster if you meet strict low-income/asset criteria.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If I Qualify for an IVA</a>
     </div>
 
-    <!-- Section 5: Breathing Space -->
+    <!-- Section 4: Breathing Space -->
     <div class="section" id="breathing-space">
       <h2>Breathing Space — Pause Interest, Charges & Most Enforcement</h2>
       <h3>Why use it first?</h3>
       <ul>
         <li>Reduces immediate pressure while we confirm a defendable budget from your bank statements</li>
-        <li>Stops most collections escalation so you can choose calmly between <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a></li>
+        <li>Lets you choose calmly between a <a href="dmp.html">DMP</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a></li>
         <li>Protects you for up to <strong>60 days</strong> (longer under the mental health route)</li>
       </ul>
-      <p class="muted">Official background is explained on GOV.UK and independent charities. Major UK resources with calculators/guidance include StepChange (card & consolidation calculators), MoneyHelper (budgeting/mortgage tools) and Citizens Advice (benefits & enforcement guides). These are useful alongside our tailored assessment.</p>
+      <p>See our simple guide to <a href="breathing-space.html">Breathing Space</a>. We’ll advise whether it’s appropriate for your situation and how to start.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask If I Can Get Breathing Space</a>
     </div>
 
-    <!-- Section 6: High-intent Clusters (easy-to-rank long tails woven into copy) -->
+    <!-- Section 5: High-Intent Search Clusters (no tables; intent blocks) -->
     <div class="section" id="clusters">
-      <h2>Answering High-Intent UK Searches</h2>
+      <h2>Popular UK Searches We Answer</h2>
 
-      <h3>“Debt affordability calculator UK” — what’s a safe payment?</h3>
-      <p>Your safe payment is what’s left after rent/mortgage, council tax, utilities, food and travel. Our calculator gives a guide; we then verify with statements so creditors accept it and interest reduction is more likely. See also <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>.</p>
+      <h3>Debt affordability calculator UK — what’s a safe payment?</h3>
+      <p>Your safe payment is what remains after housing, council tax, utilities, food and transport. Our tool gives a guide; we then verify with statements so creditors accept it. See <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>.</p>
 
-      <h3>“IVA write-off calculator £70 a month” — could I qualify?</h3>
-      <p>Some IVAs are approved at lower contributions if the budget supports it. Try the estimator above, then we’ll check eligibility and creditor appetite for your case. Read more about <a href="iva.html">how IVAs work</a>.</p>
+      <h3>IVA write-off calculator £70 a month — could I qualify?</h3>
+      <p>Some IVAs are approved at lower contributions if the budget supports it. Try the estimator above, then read <a href="iva.html">About IVAs</a> for eligibility and protections.</p>
 
-      <h3>“DMP payment calculator UK” — one affordable payment</h3>
-      <p>A <a href="dmp.html">DMP</a> is informal and flexible. Many lenders freeze interest when you show a fair, consistent payment based on a verified budget and household essentials.</p>
+      <h3>DMP payment calculator UK — one affordable payment</h3>
+      <p>A <a href="dmp.html">DMP</a> is informal and flexible. Many lenders freeze interest when you show a fair, consistent budget that protects essentials.</p>
 
-      <h3>“Breathing Space calculator — how much relief do I get?”</h3>
-      <p>It’s not a money amount — it’s legal protection: creditors pause interest, most fees and most enforcement while you set up a plan with an adviser. Read our simple guide to <a href="breathing-space.html">Breathing Space</a>.</p>
+      <h3>Breathing Space calculator — how much relief do I get?</h3>
+      <p>It’s not a money amount — it’s legal protection that pauses interest/most enforcement while you set up a plan. Start with <a href="breathing-space.html">our guide</a>.</p>
 
-      <h3>“Stop bailiffs fast” — how quickly can pressure ease?</h3>
-      <p>Once protections apply (Breathing Space or a formal solution), most new enforcement is paused. If collectors are contacting you already, use <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and relevant pages for firms like <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a>, or <a href="moorcroft.html">Moorcroft</a>.</p>
-
-      <h3>“Token payment plan £1” — is it sensible?</h3>
-      <p>Short-term token payments can keep you safe while you stabilise essentials or await a formal solution. See <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a> for wording and next steps.</p>
+      <h3>Stop bailiffs fast — how quickly can pressure ease?</h3>
+      <p>Once protections apply (Breathing Space or a formal solution), most new enforcement is paused. If collectors are contacting you already, use <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and see firm-specific pages like <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a> or <a href="moorcroft.html">Moorcroft</a>.</p>
 
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Free Plan</a>
     </div>
 
-    <!-- Section 7: FAQs (richer, search-intent) -->
+    <!-- Section 6: FAQs (kept rich and on-intent) -->
     <div class="section" id="faq">
       <h2>Debt Calculator — FAQs</h2>
 
       <h3>Will using the calculator affect my credit score?</h3>
-      <p>No. It’s just guidance. Formal solutions can affect your credit during the term, but they stop things worsening and give a clear finish line. Learn how to rebuild in <a href="credit-score-help.html">Credit Score Help</a>.</p>
+      <p>No. It’s just guidance. Formal solutions may impact your credit during the term, but they stop the spiral and provide a clear finish line. See <a href="credit-score-help.html">Credit Score Help</a>.</p>
 
       <h3>Is the estimate guaranteed?</h3>
-      <p>It’s an estimate. We make it accurate by confirming income, bills and spending from your bank statements and using fair allowances so creditors accept it. For overall routes, see <a href="compare-solutions.html">Compare Solutions</a>.</p>
+      <p>It’s an estimate. We make it accurate by confirming income, bills and spending from your bank statements and using fair allowances so creditors accept it. Compare options at <a href="compare-solutions.html">Compare Solutions</a>.</p>
 
       <h3>How long does an IVA last?</h3>
-      <p>Usually <strong>5–6 years</strong>. In some cases an extra 12 months replaces equity release if you own a home. See all details on <a href="iva.html">IVAs</a>.</p>
+      <p>Usually <strong>5–6 years</strong>. In some cases an extra 12 months replaces equity release if you own a home. Read more on <a href="iva.html">IVAs</a>.</p>
 
       <h3>Has the £90 DRO fee been scrapped?</h3>
-      <p>Yes, in April 2024, making <a href="dro.html">DROs</a> more accessible if you meet strict low-income/asset limits.</p>
+      <p>Yes — from April 2024, making <a href="dro.html">DROs</a> more accessible if you meet strict low-income/asset limits.</p>
 
       <h3>What if I’m in Scotland?</h3>
-      <p>Different options apply (e.g., temporary moratorium, Trust Deeds, DAS). Tell us your postcode and we’ll signpost correctly. Read <a href="trustdeed.html">Trust Deed (Scotland)</a>.</p>
+      <p>Different options apply (e.g., temporary moratorium, Trust Deeds, DAS). Tell us your postcode and we’ll signpost correctly. See <a href="trustdeed.html">Trust Deed (Scotland)</a>.</p>
 
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask a Debt Specialist</a>
     </div>
 
-    <!-- Section 8: Final CTA -->
+    <!-- Section 7: Final CTA -->
     <div class="section" id="final-cta">
       <h2>Start Your Fresh Start Today</h2>
-      <p>Use the calculators, get protected with <strong>Breathing Space</strong>, and move into a plan that fits your life. We keep priority bills safe, speak to creditors in writing, and guide you to the route with the best outcome.</p>
+      <p>Use the calculators, get protected with <strong>Breathing Space</strong>, and move into a plan that fits your life. We protect priority bills, contact creditors in writing, and guide you to the route with the best outcome.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta" aria-label="Start free debt help assessment now">Start Free Debt Check</a>
     </div>
 
-    <!-- Optional Trustpilot widget -->
+    <!-- Optional Trustpilot widget spot -->
     <div class="section" aria-label="Reviews">
       <div class="trustpilot-widget"
            data-locale="en-GB"
@@ -388,31 +406,22 @@
            data-theme="light">
         <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
       </div>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
     </div>
 
   </div>
   <!-- /container -->
 
-  <!-- Footer (breadcrumbs moved here as requested) -->
+  <!-- Footer (breadcrumbs moved here) -->
   <footer>
     <div class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1000px;margin:8px auto;text-align:left;font-size:14px;opacity:.9;padding:0 16px">
       <a href="index.html">Home</a> <span>›</span> <a href="debt-calculator.html" aria-current="page">Debt Calculator</a>
     </div>
     <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
     <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
-    <p>
-      Trusted resources:
-      <a href="https://www.gov.uk/options-for-dealing-with-your-debts/breathing-space" target="_blank" rel="noopener">GOV.UK: Breathing Space</a> •
-      <a href="https://www.gov.uk/individual-voluntary-arrangements" target="_blank" rel="noopener">GOV.UK: Individual Voluntary Arrangements</a> •
-      <a href="https://www.moneyhelper.org.uk/en/money-troubles/debt" target="_blank" rel="noopener">MoneyHelper</a> •
-      <a href="https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/" target="_blank" rel="noopener">Citizens Advice</a> •
-      <a href="https://www.stepchange.org/debt-info/" target="_blank" rel="noopener">StepChange</a>
-    </p>
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debts%20and%20Breathing%20Space" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debts%20and%20want%20to%20use%20the%20calculator" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     💬 Chat on WhatsApp
   </a>
 
@@ -442,7 +451,7 @@
     function estimateIVAWriteOff() {
       const debt = Number(document.getElementById('ivaDebt').value);
       const term = Number(document.getElementById('ivaTerm').value);
-      const monthly = 70; // fixed as requested
+      const monthly = 70; // fixed
       const resultDiv = document.getElementById('ivaResult');
 
       if (isNaN(debt) || debt <= 0) {
@@ -461,7 +470,7 @@
     }
   </script>
 
-  <!-- Menu toggle behaviour (same as index) -->
+  <!-- Menu Toggle Script (IDENTICAL TO INDEX) -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
@@ -482,17 +491,21 @@
       }
     }
 
+    // Close on outside click
     document.addEventListener("click", function(e) {
       var menu = document.getElementById("menuContent");
       var btn  = document.getElementById("menuButton");
       if (!menu || !btn) return;
-      if (menu.style.display === "flex" && !menu.contains(e.target) && !btn.contains(e.target)) {
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
         menu.style.display = "none";
         btn.classList.remove("is-open");
         btn.setAttribute("aria-expanded","false");
       }
     });
 
+    // Close on Escape
     document.addEventListener("keydown", function(e) {
       if (e.key === "Escape") {
         var menu = document.getElementById("menuContent");
@@ -506,6 +519,7 @@
       }
     });
 
+    // Close menu after clicking a link
     document.getElementById("menuContent")?.addEventListener("click", function(e){
       if (e.target.closest("a")) {
         var menu = document.getElementById("menuContent");
@@ -518,5 +532,6 @@
       }
     });
   </script>
+
 </body>
 </html>
