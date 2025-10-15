@@ -10,7 +10,7 @@
   box-shadow:0 4px 10px rgba(0,0,0,.25);
   transition:background-color .3s ease;
 }
-.whatsapp-button:hover{ background:#1ebe5b; }
+.whatsapp-button:hover{ background:#fd8700; }
 
 html,body{ margin:0; max-width:100%; overflow-x:hidden; }
 body{
