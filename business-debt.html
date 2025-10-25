@@ -27,7 +27,7 @@
   <meta name="twitter:description" content="Practical steps for HMRC arrears, supplier pressure, enforcement and personal guarantees. Free, confidential help." />
   <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
 
-  <!-- Performance hints -->
+  <!-- Performance hints (same as index) -->
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
@@ -36,7 +36,7 @@
   <!-- Site styles (includes sticky header + hamburger) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS for HERO + utilities (same as index) -->
+  <!-- Inline critical CSS for HERO + utilities (identical to index) -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -56,13 +56,24 @@
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
 
+    /* (Optional) small trust stat pills under hero — retained for visual parity with index */
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* Meta strip (identical to index) */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
 
+    /* Accessibility helper (skip link) */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
 
-    /* interactive mini-checker */
+    /* Intent jump menu (kept for parity though not used here) */
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+
+    /* Interactive mini-checker (from your original page) */
     .tool{border:1px solid #e5e5e5;border-radius:12px;padding:16px;margin:10px 0}
     .tool label{display:block;margin:8px 0 4px}
     .tool .row{display:flex;gap:10px;flex-wrap:wrap}
@@ -151,17 +162,14 @@
 </head>
 <body>
 
-  <!-- Accessibility -->
-  <a href="#main-start" class="skip-link">Skip to content</a>
-
-  <!-- Header / Banner (Sticky) -->
+  <!-- Header / Banner (Sticky) — identical structure to index -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
         <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
 
-      <!-- Hamburger -->
+      <!-- Hamburger button -->
       <button id="menuButton"
               class="hamburger"
               aria-label="Open menu"
@@ -267,7 +275,24 @@
   </div>
   <!-- /Header -->
 
-  <!-- Meta strip with last updated -->
+  <!-- HERO (identical styling to index, with Business Debt messaging) -->
+  <section class="landing-hero" role="region" aria-label="Business debt help in the UK — HMRC, cashflow and affordable plans">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h2 class="hero-title">Business Debt Help UK — HMRC, Cashflow & Affordable Plans</h2>
+        <p class="hero-sub">
+          Practical support for <strong>sole traders</strong>, <strong>company directors</strong> and <strong>partnerships</strong>:
+          negotiate <strong>HMRC Time to Pay</strong>, handle suppliers & collectors, and (where suitable)
+          roll personal debts into <strong>one affordable plan</strong> (DMP · IVA · DRO).
+        </p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free business debt help assessment">✅ Start Free Check</a>
+        <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
+      </div>
+    </div>
+  </section>
+  <!-- /HERO -->
+
+  <!-- Meta strip with last updated (identical to index) -->
   <div class="meta small">
     <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
     <script>
@@ -281,7 +306,7 @@
   <!-- Anchor for skip link -->
   <div id="main-start"></div>
 
-  <!-- Main Content Container -->
+  <!-- Main Content Container (your original Business Debt content preserved) -->
   <div class="container">
 
     <!-- Section 1 -->
@@ -518,7 +543,7 @@
 
       <!-- NEW high-intent FAQs appended -->
       <h3>Can I set up Self Assessment instalments online?</h3>
-      <p>Often yes, if you’re within HMRC’s limits and up to date on returns. If not, we help you propose an affordable Time to Pay based on your budget.</p>
+      <p>Often yes, if you’re within HMRC’s limits and up to date on returns. If not, we’ll help you propose Time to Pay with budget evidence and review points.</p>
 
       <h3>What if I can’t pay VAT this quarter?</h3>
       <p>Don’t ignore it. We’ll help you engage HMRC, propose instalments, and stabilise cashflow so penalties don’t escalate.</p>
@@ -593,7 +618,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak To Us</a>
     </div>
 
-    <!-- NEW Cluster Sections (high-intent, low/medium competition) -->
+    <!-- NEW Cluster Sections -->
     <div class="section">
       <h2>Can’t Pay VAT This Quarter? (What To Do Now)</h2>
       <p>Missing a VAT deadline snowballs penalties and interest. The key is to <strong>engage early</strong>, evidence affordability, and offer a realistic staged plan. Many businesses use a Time to Pay arrangement based on a defensible budget and seasonality. We’ll help you build it and communicate clearly so trading can continue.</p>
@@ -619,7 +644,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Review My PGs</a>
     </div>
 
-    <!-- Optional Trustpilot widget -->
+    <!-- Optional Trustpilot widget (kept for parity with index) -->
     <div class="section" aria-label="Reviews">
       <div class="trustpilot-widget"
            data-locale="en-GB"
@@ -636,7 +661,7 @@
   </div>
   <!-- /container -->
 
-  <!-- Footer with Breadcrumbs -->
+  <!-- Footer (kept identical style to index; breadcrumb from your original can sit above if desired) -->
   <footer>
     <nav aria-label="Breadcrumb" class="meta small">
       <a href="index.html">Home</a> &nbsp;›&nbsp;
@@ -652,7 +677,7 @@
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Menu Toggle Script (same single source of truth as index) + mini-checker logic -->
+  <!-- Menu Toggle Script (identical to index) + mini-checker logic -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
@@ -714,7 +739,7 @@
       }
     });
 
-    // Mini Time to Pay checker (informational only)
+    // Mini Time to Pay checker (informational only — from your original page)
     (function(){
       var a = document.getElementById('r1'),
           b = document.getElementById('r2'),
