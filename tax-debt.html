@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HMRC & Tax Debt Help UK | Time to Pay, VAT & PAYE Arrears | Fresh Start Debt Support</title>
-  <meta name="description" content="Struggling with HMRC and tax debt? Learn how Time to Pay works, what to do about VAT, PAYE and Self Assessment arrears, how to prevent enforcement, and how to build an affordable plan that protects your essentials." />
-  <meta name="keywords" content="HMRC tax debt, VAT arrears, PAYE arrears, Self Assessment arrears, Time to Pay, stop HMRC enforcement, tax debt help UK, breathing space, affordable repayment plan, can't pay VAT bill, PAYE arrears payment plan, HMRC debt collection stages, HMRC Time to Pay phone number, Self Assessment payment plan" />
+  <meta name="description" content="Struggling with HMRC and tax debt? Build a realistic Time to Pay plan, sort VAT, PAYE and Self Assessment arrears, prevent enforcement and protect essentials. Clear, UK-specific steps and tools." />
+  <meta name="keywords" content="HMRC tax debt, VAT arrears, PAYE arrears, Self Assessment arrears, Time to Pay, can't pay VAT bill, PAYE arrears payment plan, HMRC debt collection stages, HMRC Time to Pay phone number, Self Assessment payment plan, HMRC Direct Recovery of Debts, HMRC distraint, HMRC field force, missed Time to Pay payment, payments on account explained, set up Time to Pay online" />
   <meta name="robots" content="index,follow" />
 
   <!-- Googlebot 'eye-catching' rich preview & snippet allowance -->
@@ -35,6 +35,9 @@
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
+  <!-- Eye-catching tag for Google (explicit preview control & clear topical target) -->
+  <meta name="target" content="HMRC tax arrears, Time to Pay arrangements, VAT & PAYE payment plans, Self Assessment instalments, UK enforcement prevention" />
+
   <!-- Site styles (same file as index) -->
   <link rel="stylesheet" href="style.css" />
 
@@ -60,11 +63,11 @@
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
-    /* simple tool styles */
     .tool{background:#f6fbf7;border:1px solid #d9eedf;border-radius:12px;padding:16px;margin:16px 0}
     .tool label{display:block;margin:6px 0 2px}
     .tool input{width:100%;max-width:340px;padding:10px;border:1px solid #cfe7d4;border-radius:8px}
     .tool .out{margin-top:10px;font-weight:700}
+    .badge{display:inline-block;background:#1f5f2a;color:#fff;border-radius:999px;padding:6px 10px;font-weight:800;font-size:12px;letter-spacing:.2px;margin-bottom:8px}
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -79,25 +82,48 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Structured Data (Org + WebPage + HowTo + FAQ + Breadcrumb) -->
+  <!-- Structured Data (Org + WebSite + WebPage + Service + HowTo + FAQ + Breadcrumb) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
       {
         "@type":"Organization",
+        "@id":"https://www.freshstartdebtsupport.co.uk/#org",
         "name":"Fresh Start Debt Support",
         "url":"https://www.freshstartdebtsupport.co.uk/",
         "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
         "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
       },
       {
+        "@type":"WebSite",
+        "@id":"https://www.freshstartdebtsupport.co.uk/#website",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "name":"Fresh Start Debt Support",
+        "publisher":{"@id":"https://www.freshstartdebtsupport.co.uk/#org"},
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target":"https://www.freshstartdebtsupport.co.uk/search?q={search_term_string}",
+          "query-input":"required name=search_term_string"
+        }
+      },
+      {
         "@type":"WebPage",
+        "@id":"https://www.freshstartdebtsupport.co.uk/tax-debt.html#webpage",
         "url":"https://www.freshstartdebtsupport.co.uk/tax-debt.html",
         "name":"HMRC & Tax Debt Help UK — Time to Pay, VAT & PAYE Arrears",
-        "description":"Struggling with HMRC and tax debt? Learn how Time to Pay works, what to do about VAT, PAYE and Self Assessment arrears, how to prevent enforcement, and how to build an affordable plan that protects your essentials.",
-        "isPartOf":{"@id":"https://www.freshstartdebtsupport.co.uk/"},
+        "description":"HMRC tax arrears help: Time to Pay, VAT & PAYE payment plans, Self Assessment instalments, enforcement prevention and budgeting.",
+        "isPartOf":{"@id":"https://www.freshstartdebtsupport.co.uk/#website"},
         "primaryImageOfPage":{"@type":"ImageObject","url":"https://www.freshstartdebtsupport.co.uk/logo.jpg"}
+      },
+      {
+        "@type":"Service",
+        "@id":"https://www.freshstartdebtsupport.co.uk/#service-tax",
+        "serviceType":"Tax & HMRC Debt Support",
+        "provider":{"@id":"https://www.freshstartdebtsupport.co.uk/#org"},
+        "areaServed":{"@type":"Country","name":"United Kingdom"},
+        "audience":{"@type":"Audience","audienceType":"Individuals and small businesses with HMRC arrears"},
+        "offers":{"@type":"Offer","url":"https://form.jotform.com/250596569907070","price":"0","priceCurrency":"GBP","description":"Free initial assessment and eligibility check"}
       },
       {
         "@type":"HowTo",
@@ -116,14 +142,10 @@
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"Do I need all my balances and returns before you can help?","acceptedAnswer":{"@type":"Answer","text":"No. Bring what you have—we’ll help you pull the rest together and prioritise filings so your proposal can move forward."}},
-          {"@type":"Question","name":"Will HMRC accept a Time to Pay arrangement?","acceptedAnswer":{"@type":"Answer","text":"It depends on affordability, compliance and the quality of your proposal. We focus on a sustainable budget, evidence and realistic review points."}},
-          {"@type":"Question","name":"Can interest or penalties be removed?","acceptedAnswer":{"@type":"Answer","text":"Policies vary. What consistently helps is engaging early, filing on time from now on, and sticking to an affordable plan."}},
-          {"@type":"Question","name":"Will a DMP or IVA stop HMRC enforcement?","acceptedAnswer":{"@type":"Answer","text":"DMP and IVA affect consumer creditors more directly. They can free space in your budget so you can maintain HMRC Time to Pay. We’ll structure things so the two work together."}},
-          {"@type":"Question","name":"I’m self-employed with variable income—how do I budget for that?","acceptedAnswer":{"@type":"Answer","text":"We use averages, seasonality and headroom. Your plan should survive quiet months, not just busy ones."}},
-          {"@type":"Question","name":"Will this affect my credit file?","acceptedAnswer":{"@type":"Answer","text":"Debt solutions can impact credit. For many, the priority is stabilising the household and stopping escalation. We’ll explain trade-offs clearly."}},
-          {"@type":"Question","name":"What if I also owe Council Tax or have mortgage arrears?","acceptedAnswer":{"@type":"Answer","text":"We stabilise priority bills first—then we fit HMRC within a plan you can keep."}},
-          {"@type":"Question","name":"What if I can’t pay VAT or PAYE this month?","acceptedAnswer":{"@type":"Answer","text":"Contact us quickly. We’ll help you file any missing returns and propose a realistic Time to Pay amount that reflects your actual cashflow and essential bills."}}
+          {"@type":"Question","name":"How long will HMRC let me repay?","acceptedAnswer":{"@type":"Answer","text":"There’s no fixed maximum — HMRC bases Time to Pay on what you can afford and your circumstances. If things change, plans can be reviewed. Filing on time and engaging early help your case."}},
+          {"@type":"Question","name":"Can I set up a VAT or Self Assessment plan online?","acceptedAnswer":{"@type":"Answer","text":"Yes, many taxpayers can set up Self Assessment and VAT payment plans online via Government Gateway if eligibility conditions are met (for example, VAT debts within set limits and all returns filed)."}},
+          {"@type":"Question","name":"What happens if I miss a Time to Pay instalment?","acceptedAnswer":{"@type":"Answer","text":"Contact HMRC immediately. Explain the reason, make a payment if you can, and agree a revised plan. Ignoring a missed payment risks enforcement escalating."}},
+          {"@type":"Question","name":"What enforcement can HMRC use?","acceptedAnswer":{"@type":"Answer","text":"HMRC can visit to take control of goods (distraint), use third-party collectors, or in some cases recover money directly from bank accounts under Direct Recovery of Debts. Engagement and credible proposals reduce these risks."}}
         ]
       },
       {
@@ -139,9 +161,6 @@
   </script>
 </head>
 <body>
-
-  <!-- Accessibility -->
-  <a href="#main-start" class="skip-link">Skip to content</a>
 
   <!-- Header / Banner (Sticky, matches index) -->
   <div class="banner" role="banner">
@@ -256,10 +275,11 @@
   </div>
   <!-- /Header -->
 
-  <!-- HERO (kept generic but page-specific sub) -->
+  <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="HMRC & Tax Debt Help UK">
     <div class="hero-inner">
       <div class="hero-copy">
+        <span class="badge" aria-hidden="true">HMRC Time to Pay • VAT • PAYE</span>
         <h1 class="hero-title">HMRC &amp; Tax Debt Help — Time to Pay, VAT &amp; PAYE Arrears</h1>
         <p class="hero-sub">
           Stabilise essentials, handle letters and deadlines with confidence, and agree a realistic
@@ -294,8 +314,8 @@
       <h2>HMRC &amp; Tax Debt Help UK: Time to Pay, VAT/PAYE Arrears and Practical Steps That Work</h2>
       <p>If you’re worried about <strong>HMRC and tax debt</strong>—whether that’s VAT, PAYE or Self Assessment arrears—you’re in the right place. This plain-English guide explains how to stabilise your household, talk to HMRC with confidence, and put a realistic plan in place that you can stick to. We’ll cover <em>Time to Pay</em>, how to handle letters and deadlines, and how to stop pressure from other creditors so you can focus on clearing <a href="tax-debt.html">tax &amp; HMRC debt</a> the right way.</p>
       <p>Alongside HMRC arrears, many people juggle <a href="credit-card-debt.html">credit cards</a>, <a href="loan-debt.html">loans</a>, <a href="overdraft-debt.html">overdrafts</a>, <a href="catalogue-debt.html">catalogues</a> and <a href="klarna.html">BNPL</a>. We can roll those into <a href="dmp.html">one affordable payment</a> or a <a href="iva.html">formal route</a> (where suitable), freeing space in your budget to keep on top of HMRC.</p>
-      <p>Prefer to compare solutions first? See <a href="compare-solutions.html">Compare Solutions</a> and our simple guide to <a href="breathing-space.html">Breathing Space</a>.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My HMRC Plan</a>
+      <p><strong>Search intent add-ons:</strong> can’t pay VAT this month; missed Self Assessment deadline; PAYE arrears building; looking for the HMRC Time to Pay phone number; wondering how long HMRC will let you repay; worried about distraint or bank deductions. You’ll find clear answers below and quick links to tools.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Plan</a>
     </div>
 
     <!-- Section 2 -->
@@ -319,7 +339,7 @@
       <h5>Quick Win: Payments on Account</h5>
       <p>If you’re confused by <em>payments on account</em>, we’ll explain what they are, when they’re due (January/July), and how they affect your plan. <a href="debt-calculator.html">Run your numbers</a> so nothing surprises you later.</p>
 
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">List My HMRC Debts</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">List My Debts</a>
     </div>
 
     <!-- Section 3 -->
@@ -340,7 +360,7 @@
       <h4>Use Our Calculator First</h4>
       <p>Get a quick sense of what’s realistic with the <a href="debt-calculator.html">Debt Calculator</a>. We’ll refine it into HMRC-ready figures.</p>
 
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect Essentials First</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect Essentials</a>
     </div>
 
     <!-- Section 4 -->
