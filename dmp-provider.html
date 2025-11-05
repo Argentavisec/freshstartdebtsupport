@@ -2,262 +2,354 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UK DMP Providers | Fresh Start Debt Support</title>
-  <meta name="description" content="Compare UK DMP providers and discover why Fresh Start offers faster, more personal debt help with fewer clients and more focus on you." />
-  <meta name="keywords" content="DMP providers UK, debt management plan providers, DMP comparison, affordable debt help, DMP advice">
-  <style>
-    /* WhatsApp Floating Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 16px;
-  border-radius: 50px;
-  font-size: 16px;
-  z-index: 999;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe5b;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+  <title>UK DMP Providers (Free vs Paid) | Best Debt Management Plan Options in 2025</title>
+  <meta name="description" content="Compare leading UK DMP providers (free vs paid), what to look for, setup times, fees, credit impact and how Fresh Start gives faster, personal support.">
+  <meta name="keywords" content="DMP providers UK, debt management plan providers, best DMP provider UK, free DMP, switch DMP, DMP setup time, DMP fees, DMP credit score">
+  <meta name="robots" content="index,follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="googlebot" content="index,follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="geo.region" content="GB" />
+  <meta name="theme-color" content="#4CAF50" />
+  <link rel="alternate" href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html" hreflang="en-gb" />
+
+  <!-- Canonical to prefer /dmp-provider.html -->
+  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html" />
+  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/dmp-provider.html" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Fresh Start Debt Support" />
+  <meta property="og:title" content="UK DMP Providers (Free vs Paid) — Faster, Personal Help" />
+  <meta property="og:description" content="Who offers DMPs in the UK, how they differ, and why clients pick Fresh Start for speed and personal attention." />
+  <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+  <meta property="og:image:alt" content="Fresh Start Debt Support" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="UK DMP Providers (Free vs Paid) — Faster, Personal Help" />
+  <meta name="twitter:description" content="Compare providers, setup times, fees and support style. Get a plan that fits your life." />
+  <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
+  <link rel="preconnect" href="https://form.jotform.com" crossorigin>
+
+  <!-- Site styles (includes sticky header + hamburger) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Inline critical CSS for HERO + utilities (from index template) -->
+  <style>
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
     }
-    .banner {
-      background: #4CAF50;
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-copy{text-align:center}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
     }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .logo {
-      height: 50px;
-    }
-    .site-name {
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .btn-menu {
-      margin-top: 10px;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .btn-menu:hover {
-      background: #45a045;
-    }
-    .menu-content {
-      display: none;
-      flex-direction: column;
-      background: #4CAF50;
-      padding: 10px;
-      margin: 0 auto;
-      margin-top: 5px;
-      width: fit-content;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .menu-section {
-      padding: 10px 0;
-      border-top: 1px solid #ffffff44;
-    }
-    .menu-section h4 {
-      color: #fff;
-      font-size: 16px;
-      margin: 0 0 5px 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .menu-content a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      font-size: 15px;
-    }
-    .menu-content a:hover {
-      background: #45a045;
-      text-decoration: underline;
-    }
-    .menu-cta {
-      background: #a5e6b0;
-      color: #000 !important;
-      font-weight: bold;
-      padding: 10px 16px;
-      margin: 12px auto;
-      border-radius: 5px;
-      width: 200px;
-      font-size: 16px;
-      text-align: center;
-      display: block;
-      text-decoration: none;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-      transition: background 0.3s;
-    }
-    .menu-cta:hover {
-      background: #88d292;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      flex: 1;
-    }
-    .section {
-      background: #e9f5ec;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #4CAF50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-    }
-    h1, h2 {
-      color: #4CAF50;
-    }
-    ul {
-      margin-left: 20px;
-    }
+    .hero-cta:hover{background:#e8f6ec;color:#215a29}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+
+    /* Meta strip for E-E-A-T (updated date) */
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* Accessibility helper (skip link) */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* Intent jump menu */
+    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
+    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+
+    /* Tool styles */
+    .tool{max-width:1000px;margin:24px auto;padding:16px;border:1px solid #e5f3ea;border-radius:16px;background:#f8fffb}
+    .tool h3{margin-top:0}
+    .range-row{display:grid;grid-template-columns:140px 1fr 90px;gap:10px;align-items:center;margin:10px 0}
+    .range-row input[type="range"]{width:100%}
+    .pill{display:inline-block;background:#eefaf3;border:1px solid #cdebd6;color:#215a29;border-radius:999px;padding:6px 10px;font-size:12px;margin-right:6px}
+
+    /* Anchor offsets for headings */
+    .section h2,.section h3,.section h4{scroll-margin-top:80px}
   </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menuContent");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("menuContent");
-      const btn = document.getElementById("menuButton");
-      if (!menu.contains(e.target) && e.target !== btn) {
-        menu.style.display = "none";
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-0PJ0YPPJST');
+  </script>
+
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <!-- Structured Data (Org + CollectionPage + Service + ItemList + FAQ + HowTo + Breadcrumbs + Speakable) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Fresh Start Debt Support",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
+        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
+      },
+      {
+        "@type":"CollectionPage",
+        "@id":"https://www.freshstartdebtsupport.co.uk/dmp-provider.html#collection",
+        "url":"https://www.freshstartdebtsupport.co.uk/dmp-provider.html",
+        "name":"UK DMP Providers — Free vs Paid & How to Choose",
+        "isPartOf":{"@id":"https://www.freshstartdebtsupport.co.uk/"},
+        "primaryImageOfPage":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
+        "description":"Compare leading UK DMP providers, setup times, fees and support style. Learn why many choose Fresh Start for faster, personal help.",
+        "about":[
+          {"@type":"Thing","name":"Debt Management Plan"},
+          {"@type":"Thing","name":"DMP providers UK"},
+          {"@type":"Thing","name":"Free DMP UK"}
+        ],
+        "inLanguage":"en-GB"
+      },
+      {
+        "@type":"Service",
+        "serviceType":"Debt Management Plan (DMP) Support",
+        "provider":{"@type":"Organization","name":"Fresh Start Debt Support","url":"https://www.freshstartdebtsupport.co.uk/"},
+        "areaServed":"GB",
+        "audience":{"@type":"Audience","audienceType":"People with unsecured debt in the UK"},
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"GBP","description":"Free initial assessment and guidance"},
+        "url":"https://www.freshstartdebtsupport.co.uk/dmp.html"
+      },
+      {
+        "@type":"ItemList",
+        "name":"Popular UK DMP Providers",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"StepChange Debt Charity","url":"https://www.stepchange.org/how-we-help/debt-management-plan.aspx"},
+          {"@type":"ListItem","position":2,"name":"PayPlan","url":"https://www.payplan.com/debt-solutions/debt-management-plans/"},
+          {"@type":"ListItem","position":3,"name":"National Debtline (DMP info)","url":"https://nationaldebtline.org/get-information/guides/debt-management-plans-ew/"},
+          {"@type":"ListItem","position":4,"name":"Citizens Advice (Choosing a provider)","url":"https://www.citizensadvice.org.uk/debt-and-money/debt-solutions/debt-management-plans/getting-a-debt-management-plan/choosing-a-debt-management-plan-provider/"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"Which UK DMP providers are free?","acceptedAnswer":{"@type":"Answer","text":"Large charities like StepChange and PayPlan offer fee-free DMPs. Some firms charge management fees; we outline both routes so you can choose the right fit."}},
+          {"@type":"Question","name":"How long does a DMP take to set up?","acceptedAnswer":{"@type":"Answer","text":"Time varies by provider and creditor response. We start immediately after your fact-find and affordability are complete, and we help reduce contact pressure in the meantime."}},
+          {"@type":"Question","name":"Will a DMP freeze interest and charges?","acceptedAnswer":{"@type":"Answer","text":"Many creditors freeze or reduce interest once a fair DMP is in place, but it is not guaranteed and depends on the creditor. We set realistic offers to improve acceptance."}},
+          {"@type":"Question","name":"Can I switch DMP provider?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can move between providers if the service or fees do not suit you. We help you transfer details and keep creditors informed so momentum is not lost."}},
+          {"@type":"Question","name":"Do DMPs affect my credit score?","acceptedAnswer":{"@type":"Answer","text":"Yes, arrangements and reduced payments are usually visible on your credit file. The priority is stabilising the household and paying what you can afford."}}
+        ]
+      },
+      {
+        "@type":"HowTo",
+        "name":"How to Switch Your DMP Provider",
+        "description":"A practical process to move your DMP to a provider that suits you better.",
+        "step":[
+          {"@type":"HowToStep","position":1,"name":"Request an up-to-date list of balances","text":"Ask your current provider for balances, reference numbers and recent payment history."},
+          {"@type":"HowToStep","position":2,"name":"Complete a fresh affordability check","text":"Provide income, essential bills and priority debts to set a realistic DMP payment."},
+          {"@type":"HowToStep","position":3,"name":"Notify creditors of the handover","text":"Your new provider shares the reference and payment details to avoid gaps."},
+          {"@type":"HowToStep","position":4,"name":"Confirm first payment date","text":"Agree a start date and ensure standing orders/direct debits are aligned."}
+        ],
+        "tool":[{"@type":"HowToTool","name":"Budget & DMP Payment Estimator"}],
+        "estimatedCost":{"@type":"MonetaryAmount","currency":"GBP","value":"0"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/index.html"},
+          {"@type":"ListItem","position":2,"name":"Debt Solutions","item":"https://www.freshstartdebtsupport.co.uk/compare-solutions.html"},
+          {"@type":"ListItem","position":3,"name":"DMP Providers","item":"https://www.freshstartdebtsupport.co.uk/dmp-provider.html"}
+        ]
       }
-    });
+    ]
+  }
+  </script>
+
+  <!-- Speakable (for voice assistants) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "url":"https://www.freshstartdebtsupport.co.uk/dmp-provider.html",
+    "speakable":{
+      "@type":"SpeakableSpecification",
+      "xpath":[
+        "/html/body//h1",
+        "/html/body//section[1]//p[1]"
+      ]
+    }
+  }
   </script>
 </head>
 <body>
-  <div class="banner">
-    <div class="top-bar">
-      <img src="logo.jpg" alt="Fresh Start Logo" class="logo" />
-      <div class="site-name">Fresh Start Debt Support</div>
-    </div>
-  </div>
-  <div style="text-align: center;">
-    <button class="btn-menu" id="menuButton" onclick="toggleMenu()">☰ Menu</button>
-  </div>
-  <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started for Free</a>
-  <div class="menu-content" id="menuContent">
-    <div class="menu-section">
-      <h4>About Us</h4>
-      <a href="index.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-    <div class="menu-section">
-      <h4>Choose a Debt Solution</h4>
-      <a href="iva.html">About an IVA</a>
-      <a href="dmp.html">About a DMP</a>
-      <a href="dro.html">About a DRO</a>
-      <a href="compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
-      <a href="debt-calculator.html">Debt Calculator</a>
-    </div>
-    <div class="menu-section">
-      <h4>Types of Debt</h4>
-      <a href="credit-card-debt.html">Credit Card Debt</a>
-      <a href="loan-debt.html">Personal Loans</a>
-      <a href="catalogue-debt.html">Catalogue Debt</a>
-      <a href="council-tax-debt.html">Council Tax Debt</a>
-      <a href="utility-debt.html">Utility Bills</a>
-      <a href="payday-loan-debt.html">Payday Loans</a>
-      <a href="overdraft-debt.html">Bank Overdrafts</a>
-      <a href="store-card-debt.html">Store Cards</a>
-      <a href="mortgage-arrears.html">Mortgage Arrears</a>
-      <a href="business-debt.html">Business Debt</a>
-      <a href="tax-debt.html">Tax & HMRC Debt</a>
-      <a href="rent-arrears.html">Rent Arrears</a>
-      <a href="gambling-debt.html">Gambling Debts</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Creditors</h4>
-      <a href="barclays.html">Barclays</a>
-      <a href="hsbc.html">HSBC</a>
-      <a href="natwest.html">NatWest</a>
-      <a href="lloyds.html">Lloyds</a>
-      <a href="capital-one.html">Capital One</a>
-    </div>
-    <div class="menu-section">
-      <h4>List of Debt Collectors & Bailiffs</h4>
-      <a href="lowell.html">Lowell Financial</a>
-      <a href="cabot.html">Cabot Financial</a>
-      <a href="moriarty-law.html">Moriarty Law</a>
-      <a href="pra-group.html">PRA Group</a>
-      <a href="moorcroft.html">Moorcroft Debt Recovery</a>
-      <a href="advantis.html">Advantis Credit</a>
-      <a href="link-financial.html">Link Financial</a>
-      <a href="capquest.html">Capquest Debt Recovery</a>
-      <a href="wescot.html">Wescot Credit Services</a>
-      <a href="resolvecall.html">Resolvecall</a>
-      <a href="hoist-finance.html">Hoist Finance</a>
-      <a href="robinson-way.html">Robinson Way</a>
-      <a href="fredrickson.html">Fredrickson International</a>
-      <a href="drydensfairfax.html">Drydensfairfax Solicitors</a>
-      <a href="jacobs-enforcement.html">Jacobs Enforcement</a>
-      <a href="bristow-sutor.html">Bristow & Sutor</a>
-      <a href="rossendales.html">Rossendales</a>
-      <a href="equita.html">Equita</a>
-      <a href="cdcbailiffs.html">CDCBailiffs</a>
-      <a href="marston-holdings.html">Marston Holdings</a>
-      <a href="excel-civil-enforcement.html">Excel Civil Enforcement</a>
-      <a href="newlyn.html">Newlyn</a>
-      <a href="swift-credit.html">Swift Credit Services</a>
-    </div>
-    <div class="menu-section">
-      <h4>Popular Searches</h4>
-      <a href="debt-help-uk-2025.html">Debt Help UK 2025</a>
-      <a href="clear-debt-fast.html">Clear Debt Fast</a>
-      <a href="iva-company.html">IVA Company</a>
-      <a href="dmp-provider.html">DMP Provider</a>
-      <a href="stop-debt-collectors.html">Stop Debt Collectors</a>
-      <a href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <h1>Top DMP Providers in the UK (And Why Clients Prefer Us)</h1>
-      <p>Debt Management Plans (DMPs) are a trusted way to repay debt in a more affordable, stress-free way. But when it comes to choosing a provider, it’s not just about what they offer — it’s how they treat you. That’s where Fresh Start comes in.</p>
 
+  <!-- Accessibility -->
+  <a href="#main-start" class="skip-link">Skip to content</a>
+
+  <!-- Header / Banner (Sticky) -->
+  <div class="banner" role="banner">
+    <div class="top-bar">
+      <div class="brand">
+        <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+      </div>
+
+      <!-- Hamburger button (far right) -->
+      <button id="menuButton"
+              class="hamburger"
+              aria-label="Open menu"
+              aria-controls="menuContent"
+              aria-expanded="false"
+              onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Single, centralized menu content (shown when hamburger is toggled) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/index.html">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+
+
+        </div>
+
+        <div class="menu-section">
+          <h4>Choose a Debt Solution</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva.html">About an IVA</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">About a DMP</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dro.html">About a DRO</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Utility Bills</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax & HMRC Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>List of Creditors</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Debt Collectors & Bailiffs</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis Credit</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot Credit Services</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow & Sutor</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rossendales.html">Rossendales</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/equita.html">Equita</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html">CDCBailiffs</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/marston-holdings.html">Marston Holdings</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Popular Searches</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
+        </div>
+      </div>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
+  </div>
+  <!-- /Header -->
+
+  <!-- HERO -->
+  <section class="landing-hero" role="region" aria-label="Compare UK DMP providers">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h2 class="hero-title">UK DMP Providers — Free vs Paid, Faster Setup</h2>
+        <p class="hero-sub">See how Debt Management Plans work, who offers them, and why clients choose Fresh Start for fewer queues, faster progress and ongoing check-ins.</p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free assessment for a DMP">✅ Start Free Check</a>
+        <div class="hero-trust">Free & confidential • 60–90 seconds • No obligation</div>
+      </div>
+    </div>
+  </section>
+  <!-- /HERO -->
+
+  <!-- Meta strip with last updated -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
+    <script>
+      (function(){
+        var el=document.getElementById('updated');
+        if(el){ el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"}); }
+      })();
+    </script>
+  </div>
+
+  <!-- Anchor target for skip link -->
+  <div id="main-start"></div>
+
+  <!-- Main content container -->
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="section" id="intro">
+      <h1>Top DMP Providers in the UK (And Why Clients Prefer Us)</h1>
+      <p>Debt Management Plans (DMPs) are a trusted way to repay debt in a more affordable, stress-free way. But choosing a provider isn’t only about features — it’s about <em>how they treat you</em>. Big brands like <a href="https://www.stepchange.org/how-we-help/debt-management-plan.aspx" target="_blank" rel="noopener nofollow">StepChange</a> and <a href="https://www.payplan.com/debt-solutions/debt-management-plans/" target="_blank" rel="noopener nofollow">PayPlan</a> offer free DMPs; others charge fees. We show the landscape clearly and explain why many people pick Fresh Start for speed, focus and personal support.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start Free Check</a>
+    </div>
+
+    <!-- Provider list -->
+    <div class="section" id="providers">
       <h2>Popular DMP Providers in the UK</h2>
+      <p>Here are well-known providers people search for when exploring DMPs (some are free charities, others are firms that may charge):</p>
       <ul>
         <li>StepChange Debt Charity</li>
         <li>PayPlan</li>
@@ -270,42 +362,319 @@
         <li>Churchwood Finance</li>
         <li>OpenMoney</li>
       </ul>
+      <p>Free providers can be a great fit if you’re comfortable with large-scale processes. If you want a smaller caseload, faster touchpoints and proactive check-ins, we’ll suit you better.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare Options</a>
+    </div>
 
+    <!-- Why us -->
+    <div class="section" id="why-us">
       <h2>Why Fresh Start Is the Smarter Choice</h2>
-      <p>Most of the providers above handle thousands of cases. That means longer wait times, slower responses, and often very little personal attention. At Fresh Start, we’re different:</p>
+      <p>Many national providers handle huge volumes — great resources, but it can mean queues and less personal contact. We do the opposite:</p>
       <ul>
-        <li>✅ We take on fewer clients so we can give YOU our full attention</li>
-        <li>⚡ We act fast — no long call queues, no being passed around</li>
-        <li>📞 You’ll deal with real people, not call centre scripts</li>
-        <li>📩 We offer ongoing check-ins to adjust your plan when life changes</li>
-        <li>📝 We can provide a DMP reference number you can quote to creditors</li>
+        <li>✅ Fewer clients → more time on <em>your</em> case</li>
+        <li>⚡ Fast action — not weeks of waiting</li>
+        <li>📞 Named specialists, not scripts</li>
+        <li>📩 Regular check-ins as life changes</li>
+        <li>📝 DMP reference number to quote to creditors</li>
       </ul>
-
-      <p>If you’ve tried the big companies and been left hanging… it’s time for a Fresh Start. We get people into active plans faster, with far less red tape — and we fight to get your interest frozen and payments reduced.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Started With Your DMP</a>
-
-      <h2>Personal Support That Puts You First</h2>
-      <p>We know what it’s like to feel overwhelmed by debt. That’s why we make it easy, confidential, and stress-free to get help — with no pressure and no judgment. Your future is our focus.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Debt Adviser</a>
+      <p>We push for interest/charge freezes where possible and set a realistic, sustainable payment around your essentials.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify</a>
     </div>
 
-    <div class="section trust-badges">
-      <h3>Trusted DMP Support</h3>
-      <p>✅ Rated for friendly, clear advice</p>
-      <p>✅ Fast setup with fewer clients</p>
-      <p>✅ Reference numbers for peace of mind</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    <!-- Free vs Paid -->
+    <div class="section" id="free-vs-paid">
+      <h2>Free vs Paid DMP — What’s the Difference?</h2>
+      <h3>What free providers offer</h3>
+      <p>Large charities provide debt advice and administer DMPs without monthly management fees. Processes can be structured, and demand is high, so patience helps. Learn more in our <a href="stepchange-alternatives.html">StepChange alternatives</a> guide.</p>
+      <h3>What paid firms offer</h3>
+      <p>Some firms charge set-up or monthly fees in exchange for a different service style and cadence. Fees affect how much reaches creditors, so we’ll weigh this carefully with you.</p>
+      <h3>How we help you decide</h3>
+      <p>We map your numbers, timescales and preferences, then outline a route — free or paid — that fits your budget and stress levels. You’re in control.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check Fees</a>
     </div>
+
+    <!-- Setup time / interest -->
+    <div class="section" id="setup-time-interest">
+      <h2>How Long Does a DMP Take? Will Interest Stop?</h2>
+      <p>Setup depends on how quickly we complete your fact-find, confirm creditors and agree affordability — then on creditor responses. Many creditors agree to freeze or reduce interest/charges once a fair offer is in place (not guaranteed and varies by lender). We give you a reference number to quote while set-up progresses and help manage contact pressure with <a href="breathing-space.html">Breathing Space</a> where appropriate.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speed Up Setup</a>
+    </div>
+
+    <!-- Credit score -->
+    <div class="section" id="credit-score">
+      <h2>Will a DMP Affect My Credit Score?</h2>
+      <p>Yes — arrangements and reduced payments are normally visible on your credit file. For many, stabilising essentials and stopping the spiral matters more than short-term score. If writing off part of the debt is a priority, compare a <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>. We’ll explain all trade-offs so you choose with eyes open.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Discuss Impact</a>
+    </div>
+
+    <!-- Switch provider -->
+    <div class="section" id="switch-provider">
+      <h2>Can I Switch DMP Provider Later?</h2>
+      <p>Yes. If the service or fees don’t suit you, you can move. We’ll help gather balances, payment history and creditor references, then coordinate a smooth handover so momentum isn’t lost. See <a href="stop-debt-collectors.html">Stop Debt Collectors</a> for managing contact during changes.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Help Me Switch</a>
+    </div>
+
+    <!-- Interactive Tool: DMP Payment Estimator -->
+    <div class="section tool" id="dmp-tool">
+      <h2>Estimate a Fair DMP Payment</h2>
+      <h3>Quickly test a realistic monthly amount</h3>
+      <div class="range-row">
+        <label for="income">Monthly income (£)</label>
+        <input type="range" id="income" min="600" max="6000" step="50" value="2200" />
+        <output id="incomeOut">£2,200</output>
+      </div>
+      <div class="range-row">
+        <label for="essentials">Essentials & priority bills (£)</label>
+        <input type="range" id="essentials" min="400" max="4000" step="25" value="1600" />
+        <output id="essentialsOut">£1,600</output>
+      </div>
+      <div class="range-row">
+        <label for="nonprio">Total non-priority debt (£)</label>
+        <input type="range" id="nonprio" min="500" max="40000" step="500" value="8000" />
+        <output id="nonprioOut">£8,000</output>
+      </div>
+      <p><span class="pill" id="surplusPill">Surplus: £600</span> <span class="pill" id="suggestPill">Suggested DMP offer: £480</span></p>
+      <p><small>We typically leave headroom for essentials and emergencies. This tool is illustrative — we’ll tailor it to your actual income and creditor responses.</small></p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Figure</a>
+    </div>
+
+    <!-- Real-world mixes -->
+    <div class="section" id="real-world-mixes">
+      <h2>DMPs for Real-World Debt Mixes (BNPL, CCJs, AOE)</h2>
+      <h3>Buy Now Pay Later & Catalogues</h3>
+      <p>We include BNPL like <a href="klarna.html">Klarna</a> and <a href="catalogue-debt.html">catalogues</a> in your plan so you’re not juggling separate promises.</p>
+      <h3>County Court Judgments (CCJs)</h3>
+      <p>If a claim has started, timing matters. See <a href="stop-court-action.html">Stop Court Action</a> and speak to us about varying payments to something affordable.</p>
+      <h3>Attachment of Earnings (AOE)</h3>
+      <p>If deductions are hitting your wages, we’ll help you build a realistic budget and explore options to reduce pressure.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Tidy My Debts</a>
+    </div>
+
+    <!-- Quick Answers -->
+    <div class="section" id="quick-answers">
+      <h2>Quick Answers People Search For</h2>
+
+      <h3>Is a DMP free or do I pay fees?</h3>
+      <p>Fee-free routes exist (e.g., large charities). Some firms charge fees. We’ll help you compare both so more of your money goes to reducing debt.</p>
+
+      <h3>Can I get a DMP if I’m behind on energy or council tax?</h3>
+      <p>Yes, but we’ll prioritise essentials and <a href="council-tax-debt.html">council tax</a>. We’ll also explore supplier support and <a href="utility-debt.html">energy arrears</a> options.</p>
+
+      <h3>What debts can go in a DMP?</h3>
+      <p>Typically non-priority debts like <a href="credit-card-debt.html">credit cards</a>, <a href="loan-debt.html">loans</a>, <a href="overdraft-debt.html">overdrafts</a>, catalogues and BNPL. We’ll confirm edge cases.</p>
+
+      <h3>How soon will calls and letters slow down?</h3>
+      <p>Often after creditors accept offers; we also help with <a href="breathing-space.html">Breathing Space</a> if appropriate, and provide a reference to quote meanwhile.</p>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask Now</a>
+    </div>
+
+    <!-- UK DMP FAQs -->
+    <div class="section" id="uk-dmp-faqs">
+      <h2>UK DMP FAQs</h2>
+
+      <h3>How fast can you start once I complete the JotForm?</h3>
+      <p>We’ll reach out quickly (phone first, then WhatsApp if easier). We start your fact-find immediately and prioritise urgent risks like <a href="council-tax-debt.html">council tax</a> and <a href="utility-debt.html">utilities</a>.</p>
+
+      <h3>Do I need to list every debt before we speak?</h3>
+      <p>No — we can guide a free credit check to surface missing accounts and make sure nothing is overlooked.</p>
+
+      <h3>Will a DMP stop calls and letters?</h3>
+      <p>Contact usually reduces once a fair plan is accepted. We also help you use <a href="breathing-space.html">Breathing Space</a> where suitable, and you’ll have a reference number to quote meanwhile.</p>
+
+      <h3>Can debts be written off?</h3>
+      <p>DMPs repay balances; some formal solutions can write off debt (e.g., at the end of a successful <a href="iva.html">IVA</a> or eligible <a href="dro.html">DRO</a>). We’ll compare routes so you can decide.</p>
+
+      <h3>What if my income changes later?</h3>
+      <p>We build headroom into your budget. <a href="dmp.html">DMPs</a> are flexible; IVAs have formal variation processes. Tell us early so we can adjust.</p>
+
+      <h4>Didn’t see your question?</h4>
+      <p>Ask us for a personalised answer in minutes.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Send Question</a>
+    </div>
+
+    <!-- Cluster: Setup time -->
+    <div class="section" id="cluster-setup-time">
+      <h2>How Quickly Can a DMP Start in the UK?</h2>
+      <h3>Typical milestones</h3>
+      <p>Day 1–2: fact-find and affordability; Day 3–7: creditor referencing and first offers; Weeks 2–6: acceptance decisions and interest updates. Timings vary by lender and how fast documents arrive. We’ll push progress and keep you updated.</p>
+      <h3>What speeds things up</h3>
+      <p>Up-to-date balances and reference numbers; proof of income and essentials; responding quickly to any clarifications. If calls/letters are heavy, see <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and <a href="breathing-space.html">Breathing Space</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Fast-Track Me</a>
+    </div>
+
+    <!-- Cluster: Free vs fees -->
+    <div class="section" id="cluster-free-vs-fees">
+      <h2>Free DMP vs Paid DMP — UK Pros & Cons</h2>
+      <h3>Free DMP (charity-run)</h3>
+      <p>No monthly management fees; widely recognised by creditors; high demand means structured processes. Good if you want the biggest share of each payment going to debts.</p>
+      <h3>Paid DMP (fee-charging firms)</h3>
+      <p>May offer different service cadence, but fees reduce what reaches creditors. We’ll help you evaluate whether the service trade-off is worth it for your situation.</p>
+      <h3>When fees might still be acceptable</h3>
+      <p>If the style/availability aligns to your needs and the net time-to-stability is better for you. Otherwise, consider <a href="dmp.html">DMP</a> via free routes or compare <a href="iva.html">IVA</a>/<a href="dro.html">DRO</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Compare My Options</a>
+    </div>
+
+    <!-- Cluster: Stop interest -->
+    <div class="section" id="cluster-stop-interest">
+      <h2>Will Creditors Freeze Interest on a DMP?</h2>
+      <h3>What usually happens</h3>
+      <p>Many lenders reduce or freeze interest/charges when offers are reasonable and consistent. It isn’t guaranteed; outcomes vary by creditor and account history.</p>
+      <h3>How we maximise acceptance</h3>
+      <p>We propose realistic payments grounded in your essentials, share context on hardship, and maintain regular updates so creditors see reliability. If interest continues, we’ll keep negotiating and review alternatives like <a href="iva.html">IVA</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask About Interest</a>
+    </div>
+
+    <!-- Cluster: Eligibility -->
+    <div class="section" id="cluster-eligibility">
+      <h2>Who Is Eligible for a DMP in the UK?</h2>
+      <h3>Good fit indicators</h3>
+      <p>You have mainly non-priority debts (e.g., <a href="credit-card-debt.html">credit cards</a>, <a href="loan-debt.html">loans</a>, <a href="overdraft-debt.html">overdrafts</a>) and can pay something each month after covering essentials.</p>
+      <h3>Edge cases</h3>
+      <p>Heavy priority arrears or enforcement (<a href="council-tax-debt.html">council tax</a>, <a href="utility-debt.html">energy bills</a>, <a href="mortgage-arrears.html">mortgage arrears</a>) may need a plan before or alongside a DMP. We’ll help you prioritise correctly.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check Eligibility</a>
+    </div>
+
+    <!-- Cluster: Switching -->
+    <div class="section" id="cluster-switching">
+      <h2>Switching DMP Provider Without Losing Momentum</h2>
+      <h3>Keep payments flowing</h3>
+      <p>Line up your new payment method and reference before you cancel the old one; we’ll manage creditor handover letters and confirm balances so there’s no gap.</p>
+      <h3>Preserve goodwill</h3>
+      <p>We explain the switch is about service fit, not stopping payments. This helps retain any goodwill on interest concessions already in place.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Plan My Switch</a>
+    </div>
+
+    <!-- Internal-link hub -->
+    <div class="section" id="compare-more">
+      <h2>Still Comparing Your Options?</h2>
+      <p>Read our guides before you choose: <a href="dmp.html">About a DMP</a>, <a href="iva.html">About an IVA</a>, <a href="dro.html">About a DRO</a>, or see them side-by-side at <a href="compare-solutions.html">Compare Solutions</a>. You can also test numbers in our <a href="debt-calculator.html">Debt Calculator</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Recommendation</a>
+    </div>
+
+    <!-- Optional Trustpilot widget spot -->
+    <div class="section" aria-label="Reviews">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+      </div>
+    </div>
+
   </div>
+  <!-- /container -->
 
+  <!-- Footer with breadcrumbs -->
   <footer>
-    © 2025 Fresh Start Debt Support. All rights reserved.
+    <nav aria-label="Breadcrumb">
+      <p>
+        <a href="https://www.freshstartdebtsupport.co.uk/index.html">Home</a> ›
+        <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Debt Solutions</a> ›
+        <span>DMP Providers</span>
+      </p>
+    </nav>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
   </footer>
-  <a href="https://wa.me/447752296301" class="whatsapp-button" target="_blank">
-  Chat on WhatsApp
-</a>
 
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20DMP%20help%20and%20have%20a%20few%20questions" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬 Chat on WhatsApp
+  </a>
+
+  <!-- Menu Toggle Script (single source of truth from index) + Tool Logic -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+
+      var isOpen = menu.style.display === "flex";
+      if (isOpen) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.style.display = "flex";
+        btn.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        var firstLink = menu.querySelector("a");
+        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
+      }
+    }
+
+    // Close on outside click
+    document.addEventListener("click", function(e) {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded","false");
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn && menu.style.display === "flex") {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+          btn.focus();
+        }
+      }
+    });
+
+    // Close menu after clicking a link
+    document.getElementById("menuContent")?.addEventListener("click", function(e){
+      if (e.target.closest("a")) {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn) {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+        }
+      }
+    });
+
+    // DMP Payment Estimator logic
+    (function(){
+      var income=document.getElementById('income');
+      var essentials=document.getElementById('essentials');
+      var nonprio=document.getElementById('nonprio');
+      var io=document.getElementById('incomeOut');
+      var eo=document.getElementById('essentialsOut');
+      var no=document.getElementById('nonprioOut');
+      var sp=document.getElementById('surplusPill');
+      var sg=document.getElementById('suggestPill');
+
+      function fmt(v){ return "£" + Number(v).toLocaleString('en-GB'); }
+      function recalc(){
+        io.textContent=fmt(income.value);
+        eo.textContent=fmt(essentials.value);
+        no.textContent=fmt(nonprio.value);
+        var surplus = Math.max(0, income.value - essentials.value);
+        var suggested = Math.floor(surplus * 0.8); // keep headroom
+        sp.textContent = "Surplus: " + fmt(surplus);
+        sg.textContent = "Suggested DMP offer: " + fmt(suggested);
+      }
+      [income, essentials, nonprio].forEach(function(el){
+        el.addEventListener('input', recalc);
+        el.addEventListener('change', recalc);
+      });
+      recalc();
+    })();
+  </script>
 </body>
 </html>
