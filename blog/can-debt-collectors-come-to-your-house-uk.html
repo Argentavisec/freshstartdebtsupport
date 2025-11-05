@@ -36,7 +36,7 @@
   <!-- Site styles (includes sticky header + hamburger) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS for HERO + utilities -->
+  <!-- Inline critical CSS to match index.html look/feel -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -55,10 +55,16 @@
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+
+    /* Meta strip (E-E-A-T updated date) */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* Accessibility helper (skip link) */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* Extra utilities used by this page's content */
     .tip{background:#f6fff9;border:1px solid #d6f5e1;border-radius:10px;padding:12px}
     .notice{background:#fff7e6;border:1px solid #ffd08a;border-radius:10px;padding:12px}
     details.faq{border:1px solid #e6e6e6;border-radius:10px;padding:12px;margin:10px 0}
@@ -71,7 +77,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
     gtag('config', 'G-0PJ0YPPJST');
   </script>
@@ -146,7 +152,7 @@
   <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner (Sticky) -->
+  <!-- Header / Banner (Sticky) : identical structure to index.html -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
@@ -259,7 +265,7 @@
   </div>
   <!-- /Header -->
 
-  <!-- HERO -->
+  <!-- HERO: identical style; page-specific copy -->
   <section class="landing-hero" role="region" aria-label="Debt collectors at your door — your rights">
     <div class="hero-inner">
       <div class="hero-copy">
@@ -291,7 +297,7 @@
   <!-- Main Content Container -->
   <div class="container">
 
-    <!-- Section: Intro (kept + enriched) -->
+    <!-- Section: Intro -->
     <div class="section">
       <h1>Can Debt Collectors Come to Your House in the UK?</h1>
       <p>If you're dealing with letters, calls, and texts from debt collectors, you may be wondering — <strong>can debt collectors come to your house in the UK?</strong> The short answer is yes, but with strict limitations. And the good news is: you have rights, and you’re not alone.</p>
@@ -299,7 +305,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">See My Options</a>
     </div>
 
-    <!-- Section: Who are debt collectors (kept + enriched) -->
+    <!-- Section: Who are debt collectors -->
     <div class="section">
       <h2>Who Are Debt Collectors?</h2>
       <p>Debt collectors are agents hired by creditors (like banks, credit cards, or lenders) to recover unpaid debts. They may work for a company like <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis</a>, <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell</a> or similar agencies.</p>
@@ -314,7 +320,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personal Help</a>
     </div>
 
-    <!-- Section: If they visit (kept + enriched; includes interactive tool) -->
+    <!-- Section: If they visit -->
     <div class="section">
       <h2>What Happens If a Debt Collector Visits My Home?</h2>
       <p>If a debt collector visits your home, remember: <strong>you don’t have to let them in</strong>. You're not legally required to speak to them face-to-face — you can communicate by letter or phone if preferred.</p>
@@ -337,7 +343,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Stop Doorstep Visits</a>
     </div>
 
-    <!-- Section: Bailiffs vs debt collectors (kept; no table; enriched) -->
+    <!-- Section: Bailiffs vs debt collectors -->
     <div class="section">
       <h2>Bailiffs vs. Debt Collectors – What’s the Difference?</h2>
       <p>This is a common area of confusion. Debt collectors and bailiffs are NOT the same.</p>
@@ -349,7 +355,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Bailiff Help</a>
     </div>
 
-    <!-- Section: How to stop (kept + enriched) -->
+    <!-- Section: How to stop -->
     <div class="section">
       <h2>How to Legally Stop Debt Collectors Coming to Your Home</h2>
       <p>The most effective way to stop debt collectors is to put a <strong>formal solution in place</strong>. This may include:</p>
@@ -362,7 +368,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check Eligibility</a>
     </div>
 
-    <!-- NEW Section: Complaints & FCA rules (cluster intent) -->
+    <!-- Section: Complaints & FCA rules -->
     <div class="section">
       <h2>How to Complain About Doorstep Debt Collection</h2>
       <p>If you feel a collector’s conduct was unfair (harassment, visiting at inappropriate times, ignoring vulnerability), complain in writing to the firm first. If unresolved, you can escalate to the Financial Ombudsman Service. Firms must follow FCA consumer credit rules (CONC) on fair treatment and appropriate contact.</p>
@@ -370,14 +376,14 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Complaint Help</a>
     </div>
 
-    <!-- NEW Section: Regional differences signpost (cluster intent) -->
+    <!-- Section: Regional differences -->
     <div class="section">
       <h2>Do the Rules Differ in Scotland or Northern Ireland?</h2>
       <p>Debt collection approaches and enforcement processes are different outside England &amp; Wales. If you live in Scotland or Northern Ireland, the steps to enforce a debt and the powers of enforcement officers differ. We’ll route you to the right guidance when you complete the quick form.</p>
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Region-Specific Help</a>
     </div>
 
-    <!-- NEW Section: What to say / what not to say (cluster intent) -->
+    <!-- Section: What to say / what not to say -->
     <div class="section">
       <h2>What to Say (and Not Say) at the Door</h2>
       <h3>Say this</h3>
@@ -387,7 +393,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Plan My Next Step</a>
     </div>
 
-    <!-- FAQ (kept + expanded; also mirrored by JSON-LD above) -->
+    <!-- FAQ (expanded; mirrored by JSON-LD) -->
     <div class="section" id="faqs">
       <h2>Frequently Asked Questions</h2>
 
@@ -429,7 +435,7 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask Your Question</a>
     </div>
 
-    <!-- Optional Trustpilot widget spot (kept) -->
+    <!-- Optional Trustpilot widget spot -->
     <div class="section" aria-label="Reviews">
       <div class="trustpilot-widget"
            data-locale="en-GB"
@@ -446,7 +452,7 @@
   </div>
   <!-- /container -->
 
-  <!-- Footer with breadcrumbs moved here -->
+  <!-- Footer (keeps breadcrumb content + index footer style) -->
   <footer>
     <nav aria-label="Breadcrumb">
       <ol>
@@ -456,15 +462,15 @@
       </ol>
     </nav>
     <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
-    <p>This website offers guidance and support services. It is not regulated by the Financial Conduct Authority. Insolvency services are referred to licensed and authorised practitioners.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
   </footer>
 
-  <!-- WhatsApp Floating Button -->
+  <!-- WhatsApp Floating Button (content preserved) -->
   <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Menu Toggle Script -->
+  <!-- Menu Toggle Script (single source of truth, identical to index) -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
