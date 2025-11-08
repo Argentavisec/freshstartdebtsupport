@@ -5,13 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Notice of Enforcement: Deadlines, What Counts as Entry, and Your Options | Fresh Start Debt Support</title>
+  <title>Notice of Enforcement: Deadlines, Entry Rules & Options | Fresh Start Debt Support</title>
   <meta name="description" content="Got a Notice of Enforcement? Learn the 7 clear-day rule, what counts as ‘entry’, bailiff fees, and your options to stop or manage enforcement. Includes a deadline calculator and fast help." />
   <meta name="keywords" content="notice of enforcement, 7 clear days, bailiff entry, peaceful entry, enforcement agent, stop bailiffs, compliance fee 75, enforcement fee 235, sale fee 110" />
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-  <!-- Eye-catching to Google & relevant -->
-  <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1,notranslate" />
-  <meta name="theme-color" content="#4CAF50" />
+  <meta name="robots" content="index,follow" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/blog/notice-of-enforcement.html" />
@@ -19,226 +16,379 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Fresh Start Debt Support" />
   <meta property="og:title" content="Notice of Enforcement: Deadlines, Entry Rules & Options" />
   <meta property="og:description" content="Understand the 7 clear-day rule, bailiff entry rules and your options. Use the calculator and get tailored help." />
   <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/og/notice-of-enforcement.jpg" />
+  <meta property="og:image:alt" content="Notice of Enforcement help — Fresh Start Debt Support" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Notice of Enforcement: Deadlines, Entry Rules & Options" />
   <meta name="twitter:description" content="Understand the 7 clear-day rule, bailiff entry rules and your options." />
   <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/og/notice-of-enforcement.jpg" />
 
-  <!-- Preconnects (perf) -->
-  <link rel="preconnect" href="https://www.googletagmanager.com" />
-  <link rel="preconnect" href="https://www.google-analytics.com" />
-  <link rel="preconnect" href="https://cdn.jotfor.ms" />
-  <link rel="preconnect" href="https://widget.trustpilot.com" />
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
+  <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Styles (inline critical) -->
+  <!-- Site styles (shared) -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Inline critical CSS matching site hero/utilities -->
   <style>
-    :root{
-      --green1:#56d68a; --green2:#4CAF50; --green3:#3b8f40; --ink:#0f2a1e; --muted:#4a5b53; --bg:#f7fbf8; --card:#ffffff;
+    .landing-hero{
+      background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
+      color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)
     }
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:#0d291d;line-height:1.6}
-    a{color:#0e7c3a;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .landing-hero{background:linear-gradient(135deg,var(--green1),var(--green2),var(--green3));color:#fff;padding:48px 16px}
-    .hero-inner{max-width:1000px;margin:0 auto;display:grid;gap:12px}
-    .hero-title{font-size:32px;margin:0}
-    .hero-sub{font-size:18px;margin:0 0 8px}
-    .hero-cta{display:inline-block;background:#fff;color:#1f7a3b;padding:12px 16px;border-radius:10px;font-weight:700}
-    .hero-trust{font-size:14px;opacity:.95}
-    .statbar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);padding:6px 10px;border-radius:999px;font-size:13px}
-    main{max-width:1000px;margin:0 auto;padding:28px 16px}
-    section{background:var(--card);border-radius:16px;box-shadow:0 6px 24px rgba(18,77,46,.08);padding:20px;margin:0 0 18px}
-    section h2,section h3,section h4,section h5{color:var(--ink);margin:0 0 8px}
-    .cta-wrap{margin-top:12px}
-    .cta{display:inline-block;background:var(--green2);color:#fff;padding:12px 14px;border-radius:10px;font-weight:700}
-    .note{background:#f1fbf4;border-left:4px solid var(--green2);padding:10px;border-radius:8px}
-    .muted{color:var(--muted)}
-    .inline-list{display:flex;flex-wrap:wrap;gap:6px}
-    .inline-list span{background:#edf7ef;border:1px solid #d8efe0;padding:4px 8px;border-radius:999px;font-size:12px}
-    /* Interactive tool */
-    .tool{border:1px solid #e2f1e7;padding:12px;border-radius:12px;background:#fbfffc}
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-copy{text-align:center}
+    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
+    .hero-cta{
+      display:inline-block;border:0;border-radius:999px;padding:14px 22px;
+      font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;
+      background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);
+      transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease
+    }
+    .hero-cta:hover{background:#e8f6ec;color:#215a29}
+    .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
+    .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
+
+    .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+    .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    .inline-list{display:flex;flex-wrap:wrap;gap:8px}
+    .inline-list a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:6px 10px;font-size:13px;text-decoration:none;color:#215a29}
+
+    .tool{border:1px solid #cdebd6;background:#fbfffc;border-radius:12px;padding:12px}
     .tool input,.tool button{font-size:15px;padding:8px;border-radius:8px}
-    .tool input{border:1px solid #cfe7d7}
-    .tool button{border:0;background:var(--green2);color:#fff;font-weight:700}
-    footer{max-width:1000px;margin:24px auto 60px;padding:0 16px}
-    .breadcrumbs{font-size:14px;color:var(--muted)}
-    .breadcrumbs a{color:#2b7b4a}
+    .tool input{border:1px solid #cdebd6}
+    .tool button{border:0;background:#4CAF50;color:#fff;font-weight:800}
+
+    .note{background:#f4fff7;border-left:4px solid #4CAF50;padding:10px;border-radius:8px}
   </style>
 
-  <!-- JSON-LD (Organization & Website) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Fresh Start Debt Support",
-    "url":"https://www.freshstartdebtsupport.co.uk/",
-    "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
-    "sameAs":["https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk"]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebSite",
-    "name":"Fresh Start Debt Support",
-    "url":"https://www.freshstartdebtsupport.co.uk/",
-    "potentialAction":{
-      "@type":"SearchAction",
-      "target":"https://www.freshstartdebtsupport.co.uk/search?q={query}",
-      "query-input":"required name=query"
-    }
-  }
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-0PJ0YPPJST');
   </script>
 
-  <!-- JSON-LD (Article with citations to legal basis) -->
+  <!-- TrustBox script -->
+  <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+  <!-- Structured Data (Org + WebPage + BlogPosting + FAQ + HowTo + Breadcrumb) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"BlogPosting",
-    "headline":"Notice of Enforcement: Deadlines, What Counts as Entry, and Your Options",
-    "description":"Understand your rights and options after a Notice of Enforcement, including the 7 clear-day rule, entry rules, fees, and ways to stop enforcement.",
-    "image":"https://www.freshstartdebtsupport.co.uk/og/notice-of-enforcement.jpg",
-    "datePublished":"2025-11-08",
-    "dateModified":"2025-11-08",
-    "author":{"@type":"Organization","name":"Fresh Start Debt Support"},
-    "publisher":{"@type":"Organization","name":"Fresh Start Debt Support","logo":{"@type":"ImageObject","url":"https://www.freshstartdebtsupport.co.uk/logo.jpg"}},
-    "mainEntityOfPage":"https://www.freshstartdebtsupport.co.uk/blog/notice-of-enforcement.html",
-    "citation":[
-      "https://www.legislation.gov.uk/uksi/2013/1894/part/2",
-      "https://www.nationaldebtline.org/get-information/guides/high-court-enforcement-ew/",
-      "https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/stopping-bailiffs/dealing-with-a-letter-saying-bailiffs-will-visit/",
-      "https://www.gov.uk/hmrc-internal-manuals/debt-management-and-banking/dmbm657160"
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Fresh Start Debt Support",
+        "url":"https://www.freshstartdebtsupport.co.uk/",
+        "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
+        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
+      },
+      {
+        "@type":"WebPage",
+        "url":"https://www.freshstartdebtsupport.co.uk/blog/notice-of-enforcement.html",
+        "name":"Notice of Enforcement: Deadlines, Entry Rules & Options",
+        "description":"Understand your rights and options after a Notice of Enforcement, including the 7 clear-day rule, entry rules, fees, and ways to stop enforcement.",
+        "breadcrumb":{
+          "@type":"BreadcrumbList",
+          "itemListElement":[
+            {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/"},
+            {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.freshstartdebtsupport.co.uk/blog/"},
+            {"@type":"ListItem","position":3,"name":"Notice of Enforcement"}
+          ]
+        }
+      },
+      {
+        "@type":"BlogPosting",
+        "headline":"Notice of Enforcement: Deadlines, What Counts as Entry, and Your Options",
+        "description":"Understand your rights and options after a Notice of Enforcement, including the 7 clear-day rule, entry rules, fees, and ways to stop enforcement.",
+        "image":"https://www.freshstartdebtsupport.co.uk/og/notice-of-enforcement.jpg",
+        "datePublished":"2025-11-08",
+        "dateModified":"2025-11-08",
+        "author":{"@type":"Organization","name":"Fresh Start Debt Support"},
+        "publisher":{"@type":"Organization","name":"Fresh Start Debt Support","logo":{"@type":"ImageObject","url":"https://www.freshstartdebtsupport.co.uk/logo.jpg"}},
+        "mainEntityOfPage":"https://www.freshstartdebtsupport.co.uk/blog/notice-of-enforcement.html",
+        "citation":[
+          "https://www.legislation.gov.uk/uksi/2013/1894/part/2",
+          "https://www.nationaldebtline.org/get-information/guides/high-court-enforcement-ew/",
+          "https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/stopping-bailiffs/dealing-with-a-letter-saying-bailiffs-will-visit/",
+          "https://www.gov.uk/hmrc-internal-manuals/debt-management-and-banking/dmbm657160"
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"How do I count “7 clear days” after a Notice of Enforcement?","acceptedAnswer":{"@type":"Answer","text":"Exclude the day you received the notice and the day of the visit. Sundays and bank holidays do not count as clear days. Use the on-page calculator for 2025 dates."}},
+          {"@type":"Question","name":"Can I refuse entry to a bailiff?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes. Keep doors locked and speak through a letterbox/window. Certain debts and stages may allow reasonable force later—seek advice promptly."}},
+          {"@type":"Question","name":"Will an affordable plan or Breathing Space stop enforcement?","acceptedAnswer":{"@type":"Answer","text":"Agreeing a realistic plan or entering Breathing Space can pause or stop action and fees from escalating while you arrange longer-term help."}}
+        ]
+      },
+      {
+        "@type":"HowTo",
+        "name":"How to calculate the earliest bailiff visit date after a Notice of Enforcement",
+        "step":[
+          {"@type":"HowToStep","name":"Record the received date","text":"Use the date the Notice of Enforcement arrived."},
+          {"@type":"HowToStep","name":"Exclude non-counting days","text":"Exclude the day received, the day of visit, Sundays and bank holidays."},
+          {"@type":"HowToStep","name":"Count 7 clear days","text":"Count 7 qualifying days to find the earliest possible first visit."}
+        ],
+        "tool":[{"@type":"HowToTool","name":"7 Clear-Day Calculator"}]
+      }
     ]
   }
   </script>
 </head>
 <body>
 
-  <!-- ===== HERO ===== -->
+  <!-- Accessibility -->
+  <a href="#main-start" class="skip-link">Skip to content</a>
+
+  <!-- ===== Header / Banner (Sticky) — same as index ===== -->
+  <div class="banner" role="banner">
+    <div class="top-bar">
+      <div class="brand">
+        <img src="../logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+      </div>
+
+      <button id="menuButton" class="hamburger" aria-label="Open menu" aria-controls="menuContent" aria-expanded="false" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Single, centralized menu content (shown when hamburger is toggled) -->
+    <nav class="menu-content" id="menuContent" role="menu" aria-labelledby="menuButton">
+      <div class="menu-sections">
+        <div class="menu-section">
+          <h4>About Us</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/index.html">About Us</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/what-we-do.html">What We Do</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/breathing-space.html">Breathing Space</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/privacy.html">Privacy Policy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/contact.html">Contact Us</a>
+
+
+        </div>
+
+        <div class="menu-section">
+          <h4>Choose a Debt Solution</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva.html">About an IVA</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">About a DMP</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dro.html">About a DRO</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">Compare IVA vs DMP vs Bankruptcy</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-calculator.html">Debt Calculator</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Types of Debt</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/klarna.html">Klarna Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Card Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Personal Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Utility Bills</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Bank Overdrafts</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/business-debt.html">Business Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/tax-debt.html">Tax & HMRC Debt</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/gambling-debt.html">Gambling Debts</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>List of Creditors</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/barclays.html">Barclays</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hsbc.html">HSBC</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/natwest.html">NatWest</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lloyds.html">Lloyds</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capital-one.html">Capital One</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Debt Collectors & Bailiffs</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cabot.html">Cabot Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moriarty-law.html">Moriarty Law</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/pra-group.html">PRA Group</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/advantis.html">Advantis Credit</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/capquest.html">Capquest Debt Recovery</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/wescot.html">Wescot Credit Services</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/resolvecall.html">Resolvecall</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/hoist-finance.html">Hoist Finance</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/robinson-way.html">Robinson Way</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/fredrickson.html">Fredrickson International</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/drydensfairfax.html">Drydensfairfax Solicitors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/jacobs-enforcement.html">Jacobs Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow & Sutor</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/rossendales.html">Rossendales</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/equita.html">Equita</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/cdcbailiffs.html">CDCBailiffs</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/marston-holdings.html">Marston Holdings</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/swift-credit.html">Swift Credit Services</a>
+        </div>
+
+        <div class="menu-section">
+          <h4>Popular Searches</h4>
+          <a href="https://www.freshstartdebtsupport.co.uk/debt-help-uk-2025.html">Debt Help UK 2025</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html">Clear Debt Fast</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/iva-company.html">IVA Company</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html">DMP Provider</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors.html">Stop Debt Collectors</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html">Affordable Repayment Plans</a>
+          <a href="https://www.freshstartdebtsupport.co.uk/blog/">Blog</a>
+        </div>
+      </div>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check If You Qualify</a>
+    </nav>
+  </div>
+  <!-- /Header -->
+
+  <!-- ===== HERO (same component style) ===== -->
   <section class="landing-hero" role="region" aria-label="Notice of Enforcement help">
     <div class="hero-inner">
-      <h1 class="hero-title">Notice of Enforcement: Deadlines, What Counts as ‘Entry’, and Your Options</h1>
-      <p class="hero-sub">Work out your earliest visit date, understand entry rules and fees, and see fast ways to pause or stop enforcement.</p>
-      <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt check">Start Free Debt Check</a>
-      <div class="hero-trust">Free & confidential • No pressure • Legal rights explained</div>
+      <div class="hero-copy">
+        <h2 class="hero-title">Notice of Enforcement — Deadlines, ‘Entry’ Rules & Your Options</h2>
+        <p class="hero-sub">Work out your earliest visit date, understand entry rules and fees, and see fast ways to pause or stop enforcement.</p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free debt help assessment">✅ Start Free Debt Check</a>
+        <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
 
-      <!-- Topical tags (eye-catching & relevant) -->
-      <div class="statbar" aria-label="Topical tags">
-        <div class="pill">7 Clear-Day Rule</div>
-        <div class="pill">Peaceful Entry Only</div>
-        <div class="pill">Bailiff Fee Stages</div>
-        <div class="pill">Stop Bailiffs Today</div>
+        <div class="statbar" aria-label="Topical tags">
+          <span class="pill">7 Clear-Day Rule</span>
+          <span class="pill">Peaceful Entry Only</span>
+          <span class="pill">Bailiff Fee Stages</span>
+          <span class="pill">Stop Bailiffs Today</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <main>
+  <!-- Meta strip -->
+  <div class="meta small">
+    <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • England &amp; Wales guidance</p>
+    <script>
+      (function(){
+        var el=document.getElementById('updated');
+        if(el){ el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"}); }
+      })();
+    </script>
+  </div>
 
-    <!-- ===== Div 1: What a Notice of Enforcement means ===== -->
-    <section id="what-is-noe">
-      <h2>What Your Notice of Enforcement Actually Means</h2>
-      <p>A Notice of Enforcement (NoE) is a formal warning that an enforcement agent (bailiff) intends to take control of goods if you don’t resolve the debt. In most cases they must wait <strong>7 clear days</strong> before their first visit. “Clear days” exclude the day you receive the notice and the day of the visit; Sundays and bank holidays do not count as clear days.</p>
-      <p class="note">If you act during this window, you can often set up an affordable plan or enter “Breathing Space” to halt enforcement while you get help.</p>
+  <!-- Anchor for skip link -->
+  <div id="main-start"></div>
+
+  <!-- ===== Main container (same structure as index) ===== -->
+  <div class="container">
+
+    <!-- Section 1: What the notice means -->
+    <div class="section" id="what-is-noe">
+      <h1>What Your Notice of Enforcement Actually Means</h1>
+      <p>A <strong>Notice of Enforcement (NoE)</strong> is a formal warning that an enforcement agent (bailiff) intends to take control of goods if you don’t resolve the debt. In most cases they must wait <strong>7 clear days</strong> before a first visit. “Clear days” exclude the day you receive the notice and the day of the visit; <strong>Sundays and bank holidays do not count</strong>.</p>
+      <p class="note">Act during this window to set up an affordable plan or use <a href="../breathing-space.html">Breathing Space</a> to pause enforcement while you get help.</p>
       <div class="inline-list" aria-label="Helpful internal links">
-        <a href="https://www.freshstartdebtsupport.co.uk/breathing-space-debt-help-2025.html"><span>Breathing Space guide</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html"><span>Affordable repayment plans</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html"><span>Clear debt fast</span></a>
+        <a href="../breathing-space-debt-help-2025.html">Breathing Space guide</a>
+        <a href="../affordable-repayment-plans.html">Affordable repayment plans</a>
+        <a href="../clear-debt-fast.html">Clear debt fast</a>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Check my options">Check My Options</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Check My Options</a>
+    </div>
 
-    <!-- ===== Div 2: Deadline calculator (interactive tool) ===== -->
-    <section id="deadline-calculator">
+    <!-- Section 2: Deadline calculator -->
+    <div class="section" id="deadline-calculator">
       <h2>7 Clear-Day Deadline Calculator</h2>
       <div class="tool" role="application" aria-label="7 clear days calculator">
         <label for="receivedDate"><h3>Enter the date you received the notice</h3></label>
         <input type="date" id="receivedDate" />
         <button id="calcBtn" type="button">Calculate</button>
-        <div id="calcResult" class="muted" style="margin-top:10px;"></div>
-        <p class="muted">We exclude Sundays and England/Wales bank holidays for 2025. If you’re in Scotland/NI or have urgent circumstances, use this as a guide only.</p>
+        <div id="calcResult" style="margin-top:10px;color:#3a5043;"></div>
+        <p style="color:#53645c;font-size:14px">We exclude Sundays and England/Wales bank holidays for 2025. If you’re in Scotland/NI or have urgent circumstances, use this as a guide only.</p>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Get help now">Get Help Now</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Now</a>
+    </div>
 
-    <!-- ===== Div 3: What counts as ‘entry’ ===== -->
-    <section id="entry-rules">
+    <!-- Section 3: Entry rules -->
+    <div class="section" id="entry-rules">
       <h2>What Counts as ‘Entry’ (And What Doesn’t)</h2>
-      <h3>Peaceful entry</h3>
-      <p>Most visits require <strong>peaceful entry</strong>. Agents can enter through a door that you open or an unlocked door. They can’t push past you, climb in through a window, or enter when the only people home are under 16 or classed as vulnerable. Keep doors and accessible points locked and speak through the letterbox or a window.</p>
-      <h3>When force is possible</h3>
-      <p>For certain debts (e.g., criminal fines or HMRC tax) and with the correct authority, agents may be allowed to use reasonable force for entry at a later stage. Always ask to see ID, the warrant/writ, and take photos of any paperwork.</p>
+      <h3>Peaceful Entry</h3>
+      <p>Most visits require <strong>peaceful entry</strong>. Agents can enter through a door that you open or an unlocked door. They <em>cannot</em> push past you, climb in through a window, or enter when the only people home are under 16 or classed as vulnerable. Keep doors and accessible points locked and speak through the letterbox or a window.</p>
+      <h3>When Force Is Possible</h3>
+      <p>For certain debts (e.g., criminal fines or HMRC tax) and with correct authority, agents may be allowed to use reasonable force later in the process. Always ask to see ID, the warrant/writ, and take photos of any paperwork.</p>
       <div class="inline-list" aria-label="Related reading">
-        <a href="https://www.freshstartdebtsupport.co.uk/can-debt-collectors-come-to-your-house.html"><span>Debt collectors vs bailiffs</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/stop-debt-collectors-uk.html"><span>Stop debt collectors UK</span></a>
+        <a href="../can-debt-collectors-come-to-your-house.html">Debt collectors vs bailiffs</a>
+        <a href="../stop-debt-collectors.html">Stop debt collectors UK</a>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Speak to a specialist">Speak To A Specialist</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
+    </div>
 
-    <!-- ===== Div 4: Statutory fees explained ===== -->
-    <section id="fees">
+    <!-- Section 4: Fees -->
+    <div class="section" id="fees">
       <h2>Bailiff Fees: Compliance, Enforcement & Sale</h2>
       <p>Fees are set by law and usually follow three stages:</p>
-      <h3>Compliance (£75)</h3>
+      <h3>Compliance — £75</h3>
       <p>Charged when the notice is issued. You typically have 7 clear days to respond.</p>
-      <h3>Enforcement (£235 + 7.5% over threshold)</h3>
+      <h3>Enforcement — £235 + 7.5% over threshold</h3>
       <p>Charged when an agent visits. An extra percentage applies above the statutory threshold.</p>
-      <h3>Sale (£110 + 7.5% over threshold)</h3>
+      <h3>Sale — £110 + 7.5% over threshold</h3>
       <p>Charged if goods are removed/sold. Avoiding escalation can save hundreds.</p>
       <div class="inline-list" aria-label="More detail">
-        <a href="https://www.freshstartdebtsupport.co.uk/blog/bailiff-fees-2025.html"><span>Bailiff fees 2025 (explainer)</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/affordable-repayment-plans.html"><span>Lower payments now</span></a>
+        <a href="./bailiff-fees-2025.html">Bailiff fees 2025 (explainer)</a>
+        <a href="../affordable-repayment-plans.html">Lower payments now</a>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Reduce my payments">Reduce My Payments</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Reduce My Payments</a>
+    </div>
 
-    <!-- ===== Div 5: Your options today ===== -->
-    <section id="options">
+    <!-- Section 5: Options -->
+    <div class="section" id="options">
       <h2>Your Options During the Notice Window</h2>
-      <h3>Ask for breathing space</h3>
-      <p>Breathing Space can pause most enforcement and interest while you get debt advice and set up a plan.</p>
-      <h3>Set up an affordable plan</h3>
-      <p>A Debt Management Plan can lower payments. If debts are unaffordable, solutions like an IVA or DRO may write off what you can’t repay.</p>
-      <div class="inline-list" aria-label="Internal links">
-        <a href="https://www.freshstartdebtsupport.co.uk/breathing-space-debt-help-2025.html"><span>Breathing Space</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/dmp-provider.html"><span>DMP providers (guide)</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/clear-debt-fast.html"><span>Write off unaffordable debt</span></a>
+      <h3>Ask for Breathing Space</h3>
+      <p><strong>Breathing Space</strong> can pause most enforcement and interest while you get debt advice and set up a plan.</p>
+      <h3>Set Up an Affordable Plan</h3>
+      <p>A <a href="../dmp.html">Debt Management Plan</a> can lower payments. If debts are unaffordable, solutions like an <a href="../iva.html">IVA</a> or <a href="../dro.html">DRO</a> may write off what you can’t repay.</p>
+      <div class="inline-list">
+        <a href="../breathing-space-debt-help-2025.html">Breathing Space</a>
+        <a href="../dmp-provider.html">DMP providers (guide)</a>
+        <a href="../clear-debt-fast.html">Write off unaffordable debt</a>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="See if I qualify">See If I Qualify</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify</a>
+    </div>
 
-    <!-- ===== Div 6: High-intent cluster questions (inline answers) ===== -->
-    <section id="cluster-qa">
+    <!-- Section 6: Cluster Q&A -->
+    <div class="section" id="cluster-qa">
       <h2>High-Intent Questions People Ask</h2>
       <h3>Can bailiffs come on Sundays or bank holidays?</h3>
-      <p>Sunday doesn’t count as a “clear day” in your 7-day window. Visits generally avoid late hours and must follow conduct rules; if you’re unsure, get advice fast.</p>
+      <p>Sunday doesn’t count as a “clear day” in the 7-day window. Visits generally avoid late hours and must follow conduct rules; if you’re unsure, get advice fast.</p>
       <h3>Does texting or emailing count as a Notice of Enforcement?</h3>
       <p>The notice must be in writing with required details. Many firms send it by post; digital messages may accompany but must meet legal content rules.</p>
       <h3>How do I check an enforcement agent is certified?</h3>
       <p>Ask for photo ID and their company; you can check the Certificated Enforcement Agent register online.</p>
-      <div class="inline-list" aria-label="Helpful internal links">
-        <a href="https://www.freshstartdebtsupport.co.uk/blog/stop-debt-collectors-uk.html"><span>Stop debt collectors</span></a>
-        <a href="https://www.freshstartdebtsupport.co.uk/blog/index.html"><span>Debt help blog</span></a>
+      <div class="inline-list">
+        <a href="./stop-debt-collectors-uk.html">Stop debt collectors</a>
+        <a href="./index.html">Debt help blog</a>
       </div>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Ask a quick question">Ask A Quick Question</a>
-      </div>
-    </section>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask a Quick Question</a>
+    </div>
 
-    <!-- ===== Div 7: FAQs (Schema-backed) ===== -->
-    <section id="faqs">
+    <!-- Section 7: FAQs -->
+    <div class="section" id="faqs">
       <h2>FAQs</h2>
       <h3>How do I count “7 clear days”?</h3>
       <p>Exclude the day you got the notice, the day of the visit, Sundays and bank holidays. Use the calculator above for 2025 dates.</p>
@@ -246,87 +396,51 @@
       <p>Yes, in most cases you do not have to let an agent in. Keep doors locked and communicate through a letterbox/window. For certain debts later in the process, force may be allowed—get advice.</p>
       <h3>Will an affordable plan stop enforcement?</h3>
       <p>Agreeing a realistic plan or entering Breathing Space often pauses or stops further action.</p>
-      <div class="cta-wrap">
-        <a href="https://form.jotform.com/250596569907070" class="cta" aria-label="Start free assessment">Start Free Assessment</a>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start Free Assessment</a>
+    </div>
+
+    <!-- Optional Trustpilot widget -->
+    <div class="section" aria-label="Reviews">
+      <div class="trustpilot-widget"
+           data-locale="en-GB"
+           data-template-id="53aa8807dec7e10d38f59f36"
+           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
+           data-style-height="140px"
+           data-style-width="100%"
+           data-theme="light">
+        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
       </div>
-    </section>
+    </div>
 
-  </main>
+    <!-- Section: Breadcrumbs style (matches site tone) -->
+    <div class="section" aria-label="Breadcrumb">
+      <p><a href="../index.html">Home</a> &rsaquo; <a href="./">Blog</a> &rsaquo; Notice of Enforcement</p>
+    </div>
 
-  <!-- ===== Footer with breadcrumbs (left) ===== -->
+  </div>
+  <!-- /container -->
+
+  <!-- Footer -->
   <footer>
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <span><a href="https://www.freshstartdebtsupport.co.uk/">Home</a> &rsaquo; </span>
-      <span><a href="https://www.freshstartdebtsupport.co.uk/blog/index.html">Blog</a> &rsaquo; </span>
-      <span>Notice of Enforcement</span>
-    </nav>
-    <p class="muted">Information is for England &amp; Wales. Get tailored advice for your situation.</p>
+    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
   </footer>
 
-  <!-- ===== FAQPage JSON-LD ===== -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"How do I count “7 clear days” after a Notice of Enforcement?",
-        "acceptedAnswer":{"@type":"Answer","text":"Exclude the day you received the notice and the day of the visit. Sundays and bank holidays do not count as clear days. Use the on-page calculator for 2025 dates."}
-      },
-      {
-        "@type":"Question",
-        "name":"Can I refuse entry to a bailiff?",
-        "acceptedAnswer":{"@type":"Answer","text":"In most cases yes. Keep doors locked and speak through a letterbox/window. Certain debts and stages may allow reasonable force later—seek advice promptly."}
-      },
-      {
-        "@type":"Question",
-        "name":"Will an affordable plan or Breathing Space stop enforcement?",
-        "acceptedAnswer":{"@type":"Answer","text":"Agreeing a realistic plan or entering Breathing Space can pause or stop action and fees from escalating while you arrange longer-term help."}
-      }
-    ]
-  }
-  </script>
-
-  <!-- ===== BreadcrumbList JSON-LD ===== -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/"},
-      {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.freshstartdebtsupport.co.uk/blog/index.html"},
-      {"@type":"ListItem","position":3,"name":"Notice of Enforcement"}
-    ]
-  }
-  </script>
-
-  <!-- ===== HowTo JSON-LD: Count clear days ===== -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"HowTo",
-    "name":"How to calculate the earliest bailiff visit date after a Notice of Enforcement",
-    "step":[
-      {"@type":"HowToStep","name":"Record the received date","text":"Use the date the Notice of Enforcement arrived."},
-      {"@type":"HowToStep","name":"Exclude non-counting days","text":"Exclude the day received, the day of visit, Sundays and bank holidays."},
-      {"@type":"HowToStep","name":"Count 7 clear days","text":"Count 7 qualifying days to find the earliest possible first visit."}
-    ],
-    "tool":[{"@type":"HowToTool","name":"7 Clear-Day Calculator"}]
-  }
-  </script>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/447752296301?text=Hi%20I%20have%20a%20Notice%20of%20Enforcement%20and%20need%20help"
+     class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    💬 Chat on WhatsApp
+  </a>
 
   <!-- ===== Calculator script ===== -->
   <script>
     (function(){
       const bankHolidays2025 = [
-        "2025-01-01","2025-04-18","2025-04-21","2025-05-05","2025-05-26","2025-08-25","2025-12-25","2025-12-26"
+        "2025-01-01","2025-04-18","2025-04-21","2025-05-05",
+        "2025-05-26","2025-08-25","2025-12-25","2025-12-26"
       ];
       function isSunday(d){return d.getDay()===0;}
-      function isBH(d){
-        const iso = d.toISOString().slice(0,10);
-        return bankHolidays2025.includes(iso);
-      }
+      function isBH(d){return bankHolidays2025.includes(d.toISOString().slice(0,10));}
       function addClearDays(start, n){
         let d = new Date(start.getTime());
         let counted = 0;
@@ -336,29 +450,78 @@
         }
         return d;
       }
-      document.getElementById('calcBtn').addEventListener('click',function(){
+      document.getElementById('calcBtn')?.addEventListener('click',function(){
         const val = document.getElementById('receivedDate').value;
         const out = document.getElementById('calcResult');
         if(!val){ out.textContent = "Enter the date on your notice."; return; }
         const received = new Date(val+"T12:00:00");
-        const earliest = addClearDays(received,7); // excludes received day; visit day is after 7 clear days
+        const earliest = addClearDays(received,7);
         const opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
-        out.innerHTML = "<strong>Earliest first visit:</strong> " + earliest.toLocaleDateString(undefined,opts) + "<br><span class='muted'>Tip: act before this date to avoid enforcement fees.</span>";
+        out.innerHTML = "<strong>Earliest first visit:</strong> " + earliest.toLocaleDateString(undefined,opts) +
+          "<br><span style='color:#6a7b72'>Tip: act before this date to avoid enforcement fees.</span>";
       });
     })();
   </script>
 
-  <!-- ===== Internal notes (non-rendered) =====
-  Competitor parity: aligned with Citizens Advice (7 clear days), National Debtline (clear days exclude Sundays/holidays), legislation (TCG Regs).
-  Cluster queries targeted in headings and copy (long-tail, easier to rank):
-  - "notice of enforcement 7 clear days"
-  - "what counts as bailiff entry"
-  - "can bailiffs come on sunday / bank holiday"
-  - "bailiff compliance fee 75 enforcement fee 235 sale 110"
-  - "how to stop bailiffs today" / "breathing space bailiffs"
-  - "earliest bailiff visit date calculator"
-  Internal linking kept to pages you already have: breathing space, DMP providers, clear debt fast, bailiff fees 2025, collectors vs bailiffs, stop collectors.
-  One CTA per section, ≤6 words. Breadcrumbs placed in footer.
-  ===== -->
+  <!-- ===== Menu Toggle Script (same as index) ===== -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+
+      var isOpen = menu.style.display === "flex";
+      if (isOpen) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        menu.style.display = "flex";
+        btn.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        var firstLink = menu.querySelector("a");
+        if (firstLink) { try { firstLink.focus({preventScroll:true}); } catch(e){} }
+      }
+    }
+
+    document.addEventListener("click", function(e) {
+      var menu = document.getElementById("menuContent");
+      var btn  = document.getElementById("menuButton");
+      if (!menu || !btn) return;
+      if (menu.style.display === "flex" &&
+          !menu.contains(e.target) &&
+          !btn.contains(e.target)) {
+        menu.style.display = "none";
+        btn.classList.remove("is-open");
+        btn.setAttribute("aria-expanded","false");
+      }
+    });
+
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn && menu.style.display === "flex") {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+          btn.focus();
+        }
+      }
+    });
+
+    document.getElementById("menuContent")?.addEventListener("click", function(e){
+      if (e.target.closest("a")) {
+        var menu = document.getElementById("menuContent");
+        var btn  = document.getElementById("menuButton");
+        if (menu && btn) {
+          menu.style.display = "none";
+          btn.classList.remove("is-open");
+          btn.setAttribute("aria-expanded","false");
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
