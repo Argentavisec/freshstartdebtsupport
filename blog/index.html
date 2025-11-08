@@ -82,6 +82,54 @@
     .breadcrumbs a{color:#2f6f36;text-decoration:underline}
     .breadcrumbs nav{display:flex;gap:8px;flex-wrap:wrap}
     .breadcrumbs .sep{opacity:.6}
+
+    /* ===== Latest Posts — Pro Card Grid ===== */
+    .post-grid{
+      list-style:none;margin:0;padding:0;
+      display:grid;grid-template-columns:1fr;gap:16px
+    }
+    @media (min-width:560px){ .post-grid{ grid-template-columns:repeat(2,1fr);} }
+    @media (min-width:900px){ .post-grid{ grid-template-columns:repeat(3,1fr);} }
+
+    .post-card{
+      background:#fff;border-radius:14px;overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,.08);
+      border:1px solid #dff0e4;
+      display:flex;flex-direction:column;min-height:100%;
+      transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease
+    }
+    .post-card:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.12); border-color:#cfe8d9; }
+
+    .post-thumb{
+      position:relative;aspect-ratio:16/9;background:linear-gradient(120deg,#e5f7ec,#d6f1e1);
+      display:block;overflow:hidden
+    }
+    .post-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .post-thumb .label{
+      position:absolute;left:10px;top:10px;
+      background:#2f6f36;color:#fff;font-weight:700;font-size:12px;
+      padding:6px 10px;border-radius:999px
+    }
+
+    .post-body{ padding:14px 14px 16px; display:flex; flex-direction:column; gap:10px; }
+    .post-title{ font-size:18px; line-height:1.25; margin:0; color:#1f4624; }
+    .post-title a{ color:inherit; text-decoration:none; }
+    .post-title a:hover{ text-decoration:underline; }
+
+    .post-meta{
+      display:flex; gap:10px; flex-wrap:wrap; font-size:12px; color:#375a3d; opacity:.9
+    }
+    .post-meta .dot{opacity:.6}
+    .post-excerpt{ font-size:14px; color:#2b4630; margin:0; }
+
+    .post-cta{
+      margin-top:auto; display:inline-flex; align-items:center; gap:8px;
+      font-weight:800; font-size:14px; text-decoration:none;
+      color:#2f6f36; padding:8px 10px; border-radius:10px; background:#e8f6ec;
+      border:1px solid #cfe8d9
+    }
+    .post-cta:hover{ background:#dff3e7; }
+    .post-cta svg{ width:16px; height:16px; }
   </style>
 
   <!-- Google tag -->
@@ -296,16 +344,75 @@
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask An Expert</a>
     </div>
 
-    <!-- Latest Posts -->
+    <!-- Latest Posts (UPGRADED) -->
     <div class="section">
       <h2>Latest Blog Posts</h2>
-      <ul>
-        <li><a href="can-debt-collectors-come-to-your-house-uk.html">Can Debt Collectors Come to Your House in the UK?</a></li>
-        <li><a href="bailiff-fees-2025.html">Bailiff Fees 2025 — Compliance, Enforcement & Sale</a></li>
 
-        <!-- Add more blog posts below as you create them -->
-        <!-- Example: <li><a href="your-next-post.html">Title of Your Next Blog</a></li> -->
+      <ul class="post-grid" aria-label="Recent articles">
+        <!-- Card 1 -->
+        <li class="post-card">
+          <a class="post-thumb" href="can-debt-collectors-come-to-your-house-uk.html" aria-label="Read: Can Debt Collectors Come to Your House in the UK?">
+            <!-- Optional real thumbnail: replace src with your article image -->
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Know Your Rights</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="can-debt-collectors-come-to-your-house-uk.html">Can Debt Collectors Come to Your House in the UK?</a>
+            </h3>
+            <div class="post-meta">
+              <span>Guide</span><span class="dot">•</span><time datetime="2025-11-05">5 Nov 2025</time><span class="dot">•</span><span>5–7 min read</span>
+            </div>
+            <p class="post-excerpt">What collectors can and can’t do at the door, how this differs from bailiffs, and steps to stop visits quickly and safely.</p>
+            <a class="post-cta" href="can-debt-collectors-come-to-your-house-uk.html" aria-label="Read the article Can Debt Collectors Come to Your House in the UK?">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+
+        <!-- Card 2 -->
+        <li class="post-card">
+          <a class="post-thumb" href="bailiff-fees-2025.html" aria-label="Read: Bailiff Fees 2025 — Compliance, Enforcement &amp; Sale">
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Costs & Fees</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="bailiff-fees-2025.html">Bailiff Fees 2025 — Compliance, Enforcement &amp; Sale</a>
+            </h3>
+            <div class="post-meta">
+              <span>Explainer</span><span class="dot">•</span><time datetime="2025-11-08">8 Nov 2025</time><span class="dot">•</span><span>6–8 min read</span>
+            </div>
+            <p class="post-excerpt">Exact fee stages (£75 / £235 / £110) with examples, when extra percentages apply, and how to avoid unnecessary costs.</p>
+            <a class="post-cta" href="bailiff-fees-2025.html" aria-label="Read the article Bailiff Fees 2025 — Compliance, Enforcement and Sale">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+
+        <!-- Template for future posts: duplicate and update hrefs/content -->
+        <!--
+        <li class="post-card">
+          <a class="post-thumb" href="your-next-post.html" aria-label="Read: Title of Your Next Blog">
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Category</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title"><a href="your-next-post.html">Title of Your Next Blog</a></h3>
+            <div class="post-meta">
+              <span>Category</span><span class="dot">•</span><time datetime="YYYY-MM-DD">DD Mon YYYY</time><span class="dot">•</span><span>4–6 min read</span>
+            </div>
+            <p class="post-excerpt">One-sentence summary to increase CTR and help users find the right article.</p>
+            <a class="post-cta" href="your-next-post.html">Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+        -->
       </ul>
+
       <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personal Help</a>
     </div>
 
