@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta basics -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fresh Start Debt Support | Debt Help UK & Our Process | Starting from £69 per month</title>
-  <meta name="description" content="Need debt help? Discover our simple step-by-step process: quick JotForm, specialist call, free credit check, affordable plan, breathing space and ongoing support. Council tax debt, credit cards, loans, catalogues and more." />
-  <meta name="keywords" content="debt help, council tax debt, UK debt support, DMP, IVA, DRO, debt process, breathing space, stop debt collectors, affordable repayments" />
-  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debt Help Blog | Fresh Start</title>
+  <meta name="description" content="Read expert articles on debt help, IVA advice, stopping bailiffs, and more. Stay informed with the Fresh Start Debt Support blog." />
+  <meta name="keywords" content="debt help blog, IVA articles, debt solutions UK, financial support blog, Fresh Start Debt Support blog" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <!-- Eye-catching to Google -->
+  <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1,notranslate" />
 
-  <!-- Canonical to prefer /index.html over / -->
-  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/index.html" />
-  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/index.html" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.freshstartdebtsupport.co.uk/blog/index.html" />
+  <meta property="og:url" content="https://www.freshstartdebtsupport.co.uk/blog/index.html" />
 
-  <!-- NEW: Open Graph / Twitter for richer SERP/Share cards -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Fresh Start Debt Support" />
-  <meta property="og:title" content="Debt Help UK — Simple 7-Step Process | Fresh Start Debt Support" />
-  <meta property="og:description" content="Quick JotForm → specialist call → free credit check → one affordable plan (DMP · IVA · DRO) with Breathing Space where suitable." />
+  <meta property="og:title" content="Debt Help Blog | Fresh Start" />
+  <meta property="og:description" content="Expert UK debt help articles: IVAs, DMPs, bailiffs, priority bills, and more—written for people under pressure." />
   <meta property="og:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
   <meta property="og:image:alt" content="Fresh Start Debt Support" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Debt Help UK — Simple 7-Step Process | Fresh Start Debt Support" />
-  <meta name="twitter:description" content="Free, confidential check. Protect essentials, reduce contact pressure and move to one affordable plan where suitable." />
+  <meta name="twitter:title" content="Debt Help Blog | Fresh Start" />
+  <meta name="twitter:description" content="Stay informed with practical UK debt guidance and step-by-step help." />
   <meta name="twitter:image" content="https://www.freshstartdebtsupport.co.uk/logo.jpg" />
 
-  <!-- NEW: Performance hints -->
+  <!-- Performance hints -->
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
   <link rel="preconnect" href="https://widget.trustpilot.com" crossorigin>
   <link rel="preconnect" href="https://form.jotform.com" crossorigin>
 
-  <!-- Site styles (includes sticky header + hamburger) -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Site styles -->
+  <link rel="stylesheet" href="../style.css" />
 
-  <!-- Inline critical CSS for HERO + utilities -->
+  <!-- Inline critical CSS to match index -->
   <style>
     .landing-hero{
       background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);
@@ -53,25 +56,83 @@
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
 
-    /* NEW: small trust stat pills under hero */
     .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
     .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
 
-    /* NEW: tiny meta strip for E-E-A-T (updated date) */
-    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
-    .meta.small a{color:#2f6f36;text-decoration:underline}
-
-    /* NEW: accessibility helper (skip link) */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
 
-    /* NEW: intent jump menu */
-    .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
-    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-    .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
+    .container{padding:20px;max-width:1000px;margin:0 auto}
+    .section{background:#e9f5ec;border-radius:8px;padding:20px;margin-top:20px;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+    .menu-cta{background:#a5e6b0;color:#000 !important;font-weight:800;padding:10px 16px;margin:12px 0;border-radius:999px;display:inline-block;text-decoration:none;box-shadow:0 2px 4px rgba(0,0,0,.2)}
+    .menu-cta:hover{background:#88d292}
+    .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
+    .meta.small a{color:#2f6f36;text-decoration:underline}
+    h1,h2{color:#2f6f36}
+    ul{margin-left:18px}
+
+    /* WhatsApp Floating Button */
+    .whatsapp-button{
+      position:fixed;bottom:20px;right:20px;background:#fd8700;color:#fff;font-weight:bold;
+      padding:12px 16px;border-radius:50px;font-size:16px;z-index:999;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.25)
+    }
+
+    /* Footer breadcrumbs (match index pattern) */
+    .breadcrumbs{max-width:1000px;margin:20px auto 0;padding:0 16px;font-size:14px}
+    .breadcrumbs a{color:#2f6f36;text-decoration:underline}
+    .breadcrumbs nav{display:flex;gap:8px;flex-wrap:wrap}
+    .breadcrumbs .sep{opacity:.6}
+
+    /* ===== Latest Posts — Pro Card Grid ===== */
+    .post-grid{
+      list-style:none;margin:0;padding:0;
+      display:grid;grid-template-columns:1fr;gap:16px
+    }
+    @media (min-width:560px){ .post-grid{ grid-template-columns:repeat(2,1fr);} }
+    @media (min-width:900px){ .post-grid{ grid-template-columns:repeat(3,1fr);} }
+
+    .post-card{
+      background:#fff;border-radius:14px;overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,.08);
+      border:1px solid #dff0e4;
+      display:flex;flex-direction:column;min-height:100%;
+      transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease
+    }
+    .post-card:hover{ transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,.12); border-color:#cfe8d9; }
+
+    .post-thumb{
+      position:relative;aspect-ratio:16/9;background:linear-gradient(120deg,#e5f7ec,#d6f1e1);
+      display:block;overflow:hidden
+    }
+    .post-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .post-thumb .label{
+      position:absolute;left:10px;top:10px;
+      background:#2f6f36;color:#fff;font-weight:700;font-size:12px;
+      padding:6px 10px;border-radius:999px
+    }
+
+    .post-body{ padding:14px 14px 16px; display:flex; flex-direction:column; gap:10px; }
+    .post-title{ font-size:18px; line-height:1.25; margin:0; color:#1f4624; }
+    .post-title a{ color:inherit; text-decoration:none; }
+    .post-title a:hover{ text-decoration:underline; }
+
+    .post-meta{
+      display:flex; gap:10px; flex-wrap:wrap; font-size:12px; color:#375a3d; opacity:.9
+    }
+    .post-meta .dot{opacity:.6}
+    .post-excerpt{ font-size:14px; color:#2b4630; margin:0; }
+
+    .post-cta{
+      margin-top:auto; display:inline-flex; align-items:center; gap:8px;
+      font-weight:800; font-size:14px; text-decoration:none;
+      color:#2f6f36; padding:8px 10px; border-radius:10px; background:#e8f6ec;
+      border:1px solid #cfe8d9
+    }
+    .post-cta:hover{ background:#dff3e7; }
+    .post-cta svg{ width:16px; height:16px; }
   </style>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PJ0YPPJST"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -80,10 +141,10 @@
     gtag('config', 'G-0PJ0YPPJST');
   </script>
 
-  <!-- TrustBox script -->
+  <!-- TrustBox script (optional on blog) -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-  <!-- Structured Data (Org + WebPage + HowTo + FAQ) -->
+  <!-- Structured Data (Organization + Blog + CollectionPage + BreadcrumbList + Speakable) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -93,39 +154,32 @@
         "name":"Fresh Start Debt Support",
         "url":"https://www.freshstartdebtsupport.co.uk/",
         "logo":"https://www.freshstartdebtsupport.co.uk/logo.jpg",
-        "sameAs":["https://www.trustpilot.com/review/freshstartdebtsupport.co.uk"]
+        "sameAs":["https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk"]
       },
       {
-        "@type":"WebPage",
-        "url":"https://www.freshstartdebtsupport.co.uk/index.html",
-        "name":"Debt Help UK — Our Simple 7-Step Process",
-        "description":"Step-by-step UK debt help: quick JotForm, specialist call, free credit check, realistic budget and one affordable plan (DMP · IVA · DRO) with Breathing Space where suitable."
+        "@type":"Blog",
+        "name":"Fresh Start Debt Help Blog",
+        "url":"https://www.freshstartdebtsupport.co.uk/blog/",
+        "description":"Expert UK debt help articles covering IVAs, DMPs, bailiffs, priority bills and practical budgeting."
       },
       {
-        "@type":"HowTo",
-        "name":"Our 7-Step Debt Help Process",
-        "description":"From first click to ongoing support.",
-        "totalTime":"P7D",
-        "step":[
-          {"@type":"HowToStep","name":"Read the essentials","text":"Compare IVA vs DMP vs DRO, and priority bills like council tax and utilities."},
-          {"@type":"HowToStep","name":"Complete the quick JotForm","text":"Share the basics so we can reach you."},
-          {"@type":"HowToStep","name":"We contact you","text":"Phone first, then WhatsApp if easier."},
-          {"@type":"HowToStep","name":"Full fact-find & free credit check","text":"List every debt and identify any priorities."},
-          {"@type":"HowToStep","name":"Budget & affordability","text":"Agree a realistic contribution that protects essentials."},
-          {"@type":"HowToStep","name":"Match with a senior advisor","text":"Discuss DMP, IVA or DRO and choose the best route."},
-          {"@type":"HowToStep","name":"Breathing Space & ongoing support","text":"Use your reference number and legal pause where appropriate while everything is set up."}
+        "@type":"CollectionPage",
+        "name":"Debt Help Blog | Fresh Start",
+        "url":"https://www.freshstartdebtsupport.co.uk/blog/index.html",
+        "about":{"@type":"Thing","name":"Debt help in the United Kingdom"}
+      },
+      {
+        "@type":"SpeakableSpecification",
+        "xpath":[
+          "/html/body/section[1]/div/div/h2",
+          "/html/body/section[1]/div/div/p"
         ]
       },
       {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {"@type":"Question","name":"How fast can you start helping once I complete the JotForm?","acceptedAnswer":{"@type":"Answer","text":"We’ll try to call you promptly and WhatsApp if we can’t get through. From there we begin your fact-find and budgeting immediately, prioritising urgent risks like council tax and utilities."}},
-          {"@type":"Question","name":"Do I need to list every debt before we speak?","acceptedAnswer":{"@type":"Answer","text":"No. If you’re unsure, we’ll guide a free credit check to identify missing accounts and pick up any priority debts."}},
-          {"@type":"Question","name":"Will a DMP or IVA stop calls and letters?","acceptedAnswer":{"@type":"Answer","text":"Contact usually reduces significantly once in place. We also help you use Breathing Space appropriately and issue a reference number to quote while your plan is being set up."}},
-          {"@type":"Question","name":"Will my credit score be affected?","acceptedAnswer":{"@type":"Answer","text":"Debt solutions can affect your credit file, but the priority is stabilising the household, protecting essentials and stopping the spiral. We’ll explain the trade-offs clearly."}},
-          {"@type":"Question","name":"Can debts be written off?","acceptedAnswer":{"@type":"Answer","text":"Some formal routes allow write-off at completion (e.g., a successful IVA) or after a qualifying period (e.g., an eligible DRO). We’ll confirm eligibility and implications before you choose."}},
-          {"@type":"Question","name":"What if my income changes later?","acceptedAnswer":{"@type":"Answer","text":"We’ll help you set a plan with realistic headroom. If your income changes, we can review and adjust where the solution allows."}},
-          {"@type":"Question","name":"I’m self-employed. Can you still help?","acceptedAnswer":{"@type":"Answer","text":"Yes — we regularly support sole traders and company directors and tailor your route to variable income."}}
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.freshstartdebtsupport.co.uk/"},
+          {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.freshstartdebtsupport.co.uk/blog/index.html"}
         ]
       }
     ]
@@ -134,17 +188,16 @@
 </head>
 <body>
 
-  <!-- NEW: Accessibility -->
+  <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner (Sticky) -->
+  <!-- Header / Banner (inline menu like index) -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
-        <img src="logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
+        <img src="../logo.jpg" alt="Fresh Start Logo" class="logo" loading="eager" />
       </div>
 
-      <!-- Hamburger button (far right) -->
       <button id="menuButton"
               class="hamburger"
               aria-label="Open menu"
@@ -251,23 +304,23 @@
   <!-- /Header -->
 
   <!-- HERO -->
-  <section class="landing-hero" role="region" aria-label="Debt help in the UK — our process">
+  <section class="landing-hero" role="region" aria-label="Fresh Start Debt Help Blog">
     <div class="hero-inner">
       <div class="hero-copy">
-        <h2 class="hero-title">Debt Help UK — A Simple 7-Step Process</h2>
-        <p class="hero-sub">
-          Quick JotForm → friendly specialist call → free credit check (if needed) → one affordable plan
-          (DMP · IVA · DRO) — with <strong>Breathing Space</strong> available where suitable. Many start from
-          <strong>around £69/month</strong>, depending on circumstances.
-        </p>
-        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start free UK debt help assessment">✅ Start My Free Debt Check</a>
+        <h2 class="hero-title">Debt Help Blog — Clear, Practical Guidance</h2>
+        <p class="hero-sub">Latest articles on <strong>DMPs, IVAs, DROs</strong>, dealing with collectors &amp; bailiffs, and protecting essentials first.</p>
+        <a href="https://form.jotform.com/250596569907070" class="hero-cta" aria-label="Start your free debt check from the blog">✅ Start Free Check</a>
         <div class="hero-trust">Free &amp; confidential • 60–90 seconds • No obligation</div>
+        <div class="statbar" aria-hidden="true">
+          <span class="pill">UK-based team</span>
+          <span class="pill">Essentials protected first</span>
+          <span class="pill">Breathing Space where suitable</span>
+        </div>
       </div>
     </div>
   </section>
-  <!-- /HERO -->
 
-  <!-- NEW: Meta strip with last updated -->
+  <!-- Meta strip -->
   <div class="meta small">
     <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
     <script>
@@ -278,352 +331,162 @@
     </script>
   </div>
 
-  <!-- Anchor target for skip link -->
+  <!-- Anchor -->
   <div id="main-start"></div>
 
-  <!-- Main Content Container -->
+  <!-- Main -->
   <div class="container">
 
-    <!-- Section 1 -->
+    <!-- Intro -->
     <div class="section">
-      <h1>Debt Help in the UK: Our Simple Process from First Click to Full Support</h1>
-      <p>Looking for straightforward <strong>debt help</strong> that actually fits your life? You’re in the right place. At <strong>Fresh Start Debt Support</strong> we keep things simple and human. Whether you’re facing <a href="council-tax-debt.html">council tax debt</a>, credit cards, catalogues or overdrafts, our process is designed to reduce stress fast, protect priority bills, and move you into one affordable, sustainable plan where suitable.</p>
-      <p>This page explains our end-to-end process: from reading up on your options, through a quick JotForm, to speaking with a specialist who tailors a plan around your income, essential spending and real life. We’ll also show how we use <a href="breathing-space.html">Breathing Space</a> and a unique reference number to help stop calls, letters and visits while we organise your plan.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-      <p>Prefer to learn first? See <a href="what-we-do.html">What We Do</a> and compare your options at <a href="compare-solutions.html">Compare Solutions</a>.</p>
+      <h1>Debt Help Blog – Advice, News &amp; Support</h1>
+      <p>Welcome to the <strong>Fresh Start Debt Help Blog</strong>, your go-to resource for practical guidance, news and updates about debt solutions, IVAs, managing creditors, and more. Whether you're looking to stop bailiffs, manage your repayments or understand your rights — we've got you covered.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask An Expert</a>
     </div>
 
-    <!-- Section 2 -->
+    <!-- Latest Posts (UPGRADED) -->
     <div class="section">
-      <h2>Our 7-Step Debt Help Process</h2>
+      <h2>Latest Blog Posts</h2>
 
-      <h3>Step 1 — Read the Essentials (5–10 minutes)</h3>
-      <p>Begin by exploring practical guides on our site. Good places to start include <a href="compare-solutions.html">Compare IVA vs DMP vs DRO</a>, priority bills like <a href="council-tax-debt.html">Council Tax Debt</a> and <a href="utility-debt.html">Utility Bills</a>, and specific debt types such as <a href="credit-card-debt.html">Credit Card Debt</a>, <a href="catalogue-debt.html">Catalogue Debt</a>, <a href="overdraft-debt.html">Bank Overdrafts</a> and <a href="loan-debt.html">Personal Loans</a>. These pages show how different solutions work, timeframes, and what to expect.</p>
+      <ul class="post-grid" aria-label="Recent articles">
+        <!-- Card 1 -->
+        <li class="post-card">
+          <a class="post-thumb" href="can-debt-collectors-come-to-your-house-uk.html" aria-label="Read: Can Debt Collectors Come to Your House in the UK?">
+            <!-- Optional real thumbnail: replace src with your article image -->
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Know Your Rights</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="can-debt-collectors-come-to-your-house-uk.html">Can Debt Collectors Come to Your House in the UK?</a>
+            </h3>
+            <div class="post-meta">
+              <span>Guide</span><span class="dot">•</span><time datetime="2025-11-05">5 Nov 2025</time><span class="dot">•</span><span>5–7 min read</span>
+            </div>
+            <p class="post-excerpt">What collectors can and can’t do at the door, how this differs from bailiffs, and steps to stop visits quickly and safely.</p>
+            <a class="post-cta" href="can-debt-collectors-come-to-your-house-uk.html" aria-label="Read the article Can Debt Collectors Come to Your House in the UK?">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
 
-      <h3>Step 2 — Complete Our Easy JotForm (2–3 minutes)</h3>
-      <p>When you’re ready, fill in our quick form. It asks only what we need to understand your situation and how best to contact you. We know forms can feel daunting, so we keep it light.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Fill In the Quick JotForm</a>
+        <!-- Card 2 -->
+        <li class="post-card">
+          <a class="post-thumb" href="bailiff-fees-2025.html" aria-label="Read: Bailiff Fees 2025 — Compliance, Enforcement &amp; Sale">
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Costs & Fees</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="bailiff-fees-2025.html">Bailiff Fees 2025 — Compliance, Enforcement &amp; Sale</a>
+            </h3>
+            <div class="post-meta">
+              <span>Explainer</span><span class="dot">•</span><time datetime="2025-11-08">8 Nov 2025</time><span class="dot">•</span><span>6–8 min read</span>
+            </div>
+            <p class="post-excerpt">Exact fee stages (£75 / £235 / £110) with examples, when extra percentages apply, and how to avoid unnecessary costs.</p>
+            <a class="post-cta" href="bailiff-fees-2025.html" aria-label="Read the article Bailiff Fees 2025 — Compliance, Enforcement and Sale">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
 
-      <h3>Step 3 — We Contact You (Phone First, Then WhatsApp)</h3>
-      <p>One of our advanced debt specialists will phone you. If we can’t reach you by phone, we’ll message from our business WhatsApp so you can reply in your own time. No scripts, no judgement—just a friendly expert focused on your best outcome.</p>
-
-      <h3>Step 4 — Full Fact-Find (Including a Free Credit Check if You’re Unsure)</h3>
-      <p>We help you list every debt—even if you’re not totally sure what’s out there. If needed, we’ll guide a <em>free credit check</em> to confirm missing accounts. We’ll also identify priority issues like <a href="council-tax-debt.html">council tax arrears</a>, <a href="rent-arrears.html">rent</a>/<a href="mortgage-arrears.html">mortgage</a>, and <a href="utility-debt.html">utilities</a> so we can protect your essentials first.</p>
-
-      <h3>Step 5 — Budget, Affordability & Realistic Payment</h3>
-      <p>Together we map your household income and essential expenditure so your plan is sustainable. You can try this yourself first with our <a href="debt-calculator.html">Debt Calculator</a>. The goal is a single, fair monthly payment that covers your non-priority debts without risking your essentials.</p>
-
-      <h3>Step 6 — Match You with a Senior Financial Advisor</h3>
-      <p>Once we understand your picture, we’ll connect you to a senior advisor best suited to your needs. They’ll walk you through pros and cons of options like a <a href="dmp.html">Debt Management Plan</a>, <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a>, and help you choose the route that fits both your budget and your future goals.</p>
-
-      <h3>Step 7 — Breathing Space, Reference Number & Ongoing Support</h3>
-      <p>We stay with you throughout. You’ll receive a reference number you can give to creditors. Where appropriate, we help you use <a href="breathing-space.html">Breathing Space</a>—a legal pause on most enforcement—so you can stop worrying about calls, letters or visits while your plan is being set up. We remain on hand to answer questions and keep everything moving.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Begin Step 1 → Quick JotForm</a>
+        <!-- Card 3 -->
+<li class="post-card">
+  <a class="post-thumb" href="notice-of-enforcement.html" aria-label="Read: Notice of Enforcement — Deadlines, Entry Rules & Your Options">
+    <img src="../logo.jpg" alt="Notice of Enforcement guide thumbnail" loading="lazy" />
+    <span class="label">Bailiff Action</span>
+  </a>
+  <div class="post-body">
+    <h3 class="post-title">
+      <a href="notice-of-enforcement.html">Notice of Enforcement — Deadlines, Entry Rules &amp; Your Options</a>
+    </h3>
+    <div class="post-meta">
+      <span>Urgent Help</span><span class="dot">•</span><time datetime="2025-11-08">8 Nov 2025</time><span class="dot">•</span><span>6–9 min read</span>
     </div>
-
-    <!-- Section 3 -->
-    <div class="section">
-      <h2>Why Our Process Works for Real-World UK Budgets</h2>
-      <h3>Practical Priorities, Not Theory</h3>
-      <p>We focus on what protects your household first—roof, heat, light and essential travel—before tackling non-priority debts. This reduces risk and makes your plan stick.</p>
-
-      <h3>One Affordable Payment (Where Suitable)</h3>
-      <p>Rather than juggling multiple creditors, most clients prefer one manageable payment across credit cards, <a href="catalogue-debt.html">catalogues</a>, <a href="overdraft-debt.html">overdrafts</a>, and loans. You can see how options compare at <a href="compare-solutions.html">Compare Solutions</a>.</p>
-
-      <h3>Clear Communication with Creditors</h3>
-      <p>We help you speak to creditors with confidence and reduce contact pressure. If debt collectors are already in touch, read <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and our guides on firms such as <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a>, <a href="moorcroft.html">Moorcroft</a>, <a href="advantis.html">Advantis</a> and others listed in our menu.</p>
-
-      <h3>Write-Off Potential in Formal Routes</h3>
-      <p>Some formal solutions (like a completed <a href="iva.html">IVA</a> or an eligible <a href="dro.html">DRO</a>) can lead to part of your unsecured debt being written off. We’ll explain the trade-offs and help you decide what’s right for you.</p>
-
-      <h3>Tailored to Your Lender Mix</h3>
-      <p>Different lenders behave differently. Explore our pages for <a href="barclays.html">Barclays</a>, <a href="hsbc.html">HSBC</a>, <a href="natwest.html">NatWest</a>, <a href="lloyds.html">Lloyds</a> and <a href="capital-one.html">Capital One</a> to understand typical approaches.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">See If I Qualify for Help</a>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="section">
-      <h2>Protecting Priority Bills: Council Tax Debt & Essential Costs</h2>
-      <p>Falling behind on <strong>council tax debt</strong> can escalate faster than many other debts. Alongside housing and energy, it’s treated as a priority. Sorting priorities first keeps you and your family safe while we structure a fair offer for everything else.</p>
-      <ul>
-        <li>🏠 <strong>Housing</strong> — <a href="rent-arrears.html">Rent arrears</a> or <a href="mortgage-arrears.html">mortgage arrears</a> must be stabilised first.</li>
-        <li>⚡ <strong>Utilities</strong> — keep essential services running (<a href="utility-debt.html">Utility Bills</a>).</li>
-        <li>🏛️ <strong>Council Tax</strong> — act early on <a href="council-tax-debt.html">council tax debt</a> to avoid extra fees and enforcement.</li>
-      </ul>
-      <p>After essentials are secure, we map an affordable payment across your non-priority debts: <a href="credit-card-debt.html">cards</a>, <a href="catalogue-debt.html">catalogues</a>, <a href="overdraft-debt.html">overdrafts</a>, <a href="loan-debt.html">loans</a>, and more.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Protect My Essentials First</a>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="section">
-      <h2>Which Debt Help Route Fits Me?</h2>
-
-      <h3><a href="dmp.html">Debt Management Plan (DMP)</a></h3>
-      <p>Flexible and informal. Many creditors freeze or reduce interest and charges. Great if you want adaptability and can maintain a steady payment but prefer to avoid formal insolvency.</p>
-
-      <h3><a href="iva.html">Individual Voluntary Arrangement (IVA)</a></h3>
-      <p>Formal, legally binding. One affordable monthly payment; on successful completion, remaining eligible unsecured debt may be written off. Provides strong protection from most creditor action.</p>
-
-      <h3><a href="dro.html">Debt Relief Order (DRO)</a></h3>
-      <p>For low income/low assets. Debts are usually frozen for 12 months and written off if your situation doesn’t improve. Strict eligibility applies.</p>
-
-      <h3>Compare Side-by-Side</h3>
-      <p>Unsure? See the differences clearly at <a href="compare-solutions.html">Compare Solutions</a>, then ask us for a tailored recommendation based on your numbers.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get My Personalised Recommendation</a>
-    </div>
-
-    <!-- Section 6 -->
-    <div class="section">
-      <h2>Linking Different Debts into One Plan</h2>
-      <p>Most people who come to us don’t have just one debt. We commonly roll multiple debts into a single affordable plan:</p>
-      <ul>
-        <li>💳 <a href="credit-card-debt.html">Credit &amp; Store Cards</a></li>
-        <li>🧾 <a href="catalogue-debt.html">Catalogues</a> &amp; BNPL like <a href="klarna.html">Klarna</a></li>
-        <li>🏦 <a href="loan-debt.html">Personal Loans</a> and <a href="overdraft-debt.html">Overdrafts</a></li>
-        <li>🏚️ <a href="rent-arrears.html">Rent Arrears</a> and <a href="mortgage-arrears.html">Mortgage Arrears</a> (handled with priority)</li>
-        <li>🏢 <a href="business-debt.html">Business Debt</a> &amp; <a href="tax-debt.html">Tax/HMRC</a></li>
-        <li>🎰 <a href="gambling-debt.html">Gambling Debts</a></li>
-      </ul>
-      <p>Fewer moving parts, fewer surprises—and a clearer route to becoming debt-free.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Roll My Debts into One Payment</a>
-    </div>
-
-    <!-- Section 7 -->
-    <div class="section">
-      <h2>Dealing with Collectors: Calm Steps That Work</h2>
-      <p>If collectors are already contacting you, read our plain-English guides: <a href="debt-collection.html">What is debt collection?</a> and <a href="stop-debt-collectors.html">Stop Debt Collectors</a>. We’ve also written about major firms to help you respond confidently: <a href="lowell.html">Lowell</a>, <a href="cabot.html">Cabot</a>, <a href="moorcroft.html">Moorcroft</a>, <a href="advantis.html">Advantis</a>, <a href="link-financial.html">Link Financial</a>, <a href="capquest.html">Capquest</a>, <a href="wescot.html">Wescot</a>, <a href="resolvecall.html">Resolvecall</a>, <a href="hoist-finance.html">Hoist</a>, <a href="robinson-way.html">Robinson Way</a>, <a href="fredrickson.html">Fredrickson</a>, <a href="moriarty-law.html">Moriarty Law</a>, <a href="drydensfairfax.html">Drydensfairfax</a>, and <a href="pra-group.html">PRA Group</a>.</p>
-      <p>We’ll help you channel all contact through a plan that reflects what you can genuinely afford, not what looks good on paper for one month.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">I’m Being Chased — Help Me</a>
-    </div>
-
-    <!-- Section 8 -->
-    <div class="section">
-      <h2>Debt Help Frequently Asked Questions</h2>
-
-      <h3>How fast can you start helping once I complete the JotForm?</h3>
-      <p>We’ll try to call you promptly (and WhatsApp if we can’t get through). From there, we start your fact-find and budgeting immediately, prioritising urgent risks like <a href="council-tax-debt.html">council tax debt</a> and <a href="utility-debt.html">utility bills</a>.</p>
-
-      <h3>Do I need to list every debt before we speak?</h3>
-      <p>No. If you’re unsure, we’ll guide a <em>free credit check</em> to identify missing accounts. We’ll also ask questions to pick up priority debts you might not have to hand.</p>
-
-      <h3>Will a DMP or IVA stop calls and letters?</h3>
-      <p>They usually reduce contact significantly once in place. We also help you use <a href="breathing-space.html">Breathing Space</a> appropriately, and we issue a reference number you can quote to creditors while your plan is being set up.</p>
-
-      <h3>Will my credit score be affected?</h3>
-      <p>Debt solutions can affect your credit file. But for many people, the priority is stabilising the household, protecting essentials and stopping the spiral. We’ll talk through the trade-offs clearly.</p>
-
-      <h3>Can debts be written off?</h3>
-      <p>Some formal routes allow for write-off at completion (e.g., a successful <a href="iva.html">IVA</a>) or after a qualifying period (e.g., an eligible <a href="dro.html">DRO</a>). We’ll confirm eligibility and implications before you choose.</p>
-
-      <h3>What if my income changes later?</h3>
-      <p>We’ll help you set a plan with realistic headroom. If your income changes, we can review and adjust where the solution allows (for example, <a href="dmp.html">DMPs</a> are typically more flexible; IVAs have formal variation processes).</p>
-
-      <h3>I’m self-employed. Can you still help?</h3>
-      <p>Yes. We regularly support sole traders and company directors. See <a href="business-debt.html">Business Debt</a> and we’ll tailor your route to variable income.</p>
-
-      <h4>Didn’t see your question?</h4>
-      <p>Ask us directly and get a personalised answer in minutes.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Ask a Debt Specialist</a>
-    </div>
-
-    <!-- Section 9 -->
-    <div class="section">
-      <h2>How We Build a Budget You Can Actually Keep</h2>
-      <p>Our affordability work is rooted in real-world spending. We start with core living costs, then set a sensible contribution to debts. Try the <a href="debt-calculator.html">Debt Calculator</a> to see what’s realistic before you speak to us.</p>
-
-      <h3>Essentials First</h3>
-      <p>Housing, energy and <a href="council-tax-debt.html">council tax</a> are prioritised. This reduces the risk of escalation and helps you avoid emergency expenses later.</p>
-
-      <h3>Non-Priority Debts Next</h3>
-      <p>Cards, <a href="catalogue-debt.html">catalogues</a>, <a href="overdraft-debt.html">overdrafts</a>, <a href="loan-debt.html">loans</a>, and similar debts are rolled into a fair offer through a <a href="dmp.html">DMP</a>, or into a formal arrangement such as an <a href="iva.html">IVA</a> or <a href="dro.html">DRO</a> when appropriate.</p>
-
-      <h3>Breathing Space Where Appropriate</h3>
-      <p>See our simple guide to <a href="breathing-space.html">Breathing Space</a>. The aim is to give you time to think and plan without pressure, while we get your long-term route ready.</p>
-
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Build My Budget with a Specialist</a>
-    </div>
-
-    <!-- Section 10 -->
-    <div class="section">
-      <h2>When Lenders Are Part of the Problem</h2>
-      <p>Some lenders are tougher than others. To understand how your bank or card provider typically behaves, check our guides: <a href="barclays.html">Barclays</a>, <a href="hsbc.html">HSBC</a>, <a href="natwest.html">NatWest</a>, <a href="lloyds.html">Lloyds</a> and <a href="capital-one.html">Capital One</a>. We’ll help you make offers that are fair <em>and</em> defensible.</p>
-      <p>If your account has been passed to a collector, use <a href="stop-debt-collectors.html">Stop Debt Collectors</a> and look up the collector’s page for tailored tips. Knowledge = calm.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Help Dealing with My Lenders</a>
-    </div>
-
-    <!-- Section 11 -->
-    <div class="section">
-      <h2>Ready to Start? Here’s the Shortcut</h2>
-      <ol>
-        <li><strong>Read:</strong> Skim <a href="compare-solutions.html">Compare Solutions</a> and any relevant debt pages (e.g., <a href="council-tax-debt.html">Council Tax</a>, <a href="credit-card-debt.html">Cards</a>, <a href="catalogue-debt.html">Catalogues</a>, <a href="overdraft-debt.html">Overdrafts</a>).</li>
-        <li><strong>JotForm:</strong> Share a few basics so we can reach you.</li>
-        <li><strong>Chat:</strong> We call you, or message via WhatsApp if needed.</li>
-        <li><strong>Fact-find:</strong> We list every debt (we’ll help with a free credit check if you’re unsure).</li>
-        <li><strong>Budget:</strong> We agree an affordable, realistic monthly figure.</li>
-        <li><strong>Advisor:</strong> You speak to the best-matched senior financial advisor.</li>
-        <li><strong>Breathing Space:</strong> Use our reference number and guidance to pause pressure while we get you set up.</li>
-      </ol>
-      <p>Our goal is simple: fewer letters and calls, protected essentials, and a plan you can sleep on.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Start My Free Debt Check</a>
-    </div>
-
-    <!-- Section 12 -->
-    <div class="section">
-      <h2>More Helpful Reads While You Decide</h2>
-      <ul>
-        <li><a href="debt-help-uk-2025.html">Debt Help UK 2025</a></li>
-        <li><a href="clear-debt-fast.html">Clear Debt Fast</a></li>
-        <li><a href="iva-company.html">IVA Company</a></li>
-        <li><a href="dmp-provider.html">DMP Provider</a></li>
-        <li><a href="affordable-repayment-plans.html">Affordable Repayment Plans</a></li>
-        <li><a href="blog/">Blog</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-      </ul>
-      <p>When you’re ready, we’re ready—on your terms and timeline.</p>
-      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Speak to a Specialist</a>
-    </div>
-
-    <!-- ======= NEW: SEARCH-INTENT NAV (JUMP LINKS) ======= -->
-    <div class="section intent-nav" aria-label="Popular searches">
-      <h2>Popular UK Questions We’re Asked (Quick Links)</h2>
-      <div class="chips">
-        <a href="#breathing-space-uk">Breathing Space — 60-day pause</a>
-        <a href="#stop-bailiffs-council-tax">Stop council tax bailiffs</a>
-        <a href="#ccj-help">CCJ help — stop or remove</a>
-        <a href="#attachment-of-earnings">Attachment of earnings</a>
-        <a href="#statute-barred">Statute-barred (6-year rule)</a>
-        <a href="#bnpl-help">Klarna / BNPL arrears</a>
-        <a href="#token-payments">£1 token payments</a>
-      </div>
-    </div>
-
-    <!-- ======= NEW: SEARCH-INTENT SECTIONS (CONTENT-RICH) ======= -->
-
-    <div class="section" id="breathing-space-uk">
-      <h2>Breathing Space UK — How to Get the 60-Day Legal Pause</h2>
-      <p><strong>Breathing Space (Debt Respite Scheme)</strong> is a government legal protection that can pause most interest, fees and creditor enforcement for <strong>up to 60 days</strong> while you get debt advice and set up a solution. It’s administered by the Insolvency Service and typically requires a debt adviser to start it for you.</p>
-      <h3>What it usually covers</h3>
-      <ul>
-        <li>Most unsecured debts (credit cards, loans, overdrafts, BNPL, arrears)</li>
-        <li>Pauses most enforcement and new interest/charges during the period</li>
-      </ul>
-      <h3>What it doesn’t cover</h3>
-      <ul>
-        <li>Ongoing priority bills still need paying where possible (rent, council tax, utilities)</li>
-        <li>Some debts are excluded or treated differently (e.g., criminal fines)</li>
-      </ul>
-      <p>Official guidance: <a href="https://www.gov.uk/options-for-dealing-with-your-debts#breathing-space" target="_blank" rel="noopener">GOV.UK — options for dealing with your debts</a> and the <a href="https://www.legislation.gov.uk/uksi/2020/1311/contents/made" target="_blank" rel="noopener">Debt Respite Scheme Regulations 2020</a>. Independent explainers: <a href="https://www.stepchange.org/breathing-space-partners.aspx" target="_blank" rel="noopener">StepChange</a>.</p>
-      <a class="menu-cta" href="breathing-space.html">How Breathing Space Works</a>
-    </div>
-
-    <div class="section" id="stop-bailiffs-council-tax">
-      <h2>Stop Council Tax Bailiffs (Enforcement Agents) — What to Do Today</h2>
-      <p>If you’ve had a <strong>council tax bailiff/enforcement</strong> letter or visit, act quickly. In England & Wales, bailiffs can’t force entry for council tax on a first visit. You can usually arrange affordable payments and ask them not to visit if a plan is in place, especially if you’re vulnerable.</p>
-      <h3>Immediate steps</h3>
-      <ul>
-        <li>Don’t let them in. Speak through the door and arrange payments in writing/phone.</li>
-        <li>Prioritise essentials, then make a realistic offer — not a one-off that fails next month.</li>
-        <li>Tell us if you’re vulnerable (health, disability, children); extra protections may apply.</li>
-      </ul>
-      <p>Read more at <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/your-things-are-protected-from-bailiffs/if-a-bailiff-visits-you/" target="_blank" rel="noopener">Citizens Advice — if a bailiff visits you</a> and their <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/bailiffs/if-you-owe-council-tax/" target="_blank" rel="noopener">council tax bailiffs guide</a>.</p>
-      <a class="menu-cta" href="council-tax-debt.html">Council Tax Debt Help</a>
-    </div>
-
-    <div class="section" id="ccj-help">
-      <h2>CCJ Help — How to Stop, Set Aside, or Remove a County Court Judgment</h2>
-      <p>A <strong>CCJ</strong> happens after a claim is issued and either admitted or not defended. If you receive a claim form, you generally have <strong>14 days to respond</strong> (or acknowledge to get 28). Paying a CCJ in full within <strong>one month</strong> usually removes it from the public register; after that, it’s marked as “satisfied” if paid.</p>
-      <h3>Your options</h3>
-      <ul>
-        <li><strong>Before judgment:</strong> Defend, admit with an offer, or settle.</li>
-        <li><strong>After judgment:</strong> Apply to vary if the payment is unaffordable, or to set aside if there’s a valid reason (e.g., papers never received).</li>
-        <li><strong>Pay within a month</strong> to remove it; otherwise it stays for 6 years.</li>
-      </ul>
-      <p>Official guidance: <a href="https://www.gov.uk/options-for-dealing-with-your-debts#county-court-judgments-ccjs" target="_blank" rel="noopener">GOV.UK — CCJs overview</a> and <a href="https://www.gov.uk/county-court-judgments-ccj-for-debt" target="_blank" rel="noopener">GOV.UK — CCJ for debt</a>.</p>
-      <a class="menu-cta" href="stop-court-action.html">Stop Court Action</a>
-    </div>
-
-    <div class="section" id="attachment-of-earnings">
-      <h2>Attachment of Earnings Order — Stop or Reduce Deductions from Wages</h2>
-      <p>An <strong>Attachment of Earnings Order (AEO)</strong> tells your employer to take money from your wages to pay a judgment debt. If it’s unaffordable, you can usually apply to <strong>vary or suspend</strong> the order by showing your budget and circumstances.</p>
-      <h3>What to do</h3>
-      <ul>
-        <li>Prepare a realistic income & expenditure (we can help) and evidence.</li>
-        <li>Apply to vary/suspend using the court’s process (ask the court named on your order).</li>
-        <li>Consider a formal solution (DMP/IVA/DRO) to replace chaotic deductions with one plan.</li>
-      </ul>
-      <p>See the rules in the <a href="https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part89#89.3" target="_blank" rel="noopener">Civil Procedure Rules — Part 89 (Attachment of Earnings)</a> and practical guidance via <a href="https://www.citizensadvice.org.uk/debt-and-money/action-your-creditor-can-take/court-action-and-your-debt/attachment-of-earnings/" target="_blank" rel="noopener">Citizens Advice</a>.</p>
-      <a class="menu-cta" href="stop-court-action.html">Talk About Stopping Deductions</a>
-    </div>
-
-    <div class="section" id="statute-barred">
-      <h2>Statute-Barred Debt — Does the 6-Year Rule Apply to You?</h2>
-      <p>Most unsecured debts in England & Wales become <strong>statute-barred</strong> if there’s been <strong>no court claim, no written acknowledgment and no payment for 6 years</strong> (different rules for mortgage shortfalls and some debts). A CCJ <em>never</em> becomes statute-barred — it must be resolved.</p>
-      <h3>Key points</h3>
-      <ul>
-        <li>If you think a debt’s too old to enforce, don’t pay or admit it before checking.</li>
-        <li>Ask the creditor for proof of liability and last payment/activity date.</li>
-        <li>Some debts have different limitation periods.</li>
-      </ul>
-      <p>Learn more from <a href="https://www.citizensadvice.org.uk/debt-and-money/help-with-debt/how-to-deal-with-your-debts/if-you-think-a-debt-is-statute-barred/" target="_blank" rel="noopener">Citizens Advice — statute-barred debts</a>.</p>
-      <a class="menu-cta" href="stop-debt-collectors.html">If You’re Being Chased for an Old Debt</a>
-    </div>
-
-    <div class="section" id="bnpl-help">
-      <h2>Buy Now Pay Later (Klarna, Clearpay) — What If You Can’t Pay?</h2>
-      <p><strong>BNPL</strong> is easy to stack across different merchants. If you fall behind, treat it like any other unsecured credit: list every agreement, prioritise essentials, and offer a realistic plan. Consider consolidating into a single managed solution if the total is unaffordable.</p>
-      <h3>Practical steps</h3>
-      <ul>
-        <li>Stop new BNPL spending and cancel non-essentials.</li>
-        <li>Tell the provider you’re seeking debt help and request breathing room on interest/charges.</li>
-        <li>Add BNPL to your DMP/IVA assessment so nothing is missed.</li>
-      </ul>
-      <p>Independent guidance: <a href="https://www.moneyhelper.org.uk/en/credit/loans/buy-now-pay-later" target="_blank" rel="noopener">MoneyHelper — Buy Now Pay Later</a>.</p>
-      <a class="menu-cta" href="catalogue-debt.html">BNPL & Catalogue Debt Help</a>
-    </div>
-
-    <div class="section" id="token-payments">
-      <h2>£1 Token Payment Plan — When It’s Sensible and How to Ask</h2>
-      <p>When your budget is under severe pressure, a short-term <strong>token payment</strong> (e.g., £1 per creditor) can hold the line while you stabilise essentials or wait for a longer-term solution. Explain your circumstances, provide your budget, and ask for a freeze on interest/charges if possible.</p>
-      <h3>Good uses</h3>
-      <ul>
-        <li>While waiting for benefits, a new job, or a formal debt solution to start</li>
-        <li>During Breathing Space or a temporary crisis</li>
-      </ul>
-      <p>See impartial advice: <a href="https://www.moneyhelper.org.uk/en/money-troubles/dealing-with-debt/talk-to-your-creditors" target="_blank" rel="noopener">MoneyHelper — talk to your creditors</a> and <a href="https://www.stepchange.org/debt-info/arranging-payment-with-creditors.aspx" target="_blank" rel="noopener">StepChange — arranging payments (incl. token plans)</a>.</p>
-      <a class="menu-cta" href="affordable-repayment-plans.html">Affordable Repayment Plans</a>
-    </div>
-
-    <!-- Optional Trustpilot widget spot -->
-    <div class="section" aria-label="Reviews">
-      <div class="trustpilot-widget"
-           data-locale="en-GB"
-           data-template-id="53aa8807dec7e10d38f59f36"
-           data-businessunit-id="YOUR_BUSINESS_UNIT_ID"
-           data-style-height="140px"
-           data-style-width="100%"
-           data-theme="light">
-        <a href="https://uk.trustpilot.com/review/freshstartdebtsupport.co.uk" target="_blank" rel="noopener">Trustpilot</a>
-      </div>
-    </div>
-
+    <p class="post-excerpt">Got a Notice of Enforcement? Learn the 7-day deadline, what counts as entry, bailiff visit rules, and how to delay or stop enforcement fast using Breathing Space or affordable plans.</p>
+    <a class="post-cta" href="notice-of-enforcement.html" aria-label="Read the article Notice of Enforcement — Deadlines, Entry Rules and Your Options">
+      Read article
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
   </div>
-  <!-- /container -->
+</li>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
-    <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
-  </footer>
+
+
+        <!-- Template for future posts: duplicate and update hrefs/content -->
+        <!--
+        <li class="post-card">
+          <a class="post-thumb" href="your-next-post.html" aria-label="Read: Title of Your Next Blog">
+            <img src="../logo.jpg" alt="" loading="lazy" />
+            <span class="label">Category</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title"><a href="your-next-post.html">Title of Your Next Blog</a></h3>
+            <div class="post-meta">
+              <span>Category</span><span class="dot">•</span><time datetime="YYYY-MM-DD">DD Mon YYYY</time><span class="dot">•</span><span>4–6 min read</span>
+            </div>
+            <p class="post-excerpt">One-sentence summary to increase CTR and help users find the right article.</p>
+            <a class="post-cta" href="your-next-post.html">Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+        -->
+      </ul>
+
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Get Personal Help</a>
+    </div>
+
+    <!-- Categories (internal links only to pages you have) -->
+    <div class="section">
+      <h2>Popular Topics &amp; Categories</h2>
+      <h3>Debt Solutions</h3>
+      <p>Understand how each route works, who qualifies and what to expect day to day: <a href="https://www.freshstartdebtsupport.co.uk/dmp.html">Debt Management Plans</a>, <a href="https://www.freshstartdebtsupport.co.uk/iva.html">IVAs</a>, <a href="https://www.freshstartdebtsupport.co.uk/dro.html">DROs</a>, and <a href="https://www.freshstartdebtsupport.co.uk/compare-solutions.html">IVA vs DMP vs Bankruptcy</a>.</p>
+
+      <h3>Priority Bills &amp; Arrears</h3>
+      <p>Protect the roof, heat and council tax first: <a href="https://www.freshstartdebtsupport.co.uk/council-tax-debt.html">Council Tax</a>, <a href="https://www.freshstartdebtsupport.co.uk/utility-debt.html">Energy &amp; Utilities</a>, <a href="https://www.freshstartdebtsupport.co.uk/rent-arrears.html">Rent Arrears</a>, <a href="https://www.freshstartdebtsupport.co.uk/mortgage-arrears.html">Mortgage Arrears</a>.</p>
+
+      <h3>Dealing with Collectors &amp; Bailiffs</h3>
+      <p>Know your rights and next steps: <a href="https://www.freshstartdebtsupport.co.uk/debt-collection.html">What is debt collection?</a>, <a href="https://www.freshstartdebtsupport.co.uk/lowell.html">Lowell</a>, <a href="https://www.freshstartdebtsupport.co.uk/moorcroft.html">Moorcroft</a>, <a href="https://www.freshstartdebtsupport.co.uk/link-financial.html">Link Financial</a>, <a href="https://www.freshstartdebtsupport.co.uk/bristow-sutor.html">Bristow &amp; Sutor</a>, <a href="https://www.freshstartdebtsupport.co.uk/excel-civil-enforcement.html">Excel Civil Enforcement</a>, <a href="https://www.freshstartdebtsupport.co.uk/newlyn.html">Newlyn</a>.</p>
+
+      <h3>Common Debts</h3>
+      <p>Targeted help for the debts we see most: <a href="https://www.freshstartdebtsupport.co.uk/credit-card-debt.html">Credit Cards</a>, <a href="https://www.freshstartdebtsupport.co.uk/loan-debt.html">Loans</a>, <a href="https://www.freshstartdebtsupport.co.uk/catalogue-debt.html">Catalogue</a>, <a href="https://www.freshstartdebtsupport.co.uk/overdraft-debt.html">Overdrafts</a>, <a href="https://www.freshstartdebtsupport.co.uk/payday-loan-debt.html">Payday Loans</a>, <a href="https://www.freshstartdebtsupport.co.uk/store-card-debt.html">Store Cards</a>.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Find My Option</a>
+    </div>
+
+    <!-- Newsletter / CTA (single button) -->
+    <div class="section">
+      <h2>Get New Articles in Your Inbox</h2>
+      <p>Short, plain-English updates on debt solutions, budgeting and your rights. Unsubscribe anytime.</p>
+      <a href="https://form.jotform.com/250596569907070" class="menu-cta">Join Updates</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="breadcrumbs" aria-label="Breadcrumb">
+        <nav>
+          <a href="https://www.freshstartdebtsupport.co.uk/">Home</a>
+          <span class="sep">›</span>
+          <span aria-current="page">Blog</span>
+        </nav>
+      </div>
+      <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
+      <p>This website offers guidance and support services. It is not regulated by the Financial Conduct Authority. Insolvency services are referred to licensed and authorised practitioners.</p>
+    </footer>
+  </div>
+  <!-- /Main -->
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20debt%20help%20and%20want%20to%20know%20your%20process" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/447752296301?text=Hi%20I%20need%20help%20with%20my%20debt" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     💬 Chat on WhatsApp
   </a>
 
-  <!-- Menu Toggle Script (single source of truth) -->
+  <!-- Menu Toggle Script (same behaviour as index) -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
@@ -685,6 +548,5 @@
       }
     });
   </script>
-
 </body>
 </html>
