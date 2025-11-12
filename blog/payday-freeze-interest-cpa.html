@@ -37,32 +37,67 @@
   <!-- Site styles (shared) -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Inline critical CSS (copied structure from template) -->
+  <!-- Inline critical CSS + Mobile Safeguards -->
   <style>
+    /* ===== Reset & mobile safety ===== */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { width:100%; max-width:100%; overflow-x:hidden; }
+    img, video, iframe { max-width:100%; height:auto; }
+    .container { max-width:1000px; margin:0 auto; padding:0 16px; }
+    .section { width:100%; }
+    .section p, .section li, .section a, .section h1, .section h2, .section h3, .section h4, .section h5 {
+      overflow-wrap:anywhere; word-break:normal; hyphens:auto;
+    }
+    pre, code { white-space:pre-wrap; word-wrap:break-word; overflow-x:auto; }
+    textarea { width:100%; max-width:100%; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .trustpilot-widget { max-width:100%!important; }
+    .menu-content { max-width:100%; width:100%; }
+    .chips { flex-wrap:wrap; }
+
+    /* ===== HERO & shared UI (from template) ===== */
     .landing-hero{background:linear-gradient(135deg,#56d68a 0%,#4CAF50 50%,#3b8f40 100%);color:#fff;padding:clamp(28px,6vw,72px) 16px;box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)}
-    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center}
+    .hero-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:center;padding:0 4px}
     .hero-copy{text-align:center}
-    .hero-title{margin:0 0 8px;font-size:clamp(28px,6vw,44px);line-height:1.1;color:#fff}
-    .hero-sub{margin:0 0 18px;font-size:clamp(16px,2.5vw,18px)}
-    .hero-cta{display:inline-block;border:0;border-radius:999px;padding:14px 22px;font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease}
+    .hero-title{margin:0 0 8px;font-size:clamp(26px,6vw,40px);line-height:1.15;color:#fff}
+    .hero-sub{margin:0 0 18px;font-size:clamp(15px,2.8vw,18px)}
+    .hero-cta{display:inline-block;border:0;border-radius:999px;padding:14px 22px;font-size:clamp(16px,2.8vw,18px);font-weight:800;text-decoration:none;background:#fff;color:#2f6f36;box-shadow:0 6px 0 rgba(0,0,0,.2);transition:transform .06s ease,box-shadow .06s ease,background .2s ease,color .2s ease;max-width:100%}
     .hero-cta:hover{background:#e8f6ec;color:#215a29}
     .hero-cta:active{transform:translateY(2px);box-shadow:0 4px 0 rgba(0,0,0,.2)}
     .hero-trust{margin-top:10px;font-size:14px;opacity:.95}
     .statbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
     .statbar .pill{background:#e8f6ec;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;color:#1f4624}
+
+    /* meta strip */
     .meta.small{max-width:1000px;margin:14px auto 0;color:#444;font-size:13px;opacity:.95;padding:0 16px}
     .meta.small a{color:#2f6f36;text-decoration:underline}
+
+    /* accessibility helper */
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;border-radius:6px;z-index:999}
+
+    /* intent nav */
     .intent-nav{max-width:1000px;margin:0 auto;padding:0 16px}
-    .intent-nav .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .intent-nav .chips{display:flex;gap:8px;margin:12px 0}
     .intent-nav .chips a{background:#f0fff4;border:1px solid #cdebd6;border-radius:999px;padding:8px 12px;font-size:14px;text-decoration:none;color:#215a29}
-    .codebox, textarea.template{width:100%;max-width:1000px;min-height:180px;padding:12px;border:1px solid #dfeee4;border-radius:12px;background:#fbfffc;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+
+    /* utilities for templates/boxes */
+    .codebox, textarea.template{width:100%;min-height:180px;padding:12px;border:1px solid #dfeee4;border-radius:12px;background:#fbfffc;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
     .copywrap{display:flex;gap:10px;flex-wrap:wrap;margin:.5rem 0 1rem}
     .copybtn{border:1px solid #cdebd6;background:#e8f6ec;border-radius:999px;padding:8px 12px;font-weight:700;cursor:pointer}
     .note{background:#fffef0;border:1px solid #f5e6a1;border-radius:10px;padding:10px;margin:.5rem 0}
+
     footer .breadcrumbs{max-width:1000px;margin:12px auto 0;padding:0 16px;font-size:14px}
     footer .breadcrumbs a{color:#2f6f36;text-decoration:underline}
+
+    /* Prevent any rogue wide elements */
+    .section table, .section iframe, .section pre, .section textarea, .section .codebox { max-width:100%; }
+
+    /* Small screens tweaks */
+    @media (max-width:480px){
+      .chips a{padding:6px 10px;font-size:13px}
+      .hero-title{font-size:clamp(22px,7vw,34px)}
+      .hero-sub{font-size:clamp(14px,3.4vw,17px)}
+    }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -144,7 +179,7 @@
   <!-- Accessibility -->
   <a href="#main-start" class="skip-link">Skip to content</a>
 
-  <!-- Header / Banner (copied structure from template) -->
+  <!-- Header / Banner -->
   <div class="banner" role="banner">
     <div class="top-bar">
       <div class="brand">
@@ -249,7 +284,8 @@
     </nav>
   </div>
   <!-- /Header -->
-  <!-- HERO (match template visual) -->
+
+  <!-- HERO -->
   <section class="landing-hero" role="region" aria-label="Payday and high-cost loan help">
     <div class="hero-inner">
       <div class="hero-copy">
@@ -269,7 +305,7 @@
   </section>
   <!-- /HERO -->
 
-  <!-- Meta strip (match template) -->
+  <!-- Meta strip -->
   <div class="meta small">
     <p><strong>Reviewed by:</strong> Fresh Start Debt Support team • <span id="updated">Last updated</span> • Free & confidential guidance</p>
     <script>(function(){var el=document.getElementById('updated');if(el){el.textContent="Last updated " + new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"});}})();</script>
@@ -277,7 +313,7 @@
 
   <div id="main-start"></div>
 
-  <!-- Main Content in template's container/section structure -->
+  <!-- Main Content -->
   <div class="container">
 
     <!-- Jump links -->
@@ -478,7 +514,7 @@ If you need my budget, I can provide it now by email.
 
   </div><!-- /container -->
 
-  <!-- Footer (template look, with original breadcrumbs preserved) -->
+  <!-- Footer -->
   <footer>
     <p>© 2025 Fresh Start Debt Support. All rights reserved.</p>
     <p>This website does not offer financial advice and is not regulated by the FCA. All guidance is offered free of charge.</p>
@@ -489,10 +525,10 @@ If you need my budget, I can provide it now by email.
     </nav>
   </footer>
 
-  <!-- WhatsApp Floating Button (content kept from original) -->
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/447752296301?text=Hi%20I%20need%20payday%20loan%20help%20and%20want%20to%20freeze%20interest%20/%20stop%20CPA" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬 Chat on WhatsApp</a>
 
-  <!-- Menu Toggle Script (from template) + Copy buttons -->
+  <!-- Menu Toggle Script + Copy buttons -->
   <script>
     function toggleMenu() {
       var menu = document.getElementById("menuContent");
