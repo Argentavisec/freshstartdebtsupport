@@ -130,6 +130,11 @@
     }
     .post-cta:hover{ background:#dff3e7; }
     .post-cta svg{ width:16px; height:16px; }
+
+    /* Belt-and-braces: make sure every card is visible even if external CSS hides nth-child items */
+    .post-grid .post-card {
+      display:flex !important;
+    }
   </style>
 
   <!-- Google tag -->
@@ -352,7 +357,6 @@
         <!-- Card 1 -->
         <li class="post-card">
           <a class="post-thumb" href="can-debt-collectors-come-to-your-house-uk.html" aria-label="Read: Can Debt Collectors Come to Your House in the UK?">
-            <!-- Optional real thumbnail: replace src with your article image -->
             <img src="../logo.jpg" alt="" loading="lazy" />
             <span class="label">Know Your Rights</span>
           </a>
@@ -390,188 +394,209 @@
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
+        </li>
 
-          <!-- Card 3 -->
-<li class="post-card">
-  <a class="post-thumb" href="notice-of-enforcement.html" aria-label="Read: Notice of Enforcement — Deadlines, Entry Rules & Your Options">
-    <img src="../logo.jpg" alt="Notice of Enforcement guide thumbnail" loading="lazy" />
-    <span class="label">Bailiff Action</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="notice-of-enforcement.html">Notice of Enforcement — Deadlines, Entry Rules &amp; Your Options</a>
-    </h3>
-    <div class="post-meta">
-      <span>Urgent Help</span><span class="dot">•</span><time datetime="2025-11-08">8 Nov 2025</time><span class="dot">•</span><span>6–9 min read</span>
-    </div>
-    <p class="post-excerpt">Got a Notice of Enforcement? Learn the 7-day deadline, what counts as entry, bailiff visit rules, and how to delay or stop enforcement fast using Breathing Space or affordable plans.</p>
-    <a class="post-cta" href="notice-of-enforcement.html" aria-label="Read the article Notice of Enforcement — Deadlines, Entry Rules and Your Options">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card 3 -->
+        <li class="post-card">
+          <a class="post-thumb" href="notice-of-enforcement.html" aria-label="Read: Notice of Enforcement — Deadlines, Entry Rules &amp; Your Options">
+            <img src="../logo.jpg" alt="Notice of Enforcement guide thumbnail" loading="lazy" />
+            <span class="label">Bailiff Action</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="notice-of-enforcement.html">Notice of Enforcement — Deadlines, Entry Rules &amp; Your Options</a>
+            </h3>
+            <div class="post-meta">
+              <span>Urgent Help</span><span class="dot">•</span><time datetime="2025-11-08">8 Nov 2025</time><span class="dot">•</span><span>6–9 min read</span>
+            </div>
+            <p class="post-excerpt">Got a Notice of Enforcement? Learn the 7-day deadline, what counts as entry, bailiff visit rules, and how to delay or stop enforcement fast using Breathing Space or affordable plans.</p>
+            <a class="post-cta" href="notice-of-enforcement.html" aria-label="Read the article Notice of Enforcement — Deadlines, Entry Rules and Your Options">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: Council Tax Arrears 2025 -->
-<li class="post-card">
-  <a class="post-thumb" href="council-tax-arrears-2025.html" aria-label="Read: Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs & Wage Deductions">
-    <img src="../logo.jpg" alt="Council Tax Arrears 2025 guide thumbnail" loading="lazy" />
-    <span class="label">Council Tax</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="council-tax-arrears-2025.html">Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs &amp; Wage Deductions</a>
-    </h3>
-    <div class="post-meta">
-      <span>Priority Bills</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
-    </div>
-    <p class="post-excerpt">Behind on council tax? Learn each step from reminder to liability order, bailiff visits and attachment of earnings — plus Breathing Space and affordable plan options.</p>
-    <a class="post-cta" href="council-tax-arrears-2025.html" aria-label="Read the article Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs and Wage Deductions">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: Council Tax Arrears 2025 -->
+        <li class="post-card">
+          <a class="post-thumb" href="council-tax-arrears-2025.html" aria-label="Read: Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs &amp; Wage Deductions">
+            <img src="../logo.jpg" alt="Council Tax Arrears 2025 guide thumbnail" loading="lazy" />
+            <span class="label">Council Tax</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="council-tax-arrears-2025.html">Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs &amp; Wage Deductions</a>
+            </h3>
+            <div class="post-meta">
+              <span>Priority Bills</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
+            </div>
+            <p class="post-excerpt">Behind on council tax? Learn each step from reminder to liability order, bailiff visits and attachment of earnings — plus Breathing Space and affordable plan options.</p>
+            <a class="post-cta" href="council-tax-arrears-2025.html" aria-label="Read the article Council Tax Arrears 2025 — Stop Liability Orders, Bailiffs and Wage Deductions">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: Energy Bill Debt 2025 -->
-<li class="post-card">
-  <a class="post-thumb" href="energy-bill-debt.html" aria-label="Read: Energy Bill Debt 2025 — Rights, Smart Meter Repayments & Social Tariffs">
-    <img src="../logo.jpg" alt="Energy Bill Debt 2025 guide thumbnail" loading="lazy" />
-    <span class="label">Energy Bills</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="energy-bill-debt.html">Energy Bill Debt 2025 — Rights, Smart Meter Repayments &amp; Social Tariffs</a>
-    </h3>
-    <div class="post-meta">
-      <span>Priority Bills</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
-    </div>
-    <p class="post-excerpt">Behind on gas or electricity? Learn your rights, how smart/prepay deductions work, grants &amp; hardship funds, and how to move to one affordable plan.</p>
-    <a class="post-cta" href="energy-bill-debt.html" aria-label="Read the article Energy Bill Debt 2025 — Rights, Smart Meter Repayments and Social Tariffs">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: Energy Bill Debt 2025 -->
+        <li class="post-card">
+          <a class="post-thumb" href="energy-bill-debt.html" aria-label="Read: Energy Bill Debt 2025 — Rights, Smart Meter Repayments &amp; Social Tariffs">
+            <img src="../logo.jpg" alt="Energy Bill Debt 2025 guide thumbnail" loading="lazy" />
+            <span class="label">Energy Bills</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="energy-bill-debt.html">Energy Bill Debt 2025 — Rights, Smart Meter Repayments &amp; Social Tariffs</a>
+            </h3>
+            <div class="post-meta">
+              <span>Priority Bills</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
+            </div>
+            <p class="post-excerpt">Behind on gas or electricity? Learn your rights, how smart/prepay deductions work, grants &amp; hardship funds, and how to move to one affordable plan.</p>
+            <a class="post-cta" href="energy-bill-debt.html" aria-label="Read the article Energy Bill Debt 2025 — Rights, Smart Meter Repayments and Social Tariffs">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: HMRC & Advantis Text Check -->
-<li class="post-card">
-  <a class="post-thumb" href="hmrc-advantis-text-genuine-time-to-pay.html" aria-label="Read: HMRC & Advantis Text — Genuine or Scam? Time to Pay Explained">
-    <img src="../logo.jpg" alt="HMRC & Advantis Text guide thumbnail" loading="lazy" />
-    <span class="label">Tax &amp; HMRC</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="hmrc-advantis-text-genuine-time-to-pay.html">HMRC &amp; Advantis Text — Genuine or Scam? Time to Pay Explained</a>
-    </h3>
-    <div class="post-meta">
-      <span>Tax &amp; HMRC</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>5–8 min read</span>
-    </div>
-    <p class="post-excerpt">Got a text about HMRC from Advantis? Learn safe checks to confirm it’s genuine, how to report phishing, and how Time to Pay works if you can’t afford the full amount.</p>
-    <a class="post-cta" href="hmrc-advantis-text-genuine-time-to-pay.html" aria-label="Read the article HMRC &amp; Advantis Text — Genuine or Scam? Time to Pay Explained">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: HMRC & Advantis Text Check -->
+        <li class="post-card">
+          <a class="post-thumb" href="hmrc-advantis-text-genuine-time-to-pay.html" aria-label="Read: HMRC &amp; Advantis Text — Genuine or Scam? Time to Pay Explained">
+            <img src="../logo.jpg" alt="HMRC & Advantis Text guide thumbnail" loading="lazy" />
+            <span class="label">Tax &amp; HMRC</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="hmrc-advantis-text-genuine-time-to-pay.html">HMRC &amp; Advantis Text — Genuine or Scam? Time to Pay Explained</a>
+            </h3>
+            <div class="post-meta">
+              <span>Tax &amp; HMRC</span><span class="dot">•</span><time datetime="2025-11-11">11 Nov 2025</time><span class="dot">•</span><span>5–8 min read</span>
+            </div>
+            <p class="post-excerpt">Got a text about HMRC from Advantis? Learn safe checks to confirm it’s genuine, how to report phishing, and how Time to Pay works if you can’t afford the full amount.</p>
+            <a class="post-cta" href="hmrc-advantis-text-genuine-time-to-pay.html" aria-label="Read the article HMRC &amp; Advantis Text — Genuine or Scam? Time to Pay Explained">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: CCJs Explained -->
-<li class="post-card">
-  <a class="post-thumb" href="ccj-explained.html" aria-label="Read: CCJs Explained — Set-Aside, Payment Plans & Credit Repair Timelines">
-    <img src="../logo.jpg" alt="CCJs Explained guide thumbnail" loading="lazy" />
-    <span class="label">Court Action</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="ccj-explained.html">CCJs Explained — Set-Aside, Payment Plans &amp; Credit Repair Timelines</a>
-    </h3>
-    <div class="post-meta">
-      <span>Court Action</span><span class="dot">•</span><time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
-    </div>
-    <p class="post-excerpt">Learn what a CCJ is, when to apply to set aside, how payment plans work, and how long it stays on your credit file with simple steps to repair your score.</p>
-    <a class="post-cta" href="ccj-explained.html" aria-label="Read the article CCJs Explained — Set-Aside, Payment Plans & Credit Repair Timelines">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: CCJs Explained -->
+        <li class="post-card">
+          <a class="post-thumb" href="ccj-explained.html" aria-label="Read: CCJs Explained — Set-Aside, Payment Plans &amp; Credit Repair Timelines">
+            <img src="../logo.jpg" alt="CCJs Explained guide thumbnail" loading="lazy" />
+            <span class="label">Court Action</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="ccj-explained.html">CCJs Explained — Set-Aside, Payment Plans &amp; Credit Repair Timelines</a>
+            </h3>
+            <div class="post-meta">
+              <span>Court Action</span><span class="dot">•</span><time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span><span>6–10 min read</span>
+            </div>
+            <p class="post-excerpt">Learn what a CCJ is, when to apply to set aside, how payment plans work, and how long it stays on your credit file with simple steps to repair your score.</p>
+            <a class="post-cta" href="ccj-explained.html" aria-label="Read the article CCJs Explained — Set-Aside, Payment Plans & Credit Repair Timelines">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: Statute-Barred Debt (6-Year Rule) -->
-<li class="post-card">
-  <a class="post-thumb" href="statute-barred-debt.html" aria-label="Read: Statute-Barred Debts — The 6-Year Rule & Exceptions">
-    <img src="../logo.jpg" alt="Statute-Barred Debt guide thumbnail" loading="lazy" />
-    <span class="label">Know Your Rights</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="statute-barred-debt.html">Statute-Barred Debts — The 6-Year Rule &amp; Exceptions</a>
-    </h3>
-    <div class="post-meta">
-      <span>Know Your Rights</span><span class="dot">•</span>
-      <time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span>
-      <span>6–10 min read</span>
-    </div>
-    <p class="post-excerpt">Check if an old debt is too late to enforce, what resets the clock, and the key exceptions (CCJs, council tax, mortgage shortfalls, HMRC) with a free template letter.</p>
-    <a class="post-cta" href="statute-barred-debt.html" aria-label="Read the article Statute-Barred Debts — The 6-Year Rule & Exceptions">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: Statute-Barred Debt (6-Year Rule) -->
+        <li class="post-card">
+          <a class="post-thumb" href="statute-barred-debt.html" aria-label="Read: Statute-Barred Debts — The 6-Year Rule &amp; Exceptions">
+            <img src="../logo.jpg" alt="Statute-Barred Debt guide thumbnail" loading="lazy" />
+            <span class="label">Know Your Rights</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="statute-barred-debt.html">Statute-Barred Debts — The 6-Year Rule &amp; Exceptions</a>
+            </h3>
+            <div class="post-meta">
+              <span>Know Your Rights</span><span class="dot">•</span>
+              <time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span>
+              <span>6–10 min read</span>
+            </div>
+            <p class="post-excerpt">Check if an old debt is too late to enforce, what resets the clock, and the key exceptions (CCJs, council tax, mortgage shortfalls, HMRC) with a free template letter.</p>
+            <a class="post-cta" href="statute-barred-debt.html" aria-label="Read the article Statute-Barred Debts — The 6-Year Rule & Exceptions">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-<!-- Card: Freeze Payday Interest & Stop CPA -->
-<li class="post-card">
-  <a class="post-thumb" href="payday-freeze-interest-cpa.html" aria-label="Read: Freeze Payday Interest & Stop CPA (Templates + Steps)">
-    <img src="../logo.jpg" alt="Freeze Payday Interest & Stop CPA guide thumbnail" loading="lazy" />
-    <span class="label">Credit &amp; Loans</span>
-  </a>
-  <div class="post-body">
-    <h3 class="post-title">
-      <a href="payday-freeze-interest-cpa.html">Freeze Payday Interest &amp; Stop CPA (Templates + Steps)</a>
-    </h3>
-    <div class="post-meta">
-      <span>Credit &amp; Loans</span><span class="dot">•</span>
-      <time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span>
-      <span>6–9 min read</span>
-    </div>
-    <p class="post-excerpt">Exact steps to cancel Continuous Payment Authorities with your bank, ask lenders to freeze interest, and roll debts into one affordable plan — includes copy-paste letters and a phone script.</p>
-    <a class="post-cta" href="payday-freeze-interest-cpa.html" aria-label="Read the article Freeze Payday Interest & Stop CPA (Templates + Steps)">
-      Read article
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-</li>
+        <!-- Card: Freeze Payday Interest & Stop CPA -->
+        <li class="post-card">
+          <a class="post-thumb" href="payday-freeze-interest-cpa.html" aria-label="Read: Freeze Payday Interest &amp; Stop CPA (Templates + Steps)">
+            <img src="../logo.jpg" alt="Freeze Payday Interest & Stop CPA guide thumbnail" loading="lazy" />
+            <span class="label">Credit &amp; Loans</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="payday-freeze-interest-cpa.html">Freeze Payday Interest &amp; Stop CPA (Templates + Steps)</a>
+            </h3>
+            <div class="post-meta">
+              <span>Credit &amp; Loans</span><span class="dot">•</span>
+              <time datetime="2025-11-12">12 Nov 2025</time><span class="dot">•</span>
+              <span>6–9 min read</span>
+            </div>
+            <p class="post-excerpt">Exact steps to cancel Continuous Payment Authorities with your bank, ask lenders to freeze interest, and roll debts into one affordable plan — includes copy-paste letters and a phone script.</p>
+            <a class="post-cta" href="payday-freeze-interest-cpa.html" aria-label="Read the article Freeze Payday Interest & Stop CPA (Templates + Steps)">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
+        <!-- Card: IVA Protocol 2025 — New Rules for Homeowners -->
+        <li class="post-card">
+          <a class="post-thumb" href="iva-protocol-2025-new-rules-homeowners.html" aria-label="Read: IVA Protocol 2025 — New Rules for Homeowners, Equity &amp; 5–6 Year Terms">
+            <img src="../logo.jpg" alt="IVA Protocol 2025 guide thumbnail" loading="lazy" />
+            <span class="label">IVA &amp; Insolvency</span>
+          </a>
+          <div class="post-body">
+            <h3 class="post-title">
+              <a href="iva-protocol-2025-new-rules-homeowners.html">IVA Protocol 2025 — New Rules for Homeowners</a>
+            </h3>
+            <div class="post-meta">
+              <span>IVA &amp; Insolvency</span><span class="dot">•</span>
+              <time datetime="2025-11-18">18 Nov 2025</time><span class="dot">•</span>
+              <span>7–11 min read</span>
+            </div>
+            <p class="post-excerpt">
+              New IVA rules for 2025: £10,000 equity threshold, no forced remortgage, and clearer 5–6 year terms. Full breakdown of how the updated IVA Protocol protects homeowners and what it means for you.
+            </p>
+            <a class="post-cta" href="iva-protocol-2025-new-rules-homeowners.html" aria-label="Read the article IVA Protocol 2025 — New Rules for Homeowners">
+              Read article
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
 
-
-
-
-
-
-
-
-        <!-- Template for future posts: duplicate and update hrefs/content -->
+        <!-- Template for future posts (commented out) -->
         <!--
         <li class="post-card">
           <a class="post-thumb" href="your-next-post.html" aria-label="Read: Title of Your Next Blog">
@@ -699,6 +724,13 @@
           btn.setAttribute("aria-expanded","false");
         }
       }
+    });
+
+    // Force ALL cards visible (overrides any nth-child display:none in external CSS)
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".post-grid .post-card").forEach(function (card) {
+        card.style.setProperty("display", "flex", "important");
+      });
     });
   </script>
 </body>
